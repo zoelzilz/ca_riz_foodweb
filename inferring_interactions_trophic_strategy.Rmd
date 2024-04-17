@@ -91,14 +91,14 @@ edge_consumers <- edges %>%
 nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_17apr24.csv")
 
 nodes_redux <- nodes %>% 
-  select(id.x, species, trophic_strategy, preys_on, parasitic_on) %>% 
+  select(id.x, species, life_stage, category, trophic_strategy, preys_on, parasitic_on, zone, habitat_notes) %>% 
   rename( consumerNum = id.x, 
-          consumerName = species)
+          consumerName = species,
+          consumerCat = category)
 
 node_consumers <- nodes_redux %>% 
   select(consumerNum, consumerName, trophic_strategy) %>% 
   unite(numname, c(consumerNum, consumerName), sep = ".", remove = TRUE)
-  
 
 ```
  
@@ -110,8 +110,54 @@ node_consumers <- nodes_redux %>%
 nodes_wo_edges <- anti_join(node_consumers, edge_consumers)
 
 #just in case there were bad name/num combos, i'm going to check using just nums
-nodes_wo_edges2 <- anti_join(nodes_redux, edges_redux, by = join_by(consumerNum))
+# i guess the two id columns are different types so converting both to numeric:
+nodes_redux$consumerNum <- as.numeric(nodes_redux$consumerNum)
+edges_redux$consumerNum <- as.numeric(edges_redux$consumerNum)
 
+nodes_wo_edges2 <- anti_join(nodes_redux, edges_redux, by = join_by(consumerNum)) # this is the dataframe we will use 
+
+```
+
+## now we will use the above list to systematically fill in interactions based on trophic strategy
+#### starting with filter feeders
+```{r filter feeder inferred links}
+
+filter_feeders <- nodes_wo_edges2 %>% 
+  filter(trophic_strategy == "filter feeder") %>% 
+  mutate(preys_on = "filtrate")
+
+ff_prey <- read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "filter_feeder_prey") %>% 
+  select(id.x, species, category) %>% 
+  rename(resourceNum = id.x,
+         resourceName = species,
+         resourceCat = category) %>% 
+  mutate(preys_on = "filtrate")
+
+ff_edges <- full_join(filter_feeders, ff_prey, by = join_by(preys_on)) %>% 
+  # clean em up so they match the edge list and add in confidence, justifcation, etc
+  mutate(consumerStage = case_when( # make the life stages match the nice clean numbers in the edge list
+    life_stage == "adult" ~ 1,
+    life_stage == "medusa" ~1, 
+    life_stage == "hydroid colony" ~ 5,
+    life_stage == "hydroid" ~ 5, 
+    life_stage == "juvenile" ~ 4 # i think default should be otherwise NA which is how I want it
+  )) %>% 
+  mutate(resourceStage = 6) %>%  # life stage varies for all
+  select(consumerNum, consumerName, consumerCat, consumerStage, resourceNum, resourceName, resourceCat, resourceStage, zone) %>% 
+  # adding in all other columns necessary
+  mutate(intials = "ZZ_coded", .before = consumerNum) %>% 
+  mutate(interaction.type = 1,
+         confidence = 4, 
+         justification = 4,
+         incl.code = "",
+         ref_num = NA,
+         .before = zone) %>% 
+  mutate(pools_exposed = "pools",
+         epibiota_consumed = "yes",
+         notes = " ",
+         link.ID = "", # i'm going to manually fill in because i'm lazy
+         date_added = "17-Apr-2024")  # today's date
+  
 ```
 
  
