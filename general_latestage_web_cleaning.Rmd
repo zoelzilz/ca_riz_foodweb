@@ -77,11 +77,41 @@ library(readxl)
  
 ```{r importing current edges, warning=FALSE}
 
+# current edge list (still using xl because it's a dynamic file)
 edges <- read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/edgelist_MASTER.xlsx")
 
+edges_redux <- edges %>% 
+  select(consumerNum, consumerName, resourceNum, resourceName, link.ID)
+
+edge_consumers <- edges %>% 
+  select(consumerNum, consumerName) %>% 
+  unite(numname, c(consumerNum, consumerName), sep = ".", remove = TRUE)
+
 # current working node list:
-nodes <- read_csv()
+nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_17apr24.csv")
+
+nodes_redux <- nodes %>% 
+  select(id.x, species, trophic_strategy, preys_on, parasitic_on) %>% 
+  rename( consumerNum = id.x, 
+          consumerName = species)
+
+node_consumers <- nodes_redux %>% 
+  select(consumerNum, consumerName, trophic_strategy) %>% 
+  unite(numname, c(consumerNum, consumerName), sep = ".", remove = TRUE)
+  
 
 ```
  
+ 
+### which species in the node list are not represented in the edges list?
+#### we can als figure this out by anti-joining the two lists (left join) with the more conservative list (edges) on the left
+```{r anti-joining to cross check nodes with edges}
+
+nodes_wo_edges <- anti_join(node_consumers, edge_consumers)
+
+#just in case there were bad name/num combos, i'm going to check using just nums
+nodes_wo_edges2 <- anti_join(nodes_redux, edges_redux, by = join_by(consumerNum))
+
+```
+
  
