@@ -1,0 +1,26 @@
+---
+title: "Dissection Data Migration"
+output: html_document
+date: "2022-11-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+```
+
+## Dissection data is in one format, and I want to be able to consistently pull it in to the food web interaction matrix (totally different format)
+
+### final product should be a csv of dissection-based interactions (dissection_interactions.csv) and append these to the original edgelist (new file: 'edgelist_complete.csv')
+- with a column (in ref_num) indicating "Dissection ID: #)
+
+```{r}
+diss <- read_csv("data/dissection_data_all_3nov22.csv") %>% 
+  clean_names() %>% 
+  select(id, species, coll_loc, habitat, zone, stomach_contents, ectos, endos, epis, other_symbs, final_id)
+
+
+
+```
+

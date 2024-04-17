@@ -1,0 +1,534 @@
+---
+title: "Building a Food Web"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Our goal is to create an interactive network. We will be following along with the instructions at this link: https://kateto.net/network-visualization
+
+First we will install and load all necessary packages:
+```{r packages}
+#install.packages("igraph") 
+#install.packages("network") 
+#install.packages("sna")
+#install.packages("ggraph")
+#install.packages("visNetwork")
+#install.packages("threejs")
+#install.packages("networkD3")
+#install.packages("ndtv")
+#install.packages("tidyverse")
+#install.packages("NetIndices")
+#install.packages("cheddar")
+
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+```
+
+Next we need to import and "clean up" our dataset, since it includes a lot of columns we won't need and a lot of rows with missing values. We will start with datasets labeled as "unclean" and end up with two dataframes with simple descriptive names: "links" and "nodes"
+
+we need to import and combine the dissection and literature search datasets
+```{r importing}
+
+# for some reason removing the space after bythotiara hunstmani deletes teh carriage return/newline and makes the csv unreadable
+
+edges_unclean <- read_csv("data/edges.csv") #manually combined lit and dissections in excel on 5 nov 22
+
+#edges_unclean2 <- read_csv("data/edges_diss.csv") # from dissections
+
+#checking out the data by looking at the first few lines
+head(edges_unclean)
+
+
+```
+
+
+## there are a couple of ways to get nodes:
+###1. manually create nodes list in excel (will include species that have no interactions)
+###2. extract it from the edge list (will not include interaction-less species)
+
+```{r NODES}
+################## CREATE NODES  #######################
+
+# basically need to get whole list of resources and whole list of consumers and rowbind but eliminate duplicates
+
+edges_unclean$resourceNum <- as.numeric(edges_unclean$resourceNum) #necessary to convert all the random text i wrote in instead of numbers -> NAs
+edges_unclean$consumerNum <- as.numeric(edges_unclean$consumerNum) # ditto above
+
+cnodes <- edges_unclean %>% 
+  #something later in the code fucks with the select function so need dplyr::
+  dplyr::select(consumerNum, consumerName, consumerStage, consumerCat) %>% 
+  rename_with(~str_remove(., 'consumer')) # remove consumer from colnames, not sure of syntax
+
+rnodes <- edges_unclean %>% 
+  dplyr::select(resourceNum, resourceName, resourceStage, resourceCat) %>% 
+  rename_with(~str_remove(., 'resource')) # remove resource from colnames, not sure of syntax
+
+pre_nodes <- bind_rows(cnodes, rnodes) %>% 
+  # first replace all of the NAs possible by matching them up with an existing name-num pair
+  #group_by(Name) #%>%
+  #mutate(Num = unique(Num[!is.na(Num)])) # i did this manually in excel, but leaving it for later in case
+  
+  filter(!is.na(Num)) %>%  #takes out the NAs which i put in to indicate that the node wasnt in the system
+  # cant have duplicates of ID (but some dups of name bc diff life stages)
+  #filter(duplicated(Name) == FALSE) %>% 
+  filter(duplicated(Num) == FALSE) %>% 
+  rename(id = Num)
+View(pre_nodes)
+
+```
+
+
+Lets add some characteristics to the nodes for coloring the network figure
+first we need to import our giant species list - too lazy to copy into a CSV, so we will load readXL
+```{r categories and colors and stuff}
+library(readxl)
+
+node_attributes <- read_excel("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "Both") %>% 
+  rename(Name = species,
+         range = 'N/S/Both', 
+         trophic_strategy = 'trophic strategy')
+
+#setting up a bunch of functional groups bc this is easier
+#filter feeders#
+ffs <- c("tunicate", "sponge", "hydroid", "barnacle", "mussel", "bivalve", "scallop", "bryozoan", "zooplankton", "hydrocoral", "clam", "entoproct", "boring clam", "vermetid", "soft coral", "coral", "sipunculid")
+
+#predators#
+preds <- c("sea star", "asteroid", "octopus", "nudibranch", "murex", "bird", "shark", "lobster", "whelk", "sea spider", "human", "mammal", "snail")
+
+#primary producers#
+pps <- c("algae", "phytoplankton", "corraline algae", "angiosperm", "dead stuff", "dinoflagellate", "gametes")
+
+#herbivores#
+herbs <- c("urchin", "topsnail", "limpet", "littorine", "slipper snail", "true limpet", "chiton", "sea hare", "microsnail", "isopod", "abalone")
+
+#opportunistic omnivores#
+oos <- c("anemone", "shrimp", "ghost shrimp", "scale worm", "true crab", "porcelain crab", "tanaid", "copepod", "other arthropod", "cucumber", "hermit crab", "anomuran", "flatworm", "turbellarian", "polychaete", "fish", "amphipod", "microorganism", "brittle star")
+
+#all parasites#
+paras <- c("parasitic copepod", "gregarine", "parasitic barnacle", "myxozoan", "coccidian", "trematode", "cestode", "fungus", "monogene", "ciliate", "leech", "sporozoan", "orthonectid", "rhombozoan", "nematode", "nemertean")
+
+ded <- c("dead stuff")
+
+nodes <- left_join(pre_nodes, node_attributes) %>%  #automatically joins by name, keeping all rows in nodes while adding cols from node_attributes
+  filter(duplicated(id) == FALSE) %>%  # do this again - randomly adding dups, should figure out why
+  dplyr::select(id, Name, category, range, Zone, trophic_strategy) %>% 
+
+  # now i want to fill in all the empty trophic strategies based on the category
+  
+  mutate(trophic_strategy2 = case_when(
+    category %in% ffs ~ "filter feeder",
+    category %in% preds ~ "predator",
+    category %in% pps ~ "primary producer",
+    category %in% herbs ~ "herbivore",
+    category %in% oos ~ "opportunistic omnivores",
+    category %in% paras ~ "parasites",
+    category %in% ded ~ "dead stuff"
+  )) %>% 
+  mutate(trophic_strategy3 = coalesce(trophic_strategy, trophic_strategy2)) %>% 
+  mutate(parasitic  = if_else(trophic_strategy2 == "parasites", "y", "n")) %>% 
+  filter(duplicated(id) == FALSE) # do this again just in case
+
+
+
+# fuckin.. what do i do with all these trophic strategy columns that are all different i hate myself
+
+```  
+
+## Now we clean our dirty edge data
+  
+```{r cleaning edges}
+  
+edges_unclean -> links_unclean #i'm too lazy to change syntax later
+
+
+links <- links_unclean %>% 
+  filter(!is.na(resourceNum)) %>% 
+  filter(!is.na(consumerNum)) %>%  # we are removing rows of data that have blanks ("") or "NA" for consumer # and resource #. Those two values are essential for building our web becaues they match numbers in the "nodes" dataframe. NTS: I'm not entirely sure why we have to break this up into three different filter functions...
+  
+  mutate(incl.code = replace_na(incl.code, 1)) %>%  # replacing empty (NA) include codes with 1 for now so they don't get nixed as NAs, will have to manually evaluate these in excel later
+
+  filter(incl.code != 0, 
+         incl.code != 5, 
+         #incl.code != 6
+         ) %>% # remove further interactions that we know occur outside the system (0s and 5s)
+  
+  # need to remove non-trophic interactions!
+  filter(interaction.type != 2, #epibiont
+         interaction.type !=9, #endocommensal
+         interaction.type !=10, #ectocommensal
+         interaction.type !=22, #mutualism
+         interaction.type !=28) %>%  #boring
+  dplyr::select(resourceNum,consumerNum,  interaction.type) %>%  # RESOURCE NUM HAS TO GO FIRST OR WEB IS UPSIDEDOWN
+  
+  # and finally we need to add a column coding for parasitic interaction or nah
+  mutate(parasitic = case_when(
+    interaction.type > 4 & interaction.type < 8 ~ "y",
+    interaction.type == 12 ~ "y",
+    interaction.type > 23 & interaction.type < 26 ~ "y",
+    TRUE ~ "n"
+  ))
+
+```
+
+## Now that our data is cleaned up, we will follow along with the tutorial at step 3.2 - Creating an igraph object
+```{r igraph object}
+net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) #tutorial code copied exactly
+
+net # viewing the igraph object properties
+
+# more properties below:
+#E(net)       # The edges of the "net" object
+#V(net)       # The vertices of the "net" object
+#E(net)$interaction.type  # Edge attribute "type"
+#V(net)$species # Vertex attribute "species"
+
+# You can also examine the network matrix directly:
+#net[1,]
+#net[5,7]
+
+# we want to calculate degree to set the size of circles in teh future:
+deg <- igraph::degree(net, mode = "all") 
+# put in later when we are editing graph vis
+
+# and plot it:
+V(net)$label <- nodes$Name
+l <- layout_in_circle(net)
+plot(net, edge.arrow.size=.1, vertex.size = 1)
+
+#plot(net, edge.arrow.size=.1, vertex.size = 1, vertex.shape="none", vertex.label=V(net)$species, 
+#     vertex.label.font=2, vertex.label.color="gray40",
+#     vertex.label.cex=.7, edge.color="gray85")
+
+#plotting is currently not working in-line bc google drive. copy and paste plotting code into console
+```
+
+
+```{r example visnetwork}
+# reproducible example:
+nodes_CTP <- data.frame(id = 0:20, label = LETTERS[1:21])
+
+links_CTP <- data.frame(from = 0, to = 1:20, 
+                        value = seq(0.35, 0.5, length.out = 20))
+
+
+visNetwork(nodes_CTP, links_CTP, height = "700px", width = "100%") %>%
+  visOptions(selectedBy = Name, 
+             highlightNearest = TRUE, 
+             nodesIdSelection = TRUE) %>%
+  visPhysics(stabilization = FALSE)
+```
+
+## Now we can analyze the web a little bit - using NetIndices package
+We can also use netindices to calculate trophic level, which will help us better plot our network graph
+```{r igraph and netIndices to plot using trophic level}
+
+library(NetIndices) # remember this masks select in dplyr
+
+# remember, our igraph object is called net
+# we can use igraph to pull an adjacency matrix from net
+
+RIZadjmatrix <- as_adjacency_matrix(net,
+                                    sparse = FALSE) # necessary to get a regular matrix, which we need for....
+
+# following tutorial from 2013 :/ https://assemblingnetwork.wordpress.com/2013/07/01/network-basics-with-r-and-igraph-part-iii-of-iii/
+ 
+# Get the basic network indices from the matrices with GenInd()
+# RIZindices<-GenInd(RIZadjmatrix) # running this takes forever so its ## out
+
+
+#RIZindices # i still don't know what any of these mean - need to read the lit
+
+# TrophInd() takes in an adjacency matrix and gives an output of the trophic level of each node,
+# as well as an index of the degree of omnivory for each node
+ 
+trophRIZ<-TrophInd(RIZadjmatrix)
+#troph.otago.p<-TrophInd(otago.adjmatrix.p)
+
+trophic_level <- trophRIZ$TL # name this vector, we should be able to add it to the nodes
+
+# An interesting use for this trophic level function is to then use trophic level as a plotting parameter.
+# This way, I can plot the food web nodes according to trophic height. I think that this adds greatly to a plot of a food web, since you can gain more information about the trophic structure of the web by simply glancing at the plot.
+ 
+# First we need to create a two-column matrix identifying the x and y values for each node.
+layout.matrix.1 <- matrix(nrow=length(V(net)), # Rows equal to the number of vertices
+                        ncol=2)
+layout.matrix.1[,1] <- runif(length(V(net))) # randomly assign positions along x-axis (like jitter)
+layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
+
+ 
+# Now we can use these matrices to define the layout instead of using the circle layout
+ 
+# par(mar=c(.1,.1,.1,.1),mfrow=c(1,2)) # wtf is this doing - parameterizing plot space maybe?
+ 
+rizvis <- plot.igraph(net,
+                      vertex.label = V(net)$label, # this is terrible syntax, but it works
+                      vertex.label.cex = .35,
+                      vertex.size=3,
+                      edge.arrow.size=.25,
+                      layout=layout.matrix.1)
+ 
+# I am still working on the best way to plot the nodes along the x-axis. You may notice that using
+# runif() means that there is some chance that two nodes with the same trophic level
+# will be right on top of one another
+
+```
+ 
+
+## Finally we can make a nice figure
+
+Here's the new figure with different colored nodes and links based on interaction type
+```{r pretty!}
+
+# fuck igraph, the syntax is poop. let's try with ggplot
+library(ggraph)
+
+trophic_layout <- create_layout(net, layout = layout.matrix.1) # we constructed this layout.matrix.1 earlier by hand kinda using trophic levels
+# later we use trophic_layout in place of "net" as the graph object
+
+pretty <- ggraph(trophic_layout) + 
+  geom_edge_link(aes(edge_color = parasitic)) +
+  scale_edge_color_manual(values = c("y" = "red",
+                                     "n" = "gray50"))+
+
+  geom_node_point(color = "gray30", aes(size = deg, 
+                      #color = trophic_strategy2
+                      ))+
+  #scale_color_viridis()+
+  
+  #scale_color_manual(values = c("herbivore" = "black",
+  #                              "dead stuff" = "black",
+  #                              "parasites" = "red",
+  #                              "filter feeder" = "black",
+  #                              "primary producer" = "black",
+  #                              "opportunistic omnivores" = "black",
+  #                              "predator" = "black"))+
+  #geom_node_text(aes(label = Name), size=3, color="gray50", repel=T)+
+  theme_void()
+
+```
+
+ 
+ 
+Let's Make it pretty and interactive using visNetwork
+```{r visNetwork}
+library(visNetwork)
+
+# before attempting this step, we need to remove all non-UTF8 characters from the entire dataset
+# perhaps like this?
+# didn't work
+#nodes_utf <- nodes %>%
+#    mutate_at(vars(species, lifestage, category), function(x){gsub('[^ -~]', '', x)}) #function states that for every cell x, if it contains one of these, delete it? i guess?
+
+# also - the node data frame needs to have an id column, and the link data needs to have from and to columns denoting the start and end of each tie.
+
+links2 <- links %>% 
+  rename(to = consumerNum) %>% 
+  rename(from = resourceNum) #right?
+
+nodes2 <- nodes %>% 
+  mutate(degree = deg) %>%  # swe calculated deg a while ago, now added it to df
+  mutate(trophic = trophic_level)
+
+
+
+visNetwork(nodes2, links2, width= "100%")
+
+# now lets get fancy!! copied from tutorial
+
+vis.nodes <- nodes2 #necessary?
+vis.links <- links2
+
+vis.nodes$shape  <- "dot"  
+vis.nodes$shadow <- TRUE # Nodes will drop shadow
+vis.nodes$title  <- vis.nodes$Name # Text on click
+#vis.nodes$label  <- vis.nodes$type.label # Node label # for our purposes, redundant with text on click. can add type.label later
+vis.nodes$size   <- vis.nodes$degree # Node size - will calculate degree later and use this to determine node size
+vis.nodes$borderWidth <- 2 # Node border width
+
+visNetwork(vis.nodes, vis.links, width = "100%")
+  visIgraphLayout(layout = layout.matrix.1)
+
+```
+
+
+### We have some questions about the data: 
+1. How many unique resource items does each consumer have (true predation only)? 
+2. How many unique consumers does each resource have?
+```{r prey/pred}
+
+# prep data:
+#links2 <- links_unclean %>% 
+#  select(consumerNum, consumerName, resourceNum, resourceName, interaction.type) %>% 
+#  filter(interaction.type == 1) %>% #just trophic (no parasites) for a sec
+#  filter(!is.na(resourceNum)) %>% 
+#  filter(!is.na(consumerNum))
+
+# how many prey items per predator?
+#unq_prey <- links2 %>% 
+#  group_by(consumerName) %>% 
+#  summarise(Prey_Items = n_distinct(resourceName))
+#plot(unq_prey$consumerName, unq_prey$Prey_Items)
+
+# how many predators per prey item?
+#unq_preds <- links2 %>% 
+#  group_by(resourceName) %>% 
+#  summarise(Predators = n_distinct(consumerName))
+```
+
+
+# All the below things are old but maybe useful
+```{r BIG cleaning data}
+# really want to import the whole matrix as-is and then clean it up
+# filepath is going to be outside of the thing but I will have to deal
+# /Volumes/GoogleDrive/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data
+# needs readxl which is part of tidyverse
+# the reason I want to do this is so that i can create an automatically updating node list with all the taxonomy for sorting AND the extra interaction info from the edges spreadsheet
+
+edges_unclean <- read_excel("/Volumes/GoogleDrive/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/edgelist_lit_w_taxonomy.xlsx", sheet = "edges")
+
+edges_unclean$resourceNum <- as.numeric(edges_unclean$resourceNum) #necessary to convert all the random text i wrote in instead of numbers -> NAs
+edges_unclean$consumerNum <- as.numeric(edges_unclean$consumerNum) # ditto above
+edges_unclean$interaction.type <- as.numeric(edges_unclean$interaction.type) # ditto above
+
+
+################## CREATE LINKS #######################
+links <- edges_unclean %>% 
+  filter(consumerNum != ""|resourceNum !="" ) %>% 
+  filter(!is.na(resourceNum)) %>% 
+  filter(!is.na(consumerNum)) %>% # we are removing rows of data that have blanks ("") or "NA" for consumer # and resource #. Those two values are essential for building our web becaues they match numbers in the "nodes" dataframe. NTS: I'm not entirely sure why we have to break this up into three different filter functions...
+  dplyr::select(consumerNum, resourceNum, interaction.type) %>%  #these are the only columns we want because nothing else is necessary for building our web
+  filter(!interaction.type %in% c(2,9,28,29) ) %>%  #idk why the fuck %in% is necessary to remove multiple numbers but oh well
+  rename(from = consumerNum) %>% 
+  rename(to = resourceNum) %>% 
+  # also want to add a col of parasitic or not:
+  mutate(parasitic = case_when(interaction.type == 1 |
+                                 interaction.type == 2 |
+                                 interaction.type == 3 |
+                                 interaction.type == 9 |
+                                 interaction.type == 10 |
+                                 interaction.type == 28 |
+                                 interaction.type == 29 |
+                                 interaction.type == 30 ~ "non-parasitic",
+                               interaction.type > 14:23 ~ "non-parasitic",
+                               is.na(interaction.type) ~ "non-parasitic",
+                               TRUE ~ "parasitic"
+                               )
+         )
+
+
+################## CREATE NODES (more complex) #######################
+# basically need to get whole list of resources and whole list of consumers and rowbind but eliminate duplicates
+cnodes <- edges_unclean %>% 
+  #select(!interaction.type, !INITIALS, !justification, !link.ID, !ref_num, !localities, )
+  select(c(2:11)) %>% 
+  rename_with(~str_remove(., 'consumer')) # remove consumer from colnames, not sure of syntax
+
+rnodes <- edges_unclean %>% 
+  #select(!interaction.type, !INITIALS, !justification, !link.ID, !ref_num, !localities, )
+  select(c(12:21))%>% 
+  rename_with(~str_remove(., 'resource')) # remove resource from colnames, not sure of syntax
+
+nodes <- bind_rows(cnodes, rnodes) %>% 
+  distinct() %>% 
+  #filter(duplicated(Name) == FALSE) %>% # cant have duplicates of either name or ID
+  # FOR SOME REASON THE ABOVE IS FILTERING OUT NON-DUPLICATES??!
+  filter(duplicated(Num) == FALSE) %>% 
+  rename(id = Num)
+View(nodes)
+
+
+# what if we want ONLY nodes that have interactions... match somehow? try this later
+
+#################### USE IGRAPH TO CALC DEGREE and add to NODES #######################
+net <- graph_from_data_frame(d=links, vertices = nodes,  directed= TRUE)
+
+### having issues with an error that says not all edges are in nodes - the below code is to troubleshoot
+#link_nodes <- data.frame(id = c(links$from, links$to)) %>%  # there has to be a better way but whatever
+  distinct() # removes duplicates
+  #order() # puts in numerical ascendign order ALPHABETICALLY NO, also not necessary
+
+#link_nodes$id == nodes$id # should return a T/F
+
+deg <- igraph::degree(net, mode = "all") 
+
+nodes <- nodes %>% 
+  mutate(degree = deg)
+  
+```
+
+
+```{r cleaning data maybe deprecate}
+nodess <- read_csv("nodes.csv")
+links_unclean <- read_csv("edges.csv")
+
+links_unclean$resourceNum <- as.numeric(links_unclean$resourceNum) #necessary to convert all the random text i wrote in instead of numbers -> NAs
+links_unclean$consumerNum <- as.numeric(links_unclean$consumerNum) # ditto above
+  
+links <- links_unclean %>% 
+  filter(consumerNum != ""|resourceNum !="" ) %>% 
+  filter(!is.na(resourceNum)) %>% 
+  filter(!is.na(consumerNum)) %>% # we are removing rows of data that have blanks ("") or "NA" for consumer # and resource #. Those two values are essential for building our web becaues they match numbers in the "nodes" dataframe. NTS: I'm not entirely sure why we have to break this up into three different filter functions...
+  dplyr::select(consumerNum, resourceNum, interaction.type) #these are the only columns we want because nothing else is necessary for building our web
+
+links2 <- links %>% 
+  rename(from = consumerNum) %>% 
+  rename(to = resourceNum)
+
+nodes2 <- nodes %>% 
+  rename(id = ID) #%>% 
+  #mutate(degree = deg) # seems way too simple but somehow it worked, idk
+```
+
+
+```{r visualize using visNetwork}
+vis.nodes <- nodes %>% 
+  mutate(group = Ph) # for later (visnet2) changing the Ph column to be named "groups" so visN recognizes that I want to group by Ph (phylum) # http://datastorm-open.github.io/visNetwork/groups.html
+vis.links <- links
+
+### all of the below is just one option for setting visual params: ##
+
+#vis.nodes$shape  <- "dot"  
+#vis.nodes$shadow <- TRUE # Nodes will drop shadow
+#vis.nodes$title  <- vis.nodes$Name # Text on click
+#vis.nodes$label  <- vis.nodes$type.label # Node label # for our purposes, redundant with text on click. can add type.label later
+#vis.nodes$size   <- vis.nodes$degree # Node size - will calculate degree later and use this to determine node size
+#vis.nodes$borderWidth <- 1 # Node border width
+#vis.nodes$color.background <- "blue" #vis.nodes$Ph #color based on grouping. can set specific colors with c() and put grouping in brackets ## NOT WORKING
+#vis.nodes$color.border <- "black"
+#vis.nodes$color.highlight.background <- "orange" # what happens when we highlight
+#vis.nodes$color.highlight.border <- "darkred"
+
+#vis.links$color <- c("red", "grey")[vis.links$parasitic]   # line color  
+#vis.links$arrows <- "middle" # arrows: 'from', 'to', or 'middle'
+
+visnet1 <- visNetwork(nodes, links) # basic network
+
+### but I am going to stick with a different syntax:
+
+vis.nodes$title  <- vis.nodes$Name # Text on click # how to incorp this into tidy below
+
+visnet2 <- visNetwork(vis.nodes, links) %>% 
+  visGroups(groupname = "Mollusca", color = "blue") %>% 
+  visGroups(groupname = "Echinodermata", color = "purple") %>% 
+  visGroups(groupname = "Arthropoda", color = "orange") %>% 
+  visGroups(groupname = "Cnidaria", color = "green") %>% 
+  visLegend(main="Legend", position="right", ncol=1) 
+
+```
+
+
+```
+
+
+

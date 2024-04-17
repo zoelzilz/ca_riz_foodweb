@@ -1,0 +1,87 @@
+---
+title: "general web cleaning"
+output: html_document
+date: "2024-04-17"
+---
+# The year is 2024 and we are approaching graduation
+## The time is nigh to finish the California Rocky Intertidal Food Web
+## (and we are using humor to mask the despair)
+
+### status: all nodes and links from the Light and Smith handbook have been incorporated. We are going to try to automate some of the cleaning tasks that were previously done by hand including: 
+### - full taxonomy for each node 
+### - creating edges by coding instead of manual entry 
+### - whatever else we can code in in less time than it takes to enter manually
+
+
+###CHECKLIST: bold is what's being worked on
+ ✔ pull in WORMS taxonomy for each node (done except for those that don't match an entry in WORMS)
+  
+ ✔ manually fix typos in original node list so that they match an existing WORMS entry, if possible, using the dataset result from the above step  
+  - in doing this, realized that the dataset made from rows that don't match an entry in worms is missing all morphospecies that I PO'd...?
+       ✔ OH MY GOD i had filtered out all nodes with zone = south, host range, or no data. I'm an idiot. I will need to do everything above again (as of 3/5) with the new full nodes dataset (hopefully not that bad)
+       ✔ Ok this has been done twice now with all nodes and is as good as it's gonna get
+        
+ ✔ go through original node list (specieslistmaster) and create a forloop to make new interactions for those listed in the interaction columns
+ 
+  ✔ **finish code to make species specific interactions dataset from literature search data **
+      ✔ **don't forget to include justification code and make it match existing edgelist**
+      ✔ **include consumer_num, etc)**
+      
+ ✔ **finish code to make TAXONOMICALLY INFERRED interactions dataset from literature search data **
+
+ ✔ **QA/QC inferred interactions dataset** -- this ended up adding thousands of inferred interactions that were impossible to QC in a reasonable amount of time so I gave this up -- may later expand the web using genera (3/21/2024)
+ 
+ ✔ ONGOING: cross checking node list (working) and edge list and making sure both are ready for publication
+  - **specifically making sure every node at least has a trophic strategy, even if it's unknown**
+  - in **this markdown** I will be seeing how many of the nodes are not represented in the current edge list
+  - **might also use this markdown to code in some resources for generalist consumers**
+       
+ • create code to incorporate GLOBI data into edgelist
+  
+ • last step: use Dana's code to make concomitant predation dataset
+```{r setup and packages, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#install.packages("igraph") 
+#install.packages("network") 
+#install.packages("sna")
+#install.packages("ggraph")
+#install.packages("visNetwork")
+#install.packages("threejs")
+#install.packages("networkD3")
+#install.packages("ndtv")
+#install.packages("tidyverse")
+#install.packages("NetIndices")
+#install.packages("cheddar")
+#install.packages("worrms")
+#install.packages("taxize")
+#install.packages("googlesheets4")
+#install.packages("beepr")
+
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+library(worrms)
+library(taxize)
+library(janitor)
+library(googlesheets4)
+library(beepr)
+library(readxl)
+```
+ 
+```{r importing current edges, warning=FALSE}
+
+edges <- read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/edgelist_MASTER.xlsx")
+
+# current working node list:
+nodes <- read_csv()
+
+```
+ 
+ 

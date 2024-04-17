@@ -1,0 +1,1803 @@
+﻿INITIALS,consumerNum,consumerName,consumerCat,consumerStage,resourceNum,resourceName,resourceCat,resourceStage,interaction.type,confidence,justification,incl.code,link.ID,ref_num,localities,zone,pools_exposed_interstitial,MorrisHaderlie,epibiota_consumed,notes,#
+ZZ,678,cestode_1,3,3,557,Lophopanopeus leucomanus,,1,6,,1,6,,85,Rancho Marino,middle,pools,,,,1251
+ZZ,679,cestode_2,3,3,557,Lophopanopeus leucomanus,,1,6,,1,6,,85,Rancho Marino,middle,pools,,,,1250
+ZZ,677,ciliate_1,,1,513,Heptacarpus carinatus,,1,9,,1,6,,87,Rancho Marino,low,pools,,,,1249
+ZZ,700,copepod_1,,,549,Cancer antennarius,,1,7,,1,6,,DecaProj1,Mussel Shoals,low,pools,,,,1274
+ZZ,634,Doto kya,nudibranch,1,85,Obelia dichotoma,hydroid,1,3,,1,,,"LSM, PO1",,low,pools,n,,,727
+ZZ,681,metacercaria_1,,5,19,Gobeisox maeandricus,,1,6,,1,6,,86,Rancho Marino,low,pools,,,,1253
+ZZ,681,metacercaria_1,,5,19,Gobeisox maeandricus,,1,6,,1,6,,86,Rancho Marino,low,pools,,,,1254
+ZZ,681,metacercaria_1,,5,19,Gobeisox maeandricus,,1,6,,1,6,,86,Rancho Marino,low,pools,,,,1255
+ZZ,682,metacercaria_2,,5,529,Petrolisthes eriomerus,,1,6,,1,6,,84,Rancho Marino,middle,pools,,,,1269
+ZZ,695,metacercaria_4,,5,702,Crangon alaskensis,,1,6,,1,0,,DecaProj3,Hammond's Beach,middle,pools,,,,1276
+ZZ,696,metacercaria_5,,5,513,Heptacarpus carinatus,,1,6,,1,6,,DecaProj6,Miramar Beach,middle,pools,,,,1279
+ZZ,696,metacercaria_5,,5,566,Pachygrapsus crassipes,,1,6,,1,6,,DecaProj9,Shell Beach,all,pools,,,,1282
+ZZ,697,metacercaria_6,,5,515,Heptacarpus paludicola,,1,6,,1,6,,DecaProj8,Shell Beach,middle,pools,,,,1281
+ZZ,685,nematode_1,,1,524,Pagurus samuelis,,1,6,,1,6,,17,Ellwood Boulderfield (taken from box closest to the edge of the table),high,pools,,,,1262
+ZZ,686,nematode_2,,1,524,Pagurus samuelis,,1,6,,1,6,,18,VSFB,high,pools,,,,1263
+ZZ,687,nematode_3,,1,NA,Unknown shrimp,,1,6,,1,6,,21,Alegria Beach,mid,pools,,,,1271
+ZZ,688,nematode_4,,1,524,Pagurus samuelis,,1,6,,1,6,,23,VSFB,high,pools,,,,1264
+ZZ,689,nematode_5,,1,529,Petrolisthes eriomerus,,1,6,,1,6,,89,Rancho Marino,low,pools,,,,1270
+ZZ,690,nematode_6,,1,558,Paraxanthias taylori,,1,7,,1,6,,78,Cambria,high,pools,,,,1272
+ZZ,691,nematode_7,,1,557,Lophopanopeus leucomanus,,1,6,,1,6,,85,Rancho Marino,middle,pools,,,,1252
+ZZ,692,nematode_8,,1,529,Petrolisthes eriomerus,,1,6,,1,6,,84,Rancho Marino,middle,pools,,,,1268
+ZZ,701,nematode_9,,,549,Cancer antennarius,,1,6,,1,6,,DecaProj2,Mussel Shoals,low,pools,,,,1275
+ZZ,693,opecoelid_metacercaria_3,,5,549,Cancer antennarius,,1,6,,1,6,,DecaProj1,Hammond's Beach,low,pools,,,,1273
+ZZ,693,opecoelid_metacercaria_3,,5,513,Heptacarpus carinatus,,1,6,,1,6,,DecaProj4,Hammond's Beach,middle,pools,,,,1277
+ZZ,693,opecoelid_metacercaria_3,,5,513,Heptacarpus carinatus,,1,6,,1,6,,DecaProj5,Miramar Beach,middle,pools,,,,1278
+ZZ,693,opecoelid_metacercaria_3,,5,515,Heptacarpus paludicola,,1,6,,1,6,,DecaProj7,Arroyo Hondo,middle,pools,,,,1280
+ZZ,693,opecoelid_metacercaria_3,,,525,Pagurus hirsutiusculus,,1,6,,1,6,,DecaProj12,Miramar Beach,all,pools,,,,1285
+ZZ,693,opecoelid_metacercaria_3,,5,514,Heptacarpus sitchensis,,1,6,,1,6,,DecaProj21,unknown,low,pools,,,,1291
+ZZ,473,Peltogasterella gracilis,,1,525,Pagurus hirsutiusculus,,1,6,,1,1,,25,Alegria Beach,high,pools,,,,1259
+ZZ,473,Peltogasterella gracilis,,1,525,Pagurus hirsutiusculus,,1,6,,1,1,,75,Cambria,high,pools,,,,1260
+ZZ,473,Peltogasterella gracilis,,1,524,Pagurus samuelis,,1,6,,1,1,,35,Ellwood Boulderfield (taken from box closest to the edge of the table),high,pools,,,,1265
+ZZ,473,Peltogasterella gracilis,,1,524,Pagurus samuelis,,1,6,,1,1,,65,Cambria,high,pools,,,,1266
+ZZ,473,Peltogasterella gracilis,,1,524,Pagurus samuelis,,1,6,,1,1,,67,Cambria,high,pools,,,,1267
+ZZ,473,Peltogasterella gracilis,,1,525,Pagurus hirsutiusculus,,1,6,,1,1,,DecaProj13,Jalama,all,pools,,,,1286
+ZZ,473,Peltogasterella gracilis,,1,524,Pagurus samuelis,,1,6,,1,1,,DecaProj15,Ellwood Boulder Fields,all,pools,,,,1287
+ZZ,473,Peltogasterella gracilis,,1,524,Pagurus samuelis,,1,6,,1,1,,DecaProj17,Jalama,all,pools,,,,1289
+ZZ,680,polychaete_1,,1,527,Pagurus granosimanus,,1,9,,1,6,,28,VSFB,high,pools,,,,1257
+ZZ,680,polychaete_1,,3,527,Pagurus granosimanus,,1,9,,1,6,,28,VSFB,high,pools,,,,1258
+ZZ,683,Sphaeromyxa sp.,,1,19,Gobeisox maeandricus,,1,5,,1,6,,86,Rancho Marino,low,pools,,,,1256
+ZZ,698,trematode_1,,,525,Pagurus hirsutiusculus,,1,6,,1,6,,DecaProj11,Ellwood Boulder Fields,all,pools,,,,1284
+ZZ,699,trematode_2,,,524,Pagurus samuelis,,1,6,,1,6,,DecaProj16,Ellwood Boulder Fields,all,pools,,,,1288
+ZZ,699,trematode_2,,,524,Pagurus samuelis,,1,6,,1,6,,DecaProj18,Mussel Shoals,all,pools,,,,1290
+ZZ,684,trypanorhynch_1,,?,524,Pagurus samuelis,,1,6,,1,6,,7,Ellwood Boulderfield,high,pools,,,,1261
+ZZ,694,trypanorhynch_2,,4,525,Pagurus hirsutiusculus,,1,7,,1,6,,DecaProj10,Ellwood Boulder Fields,all,pools,,,,1283
+ZZ,694,trypanorhynch_2,,4,418,Octopus bimaculoides,,1,6,,1,6,,PO,Santa Barbara,low,pools,,,,1292
+EMH,NA,Arius platypogon,"batoid, ( ray)",1,7,Sygnathus californiensis,fish,1,1,,2,,,RIZ Lit Search: 149,"CA, USA",,,,,,504
+ZZ,328,Doriopsilla albopunctata,nudibranch,1,66,Cliona celata,sponge,1,3,,3,,,MAH,,,pools,y,,,1
+ZZ,306,Tylodina fungina,nudibranch,1,64,Aplysina fistularis,sponge,1,3,,3,,,MAH,,,pools,y,,,2
+ZZ,326,Diaulula sandiegensis,nudibranch,1,70,Haliclona sp. ,sponge,1,3,,3,,,MAH,,,pools,y,,,3
+ZZ,312,Cadlina luteomarginata,nudibranch,1,71,Higginsia sp.,sponge,1,3,,3,,,MAH,,,pools,y,,,4
+ZZ,319,Rostanga pulchra,nudibranch,1,77,Ophlitaspongia pennata,sponge,1,3,,3,,,MAH,,,pools,y,,,5
+ZZ,320,Aldisa sanguinea,nudibranch,1,77,Ophlitaspongia pennata,sponge,1,3,,3,,,MAH,,,pools,y,,,6
+ZZ,317,Hypselodoris californiensis,nudibranch,1,77,Ophlitaspongia pennata,sponge,1,3,,3,,,MAH,,,pools,y,,,7
+ZZ,88,Sertularia furcata,hydroid,1,607,Phyllospadix torreyi,sea grass,1,2,,3,,,MAH,,,pools,y,,,8
+ZZ,88,Sertularia furcata,hydroid,1,608,Phyllospadix scouleri,surfgrass,1,2,,3,,,MAH,,,pools,y,,,9
+ZZ,NA,Dendronotus subramosus,nudibranch,1,91,Aglaophenia struthionides,hydroid,1,2,,3,,,MAH,,,pools,y,,,10
+ZZ,358,Aeolidia loui ,nudibranch,1,102,Epiactis prolifera,anemone,1,1,,3,,,MAH,,,pools,y,,,11
+ZZ,143,Dermasterias imbricata,sea star,1,102,Epiactis prolifera,anemone,1,1,,3,,,MAH,,,pools,y,,,12
+ZZ,112,Imogine tripartitus,flatworm,1,467,Paraconcavus pacificus,Barnacle,1,1,,3,,,MAH,,,both,y,,,13
+ZZ,114,Notoplana acticola,flatworm,1,319,Rostanga pulchra,nudibranch,1,1,,3,,,MAH,,,both,y,,,14
+ZZ,114,Notoplana acticola,flatworm,1,199,Lottia digitalis,Limpet,1,1,,3,,,MAH,,,both,y,,,15
+ZZ,114,Notoplana acticola,flatworm,1,,Balanus sp.,Barnacle,SMALL??,1,,3,,,MAH,,,both,y,,,16
+EMH,2,Gibbonsia elegans,fish,1,475,Cirolana harfordi,isopod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,17
+EMH,2,Gibbonsia elegans,fish,1,493,Idotea urotoma,isopod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,reported as rectilinea,18
+EMH,2,Gibbonsia elegans,fish,1,,Pentidotea wosnesenskii,isopod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,19
+EMH,2,Gibbonsia elegans,fish,1,,Pentidotea resecata,isopod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,20
+EMH,2,Gibbonsia elegans,fish,1,,Spirontocaris picta,shrimp,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,21
+EMH,2,Gibbonsia elegans,fish,1,702,Crangon alaskensis,shrimp,1,1,,6,,,RIZ Lit Search: 7,Los Angeles,,,,,,22
+EMH,2,Gibbonsia elegans,fish,1,,Lophopanopeus frontalis,crab,1,1,,3,3,,RIZ Lit Search: 7,Los Angeles,,,,,"inclusion pending receipt of ILL request: A REVISION OF THE BRACHYURAN GENUS
+LOPHOPANOPEUS",23
+EMH,2,Gibbonsia elegans,fish,1,,Pagurus sp. ,hermit crab,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,24
+EMH,2,Gibbonsia elegans,fish,1,430,Platynereis bicanaliculata,polychaete,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,25
+EMH,2,Gibbonsia elegans,fish,1,609,Protohyale frequens,amphipod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,26
+EMH,2,Gibbonsia elegans,fish,1,190,Fissurella volcano,limpet,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,27
+EMH,2,Gibbonsia elegans,fish,1,736,Lottia conus,limpet,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,28
+EMH,2,Gibbonsia elegans,fish,1,,Barlecia bentleyi,,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,29
+EMH,1,Gibbonsia metzi ,fish,1,740,Eurystheus tenuicornis,amphipod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,30
+EMH,1,Gibbonsia metzi ,fish,1,609,Hyale frequens,amphipod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,31
+EMH,1,Gibbonsia metzi ,fish,1,501,Ampithoe plumulosa,amphipod,1,1,,6,,,RIZ Lit Search: 7,Los Angeles,,,,,,32
+EMH,1,Gibbonsia metzi ,fish,1,,Pentidotea rescata,isopod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,33
+EMH,1,Gibbonsia metzi ,fish,1,,Pentidotea aculeata,isopod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,34
+EMH,1,Gibbonsia metzi ,fish,1,493,Idotea urotoma,isopod,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,reported as rectilinea,35
+EMH,1,Gibbonsia metzi ,fish,1,515,Heptacarpus paludicola,shrimp,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,36
+EMH,1,Gibbonsia metzi ,fish,1,,Pagurus samuelis,hermit crab,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,37
+EMH,1,Gibbonsia metzi ,fish,1,,Mimulus foliatus,crab,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,38
+EMH,1,Gibbonsia metzi ,fish,1,540,Pugettia gracilis,crab,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,39
+EMH,1,Gibbonsia metzi ,fish,1,430,Platynereis bicanaliculata,polychaete,1,1,,3,,,RIZ Lit Search: 7,Los Angeles,,,,,,40
+EMH,2,Gibbonsia elegans,fish,1,,Sphaeromyxa gibbonsia,myxozoan,1,24,,3,,,RIZ Lit Search: 8,,,,,,,41
+EMH,2,Gibbonsia elegans,fish,1,763,Podocotyle gibbonsia,trematode,1,6,,3,,,RIZ Lit Search: 9,,,,,,,42
+EMH,1,Gibbonsia metzi ,fish,1,760,Sphaerospora sphaerula,myxozoan,1,24,,3,,,RIZ Lit Search: 8,,,,,,reported as Leptotheca,43
+EMH,143,Dermasterias imbricata,sea star,1,101,Anthopleura elegantissima,anemone,1,1,,3,,,RIZ Lit Search: 6,,,,,,,44
+EMH,358,Aeolidia loui ,nudibranch,1,101,Anthopleura elegantissima,anemone,1,1,,3,,,,,,,,,,45
+EMH,56,Anthopleura sola,anemone,1,40,Aplysia californica,sea hare,1,1,,3,,,RIZ Lit Search: 1,,,,,,,46
+EMH,99,Anthopleura xanthogrammica,anemone,1,40,Aplysia californica,sea hare,1,1,,3,,,RIZ Lit Search: 2,,,,,,,47
+ZZ,124,Paranemertes peregrina,nemertean,1,430,Platynereis bicanaliculata,,1,,,,,,,,, ,y,,,48
+EMH,4,Hypsoblennius gilberti,fish,1,NA,Colidoteu rostruta,isopod,1,1,,3,,,RIZ Lit Search: 10,,,,,,,49
+EMH,15,Clinocottus analis ,fish,1,NA,Colidoteu rostruta,isopod,1,1,,3,,,RIZ Lit Search: 10,,,,,,,50
+EMH,583,Amyloodinium ocellatum,diatom,1,3,Hypsoblennius gilberti ,fish,1,7,,3,,,RIZ Lit Search: 11,,,,,,,51
+EMH,4,Hypsoblennius gilberti,fish,1,3,Gibbonsia elegans,fish,1,9,,3,,,,,,,,,,52
+EMH,143,Dermasterias imbricata,sea star,1,109,Corynactis californica,anemone,1,1,,3,,,RIZ Lit Search: 14,,,,,,,53
+EMH,143,Dermasterias imbricata,sea star,1,101,Anthopleura elegantissima,anemone,1,1,,3,,,RIZ Lit Search: 14,,,,,,,54
+EMH,143,Dermasterias imbricata,sea star,1,NA,Urticina piscivora,anemone ,1,1,,3,,,RIZ Lit Search: 15,,,,,,,55
+EMH,143,Dermasterias imbricata,sea star,1,NA,Psolus chitonoides,sea cucumber,1,1,,3,5,,RIZ Lit Search: 16,,,,,,,56
+EMH,143,Dermasterias imbricata,sea star,1,146,Solaster dawsonii,sea star,1,9,,3,,,RIZ Lit Search: 17,,,,,,,57
+EMH,143,Dermasterias imbricata,sea star,1,157,Eupentacta quinquesemita,sea cucumber,1,1,,3,,,RIZ Lit Search: 18,,,,,,,58
+EMH,145,Patiria miniata,sea star,1,NA,Tubulipora spp. ,bryozoan,1?,1,,3,,,RIZ Lit Search: 20,,,,,,,59
+EMH,145,Patiria miniata,sea star,1,NA,Lytechinus anamesus,sea urchin,1,1,,3,,,RIZ Lit Search: 21,,,,,,,60
+EMH,145,Patiria miniata,sea star,1,NA,Phaeophyta algae,algae,1?,3,,3,,,RIZ Lit Search: 23,,,,,,,61
+EMH,145,Patiria miniata,sea star,1,NA,Chlorophyta algae,algae,1,3,,3,,,RIZ Lit Search: 23,,,,,,,62
+EMH,582,Orchitophyra stellarum,ciliate,1,144,Patiria miniata,sea star,1,4,,3,,,RIZ Lit Search: 24,,,,,,,63
+EMH,582,Orchitophyra stellarum,ciliate,1,150,Pisaster ochraceus,sea star,1,4,,3,,,RIZ Lit Search: 24/25/26/29/37,,,,,,,64
+EMH,150,Pisaster ochraceus,sea star,1,367,Mytilus californianus,bivalve,1,1,,3,,,RIZ Lit Search: 28,,,,,,,65
+EMH,582,Orchitophrya stellarum,ciliate,1,149,Leptasterias pusilla,sea star,1,1,,3,,,RIZ Lit Search: 29,,,,,,,66
+EMH,150,Pisaster ochraceus,sea star,1,149,Leptasterias hexactis,sea star,1,1,,3,,,,,,,,,,67
+EMH,150,Pisaster ochraceus,sea star,3,NA,Chaetoceros calcitrans,phytoplankton,1,1,,3,,,RIZ Lit Search: 30,,,,,,,68
+EMH,150,Pisaster ochraceus,sea star,3,739,Dunaliella tertiolecta,phtyoplankton,1,1,,3,,,RIZ Lit Search: 30,,,,,,,69
+EMH,150,Pisaster ochraceus,sea star,3,NA,Isochrysis galbana,phtyoplankton,1,1,,3,,,RIZ Lit Search: 30,,,,,,,70
+EMH,150,Pisaster ochraceus,sea star,1,464,Balanus glandula,barnacle,1,1,,3,,,RIZ Lit Search: 27,,,,,,,71
+EMH,150,Pisaster ochraceus,sea star,1,458,Tetraclita rubescens,barnacle,1,1,,3,,,RIZ Lit Search: 27,,,,,,,72
+EMH,150,Pisaster ochraceus,sea star,1,237,Tegula funebralis,snail,1,1,,3,,,RIZ Lit Search: 27,,,,,,,73
+EMH,150,Pisaster ochraceus,sea star,1,210,Lottia scabra,limpet,1,1,,3,,,RIZ Lit Search: 27,,,,,,,74
+EMH,150,Pisaster ochraceus,sea star,1,455,Pollicipes polymerus,barnacle,1,1,,3,,,RIZ Lit Search: 27,,,,,,,75
+EMH,150,Pisaster ochraceus,sea star,1,411,Mopalia muscosa,chiton,1,1,,3,,,RIZ Lit Search: 27,,,,,,,76
+EMH,150,Pisaster ochraceus,sea star,1,229,Haliotis cracherodi,snail,1,1,,3,,,RIZ Lit Search: 27,,,,,,,77
+EMH,150,Pisaster ochraceus,sea star,1,284,Nucella emarginata,snail,1,1,,3,,,RIZ Lit Search: 27,,,,,,,78
+EMH,150,Pisaster ochraceus,sea star,1,471,Balanus nubilis,barnacle,1,1,,3,,,RIZ Lit Search: 27,,,,,,,79
+EMH,150,Pisaster ochraceus,sea star,1,NA,Spirorbis sp. ,polychaete,1,1,,3,,,,,,,,,,80
+EMH,154,Pisaster brevispinus,sea star,1,NA,Tresus nuttallii,clam,1,1,,3,5,,RIZ Lit Search: 33,,,,,,,81
+EMH,150,Pisaster ochraceus,sea star,1,NA,Stellarchytrium dubum,ciliate,1,"parasite, unsure what kind",,3,,,RIZ Lit Search: 34,,,,,,,82
+EMH,150,Pisaster ochraceus,sea star,1,NA,Aplanochytrium blankum,ciliate,1,"parasite, unsure what kind",,3,,,RIZ Lit Search: 34,,,,,,,83
+EMH,150,Pisaster ochraceus,sea star,1,NA,Oblongichytrium porteri,ciliate,1,"parasite, unsure what kind",,3,,,RIZ Lit Search: 34,,,,,,,84
+EMH,147,Solaster dawsonii,sea star,1,150,Pisaster ochraceus,sea star,1,1,,3,,,RIZ Lit Search: 17,,,,,,,85
+EMH,147,Solaster dawsonii,sea star,1,153,Pisaster brevispinus,sea star,1,1,,3,,,RIZ Lit Search: 17,,,,,,,86
+EMH,147,Solaster dawsonii,sea star,1,NA,Mediaster aequalis,sea star,1,1,,3,,,RIZ Lit Search: 38,,,,,,,87
+EMH,147,Solaster dawsonii,sea star,1,NA,Crossaster papposus,sea star,1,1,,3,,,RIZ Lit Search: 38,,,,,,,88
+EMH,147,Solaster dawsonii,sea star,1,NA,Ptilosarcus gurneyi,sea pen,1,1,,3,5,,RIZ Lit Search: 38,,,,,,,89
+EMH,143,Dermasterias imbricata,sea star,1,NA,Ptilosarcus gurneyi,sea pen,1,1,,3,5,,RIZ Lit Search: 38,,,,,,,90
+EMH,147,Solaster dawsonii,sea star,1,160,Parastichopus californicus,sea cucumber,juvenile,1,,3,,,RIZ Lit Search: 39,,,,,,,91
+EMH,424,Arctonoe vittata,polychaete,1,146,Solaster dawsonii,sea star,1,9,,3,,,RIZ Lit Search: 41,,,,,,,92
+EMH,424,Arctonoe vittata,polychaete,1?,143,Dermasterias imbricata,sea star,1,9,,3,,,RIZ Lit Search: 41,,,,,,,93
+EMH,105,Tealia crassicornis,anemone,1,NA,Neptunea pribiloffensis,snail,2,10 or 22 ( not confirmed ),,3,,,RIZ Lit Search: 42,,,,,,,94
+EMH,584,Foettingeria actiniarum,ciliate,1,104,Urticina crassicornis,anemone,1,10,,3,,,RIZ Lit Search: 45,,,,,,,95
+EMH,6,Micrometrus minimus,fish,1,,Pentidotea aculeata,isopod,1,1,,3,,,RIZ Lit Search: 7,,,,,,,96
+EMH,6,Micrometrus minimus,fish,1,493,Idotea urotoma,isopod,1,1,,3,,,RIZ Lit Search: 7,,,,,,reported as rectilinea,97
+EMH,6,Micrometrus minimus,fish,1,NA,Allorchestes sp. ,amphipod,1,1,,3,,,RIZ Lit Search: 7,,,,,,,98
+EMH,6,Micrometrus minimus,fish,1,210,Lottia scabra,,1,1,,3,,,RIZ Lit Search: 7,,,,,,,99
+EMH,6,Micrometrus minimus,fish,1,,Barlecia bentleyi,,1,1,,3,,,RIZ Lit Search: 7,,,,,,,100
+EMH,6,Micrometrus minimus,fish,1,430,Platynereis bicanaliculata,polychaete,1,1,,3,,,RIZ Lit Search: 7,,,,,,,101
+EMH,6,Micrometrus minimus,fish,1,475,Cirolana harfordi,isopod,1,1,,3,,,RIZ Lit Search: 7,,,,,,,102
+EMH,6,Micrometrus minimus,fish,1,609,Hyale frequens,amphipod,1,1,,3,,,RIZ Lit Search: 7,,,,,,,103
+EMH,6,Micrometrus minimus,fish,1,,Marphysa sanguinea,polycheate,1,1,,3,,,RIZ Lit Search: 7,,,,,,,104
+EMH,586,Postmonorchis donacis,trematode,1,7,Micrometrus minimus,fish,1,6,,3,,,RIZ Lit Search: 48/49,,,,,,,105
+EMH,NA,Asterias vulgaris,sea star,1,160,Ophiopolus aculeata,brittle star,1,1,,3,,,RIZ Lit Search: 50,,,,,,,106
+EMH,NA,Strongylocentrotus droebachiensis,urchin,1,160,Ophiopolus aculeata,brittle star,1,1,,3,,,RIZ Lit Search: 50,,,,,,,107
+EMH,NA,Leptasterias polaris,sea star,1,160,Ophiopolus aculeata,brittle star,1,1,,3,,,RIZ Lit Search: 52,,,,,,,108
+EMH,NA,Eulima bilineata,snail,1,160,Ophiopolus aculeata,brittle star,1,"parasite, unsure which kind",,3,3,,RIZ Lit Search: 53/54,,,,,,only in atlantic,109
+EMH,NA,Homarus americanus,decapod,immature/juvinile,160,Ophiopolus aculeata,brittle star,1,1,,3,,,RIZ Lit Search: 55,,,,,,,110
+ZZ,585,Haplosporidium malacobdellae,sporozoan,1,127,Malacobdella grossa,nemertean,1,4,,3,,,"MAH, 57",,,,,,,111
+EMH,NA,Gadus morhua,fish,1,160,Ophiopolus aculeata,brittle star,1,1,,3,5,,RIZ Lit Search: 56,,,,,,,112
+ZZ,127,Malacobdella grossa,nemertean,1,NA,Macoma seta,,,,,,,,,,,,,,,113
+ZZ,127,Malacobdella grossa,nemertean,1,NA,Macoma nasuta,,,,,,,,,,,,,,,114
+ZZ,127,Malacobdella grossa,nemertean,1,NA,Siliqua patula,,,,,,,,,,,,,,,115
+ZZ,127,Malacobdella grossa,nemertean,1,NA,Tresus nuttallii,,,,,,5,,,,,,,,,116
+EMH,NA,Philichthys amphiurae,,1,161,Amphipholis squamata,brittle star,2,4?,,3,,,RIZ Lit search: 61,,,,,,,117
+EMH,NA,Carcinus maenas,decapod,1,161,Amphipholis squamata,brittle star,1,1,,3,5,,RIZ Lit search: 63,,,,,,,118
+EMH,NA,Ophiactis savignyi,brittle star,juvinile,161,Amphipholis squamata,brittle star,1,10,,3,,,RIZ Lit search: 64,,,,,,,119
+EMH,NA,Ophiothrix angulata,brittle star,juvinile,161,Amphipholis squamata,brittle star,1,10,,3,,,RIZ Lit search: 64,,,,,,,120
+EMH,168,Strongylocentrotus purpuratus,urchin,1,NA,Iridophycus flaccidum,algae,1,3,,3,,,RIZ lit search: 66,,,,,,,121
+EMH,168,Strongylocentrotus purpuratus,urchin,1,607,Phyllospadix torreyi,sea grass,1,3,,6,,,RIZ lit search: 66,,,,,,,122
+EMH,168,Strongylocentrotus purpuratus,urchin,1,NA,Caltiarthron tuberculosurn,coralline algae,1,3,,3,,,RIZ lit search: 67,,,,,,,123
+EMH,168,Strongylocentrotus purpuratus,urchin,1,NA,Caltiarthron cheilosporioides,coralline algae,1,3,,3,,,RIZ lit search: 67,,,,,,,124
+EMH,168,Strongylocentrotus purpuratus,urchin,1,NA,Bossietla californica ssp. schmittii,coralline algae,1,3,,3,,,RIZ lit search: 67,,,,,,,125
+EMH,NA,Pycnopodia helianthoides,sea star,1,168,Strongylocentrotus purpuratus,urchin,1,1,,3,5,,RIZ lit search: 67,,,,,,,126
+EMH,719,Enhydra lutris,marine mammal,1,168,Strongylocentrotus purpuratus,urchin,1,1,,3,,,RIZ lit search: 67,,,,,,,127
+EMH,143,Dermasterias imbricata,sea star,1,168,Strongylocentrotus purpuratus,urchin,1,1,,3,,,RIZ lit search: 68,,,,,,,128
+EMH,735,Panulirus interruptus,lobster,4,168,Strongylocentrotus purpuratus,urchin,1,1,,3,,,RIZ lit search: 65,,,,,,,129
+ZZ,335,Okenia rosaceae,nudibranch,1,134,Integripelta bilabiata,bryozoan,1,3,,3,,,MAH,,,,,,,130
+ZZ,NA,Holoplana californica,flatworm,1,136,Celleporariae brunnea,bryozoan,1,1,,3,,,MAH,,,both,,,,131
+ZZ,137,Crisulipora occidentalis,bryozoan,1,366,Mytilus californianus,bivalve,1,2,,3,,,MAH,,,exposed,y,,,132
+ZZ,137,Crisulipora occidentalis,bryozoan,1,367,Mytilus edulis,bivalve,1,2,,3,,,MAH,,,exposed,y,,,133
+ZZ,135,Costazia robertsoniae,bryozoan,1,587,Macrocystis pyrifera,algae,1,2,,3,,,MAH,,,pools,y,,,134
+ZZ,143,Dermasterias imbricata,sea star,1,101,Anthopleura elegantissima,anemone,1,1,,3,,,MAH,,,pools,y,,,135
+ZZ,143,Dermasterias imbricata,sea star,1,99,Anthopleura xanthogrammica,anemone,1,1,,3,,,MAH,,,pools,y,,,136
+ZZ,147,Astrometis sertulifera,sea star,1,163,Ophiothrix spiculata,brittle star,1,1,,3,,,MAH,,,pools,y,,,137
+ZZ,148,Leptasterias pusilla,sea star,1,764,Pseudodiala acuta,snail,1,1,,3,4,,MAH,,,pools,y,,,138
+ZZ,151,Pisaster giganteus,sea star,1,367,Mytilus edulis,bivalve,1,1,,3,,,MAH,,,pools,y,,,139
+ZZ,151,Pisaster giganteus,sea star,1,366,Mytilus californianus,bivalve,1,1,,3,,,MAH,,,pools,y,,,140
+ZZ,151,Pisaster giganteus,sea star,1,287,Kelletia kelletii,snail,1,1,,3,,,MAH,,,pools,y,,,141
+ZZ,151,Pisaster giganteus,sea star,1,368,Mytilisepta bifurcata,bivalve,1,1,,3,,,MAH,,,pools,y,,,142
+ZZ,151,Pisaster giganteus,sea star,1,284,Nucella emarginata,snail,1,1,,3,,,MAH,,,pools,y,,,143
+ZZ,151,Pisaster giganteus,sea star,1,282,Acanthina spirata,snail,1,1,,3,,,MAH,,,pools,y,,,144
+ZZ,151,Pisaster giganteus,sea star,1,237,Tegula funebralis,snail,1,1,,3,,,MAH,,,pools,y,,,145
+ZZ,151,Pisaster giganteus,sea star,1,409,Nuttallina californica,chiton,1,1,,3,,,MAH,,,pools,y,,,146
+ZZ,151,Pisaster giganteus,sea star,1,436,Phragmatopoma californica,polychaete,1,1,,3,,,MAH,,,pools,y,,,147
+ZZ,149,Leptasterias hexactis,sea star,1,156,Eupentacta quinquesemita,sea cucumber,1,1,,3,,,MAH,,,pools,y,,,148
+ZZ,588,Rhopalura ophiocomae,orthonectid,1,162,Amphipholus pugetana,brittle star,1,4,,3,,,MAH,,low,pools,y,,,149
+ZZ,168,Strongylocentrotus purpuratus,sea urchin,1,587,Macrocystis pyrifera,algae,1,1,,3,,,MAH,,low,pools,y,,,150
+EMH,15,Clinocottus analis ,fish,1,508,Betaeus harfordi,crab,1,1,,3,,,RIZ Lit Search: 7,"Los Angeles County, CA",,,,,,151
+EMH,15,Clinocottus analis ,fish,1,540,Pugettia gracilis,crab,1,1,,3,,,RIZ Lit Search: 8,"Los Angeles County, CA",,,,,,152
+EMH,15,Clinocottus analis ,fish,1,,Spirontocaris picta,crab,1,1,,3,,,RIZ Lit Search: 9,"Los Angeles County, CA",,,,,,153
+EMH,15,Clinocottus analis ,fish,1,,Pelotonia spp. ,algae,1,3,,3,,,RIZ Lit Search: 72,"San Mateo, CA.",,,,,,154
+EMH,15,Clinocottus analis ,fish,1,737,Ascarophis morronei,nematode,1,6,,3,,,RIZ Lit Search: 73,"Baja CA, Mexico",,,,,,155
+SML,NA,Deutella californica,Crustacean,1,85,Obelia dichotoma,jelly,,,,,,,,,,,,,,156
+EMH,15,Clinocottus analis ,fish,1,312,Cadlina luteomarginata,nudibranch,1,1,,3,,,RIZ Lit Search: 75,"Southern CA, ( La Jolla/San Diego/Point Loma)",,,,,,157
+EMH,15,Clinocottus analis ,fish,1,NA,Trichodina jadranica** new parasite!,ciliate,1,7,,3,,,RIZ Lit Search: 76,"Baja CA, Mexico ",,,,,,158
+EMH,16,Oligocottus maculosus,fish,1,NA,Artemia salina,shrimp,1,1,,3,5,,RIZ Lit Seach: 80,British Columbia,,,,,,159
+EMH,16,Oligocottus maculosus,fish,1,367,Mytilus edulis,bivalve,1,1,,3,,,RIZ Lit Seach: 81,British Columbia,,,,,,160
+ZZ,589,Syndesmis sp.,flatworm,1,168,Strongylocentrotus purpuratus,urchin,1,10,,3,,,MAH,all,low,pools,y,,,161
+ZZ,590,Syndisyrinx franciscanus,flatworm,1,168,Strongylocentrotus purpuratus,urchin,1,10,,3,,,MAH,all,low,pools,y,,,162
+ZZ,591,Flabesymbios commensalis,polychaete,1,168,Strongylocentrotus purpuratus,urchin,1,10,,3,,,MAH,all,low,pools,y,,,163
+ZZ,495,Colidotea rostrata,isopod,1,168,Strongylocentrotus purpuratus,urchin,1,10,,3,,,MAH,all,low,pools,y,,,164
+ZZ,145,Patiria miniata,sea star,1,170,Aplidium californicum,tunicate,1,1,,3,,,MAH,,middle,pools,y,,,165
+ZZ,143,Dermasterias imbricata,sea star,1,170,Aplidium californicum,tunicate,1,1,,3,,,MAH,,middle,pools,y,,,166
+ZZ,592,Pholeterides furtiva,copepod,1,170,Aplidium californicum,tunicate,1,6,,3,,,MAH,"Puget Sound, WA",middle,pools,y,,,167
+ZZ,503,Polycheria osborni,amphipod,1,170,Aplidium californicum,tunicate,1,9,,3,,,MAH,,middle,pools,y,,,168
+ZZ,130,Bugula neritina,bryozoan,1,170,Aplidium californicum,tunicate,1,9,,3,4,,81,Baja California,middle,pools,,,,169
+ZZ,357,Hermissenda crassicornis,nudibranch,1,171,Aplidium solidum,tunicate,1,1,,3,,,MAH,,middle,pools,y,,,170
+ZZ,145,Patiria miniata,sea star,1,178,Euherdmania claviformis,tunicate,1,1,,3,,,MAH,,low,pools,y,,,171
+ZZ,143,Dermasterias imbricata,sea star,1,179,Didemnum carnulentum,tunicate,1,1,,3,,,MAH,,middle,pools,y,,,172
+ZZ,265,Marsenina stearnsii,snail,1,180,Trididemnum opacum,tunicate,1,27,,3,,,MAH,,low,pools,y,,,173
+ZZ,143,Dermasterias imbricata,sea star,1,183,Archidistoma psammion,tunicate,1,1,,3,,,MAH,,low,pools,y,,,174
+ZZ,145,Patiria miniata,sea star,1,183,Archidistoma psammion,tunicate,1,1,,3,,,MAH,,low,pools,y,,,175
+ZZ,393,Mytilimeria nuttalli,bivalve,1,183,Archidistoma psammion,tunicate,1,2,,3,,,MAH,,low,pools,y,,,176
+ZZ,503,Polycheria osborni,amphipod,1,183,Archidistoma psammion,tunicate,1,2,,3,,,MAH,,,,,,,177
+ZZ,593,Haplostoma minutum,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",,,,y,,,178
+ZZ,594,Haplosaccus elongatus,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",,,,y,,,179
+ZZ,595,Haplostomella dubia,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",,,,y,,,180
+ZZ,596,Haplostomella distincta,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",,,,y,,,181
+ZZ,597,Haplostomella oceanica,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",,,,y,,,182
+ZZ,503,Polycheria osborni,amphipod,1,174,Polyclinum planum,tunicate,1,2,,3,,,MAH,,very low,pools,y,,,183
+ZZ,503,Polycheria osborni,amphipod,1,176,Ritterella pulchra,tunicate,1,2,,3,,,MAH,,middle,,y,,,184
+ZZ,393,Mytilimeria nuttalli,bivalve,1,185,Cystodytes lobatus,tunicate,1,2,,3,,,MAH,,very low,,y,,,185
+ZZ,503,Polycheria osborni,amphipod,1,185,Cystodytes lobatus,tunicate,1,2,,3,,,MAH,,very low,,y,,,186
+ZZ,503,Polycheria osborni,amphipod,1,186,Clavelina huntsmani,tunicate,1,2,,3,,,MAH,,low,,,,,187
+ZZ,503,Polycheria osborni,amphipod,1,187,Distaplia occidentalis,tunicate,1,2,,3,,,MAH,,low,,,,,188
+ZZ,81,Bythotiara huntsmani,hydroid,5,189,Ascidia ceratodes,tunicate,1,9,,3,4,,"MAH, 83",British Columbia,middle,pools,y,,,189
+ZZ,150,Pisaster ochraceus,sea star,1,190,Fissurella volcano,limpet,1,1,,3,,,MAH,,low,pools,y,,,190
+ZZ,150,Pisaster ochraceus,sea star,1,191,Fissurella volcano crucifera,limpet,1,1,,3,,,MAH,,low,pools,y,,,191
+ZZ,150,Pisaster ochraceus,sea star,1,195,Diodora aspera,limpet,1,1,,3,,,MAH,,low,both,y,,,192
+ZZ,151,Pisaster giganteus,sea star,1,195,Diodora aspera,limpet,1,1,,3,,,MAH,,low,both,y,,,193
+ZZ,148,Leptasterias pusilla,sea star,1,195,Diodora aspera,limpet,1,1,,3,,,MAH,,all,pools,y,,,194
+ZZ,149,Leptasterias hexactis,sea star,1,195,Diodora aspera,limpet,1,1,,3,,,MAH,,middle,both,y,,,195
+ZZ,60,Orthasterias koehleri,sea star,1,195,Diodora aspera,limpet,1,1,,3,,,MAH,,very low,both,y,,,196
+ZZ,424,Arctonoe vittata,polychaete,1,195,Diodora aspera,limpet,1,9,,3,,,MAH,,low,both,y,,,197
+ZZ,197,Lottia asmi,snail,1,237,Tegula funebralis,snail,1,2,,3,,,MAH,,middle,both,y,,,198
+ZZ,598,Pharcidia balani,fungus,1,199,Lottia digitalis,limpet,1,5,,3,,,MAH,,high,exposed,y,,,199
+ZZ,599,Apohyale grandicornis,amphipod,2,199,Lottia digitalis,limpet,1,9,,3,,,"100, MAH",,high,exposed,y,,,200
+ZZ,566,Pachygrapsus crassipes,crab,1,199,Lottia digitalis,limpet,1,1,,3,,,MAH,,high,exposed,y,,,201
+ZZ,599,Apohyale grandicornis,amphipod,2,203,Lottia limatula,limpet,1,9,,3,,,"100, MAH",Central CA,middle,exposed,y,,,202
+ZZ,599,Apohyale grandicornis,amphipod,2,208,Lottia pelta,limpet,1,9,,3,,,"100, MAH",Central CA,middle,exposed,y,,,203
+ZZ,150,Pisaster ochraceus,sea star,1,208,Lottia pelta,limpet,1,1,,3,,,MAH,,middle,exposed,y,,,204
+ZZ,151,Pisaster giganteus,sea star,1,208,Lottia pelta,limpet,1,1,,3,,,MAH,,middle,exposed,y,,,205
+ZZ,720,Evasterias troschelli,sea star,1,208,Lottia pelta,limpet,1,1,,3,3,,MAH,,middle,exposed,y,,,206
+ZZ,149,Leptasterias hexactis,sea star,1,208,Lottia pelta,limpet,1,1,,3,,,MAH,,middle,exposed,y,,,207
+ZZ,148,Leptasterias pusilla,sea star,1,208,Lottia pelta,limpet,1,1,,3,,,MAH,,middle,exposed,y,,,208
+ZZ,599,Apohyale grandicornis,amphipod,2,210,Lottia scabra,limpet,1,9,,3,,,"100, MAH",Central CA,middle,exposed,y,,,209
+ZZ,599,Apohyale grandicornis,amphipod,2,215,Lottia scutum,limpet,1,9,,3,,,"100, MAH",Central CA,middle,exposed,y,,,210
+ZZ,599,Apohyale grandicornis,amphipod,2,201,Lottia gigantea,limpet,1,9,,3,,,"100, MAH",Central CA,middle,exposed,y,,,211
+ZZ,599,Apohyale grandicornis,amphipod,2,601,Ulva sp.,algae,1,1,,3,,,"100, MAH",,middle,exposed,y,,,212
+ZZ,599,Apohyale grandicornis,amphipod,1,601,Ulva sp.,algae,1,1,,3,,,"100, MAH",,middle,pools,n,,,213
+SML,722,Haplostoma albicatum,copepod,1,187,Distaplia occidentalis,tunicate,1,2,,3,,,"82, MAH","WA, British Columbia",Intertidal and sublittoral (San Juan),,,,,214
+SML,593,Haplostoma minutum,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,215
+SML,724,Haplostoma dentatum,copepod,1,185,Cystodytes lobatus,tunicate,1,2,,3,,,"82, MAH",WA,,,,,(female only),216
+SML,726,Haplostoma setiferum,copepod,1,,Eudistoma ritteri,tunicate,1,2,,3,,,"82, MAH","WA, British Columbia",,,,,,217
+SML,723,Haplostoma ambiguum ,copepod,1,NA,Didemnum albidum,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,218
+SML,725,Haplostoma elegans,copepod,1,NA,Amaroucium constellatum ,tunicate,1,2,,3,5,,"82, MAH",WA,,,,,,219
+SML,725,Haplostoma elegans,copepod,1,NA,Amaroucium propinquum,tunicate,1,2,,3,5,,"82, MAH",WA,,,,,,220
+SML,728,Haplostomides bellus,copepod,1,177,Ritterella aequalisiphonis,tunicate,1,2,,3,,,"82, MAH",British Columbia,,,,, (female only); reported as Sigillinaria aequalisiphonis,221
+SML,729,Haplostomides luteolus,copepod,1,NA,Amaroucium glabrum,tunicate,1,2,,3,5,,"82, MAH",British Columbia,,,,, (female only),222
+SML,594,Haplosaccus elongatus,copepod,1,NA,Amaroucium glabrum,tunicate,1,2,,3,5,,"82, MAH",British Columbia,,,,, (female only),223
+SML,594,Haplosaccus elongatus,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",WA,,,,,(female only),224
+SML,595,Haplostomella dubia,copepod,1,NA,Amaroucium glabrum,tunicate,1,2,,3,5,,"82, MAH",British Columbia,,,,,,225
+SML,595,Haplostomella dubia,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,226
+SML,596,Haplostomella distincta,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,227
+SML,596,Haplostomella distincta,copepod,1,NA,Amaroucium glabrum,tunicate,1,2,,3,5,,"82, MAH",British Columbia,,,,,,228
+SML,597,Haplostomella oceanica,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,229
+SML,597,Haplostomella oceanica,copepod,1,,Eudistoma ritteri ,tunicate,1,2,,3,,,"82, MAH","WA, British Columbia",,,,,,230
+SML,727,Haplostomella reducta,copepod,1,187,Distaplia occidentalis,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,231
+SML,718,Botryllophilus sp.,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,232
+SML,718,Botryllophilus sp.,copepod,1,,Amaroucium constellatum,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,233
+SML,718,Botryllophilus sp.,copepod,1,NA,Amaroucium propinquum,tunicate,1,2,,3,5,,"82, MAH",WA,,,,,,234
+SML,718,Botryllophilus sp.,copepod,1,,Eudistoma ritteri,tunicate,1,2,,3,,,"82, MAH","WA, British Columbia",,,,,,235
+SML,718,Botryllophilus sp.,copepod,1,185,Cystodytes lobatus,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,236
+SML,592,Pholeterides furtiva,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,,"82, MAH",WA,,,,,,237
+SML,592,Pholeterides furtiva,copepod,1,NA,Amaroucium constellatum,tunicate,1,2,,3,5,,"82, MAH",WA,,,,,,238
+EMH,715,Gyrodactylus maculosi,monogene,1,16,Oligocottus maculosus,fish,1,7,,3,,,RIZ Lit Search: 84,British Columbia,,,,,,239
+EMH,,Pseudodelphis oligocotti,nematode,1,16,Oligocottus maculosus,fish,1,6,,3,,,RIZ Lit Search: 85,British Columbia,,,,,,240
+EMH,721,Haemobaphes intermedius,copepod,1,16,Oligocottus maculosus,fish,1,7,,3,,,RIZ Lit Search: 86,Northwest Atlantic and Northeast Pacific,,,,,,241
+EMH,717,Ardea herodias,shorebird,1,16,Oligocottus maculosus,fish,1,1,,3,,,RIZ Lit Seach: 87,,,,,,,242
+EMH,16,Oligocottus maculosus,fish,1,NA,Parophyrus vetulus,fish,1,1,,3,,,RIZ Lit Seach: 87,,,,,,,243
+EMH,18,Heterostichus rostratus,fish,4,NA,Brachionus plicatilis,rotifer,1,1,,3,,,RIZ Lit Search: 90,"Santa Catalina Island, USA",,,,,,244
+EMH,18,Heterostichus rostratus,fish,4,NA,Artemia salina,shrimp,1,1,,3,5,,RIZ Lit Search: 91,"Santa Catalina Island, USA",,,,,,245
+EMH,18,Heterostichus rostratus,fish,4,NA,Acartia sp.,copepod,1,1,,3,,,RIZ Lit Search: 92,"Santa Catalina Island, USA",,,,,,246
+EMH,18,Heterostichus rostratus,fish,1,655,Gelidium sp.,algae,1,10,,3,,,RIZ Lit Search: 90,"Santa Catalina Island, USA",,,,,reported as Gelidium nudifrons but can't find that anywhere,247
+EMH,18,Heterostichus rostratus,fish,1,517,Hippolyte californiensis,shrimp,1,1,,3,,,RIZ Lit Search: 92,"Southern CA, USA",,,,,,248
+EMH,2,Gibbonsia elegans,fish,1,18,Heterostichus rostratus,fish,1,1,,3,,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,249
+EMH,12,girella nigricans,fish,1,18,Heterostichus rostratus,fish,1,1,,3,,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,250
+EMH,NA,Semicossyphus pulcher,fish,1,18,Heterostichus rostratus,fish,1,1,,3,5,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,251
+EMH,NA,oxyjulis californica,fish,1,18,Heterostichus rostratus,fish,1,1,,3,,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,252
+EMH,NA,Halichoeres semisinctus,fish,1,18,Heterostichus rostratus,fish,1,1,,3,,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,253
+EMH,NA,Rhacochilus toxotes,fish,1,18,Heterostichus rostratus,fish,1,1,,3,5,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,254
+EMH,NA,Hypsopops rubicundus,fish,1,18,Heterostichus rostratus,fish,1,1,,3,,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,255
+EMH,18,Heterostichus rostratus,fish,1,765,Pteroclaudia capillacea,algae,1,10,,3,,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,256
+EMH,18,Heterostichus rostratus,fish,1,NA,Cystoseira neglecta,algae,1,10,,3,,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,257
+EMH,18,Heterostichus rostratus,fish,1,649,Eisenia arborea,algae,1,10,,3,,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,258
+EMH,18,Heterostichus rostratus,fish,1,NA,Sargassum muticum,algae,1,10,,3,5,,RIZ Lit Search: 95,"Santa Catalina Island, USA",,,,,,259
+EMH,734,Lepeophtheirus schaadti,copepod,1,18,Heterostichus rostratus,fish,1,6,,3,,,RIZ Lit Search: 96,USA,,,,,,260
+EMH,730,Heptacyclus cabrilloi,leech,1,18,Heterostichus rostratus,fish,1,6,,3,,,RIZ Lit Search: 98,USA,,,,,,261
+EMH,733,Lepeophtheirus parviventris,copepod,1,18,Heterostichus rostratus,fish,1,6,,3,,,RIZ Lit Search: 99,"California, USA",,,,,,262
+ZZ,150,Pisaster ochraceus,sea star,1,203,Lottia limatula,limpet,1,1,,3,,,MAH,,middle,exposed,y,,,263
+ZZ,566,Pachygrapsus crassipes,crab,1,203,Lottia limatula,limpet,1,1,,3,,,MAH,,middle,exposed,y,,,264
+EMH,9,Triakis semifasciata,fish,1,NA,Hemigrapsus oregonensis,crab,1,1,,3,,,RIZ Lit Search: 101,"CA, USA",,,,,,265
+EMH,9,Triakis semifasciata,fish,1,NA,Urechis caupo,echiurid,1,1,,3,5,,RIZ Lit Search: 101,"CA, USA",,,,,,266
+EMH,9,Triakis semifasciata,fish,1,14,Leptocottus armatus,fish,1,1,,3,,,RIZ Lit Search: 101,"CA, USA",,,,,,267
+EMH,9,Triakis semifasciata,fish,1,,Cancer spp,crab,1,1,,3,,,RIZ Lit Search: 101,"CA, USA",,,,,,268
+EMH,9,Triakis semifasciata,fish,1,562,Cancer gracilis,crab,1,1,,3,,,RIZ Lit Search: 101,"CA, USA",,,,,,269
+EMH,9,Triakis semifasciata,fish,1,NA,Tresus nuttallii,bivalve,1,1,,3,5,,RIZ Lit Search: 101,"CA, USA",,,,,,270
+EMH,9,Triakis semifasciata,fish,1,NA,Saxidomus nuttalli,bivalve,1,1,,3,5,,RIZ Lit Search: 101,"CA, USA",,,,,,271
+EMH,9,Triakis semifasciata,fish,1,,Nereis sp.,polychaete,1,1,,3,,,RIZ Lit Search: 101,"CA, USA",,,,,,272
+EMH,9,Triakis semifasciata,fish,1,601,Ulva sp.,algae,1,1,,3,,,RIZ Lit Search: 101,"CA, USA",,,,,,273
+EMH,9,Triakis semifasciata,fish,1,,Zostera marina,sea grass,1,1,,3,,,RIZ Lit Search: 101,"CA, USA",,,,,,274
+EMH,9,Triakis semifasciata,fish,1,8,Atherinops affinis,fish,1,1,,3,,,RIZ Lit Search: 101,"CA, USA",,,,,,275
+EMH,9,Triakis semifasciata,fish,1,NA,Cymatogaster aggregata,fish,1,1,,3,,,RIZ Lit Search: 101,"CA, USA",,,,,,276
+EMH,9,Triakis semifasciata,fish,1,NA,Engraulis mordax,fish,1,1,,3,5,,RIZ Lit Search: 101,"CA, USA",,,,,,277
+ZZ,150,Pisaster ochraceus,sea star,1,210,Lottia scabra,limpet,1,1,,3,,,MAH,,high,exposed,y,,,278
+ZZ,599,Apohyale grandicornis,amphipod,2,215,Lottia scabra,limpet,1,9,,3,,,"100, MAH",Central CA,middle,exposed,y,,,279
+ZZ,212,Lottia triangularis,limpet,1,236,Tegula brunnea,snail,1,2,,3,,,MAH,,,,,,,280
+ZZ,213,Notoacmea inessa,limpet,1,617,Egregia menziesii,brown algae,1,3,,3,,,MAH,,low,pools,y,,,281
+ZZ,214,Notoacmea paleacea,limpet,1,607,Phyllospadix torreyi,sea grass,1,3,,3,,,MAH,,low,pools,y,,,282
+ZZ,214,Notoacmea paleacea,limpet,1,608,Phyllospadix scouleri,sea grass,1,3,,3,,,MAH,,low,pools,y,,,283
+ZZ,566,Pachygrapsus crassipes,crab,1,215,Lottia scutum,limpet,1,1,,3,,,MAH,,middle,both,y,,,284
+ZZ,150,Pisaster ochraceus,sea star,1,215,Lottia scutum,limpet,1,1,,3,,,MAH,,middle,both,y,,,285
+ZZ,151,Pisaster giganteus,sea star,1,215,Lottia scutum,limpet,1,1,,3,,,MAH,,middle,both,y,,,286
+ZZ,149,Leptasterias hexactis,sea star,1,215,Lottia scutum,limpet,1,1,,3,,,MAH,,middle,both,y,,,287
+ZZ,148,Leptasterias pusilla,sea star,1,215,Lottia scutum,limpet,1,1,,3,,,MAH,,middle,both,y,,,288
+ZZ,720,Evasterias troschelli,sea star,1,215,Lottia scutum,limpet,1,1,,3,3,,MAH,,middle,both,y,,,289
+ZZ,60,Orthasterias koehleri,sea star,1,215,Lottia scutum,limpet,1,1,,3,,,MAH,,middle,both,y,,,290
+ZZ,601,Ulva sp. ,algae,1,215,Lottia scutum,limpet,1,2,,3,,,MAH,,middle,both,y,,,291
+ZZ,618,Pygodelphys aquilonaris,copepod,1,220,Pyura haustor,tunicate,1,9,,3,3,,"MAH, 105",WA Salish Sea,low,pools,y,,,292
+ZZ,618,Pygodelphys aquilonaris,copepod,1,222,Boltenia villosa,tunicate,1,9,,3,3,,"MAH, 105",WA Salish Sea,low,pools,y,,,293
+ZZ,618,Pygodelphys aquilonaris,copepod,1,217,Styela montereyensis,tunicate,1,9,,3,3,,MAH,WA Coast,low,pools,y,,branchial sacs,294
+ZZ,619,Trichophyra salparum,ciliate,1,220,Pyura haustor,tunicate,1,9,,3,3,,"MAH, 102","San Juan Archipelago, WA and Oregon Coast",low,pools,y,,,295
+ZZ,620,Parahypocoma rhamphisokarya,ciliate,1,220,Pyura haustor,tunicate,1,9,,3,3,,"MAH, 102","San Juan Archipelago, WA and Oregon Coast",low,pools,y,,,296
+ZZ,621,Euplotastpis cionaecola,ciliate,1,220,Pyura haustor,tunicate,1,9,,3,3,,"MAH, 102","San Juan Archipelago, WA and Oregon Coast",low,pools,y,,,297
+ZZ,620,Parahypocoma rhamphisokarya,ciliate,1,222,Boltenia villosa,tunicate,1,9,,3,3,,"MAH, 102","San Juan Archipelago, WA and Oregon Coast",low,pools,y,,,298
+ZZ,619,Trichophyra salparum,ciliate,1,222,Boltenia villosa,tunicate,1,9,,3,3,,"MAH, 102","San Juan Archipelago, WA and Oregon Coast",low,pools,y,,,299
+ZZ,143,Dermasterias imbricata,sea star,1,222,Boltenia villosa,tunicate,1,1,,3,3,,MAH,,low,pools,y,,,300
+ZZ,60,Orthasterias koehleri,sea star,1,222,Boltenia villosa,tunicate,1,1,,3,3,,MAH,,low,pools,y,,,301
+ZZ,NA,Doropygus fernaldi,copepod,1,222,Boltenia villosa,tunicate,1,9,,3,3,,"MAH, 105",WA,low,pools,y,,,302
+ZZ,NA,Scolecodes huntsmani,copepod,1,222,Boltenia villosa,tunicate,1,6,,3,3,,"MAH, 105, 106",WA,low,pools,y,,,303
+ZZ,NA,Doropygus fernaldi,copepod,1,223,Halocynthia hilgendorfi igaboja,tunicate,1,9,,3,3,,"MAH, 105",WA,low,pools,y,,,304
+ZZ,66,Cliona celata,sponge,1,225,Haliotis rufescens,snail,1,28,,3,,,MAH,,low,pools,y,,,305
+ZZ,388,Penitella conradi,bivalve,1,225,Haliotis rufescens,snail,1,28,,3,,,MAH,,low,pools,y,,,306
+ZZ,66,Cliona celata,sponge,1,225,Haliotis rufescens,snail,1,28,,3,,,MAH,,low,pools,y,,,307
+ZZ,388,Penitella conradi,bivalve,1,225,Haliotis rufescens,snail,1,28,,3,,,MAH,,low,pools,y,,,308
+ZZ,388,Penitella conradi,bivalve,1,229,Haliotis cracherodi,snail,1,28,,3,,,MAH,,low,pools,y,,,309
+ZZ,66,Cliona celata,sponge,1,229,Haliotis cracherodi,snail,1,28,,3,,,MAH,,low,pools,y,,,310
+ZZ,508,Betaeus harfordi,shrimp,1,229,Haliotis cracherodi,snail,1,9,,3,3,,"MAH, 107",San Pedro,low,both,y,,,311
+ZZ,230,Calliostoma annulatum,snail,1,658,Membranipora sp.,bryozoan,1,1,,3,,,MAH,,,,,,,312
+ZZ,230,Calliostoma annulatum,snail,1,623,Celleporella sp.,bryozoan,1,1,,3,,,MAH,,,,,,,313
+ZZ,230,Calliostoma annulatum,snail,1,109,Corynactis californica,anemone,1,1,,3,,,MAH,,,,,,,314
+ZZ,230,Calliostoma annulatum,snail,1,85,Obelia dichotoma,hydroid,1,1,,3,,,MAH,,,,,,,315
+ZZ,230,Calliostoma annulatum,snail,1,86,Obelia bidentata,hydroid,1,1,,3,,,MAH,,,,,,,316
+ZZ,230,Calliostoma annulatum,snail,1,87,Obelia geniculata,hydroid,1,1,,3,,,MAH,,,,,,,317
+ZZ,150,Pisaster ochraceus,sea star,1,232,Calliostoma ligatum,snail,1,1,,3,,,MAH,,low,pools,y,,,318
+ZZ,348,Dirona albolineata,nudibranch,1,234,Margarites pupillus,snail,<7mm,1,,3,3,,"MAH, 108","Friday Harbor, WA",low,pools,y,,,319
+ZZ,235,Norrisia norrisi,snail,1,587,Macrocystis pyrifera,brown algae,1,3,,3,,,MAH,,low,both,y,,,320
+ZZ,235,Norrisia norrisi,snail,1,617,Egregia menziesii,brown algae,1,3,,3,,,MAH,,low,both,y,,,321
+ZZ,235,Norrisia norrisi,snail,1,624,Laminaria sp.,algae,1,3,,3,,,MAH,,low,both,y,,,322
+ZZ,150,Pisaster ochraceus,sea star,1,236,Tegula brunnea,snail,1,1,,3,,,MAH,,low,both,y,,,323
+ZZ,549,Cancer antennarius,true crab,1,236,Tegula brunnea,snail,1,1,,3,,,MAH,,low,both,y,,,324
+ZZ,719,Enhydra lutris,mammal,1,236,Tegula brunnea,snail,1,1,,3,,,MAH,,low,both,y,,,325
+ZZ,150,Pisaster ochraceus,sea star,1,237,Tegula funebralis,snail,1,1,,3,,,MAH,,middle,both,y,,,326
+ZZ,549,Cancer antennarius,true crab,1,237,Tegula funebralis,snail,1,1,,3,,,MAH,,middle,both,y,,,327
+ZZ,719,Enhydra lutris,mammal,1,237,Tegula funebralis,snail,1,1,,3,,,MAH,,middle,both,y,,,328
+ZZ,197,Lottia asmi,limpet,1,237,Tegula funebralis,snail,1,10,,3,,,MAH,,high,both,y,,,329
+ZZ,208,Lottia pelta,limpet,1,237,Tegula funebralis,snail,1,10,,3,,,MAH,,high,both,y,,,330
+ZZ,199,Lottia digitalis,limpet,1,237,Tegula funebralis,snail,1,10,,3,,,MAH,,high,both,y,,,331
+ZZ,205,Lottia strigatella,limpet,4,237,Tegula funebralis,snail,1,10,,7,,,Jessica Bean,,high,both,y,,,332
+ZZ,203,Lottia limatula,limpet,1,237,Tegula funebralis,snail,1,10,,3,,,MAH,,high,both,y,,,333
+ZZ,258,Crepidula adunca,snail,1,237,Tegula funebralis,snail,1,10,,3,,,MAH,,high,both,y,,,334
+ZZ,261,Crepidula perforans,snail,1,237,Tegula funebralis,snail,1,10,,3,,,MAH,,high,both,y,,,335
+ZZ,280,Acanthina paucilirata,snail,1,247,Littorina planaxis,snail,1,1,,3,,,MAH,,high,exposed,y,,,336
+ZZ,281,Acanthina punctulata,snail,1,247,Littorina planaxis,snail,1,1,,3,,,MAH,,high,exposed,y,,,337
+ZZ,282,Acanthina spirata,snail,1,247,Littorina planaxis,snail,1,1,,3,,,MAH,,high,exposed,y,,,338
+ZZ,281,Acanthina punctulata,snail,1,248,Littorina scutulata,snail,1,1,,3,,,MAH,,middle,pools,y,,,339
+ZZ,282,Acanthina spirata,snail,1,248,Littorina scutulata,snail,1,1,,3,,,MAH,,middle,pools,y,,,340
+ZZ,149,Leptasterias hexactis,sea star,1,248,Littorina scutulata,snail,1,1,,3,,,MAH,,middle,pools,y,,,341
+ZZ,249,Vitrinella oldroydi,snail,1,401,Stenoplax heathiana,chiton,1,9,,3,,,MAH,,middle,exposed,y,,,342
+ZZ,249,Vitrinella oldroydi,snail,1,403,Stenoplax conspicua,chiton,1,9,,3,,,MAH,,middle,exposed,y,,,343
+ZZ,151,Pisaster giganteus,sea star,1,250,Thylacodes squamigerous,snail,1,1,,3,,,MAH,"Mussel Point, Monterey, CA",low,exposed,y,,,344
+ZZ,272,Ceratostoma foliatum,snail,1,250,Thylacodes squamigerous,snail,1,1,,3,3,,MAH,Southern CA,low,exposed,y,,,345
+ZZ,272,Ceratostoma foliatum,snail,1,464,Balanus glandula,barnacle,1,1,,3,2,,MAH,Washington,low,exposed,y,,,346
+ZZ,272,Ceratostoma foliatum,snail,1,462,Semibalanus cariosus,barnacle,1,1,,3,2,,MAH,Washington,low,exposed,y,,,347
+ZZ,272,Ceratostoma foliatum,snail,1,371,Pododesmus cepio,bivalve,1,1,,3,2,,MAH,Washington,low,exposed,y,,,348
+ZZ,272,Ceratostoma foliatum,snail,1,390,Penitella penita,bivalve,1,1,,3,2,,MAH,Washington,low,exposed,y,,,349
+ZZ,272,Ceratostoma foliatum,snail,1,363,Adula californiensis,bivalve,1,1,,3,2,,127,"Boiler Bay, OR",low,exposed,y,,interaction relies on pholad holes,350
+ZZ,272,Ceratostoma foliatum,snail,1,366,Mytilus californianus,bivalve,1,1,,3,2,,127,"Boiler Bay, OR",low,exposed,y,,interaction relies on pholad holes,351
+ZZ,272,Ceratostoma foliatum,snail,1,384,Hiatella arctica,bivalve,1,1,,3,2,,127,"Boiler Bay, OR",low,exposed,y,,interaction relies on pholad holes,352
+ZZ,272,Ceratostoma foliatum,snail,1,NA,Protothaca staminea,bivalve,1,1,,3,2,,127,"Boiler Bay, OR",low,exposed,y,,interaction relies on pholad holes,353
+ZZ,625,Pteropurpura festiva,snail,1,250,Thylacodes squamigerous,snail,1,1,,3,3,,MAH,Southern CA,low,exposed,y,,,354
+ZZ,274,Pteropurpura trialata,snail,1,250,Thylacodes squamigerous,snail,1,1,,3,3,,MAH,Southern CA,all,exposed,y,,,355
+ZZ,565,Opisthopus transversus,true crab,1,250,Thylacodes squamigerous,snail,1,9,,3,3,,MAH,"Malibu, NOT Monterey Bay",low,exposed,y,,,356
+ZZ,NA,TREMATODE METACERCARIAE,trematode,5,250,Thylacodes squamigerous,snail,1,4,,3,,,"MAH, 110",,all,exposed,y,,,357
+ZZ,151,Pisaster giganteus,sea star,1,251,Petaloconchus montereyensis,snail,1,1,,3,,,MAH,"Mussel Point, Monterey, CA",low,exposed,y,,,358
+ZZ,NA,TREMATODE METACERCARIAE,trematode,5,251,Petaloconchus montereyensis,snail,,4,,3,,,"MAH, 110",,all,exposed,,,,359
+ZZ,435,Dodecaceria fewkesi,polychaete,1,251,Petaloconchus montereyensis,snail,1,2,,3,,,MAH,,low,exposed,y,,,360
+ZZ,626,Dodecaceria fistulicola,polychaete,,251,Petaloconchus montereyensis,snail,1,2,,3,,,110,,low,exposed,y,,,361
+ZZ,253,Epitonium tinctum,snail,1,99,Anthopleura xanthogrammica,anemone,1,3,,3,,,MAH,Not Santa Barbara,low,pools,y,,,362
+ZZ,253,Epitonium tinctum,snail,1,101,Anthopleura elegantissima,anemone,1,3,,3,,,"MAH, 113",Santa Barbara,low,pools,y,,,363
+ZZ,254,Opalia chacei,snail,1,101,Anthopleura elegantissima,anemone,1,3,,3,,,"MAH, 113",Santa Barbara,low,pools,y,,,364
+ZZ,255,Opalia funiculata,snail,1,101,Anthopleura elegantissima,anemone,1,3,,3,,,"MAH, 113",Santa Barbara,low,pools,y,,,365
+ZZ,358,Aeolidia loui,nudibranch,1,101,Anthopleura elegantissima,anemone,1,3,,10,,,"MAH, 113",Santa Barbara,low,pools,y,,Aeolidia papillosa becomes Aeolidia loui S of Washington,366
+ZZ,569,Pycnogonum stearnsi,sea spider,1,101,Anthopleura elegantissima,anemone,1,3,,3,,,"MAH, 113",Santa Barbara,low,pools,y,,,367
+ZZ,570,Pycnogonum rickettsi,sea spider,1,99,Anthopleura xanthogrammica,anemone,1,3,,3,,,"MAH, 114",Santa Barbara,low,pools,y,,,368
+ZZ,569,Pycnogonum stearnsi,sea spider,1,99,Anthopleura xanthogrammica,anemone,1,3,,3,,,MAH,,low,pools,y,,,369
+ZZ,569,Pycnogonum stearnsi,sea spider,1,186,Clavelina huntsmani,tunicate,1,3,,3,,,MAH,,low,pools,y,,,370
+ZZ,258,Crepidula adunca,snail,1,237,Tegula funebralis,snail,1,2,,3,,,MAH,,,,,,"either interaction type 2 or 9, COUDL be mobile but i think shell growth limits them",371
+ZZ,258,Crepidula adunca,snail,1,236,Tegula brunnea,snail,1,2,,3,,,MAH,,,,,,"either interaction type 2 or 9, COUDL be mobile but i think shell growth limits them",372
+ZZ,258,Crepidula adunca,snail,1,232,Calliostoma ligatum,snail,1,2,,3,,,"MAH, 127",,low,pools,y,,"either interaction type 2 or 9, COUDL be mobile but i think shell growth limits them",373
+ZZ,261,Crepidula perforans,snail,1,524,Pagurus samuelis,hermit crab,1,9,,3,,,MAH,,high,pools,y,,unsure of interaction.type,374
+ZZ,261,Crepidula perforans,snail,1,525,Pagurus hirsutiusculus,hermit crab,1,9,,3,,,MAH,,middle,pools,y,,unsure of interaction.type,375
+ZZ,261,Crepidula perforans,snail,1,526,Pagurus hemphilli,hermit crab,1,9,,3,,,MAH,,middle,pools,y,,unsure of interaction.type,376
+ZZ,261,Crepidula perforans,snail,1,527,Pagurus granosimanus,hermit crab,1,9,,3,,,MAH,,low,pools,y,,unsure of interaction.type,377
+EMH,9,Triakis semifasciata,shark,1,NA,Allorchestes angusta,arthropod,1,1,,3,,,RIZ Lit Search: 115,Elkhorn Slough,,,,,,378
+EMH,9,Triakis semifasciata,shark,1,NA,Corophium sp.,amphipod,1,1,,3,,,RIZ Lit Search: 116,Elkhorn Slough,,,,,,379
+EMH,9,Triakis semifasciata,shark,1,NA*new parasite! ,Miamiensis avidus,Eukaryote,1,6,,3,,,RIZ Lit Search: 117,"CA, USA",,,,,,380
+EMH,9,Triakis semifasciata,shark,1,NA,Branchellion lobata,Annelid,1,7,,3,,,RIZ Lit Search: 118,"SF Bay, CA, USA",,,,,,381
+EMH,9,Triakis semifasciata,shark,1,NA,Achtheinus oblongu,,1,7,,3,,,RIZ Lit Search: 118,"SF Bay, CA, USA",,,,,,382
+EMH,9,Triakis semifasciata,shark,1,NA,Pandarus bicolor,Arthropod,1,7,,3,,,RIZ Lit Search: 118,"SF Bay, CA, USA",,,,,,383
+EMH,9,Triakis semifasciata,shark,1,,Lernaeopoda galei,Copepod,1,7,,3,3,,RIZ Lit Search: 118,"SF Bay, CA, USA",,,,,,384
+EMH,9,Triakis semifasciata,shark,1,NA* but I thought this was an intertidal species? ,Callianassa pacifica,Decopod,1,1,,3,,,RIZ Lit Search: 119,"CA, USA",,,,,,385
+EMH,NA,Carcharodon carcharias,shark,1,9,Triakis Semifasciata,shark,1,1,,3,5,,RIZ Lit Search: 121,"CA, USA",,,,,,386
+EMH,NA,Notorynchus cepedianus,shark,1,9,Triakis Semifasciata,shark,1,1,,3,5,,RIZ Lit Search: 121,"CA, USA",,,,,,387
+EMH,9,Triakis semifasciata,shark,1,NA,Clupea pallasii,fish,1,1,,3,,,RIZ Lit Search: 121,"CA, USA",,,,,,388
+EMH,9,Triakis semifasciata,shark,1,NA,Porichthys sp.,fish,1,1,,3,,5,RIZ Lit Search: 121,"CA, USA",,,,,,389
+EMH,9,Triakis semifasciata,shark,1,8,Atherinops affinis,fish,1,1,,3,,,RIZ Lit Search: 121,"CA, USA",,,,,,390
+EMH,9,Triakis semifasciata,shark,1,NA,Upogebia pugettensis,Decopod,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,391
+EMH,9,Triakis semifasciata,shark,1,NA,Solen sicarius,Bivalve,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,392
+EMH,9,Triakis semifasciata,shark,1,NA,Tresus nutallii,Bivalve,1,1,,3,5,,RIZ Lit Search: 122,"CA, USA",,,,,,393
+EMH,9,Triakis semifasciata,shark,1,NA,Loligo opalescens,cephalopod,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,394
+EMH,9,Triakis semifasciata,shark,1,NA,Lampetra tridentata,fish,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,395
+EMH,9,Triakis semifasciata,shark,1,NA,Myliobatis californica,fish,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,396
+EMH,9,Triakis semifasciata,shark,1,NA,Raja binoculata,(ray) batoid,1,1,,3,5,,RIZ Lit Search: 122,"CA, USA",,,,,,397
+EMH,9,Triakis semifasciata,shark,1,NA,Squalus acanthias,fish,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,398
+EMH,9,Triakis semifasciata,shark,1,NA,Chilara taylori,fish,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,399
+EMH,9,Triakis semifasciata,shark,1,NA,Citharichthys stigmaeus,fish,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,400
+EMH,9,Triakis semifasciata,shark,1,NA,Embiotoca lateralis,fish,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,401
+EMH,9,Triakis semifasciata,shark,1,14,Leptocottus armatus,fish,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,402
+EMH,9,Triakis semifasciata,shark,1,NA,Syngathus leptorhynchus,fish,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,403
+EMH,9,Triakis semifasciata,shark,1,NA,"Atherinopsis californiensis
+",fish,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,404
+EMH,9,Triakis semifasciata,shark,1,549,Cancer antennarius,crab,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,405
+EMH,9,Triakis semifasciata,shark,1,NA,Cancer magister,crab,1,1,,3,,,RIZ Lit Search: 122,"CA, USA",,,,,,406
+ZZ,273,Ceratostoma nuttalli,snail,1,366,Mytilus californianus,bivalve,1,1,,3,,,MAH,,middle,exposed,y,,,407
+ZZ,273,Ceratostoma nuttali,snail,1,,Mytilus edulis,bivalve,1,1,,3,3,,MAH,SoCal,middle,exposed,y,,,408
+ZZ,274,Pteropurpura trialata,snail,1,258,Crepidula adunca,snail,1,1,,3,3,,MAH,"South of LA, CA",low,both,y,,,409
+ZZ,274,Pteropurpura trialata,snail,1,261,Crepidula perforans,snail,1,1,,3,3,,MAH,"South of LA, CA",low,both,y,,,410
+ZZ,274,Pteropurpura trialata,snail,1,260,Crepidula aculeata,snail,1,1,,3,3,,MAH,"South of LA, CA",low,both,y,,,411
+ZZ,274,Pteropurpura trialata,snail,1,262,Crepidula nummaria,snail,1,1,,3,3,,MAH,"South of LA, CA",low,both,y,,,412
+ZZ,274,Pteropurpura trialata,snail,1,263,Crepidula onyx,snail,1,1,,3,3,,MAH,"South of LA, CA",low,both,y,,,413
+ZZ,274,Pteropurpura trialata,snail,1,259,Crepidula adunca,snail,4,1,,3,3,,MAH,"South of LA, CA",low,both,y,,,414
+ZZ,278,Paciocinebrina lurida,snail,1,417,Cryptochiton stelleri,chiton,1,3,,3,,,MAH,,low,pools,y,,,415
+ZZ,278,Paciocinebrina lurida,snail,1,464,Balanus glandula,barnacle,1,1,,3,,,MAH,,high,exposed,y,,,416
+ZZ,279,Roperia poulsoni,snail,1,366,Mytilus californianus,bivalve,1,1,,3,3,,MAH,S. of Point Conception,low,pools,y,,,417
+ZZ,279,Roperia poulsoni,snail,1,,Mytilus edulis,bivalve,1,1,,3,3,,MAH,S. of Point Conception,low,pools,y,,,418
+ZZ,279,Roperia poulsoni,snail,1,390,Penitella penita,bivalve,1,1,,3,3,,MAH,S. of Point Conception,low,pools,y,,,419
+ZZ,549,Cancer antennarius,true crab,1,279,Roperia poulsoni,snail,1,1,,3,3,,MAH,S. of Point Conception,low,pools,y,,,420
+ZZ,281,Acanthinucella punctulata,snail,1,464,Balanus glandula,barnacle,,,,,,,,,,,,,,421
+ZZ,281,Acanthinucella punctulata,snail,1,456,Chthamalus dalli,barnacle,1,1,,3,,,MAH,,high,pools,y,,,422
+ZZ,281,Acanthinucella punctulata,snail,1,247,Littorina scutulata,snail,1,1,,3,,,MAH,,high,pools,y,,,423
+ZZ,281,Acanthinucella punctulata,snail,1,247,Littorina planaxis,snail,1,1,,3,,,MAH,,high,pools,y,,,424
+ZZ,281,Acanthinucella punctulata,snail,1,284,Nucella emarginata,snail,1,1,,3,,,MAH,,high,pools,y,,,425
+ZZ,281,Acanthinucella punctulata,snail,1,374,Lasaea cistula,bivalve,1,1,,3,,,MAH,,high,pools,y,,,426
+ZZ,281,Acanthinucella punctulata,snail,1,237,Tegula funebralis,snail,1,1,,3,,,MAH,,high,pools,y,,,427
+ZZ,149,Leptasterias hexactis,sea star,1,627,Acanthinucella punctulata,snail,4,1,,3,,,MAH,,high,pools,y,,,428
+ZZ,283,Nucella canaliculata,snail,1,366,Mytilus californianus,bivalve,1,1,,3,,,MAH,,high,pools,y,,,429
+ZZ,283,Nucella canaliculata,snail,1,367,Mytilus edulis,bivalve,1,1,,3,,,MAH,,high,pools,y,,,430
+ZZ,283,Nucella canaliculata,snail,1,462,Semibalanus cariosus,barnacle,1,1,,3,,,MAH,,high,pools,y,,,431
+ZZ,283,Nucella emarginata,snail,1,366,Mytilus californianus,bivalve,1,1,,3,,,MAH,,high,pools,y,,,432
+ZZ,283,Nucella emarginata,snail,1,367,Mytilus edulis,bivalve,1,1,,3,,,MAH,,high,pools,y,,,433
+ZZ,283,Nucella emarginata,snail,1,464,Balanus glandula,barnacle,1,1,,3,,,MAH,,high,pools,y,,,434
+ZZ,283,Nucella emarginata,snail,1,455,Pollicipes polymerus,barnacle,1,1,,3,,,MAH,,high,pools,y,,,435
+ZZ,283,Nucella emarginata,snail,1,456,Chthamalus dalli,barnacle,1,1,,3,,,MAH,,high,pools,y,,,436
+ZZ,283,Nucella emarginata,snail,1,210,Lottia scabra,limpet,1,1,,3,,,MAH,,high,pools,y,,,437
+ZZ,283,Nucella emarginata,snail,1,203,Lottia limatula,limpet,1,1,,3,,,MAH,,high,pools,y,,,438
+ZZ,283,Nucella emarginata,snail,1,237,Tegula funebralis,snail,1,1,,3,,,MAH,,high,pools,y,,,439
+ZZ,283,Nucella emarginata,snail,1,247,Littorina planaxis,snail,1,1,,3,,,MAH,,high,pools,y,,,440
+ZZ,549,Cancer antennarius,true crab,1,283,Nucella emarginata,snail,1,1,,3,,,MAH,,high,pools,y,,,441
+ZZ,286,Lirabuccinum dirum,snail,1,248,Littorina scutulata,snail,1,1,,3,,,MAH,,middle,,y,,,442
+ZZ,286,Lirabuccinum dirum,snail,1,,Littorina sitkana,snail,1,1,,3,,,MAH,,middle,,y,,,443
+ZZ,286,Lirabuccinum dirum,snail,1,215,Lottia scutum,limpet,1,1,,3,,,MAH,,middle,,y,,,444
+ZZ,286,Lirabuccinum dirum,snail,1,208,Lottia pelta,limpet,1,1,,3,,,MAH,,middle,,y,,,445
+ZZ,286,Lirabuccinum dirum,snail,1,199,Lottia digitalis,limpet,1,1,,3,,,MAH,,middle,,y,,,446
+ZZ,286,Lirabuccinum dirum,snail,1,232,Calliostoma ligatum,snail,1,1,,3,,,MAH,,middle,,y,,,447
+ZZ,286,Lirabuccinum dirum,snail,1,234,Margarites pupillus,,1,1,,3,,,MAH,,middle,,y,,,448
+ZZ,286,Lirabuccinum dirum,snail,1,246,Lacuna marmorata,snail,1,1,,3,,,MAH,,middle,,y,,,449
+ZZ,286,Lirabuccinum dirum,snail,1,286,Lirabuccinum dirum,snail,1,1,,3,2,,RIZ Lit Search: 158,,middle,,n,,,450
+ZZ,286,Lirabuccinum dirum,snail,1,395,Ischnochiton interstinctus,chiton,1,1,,3,3,,MAH,,middle,,y,,,451
+ZZ,286,Lirabuccinum dirum,snail,1,396,Ischnochiton regularis,chiton,1,1,,3,,,MAH,,middle,,y,,,452
+ZZ,286,Lirabuccinum dirum,snail,1,416,Katharina tunicata,chiton,1,1,,3,,,MAH,,middle,,y,,,453
+ZZ,286,Lirabuccinum dirum,snail,1,464,Balanus glandula,barnacle,1,1,,3,,,MAH,,middle,,y,,,454
+ZZ,286,Lirabuccinum dirum,snail,1,462,Semibalanus cariosus,barnacle,1,1,,3,,,MAH,,middle,,y,,,455
+ZZ,150,Pisaster ochraceus,sea star,1,287,Kelletia kelletii,snail,1,1,,3,,,MAH,,low,pools,y,,,456
+ZZ,294,Olivella biplicata,snail,1,587,Macrocystis pyrifera,algae,1,3,,3,,,MAH,,low,pools,y,,,457
+ZZ,294,Olivella biplicata,snail,1,237,Tegula funebralis,snail,1,30,,3,,,MAH,,low,pools,y,,,458
+ZZ,294,Olivella biplicata,snail,1,366,Mytilus californianus,bivalve,1,30,,3,,,MAH,,low,pools,y,,,459
+ZZ,295,Atrimitra idae,snail,1,448,Phascolosoma agassizii,sipunculid,1,1,,3,1,,128,,low,pools,y,,,460
+ZZ,298,Conus californicus,snail,1,294,Olivella biplicata,snail,1,1,,3,,,MAH,,low,pools,y,,,461
+ZZ,298,Conus californicus,snail,1,291,Nassarius mendicus,snail,1,1,,10,,,MAH,,low,pools,,,Nassarius fossatus - MAH,462
+ZZ,298,Conus californicus,snail,1,N/A,Bulla gouldiana,,1,1,,3,,,MAH,,low,pools,,,are they actually in RIZ?,463
+ZZ,298,Conus californicus,snail,1,N/A,Macoma nasuta,,1,1,,3,,,MAH,,low,pools,,,are they actually in RIZ?,464
+ZZ,298,Conus californicus,snail,1,N/A,Tagelus californianus,,1,1,,3,,,MAH,,low,pools,,,are they actually in RIZ?,465
+ZZ,298,Conus californicus,snail,1,N/A,Solen rosaceus,,1,1,,3,,,MAH,,low,pools,,,are they actually in RIZ?,466
+ZZ,299,Navanax inermis,nudibranch,1,299,Navanax inermis,nudibranch,1,1,,3,,,MAH,,low,pools,,,,467
+ZZ,299,Navanax inermis,nudibranch,1,N/A,Haminoea vesicula,,1,,,,,,,,,,y,,,468
+ZZ,628,Anthessius navanacis,copepod,1,299,Navanax inermis,nudibranch,1,7,,3,,,"MAH, 176",,low,pools,y,,,469
+ZZ,565,Opisthopus transversus,true crab,1,299,Navanax inermis,nudibranch,1,9,,3,,,MAH,,low,pools,y,,,470
+ZZ,565,Opisthopus transversus,true crab,1,301,Aplysia vaccaria,nudibranch,1,9,,3,2,,"MAH, 133",,middle,pools,y,,,471
+ZZ,301,Aplysia vaccaria,nudibranch,1,617,Egregia menziesii,brown algae,,,,3,,,,,,,,,,472
+EMH,168,Strongylocentrotus purpuratus,urchin,1,608,Phyllospadix scouleri,sea grass,1,3,,6,,,RIZ lit search: 66,,,,,,,473
+ZZ,628,Anthessius lighti,copepod,1,301,Aplysia vaccaria,nudibranch,1,7,,3,,,,Bodega Bay,all,both,,no,??? what is justification?,474
+EMH,306,Tylodina fungina,sea snail,1,NA,Aplysina geradorgreeni,sponge,1,1,,3,,,RIZ Lit Search: 129,Mexico,,,,,,475
+EMH,306,Tylodina fungina,sea snail,1,NA,Suberea azteca,sponge,1,1,,3,,,RIZ Lit Search: 130,Perlas Isands,,,,,,476
+EMH,306,Tylodina fungina,sea snail,1,64,Aplysina fistularis,sponge,1,1,,3,,,"MAH, RIZ Lit Search: 132","San Diego, CA",,,,,,477
+EMH,307,Berthella californica,nudibranch,1,NA,Oscarella carmela,sponge,1,1,,3,,,RIZ Lit Search: 135,"Oregon, USA",,,,,,478
+EMH,356,Phidiana hiltoni,nudibranch,1,316,Cuthona divae,nudibranch,1,1,,3,,,RIZ Lit Search: 136,USA,,,,,,479
+EMH,12,Girella nigricans,fish,4,8,Atherinops affinis,fish,1,22,,3,,,RIZ Lit Search: 139,"Santa Catalina Island, USA",,,,,,480
+EMH,732,Kyphosus azureus,fish,4,12,Girella nigricans,fish,4,1,,3,,,RIZ Lit Search: 139,"Santa Catalina Island, USA",,,,,,481
+EMH,12,Girella nigricans,fish,1,713,Enteromorpha sp,algae,1,3,,3,,,RIZ Lit Search: 140,USA,,,,,,482
+EMH,12,Girella nigricans,fish,1,601,Ulva sp,algae,1,3,,3,,,RIZ Lit Search: 140,USA,,,,,,483
+EMH,12,Girella nigricans,fish,1,NA,Binghamia forkii,algae,1,3,,3,,,RIZ Lit Search: 140,USA,,,,,,484
+EMH,12,Girella nigricans,fish,1,203,Lottia limatula,limpet,1,1,,3,,,RIZ Lit Search: 142,USA,,,,,,485
+EMH,12,Girella nigricans,fish,1,210,Lottia scabra,limpet,1,1,,3,,,RIZ Lit Search: 142,USA,,,,,,486
+EMH,14,Leptocottus armatus ,fish,1,NA,Traskorchestia traskiana,shrimp,1,1,,3,,,RIZ Lit Search: 144,USA,,,,,,487
+EMH,14,Leptocottus armatus ,fish,1,NA,Neomysis kadiakensis,shrimp,1,1,,3,,,RIZ Lit Search: 144,USA,,,,,,488
+EMH,14,Leptocottus armatus ,fish,1,NA,Corophium alienense,amphipod,1,1,,3,,,RIZ Lit Search: 144,USA,,,,,,489
+EMH,14,Leptocottus armatus ,fish,1,NA,Neanthes succinea,annelid,1,1,,3,,,RIZ Lit Search: 144,USA,,,,,,490
+EMH,14,Leptocottus armatus ,fish,1,744,Gnorimosphaeroma oregonense,isopod,1,1,,3,,,RIZ Lit Search: 144,USA,high,pools,y,y,,491
+EMH,14,Leptocottus armatus ,fish,1,NA,Sinelobus stanfordii,crustacean ,1,1,,3,,,RIZ Lit Search: 144,USA,,,,,,492
+EMH,14,Leptocottus armatus ,fish,1,NA,Nippoleucon hinumensis,crustacean,1,1,,3,,,RIZ Lit Search: 144,USA,,,,,,493
+EMH,14,Leptocottus armatus ,fish,1,NA,Hemigrapsus oregonensis,crab,1,1,,3,,,RIZ Lit Search: 145,USA,,,,,,494
+EMH,14,Leptocottus armatus ,fish,1,NA,Protothaca staminea,bivalve,1,1,,3,5,,RIZ Lit Search: 146,"CA, USA",,,,,,495
+EMH,14,Leptocottus armatus ,fish,1,NA,Macoma spp,clam,1,1,,3,,,RIZ Lit Search: 146,"CA, USA",,,,,,496
+EMH,14,Leptocottus armatus ,fish,1,NA,Echinorhynchus gadi,helminth parasite,1,7?,,3,,,RIZ Lit Search: 147,"Oregon, USA",,,,,,497
+EMH,14,Leptocottus armatus ,fish,1,762,Podocotyle reflexa,trematode,1,6,,3,,,RIZ Lit Search: 147,"Oregon, USA",,,,,,498
+EMH,14,Leptocottus armatus ,fish,1,762,Podocotyle reflexa,trematode,1,6,,3,,,RIZ Lit Search: 147,"Oregon, USA",,,,,,499
+EMH,14,Leptocottus armatus ,fish,1,NA,Tubulovesicula sp,helminth parasite,1,7?,,3,,,RIZ Lit Search: 147,"Oregon, USA",,,,,,500
+EMH,14,Leptocottus armatus ,fish,1,NA,Callianassa californiensis,shrimp ,1,1,,3,,,RIZ Lit Search: 148 ,USA,,,,,,501
+EMH,NA,Prionance glauca,fish,1,7,Sygnathus californiensis,fish,1,1,,3,,,RIZ Lit Search: 149,meta analysis,,,,,,502
+EMH,NA,Thalasseus elegans,bird,1,7,Sygnathus californiensis,fish,1,1,,3,,,"RIZ Lit Search: 151, 149","CA, USA",,,,,,503
+EMH,NA,Arius platypogon,"batoid, ( ray)",1,7,Sygnathus californiensis,fish,1,1,,2,,,RIZ Lit Search: 149,"CA, USA",,,,,,504
+EMH,15,Clinocottus analis,fish,1,190,Fissurella volcano,limpet,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,505
+EMH,15,Clinocottus analis,fish,1,199,Lottia digitalis,limpet,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,506
+EMH,15,Clinocottus analis,fish,1,210,Lottia scabra,limpet,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,507
+EMH,15,Clinocottus analis,fish,1,,Neanthes virens,annelid,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,508
+EMH,15,Clinocottus analis,fish,1,430,Platynereis bicanaliculata,polychaete,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,509
+EMH,15,Clinocottus analis,fish,1,,Tigriopus californicus,copepod,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,510
+EMH,15,Clinocottus analis,fish,1,566,Pachygrapsus crassipes,crab,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,511
+EMH,15,Clinocottus analis,fish,1,748,Leptochelia sp. ,tanaid,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,512
+EMH,15,Clinocottus analis,fish,1,NA,Dynamenopsis dianae,isopod,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,513
+EMH,15,Clinocottus analis,fish,1,483,Limnoria algarum,isopod,1,1,,6,,,RIZ Lit Search: 154,Mexico,,,,,,514
+EMH,15,Clinocottus analis,fish,1,487,Ligia occidentalis,isopod,1,1,,6,,,RIZ Lit Search: 154,Mexico,high,pools,,,reported as Ligia sp.,515
+EMH,15,Clinocottus analis,fish,1,,Rocinela sp. ,isopod,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,interesting because rocinella is a parasitic isopod - need to investigate this,516
+EMH,15,Clinocottus analis,fish,1,168,Strongylocentrotus purpuratus,urchin,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,517
+EMH,15,Clinocottus analis,fish,1,,Orchestoidia sp. ,,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,518
+EMH,15,Clinocottus analis,fish,1,,Oligochinus lighti,,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,519
+EMH,15,Clinocottus analis,fish,1,609,Hyale frequens,amphipod,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,520
+EMH,15,Clinocottus analis,fish,1,738,Caprella sp. ,amphipod,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,521
+EMH,15,Clinocottus analis,fish,1,,Tethmia aptena,,1,1,,3,,,RIZ Lit Search: 154,Mexico,,,,,,522
+EMH,19,Gobeisox maeandricus,fish,1,501,Ampithoe plumulosa,amphipod,1,1,,6,,,RIZ Lit Search: 155,"CA, USA",,,,,,523
+EMH,19,Gobeisox maeandricus,fish,1,247, Littorina sp. ,sea snail,1,1,,3,,,RIZ Lit Search: 155,"CA, USA",,,,,,524
+EMH,19,Gobeisox maeandricus,fish,1,211,Lottia sp.,sea snail,1,1,,3,,,RIZ Lit Search: 155,"CA, USA",,,,,,525
+EMH,19,Gobeisox maeandricus,fish,1,,Harpacticus sp. ,copepod,1,1,,3,,,RIZ Lit Search: 155,"CA, USA",,,,,,526
+EMH,19,Gobeisox maeandricus,fish,1,,Parathalestris sp.,copepod,1,1,,3,,,RIZ Lit Search: 155,"CA, USA",,,,,,527
+EMH,19,Gobeisox maeandricus,fish,1,,Ectinosoma melaniceps,copepod,1,1,,3,,,RIZ Lit Search: 155,"CA, USA",,,,,,528
+ZZ,311,Cadlina flavomaculata,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,,3,,,MAH,,low,pools,y,,,529
+ZZ,313,Cadlina modesta,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,,3,,,MAH,,low,pools,y,,,530
+ZZ,312,Cadlina luteomarginata,nudibranch,1,38,Myxilla incrustans,sponge,1,3,,3,,,MAH,,low,pools,y,,,531
+ZZ,299,Navanax inermis,nudibranch,1,315,Felimida macfarlandi,nudibranch,1,1,,3,,,MAH,,low,pools,y,,,532
+ZZ,81,Bythotiara huntsmani,hydroid,,189,Ascidia ceratodes,tunicate,,,,,,,,,,,,,,533
+EMH,418,Octopus bimaculoides,octopus,1,NA,Artemia salina,shrimp,1,1,,3,5,,RIZ Lit Search: 156,"Baja CA, Mexico ",,,,,,534
+EMH,418,Octopus bimaculoides,octopus,1,566,Pachygrapsus crassipes,crab,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,535
+EMH,418,Octopus bimaculoides,octopus,1,558,Paraxanthias taylori,true crab ,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,536
+EMH,418,Octopus bimaculoides,octopus,1,549,Cancer antennarius,crab,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,537
+EMH,418,Octopus bimaculoides,octopus,1,524,Pagurus samuelis,hermit crab,1,1,,6,,,RIZ Lit Search: 157,"CA, USA",,,,,,538
+EMH,418,Octopus bimaculoides,octopus,1,525,Pagurus hirsutiusculus,hermit crab,1,1,,6,,,RIZ Lit Search: 157,"CA, USA",,,,,,539
+EMH,418,Octopus bimaculoides,octopus,1,526,Pagurus hemphilli,hermit crab,1,1,,6,,,RIZ Lit Search: 157,"CA, USA",,,,,,540
+EMH,418,Octopus bimaculoides,octopus,1,527,Pagurus granosimanus,hermit crab,1,1,,6,,,RIZ Lit Search: 157,"CA, USA",,,,,,541
+EMH,418,Octopus bimaculoides,octopus,1,237,Tegula funebralis ,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,542
+EMH,418,Octopus bimaculoides,octopus,1,238,Tegula aureotincta,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,543
+EMH,418,Octopus bimaculoides,octopus,1,239,Tegula gallina,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,544
+EMH,418,Octopus bimaculoides,octopus,1,240,Tegula eiseni,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,545
+EMH,418,Octopus bimaculoides,octopus,1,244,Megastrea undosa,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,546
+EMH,418,Octopus bimaculoides,octopus,1,247,Littorina planaxis,snail,1,1,,6,,,RIZ Lit Search: 157,"CA, USA",,,,,,547
+EMH,418,Octopus bimaculoides,octopus,1,248,Littorina scutulata,snail,1,1,,6,,,RIZ Lit Search: 157,"CA, USA",,,,,,548
+EMH,418,Octopus bimaculoides,octopus,1,269,Trivia solandri,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,549
+EMH,418,Octopus bimaculoides,octopus,1,270,Trivia californiana,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,550
+EMH,418,Octopus bimaculoides,octopus,1,271,Cypraea spadicea,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,551
+EMH,418,Octopus bimaculoides,octopus,1,287,Kelletia kelletii,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,552
+EMH,418,Octopus bimaculoides,octopus,1,294,Olivella biplicata,snail,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,553
+EMH,418,Octopus bimaculoides,octopus,1,403,Stenoplax conspicua,chiton,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,554
+EMH,418,Octopus bimaculoides,octopus,1,407,Callistochiton crassiocostatus,chiton,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,555
+EMH,418,Octopus bimaculoides,octopus,1,408,Callistochiton palmulatus,chiton,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,556
+EMH,418,Octopus bimaculoides,octopus,1,370,Limaria hemphilli,bivalve,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,557
+EMH,418,Octopus bimaculoides,octopus,1,366,Mytilus californianus,bivalve,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,558
+EMH,418,Octopus bimaculoides,octopus,1,367,Mytilus edulis,bivalve,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,559
+EMH,418,Octopus bimaculoides,octopus,1,369,Crassadoma gigantea,bivalve,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,560
+EMH,418,Octopus bimaculoides,octopus,1,418,Octopus bimaculoides,cephalopod,1,1,,3,,,RIZ Lit Search: 157,"CA, USA",,,,,,561
+EMH,418,Octopus bimaculoides,octopus,1,NA,Megapitaria squalida,clam,1,1,,3,,,RIZ Lit Search: 164,Mexico,,,,,,562
+EMH,418,Octopus bimaculoides,octopus,1,NA,Echiurus spp,worm,1,1,,3,,,RIZ Lit Search: 164,Mexico,,,,,,563
+EMH,418,Octopus bimaculoides,octopus,1,NA,Glycymeris gigantea,,1,1,,3,5,,RIZ Lit Search: 164,Mexico,,,,,,564
+EMH,418,Octopus bimaculoides,octopus,1,NA,Trigoniocardia biangulata,scallop?,1,1,,3,,,RIZ Lit Search: 164,Mexico,,,,,,565
+EMH,418,Octopus bimaculoides,octopus,1,NA,Glycymeris multicostata,,1,1,,3,5,,RIZ Lit Search: 164,Mexico,,,,,,566
+EMH,418,Octopus bimaculoides,octopus,1,235,Norrisia norris,snail,1,1,,3,,,RIZ Lit Search: 166,"CA, USA",,,,,,567
+EMH,NA,Stibarobdella moorei,parasite!,1,418,Octopus bimaculoides,octopus,1,7,,3,,,RIZ Lit Search: 168,Mexico,,,,,,568
+EMH,716,Aggregata polibraxiona,coccidian,1,418,Octopus bimaculoides,octopus,1,6,,3,,,RIZ Lit Search: 169,Mexico ,,,,,,569
+EMH,418,Octopus bimaculoides,octopus,1,NA,Scorpaena guttata,fish,1,1,,3,5,,RIZ Lit Search: 172,"CA, USA",,,,,,570
+ZZ,369,Crassadoma gigantea,bivalve,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,571
+ZZ,369,Crassadoma gigantea,bivalve,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,572
+ZZ,369,Crassadoma gigantea,bivalve,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,573
+ZZ,369,Crassadoma gigantea,bivalve,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,574
+,,,,,,,,,,,,,,,,,,,,,575
+ZZ,316,Felimare porterae,nudibranch,1,NA,Dysidea amblia,sponge,1,3,,3,,,MAH,,low,pools,y,,,576
+ZZ,317,Felimare californiensis,nudibranch,1,NA,Dysidea amblia,sponge,1,3,,3,,,MAH,,low,pools,y,,,577
+ZZ,317,Felimare californiensis,nudibranch,1,NA,Steletta estrella,sponge,1,3,,3,,,MAH,,low,pools,y,,,578
+ZZ,317,Felimare californiensis,nudibranch,1,70,Haliclona sp.,sponge,1,3,,3,,,MAH,,low,pools,y,,,579
+ZZ,318,Hallaxa chani,nudibranch,1,58,Halisarca sp.,sponge,1,3,,3,,,161,"OR, USA",middle,pools,,,,580
+ZZ,318,Hallaxa chani,nudibranch,1,179,Didemnum carnulentum,tunicate,1,3,,3,,,"MAH, 162","Morro Bay, CA, USA",low,pools,y,,ref 161 contradicts this - needs to be investigated in field + lab,581
+ZZ,319,Rostanga pulchra,nudibranch,1,62,Acarnus erithacus,sponge,1,3,,3,,,MAH,,low,pools,y,,,582
+ZZ,323,Doris odhneri,nudibranch,1,69,Halichondria panicea,sponge,1,3,,3,,,MAH,,low,pools,y,,,583
+ZZ,323,Doris odhneri,nudibranch,1,37,Myxilla agennes,sponge,1,3,,6,,,MAH,,low,pools,y,,,584
+ZZ,323,Doris odhneri,nudibranch,1,38,Myxilla incrustans,sponge,1,3,,6,,,MAH,,low,pools,y,,,585
+ZZ,323,Doris odhneri,nudibranch,1,NA,Stylissa sp.,,1,3,,,,,MAH,,low,pools,y,,,586
+ZZ,323,Doris odhneri,nudibranch,1,NA,Tedania sp.,,1,3,,,,,MAH,,low,pools,y,,,587
+ZZ,323,Doris odhneri,nudibranch,1,NA,Craniella sp.,,1,3,,,,,MAH,,low,pools,y,,,588
+ZZ,323,Doris odhneri,nudibranch,1,NA,Syringella sp.,,1,3,,,,,MAH,,low,pools,y,,,589
+ZZ,323,Doris odhneri,nudibranch,1,44,Mycale adhaerens,,1,3,,6,,,MAH,,low,pools,y,,,590
+ZZ,323,Doris odhneri,nudibranch,1,45,Mycale hispida,,1,3,,6,,,MAH,,low,pools,y,,,591
+ZZ,323,Doris odhneri,nudibranch,1,46,Mycale macginitiei,,1,3,,6,,,MAH,,low,pools,y,,,592
+ZZ,323,Doris odhneri,nudibranch,1,47,Mycale richardsoni,,1,3,,6,,,MAH,,low,pools,y,,,593
+ZZ,323,Doris odhneri,nudibranch,1,48,Mycale psila,,1,3,,6,,,MAH,,low,pools,y,,,594
+ZZ,324,Doris montereyensis,nudibranch,1,69,Halichondria panicea,sponge,1,3,,3,,,MAH,,low,pools,y,,,595
+ZZ,325,Peltodoris nobilis,nudibranch,1,69,Halichondria panicea,sponge,1,3,,3,,,MAH,,low,pools,y,,,596
+ZZ,325,Peltodoris nobilis,nudibranch,1,65,Axocielita originalis,,1,3,,,,,,,,,,,,597
+ZZ,325,Peltodoris nobilis,nudibranch,1,674,Hymedesmia arndti,sponge,1,3,,,,,,,,,,,,598
+ZZ,325,Peltodoris nobilis,nudibranch,1,72,Acanthancora cyanocrypta,sponge,1,3,,,,,,,,,,,,599
+ZZ,325,Peltodoris nobilis,nudibranch,1,33,Lissodendoryx firma,sponge,1,3,,,,,,,,,,,,600
+ZZ,325,Peltodoris nobilis,nudibranch,1,629,Haliclona cinerea,,1,3,,,,,,,,,,,,601
+ZZ,325,Peltodoris nobilis,nudibranch,1,44,Mycale adhaerens,,1,3,,6,,,MAH,,low,pools,y,,,602
+ZZ,325,Peltodoris nobilis,nudibranch,1,45,Mycale hispida,,1,3,,6,,,MAH,,low,pools,y,,,603
+ZZ,325,Peltodoris nobilis,nudibranch,1,46,Mycale macginitiei,,1,3,,6,,,MAH,,low,pools,y,,,604
+ZZ,325,Peltodoris nobilis,nudibranch,1,47,Mycale richardsoni,,1,3,,6,,,MAH,,low,pools,y,,,605
+ZZ,325,Peltodoris nobilis,nudibranch,1,48,Mycale psila,,1,3,,6,,,MAH,,low,pools,y,,,606
+ZZ,327,Geitodoris heathi,nudibranch,1,51,Haliclona gellindra,,1,3,,3,,,MAH,,middle,pools,y,,,607
+ZZ,327,Geitodoris heathi,nudibranch,1,38,Myxilla incrustans,,1,3,,4,,,MAH,,middle,pools,y,,"MAH says nudibranch has been ""seen clinging to sponge"" but didn't confirm predation",608
+ZZ,327,Geitodoris heathi,nudibranch,1,70,Halichondria panicea,sponge,1,3,,4,,,MAH,,middle,pools,y,,"MAH says nudibranch has been ""seen clinging to sponge"" but didn't confirm predation",609
+ZZ,354,Diaphoreolis lagunae,nudibranch,1,630,Barentsia romosa,Entoproct,1,3,,6,,,174,,low,pools,n,,,610
+ZZ,355,Cuthona divae,nudibranch,1,630,Barentsia romosa,Entoproct,1,3,,6,,,174,,low,pools,n,,,611
+ZZ,355,Cuthona divae,nudibranch,1,228,Hydractinia milleri,hydroid,1,3,,6/7,,,Jeff Goddard,,,,n,,via nudibranch forum - confirm in writing?,612
+EMH,329,Corambe pacifica,nudibranch ,1,NA,Membranipora villosa,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,613
+EMH,330,Doridella steinbergae,nudibranch ,1,NA,Membranipora serrilamella,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,614
+EMH,330,Doridella steinbergae,nudibranch ,1,NA,Membranipora membranacea,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,615
+EMH,331,Ancula pacifica,nudibranch ,1,630,Barentsia romosa,Entoproct,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,616
+EMH,335,Okenia rosaceae,nudibranch ,1,134,Integripelta bilabiata,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,617
+EMH,343,Triopha maculata,nudibranch ,1,768,Scrupocellaria californica,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,618
+EMH,343,Triopha maculata,nudibranch ,1,131,Dendrobeania laxa,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,619
+EMH,343,Triopha maculata,nudibranch ,1,NA,Caulibugula ciliata,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,620
+EMH,343,Triopha maculata,nudibranch ,1,NA,Bugula mollis,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,621
+EMH,343,Triopha maculata,nudibranch ,1,NA,Tricellaria sp. ,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,622
+EMH,343,Triopha maculata,nudibranch ,1,NA,Crisia occidentalis,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,623
+EMH,343,Triopha maculata,nudibranch ,1,138,Filicrisia franciscana,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,yes,,624
+EMH,345,Laila cockerelli,nudibranch ,1,632,Hincksina velata,bryozoan,1,3,,3,,,RIZ Lit Seach: 162 MAH,"CA, USA",,,,,,625
+EMH,311,Cadlina flavomaculata,nudibranch ,1,63,Aplysilla glacialis,,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,626
+EMH,313,Cadlina modesta,nudibranch ,1,63,Aplysilla glacialis,,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,627
+EMH,312,Cadlina luteomarginata,nudibranch ,1,69,Halichondria panicea,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,628
+EMH,312,Cadlina luteomarginata,nudibranch ,1,38,Myxilla incrustans,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,629
+EMH,312,Cadlina luteomarginata,nudibranch ,1,71,Higginsia sp. ,,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,630
+EMH,317,Hypselodoris californiensis,nudibranch ,1,81,Stelletta estrella,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,631
+EMH,317,Hypselodoris californiensis,nudibranch ,1,70,Haliclona sp. ,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,632
+EMH,318,Hallaxa chani,nudibranch ,1,179,Didemnum carnulentum,tunicate,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,633
+EMH,319,Rostanga pulchra,nudibranch ,1,30,Clathria originalis,,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,634
+EMH,319,Rostanga pulchra,nudibranch ,1,23,Antho lithophoenix,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,reported as Plocamia lithophoenix,635
+EMH,319,Rostanga pulchra,nudibranch ,1,21,Antho karykina,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,636
+EMH,319,Rostanga pulchra,nudibranch ,1,62,Acarnus erithacus,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,637
+EMH,319,Rostanga pulchra,nudibranch ,1,NA,Ophiltaspongia pennata,,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,638
+EMH,324,Archidoris montereyensis,nudibranch ,1,69,Halichondria panicea,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,639
+EMH,323,Archidoris odhneri,nudibranch ,1,69,Halichondria panicea,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,640
+EMH,323,Archidoris odhneri,nudibranch ,1,38,Myxilla incrustans,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,641
+EMH,323,Archidoris odhneri,nudibranch ,1,45,Mycale adhaerens,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,642
+EMH,323,Archidoris odhneri,nudibranch ,1,NA,Stylissa stipitata,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,643
+EMH,323,Archidoris odhneri,nudibranch ,1,41,Tedania obscurata,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,644
+EMH,323,Archidoris odhneri,nudibranch ,1,42,Tedania gurjanovae,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,645
+EMH,323,Archidoris odhneri,nudibranch ,1,43,Tedania toxicalis,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,646
+EMH,323,Doris odhneri,nudibranch ,1,NA,Craniella sp. ,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,647
+EMH,324,Anisodoris nobilis,nudibranch ,1,37,Myxilla agennes,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,648
+EMH,324,Anisodoris nobilis,nudibranch ,1,NA,Paresperella psila,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,649
+EMH,324,Anisodoris nobilis,nudibranch ,1,NA,Zygherpe hyaloderma,,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,650
+EMH,324,Anisodoris nobilis,nudibranch ,1,45,Mycale adhaerens,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,651
+EMH,324,Anisodoris nobilis,nudibranch ,1,46,Mycale macginiitiei,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,652
+EMH,324,Doris montereyensis,nudibranch ,1,70,Haliclona sp.,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,reported as Prianos sp.,653
+EMH,324,Anisodoris nobilis,nudibranch ,1,746,Haliclona permollis ,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,654
+EMH,324,Anisodoris nobilis,nudibranch ,1,69,Halichondria panicea,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,655
+EMH,324,Anisodoris nobilis,nudibranch ,1,33,Lissodendoryx firma,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,656
+EMH,326,Diaulula sandiegensis,nudibranch ,1,NA,Petrosia dura,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,657
+EMH,326,Diaulula sandiegensis,nudibranch ,1,745,Halichondria bowerbanki,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,658
+EMH,326,Diaulula sandiegensis,nudibranch ,1,746,Haliclona permollis ,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,659
+EMH,328,Doriopsilla albopunctata,nudibranch ,1,66,Cliona celata,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,660
+EMH,328,Doriopsilla albopunctata,nudibranch ,1,741,Suberites suberea,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",very low,,y,yes,reporeted as ficulina suberea,661
+EMH,328,Doriopsilla albopunctata,nudibranch ,1,62,Acarnus erithacus,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,662
+EMH,328,Doriopsilla albopunctata,nudibranch ,1,NA,Suberites sp. ,sponge,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,663
+EMH,346,Tritonia festiva,nudibranch ,1,96,Clavularia sp. ,coral,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,664
+EMH,346,Tritonia festiva,nudibranch ,1,NA,Ptilosarcus gurneyi,sea pen,1,3,,3,5,,RIZ Lit Seach: 162,"CA, USA",,,,,,665
+EMH,346,Tritonia festiva,nudibranch ,1,NA,Lophogorgia chilensis,coral,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,666
+EMH,348,Dirona albolineata,nudibranch ,1,234,Margarites pupillus,snail,1,1,,3,,,"RIZ Lit Seach: 162, 108","CA, USA",,,,,,667
+EMH,348,Dirona albolineata,nudibranch ,1,NA,Margarites helicinus ,snail,1,1,,3,,,"RIZ Lit Seach: 162, 108","CA, USA",,,,,,668
+EMH,348,Dirona albolineata,nudibranch ,1,NA,Lacuna vincta (carinata),snail,1,1,,3,3,,"RIZ Lit Seach: 162, 108","CA, USA",,,,,,669
+EMH,349,Dirona picta,nudibranch ,1,91,Aglaophenia struthionides,hydroid,1,3,,,,,,,,,,,,670
+EMH,349,Dirona picta,nudibranch ,1,92,Aglaophenia latirostris,hydroid,1,3,,,,,,,,,,,,671
+EMH,349,Dirona picta,nudibranch ,1,635,Celleporella hyalina,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,672
+ZZ,349,Dirona picta,nudibranch ,1,,Thaumatoporella sp.,,1,3,,3,,,MAH,,low,pools,y,,,673
+EMH,350,Antiopella barbarensis,nudibranch ,1,130,Bugula neritina,bryozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,674
+EMH,350,Antiopella barbarensis,nudibranch ,1,NA,Corymorpha palma,hydroid,1,3,,3,,,"RIZ Lit Seach: 162, MAH","CA, USA",low,pools,y,yes,,675
+EMH,353,Flabellinopsis iodinea,nudibranch ,1,85,Eudendrium ramosum,hydroid,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,676
+EMH,353,Flabellinopsis iodinea,nudibranch ,1,181,Diplosoma listerianum,tunicate,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,677
+EMH,560,Hermissenda crassicornis,nudibranch ,1,NA,Ptilosarcus gurneyi,sea pen,1,3,,3,5,,RIZ Lit Seach: 162,"CA, USA",,,,,,678
+EMH,560,Hermissenda crassicornis,nudibranch ,1,85,Obelia dichotoma,hydroid,,3,,,,,,,,,,,,679
+EMH,560,Hermissenda crassicornis,nudibranch ,1,86,Obelia bidentata,hydroid,,3,,,,,,,,,,,,680
+EMH,560,Hermissenda crassicornis,nudibranch ,1,87,Obelia geniculata,hydroid,,3,,,,,,,,,,,,681
+EMH,356,Phidiana hiltoni,nudibranch ,1,228,Hydractinia milleri,hydroid,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,682
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Tealia crassicornis,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,683
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Actinia equina,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,684
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Anemonia sulcata,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,685
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Diadumene cincta,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,686
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Metridium marginatum ,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,687
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Metridium senile,anemone,1,3,,3,,,"MAH, 162","CA, USA",,,,,,688
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Sargatia troglodytes,anemone,1,3,,3,5,,RIZ Lit Seach: 162,"CA, USA",,,,,,689
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Sargatiogeton undata,anemone,1,3,,3,5,,RIZ Lit Seach: 162,"CA, USA",,,,,,690
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Stomphia coccinea,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,691
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Tealia felina,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,692
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Tubularia indivisa,Hydrozoan,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,693
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Tealiopsis stella ,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,694
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Metridium dianthus ,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,695
+EMH,358,Aeolidia loui,nudibranch ,1,102,Epiactis prolifera ,anemone,1,3,,3,,,"MAH, 162","CA, USA",,,,,,696
+EMH,358,Aeolidia loui,nudibranch ,1,99,Anthopleura xanthogrammica,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,697
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Diadumene luciae,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,698
+EMH,358,Aeolidia loui,nudibranch ,1,106,Tealia coriacea,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,699
+EMH,358,Aeolidia loui,nudibranch ,1,104,Anthopluera artesima ,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,700
+EMH,358,Aeolidia loui,nudibranch ,1,109,Corynactis californica ,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,701
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Actinothoe Sphyrodeta,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,702
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Anthopleura bali,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,703
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Sargatia elegans,anemone,1,3,,3,5,,RIZ Lit Seach: 162,"CA, USA",,,,,,704
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Aiptasia couchi ,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,705
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Cereus pendunculatus ,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,706
+EMH,358,Aeolidia loui,nudibranch ,1,NA,Corynactis viridis ,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,707
+EMH,358,Aeolidia loui,nudibranch ,1,101,Anthopleura elegantissima,anemone,1,3,,3,,,"MAH, 162","CA, USA",,,,,,708
+EMH,359,Spurilla olivae,nudibranch ,1,107,Metridium senile,anemone,1,3,,3,,,RIZ Lit Seach: 162,"CA, USA",,,,,,709
+EMH,317,Felimare californiensis,nudibranch ,1,81,Stelletta estrella ,sponge,1,3,,3,,,RIZ Lit Search: 163,"CA, USA",,,,,,710
+EMH,317,Felimare californiensis,nudibranch ,1,70,Haliclona sp. ,sponge,1,3,,3,,,RIZ Lit Search: 163,"CA, USA",,,,,,711
+EMH,325,Peltodoris nobilis,nudibranch ,1,38,Myxilla agennes,sponge,1,3,,3,,,RIZ Lit Search: 163,"CA, USA",,,,,,712
+EMH,325,Peltodoris nobilis,nudibranch ,1,NA,Paresperella psila,sponge,1,3,,3,,,RIZ Lit Search: 163,"CA, USA",,,,,,713
+EMH,325,Peltodoris nobilis,nudibranch ,1,NA,Zygherpe hyaloderma,,1,3,,3,,,RIZ Lit Search: 163,"CA, USA",,,,,,714
+EMH,325,Peltodoris nobilis,nudibranch ,1,47,Mycale macginiitiei,sponge,1,3,,3,,,RIZ Lit Search: 163,"CA, USA",,,,,,715
+EMH,325,Peltodoris nobilis,nudibranch ,1,70,Haliclona sp.,sponge,1,3,,3,,,RIZ Lit Search: 163,"CA, USA",,,,,reported as Prianos sp.,716
+EMH,335,Okenia rosaceae,nudibranch ,1,135,Eurystomella bilabiata,bryozoan,1,3,,3,,,RIZ Lit Search: 163,"CA, USA",,,,,,717
+ZZ,326,Diaulula sandiegensis,nudibranch ,1,37,Myxilla agennes,sponge,1,3,,3,,,MAH,,low,pools,y,,,718
+ZZ,326,Diaulula sandiegensis,nudibranch ,1,38,Myxilla incrustans,sponge,1,3,,3,,,MAH,,low,pools,y,,,719
+ZZ,338,Acanthodoris rhodoceras,nudibranch,1,631,Alcyonidium sp.,bryozoan,1,3,,3,,,175,"Santa Barbara, CA",low,pools,n,,"light and smith says distribution is North for the species they describe for CA, but jeff found in SB?",720
+ZZ,299,Navanax inermis,nudibranch,1,344,Aegires albopunctatus,nudibranch,1,1,,3,,,MAH,,low,pools,y,,,721
+ZZ,347,Doto amyra,nudibranch,1,85,Obelia dichotoma,hydroid,1,3,,6,,,MAH,,low,pools,y,,,722
+ZZ,347,Doto amyra,nudibranch,1,86,Obelia bidentata,hydroid,1,3,,6,,,MAH,,low,pools,y,,,723
+ZZ,347,Doto amyra,nudibranch,1,87,Obelia geniculata,hydroid,1,3,,6,,,MAH,,low,pools,y,,,724
+ZZ,347,Doto amyra,nudibranch,1,90,Abietinaria sp.,hydroid,1,3,,3,,,MAH,,low,pools,y,,,725
+ZZ,634,Doto kya,nudibranch,1,90,Abietinaria sp.,hydroid,1,3,,3,,,MAH,,low,pools,y,,,726
+ZZ,634,Doto kya,nudibranch,1,85,Obelia dichotoma,hydroid,1,3,,1,,,"LSM, PO1",,low,pools,n,,,727
+ZZ,634,Doto kya,nudibranch,1,91,Aglaophenia struthionides,hydroid,1,3,,3,,,LSM,,low,pools,n,,,728
+ZZ,634,Doto kya,nudibranch,1,84,Eudendrium californicum,hydroid,1,3,,3,,,LSM,,low,pools,n,,,729
+ZZ,634,Doto kya,nudibranch,1,93,Plumularia sp.,hydroid,1,3,,3,,,LSM,,low,pools,n,,,730
+ZZ,634,Doto kya,nudibranch,1,767,Sarsia sp.,hydroid,1,3,,3,,,LSM,,low,pools,n,,,731
+ZZ,634,Doto kya,nudibranch,1,89,Xingyurella turgida,hydroid,1,3,,3,,,LSM,,low,pools,n,,,732
+ZZ,635,Celleporella hyalina,bryozoan,1,524,Pagurus samuelis,hermit crab,1,2,,6,,,LSM,,all,pools,n,,,733
+ZZ,635,Celleporella hyalina,bryozoan,1,525,Pagurus hirsutiusculus,hermit crab,1,2,,6,,,LSM,,all,pools,n,,,734
+ZZ,635,Celleporella hyalina,bryozoan,1,526,Pagurus hemphilli,hermit crab,1,2,,6,,,LSM,,all,pools,n,,,735
+ZZ,635,Celleporella hyalina,bryozoan,1,527,Pagurus granosimanus,hermit crab,1,2,,6,,,LSM,,all,pools,n,,,736
+ZZ,348,Dirona albolineata,nudibranch,1,91,Aglaophenia struthionides,hydroid,1,3,,3,,,108,,,,,,,737
+ZZ,348,Dirona albolineata,nudibranch,1,129,Bugula californica,bryozoan,1,3,,6,,,108,,,,,,,738
+ZZ,348,Dirona albolineata,nudibranch,1,130,Bugula neritina,bryozoan,1,1,,6,,,108,,,,,,,739
+ZZ,348,Dirona albolineata,nudibranch,1,636,Dendrobeania lichenoides,bryozoan,1,3,,3,,,LAS,,low,pools,n,yes,,740
+ZZ,348,Dirona albolineata,nudibranch,1,463,Balanus glandula,barnacle,1,1,,6,,,LAS,,low,pools,n,yes,,741
+ZZ,348,Dirona albolineata,nudibranch,1,464,Balanus glandula,barnacle,5,1,,6,,,LAS,,low,pools,n,yes,,742
+ZZ,348,Dirona albolineata,nudibranch,1,465,Balanus crenatus,barnacle,1,1,,6,,,LAS,,low,pools,n,yes,,743
+ZZ,348,Dirona albolineata,nudibranch,1,466,Balanus trigonus,barnacle,1,1,,6,,,LAS,,low,pools,n,yes,,744
+ZZ,350,Antiopella barbarensis,nudibranch,1,129,Bugula californica,bryozoan,1,3,,3,,,MAH,,low,pools,y,yes,,745
+ZZ,351,Orienthella trilineata,nudibranch,1,637,Ectopleura crocea,hydroid,1,3,,3,,,MAH,,low,pools,y,yes,mainly in esutaries - check for presence in RIZ,746
+ZZ,351,Orienthella trilineata,nudibranch,1,84,Eudendrium californicum,hydroid,1,3,,6,,,MAH,,low,pools,y,yes,,747
+ZZ,352,Orienthella cooperi,nudibranch,1,637,Ectopleura crocea,hydroid,1,3,,3,,,MAH,,low,pools,y,yes,mainly in esutaries - check for presence in RIZ,748
+ZZ,299,Navanax inermis,nudibranch,1,353,Flabellinopsis iodinea,nudibranch ,1,1,,3,,,MAH,,low,pools,y,yes,,749
+ZZ,354,Diaphoreolis lagunae,nudibranch,1,89,Xingyurella turgida,hydroid,1,3,,,,,,,low,pools,n,yes,"Jeff Godddard: In southern Oregon and northern California I have consistently found Cuthona lagunae on the thecate hydroid Sertularella turgida (see Goddard, 1987, personal observations), which appears to be present slightly below and to the left of the specimen in Clinton's lower photo. I have not, however, actually observed feeding by the aeolid on this hydroid. (http://www.seaslugforum.net/showall/cuthlagu)",750
+ZZ,355,Cuthona divae,nudibranch,1,NA,Corymorpha sp.,hydroid,1,3,,3,,,LAS,,low,pools,n,yes,not sure if Corymorpha are rocky,751
+ZZ,356,Phidiana hiltoni,nudibranch,1,228,Hydractinia milleri,hydroid,1,3,,6,,,MAH,,low,pools,y,yes,,752
+ZZ,357,Hermissenda opalescens,nudibranch,1,357,Hermissenda opalescens,nudibranch,1,1,,3,,,MAH,,,,,,,753
+ZZ,638,Hemicyclops thysanotus,copepod,1,357,Hermissenda opalescens,nudibranch,1,7,,3,,,"MAH, 176",,low,pools,y,no,not sure if parasitic,754
+ZZ,357,Hermissenda opalescens,nudibranch,1,171,Aplidium solidum,tunicate,1,3,,3,,,MAH,,low,pools,y,yes,different than crassicornis? because that interaction is already in here,755
+ZZ,358,Aeolidia loui,nudibranch ,1,105,Urticina coriacea,anemone,1,,,3,,,MAH,,,,,,,756
+ZZ,358,Aeolidia loui,nudibranch ,1,104,Urticina crassicornis,anemone,1,,,3,,,MAH,,,,,,,757
+ZZ,231,Calliostoma caniculatum,nudibranch ,1,587,Macrocystis pyrifera,algae,1,3,,3,,,MAH,,low,pools,y,yes,,758
+ZZ,359,Antaeolidella olivae,nudibranch,1,107,Metridium senile,anemone,1,3,,3,,,MAH,,low,pools,y,yes,not sure if micropredator or not,759
+ZZ,359,Antaeolidella olivae,nudibranch,1,102,Epiactis prolifera,anemone,1,3,,3,,,MAH,,low,pools,y,yes,not sure if micropredator or not,760
+ZZ,359,Antaeolidella olivae,nudibranch,1,109,Coryanactis californica,anemone,1,3,,3,,,MAH,,low,pools,y,yes,not sure if micropredator or not,761
+ZZ,719,Enhydra lutris,mammal,1,366,Mytilus californianus,bivalve,,,,,,,,,,,,,,762
+ZZ,559,Fabia subquadrata,pea crab,1,366,Mytilus californianus,bivalve,1,6,,3,,,MAH,,all,exposed,y,no,consumed when host is,763
+ZZ,639,Achelia chelata,sea spider,1,366,Mytilus californianus,bivalve,1,6,,3,,,"MAH, 177",Duxbury Reef,all,exposed,y,no,consumed when host is,764
+ZZ,150,Pisaster ochraceus,sea star,1,367,Mytilus edulis,bivalve,1,1,,3,,,MAH,,high,exposed,y,yes,,765
+ZZ,549,Cancer antennarius,true crab,1,367,Mytilus edulis,bivalve,1,1,,3,,,MAH,,low,pools,y,no,,766
+ZZ,566,Pachygraspus crassipes,crab,1,367,Mytilus edulis,bivalve,1,1,,3,,,MAH,,high,exposed,y,no,,767
+ZZ,150,Pisaster ochraceus,sea star,1,368,Mytilisepta bifurcata,bivalve,1,1,,3,,,MAH,,middle,exposed,y,yes,,768
+ZZ,150,Pisaster ochraceus,sea star,1,369,Crassadoma gigantea,bivalve,1,1,,3,,,MAH,,low,exposed,y,yes,,769
+ZZ,719,Enhydra lutris,mammal,1,372,Chama arcana,bivalve,1,1,,3,,,MAH,,low,pools,y,yes,,770
+ZZ,374,Lasaea cistula,bivalve,1,640,Endocladia muricata,algae,1,2,,3,,,MAH,,high,exposed,y,no,,771
+ZZ,375,Lasaea subviridis,bivalve,1,366,Mytilus californianus,bivalve,1,2,,6,,,MAH,,high,exposed,y,no,on byssal threads,772
+ZZ,375,Lasaea subviridis,bivalve,1,367,Mytilus edulis,bivalve,1,2,,6,,,MAH,,high,exposed,y,no,on byssal threads,773
+ZZ,418,Octopus bimaculoides,octopus,1,403,Stenoplax conspicua,chiton,1,1,,6,,,MAH,,low,pools,y,yes,,774
+ZZ,641,Teinostoma supravallatum,,1,403,Stenoplax conspicua,chiton,,,,,0,,,,,,,,,775
+ZZ,,Pristes oblongus,,,403,Stenoplax conspicua,chiton,,,,,0,,,,,,,,,776
+ZZ,401,Stenoplax heathiana,chiton,1,664,Plocamium violacium,algae,1,3,,3,,,178,,middle,both,n,yes,,777
+ZZ,401,Stenoplax heathiana,chiton,1,742,Gigartina canaliculata,algae,1,3,,3,,,178,,middle,both,n,yes,,778
+ZZ,401,Stenoplax heathiana,chiton,1,661,Polysiphonia sp.,algae,1,3,,3,,,178,,middle,both,n,yes,,779
+ZZ,401,Stenoplax heathiana,chiton,1,601,Ulva sp.,algae,1,3,,3,,,178,,middle,both,n,yes,,780
+ZZ,401,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,,3,,,178,,middle,both,n,yes,,781
+ZZ,401,Stenoplax heathiana,chiton,1,642,fish eggs,gametes,1,3,,3,,,RIZ Lit Search: 178,,middle,both,n,yes,,782
+ZZ,401,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,,3,,,178,,middle,both,n,yes,,783
+ZZ,401,Stenoplax heathiana,chiton,1,613,Corallina chilensis,coralline algae,1,3,,3,,,178,,middle,both,n,yes,,784
+ZZ,401,Stenoplax heathiana,chiton,1,607,Phyllospadix torreyi,sea grass,1,3,,3,,,178,,middle,both,n,yes,,785
+ZZ,401,Stenoplax heathiana,chiton,1,608,Phyllospadix scouleri,angiosperm,1,3,,3,,,178,,middle,both,n,yes,,786
+,,,,,,,,,,,,,,,,,,,,,787
+ZZ,150,Pisaster ochraceus,sea star,1,404,Tonicella lineata,chiton,1,1,,3,,,MAH,,low,both,y,yes,,788
+ZZ,149,Leptasterias hexactis,sea star,1,404,Tonicella lineata,chiton,1,1,,3,,,MAH,,low,both,y,yes,,789
+ZZ,405,Cyanoplax hartwegii,chiton,1,652,Sylvetia sp.,algae,1,3,,3,,,MAH,,high,pools,y,yes,nocturnal,790
+ZZ,405,Cyanoplax hartwegii,chiton,1,653,Hildenbrandia sp.,algae,1,3,,3,,,MAH,,high,pools,y,yes,nocturnal,791
+ZZ,405,Cyanoplax hartwegii,chiton,1,654,Mastocarpus sp.,algae,1,3,,3,,,MAH,,high,pools,y,yes,nocturnal,792
+ZZ,405,Cyanoplax hartwegii,chiton,1,640,Endocladia muricata,algae,1,3,,6,,,MAH,,high,pools,y,yes,nocturnal,793
+ZZ,405,Cyanoplax hartwegii,chiton,1,656,Cladophora columbiana,algae,1,3,,6,,,MAH,,high,pools,y,yes,nocturnal,794
+ZZ,409,Nuttallina californica,chiton,1,656,Cladophora columbiana,algae,1,3,,3,,,MAH,,middle,exposed,y,yes,,795
+ZZ,409,Nuttallina californica,chiton,1,640,Endocladia muricata,algae,1,3,,3,,,MAH,,middle,exposed,y,yes,,796
+ZZ,409,Nuttallina californica,chiton,1,655,Gelidium sp.,algae,1,3,,3,,,MAH,,middle,exposed,y,yes,,797
+ZZ,640,Endocladia muricata,algae,1,409,Nuttallina californica,chiton,1,2,,3,,,MAH,,middle,exposed,y,NA,,798
+ZZ,661,Polysiphonia sp.,algae,1,409,Nuttallina californica,chiton,1,2,,3,,,MAH,,middle,exposed,y,NA,,799
+ZZ,656,Cladophora columbiana,algae,1,409,Nuttallina californica,chiton,1,2,,6,,,MAH,,middle,exposed,y,NA,,800
+ZZ,613,Corallina chilensis,algae,1,409,Nuttallina californica,chiton,1,2,,6,,,MAH,,middle,exposed,y,NA,,801
+,614,Corallina vancouveriensis,algae,1,409,Nuttallina californica,chiton,1,2,,6,,,,,,,,,,802
+ZZ,411,Mopalia muscosa,chiton,1,659,Mastocarpus papillatus,,1,2,,3,,,MAH,,middle,both,y,yes,,803
+ZZ,411,Mopalia muscosa,chiton,1,640,Endocladia muricata,algae,1,2,,3,,,MAH,,middle,both,y,yes,,804
+ZZ,411,Mopalia muscosa,chiton,1,656,Cladophora columbiana,,1,2,,3,,,MAH,,middle,both,y,yes,,805
+ZZ,NA,Cyanoplax dentiens,,,,Nuttallina californica,,WHAT IS THIS RECHECK MAH,,,,,,,,,,,,,806
+ZZ,660,Larus occidentalis,bird,1,409,Nuttallina californica,chiton,1,1,,3,,,MAH,,middle,both,y,yes,,807
+ZZ,662,Nexilis epichitonius,flatworm,1,413,Mopalia hindsii,chiton,1,9,,3,,,MAH,,middle,exposed,y,NA,WHAT DIS,808
+ZZ,413,Mopalia hindsii,chiton,1,38,Myxilla incrustans,sponge,1,3,,7,,,3,,low,exposed,n,yes,make sure doesn't link to what sponge is epibiotic on (bivalves),809
+ZZ,417,Cryptochiton stelleri,chiton,1,659,Mastocarpus papillatus,algae,1,3,,3,,,MAH,,low,pools,y,yes,,810
+ZZ,417,Cryptochiton stelleri,chiton,1,663,Mazzaella laminarioides,algae,1,3,,6,,,MAH,,low,pools,y,yes,,811
+ZZ,417,Cryptochiton stelleri,chiton,1,646,Mazzaella splendens,algae,1,3,,6,,,MAH,,low,pools,y,yes,,812
+ZZ,417,Cryptochiton stelleri,chiton,1,664,Plocamium violacium,algae,1,3,,6,,,MAH,,low,pools,y,yes,reported as Plocamium sp.,813
+ZZ,417,Cryptochiton stelleri,chiton,1,601,Ulva sp.,algae,1,3,,3,,,MAH,,low,pools,y,yes,,814
+ZZ,417,Cryptochiton stelleri,chiton,1,587,Macrocystis pyrifera,algae,1,3,,6,,,MAH,,low,pools,y,yes,,815
+ZZ,417,Cryptochiton stelleri,chiton,1,624,Laminaria sp.,algae,1,3,,3,,,MAH,,low,pools,y,yes,,816
+ZZ,424,Arctonoe vittata,polychaete,1,417,Cryptochiton stelleri,chiton,1,9,,3,,,MAH,,low,pools,y,yes,,817
+ZZ,565,Opisthopus transversus,true crab,1,417,Cryptochiton stelleri,chiton,1,9,,3,,,MAH,,low,pools,y,yes,,818
+ZZ,418,Octopus bimaculoides,octopus,1,,CRUSTACEANS???,,1,1,,,,,MAH,,low,pools,y,yes,,819
+ZZ,418,Octopus bimaculoides,octopus,1,213,Notoacmea inessa,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,820
+,418,Octopus bimaculoides,octopus,1,214,Notoacmea paleacea,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,821
+ZZ,418,Octopus bimaculoides,octopus,1,229,Haliotis cracherodi,snail,1,1,,3,,,MAH,,low,pools,y,yes,,822
+ZZ,418,Octopus bimaculoides,octopus,1,294,Olivella biplicata,snail,1,1,,3,,,MAH,,low,pools,y,yes,,823
+ZZ,418,Octopus bimaculoides,octopus,1,237,Tegula funebralis,snail,1,1,,3,,,MAH,,low,pools,y,yes,,824
+ZZ,418,Octopus bimaculoides,octopus,1,239,Tegula gallina,snail,1,1,,3,,,MAH,,low,pools,y,yes,,825
+ZZ,418,Octopus bimaculoides,octopus,1,NA,Protothaca staminea,bivalve,1,1,,3,5,,MAH,,low,pools,y,yes,,826
+ZZ,418,Octopus bimaculoides,octopus,1,524,Pagurus samuelis,hermit crab,1,1,,6,,,MAH,,low,pools,y,yes,,827
+ZZ,418,Octopus bimaculoides,octopus,1,525,Pagurus hirsutiusculus,hermit crab,1,1,,6,,,MAH,,low,pools,y,yes,,828
+ZZ,418,Octopus bimaculoides,octopus,1,526,Pagurus hemphilli,hermit crab,1,1,,6,,,MAH,,low,pools,y,yes,,829
+ZZ,418,Octopus bimaculoides,octopus,1,527,Pagurus granosimanus,hermit crab,1,1,,6,,,MAH,,low,pools,y,yes,,830
+ZZ,418,Octopus bimaculoides,octopus,1,367,Mytilus edulis,bivalve,1,1,,3,,,MAH,,low,pools,y,yes,,831
+ZZ,418,Octopus bimaculoides,octopus,1,3,Hypsoblennius gilberti,fish,1,1,,3,,,MAH,,low,pools,y,yes,,832
+ZZ,418,Octopus bimaculoides,octopus,1,747,Hypsoblennius gentilis,fish,1,1,,3,,,MAH,,low,pools,y,yes,,833
+ZZ,418,Octopus bimaculoides,octopus,1,287,Kelletia kelletii,snail,1,1,,3,,,MAH,,low,pools,y,yes,,834
+ZZ,418,Octopus bimaculoides,octopus,1,235,Norrisia norrisii,,1,1,,3,,,MAH,,low,pools,y,yes,,835
+ZZ,418,Octopus bimaculoides,octopus,1,244,Megastrea undosa,,1,1,,3,,,MAH,,low,pools,y,yes,,836
+ZZ,418,Octopus bimaculoides,octopus,1,197,Lottia asmi,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,837
+ZZ,418,Octopus bimaculoides,octopus,1,198,Lottia austrodigitalis,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,838
+ZZ,418,Octopus bimaculoides,octopus,1,199,Lottia digitalis,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,839
+ZZ,418,Octopus bimaculoides,octopus,1,200,Lottia fenestrata,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,840
+ZZ,418,Octopus bimaculoides,octopus,1,201,Lottia gigantea,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,841
+ZZ,418,Octopus bimaculoides,octopus,1,202,Lottia instabilis,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,842
+ZZ,418,Octopus bimaculoides,octopus,1,203,Lottia limatula,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,843
+ZZ,418,Octopus bimaculoides,octopus,1,204,Lottia ochracea,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,844
+ZZ,418,Octopus bimaculoides,octopus,1,205,Lottia strigatella,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,845
+ZZ,418,Octopus bimaculoides,octopus,1,206,Lottia strigatella,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,846
+ZZ,418,Octopus bimaculoides,octopus,1,207,Lottia paradigitalis,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,847
+ZZ,418,Octopus bimaculoides,octopus,1,208,Lottia pelta,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,848
+ZZ,418,Octopus bimaculoides,octopus,1,209,Lottia persona,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,849
+ZZ,418,Octopus bimaculoides,octopus,1,210,Lottia scabra,limpet,1,1,,6,,,MAH,,low,pools,y,yes,,850
+ZZ,418,Octopus bimaculoides,octopus,1,211,Lottia sp.,limpet,1,1,,3,,,MAH,,low,pools,y,yes,,851
+ZZ,665,Dicyema sullivani,metazoan,6,418,Octopus bimaculoides,cephalopod,1,7,,3,,,MAH,,low,pools,y,NA,,852
+ZZ,666,Dicyemennea californica,metazoan,6,418,Octopus bimaculoides,cephalopod,1,7,,3,,,MAH,,low,pools,y,NA,,853
+ZZ,667,Dicyemmenea adscita,metazoan,6,419,Octopus rufescens,cephalopod,1,7,,3,,,MAH,,low,pools,y,NA,,854
+ZZ,668,Dicyema balamuthi,metazoan,6,419,Octopus rufescens,cephalopod,1,7,,3,,,MAH,,low,pools,y,NA,,855
+ZZ,669,Conocyema adminicula,metazoan,6,419,Octopus rufescens,cephalopod,1,7,,3,,,MAH,,low,pools,y,NA,,856
+ZZ,670,Dicyemennea brevicephala,metazoan,6,419,Octopus rufescens,cephalopod,1,7,,3,,,MAH,,low,pools,y,NA,,857
+ZZ,671,Dicyema apollyoni,metazoan,6,419,Octopus rufescens,cephalopod,1,7,,3,,,MAH,,low,pools,y,NA,,858
+ZZ,NA,Paralabrax sp.,fish,1,419,Octopus rufescens,cephalopod,1,1,,3,,,MAH,,low,pools,y,yes,,859
+ZZ,NA,Sebastes sp.,fish,1,419,Octopus rufescens,cephalopod,1,1,,3,,,MAH,,low,pools,y,yes,,860
+ZZ,422,Arctonoe fragilis,polychaete,1,672,Leptasterias aequalis,,1,10,,3,,,MAH,,middle,both,y,NA,,861
+ZZ,422,Arctonoe fragilis,polychaete,1,149,Leptasterias hexactis,,1,10,,3,,,MAH,,middle,both,y,NA,,862
+ZZ,422,Arctonoe fragilis,polychaete,1,60,Orthasterias koehleri,,1,10,,3,,,MAH,,low,both,y,NA,,863
+ZZ,422,Arctonoe fragilis,polychaete,1,146,Solaster dawsonii,sea star,1,10,,3,,,MAH,,low,both,y,NA,,864
+ZZ,422,Arctonoe fragilis,polychaete,1,150,Pisaster ochraceus,sea star,1,10,,3,,,MAH,,low,both,y,NA,,865
+ZZ,423,Arctonoe pulchra,polychaete,1,417,Cryptochiton stelleri,,1,10,,3,,,MAH,,low,both,y,NA,,866
+ZZ,423,Arctonoe pulchra,polychaete,1,193,Megathura crenulata,,1,10,,3,,,MAH,,low,both,y,NA,,867
+ZZ,423,Arctonoe pulchra,polychaete,1,159,Parastichopus californicus,,1,10,,3,,,MAH,,low,both,y,NA,,868
+ZZ,423,Arctonoe pulchra,polychaete,1,673,Apostichopus parvimensis,,1,10,,3,,,MAH,,low,both,y,NA,,869
+ZZ,423,Arctonoe pulchra,polychaete,1,NA,Loimia montagui,,1,10,,3,,,MAH,,low,both,y,NA,,870
+ZZ,425,Halosydna brevisetosa,polychaete,1,NA,Pista pacifica,polychaete,1,10,,3,,,MAH,,low,both,y,NA,,871
+ZZ,425,Halosydna brevisetosa,polychaete,1,438,Pista elongata,polychaete,1,10,,3,,,MAH,,low,both,y,NA,,872
+ZZ,425,Halosydna brevisetosa,polychaete,1,440,Thelepus crispus,,1,10,,3,,,MAH,,low,both,y,NA,,873
+ZZ,425,Halosydna brevisetosa,polychaete,1,NA,Neoamphitrite robusta,,1,10,,3,,,MAH,,low,both,y,NA,,874
+ZZ,425,Halosydna brevisetosa,polychaete,1,NA,Loimia montagui,,1,10,,3,,,MAH,,low,both,y,NA,,875
+ZZ,425,Halosydna brevisetosa,polychaete,1,430,Platynereis bicanaliculata,,1,10,,3,,,MAH,,low,both,y,NA,,876
+ZZ,426,Harmothoe imbricata,polychaete,1,440,Thelepus crispus,,1,10,,3,,,MAH,,low,both,y,NA,,877
+ZZ,426,Harmothoe imbricata,polychaete,1,NA,Neoamphitrite robusta,,1,10,,3,,,MAH,,low,both,y,NA,,878
+ZZ,426,Harmothoe imbricata,polychaete,1,NA,Diopatra ornata,,1,10,,3,5,,MAH,,low,both,y,NA,,879
+ZZ,428,Ophiodromus pugettensis,polychaete,1,144,Patiria miniata,,1,10,,3,,,MAH,,low,pools,y,NA,,880
+ZZ,428,Ophiodromus pugettensis,polychaete,1,NA,Tubulipora spp. ,bryozoan,1?,1,,3,,,RIZ Lit Search: 20,,low,pools,n,unknown,copied from Patiria diet reports,881
+ZZ,428,Ophiodromus pugettensis,polychaete,1,NA,Lytechinus anamesus,sea urchin,1,1,,3,5,,RIZ Lit Search: 21,,low,pools,n,unknown,copied from Patiria diet reports,882
+ZZ,428,Ophiodromus pugettensis,polychaete,1,NA,Phaeophyta algae,algae,1?,3,,3,,,RIZ Lit Search: 23,,low,pools,n,unknown,copied from Patiria diet reports,883
+ZZ,428,Ophiodromus pugettensis,polychaete,1,NA,Chlorophyta algae,algae,1,3,,3,,,RIZ Lit Search: 23,,low,pools,n,unknown,copied from Patiria diet reports,884
+ZZ,428,Ophiodromus pugettensis,polychaete,1,170,Aplidium californicum,tunicate,1,1,,3,,,MAH,,middle,pools,y,unknown,copied from Patiria diet reports,885
+ZZ,428,Ophiodromus pugettensis,polychaete,1,178,Euherdmania claviformis,tunicate,1,1,,3,,,MAH,,low,pools,y,unknown,copied from Patiria diet reports,886
+ZZ,428,Ophiodromus pugettensis,polychaete,1,183,Archidistoma psammion,tunicate,1,1,,3,,,MAH,,low,pools,y,unknown,copied from Patiria diet reports,887
+SML,95,Manania sp.,scyphozoan,1,NA,,,,,,,,,,,,,,,,888
+DF,364,Lithophaga plumula,mussel,1,287,Kelletia kelletii,whelk,1,28,,3,,,RIZ Lit Search: 196,,low,,y,,,889
+DF,279,Roperia poulsoni,snail,1,364,Lithophaga plumula,mussel,1,1,,3,,,RIZ Lit Search: 197,,low,pools,n,,,890
+ZZ,703,Selenidium fauchaldi,gregarine,1,436,Phragmatopoma californica,polychaete,1,5,,3,,,MAH,,middle,exposed,y,NA,,891
+ZZ,560,Pinnixa barnharti,pea crab,1,439,Pectinaria californiensis,,1,9,,3,,,MAH,,middle,exposed,y,NA,,892
+ZZ,561,Pinnixa faba,pea crab,1,439,Pectinaria californiensis,,1,9,,3,,,MAH,,middle,exposed,y,NA,,893
+ZZ,561,Pinnixa faba,pea crab,1,439,Pectinaria californiensis,,1,9,,3,,,MAH,,middle,exposed,y,NA,,894
+ZZ,563,Pinnixa longipes,pea crab,1,440,Pectinaria californiensis,,1,9,,3,,,MAH,,middle,exposed,y,NA,,895
+ZZ,564,Pinnixa tubicola,pea crab,1,441,Pectinaria californiensis,,1,9,,3,,,MAH,,middle,exposed,y,NA,,896
+ZZ,425,Halosydna brevisetosa,polychaete,1,442,Pectinaria californiensis,,1,9,,3,,,MAH,,middle,exposed,y,NA,,897
+ZZ,284,Nucella emarginata,snail,1,456,Chthamalus dalli,barnacle,1,1,,3,,,MAH,,high,exposed,y,y,,898
+ZZ,150,Pisaster ochraceus,sea star,1,456,Chthamalus dalli,barnacle,1,1,,3,,,MAH,,high,exposed,y,y,,899
+ZZ,704,Hemioniscus balani,isopod,1,456,Chthamalus dalli,barnacle,1,4,,3,,,MAH,,high,exposed,y,NA,,900
+ZZ,705,Hemioniscus balani,isopod,2,457,Chthamalus fissus,barnacle,1,4,,3,,,MAH,,high,exposed,y,NA,,901
+ZZ,284,Nucella emarginata,snail,1,457,Chthamalus fissus,barnacle,1,1,,3,,,MAH,,high,exposed,y,y,,902
+ZZ,150,Pisaster ochraceus,sea star,1,457,Chthamalus fissus,barnacle,1,1,,3,,,MAH,,high,exposed,y,y,,903
+ZZ,284,Nucella emarginata,snail,1,458,Tetraclita rubescens,barnacle,1,1,,3,,,MAH,,middle,exposed,y,y,,904
+ZZ,150,Pisaster ochraceus,sea star,1,458,Tetraclita rubescens,barnacle,1,1,,3,,,MAH,,middle,exposed,y,y,,905
+ZZ,284,Nucella emarginata,snail,1,463,Balanus glandula,barnacle,1,1,,3,,,MAH,,high,exposed,y,y,,906
+ZZ,150,Pisaster ochraceus,sea star,1,463,Balanus glandula,barnacle,1,1,,3,,,,,,,,,,907
+ZZ,149,Leptasterias hexactis,sea star,1,463,Balanus glandula,barnacle,1,1,,3,,,,,,,,,,908
+ZZ,,limpets,limpet,,464,Balanus glandula,barnacle,4,1,,3,,,,,,,,,,909
+ZZ,,limpets,limpet,,464,Balanus glandula,barnacle,4,1,,3,,,,,,,,,,910
+ZZ,,limpets,limpet,,464,Balanus glandula,barnacle,4,1,,3,,,,,,,,,,911
+ZZ,,limpets,limpet,,464,Balanus glandula,barnacle,5,1,,3,,,,,,,,,,912
+ZZ,,limpets,limpet,,464,Balanus glandula,barnacle,5,1,,3,,,,,,,,,,913
+ZZ,,limpets,limpet,,464,Balanus glandula,barnacle,5,1,,3,,,,,,,,,,914
+ZZ,,limpets,limpet,,464,Balanus glandula,barnacle,5,1,,3,,,,,,,,,,915
+ZZ,112,Imogine tripartitus,flatworm,1,467,Paraconcavus pacificus,barnacle,1,1,,3,,,MAH,,low,exposed,y,y,,916
+ZZ,707,Pleioplana inquieta,flatworm,1,467,Paraconcavus pacificus,barnacle,1,1,,3,,,MAH,,low,exposed,y,y,,917
+ZZ,472,Heterosaccus californicus,rhizocephalan,1,545,Loxorhynchus grandis,true crab,1,4,,3,,,MAH,,low,pools,y,NA,,918
+ZZ,472,Heterosaccus californicus,rhizocephalan,1,546,Loxorhynchus crispatus,true crab,1,4,,3,,,MAH,,low,pools,y,NA,,919
+ZZ,472,Heterosaccus californicus,rhizocephalan,1,539,Pugettia producta,true crab,1,4,,3,,,MAH,,low,pools,y,NA,,920
+ZZ,472,Heterosaccus californicus,rhizocephalan,1,538,Taleipus nuttallii,true crab,1,4,,3,,,MAH,,low,pools,y,NA,,921
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,4,,3,,,MAH,,low,pools,y,NA,,922
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,525,Pagurus hirsutiusculus,hermit crab,1,4,,3,,,MAH,,low,pools,y,NA,,923
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,526,Pagurus hemphilli,hermit crab,1,4,,3,,,MAH,,low,pools,y,NA,,924
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,527,Pagurus granosimanus,hermit crab,1,4,,3,,,MAH,,low,pools,y,NA,,925
+ZZ,474,Lernaeodiscus porcellanae,rhizocephalan,1,531,Petrolisthes cabrilloi,porcelain crab,1,4,,3,,,MAH,,low,pools,y,NA,,926
+ZZ,2,Gibbonsia elegans,fish,1,475,Cirolana harfordi,isopod,1,1,,3,,,MAH,,middle,exposed,y,y,,927
+ZZ,706,Apodichthys fucorum,fish,1,475,Cirolana harfordi,isopod,1,1,,3,,,MAH,,middle,exposed,y,y,,928
+ZZ,6,Micrometrus minimus,fish,1,475,Cirolana harfordi,isopod,1,1,,3,,,MAH,,middle,exposed,y,y,,929
+ZZ,484,Schizobopyrina striata,isopod,1,517,Hippolyte californiensis,shrimp,1,6,,3,,,MAH,,low,pools,y,NA,,930
+ZZ,485,Aborobopyrus muguensis,isopod,1,535,Pachycheles rudis,porcelain crab,1,6,,3,,,MAH,,low,pools,y,NA,,931
+ZZ,707,Hexagrammos decagrammus,fish,1,488,Idotea stenops,isopod, ,1,,3,,,MAH,,low,pools,y,y,,932
+ZZ,1,Gibbonsia metzi,fish,,489,Idotea aculeata,isopod,1,1,,3,,,MAH,,low,pools,y,y,,933
+ZZ,6,Micrometrus minimus,fish,,490,Idotea wosnesenskii,isopod,1,1,,3,,,MAH,,low,pools,y,y,,934
+ZZ,1,Gibbonsia metzi,fish,,489,Idotea aculeata,isopod,1,1,,3,,,MAH,,low,pools,y,y,,935
+ZZ,6,Micrometrus minimus,fish,,490,Idotea wosnesenskii,isopod,1,1,,3,,,MAH,,low,pools,y,y,,936
+ZZ,507,Alpheus clamator,shrimp,1,NA,Clevelandia ios,fish,1,1,,3,5,,MAH,,low,pools,y,y,,937
+ZZ,507,Alpheus clamator,shrimp,1,NA,Gillichthys mirabilis,fish,4,1,,3,5,,MAH,,low,pools,y,y,,938
+ZZ,708,Podiceps nigricollis,bird,1,517,Hippolyte californiensis,shrimp,1,1,,3,5,,MAH,,low,pools,y,y,,939
+ZZ,709,Bopyrina striata,isopod,1,517,Hippolyte californiensis,shrimp,1,6,,3,5,,MAH,,low,pools,y,y,,940
+ZZ,524,Pagurus samuelis,hermit crab,1,587,Macrocystis pyrifera,,1,3,,3,,,MAH,,all,pools,y,y,,941
+ZZ,524,Pagurus samuelis,hermit crab,1,650,Pelvetiopsis limitata,,1,3,,3,,,MAH,,all,pools,y,y,,942
+ZZ,710,Rhacochilus vacca,fish,1,524,Pagurus samuelis,hermit crab,1,1,,3,,,MAH,,all,pools,y,y,,943
+ZZ,NA,Semicossyphus pulcher,fish,1,524,Pagurus samuelis,hermit crab,1,1,,3,5,,MAH,,all,pools,y,y,,944
+ZZ,2,Gibbonsia elegans,fish,1,524,Pagurus samuelis,hermit crab,1,1,,3,,,MAH,,all,pools,y,y,,945
+ZZ,1,Gibbonsia metzi,fish,1,524,Pagurus samuelis,hermit crab,1,1,,3,,,MAH,,all,pools,y,y,,946
+ZZ,527,Pagurus granosimanus,hermit crab,1,650,Pelvetiopsis limitata,algae,1,3,,3,,,MAH,,all,pools, ,y,,947
+ZZ,710,Rhacochilus vacca,fish,1,527,Pagurus granosimanus,hermit crab,1,1,2,10,,,NA,,all,pools,y,y,,948
+ZZ,NA,Semicossyphus pulcher,fish,1,527,Pagurus granosimanus,hermit crab,1,1,2,10,5,,NA,,all,pools,y,y,,949
+ZZ,2,Gibbonsia elegans,fish,1,527,Pagurus granosimanus,hermit crab,1,1,2,10,,,NA,,all,pools,y,y,,950
+ZZ,1,Gibbonsia metzi,fish,1,527,Pagurus granosimanus,hermit crab,1,1,2,10,,,NA,,all,pools,y,y,,951
+ZZ,710,Rhacochilus vacca,fish,1,525,Pagurus hirsutiusculus,hermit crab,1,1,2,10,,,NA,,all,pools,y,y,,952
+ZZ,NA,Semicossyphus pulcher,fish,1,525,Pagurus hirsutiusculus,hermit crab,1,1,2,10,5,,NA,,all,pools,y,y,,953
+ZZ,2,Gibbonsia elegans,fish,1,525,Pagurus hirsutiusculus,hermit crab,1,1,2,10,,,NA,,all,pools,y,y,,954
+ZZ,1,Gibbonsia metzi,fish,1,525,Pagurus hirsutiusculus,hermit crab,1,1,2,10,,,NA,,all,pools,y,y,,955
+ZZ,534,Aborobopyrus oviformis,isopod,1,533,Pachycheles pubescens,porcelain crab,1,6,,3,,,MAH,,low,pools,y,NA,,956
+ZZ,539,Pugettia producta,true crab,1,587,Macrocystis pyrifera,algae,1,3,,3,,,MAH,,low,pools,y,y,,957
+ZZ,539,Pugettia producta,true crab,1,617,Egregia menziesii,algae,1,3,,3,,,MAH,,low,pools,y,y,,958
+ZZ,539,Pugettia producta,true crab,1,648,Pterygophora sp.,algae,1,3,,3,,,MAH,,low,pools,y,y,,959
+ZZ,711,Carcinonemertes epialti,nemertean,1,539,Pugettia producta,true crab,1,23,,3,,,MAH,,low,pools,y,NA,,960
+ZZ,472,Heterosaccus californicus,barnacle,1,539,Pugettia producta,true crab,1,4,,3,,,MAH,,low,pools,y,NA,,961
+ZZ,1,Gibbonsia metzi,fish,1,541,Pugettia richii,true crab,1,1,,3,,,MAH,,low,pools,y,y,,962
+ZZ,15,Clinocottus analis,fish,1,541,Pugettia richii,true crab,1,1,,3,,,MAH,,low,pools,y,y,,963
+ZZ,1,Gibbonsia metzi,fish,1,542,Pugettia dalli,true crab,1,1,2,10,,,MAH,,low,pools,y,y,,964
+ZZ,15,Clinocottus analis,fish,1,542,Pugettia dalli,true crab,1,1,2,10,,,MAH,,low,pools,y,y,,965
+ZZ,543,Minimus foliatus,true crab,1,587,Macrocystis pyrifera,algae,1,1,,3,,,MAH,,low,pools,y,y,,966
+ZZ,1,Gibbonsia metzi,fish,1,543,Minimus foliatus,true crab,1,1,,3,,,MAH,,very low,pools,y,y,,967
+ZZ,NA,Scorpaenichthys marmoratus,fish,1,546,Loxorhynchus crispatus,true crab,1,1,,3,5,,MAH,,very low,pools,y,y,,968
+ZZ,NA,Cheilotrema saturnum,fish,1,546,Loxorhynchus crispatus,true crab,1,1,,3,5,,MAH,,low,pools,y,y,,969
+ZZ,549,Cancer antennarius,true crab,1,524,Pagurus samuelis,hermit crab,1,1,,3,,,MAH,,low,pools,y,n,,970
+ZZ,549,Cancer antennarius,true crab,1,525,Pagurus hirsutiusculus,hermit crab,1,1,,3,,,MAH,,low,pools,y,n,,971
+ZZ,549,Cancer antennarius,true crab,1,526,Pagurus hemphilli,hermit crab,1,1,,3,,,MAH,,low,pools,y,n,,972
+ZZ,549,Cancer antennarius,true crab,1,527,Pagurus granosimanus,hermit crab,1,1,,3,,,MAH,,low,pools,y,n,,973
+ZZ,712,Homo sapiens,hoomans,1,549,Cancer antennarius,true crab,1,1,,3,,,MAH,,low,pools,y,n,,974
+ZZ,711,Carcinonemertes epialti,nemertean,1,549,Cancer antennarius,true crab,1,23,,3,,,MAH,,low,pools,y,NA,,975
+ZZ,712,Homo sapiens,hoomans,1,550,Cancer anthonyi,true crab,1,1,,3,5,,MAH,,low,pools,y,n,,976
+ZZ,NA,Scorpaena guttata,fish,1,554,Cancer productus,true crab,4,1,,3,5,,MAH,,low,pools,y,y,,977
+ZZ,NA,Paralabrax nebulifer,fish,1,554,Cancer productus,true crab,4,1,,3,5,,MAH,,low,pools,y,y,,978
+ZZ,NA,Paralabrax clathratus,fish,1,554,Cancer productus,true crab,4,1,,3,5,,MAH,,low,pools,y,y,,979
+ZZ,712,Homo sapiens,hoomans,1,554,Cancer productus,true crab,1,1,,3,,,MAH,,low,pools,y,n,,980
+ZZ,NA,Thompsonia sp. ,rhizocephalan,1,558,Paraxanthias taylori,true crab,1,4,3,3,6,,MAH,,low,pools,y,NA,,981
+ZZ,559,Fabia subquadrata,pea crab,1,366,Mytilus edulis,bivalve,1,25,,3,,,MAH,,all,exposed,y,NA,,982
+ZZ,559,Fabia subquadrata,pea crab,1,367,Mytilus californianus,bivalve,1,25,,3,,,MAH,,all,exposed,y,NA,,983
+ZZ,559,Fabia subquadrata,pea crab,1,NA,Cyclocardia ventricosa,,1,25,,3,5,,MAH,,all,exposed,y,NA,,984
+ZZ,559,Fabia subquadrata,pea crab,1,NA,Tivela stultorum,,1,25,,3,5,,MAH,,all,exposed,y,NA,,985
+ZZ,559,Fabia subquadrata,pea crab,1,NA,Protothaca staminea,bivalve,1,25,,3,5,,MAH,,all,exposed,y,NA,,986
+ZZ,559,Fabia subquadrata,pea crab,1,NA,Tapes sp.,,1,25,,3,5,,MAH,,all,exposed,y,NA,,987
+ZZ,559,Fabia subquadrata,pea crab,1,168,Strongylocentrotus purpuratus,urchin,1,25,,3,,,MAH,,all,exposed,y,NA,,988
+ZZ,559,Fabia subquadrata,pea crab,1,622,Styela gibbsii,tunicate,1,25,,3,,,MAH,,all,exposed,y,NA,,989
+ZZ,561,Pinnixa faba,pea crab,1,NA,Tresus capax,,1,25,5,3,5,,MAH,,all,exposed,y,NA,,990
+ZZ,561,Pinnixa faba,pea crab,1,NA,Tresus nuttali,,1,25,5,3,5,,MAH,,all,exposed,y,NA,,991
+ZZ,561,Pinnixa faba,pea crab,1,301,Aplysia vaccaria,sea hare,1,25,5,3,,,MAH,,all,exposed,y,NA,,992
+ZZ,561,Pinnixa faba,pea crab,1,622,Styela gibbsii,tunicate,1,25,5,3,,,MAH,,all,exposed,y,NA,,993
+ZZ,561,Pinnixa faba,pea crab,1,NA,Caudina arenicola,,1,25,5,3,5,,MAH,,all,exposed,y,NA,,994
+ZZ,566,Pachygrapsus crassipes,true crab,1,566,Pachygrapsus crassipes,true crab,1,1,,3,,,MAH,,all,exposed,y,y,,995
+ZZ,486,Portuntion conformis,isopod,,567,Hemigrapsus nudus,true crab,1,4,,3,,,MAH,,high,exposed,y,y,,996
+ZZ,578,Limonia marmorata,insect,3,713,Enteromorpha sp.,algae,1,3,,3,,,MAH,,high,exposed,y,y,,997
+ZZ,578,Limonia marmorata,insect,3,714,Porphyra sp.,algae,1,3,,3,,,MAH,,high,exposed,y,y,,998
+ZZ,578,Limonia marmorata,insect,3,650,Pelvetiopsis limitata,algae,1,3,,3,,,MAH,,high,exposed,y,y,,999
+ZZ,581,Canacenoides nudatus,insect,1,713,Enteromorpha sp.,algae,1,3,,3,,,MAH,,high,exposed,y,y,,1000
+ZZ,228,Hydractinia milleri,hydroid,1,770,Holoplankton (planktonic larvae),zooplankton,3,1,3,3,,,MAH,,low,pools,y,y,,1001
+ZZ,229,Hydractinia milleri,hydroid,2,769,Free living nematodes,microorganisms,1,1,3,3,,,MAH,,low,pools,y,y,,1002
+ZZ,554,Cancer productus,true crab,4,749,Detritus,dead stuff,,30,,3,,,MAH,,low,pools,y,y,,1003
+ZZ,554,Cancer productus,true crab,4,750,Carrion,dead stuff,,30,,3,,,MAH,,low,pools,y,y,,1004
+ZZ,554,Cancer productus,true crab,4,751,Wrack,dead stuff,,30,,3,,,MAH,,low,pools,y,y,,1005
+ZZ,554,Cancer productus,true crab,4,752,Mulm,dead stuff,,30,,3,,,MAH,,low,pools,y,y,,1006
+ZZ,554,Cancer productus,true crab,4,758,small crustaceans,functional group,,1,,3,,,MAH,,low,pools,y,y,,1007
+ZZ,554,Cancer productus,true crab,4,759,macroalgae,functional group,,1,,3,,,MAH,,low,pools,y,y,,1008
+ZZ,554,Cancer productus,true crab,4,769,free living nematodes,microorganism,,1,,3,,,MAH,,low,pools,y,y,,1009
+ZZ,555,Cancer productus,true crab,1,749,Detritus,dead stuff,,30,,3,,,MAH,,low,pools,y,y,,1010
+ZZ,555,Cancer productus,true crab,1,750,Carrion,dead stuff,,30,,3,,,MAH,,low,pools,y,y,,1011
+ZZ,555,Cancer productus,true crab,1,751,Wrack,dead stuff,,30,,3,,,MAH,,low,pools,y,y,,1012
+ZZ,555,Cancer productus,true crab,1,752,Mulm,dead stuff,,30,,3,,,MAH,,low,pools,y,y,,1013
+ZZ,555,Cancer productus,true crab,1,758,small crustaceans,functional group,,1,,3,,,MAH,,low,pools,y,y,,1014
+ZZ,555,Cancer productus,true crab,1,759,macroalgae,functional group,,1,,3,,,MAH,,low,pools,y,y,,1015
+ZZ,555,Cancer productus,true crab,1,769,free living nematodes,microorganism,,1,,3,,,MAH,,low,pools,y,y,,1016
+ZZ,33,Lissodendoryx firma,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,Bacteria,microorganisms,,1,,3,,,MAH,1017
+ZZ,37,Myxilla agennes,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1018
+ZZ,38,Myxilla incrustans,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1019
+ZZ,44,Mycale adhaerens,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1020
+ZZ,45,Mycale hispida,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1021
+ZZ,46,Mycale macginitiei,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1022
+ZZ,47,Mycale richardsoni,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1023
+ZZ,48,Mycale psila,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1024
+ZZ,51,Haliclona gellindra,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1025
+ZZ,62,Acarnus erithacus,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1026
+ZZ,63,Aplysilla glacialis,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1027
+ZZ,64,Aplysina fistularis,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1028
+ZZ,66,Cliona celata,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1029
+ZZ,69,Halichondria panicea,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1030
+ZZ,70,Haliclona sp. ,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1031
+ZZ,71,Higginsia sp. ,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1032
+ZZ,72,Acanthancora cyanocrypta,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1033
+ZZ,77,Ophlitaspongia pennata,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1034
+ZZ,85,Obelia dichotoma,hydroid,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1035
+ZZ,86,Obelia bidentata,hydroid,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1036
+ZZ,87,Obelia geniculata,hydroid,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1037
+ZZ,90,Abietinaria sp.,hydroid,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1038
+ZZ,91,Aglaophenia struthioides,hydroid,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1039
+ZZ,170,Aplidium californicum,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1040
+ZZ,171,Aplidium solidum,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1041
+ZZ,174,Polyclinum planum,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1042
+ZZ,176,Ritterella pulchra,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1043
+ZZ,178,Euherdmania claviformis,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1044
+ZZ,179,Didemnum carnulentum,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1045
+ZZ,180,Trididemnum opacum,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1046
+ZZ,181,Diplosoma listerianum,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1047
+ZZ,183,Archidistoma psammion,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1048
+ZZ,185,Cystodytes lobatus,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1049
+ZZ,186,Clavelina huntsmani,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1050
+ZZ,187,Distaplia occidentalis,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1051
+ZZ,189,Ascidia ceratodes,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1052
+ZZ,217,Styela montereyensis,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1053
+ZZ,220,Pyura haustor,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1054
+ZZ,222,Boltenia villosa,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1055
+ZZ,223,Halocynthia hilgendorfi igaboja,tunicate,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1056
+ZZ,250,Thylacodes squamigerous,vermetid,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1057
+ZZ,251,Petaloconchus montereyensis,vermetid,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1058
+ZZ,260,Crepidula aculeata,snail,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1059
+ZZ,262,Crepidula nummaria,snail,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1060
+ZZ,263,Crepidula onyx,snail,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1061
+ZZ,367,Mytilus edulis,bivalve,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1062
+ZZ,368,Mytilisepta bifurcata,bivalve,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1063
+ZZ,456,Chthamalus dalli,barnacle,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1064
+ZZ,457,Chthamalus fissus,barnacle,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1065
+ZZ,458,Tetraclita rubescens,barnacle,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1066
+ZZ,463,Balanus glandula,barnacle,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1067
+ZZ,467,Paraconcavus pacificus,barnacle,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1068
+ZZ,559,Fabia subquadrata,true crab,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1069
+ZZ,629,Haliclona cinerea,sponge,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1070
+ZZ,631,Alcyonidium sp.,bryozoan,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1071
+ZZ,632,Hincksina velata,bryozoan,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1072
+ZZ,635,Celleporella hyalina,bryozoan,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1073
+ZZ,636,Dendrobeania lichenoides,bryozoan,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1074
+ZZ,33,Lissodendoryx firma,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1075
+ZZ,37,Myxilla agennes,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1076
+ZZ,38,Myxilla incrustans,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1077
+ZZ,44,Mycale adhaerens,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1078
+ZZ,45,Mycale hispida,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1079
+ZZ,46,Mycale macginitiei,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1080
+ZZ,47,Mycale richardsoni,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1081
+ZZ,48,Mycale psila,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1082
+ZZ,51,Haliclona gellindra,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1083
+ZZ,62,Acarnus erithacus,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1084
+ZZ,63,Aplysilla glacialis,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1085
+ZZ,64,Aplysina fistularis,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1086
+ZZ,66,Cliona celata,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1087
+ZZ,69,Halichondria panicea,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1088
+ZZ,70,Haliclona sp. ,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1089
+ZZ,71,Higginsia sp. ,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1090
+ZZ,72,Acanthancora cyanocrypta,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1091
+ZZ,77,Ophlitaspongia pennata,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1092
+ZZ,85,Obelia dichotoma,hydroid,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1093
+ZZ,86,Obelia bidentata,hydroid,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1094
+ZZ,87,Obelia geniculata,hydroid,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1095
+ZZ,90,Abietinaria sp.,hydroid,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1096
+ZZ,91,Aglaophenia struthioides,hydroid,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1097
+ZZ,170,Aplidium californicum,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1098
+ZZ,171,Aplidium solidum,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1099
+ZZ,174,Polyclinum planum,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1100
+ZZ,176,Ritterella pulchra,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1101
+ZZ,178,Euherdmania claviformis,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1102
+ZZ,179,Didemnum carnulentum,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1103
+ZZ,180,Trididemnum opacum,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1104
+ZZ,181,Diplosoma listerianum,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1105
+ZZ,183,Archidistoma psammion,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1106
+ZZ,185,Cystodytes lobatus,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1107
+ZZ,186,Clavelina huntsmani,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1108
+,187,Distaplia occidentalis,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1109
+,189,Ascidia ceratodes,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1110
+,217,Styela montereyensis,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1111
+,220,Pyura haustor,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1112
+,222,Boltenia villosa,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1113
+,223,Halocynthia hilgendorfi igaboja,tunicate,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1114
+,250,Thylacodes squamigerous,vermetid,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1115
+,251,Petaloconchus montereyensis,vermetid,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1116
+,260,Crepidula aculeata,snail,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1117
+,262,Crepidula nummaria,snail,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1118
+,263,Crepidula onyx,snail,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1119
+,367,Mytilus edulis,mussel,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1120
+,368,Mytilisepta bifurcata,mussel,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1121
+,456,Chthamalus dalli,barnacle,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1122
+,457,Chthamalus fissus,barnacle,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1123
+,458,Tetraclita rubescens,barnacle,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1124
+,463,Balanus glandula,barnacle,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1125
+,467,Paraconcavus pacificus,barnacle,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1126
+,559,Fabia subquadrata,true crab,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1127
+,629,Haliclona cinerea,sponge,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1128
+,631,Alcyonidium sp.,bryozoan,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1129
+,632,Hincksina velata,bryozoan,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1130
+,635,Celleporella hyalina,bryozoan,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1131
+,636,Dendrobeania lichenoides,bryozoan,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1132
+ZZ,33,Lissodendoryx firma,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1133
+ZZ,37,Myxilla agennes,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1134
+ZZ,38,Myxilla incrustans,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1135
+ZZ,44,Mycale adhaerens,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1136
+ZZ,45,Mycale hispida,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1137
+ZZ,46,Mycale macginitiei,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1138
+ZZ,47,Mycale richardsoni,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1139
+ZZ,48,Mycale psila,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1140
+ZZ,51,Haliclona gellindra,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1141
+ZZ,62,Acarnus erithacus,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1142
+ZZ,63,Aplysilla glacialis,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1143
+ZZ,64,Aplysina fistularis,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1144
+ZZ,66,Cliona celata,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1145
+ZZ,69,Halichondria panicea,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1146
+ZZ,70,Haliclona sp. ,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1147
+ZZ,71,Higginsia sp. ,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1148
+ZZ,72,Acanthancora cyanocrypta,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1149
+ZZ,77,Ophlitaspongia pennata,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1150
+ZZ,85,Obelia dichotoma,hydroid,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1151
+ZZ,86,Obelia bidentata,hydroid,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1152
+ZZ,87,Obelia geniculata,hydroid,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1153
+ZZ,90,Abietinaria sp.,hydroid,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1154
+ZZ,91,Aglaophenia struthioides,hydroid,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1155
+ZZ,170,Aplidium californicum,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1156
+ZZ,171,Aplidium solidum,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1157
+ZZ,174,Polyclinum planum,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1158
+ZZ,176,Ritterella pulchra,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1159
+ZZ,178,Euherdmania claviformis,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1160
+ZZ,179,Didemnum carnulentum,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1161
+ZZ,180,Trididemnum opacum,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1162
+ZZ,181,Diplosoma listerianum,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1163
+ZZ,183,Archidistoma psammion,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1164
+ZZ,185,Cystodytes lobatus,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1165
+ZZ,186,Clavelina huntsmani,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1166
+ZZ,187,Distaplia occidentalis,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1167
+ZZ,189,Ascidia ceratodes,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1168
+ZZ,217,Styela montereyensis,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1169
+ZZ,220,Pyura haustor,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1170
+ZZ,222,Boltenia villosa,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1171
+ZZ,223,Halocynthia hilgendorfi igaboja,tunicate,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1172
+ZZ,250,Thylacodes squamigerous,vermetid,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1173
+ZZ,251,Petaloconchus montereyensis,vermetid,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1174
+ZZ,260,Crepidula aculeata,slipper snail,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1175
+ZZ,262,Crepidula nummaria,slipper snail,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1176
+ZZ,263,Crepidula onyx,slipper snail,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1177
+ZZ,367,Mytilus edulis,mussel,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1178
+ZZ,368,Mytilisepta bifurcata,mussel,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1179
+ZZ,456,Chthamalus dalli,barnacle,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1180
+ZZ,457,Chthamalus fissus,barnacle,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1181
+ZZ,458,Tetraclita rubescens,barnacle,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1182
+ZZ,463,Balanus glandula,barnacle,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1183
+ZZ,467,Paraconcavus pacificus,barnacle,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1184
+ZZ,559,Fabia subquadrata,true crab,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1185
+ZZ,629,Haliclona cinerea,sponge,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1186
+ZZ,631,Alcyonidium sp.,bryozoan,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1187
+ZZ,632,Hincksina velata,bryozoan,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1188
+ZZ,635,Celleporella hyalina,bryozoan,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1189
+ZZ,636,Dendrobeania lichenoides,bryozoan,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1190
+,33,Lissodendoryx firma,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1191
+,37,Myxilla agennes,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1192
+,38,Myxilla incrustans,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1193
+,44,Mycale adhaerens,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1194
+,45,Mycale hispida,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1195
+,46,Mycale macginitiei,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1196
+,47,Mycale richardsoni,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1197
+,48,Mycale psila,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1198
+,51,Haliclona gellindra,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1199
+,62,Acarnus erithacus,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1200
+,63,Aplysilla glacialis,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1201
+,64,Aplysina fistularis,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1202
+,66,Cliona celata,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1203
+,69,Halichondria panicea,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1204
+,70,Haliclona sp. ,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1205
+,71,Higginsia sp. ,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1206
+,72,Acanthancora cyanocrypta,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1207
+,77,Ophlitaspongia pennata,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1208
+,85,Obelia dichotoma,hydroid,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1209
+,86,Obelia bidentata,hydroid,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1210
+,87,Obelia geniculata,hydroid,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1211
+,90,Abietinaria sp.,hydroid,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1212
+,91,Aglaophenia struthioides,hydroid,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1213
+,170,Aplidium californicum,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1214
+,171,Aplidium solidum,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1215
+,174,Polyclinum planum,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1216
+,176,Ritterella pulchra,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1217
+,178,Euherdmania claviformis,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1218
+,179,Didemnum carnulentum,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1219
+,180,Trididemnum opacum,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1220
+,181,Diplosoma listerianum,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1221
+,183,Archidistoma psammion,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1222
+,185,Cystodytes lobatus,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1223
+,186,Clavelina huntsmani,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1224
+,187,Distaplia occidentalis,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1225
+,189,Ascidia ceratodes,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1226
+,217,Styela montereyensis,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1227
+,220,Pyura haustor,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1228
+,222,Boltenia villosa,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1229
+,223,Halocynthia hilgendorfi igaboja,tunicate,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1230
+,250,Thylacodes squamigerous,vermetid,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1231
+,251,Petaloconchus montereyensis,vermetid,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1232
+,260,Crepidula aculeata,slipper snail,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1233
+,262,Crepidula nummaria,slipper snail,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1234
+,263,Crepidula onyx,slipper snail,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1235
+,367,Mytilus edulis,mussel,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1236
+,368,Mytilisepta bifurcata,mussel,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1237
+,456,Chthamalus dalli,barnacle,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1238
+,457,Chthamalus fissus,barnacle,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1239
+,458,Tetraclita rubescens,barnacle,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1240
+,463,Balanus glandula,barnacle,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1241
+,467,Paraconcavus pacificus,barnacle,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1242
+,559,Fabia subquadrata,true crab,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1243
+,629,Haliclona cinerea,sponge,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1244
+,631,Alcyonidium sp.,bryozoan,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1245
+,632,Hincksina velata,bryozoan,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1246
+,635,Celleporella hyalina,bryozoan,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1247
+,636,Dendrobeania lichenoides,bryozoan,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1248
+,549,Cancer antennarius,true crab,1,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1249
+,672,Leptasterias aequalis,sea star,1,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1250
+,554,Cancer productus,true crab,4,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1251
+,555,Cancer productus,true crab,1,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1252
+,575,Neomolgus littoralis,other arthropod,1,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1253
+,660,Larus occidentalis,bird,1,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1254
+,256,Hipponix craniodes,slipper snail,1,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1255
+,290,Mitrella carinata,snail,1,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1256
+,761,Ligia pallasii,isopod,1,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1257
+,673,Apostichopus parvimensis,cucumber,1,749,Detritus,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1258
+,672,Leptasterias aequalis,sea star,1,750,carrion,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1259
+,554,Cancer productus,true crab,4,750,carrion,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1260
+,555,Cancer productus,true crab,1,750,carrion,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1261
+,575,Neomolgus littoralis,other arthropod,1,750,carrion,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1262
+,660,Larus occidentalis,bird,1,750,carrion,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1263
+,256,Hipponix craniodes,slipper snail,1,750,carrion,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1264
+,290,Mitrella carinata,snail,1,750,carrion,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1265
+,761,Ligia pallasii,isopod,1,750,carrion,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1266
+,673,Apostichopus parvimensis,cucumber,1,750,carrion,dead stuff,,30,3,13,,,MAH,,low,pools,y,y,,1267
+,81,Bythotiara huntsmani ,hydroid,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1268
+,360,Trimusculus reticulatus,snail,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1269
+,366,Mytilus californianus,mussel,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1270
+,371,Pododesmus cepio,clam,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1271
+,372,Chama arcana,clam,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1272
+,373,Pseudochama exogyra,clam,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1273
+,374,Lasaea cistula,clam,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1274
+,464,Balanus glandula,barnacle,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1275
+,521,Hapalogaster cavicauda,anomuran,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1276
+,522,Oedignathus inermis,anomuran,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1277
+,81,Bythotiara huntsmani ,hydroid,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1278
+,360,Trimusculus reticulatus,snail,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1279
+,366,Mytilus californianus,mussel,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1280
+,371,Pododesmus cepio,clam,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1281
+,372,Chama arcana,clam,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1282
+,373,Pseudochama exogyra,clam,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1283
+,374,Lasaea cistula,clam,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1284
+,464,Balanus glandula,barnacle,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1285
+,521,Hapalogaster cavicauda,anomuran,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1286
+,522,Oedignathus inermis,anomuran,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1287
+,81,Bythotiara huntsmani ,hydroid,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1288
+,360,Trimusculus reticulatus,snail,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1289
+,366,Mytilus californianus,mussel,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1290
+,371,Pododesmus cepio,clam,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1291
+,372,Chama arcana,clam,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1292
+,373,Pseudochama exogyra,clam,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1293
+,374,Lasaea cistula,clam,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1294
+,464,Balanus glandula,barnacle,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1295
+,521,Hapalogaster cavicauda,anomuran,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1296
+,522,Oedignathus inermis,anomuran,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1297
+,81,Bythotiara huntsmani ,hydroid,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1298
+,360,Trimusculus reticulatus,snail,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1299
+,366,Mytilus californianus,mussel,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1300
+,371,Pododesmus cepio,clam,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1301
+,372,Chama arcana,clam,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1302
+,373,Pseudochama exogyra,clam,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1303
+,374,Lasaea cistula,clam,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1304
+,464,Balanus glandula,barnacle,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1305
+,521,Hapalogaster cavicauda,anomuran,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1306
+,522,Oedignathus inermis,anomuran,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1307
+,439,Pectinaria californiensis,polychaete,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1308
+,439,Pectinaria californiensis,polychaete,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1309
+,439,Pectinaria californiensis,polychaete,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1310
+,439,Pectinaria californiensis,polychaete,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1311
+,637,Ectopleura crocea,hydroid,1,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1312
+,637,Ectopleura crocea,hydroid,1,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1313
+,637,Ectopleura crocea,hydroid,1,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1314
+,637,Ectopleura crocea,hydroid,1,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1315
+,190,Fissurela volcano,limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1316
+,191,Fissurela volcano crucifera,limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1317
+,199,Lottia digitalis,true limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1318
+,203,Lottia limatula,true limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1319
+,208,Lottia pelta,true limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1320
+,210,Lottia scabra,true limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1321
+,215,Lottia scutum,true limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1322
+,225,Haliotis rufescens,abalone,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1323
+,229,Haliotis cracherodii,abalone,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1324
+,236,Tegula brunnea,topsnail,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1325
+,237,Tegula funebralis ,topsnail,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1326
+,247,Littorina planaxis,littorine,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1327
+,248,Littorina scutulata,littorine,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1328
+,259,Crepidula adunca,slipper snail,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1329
+,403,Stenoplax conspicua,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1330
+,404,Tonicella lineata,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1331
+,430,Platynereis bicanaliculata,polychaete,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1332
+,190,Fissurela volcano,limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1333
+,191,Fissurela volcano crucifera,limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1334
+,199,Lottia digitalis,true limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1335
+,203,Lottia limatula,true limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1336
+,208,Lottia pelta,true limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1337
+,210,Lottia scabra,true limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1338
+,215,Lottia scutum,true limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1339
+,225,Haliotis rufescens,abalone,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1340
+,229,Haliotis cracherodii,abalone,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1341
+,236,Tegula brunnea,topsnail,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1342
+,237,Tegula funebralis ,topsnail,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1343
+,247,Littorina planaxis,littorine,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1344
+,248,Littorina scutulata,littorine,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1345
+,259,Crepidula adunca,slipper snail,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1346
+,403,Stenoplax conspicua,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1347
+,404,Tonicella lineata,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1348
+,430,Platynereis bicanaliculata,polychaete,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1349
+,198,Lottia austrodigitalis,true limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1350
+,202,Lottia instabilis,true limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1351
+,238,Tegula aureotincta,topsnail,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1352
+,239,Tegula gallina,topsnail,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1353
+,242,Tegula pulligo,topsnail,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1354
+,300,Aplysia californica,topsnail,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1355
+,394,Leptochiton rugatus,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1356
+,395,Ischnochiton interstinctus,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1357
+,396,Tripoplax regularis,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1358
+,398,Lepidozona cooperi,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1359
+,399,Lepidozona sinudentata,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1360
+,400,Lepidozona californiensis,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1361
+,402,Stenoplax fallax,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1362
+,406,Basiliochiton heathii,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1363
+,407,Callistochiton crassiocostatus,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1364
+,408,Callistochiton palmulatus,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1365
+,410,Chaetopleura gemma,chiton,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1366
+,483,Limnoria algarum,isopod,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1367
+,491,Idotea montereyensis,isopod,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1368
+,504,Oligochinus lighti,amphipod,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1369
+,538,Taleipus nuttallii,true crab,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1370
+,577,Neomachilis halophila,other arthropod,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1371
+,736,Lottia conus,true limpet,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1372
+,430,Platynereis bicanaliculata,polychaete,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1373
+,198,Lottia austrodigitalis,true limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1374
+,202,Lottia instabilis,true limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1375
+,238,Tegula aureotincta,topsnail,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1376
+,239,Tegula gallina,topsnail,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1377
+,242,Tegula pulligo,topsnail,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1378
+,300,Aplysia californica,topsnail,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1379
+,394,Leptochiton rugatus,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1380
+,395,Ischnochiton interstinctus,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1381
+,396,Tripoplax regularis,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1382
+,398,Lepidozona cooperi,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1383
+,399,Lepidozona sinudentata,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1384
+,400,Lepidozona californiensis,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1385
+,402,Stenoplax fallax,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1386
+,406,Basiliochiton heathii,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1387
+,407,Callistochiton crassiocostatus,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1388
+,408,Callistochiton palmulatus,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1389
+,410,Chaetopleura gemma,chiton,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1390
+,483,Limnoria algarum,isopod,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1391
+,491,Idotea montereyensis,isopod,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1392
+,504,Oligochinus lighti,amphipod,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1393
+,538,Taleipus nuttallii,true crab,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1394
+,577,Neomachilis halophila,other arthropod,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1395
+,736,Lottia conus,true limpet,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1396
+,190,Fissurela volcano,limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1397
+,191,Fissurela volcano crucifera,limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1398
+,199,Lottia digitalis,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1399
+,203,Lottia limatula,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1400
+,208,Lottia pelta,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1401
+,210,Lottia scabra,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1402
+,215,Lottia scutum,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1403
+,225,Haliotis rufescens,abalone,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1404
+,229,Haliotis cracherodii,abalone,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1405
+,236,Tegula brunnea,topsnail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1406
+,237,Tegula funebralis ,topsnail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1407
+,247,Littorina planaxis,littorine,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1408
+,248,Littorina scutulata,littorine,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1409
+,259,Crepidula adunca,slipper snail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1410
+,403,Stenoplax conspicua,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1411
+,404,Tonicella lineata,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1412
+,430,Platynereis bicanaliculata,polychaete,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1413
+,190,Fissurela volcano,limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1414
+,191,Fissurela volcano crucifera,limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1415
+,199,Lottia digitalis,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1416
+,203,Lottia limatula,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1417
+,208,Lottia pelta,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1418
+,210,Lottia scabra,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1419
+,215,Lottia scutum,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1420
+,225,Haliotis rufescens,abalone,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1421
+,229,Haliotis cracherodii,abalone,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1422
+,236,Tegula brunnea,topsnail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1423
+,237,Tegula funebralis ,topsnail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1424
+,247,Littorina planaxis,littorine,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1425
+,248,Littorina scutulata,littorine,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1426
+,259,Crepidula adunca,slipper snail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1427
+,403,Stenoplax conspicua,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1428
+,404,Tonicella lineata,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1429
+,430,Platynereis bicanaliculata,polychaete,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1430
+,198,Lottia austrodigitalis,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1431
+,202,Lottia instabilis,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1432
+,238,Tegula aureotincta,topsnail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1433
+,239,Tegula gallina,topsnail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1434
+,242,Tegula pulligo,topsnail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1435
+,300,Aplysia californica,topsnail,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1436
+,394,Leptochiton rugatus,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1437
+,395,Ischnochiton interstinctus,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1438
+,396,Tripoplax regularis,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1439
+,398,Lepidozona cooperi,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1440
+,399,Lepidozona sinudentata,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1441
+,400,Lepidozona californiensis,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1442
+,402,Stenoplax fallax,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1443
+,406,Basiliochiton heathii,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1444
+,407,Callistochiton crassiocostatus,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1445
+,408,Callistochiton palmulatus,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1446
+,410,Chaetopleura gemma,chiton,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1447
+,483,Limnoria algarum,isopod,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1448
+,491,Idotea montereyensis,isopod,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1449
+,504,Oligochinus lighti,amphipod,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1450
+,538,Taleipus nuttallii,true crab,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1451
+,577,Neomachilis halophila,other arthropod,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1452
+,736,Lottia conus,true limpet,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1453
+,74,Leucilla nuttingi,sponge,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1454
+,74,Leucilla nuttingi,sponge,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1455
+,74,Leucilla nuttingi,sponge,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1456
+,74,Leucilla nuttingi,sponge,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1457
+,344,Aegires albopunctatus,nudibranch,,74,Leucilla nuttingi,sponge,,1,3,3,,,,,,,,,,1458
+,558,Paraxanthias taylori,true crab,,759,macroalgae,algae,,1,3,13,,,MAH,,,,,,,1459
+,558,Paraxanthias taylori,true crab,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1460
+,558,Paraxanthias taylori,true crab,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1461
+,568,Tigriopus californicus,copepod,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1462
+,568,Tigriopus californicus,copepod,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1463
+,568,Tigriopus californicus,copepod,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1464
+,568,Tigriopus californicus,copepod,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1465
+,568,Tigriopus californicus,copepod,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1466
+,568,Tigriopus californicus,copepod,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1467
+,568,Tigriopus californicus,copepod,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1468
+,291,Nassarius mendicus,snail,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1469
+,524,Pagurus samuelis,hermit crab,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1470
+,579,Limonia marmorata,other arthropod,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1471
+,287,Kelletia kelletii,whelk,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1472
+,432,Arabella iricolor,polychaete,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1473
+,525,Pagurus hirsutiusculus,hermit crab,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1474
+,294,Olivella biplicata,snail,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1475
+,487,Ligia occidentalis,isopod,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1476
+,526,Pagurus hemphilli,hermit crab,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1477
+,527,Pagurus granosimanus,hermit crab,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1478
+,545,Loxorhynchus grandis,true crab,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1479
+,291,Nassarius mendicus,snail,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1480
+,524,Pagurus samuelis,hermit crab,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1481
+,579,Limonia marmorata,other arthropod,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1482
+,287,Kelletia kelletii,whelk,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1483
+,432,Arabella iricolor,polychaete,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1484
+,525,Pagurus hirsutiusculus,hermit crab,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1485
+,294,Olivella biplicata,snail,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1486
+,487,Ligia occidentalis,isopod,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1487
+,526,Pagurus hemphilli,hermit crab,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1488
+,527,Pagurus granosimanus,hermit crab,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1489
+,545,Loxorhynchus grandis,true crab,,750,carrion,dead stuff,,30,3,13,,,MAH,,,,,,,1490
+,291,Nassarius mendicus,snail,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1491
+,524,Pagurus samuelis,hermit crab,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1492
+,579,Limonia marmorata,other arthropod,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1493
+,287,Kelletia kelletii,whelk,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1494
+,432,Arabella iricolor,polychaete,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1495
+,525,Pagurus hirsutiusculus,hermit crab,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1496
+,294,Olivella biplicata,snail,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1497
+,487,Ligia occidentalis,isopod,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1498
+,526,Pagurus hemphilli,hermit crab,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1499
+,527,Pagurus granosimanus,hermit crab,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1500
+,545,Loxorhynchus grandis,true crab,,751,Wrack,algae,,1,3,13,,,MAH,,,,,,,1501
+,546,Loxorhynchus crispatus,true crab,,168,Strongylocentrotus purpuratus,urchin,,1,3,3,,,MAH,,,pools,y,,,1502
+,299,Navanax inermis,nudibranch,,641,Teinostoma supravallatum,snail,,1,3,3,,,MAH,,,pools,y,,,1503
+,641,Teinostoma supravallatum,snail,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1504
+,764,Pseudodiala acuta,snail,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1505
+,107,Metridium senile,anemone,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1506
+,107,Metridium senile,anemone,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1507
+,107,Metridium senile,anemone,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1508
+,107,Metridium senile,anemone,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1509
+,129,Bugula californica,bryozoan,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1510
+,129,Bugula californica,bryozoan,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1511
+,129,Bugula californica,bryozoan,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1512
+,129,Bugula californica,bryozoan,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1513
+,129,Bugula californica,bryozoan,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1514
+,138,Filicrisia fransciscana,bryozoan,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1515
+,138,Filicrisia fransciscana,bryozoan,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1516
+,138,Filicrisia fransciscana,bryozoan,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1517
+,138,Filicrisia fransciscana,bryozoan,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1518
+,139,Frustrellida corniculata,bryozoan,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1519
+,139,Frustrellida corniculata,bryozoan,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1520
+,139,Frustrellida corniculata,bryozoan,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1521
+,139,Frustrellida corniculata,bryozoan,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1522
+,154,Cucumaria pseudocurata,sea cucumber,,602,epiphytic diatoms,algae,,1,3,13,,,MAH,,,,,,,1523
+,154,Cucumaria pseudocurata,sea cucumber,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1524
+,161,Amphipholus squamata,sea star,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1525
+,161,Amphipholus squamata,sea star,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1526
+,161,Amphipholus squamata,sea star,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1527
+,161,Amphipholus squamata,sea star,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1528
+,161,Amphipholus squamata,sea star,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1529
+,161,Amphipholus squamata,sea star,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1530
+,204,Lottia ochracea,limpet,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1531
+,207,Lottia paradigitalis,limpet,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1532
+,211,Lottia sp. ,limpet,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1533
+,269,Trivia solandri,snail,,170,Aplidium californicum,tunicate,,1,4,6,,,MAH,,,,,,,1534
+,269,Trivia solandri,snail,,171,Aplidium solidum,tunicate,,1,4,6,,,MAH,,,,,,,1535
+,269,Trivia solandri,snail,,174,Polyclinum planum,tunicate,,1,4,6,,,MAH,,,,,,,1536
+,269,Trivia solandri,snail,,176,Ritterella pulchra,tunicate,,1,4,6,,,MAH,,,,,,,1537
+,269,Trivia solandri,snail,,178,Euherdmania claviformis,tunicate,,1,4,6,,,MAH,,,,,,,1538
+,269,Trivia solandri,snail,,179,Didemnum carnulentum,tunicate,,1,4,6,,,MAH,,,,,,,1539
+,269,Trivia solandri,snail,,180,Trididemnum opacum,tunicate,,1,4,6,,,MAH,,,,,,,1540
+,269,Trivia solandri,snail,,181,Diplosoma listerianum,tunicate,,1,4,6,,,MAH,,,,,,,1541
+,269,Trivia solandri,snail,,183,Archidistoma psammion,tunicate,,1,4,6,,,MAH,,,,,,,1542
+,269,Trivia solandri,snail,,185,Cystodytes lobatus,tunicate,,1,4,6,,,MAH,,,,,,,1543
+,269,Trivia solandri,snail,,186,Clavelina huntsmani,tunicate,,1,4,6,,,MAH,,,,,,,1544
+,269,Trivia solandri,snail,,187,Distaplia occidentalis,tunicate,,1,4,6,,,MAH,,,,,,,1545
+,269,Trivia solandri,snail,,189,Ascidia ceratodes,tunicate,,1,4,6,,,MAH,,,,,,,1546
+,269,Trivia solandri,snail,,217,Styela montereyensis,tunicate,,1,4,6,,,MAH,,,,,,,1547
+,269,Trivia solandri,snail,,220,Pyura haustor,tunicate,,1,4,6,,,MAH,,,,,,,1548
+,269,Trivia solandri,snail,,222,Boltenia villosa,tunicate,,1,4,6,,,MAH,,,,,,,1549
+,269,Trivia solandri,snail,,223,Halocynthia hilgendorfi igaboja,tunicate,,1,4,6,,,MAH,,,,,,,1550
+,269,Trivia solandri,snail,,170,Aplidium californicum,tunicate,,1,4,6,,,MAH,,,,,,,1551
+,270,Trivia californiana,snail,,171,Aplidium solidum,tunicate,,1,4,6,,,MAH,,,,,,,1552
+,270,Trivia californiana,snail,,174,Polyclinum planum,tunicate,,1,4,6,,,MAH,,,,,,,1553
+,270,Trivia californiana,snail,,176,Ritterella pulchra,tunicate,,1,4,6,,,MAH,,,,,,,1554
+,270,Trivia californiana,snail,,178,Euherdmania claviformis,tunicate,,1,4,6,,,MAH,,,,,,,1555
+,270,Trivia californiana,snail,,179,Didemnum carnulentum,tunicate,,1,4,6,,,MAH,,,,,,,1556
+,270,Trivia californiana,snail,,180,Trididemnum opacum,tunicate,,1,4,6,,,MAH,,,,,,,1557
+,270,Trivia californiana,snail,,181,Diplosoma listerianum,tunicate,,1,4,6,,,MAH,,,,,,,1558
+,270,Trivia californiana,snail,,183,Archidistoma psammion,tunicate,,1,4,6,,,MAH,,,,,,,1559
+,270,Trivia californiana,snail,,185,Cystodytes lobatus,tunicate,,1,4,6,,,MAH,,,,,,,1560
+,270,Trivia californiana,snail,,186,Clavelina huntsmani,tunicate,,1,4,6,,,MAH,,,,,,,1561
+,270,Trivia californiana,snail,,187,Distaplia occidentalis,tunicate,,1,4,6,,,MAH,,,,,,,1562
+,270,Trivia californiana,snail,,189,Ascidia ceratodes,tunicate,,1,4,6,,,MAH,,,,,,,1563
+,270,Trivia californiana,snail,,217,Styela montereyensis,tunicate,,1,4,6,,,MAH,,,,,,,1564
+,270,Trivia californiana,snail,,220,Pyura haustor,tunicate,,1,4,6,,,MAH,,,,,,,1565
+,270,Trivia californiana,snail,,222,Boltenia villosa,tunicate,,1,4,6,,,MAH,,,,,,,1566
+,270,Trivia californiana,snail,,223,Halocynthia hilgendorfi igaboja,tunicate,,1,4,6,,,MAH,,,,,,,1567
+,489,Idotea aculeata,isopod,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1568
+,490,Idotea wosnesenskii,isopod,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1569
+,511,Heptacarpus brevirostris,shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1570
+,512,Heptacarpus pictus,shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1571
+,513,Heptacarpus carinatus,shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1572
+,514,Heptacarpus sitchensis,shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1573
+,515,Heptacarpus paliducola,shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1574
+,516,Lysmata californica,shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1575
+,517,Hippolyte californiensis,shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1576
+,518,Hippolyte clarki,shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1577
+,519,Spirontocaris prionota,shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1578
+,520,Callianassa affinis,ghost shrimp,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1579
+,523,Cryptolithodes sitchensis,anomuran,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1580
+,489,Idotea aculeata,isopod,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1581
+,490,Idotea wosnesenskii,isopod,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1582
+,511,Heptacarpus brevirostris,shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1583
+,512,Heptacarpus pictus,shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1584
+,513,Heptacarpus carinatus,shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1585
+,514,Heptacarpus sitchensis,shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1586
+,515,Heptacarpus paliducola,shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1587
+,516,Lysmata californica,shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1588
+,517,Hippolyte californiensis,shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1589
+,518,Hippolyte clarki,shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1590
+,519,Spirontocaris prionota,shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1591
+,520,Callianassa affinis,ghost shrimp,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1592
+,523,Cryptolithodes sitchensis,anomuran,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1593
+,489,Idotea aculeata,isopod,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1594
+,490,Idotea wosnesenskii,isopod,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1595
+,511,Heptacarpus brevirostris,shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1596
+,512,Heptacarpus pictus,shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1597
+,513,Heptacarpus carinatus,shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1598
+,514,Heptacarpus sitchensis,shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1599
+,515,Heptacarpus paliducola,shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1600
+,516,Lysmata californica,shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1601
+,517,Hippolyte californiensis,shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1602
+,518,Hippolyte clarki,shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1603
+,519,Spirontocaris prionota,shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1604
+,520,Callianassa affinis,ghost shrimp,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1605
+,523,Cryptolithodes sitchensis,anomuran,,602,epiphytic diatoms,algae,,1,4,13,,,MAH,,,,,,,1606
+,489,Idotea aculeata,isopod,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1607
+,490,Idotea wosnesenskii,isopod,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1608
+,511,Heptacarpus brevirostris,shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1609
+,512,Heptacarpus pictus,shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1610
+,513,Heptacarpus carinatus,shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1611
+,514,Heptacarpus sitchensis,shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1612
+,515,Heptacarpus paliducola,shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1613
+,516,Lysmata californica,shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1614
+,517,Hippolyte californiensis,shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1615
+,518,Hippolyte clarki,shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1616
+,519,Spirontocaris prionota,shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1617
+,520,Callianassa affinis,ghost shrimp,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1618
+,523,Cryptolithodes sitchensis,anomuran,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1619
+,489,Idotea aculeata,isopod,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1620
+,490,Idotea wosnesenskii,isopod,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1621
+,511,Heptacarpus brevirostris,shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1622
+,512,Heptacarpus pictus,shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1623
+,513,Heptacarpus carinatus,shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1624
+,514,Heptacarpus sitchensis,shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1625
+,515,Heptacarpus paliducola,shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1626
+,516,Lysmata californica,shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1627
+,517,Hippolyte californiensis,shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1628
+,518,Hippolyte clarki,shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1629
+,519,Spirontocaris prionota,shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1630
+,520,Callianassa affinis,ghost shrimp,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1631
+,523,Cryptolithodes sitchensis,anomuran,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1632
+,489,Idotea aculeata,isopod,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1633
+,490,Idotea wosnesenskii,isopod,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1634
+,511,Heptacarpus brevirostris,shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1635
+,512,Heptacarpus pictus,shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1636
+,513,Heptacarpus carinatus,shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1637
+,514,Heptacarpus sitchensis,shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1638
+,515,Heptacarpus paliducola,shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1639
+,516,Lysmata californica,shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1640
+,517,Hippolyte californiensis,shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1641
+,518,Hippolyte clarki,shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1642
+,519,Spirontocaris prionota,shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1643
+,520,Callianassa affinis,ghost shrimp,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1644
+,523,Cryptolithodes sitchensis,anomuran,,758,small crustaceans,zooplankton,,1,3,13,,,MAH,,,,,,,1645
+,489,Idotea aculeata,isopod,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1646
+,490,Idotea wosnesenskii,isopod,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1647
+,511,Heptacarpus brevirostris,shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1648
+,512,Heptacarpus pictus,shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1649
+,513,Heptacarpus carinatus,shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1650
+,514,Heptacarpus sitchensis,shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1651
+,515,Heptacarpus paliducola,shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1652
+,516,Lysmata californica,shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1653
+,517,Hippolyte californiensis,shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1654
+,518,Hippolyte clarki,shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1655
+,519,Spirontocaris prionota,shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1656
+,520,Callianassa affinis,ghost shrimp,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1657
+,523,Cryptolithodes sitchensis,anomuran,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1658
+,489,Idotea aculeata,isopod,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1659
+,490,Idotea wosnesenskii,isopod,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1660
+,511,Heptacarpus brevirostris,shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1661
+,512,Heptacarpus pictus,shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1662
+,513,Heptacarpus carinatus,shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1663
+,514,Heptacarpus sitchensis,shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1664
+,515,Heptacarpus paliducola,shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1665
+,516,Lysmata californica,shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1666
+,517,Hippolyte californiensis,shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1667
+,518,Hippolyte clarki,shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1668
+,519,Spirontocaris prionota,shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1669
+,520,Callianassa affinis,ghost shrimp,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1670
+,523,Cryptolithodes sitchensis,anomuran,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1671
+,658,Membranipora sp. ,bryozoan,,755,microorganisms,microorganisms,,1,3,13,,,MAH,,,,,,,1672
+,658,Membranipora sp. ,bryozoan,,771,Viruses,microorganisms,,1,3,13,,,MAH,,,,,,,1673
+,658,Membranipora sp. ,bryozoan,,756,Bacteria,microorganisms,,1,3,13,,,MAH,,,,,,,1674
+,658,Membranipora sp. ,bryozoan,,754,Zooplankton,zooplankton,,1,3,13,,,MAH,,,,,,,1675
+,658,Membranipora sp. ,bryozoan,,753,Phytoplankton,phytoplankton,,1,3,13,,,MAH,,,,,,,1676
+,89,Xingyurella turgida,hydroid,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1677
+,89,Xingyurella turgida,hydroid,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1678
+,89,Xingyurella turgida,hydroid,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1679
+,89,Xingyurella turgida,hydroid,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1680
+,89,Xingyurella turgida,hydroid,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1681
+,89,Xingyurella turgida,hydroid,,758,small crustaceans,zooplankton,,1,4,13,,,MAH,,,,,,,1682
+,93,Plumularia sp.,hydroid,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1683
+,93,Plumularia sp.,hydroid,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1684
+,93,Plumularia sp.,hydroid,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1685
+,93,Plumularia sp.,hydroid,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1686
+,93,Plumularia sp.,hydroid,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1687
+,93,Plumularia sp.,hydroid,,758,small crustaceans,zooplankton,,1,4,13,,,MAH,,,,,,,1688
+,102,Epiactis prolifera,anemone,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1689
+,102,Epiactis prolifera,anemone,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1690
+,102,Epiactis prolifera,anemone,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1691
+,102,Epiactis prolifera,anemone,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1692
+,102,Epiactis prolifera,anemone,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1693
+,102,Epiactis prolifera,anemone,,758,small crustaceans,zooplankton,,1,4,13,,,MAH,,,,,,,1694
+,104,Urticina crassicornis,anemone,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1695
+,104,Urticina crassicornis,anemone,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1696
+,104,Urticina crassicornis,anemone,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1697
+,104,Urticina crassicornis,anemone,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1698
+,104,Urticina crassicornis,anemone,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1699
+,104,Urticina crassicornis,anemone,,758,small crustaceans,zooplankton,,1,4,13,,,MAH,,,,,,,1700
+,105,Urticina coriacea,anemone,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1701
+,105,Urticina coriacea,anemone,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1702
+,105,Urticina coriacea,anemone,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1703
+,105,Urticina coriacea,anemone,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1704
+,105,Urticina coriacea,anemone,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1705
+,105,Urticina coriacea,anemone,,758,small crustaceans,zooplankton,,1,4,13,,,MAH,,,,,,,1706
+,109,Corynactis californica,anemone,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1707
+,109,Corynactis californica,anemone,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1708
+,109,Corynactis californica,anemone,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1709
+,109,Corynactis californica,anemone,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1710
+,109,Corynactis californica,anemone,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1711
+,109,Corynactis californica,anemone,,758,small crustaceans,zooplankton,,1,4,13,,,MAH,,,,,,,1712
+,134,Integripelta bilabiata,bryozoan,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1713
+,134,Integripelta bilabiata,bryozoan,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1714
+,134,Integripelta bilabiata,bryozoan,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1715
+,134,Integripelta bilabiata,bryozoan,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1716
+,134,Integripelta bilabiata,bryozoan,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1717
+,134,Integripelta bilabiata,bryozoan,,758,small crustaceans,zooplankton,,1,4,13,,,MAH,,,,,,,1718
+,136,Celleporariae brunnea,bryozoan,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1719
+,136,Celleporariae brunnea,bryozoan,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1720
+,136,Celleporariae brunnea,bryozoan,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1721
+,136,Celleporariae brunnea,bryozoan,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1722
+,136,Celleporariae brunnea,bryozoan,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1723
+,136,Celleporariae brunnea,bryozoan,,758,small crustaceans,zooplankton,,1,4,13,,,MAH,,,,,,,1724
+,156,Eupentacta quinquesemita,sea cucumber,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1725
+,162,Amphipholus pugetana,brittle star,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1726
+,234,Margarites pupillus,snail,,77,Ophlitaspongia pennata,sponge,,3,1,1,,,PO,,,,,,,1727
+,159,Apostichopus californicus,sea cucumber,,749,Detritus,dead stuff,,30,3,13,,,MAH,,,,,,,1728
+,438,Pista elongata,polychaete,,749,Detritus,dead stuff,,30,4,13,,,MAH,,,,,,,1729
+,528,Petrolisthes rathbunae,porcelain crab,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1730
+,528,Petrolisthes rathbunae,porcelain crab,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1731
+,528,Petrolisthes rathbunae,porcelain crab,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1732
+,528,Petrolisthes rathbunae,porcelain crab,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1733
+,528,Petrolisthes rathbunae,porcelain crab,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1734
+,530,Petrolisthes manimaculis,porcelain crab,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1735
+,530,Petrolisthes manimaculis,porcelain crab,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1736
+,530,Petrolisthes manimaculis,porcelain crab,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1737
+,530,Petrolisthes manimaculis,porcelain crab,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1738
+,530,Petrolisthes manimaculis,porcelain crab,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1739
+,531,Petrolisthes cabrilloi,porcelain crab,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1740
+,531,Petrolisthes cabrilloi,porcelain crab,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1741
+,531,Petrolisthes cabrilloi,porcelain crab,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1742
+,531,Petrolisthes cabrilloi,porcelain crab,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1743
+,531,Petrolisthes cabrilloi,porcelain crab,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1744
+,533,Pachycheles pubescens,porcelain crab,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1745
+,533,Pachycheles pubescens,porcelain crab,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1746
+,533,Pachycheles pubescens,porcelain crab,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1747
+,533,Pachycheles pubescens,porcelain crab,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1748
+,533,Pachycheles pubescens,porcelain crab,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1749
+,536,Pachycheles holosericus,porcelain crab,,755,microorganisms,microorganisms,,1,4,13,,,MAH,,,,,,,1750
+,536,Pachycheles holosericus,porcelain crab,,771,Viruses,microorganisms,,1,4,13,,,MAH,,,,,,,1751
+,536,Pachycheles holosericus,porcelain crab,,756,Bacteria,microorganisms,,1,4,13,,,MAH,,,,,,,1752
+,536,Pachycheles holosericus,porcelain crab,,754,Zooplankton,zooplankton,,1,4,13,,,MAH,,,,,,,1753
+,536,Pachycheles holosericus,porcelain crab,,753,Phytoplankton,phytoplankton,,1,4,13,,,MAH,,,,,,,1754

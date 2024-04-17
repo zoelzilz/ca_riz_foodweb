@@ -1,0 +1,243 @@
+---
+title: "Epibioses"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#install.packages("igraph") 
+#install.packages("network") 
+#install.packages("sna")
+#install.packages("ggraph")
+#install.packages("visNetwork")
+#install.packages("threejs")
+#install.packages("networkD3")
+#install.packages("ndtv")
+#install.packages("tidyverse")
+
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+```
+
+### Import Data
+#### Make Links
+```{r data - links}
+################################ LINKS ##############################################
+
+edges_unclean <- read_csv("data/edges.csv") #manually combined lit and dissections in excel on 5 nov 22
+
+links <- edges_unclean %>% 
+  filter(!is.na(resourceNum)) %>% 
+  filter(!is.na(consumerNum)) %>%  # we are removing rows of data that have blanks ("") or "NA" for consumer # and resource #. Those two values are essential for building our web becaues they match numbers in the "nodes" dataframe. NTS: I'm not entirely sure why we have to break this up into three different filter functions...
+  
+  mutate(incl.code = replace_na(incl.code, 1)) %>%  # replacing empty (NA) include codes with 1 for now so they don't get nixed as NAs, will have to manually evaluate these in excel later
+
+  filter(incl.code != 0, 
+         incl.code != 5, 
+         #incl.code != 6
+         )  # remove further interactions that we know occur outside the system (0s and 5s)
+  
+symb_links <- links %>% 
+  dplyr::select(consumerNum, consumerName, resourceNum, resourceName, interaction.type) %>%   #only symbiotic links
+  filter(interaction.type == 2 | # epibiont on
+         interaction.type == 9 | #endocommensal on shell or test
+         interaction.type == 10 | #ectocommensal but mobile
+         interaction.type == 28 | #boring
+         interaction.type == 29) %>%  #shell dweller requiring death of shell builder
+  dplyr::select(consumerName, resourceName) #graph from dataframe requires that these be the first two colums, so being lazy and just selecting htese
+
+
+
+```
+
+#### Make Nodes
+```{r data - nodes}
+########################################## NODES ########################################## 
+
+edges_unclean$resourceNum <- as.numeric(edges_unclean$resourceNum) #necessary to convert all the random text i wrote in instead of numbers -> NAs
+edges_unclean$consumerNum <- as.numeric(edges_unclean$consumerNum) # ditto above
+
+cnodes <- edges_unclean %>% 
+  #something later in the code fucks with the select function so need dplyr::
+  dplyr::select(consumerNum, consumerName, consumerStage, consumerCat) %>% 
+  rename_with(~str_remove(., 'consumer')) # remove consumer from colnames, not sure of syntax
+
+rnodes <- edges_unclean %>% 
+  dplyr::select(resourceNum, resourceName, resourceStage, resourceCat) %>% 
+  rename_with(~str_remove(., 'resource')) # remove resource from colnames, not sure of syntax
+
+pre_nodes <- bind_rows(cnodes, rnodes) %>% 
+  # first replace all of the NAs possible by matching them up with an existing name-num pair
+  #group_by(Name) #%>%
+  #mutate(Num = unique(Num[!is.na(Num)])) # i did this manually in excel, but leaving it for later in case
+  
+  filter(!is.na(Num)) %>%  #takes out the NAs which i put in to indicate that the node wasnt in the system
+  # cant have duplicates of ID (but some dups of name bc diff life stages)
+  #filter(duplicated(Name) == FALSE) %>% 
+  filter(duplicated(Num) == FALSE) %>% 
+  rename(id = Num)
+
+node_attributes <- read_excel("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "Both") %>% 
+  rename(Name = species,
+         range = 'N/S/Both', 
+         trophic_strategy = 'trophic strategy')
+
+#setting up a bunch of functional groups bc this is easier
+#filter feeders#
+ffs <- c("tunicate", "sponge", "hydroid", "barnacle", "mussel", "bivalve", "scallop", "bryozoan", "zooplankton", "hydrocoral", "clam", "entoproct", "boring clam", "vermetid", "soft coral", "coral", "sipunculid")
+
+#predators#
+preds <- c("sea star", "asteroid", "octopus", "nudibranch", "murex", "bird", "shark", "lobster", "whelk", "sea spider", "human", "mammal", "snail")
+
+#primary producers#
+pps <- c("algae", "phytoplankton", "corraline algae", "angiosperm", "dead stuff", "dinoflagellate", "gametes")
+
+#herbivores#
+herbs <- c("urchin", "topsnail", "limpet", "littorine", "slipper snail", "true limpet", "chiton", "sea hare", "microsnail", "isopod", "abalone")
+
+#opportunistic omnivores#
+oos <- c("anemone", "shrimp", "ghost shrimp", "scale worm", "true crab", "porcelain crab", "tanaid", "copepod", "other arthropod", "cucumber", "hermit crab", "anomuran", "flatworm", "turbellarian", "polychaete", "fish", "amphipod", "microorganism", "brittle star")
+
+#all parasites#
+paras <- c("parasitic copepod", "gregarine", "parasitic barnacle", "myxozoan", "coccidian", "trematode", "cestode", "fungus", "monogene", "ciliate", "leech", "sporozoan", "orthonectid", "rhombozoan", "nematode", "nemertean")
+
+ded <- c("dead stuff")
+
+nodes <- left_join(pre_nodes, node_attributes) %>%  #automatically joins by name, keeping all rows in nodes while adding cols from node_attributes
+  filter(duplicated(id) == FALSE) %>%  # do this again - randomly adding dups, should figure out why
+  dplyr::select(id, Name, category, range, Zone, trophic_strategy) %>% 
+
+  # now i want to fill in all the empty trophic strategies based on the category
+  
+  mutate(trophic_strategy2 = case_when(
+    category %in% ffs ~ "filter feeder",
+    category %in% preds ~ "predator",
+    category %in% pps ~ "primary producer",
+    category %in% herbs ~ "herbivore",
+    category %in% oos ~ "opportunistic omnivores",
+    category %in% paras ~ "parasites",
+    category %in% ded ~ "dead stuff"
+  )) %>% 
+  mutate(trophic_strategy3 = coalesce(trophic_strategy, trophic_strategy2)) %>% 
+  mutate(parasitic  = if_else(trophic_strategy2 == "parasites", "y", "n")) %>% 
+  filter(duplicated(id) == FALSE) # do this again just in case
+```
+
+#### Make Nodes another way?
+```{r maybe another way to nodes}
+# need to create a node list in the code (without manually making a csv and combining)
+symb_nodes <- symb_links %>% 
+  #select(-interaction.type) %>% ### not necessary
+  pivot_longer(cols = c(consumerName, resourceName), values_to = "vertices") %>%  # stacks consumer name col on top of resource name col, making new col called vertices
+  dplyr::select(vertices) %>%  #only need this one col
+  distinct() # removes all duplicates in the single remaining col
+```
+
+
+### Some Summary Stats
+We want to know what percentage of species (nums) have at least one link coded 2/9/10/28/29
+countif??
+```{r consumers that are symbionts}
+
+# we're using links (not symb_links)
+
+link_summary <- table(links$consumerName, links$interaction.type) # makes a table of every consumer with the number of each type of interactions it has (i think this is waht its doing)
+
+#or
+
+consumer_summary <- links %>% 
+  group_by(interaction.type) %>% # categorizing by interaction type
+  summarise(count = n_distinct(consumerNum)) # counting the number of distinct consumers in each interaction type (bc consumer nums are listed more than once) 
+
+total_consumers <- sum(consumer_summary$count) # need total number of consumer species
+
+symb_links_only <- consumer_summary %>% 
+  filter(interaction.type == 2 | # epibiont on
+         interaction.type == 9 | #endocommensal on shell or test
+         interaction.type == 10 | #ectocommensal but mobile
+         interaction.type == 28 | #boring
+         interaction.type == 29) #shell dweller requiring death of shell builder
+
+symbionts_only <- sum(symb_links_only$count)
+
+symbionts_only/total_consumers
+# 0.3225806
+
+# or we can count the total number of link types
+link_type_counts <- links %>% 
+  count(interaction.type)
+
+```
+```{r resources (have bionts)}
+
+resource_summary <- links %>% 
+  group_by(interaction.type) %>% # categorizing by interaction type
+  summarise(count = n_distinct(resourceNum)) # counting the number of distinct consumers in each interaction type (bc consumer nums are listed more than once) 
+
+total_resources <- sum(resource_summary$count) # need total number of consumer species
+
+symb_links_only <- resource_summary %>% 
+  filter(interaction.type == 2 | # epibiont on
+         interaction.type == 9 | #endocommensal on shell or test
+         interaction.type == 10 | #ectocommensal but mobile
+         interaction.type == 28 | #boring
+         interaction.type == 29) #shell dweller requiring death of shell builder
+
+symbionts_only <- sum(symb_links_only$count)
+
+symbionts_only/total_consumers
+# 0.3225806
+
+# or we can count the total number of link types
+link_type_counts <- links %>% 
+  count(interaction.type)
+```
+
+
+### Making the Network
+OIk time to make a bipartite network
+```{r bipartite}
+library(igraph)
+#install.packages("bipartite")
+library(bipartite)
+
+epibiont_bip <- graph_from_data_frame(d=symb_links, vertices = symb_nodes, directed=F) # makes an igraph object
+epicluster <- cluster_optimal(epibiont_bip)
+clusteredcircle <- layout_in_circle(epibiont_bip, order = order(membership(epicluster)))
+epicircle <- layout_in_circle(epibiont_bip)
+plot(epibiont_bip, vertex.size=1, edge.arrow.size=.4,vertex.label= symb_nodes$vertices, layout = epicircle)
+
+# plotting in a circle because I can't do bipartite
+
+
+
+
+#### pausing the below because i dont think i can make a bipartite network in the traditional sense... the nodes dont form two distinct groups!
+#bipartite.mapping(epibiont_bip) # tells you if bipartite is possible i guess
+
+#V(epibiont_bip)$type <- bipartite_mapping(epibiont_bip)$type
+#V(epibiont_bip)$type <- bipartite_mapping(epibiont_bip)$type
+
+#plot(epibiont_bip, layout=layout.bipartite, vertex.size=7, vertex.label.cex=0.6)
+
+```
+```{r}
+install.packages("igraphdata")
+library(igraphdata)
+data(karate)
+karate_groups <- cluster_optimal(karate)
+coords <- layout_in_circle(karate, order =
+          order(membership(karate_groups)))
+V(karate)$label <- sub("Actor ", "", V(karate)$name)
+V(karate)$label.color <- membership(karate_groups)
+V(karate)$shape <- "none"
+plot(karate, layout = coords)
+```
+

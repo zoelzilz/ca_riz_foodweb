@@ -1,0 +1,541 @@
+---
+title: "incorporating_riz_lit_search"
+output: html_notebook
+---
+# The year is 2024 and we are approaching graduation
+## The time is nigh to finish the California Rocky Intertidal Food Web
+## (and we are using humor to mask the despair)
+
+### status: all nodes and links from the Light and Smith handbook have been incorporated. We are going to try to automate some of the cleaning tasks that were previously done by hand including: 
+### - full taxonomy for each node 
+### - creating edges by coding instead of manual entry 
+### - whatever else we can code in in less time than it takes to enter manually
+
+
+###CHECKLIST: bold is what's being worked on
+ ✔ pull in WORMS taxonomy for each node (done except for those that don't match an entry in WORMS)
+  
+ ✔ manually fix typos in original node list so that they match an existing WORMS entry, if possible, using the dataset result from the above step  
+  - in doing this, realized that the dataset made from rows that don't match an entry in worms is missing all morphospecies that I PO'd...?
+       ✔ OH MY GOD i had filtered out all nodes with zone = south, host range, or no data. I'm an idiot. I will need to do everything above again (as of 3/5) with the new full nodes dataset (hopefully not that bad)
+       ✔ Ok this has been done twice now with all nodes and is as good as it's gonna get
+        
+ • go through original node list (specieslistmaster) and create a forloop to make new interactions for those listed in the interaction columns
+ 
+  ✔ **finish code to make species specific interactions dataset from literature search data **
+      ✔ **don't forget to include justification code and make it match existing edgelist**
+      ✔ **include consumer_num, etc)**
+      
+ ✔ **finish code to make TAXONOMICALLY INFERRED interactions dataset from literature search data **
+
+ ✔ **QA/QC inferred interactions dataset** -- this ended up adding thousands of inferred interactions that were impossible to QC in a reasonable amount of time so I gave this up -- may later expand the web using genera (3/21/2024)
+       
+ • create code to incorporate GLOBI data into edgelist
+  
+ • last step: use Dana's code to make concomitant predation dataset
+ 
+```{r setup and packages, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#install.packages("igraph") 
+#install.packages("network") 
+#install.packages("sna")
+#install.packages("ggraph")
+#install.packages("visNetwork")
+#install.packages("threejs")
+#install.packages("networkD3")
+#install.packages("ndtv")
+#install.packages("tidyverse")
+#install.packages("NetIndices")
+#install.packages("cheddar")
+#install.packages("worrms")
+#install.packages("taxize")
+#install.packages("googlesheets4")
+#install.packages("beepr")
+
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+library(worrms)
+library(taxize)
+library(janitor)
+library(googlesheets4)
+library(beepr)
+```
+
+** We previously built a new node/species list in the WORMS_classification.rmd markdown and manually Qced that datatset, which we will use and further manipulate in this markdown
+
+```{r read in new node data with WORMS taxonomy}
+
+node_master <- read_csv("RIZspecieslist_fulltaxonomy_20mar24.csv")
+
+```
+
+## INCORPORATING LITERATURE SEARCH DATA USING CODE!
+### we're going to see if this works!
+#### as an aside, want to make a version of lit_inxs that has some info from nodes_master, so we will import from google sheets and append some metadata from the node list
+```{r reading in literature search lit_inxs-analysis from google sheets}
+
+lit_inxs1 <- read_sheet("https://docs.google.com/spreadsheets/d/1vFt4hnBJucTUrCGAJOWozgBq_E0ev33iyBH6u3PLjbE/edit?pli=1#gid=0", sheet = "records") %>% 
+  clean_names %>% 
+  filter(!is.na(resource_taxon))%>%
+  mutate(resource_taxonomic_resolution = tolower(resource_taxonomic_resolution)) 
+# keeping whole dataset, we will filter out columns we don't need later
+
+
+# subsetting nodes list to include some metadata for our literature interactions consumers, for matching with lit_inxs
+consumer_metadata <- node_master %>% 
+  rename(focal_consumer_taxon = species) %>% 
+  rename(consumerNum = id.x) %>%  # this is what it's referred to in the eventual edge list, for ease of binding
+  select(consumerNum, focal_consumer_taxon, category,life_stage, n_s_both, trophic_strategy, zone) %>% 
+  rename(consumerStage = life_stage,
+         c_nsboth = n_s_both, 
+         czone = zone)
+
+lit_inxs <- left_join(lit_inxs1, consumer_metadata, by = (join_by(focal_consumer_taxon))) %>% 
+  select(reference_number, consumerNum, category, consumerStage, c_nsboth, czone, focal_consumer_taxon, focal_consumer_life_stage, consumption_type, trophic_strategy, resource_taxon, resource_taxonomic_resolution, added_to_edge_list, ep_riz) %>%  #doing this mostly to reorder things
+  mutate(added_to_edge_list = replace_na(added_to_edge_list, "to do")) %>% 
+  filter(!str_detect(added_to_edge_list, "NO")) %>% # i said to not include these for a reason
+  filter(!added_to_edge_list == "done") %>%  # these have already been incorporated
+  filter(!ep_riz == "n") %>%  # i went through and did this poorly, some spp in here are in the EP but not in the RIZ
+  mutate(justification = 3) # this justification code means that interaction was reported in the literature
+
+
+# figure out which species in the lit inxs aren't matching up with a species in the node list and tallying how many times they show up (eg if just once, then probably a typo, if multiple times then maybe some other issue)
+messy2 <- lit_inxs %>% 
+  filter(is.na(consumerNum)) %>% 
+  group_by(focal_consumer_taxon) %>% 
+  tally() %>% 
+  arrange(desc(-n))
+
+# fixed outside of R manually, including adding lots of new species to node list (via RISspecieslist_MASTER.xslx)
+# as of one round of QC (20 mar 2024) still about 40 consumers that aren't matching up, even when i filter out non-EP riz studies
+
+
+####### here's a dataset that we can pull out where the CONSUMERS somehow don't automatically fit in the web, for manual addition into the edge list after checking over ######
+lit_inxs_to_qc <- lit_inxs %>% 
+  filter(is.na(consumerNum))
+
+write_csv(lit_inxs_to_qc, "data/lit_search_manual_entry_consumers_20mar2024.csv") 
+
+
+####### now creating a clean consumers + resources dataframe to merge with resource node metadata in teh next code chunk #########
+lit_inxs_to_match <- lit_inxs %>% 
+  filter(!is.na(consumerNum))
+
+```
+
+
+### we decided to not include interactions inferred because of higher taxonomy, insetad just subset the literature lit_inxs data to interactions that were resolved to species (maybe later we will expand genera)
+
+```{r species-specific interactions only}
+
+#create a subset of clean lit inxs where their resource is resolved to species
+
+species_subset <- lit_inxs_to_match %>% 
+  filter(resource_taxonomic_resolution == "species") %>% #filter the whole dataset to just species
+  rename(species = resource_taxon) %>%  # need to rename this column to species so it matches the "species" column in nodes_master
+  select(reference_number, consumerNum, focal_consumer_taxon, category, focal_consumer_life_stage, consumption_type, trophic_strategy, species, resource_taxonomic_resolution) %>% # selecting relevant columns that will help with QA/QC later
+  rename(consumerCat = category) # will need to differentiate from resource cat in the next bind
+ 
+# goal is to use left join to match genera in the lit_inxs$consumer_taxon column with genera in the node_master$species column
+
+with_species <- left_join(species_subset, node_master, by = join_by(species)) %>% # left join only keeps rows that are in the "left" or first dataset, so only species from node_master that match will be kept
+    rename(resource_category = category) %>%  # to help differentiate
+  rename(resource_phylum = phylum) %>%
+  rename(resource_class = class) %>%
+  rename(resource_order = order) %>%
+  rename(resource_family = family) %>%
+  rename(resource_genus = genus) %>%
+  rename(resource_species = species) %>% 
+  rename(resourceStage = life_stage) %>% 
+  rename(resourceNum = id.x)# to help differentiate
+
+##### where we left off 3/20 - just created with species and looking it over, lots of resource species have NAs for resourceNum (meaning no match in the node list)
+## I think next step will be to separate these out into a separate dataframe like with the consumers that didn't match and plan to manually enter them
+## and then to manipulate 'with_species' so that it can be pasted into the master edge list
+
+# for the manual entry interactions, i'm leaving all info (columns) in so that I can QC effectively
+lit_search_manual_entry <- with_species %>% 
+  filter(is.na(resourceNum))
+
+write_csv(lit_search_manual_entry, "data/lit_search_manual_entry_inxs_20mar2024.csv") 
+
+```
+Looks like 1077 of 1692 total entries are resolved to species (and per next chunk, 580 entries have consumer species and resource species that match nodes in the nodes_master dataframe)
+
+
+
+### MASTER CODE for manipulating dataframes to match with edgelist_master
+#### Putting this code in its own chunk so i can find it later
+```{r match edgelist_MASTER}
+######### need to manipulate species specific interactions dataset (with_species) so that it can be easily copied and pasted into edgelist_master ######### 
+# eg remove higher taxonomy and make column names match
+lit_search_inxs_to_paste <- with_species %>% 
+  filter(!is.na(resourceNum)) %>% 
+  
+  #add in columns that are present in edgelist master:
+  mutate(date_added = "21 Mar 2024") %>% 
+  mutate(INITIALS = "ZZ_coded") %>% 
+  mutate(justification = 4) %>% 
+  mutate(pools_exposed = NA) %>% # keep this empty for now
+  mutate(incl.code = NA) %>% # keep this empty for now
+  mutate(localities = NA) %>%  # keep this empty for now
+  mutate(MorrisHaderlie = "no") %>%
+  mutate(epibiota_consumed = NA) %>% 
+  mutate(notes = NA) %>% 
+  mutate(link.ID = (1769 + seq_len(length.out = n()))) %>%  # 1769 is currently the last link id # in edgelist_master so make sure to change
+  rename(ref_num = reference_number, 
+         consumerName = focal_consumer_taxon,
+         #consumerCat already matches
+         resourceName = resource_species,
+         resourceCat = resource_category
+         ) %>% 
+  
+  # need to add a column that creates numeric life stage (i'm going to clean some of this manually bc its a disaster) for consumers
+  mutate(consumerStage = case_when(
+    focal_consumer_life_stage == "adult" | focal_consumer_life_stage == "medusa" ~ 1,
+    focal_consumer_life_stage == "egg" ~ 2,
+    focal_consumer_life_stage == "larva" & consumerCat != "nematode" ~ 5, # first stage larva
+    focal_consumer_life_stage == "nauplii" ~ 3, # first stage larva
+    focal_consumer_life_stage == "procercoid" ~ 3, # first stage larva
+    focal_consumer_life_stage == "cystacanth" & resource_phylum == "Arthropoda" ~ 3, # first stage larva eg cystacanth in arthropod
+    focal_consumer_life_stage == "plerocercoid" ~ 4, # 2nd stage larva
+    focal_consumer_life_stage == "juvenile" ~ 4, # juvenile fish/snail/crab
+    focal_consumer_life_stage == "cystacanth" & resource_phylum == "Chordata" ~ 4, #2nd stage larva
+    focal_consumer_life_stage == "hydroid" ~ 5, # polyp stage in cnidarians
+    focal_consumer_life_stage == "metacercaria" ~ 5,
+    focal_consumer_life_stage == "larva" & consumerCat == "nematode" ~ 5, #L3 larva in nematodes (pretty sure there are none in this list other than L3s in fish but double check)
+    focal_consumer_life_stage == "multiple" ~ 6, 
+    .default = NA
+  )) %>% 
+  
+  # need to add a column that creates numeric life stage for resources as well
+  mutate(resourceStage = case_when(
+    resourceStage == "adult" | resourceStage == "medusa" ~ 1,
+    resourceStage == "egg" ~ 2,
+    resourceStage == "juvenile" ~ 4, # juvenile fish/snail/crab
+    resourceStage == "nauplii" ~ 3, # first stage larva
+    resourceStage == "hydroid" | resourceStage == "hydroid colony" ~ 5, # polyp stage in cnidarians
+    resourceStage == "multiple" ~ 6,
+    .default = NA
+  )) %>% 
+  
+  # need to add a column that creates interaction.type out of lit_inxs$trophic_strategy + consumption_type
+  mutate(trophic_strategy.x = replace_na(trophic_strategy.x, "not applicable")) %>% 
+  mutate(interaction.type = case_when(
+    consumption_type == "predation" & trophic_strategy.x == "typical predator" ~ 1, #normal predation
+    consumption_type == "predation" & trophic_strategy.x == "carnivore (scavenger + predator)" ~ 1, #normal predation, don't think we had any scavenging
+    consumption_type == "predation" & trophic_strategy.x == "omnivore" ~ 1, #normal predation
+    consumption_type =="nondiscriminatory filter feeding" | consumption_type =="nondiscriminatory filter feeding" ~ 1, # still predation
+    consumption_type =="cannibalism" ~ 1, # still still predation
+  
+    consumption_type == "predation" & trophic_strategy.x == "micropredator" ~ 3, #micropredation/grazing
+    consumption_type =="herbivory" ~ 3, #micropredation/grazing
+    consumption_type =="micropredation" ~ 3, #micropredation/grazing
+    
+    consumption_type =="parasitism" ~ 6, #macroparasitism (endo)
+    consumption_type =="endoparasitism" ~ 6, #macroparasitism (endo)
+    consumption_type =="ectoparasitism" ~ 7, #ectoparasitism (true and ecto pathogen) 
+    consumption_type =="parasitic castration" ~ 4, 
+    # non trophic:
+    consumption_type =="spatially associated" ~ 20, # habitat association 
+    consumption_type =="epiphytic" ~ 2, 
+    consumption_type =="epibiosis" ~ 2, 
+    
+    .default = NA # tried to make this a character but that didn't work so NA will have to do
+  )) %>% 
+  # now select out all the columns that don't match and put them in the right order
+  select(INITIALS, consumerNum, consumerName, consumerCat, consumerStage, resourceNum, resourceName, resourceCat, resourceStage, interaction.type, confidence, justification, incl.code, ref_num, localities, zone, pools_exposed, MorrisHaderlie, epibiota_consumed, notes, link.ID, date_added)
+                                                          
+
+write_csv(lit_search_inxs_to_paste, "data/lit_search_inxs_to_paste_21mar2024.csv")
+
+```
+
+
+### if we're feeling feisty, we can check out how many interactions we add if we expand every interaction that's not fully resolved to species to all of the species in the taxon it IS resolved to:
+tl;dr it's like 5000+ interactions, so we didn't decide to run with any of the code below, but keeping it because i learned A LOT about how to wrangle multiple datasets together
+#### first we will test this out using a subset of the lit_inxsdata, starting just for interactions with Anoplarchus purpurescens
+#### we need the code to do the following for each row: 
+ - look in the "resource_taxonomic_resolution" column
+ - if this column is "species", then do the following
+ - paste the "species" from any row that matches that result into a column called "resource" in new dataframe
+ - paste the reference number from any row that matches that result 
+ - paste the interaction type
+ - paste the category
+ 
+ - if that column is "genus", same process, but just matching "genus", and so forth up to phylum
+ 
+ - would also love to include these columns from the "lit_inxs" dataset (currently not working): 
+    - resource_taxonomic_resolution
+    - reference_number
+ 
+
+###now we will attempt to wrangle the previous so we can pass it over every row in the interaction lit_inxsdata dataframe, Ana's method below
+Ana:
+filter df1 for the lowest resolution is species, and then left join
+- full join
+- filter df1 by taxonomic_resolution (e.g. genus)
+    
+    
+```{r full join without a forloop}
+
+############################# genus first ############################# 
+####################################################################### 
+genus_subset <- lit_inxs %>% 
+  filter(resource_taxonomic_resolution == "genus") %>% #filter the whole dataset to just genus
+  rename(genus = resource_taxon) %>%  # need to rename this column to genus so it matches the "genus" column in nodes_master
+  select(reference_number, focal_consumer_taxon, focal_consumer_life_stage, genus, resource_taxonomic_resolution, general_location_of_study) # selecting relevant columns that will help with QA/QC later
+ 
+# goal is to use left join to match genera in the lit_inxs$consumer_taxon column with genera in the node_master$genus column
+
+with_genus <- left_join(genus_subset, node_master) %>% # left join only keeps rows that are in the "left" or first dataset, so only genera from node_master that match will be kept
+    rename(resource_category = category) %>%  # to help differentiate, have to do this every time so dataframes are bindable
+  rename(resource_phylum = phylum) %>%
+  rename(resource_class = class) %>%
+  rename(resource_order = order) %>%
+  rename(resource_family = family) %>%
+  rename(resource_genus = genus) %>%
+  rename(resource_species = species) # to help differentiate
+
+
+############################# family second ############################# 
+####################################################################### 
+family_subset <- lit_inxs %>% 
+  filter(resource_taxonomic_resolution == "family") %>% #filter the whole dataset to just family
+  rename(family = resource_taxon) %>%  # need to rename this column to family so it matches the "family" column in nodes_master
+  select(reference_number, focal_consumer_taxon, focal_consumer_life_stage, family, resource_taxonomic_resolution, general_location_of_study) # selecting relevant columns that will help with QA/QC later
+ 
+# goal is to use left join to match genera in the lit_inxs$consumer_taxon column with genera in the node_master$family column
+
+with_family <- left_join(family_subset, node_master) %>% # left join only keeps rows that are in the "left" or first dataset, so only genera from node_master that match will be kept
+    rename(resource_category = category) %>%  # to help differentiate
+  rename(resource_phylum = phylum) %>%
+  rename(resource_class = class) %>%
+  rename(resource_order = order) %>%
+  rename(resource_family = family) %>%
+  rename(resource_genus = genus) %>%
+  rename(resource_species = species) # to help differentiate
+
+
+
+############################# order third ############################# 
+####################################################################### 
+order_subset <- lit_inxs %>% 
+  filter(resource_taxonomic_resolution == "order") %>% #filter the whole dataset to just order
+  rename(order = resource_taxon) %>%  # need to rename this column to order so it matches the "order" column in nodes_master
+  select(reference_number, focal_consumer_taxon, focal_consumer_life_stage, order, resource_taxonomic_resolution, general_location_of_study) # selecting relevant columns that will help with QA/QC later
+ 
+# goal is to use left join to match genera in the lit_inxs$consumer_taxon column with genera in the node_master$order column
+
+with_order <- left_join(order_subset, node_master) %>% # left join only keeps rows that are in the "left" or first dataset, so only genera from node_master that match will be kept
+    rename(resource_category = category) %>%  # to help differentiate
+  rename(resource_phylum = phylum) %>%
+  rename(resource_class = class) %>%
+  rename(resource_order = order) %>%
+  rename(resource_family = family) %>%
+  rename(resource_genus = genus) %>%
+  rename(resource_species = species) # to help differentiate
+
+
+
+############################# class fourth ############################# 
+####################################################################### 
+class_subset <- lit_inxs %>% 
+  filter(resource_taxonomic_resolution == "class") %>% #filter the whole dataset to just class
+  rename(class = resource_taxon) %>%  # need to rename this column to class so it matches the "class" column in nodes_master
+  select(reference_number, focal_consumer_taxon, focal_consumer_life_stage, class, resource_taxonomic_resolution, general_location_of_study) # selecting relevant columns that will help with QA/QC later
+ 
+# goal is to use left join to match genera in the lit_inxs$consumer_taxon column with genera in the node_master$class column
+
+with_class <- left_join(class_subset, node_master) %>% # left join only keeps rows that are in the "left" or first dataset, so only genera from node_master that match will be kept
+    rename(resource_category = category) %>%  # to help differentiate
+  rename(resource_phylum = phylum) %>%
+  rename(resource_class = class) %>%
+  rename(resource_order = order) %>%
+  rename(resource_family = family) %>%
+  rename(resource_genus = genus) %>%
+  rename(resource_species = species) # to help differentiate
+
+
+
+############################# phylum fifth ############################# 
+####################################################################### 
+phylum_subset <- lit_inxs %>% 
+  filter(resource_taxonomic_resolution == "phylum") %>% #filter the whole dataset to just phylum
+  rename(phylum = resource_taxon) %>%  # need to rename this column to phylum so it matches the "phylum" column in nodes_master
+  select(reference_number, focal_consumer_taxon, focal_consumer_life_stage, phylum, resource_taxonomic_resolution, general_location_of_study) # selecting relevant columns that will help with QA/QC later
+ 
+# goal is to use left join to match genera in the lit_inxs$consumer_taxon column with genera in the node_master$phylum column
+
+with_phylum <- left_join(phylum_subset, node_master) %>% # left join only keeps rows that are in the "left" or first dataset, so only genera from node_master that match will be kept
+    rename(resource_category = category) %>%  # to help differentiate
+  rename(resource_phylum = phylum) %>%
+  rename(resource_class = class) %>%
+  rename(resource_order = order) %>%
+  rename(resource_family = family) %>%
+  rename(resource_genus = genus) %>%
+  rename(resource_species = species) # to help differentiate
+
+
+############################# finally category ############################# 
+####################################################################### 
+category_subset <- lit_inxs %>% 
+  filter(resource_taxonomic_resolution == "category") %>% #filter the whole dataset to just category
+  rename(category = resource_taxon) %>%  # need to rename this column to category so it matches the "category" column in nodes_master
+  select(reference_number, focal_consumer_taxon, focal_consumer_life_stage, category, resource_taxonomic_resolution, general_location_of_study) # selecting relevant columns that will help with QA/QC later
+ 
+# goal is to use left join to match genera in the lit_inxs$consumer_taxon column with genera in the node_master$category column
+
+with_category <- left_join(category_subset, node_master) %>% # left join only keeps rows that are in the "left" or first dataset, so only genera from node_master that match will be kept
+  rename(resource_category = category) %>%  # to help differentiate
+  rename(resource_phylum = phylum) %>%
+  rename(resource_class = class) %>%
+  rename(resource_order = order) %>%
+  rename(resource_family = family) %>%
+  rename(resource_genus = genus) %>%
+  
+  rename(resource_species = species) # to help differentiate
+
+
+
+############################# join all into one big dataframe ############################# 
+###########################################################################################
+
+edges_tax_inferred <- rbind(with_genus, with_family, with_order, with_class, with_phylum, with_category)
+
+
+# now need to pull from here and manually QA QC before adding to master edgelist
+
+write_csv(edges_tax_inferred, "edges_taxonomically_inferred.csv")
+
+
+
+
+```
+
+## everything below works but the above is much cleaner
+###now we will attempt to wrangle the previous into a for loop so we can pass it over every row in the interaction lit_inxsdata dataframe
+
+```{r test build with a forloop}
+
+# for each reference number (entry), subset by a resolution (6 separate for loops), call df genus
+  #fro every ref present in genus, full join by genus to a new df, then add to a newnew df
+
+#reference <- lit_inxs$reference_number
+
+#empty = nodes_master[FALSE,]
+
+#empty <- empty %>% 
+#  mutate(focal_consumer_taxon = FALSE) %>% 
+#  mutate(reference = FALSE)
+
+#for (i in reference) {
+#  genus_subset <- lit_inxs %>% 
+#    filter(resource_taxonomic_resolution == "genus") #filter the whole dataset to just genus
+  
+#}
+
+# testing out building an interaction dataframe with just one consumer species, Anoplarchus
+
+# create a test dataset of interactions
+test_ints <- lit_inxs %>% 
+  select(reference_number, focal_consumer_taxon, consumption_type, resource_taxon, resource_taxonomic_resolution) %>%  # will eventually need to add in life stage and location
+  filter(focal_consumer_taxon == "Anoplarchus purpurescens")
+
+matching_species <- nodes_master[(nodes_master$species %in% test_ints$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of test_ints
+matching_genus <- nodes_master[(nodes_master$genus %in% test_ints$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of test_ints
+matching_family <- nodes_master[(nodes_master$family %in% test_ints$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of test_ints
+matching_class <- nodes_master[(nodes_master$class %in% test_ints$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of test_ints
+matching_order <- nodes_master[(nodes_master$order %in% test_ints$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of test_ints
+matching_phylum <- nodes_master[(nodes_master$phylum %in% test_ints$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of test_ints
+matching_category <- nodes_master[(nodes_master$category %in% test_ints$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of test_ints
+
+
+all_interactions <- rbind(matching_category, matching_class, matching_family, matching_genus, matching_order, matching_phylum, matching_species) %>% 
+  mutate(focal_consumer_taxon = "Anoplarchus purpurescens")
+
+## exact syntax below:
+
+matching_spp <- nodes_master[ # brackets select
+    nodes_master$species %in% test_ints$resource_taxon # returns a true/false vector if the species listed in nodes_master is found in test_ints
+    
+  , # nothing after the comma means select all columns
+  ] 
+
+
+#attempting to create a function with case_when to return a dataframe based on which taxonomic resolution the taxon matches
+
+#############################################################################################################       
+############## the below code doesn't work because (nodes_master$species %in% test_ints$resource_taxon) returns a true/false boolean vector and ...? ######################################################################     
+#matching_taxa <- case_when(test_ints$resource_taxonomic_resolution == "species" ~ list(nodes_master[(nodes_master$species %in% test_ints$resource_taxon),]), #if the resolution is SPECIES, return rows from nodes_master where the SPECIES matches
+#                           test_ints$resource_taxonomic_resolution == "genus" ~ list(nodes_master[(nodes_master$genus %in% test_ints$resource_taxon),]), #if the resolution is GENUS, return rows from nodes_master where the GENUS matches
+#                           test_ints$resource_taxonomic_resolution == "family" ~ list(nodes_master[(nodes_master$genus %in% test_ints$resource_taxon),]), #if the resolution is FAMILY, return rows from nodes_master where the FAMILY matches) 
+#                           test_ints$resource_taxonomic_resolution == "order" ~ list(nodes_master[(nodes_master$genus %in% test_ints$resource_taxon),]), #if the resolution is ORDER, return rows from nodes_master where the ORDER matches) 
+#                           test_ints$resource_taxonomic_resolution == "class" ~ list(nodes_master[(nodes_master$genus %in% test_ints$resource_taxon),]), #if the resolution is CLASS, return rows from nodes_master where the CLASS matches) 
+#                           test_ints$resource_taxonomic_resolution == "phylum" ~ list(nodes_master[(nodes_master$genus %in% test_ints$resource_taxon),]), #if the resolution is PHYLUM, return rows from nodes_master where the PHYLUM matches) 
+#                           test_ints$resource_taxonomic_resolution == "category" ~ list(nodes_master[(nodes_master$genus %in% test_ints$resource_taxon),]), #if the resolution is CATEGORY, return rows from nodes_master where the CATEGORY matches) 
+                           #only remaining taxonomic resolution is life stage and we will have to review those manually
+#                           .default = NA)
+
+
+```
+
+```{r for loop to build}
+
+all_interactions = nodes_master[FALSE,] # somehow this creates a blank dataframe with the same columns as lit_inxs
+
+all_interactions <- all_interactions %>% 
+  mutate(focal_consumer_taxon = FALSE) #%>% 
+  #mutate(matched_on = FALSE) %>% # need to add a blank column to the end of this to catch the consumer species name and resource taxonomic resolution (DOESN'T WORK NEED TO FIND ANOTHER WAY)
+
+
+for(i in 1:nrow(lit_inxs)) #is this the right way to iterate this?
+{# first subset interaction lit_inxsdata
+  
+  consumer_i <- lit_inxs$focal_consumer_taxon[i] #because the filter function does not like the brackets, we will make a changing object we can pass to it which will hopefully work
+  
+  consumer_subset <- lit_inxs %>% 
+    filter(focal_consumer_taxon == consumer_i)
+  
+  # need to add a column to each of these of taxonomic resolution - do tomorrow
+  
+matching_species <- nodes_master[(nodes_master$species %in% consumer_subset$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of consumer_subset
+matching_genus <- nodes_master[(nodes_master$genus %in% consumer_subset$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of consumer_subset
+matching_family <- nodes_master[(nodes_master$family %in% consumer_subset$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of consumer_subset
+matching_class <- nodes_master[(nodes_master$class %in% consumer_subset$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of consumer_subset
+matching_order <- nodes_master[(nodes_master$order %in% consumer_subset$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of consumer_subset
+matching_phylum <- nodes_master[(nodes_master$phylum %in% consumer_subset$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of consumer_subset
+matching_category <- nodes_master[(nodes_master$category %in% consumer_subset$resource_taxon),] # show me the rows (spp) in families in nodes_master that are in the resource_taxon column of consumer_subset
+  
+new_interactions <- rbind(matching_category, matching_class, matching_family, matching_genus, matching_order, matching_phylum, matching_species) %>% # smash all the interactions together
+  mutate(focal_consumer_taxon = consumer_i) #%>%   # add a column that is the focal taxon (to distinguish, obviously)
+  #mutate(matched_on = lit_inxs$resource_taxonomic_resolution[i]) #want to also add a column designating how these were matched for cleaning later WAIT NO THIS DOESNT WORK
+
+
+all_interactions <- rbind(new_interactions, all_interactions) #append each new dataframe to the larger dataset
+  
+}
+
+```
+
+### hooray! We built a giant dataset. Now time to clean it up
+
+```{r cleaning loop-constructed interaction dataset}
+
+clean_interactions <- all_interactions %>% 
+  select(focal_consumer_taxon, id, species, matched_on, category, life_stage, clean_zone, n_s_both, kingdom, phylum, class, order, family, genus) %>% 
+  rename(consumer = focal_consumer_taxon, 
+         resource_num = id, 
+         resource = species)
+
+```
+
+

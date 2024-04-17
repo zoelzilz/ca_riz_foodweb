@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/968403/ebd2a53435f74c01ba3913804e6443a2
+bundleId: https://api.rpubs.com/api/v1/document/968403/ebd2a53435f74c01ba3913804e6443a2
+url: http://rpubs.com/zoe_zilz/968403
+when: 1668040065.98985
+lastSyncTime: 1668040065.98986

@@ -1,0 +1,410 @@
+---
+title: "WORMS_classifications"
+output: html_document
+date: "2024-02-19"
+---
+
+# The year is 2024 and we are approaching graduation
+## The time is nigh to finish the California Rocky Intertidal Food Web
+## (and we are using humor to mask the despair)
+
+### status: all nodes and links from the Light and Smith handbook have been incorporated. We are going to try to automate some of the cleaning tasks that were previously done by hand including: 
+### - full taxonomy for each node 
+### - creating edges by coding instead of manual entry 
+### - whatever else we can code in in less time than it takes to enter manually
+
+
+###CHECKLIST: bold is what's done in this markdown:
+ ✔ **pull in WORMS taxonomy for each node (done except for those that don't match an entry in WORMS)**
+  
+ ✔ **manually fix typos in original node list so that they match an existing WORMS entry, if possible, using the dataset result from the above step**  
+  - **in doing this, realized that the dataset made from rows that don't match an entry in worms is missing all morphospecies that I PO'd...?**
+       **✔ OH MY GOD i had filtered out all nodes with zone = south, host range, or no data. I'm an idiot. I will need to do everything above again (as of 3/5) with the new full nodes dataset (hopefully not that bad)**
+       **✔ Ok this has been done twice now with all nodes and is as good as it's gonna get**
+        
+ • finish code to make inferred interactions dataset from literature search data 
+      • don't forget to include justification code and make it match existing edgelist
+      • include consumer_num, etc)
+       
+ • create code to incorporate GLOBI data into edgelist
+  
+ • QA/QC inferred interactions dataset
+  
+ • go through original MASTER species list and create a forloop to make new interactions for those listed in the interaction columns
+  
+ • last step: use Dana's code to make concomitant predation dataset
+
+
+```{r setup and packages, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#install.packages("igraph") 
+#install.packages("network") 
+#install.packages("sna")
+#install.packages("ggraph")
+#install.packages("visNetwork")
+#install.packages("threejs")
+#install.packages("networkD3")
+#install.packages("ndtv")
+#install.packages("tidyverse")
+#install.packages("NetIndices")
+#install.packages("cheddar")
+#install.packages("worrms")
+#install.packages("taxize")
+#install.packages("googlesheets4")
+#install.packages("beepr")
+
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+library(worrms)
+library(taxize)
+library(janitor)
+library(googlesheets4)
+library(beepr)
+```
+
+```{r read in node data}
+
+nodes_master <- readxl::read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "Both") %>%  # reading in the remotely hosted species list as the master node list
+  clean_names() %>% 
+  mutate(species = trimws(species)) #%>% the below isn't really necessary
+  #cleaning zones up for later:
+  #mutate(clean_zone = case_when(
+ #   zone == "low tidepools" ~ "low",
+#    zone == "low to very low" ~ "low",
+#    zone == "middle and low" ~ "middle", 
+#    zone == "middle to low" ~ "middle",
+#    zone == "high and middle" ~ "high",
+#    zone == "mid to low" ~ "middle",
+#    zone == "high tide pools, nocturnal" ~ "high",
+#    zone == "high to middle" ~ "high",
+#    zone == "low to high" ~ "all",
+#    zone == "pools" ~ "all",
+#    zone == "tidepools" ~ "all"
+#  )) 
+
+
+# reorder clean zone to be in order of tide level
+#nodes_master$clean_zone <- factor(nodes_master$clean_zone, levels = c("high", "middle", "low", "very low", "all"))
+  
+
+```
+
+### Just some fun summary stuff
+```{r summary}
+
+# how many unique species?
+n_distinct(nodes_master$species)
+
+# how many species below point conception and above
+
+north_nodes <- nodes_master %>% 
+  filter(n_s_both != "S")
+
+n_distinct(north_nodes$species)
+
+south_nodes <- nodes_master %>% 
+  filter(n_s_both != "N") 
+
+n_distinct(south_nodes$species)
+
+both_nodes <- nodes_master %>% 
+  filter(n_s_both == "Both" | n_s_both == "Central")
+
+n_distinct(south_nodes$species)
+
+```
+
+
+### Some stacked barcharts, for fun!
+
+```{r stacked barcharts}
+
+# comparison of functional groups north and south of PC
+south_func_groups <- south_nodes %>% 
+  filter(!is.na(trophic_strategy)) %>% 
+  group_by(trophic_strategy) %>% 
+  summarise(count = n()) %>%  # count of nodes in each trophic group
+  mutate(n_s = "south") # add a column notating these are south so I can combine tibbles later
+
+
+north_func_groups <- north_nodes %>% 
+  filter(!is.na(trophic_strategy)) %>% 
+  group_by(trophic_strategy) %>% 
+  summarise(count = n()) %>% 
+  mutate(n_s = "north")
+
+func_groups <- rbind(north_func_groups, south_func_groups)
+
+func_barplot <- ggplot(func_groups, aes(fill = trophic_strategy, x = n_s, y = count)) +
+  geom_bar(position = "stack", stat = "identity")
+
+
+# comparison of zone fidelity north and south of PC
+
+south_zone_groups <- south_nodes %>% 
+  filter(!is.na(clean_zone)) %>% 
+  group_by(clean_zone) %>% 
+  summarise(count = n()) %>%  # count of nodes in each trophic group
+  mutate(n_s = "south") # add a column notating these are south so I can combine tibbles later
+
+
+north_zone_groups <- north_nodes %>% 
+  filter(!is.na(clean_zone)) %>% 
+  group_by(clean_zone) %>% 
+  summarise(count = n()) %>% 
+  mutate(n_s = "north")
+
+zone_groups <- rbind(north_zone_groups, south_zone_groups)
+
+zone_barplot <- ggplot(zone_groups, aes(fill = clean_zone, x = n_s, y = count)) +
+  geom_bar(position = "stack", stat = "identity")
+
+```
+
+
+## Starting with coding in full taxonomy using worrms package, which queries the WORMS api
+### as of 3/14 no longer need to do this!
+
+#### Warning: Values from `scientificname` are not uniquely identified; output will contain list-cols.
+• Use `values_fn = list` to suppress this warning.
+• Use `values_fn = {summary_fun}` to summarise duplicates.
+• Use the following dplyr code to identify duplicates.
+  {data} %>%
+  dplyr::group_by(id, rank) %>%
+  dplyr::summarise(n = dplyr::n(), .groups = "drop") %>%
+  dplyr::filter(n > 1L)
+
+####testing
+```{r worms taxonomy test set}
+# how to with worrms: https://cran.r-project.org/web/packages/worrms/vignettes/worrms.html
+
+test_taxa <- nodes_master %>% 
+  filter(id < 100)
+
+test_species <- test_taxa$species #wm_classification requires this format for some reason
+
+## can call full classification with wm_classification(name = 'whateverius whatever'), or a list
+taxa_test <- wm_classification_(name = test_species) %>% 
+  select(!AphiaID) %>% # this messes up the next step and we don't need it (each taxon has a different aphiaID)
+  pivot_wider(names_from = rank, values_from = scientificname) #makes this more tidy for our purposes
+
+beep() #bitch tell me when ur done
+
+taxa_test <- taxa_test %>% 
+  clean_names()
+
+test_smash <- left_join(test_taxa, taxa_test, by = join_by(species))
+
+# looks like after round one of QA/QC (done 3/5) there are still some species that aren't matching in WORMS (e.g. probably all the ones that got left out bc they had weird entrys for 'zone')
+
+```
+
+### WORMS classification on whole dataset
+Make sure you run the whole chunk so it "pings" at the end. Takes about 10 minutes!
+as of 3/14/2024, no longer need to run!
+
+```{r worms taxonomy real deal, eval=FALSE, warning=FALSE, include=FALSE}
+# ok now for the full monty, which will likely take a while
+# as of 3/14/2024 don't need to run anymore!!
+input_species <- nodes_master$species
+
+WORMS_taxonomy <- wm_classification_(name = input_species) %>% 
+  select(!AphiaID) %>% # this messes up the next step and we don't need it (each taxon has a different aphiaID)
+  pivot_wider(names_from = rank, values_from = scientificname)  #makes this more tidy for our purposes
+
+WORMS_taxonomy2 <- WORMS_taxonomy %>% 
+  mutate(across(2:34, ~replace(., lengths(.) == 0, NA))) %>%  # replacing nulls with NAs
+  mutate(across(where(is.list), ~ map(., first))) %>% # also returned lists in columns and I have to collapse them
+  unnest() %>%  # threw a warning about including cols but it worked so suck it nerd
+  #select(2:9) %>% 
+  clean_names()
+
+write.csv(WORMS_taxonomy2, "WORMS_taxonomy.csv", row.names = FALSE)
+
+beep() #bitch tell me when ur done
+
+# returned a LOT of 404 not found and 204 no content warnings... like too many (by comparing this df and nodes_master, seems like about 400 - fixed by manually QA/QCing, see below chunk)
+
+
+```
+
+### Combine WORMS taxonomy with nodes_master
+```{r combining into new giant dataframe with full taxonomy}
+
+# first remove taxonomy columns from nodes_master
+nodes_notaxa <- nodes_master %>% 
+  select(!28:33) # removing existing taxonomy (but double chekc that these col numbers are still correct)
+
+nodes_fulltax <- left_join(nodes_notaxa, WORMS_taxonomy2, by = join_by(species)) #%>% 
+  #select(!17:28) # removing columns about interactions with other species
+
+count_taxmissing <- sum(is.na(nodes_fulltax$id.y))
+count_taxmissing
+
+write.csv(nodes_fulltax, "nodes_w_wormstaxonomy.csv", row.names = FALSE) # will need to manually QA QC this outside of R to look for typos, etc and then fix the original dataset
+
+# round two of manual QA/QC on 3/7/2024
+
+#nodes_taxmissing <- nodes_fulltax %>% 
+#  filter(is.na(kingdom)) # keep only the rows that don't have a kingdom listed, meaning they PROB have NAs for the rest of the taxonomy (a couple exceptions) 
+
+#write.csv(nodes_taxmissing, "nodes_w_wormstaxonomy_forQAQC.csv", row.names = FALSE) # can use this *only blank taxonomy* dataset to help QC original species list master dataset
+
+```
+
+
+### ugh on 19 march 2024 I added a bunch of new nodes to the web from the literature search data (mostly parasites) so now I need to do this process all over again for the new nodes
+
+```{r getting WORMS taxonomy for new nodes}
+
+new_nodes <- readxl::read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "Both") %>%  # reading in the remotely hosted species list as the master node list
+  clean_names() %>% 
+  mutate(species = trimws(species)) %>% 
+  #cleaning zones up for later:
+  mutate(clean_zone = case_when(
+    zone == "low tidepools" ~ "low",
+    zone == "low to very low" ~ "low",
+    zone == "middle and low" ~ "middle", 
+    zone == "middle to low" ~ "middle",
+    zone == "high and middle" ~ "high",
+    zone == "mid to low" ~ "middle",
+    zone == "high tide pools, nocturnal" ~ "high",
+    zone == "high to middle" ~ "high",
+    zone == "low to high" ~ "all",
+    zone == "pools" ~ "all",
+    zone == "tidepools" ~ "all"
+  )) %>% 
+  filter(!is.na(species)) %>%  # popped a bunch of NAs on the end by accident, taking the, out
+  filter(id >= 2104) %>%  # just include the nodes i recently added so we don't classify the whole fucking thing, dates are being fucky so using id instead
+  ### trying something new below: I don't want to manually enter all the ones ID'd only to genus, so I'm going to remove "sp."
+  mutate(species2 = str_remove_all(species, "sp.")) %>% 
+  mutate(species2 = trimws(species2)) 
+
+
+input_species <- new_nodes$species2
+
+WORMS_taxonomy_new <- wm_classification_(name = input_species) %>% 
+  select(!AphiaID) %>% # this messes up the next step and we don't need it (each taxon has a different aphiaID)
+  pivot_wider(names_from = rank, values_from = scientificname)  #makes this more tidy for our purposes
+
+beep() #bitch tell me when ur done
+
+WORMS_taxonomy_new2 <- WORMS_taxonomy_new %>% 
+  mutate(across(1:25, ~replace(., lengths(.) == 0, NA))) %>%  # replacing nulls with NAs
+  mutate(across(where(is.list), ~ map(., first))) %>% # also returned lists in columns and I have to collapse them
+  unnest() %>%  # threw a warning about including cols but it worked so suck it nerd
+  #select(2:9) %>% 
+  clean_names() %>% 
+  #filter(is.na(species))
+  mutate(species2 = case_when(is.na(species) ~ as.character(genus), # need to make it so that the "species" column also has the genus names, for binding to the other dataframe (where it's called species2)
+                              .default = as.character(species)))
+
+# don't need to write a csv at this point this round
+
+# first remove taxonomy columns from new_nodes
+nodes_notaxa <- new_nodes %>% 
+  select(!28:33) # removing existing taxonomy (but double chekc that these col numbers are still correct)
+
+
+# can't join by species alone anymore
+nodes_fulltax <- left_join(nodes_notaxa, WORMS_taxonomy_new2, by = join_by(species2)) #%>% 
+  #select(!17:28) # removing columns about interactions with other species
+
+count_taxmissing <- sum(is.na(nodes_fulltax$id.y))
+count_taxmissing
+
+write.csv(nodes_fulltax, "new_nodes_w_wormstaxonomy_19mar2024.csv", row.names = FALSE) # will need to manually QA QC this outside of R to look for typos, etc, and then append to 14mar2024 csv
+
+
+
+
+```
+
+### AND on 5 April 2024 I added a bunch of new nodes to the web from both the literature search data and the node metadata so now I need to do this process all over again AGAIN for the new nodes
+
+```{r getting WORMS taxonomy for new nodes 5 april}
+
+new_nodes2 <- readxl::read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "Both") %>%  # reading in the remotely hosted species list as the master node list
+  clean_names() %>% 
+  mutate(species = trimws(species)) %>% 
+  filter(!is.na(species)) %>%  # popped a bunch of NAs on the end by accident, taking the, out
+  filter(enter_code_2 == "add") %>%  # just include the nodes i recently added so we don't classify the whole fucking thing, dates are being fucky so using id instead
+  ### trying something new below: I don't want to manually enter all the ones ID'd only to genus, so I'm going to remove "sp."
+  mutate(species2 = str_remove_all(species, "sp.")) %>% 
+  mutate(species2 = trimws(species2)) 
+
+
+input_species <- new_nodes2$species2
+
+WORMS_taxonomy_new <- wm_classification_(name = input_species) %>% 
+  select(!AphiaID) %>% # aphiaID messes up the next step and we don't need it (each taxon has a different aphiaID)
+  pivot_wider(names_from = rank, values_from = scientificname)  #makes this more tidy for our purposes
+
+beep() #bitch tell me when ur done
+
+# the following code unnests the lists within cells that are created by pivot_wider
+WORMS_taxonomy_new2 <- WORMS_taxonomy_new %>% 
+  mutate(across(1:30, ~replace(., lengths(.) == 0, NA))) %>%  # replacing nulls with NAs
+  mutate(across(where(is.list), ~ map(., first))) %>% # also returned lists in columns and I have to collapse them
+  unnest() %>%  # threw a warning about including cols but it worked so suck it nerd
+  #select(2:9) %>% 
+  clean_names() %>% 
+  #filter(is.na(species))
+  mutate(species2 = case_when(is.na(species) ~ as.character(genus), # need to make it so that the "species" column also has the genus names, for binding to the other dataframe (where it's called species2)
+                              .default = as.character(species)))
+
+# don't need to write a csv at this point this round
+
+# first remove taxonomy columns from new_nodes
+nodes_notaxa <- new_nodes2 %>% 
+  select(!28:33) # removing existing taxonomy (but double chekc that these col numbers are still correct)
+
+
+# can't join by species alone anymore
+nodes_fulltax <- left_join(nodes_notaxa, WORMS_taxonomy_new2, by = join_by(species2)) #%>% 
+  #select(!17:28) # removing columns about interactions with other species
+
+count_taxmissing <- sum(is.na(nodes_fulltax$id.y))
+count_taxmissing
+
+write.csv(nodes_fulltax, "new_nodes_w_wormstaxonomy_4apr2024.csv", row.names = FALSE) # will need to manually QA QC this outside of R to look for typos, etc, and then append to 24mar2024 csv
+
+
+```
+
+
+### Have to leave R now to manually fill in all of the taxonomy that WORMS couldn't do via code, uploading new and improved manually edited dataframe!
+#### for reproducibility, did the following:
+• opened nodes_w_wormstaxonomy.csv in excel
+• sorted datasheet by Species, Kingdom, Phylum
+• conditionally formatted to make the rows that didn't have a WORMS id highlighted in red so I could target and fix
+• also did this for the 'new_nodes' on 3/20/24 and 4/5/24
+• using rbind to combine the new_nodes with the og dataset instead of manually combining in excel because r can deal better with the columns being out of order than my brain can right now
+
+### for next steps, go to: incorporating_riz_litsearch.rmd and interactions_from_specieslist.rmd
+
+```{r combining into one final full taxonomy dataset}
+# 20 mar update:
+#newnodesQCd <- read_csv("data/new_nodes_w_wormstaxonomy_19mar2024_QCd.csv")
+#ognodes <- read_csv("data/RIZspecieslist_fulltaxonomy_14mar24.csv")
+
+# 5 apr update:
+newnodesQCd <- read_csv("data/new_nodes_w_wormstaxonomy_4apr2024_QCd.csv") %>% 
+  rename(species = species.x)
+ognodes <- read_csv("data/RIZspecieslist_fulltaxonomy_20mar24.csv")
+
+all_nodes_full_tax <- full_join(ognodes, newnodesQCd) #rbind didnt' work because of stupid different subsub taxonomy columns
+
+write_csv(all_nodes_full_tax, "RIZspecieslist_fulltaxonomy_5apr24.csv")
+
+```
+
+

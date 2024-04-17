@@ -1,0 +1,85 @@
+---
+title: "ocean outreach network building"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Our goal is to create an interactive network. We will be following along with the instructions at this link: https://kateto.net/network-visualization
+
+First we will install and load all necessary packages:
+```{r packages}
+#install.packages("igraph") 
+#install.packages("network") 
+#install.packages("sna")
+#install.packages("ggraph")
+#install.packages("visNetwork")
+#install.packages("threejs")
+#install.packages("networkD3")
+#install.packages("ndtv")
+#install.packages("tidyverse")
+
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+```
+
+Next we need to import and "clean up" our dataset, since it includes a lot of columns we won't need and a lot of rows with missing values. We will start with datasets labeled as "unclean" and end up with two dataframes with simple descriptive names: "links" and "nodes"
+```{r cleaning and importing}
+nodes_unclean <- read_csv("nodes.csv")
+links_unclean <- read_csv("edges.csv")
+
+head(nodes_unclean) #checking out the data by looking at the first few lines
+head(links_unclean)
+
+# we have lots of columns we won't use, so let's get rid of those, tidy style
+nodes <- nodes_unclean %>% #using a pipe operator to link together several commands at once
+  select(ID, species, category, Zone) # we are selecting the columns we want to keep
+
+links_unclean$resourceNum <- as.numeric(links_unclean$resourceNum) #necessary to convert all the random text i wrote in instead of numbers -> NAs
+links_unclean$consumerNum <- as.numeric(links_unclean$consumerNum) # ditto above
+  
+links <- links_unclean %>% 
+  filter(consumerNum != ""|resourceNum !="" ) %>% 
+  filter(!is.na(resourceNum)) %>% 
+  filter(!is.na(consumerNum)) %>% # we are removing rows of data that have blanks ("") or "NA" for consumer # and resource #. Those two values are essential for building our web becaues they match numbers in the "nodes" dataframe. NTS: I'm not entirely sure why we have to break this up into three different filter functions...
+  select(consumerNum, resourceNum, interaction.type) #these are the only columns we want because nothing else is necessary for building our web
+
+```
+
+Now that our data is cleaned up, we will follow along with the tutorial at step 3.2 - Creating an igraph object
+```{r igraph object}
+net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) #tutorial code copied exactly
+
+net # viewing the igraph object properties
+
+# more properties below:
+E(net)       # The edges of the "net" object
+V(net)       # The vertices of the "net" object
+E(net)$type  # Edge attribute "type"
+V(net)$media # Vertex attribute "media"
+
+# Find nodes and edges by attribute:
+# (that returns oblects of type vertex sequence/edge sequence)
+#V(net)[media=="BBC"]
+#E(net)[type=="mention"]
+
+# You can also examine the network matrix directly:
+net[1,]
+net[5,7]
+
+# and plot it:
+plot(net)
+
+```
+
+This graph is a mess! Now, your job is to scroll down the tutorial, find the network graph YOU like the most, and try to follow along with the code to create it! Message me if you have any questions!

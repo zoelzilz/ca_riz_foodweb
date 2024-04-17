@@ -1,0 +1,211 @@
+INITIALS,consumerNum,consumerName,consumerCat,consumerStage,resourceNum,resourceName,resourceCat,resourceStage,interaction.type,confidence,justification,incl.code,ref_num,localities,zone,pools_exposed,MorrisHaderlie,epibiota_consumed,notes,link.ID,date_added
+ZZ_coded,146,Solaster dawsoni,asteroid,1,156,Eupentacta quinquesemita,cucumber,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2351,22 Mar 2024
+ZZ_coded,146,Solaster dawsoni,asteroid,1,1980,Solaster stimpsoni,asteroid,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2352,22 Mar 2024
+ZZ_coded,147,Astrometis sertulifera,asteroid,1,163,Ophiothrix spiculata,brittle star,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,very low,NA,yes,NA,NA,2353,22 Mar 2024
+ZZ_coded,150,Pisaster ochraceus,asteroid,1,458,Tetraclita rubescens,barnacle,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,"middle, low",NA,yes,NA,NA,2354,22 Mar 2024
+ZZ_coded,151,Pisaster giganteus,asteroid,1,366,Mytilus californianus,mussel,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,very low,NA,yes,NA,NA,2355,22 Mar 2024
+ZZ_coded,151,Pisaster giganteus,asteroid,1,284,Nucella emarginata,snail,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,very low,NA,yes,NA,NA,2356,22 Mar 2024
+ZZ_coded,151,Pisaster giganteus,asteroid,1,237,Tegula funebralis,topsnail,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,very low,NA,yes,NA,NA,2357,22 Mar 2024
+ZZ_coded,151,Pisaster giganteus,asteroid,1,409,Nuttallina californica,chiton,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,very low,NA,yes,NA,NA,2358,22 Mar 2024
+ZZ_coded,151,Pisaster giganteus,asteroid,1,287,Kelletia kelletii,whelk,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,very low,NA,yes,NA,NA,2359,22 Mar 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,154,Cucumaria pseudocurata,cucumber,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2360,22 Mar 2024
+ZZ_coded,193,Megathura crenulata,limpet,1,759,macroalgae,algae,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2361,22 Mar 2024
+ZZ_coded,202,Lottia instabilis,true limpet,1,648,Pterygophora californica,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2362,22 Mar 2024
+ZZ_coded,203,Lottia limatula,true limpet,1,653,Hildenbrandia sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2363,22 Mar 2024
+ZZ_coded,213,Discurria insessa,true limpet,1,617,Egregia menziesii,algae,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2364,22 Mar 2024
+ZZ_coded,213,Discurria insessa,true limpet,1,617,Egregia menziesii,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2365,22 Mar 2024
+ZZ_coded,226,Haliotis fulgens,abalone,1,655,Gelidium sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2366,22 Mar 2024
+ZZ_coded,226,Haliotis fulgens,abalone,1,587,Macrocystis pyrifera,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2367,22 Mar 2024
+ZZ_coded,230,Calliostoma annulatum,topsnail,1,109,Corynactis californica,anemone,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2368,22 Mar 2024
+ZZ_coded,231,Calliostoma canaliculatum,topsnail,1,587,Macrocystis pyrifera,algae,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,very low,NA,yes,NA,NA,2369,22 Mar 2024
+ZZ_coded,232,Calliostoma ligatum,topsnail,1,587,Macrocystis pyrifera,algae,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2370,22 Mar 2024
+ZZ_coded,232,Calliostoma ligatum,topsnail,1,185,Cystodytes lobatus,tunicate,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2371,22 Mar 2024
+ZZ_coded,235,Norrisia norrisii,topsnail,1,587,Macrocystis pyrifera,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2372,22 Mar 2024
+ZZ_coded,235,Norrisia norrisii,topsnail,1,617,Egregia menziesii,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2373,22 Mar 2024
+ZZ_coded,235,Norrisia norrisii,topsnail,1,624,Laminaria sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2374,22 Mar 2024
+ZZ_coded,236,Tegula brunnea,topsnail,1,587,Macrocystis pyrifera,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; light & Smith",NA,low,NA,yes,NA,NA,2375,22 Mar 2024
+ZZ_coded,236,Tegula brunnea,topsnail,1,624,Laminaria sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; light & Smith",NA,low,NA,yes,NA,NA,2376,22 Mar 2024
+ZZ_coded,242,Promartynia pulligo,topsnail,1,648,Pterygophora californica,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2377,22 Mar 2024
+ZZ_coded,246,Lacuna marmorata,littorine,1,602,epiphytic diatoms,algae,NA,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2378,22 Mar 2024
+ZZ_coded,248,Littorina scutulata,littorine,1,601,Ulva sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2379,22 Mar 2024
+ZZ_coded,253,Epitonium tinctum,snail,1,101,Anthopleura elegantissima,anemone,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high,NA,yes,NA,NA,2380,22 Mar 2024
+ZZ_coded,254,Opalia wroblewskyi,snail,1,101,Anthopleura elegantissima,anemone,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high,NA,yes,NA,NA,2381,22 Mar 2024
+ZZ_coded,255,Opalia funiculata,snail,1,101,Anthopleura elegantissima,anemone,1,3,NA,4,NA,iNaturalist: https://www.inaturalist.org/observations?user_id=cbates1,NA,NA,NA,no,NA,NA,2382,22 Mar 2024
+ZZ_coded,265,Marsenina stearnsii,snail,1,180,Trididemnum opacum,tunicate,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2383,22 Mar 2024
+ZZ_coded,270,Trivia californiana,snail,1,820,Membranipora membranacea,bryozoan,1,3,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2384,22 Mar 2024
+ZZ_coded,278,Paciocinebrina lurida,snail,1,463,Balanus glandula,barnacle,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2385,22 Mar 2024
+ZZ_coded,278,Paciocinebrina lurida,snail,1,464,Balanus glandula,barnacle,4,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2386,22 Mar 2024
+ZZ_coded,279,Roperia poulsoni,murex,1,366,Mytilus californianus,mussel,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low tidepools,NA,yes,NA,NA,2387,22 Mar 2024
+ZZ_coded,279,Roperia poulsoni,murex,1,367,Mytilus edulis,mussel,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low tidepools,NA,yes,NA,NA,2388,22 Mar 2024
+ZZ_coded,279,Roperia poulsoni,murex,1,390,Penitella penita,boring clam,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low tidepools,NA,yes,NA,NA,2389,22 Mar 2024
+ZZ_coded,281,Acanthinucella punctulata,snail,1,463,Balanus glandula,barnacle,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high,NA,yes,NA,NA,2390,22 Mar 2024
+ZZ_coded,281,Acanthinucella punctulata,snail,1,464,Balanus glandula,barnacle,4,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high,NA,yes,NA,NA,2391,22 Mar 2024
+ZZ_coded,281,Acanthinucella punctulata,snail,1,248,Littorina scutulata,littorine,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high,NA,yes,NA,NA,2392,22 Mar 2024
+ZZ_coded,281,Acanthinucella punctulata,snail,1,284,Nucella emarginata,snail,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high,NA,yes,NA,NA,2393,22 Mar 2024
+ZZ_coded,281,Acanthinucella punctulata,snail,1,237,Tegula funebralis,topsnail,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high,NA,yes,NA,NA,2394,22 Mar 2024
+ZZ_coded,283,Nucella canaliculata,snail,1,366,Mytilus californianus,mussel,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2395,22 Mar 2024
+ZZ_coded,283,Nucella canaliculata,snail,1,367,Mytilus edulis,mussel,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2396,22 Mar 2024
+ZZ_coded,283,Nucella canaliculata,snail,1,462,Semibalanus cariosus,barnacle,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2397,22 Mar 2024
+ZZ_coded,284,Nucella emarginata,snail,1,366,Mytilus californianus,mussel,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2398,22 Mar 2024
+ZZ_coded,284,Nucella emarginata,snail,1,367,Mytilus edulis,mussel,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2399,22 Mar 2024
+ZZ_coded,284,Nucella emarginata,snail,1,463,Balanus glandula,barnacle,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2400,22 Mar 2024
+ZZ_coded,284,Nucella emarginata,snail,1,464,Balanus glandula,barnacle,4,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2401,22 Mar 2024
+ZZ_coded,284,Nucella emarginata,snail,1,455,Pollicipes polymerus,barnacle,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2402,22 Mar 2024
+ZZ_coded,284,Nucella emarginata,snail,1,210,Lottia scabra,true limpet,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2403,22 Mar 2024
+ZZ_coded,284,Nucella emarginata,snail,1,203,Lottia limatula,true limpet,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2404,22 Mar 2024
+ZZ_coded,284,Nucella emarginata,snail,1,237,Tegula funebralis,topsnail,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2405,22 Mar 2024
+ZZ_coded,286,Lirabuccinum dirum,whelk,1,248,Littorina scutulata,littorine,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2406,22 Mar 2024
+ZZ_coded,286,Lirabuccinum dirum,whelk,1,208,Lottia pelta,true limpet,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2407,22 Mar 2024
+ZZ_coded,286,Lirabuccinum dirum,whelk,1,199,Lottia digitalis,true limpet,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2408,22 Mar 2024
+ZZ_coded,286,Lirabuccinum dirum,whelk,1,234,Margarites pupillus,topsnail,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2409,22 Mar 2024
+ZZ_coded,286,Lirabuccinum dirum,whelk,1,416,Katharina tunicata,chiton,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2410,22 Mar 2024
+ZZ_coded,286,Lirabuccinum dirum,whelk,1,463,Balanus glandula,barnacle,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2411,22 Mar 2024
+ZZ_coded,286,Lirabuccinum dirum,whelk,1,464,Balanus glandula,barnacle,4,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2412,22 Mar 2024
+ZZ_coded,294,Callianax baetica,snail,1,587,Macrocystis pyrifera,algae,1,30,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2413,22 Mar 2024
+ZZ_coded,294,Callianax baetica,snail,1,237,Tegula funebralis,topsnail,1,30,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2414,22 Mar 2024
+ZZ_coded,294,Callianax baetica,snail,1,366,Mytilus californianus,mussel,1,30,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2415,22 Mar 2024
+ZZ_coded,295,Atrimitra idae,snail,1,448,Phascolosoma agassizii,sipunculid,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2416,22 Mar 2024
+ZZ_coded,299,Navanax inermis,nudibranch,1,299,Navanax inermis,nudibranch,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2417,22 Mar 2024
+ZZ_coded,300,Aplysia californica,sea hare,1,2291,Zostera sp.,angiosperm,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2418,22 Mar 2024
+ZZ_coded,301,Aplysia vaccaria,sea hare,1,617,Egregia menziesii,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2419,22 Mar 2024
+ZZ_coded,311,Cadlina flavomaculata,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low tidepools,NA,yes,NA,NA,2420,22 Mar 2024
+ZZ_coded,312,Cadlina luteomarginata,nudibranch,1,69,Halichondria panicea,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2421,22 Mar 2024
+ZZ_coded,312,Cadlina luteomarginata,nudibranch,1,38,Myxilla incrustans,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2422,22 Mar 2024
+ZZ_coded,312,Cadlina luteomarginata,nudibranch,1,71,Higginsia sp.,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2423,22 Mar 2024
+ZZ_coded,312,Cadlina luteomarginata,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2424,22 Mar 2024
+ZZ_coded,313,Cadlina modesta,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2425,22 Mar 2024
+ZZ_coded,313,Cadlina modesta,nudibranch,1,58,Halisarca sp.,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2426,22 Mar 2024
+ZZ_coded,314,Cadlina sparsa,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2427,22 Mar 2024
+ZZ_coded,317,Felimare californiensis,nudibranch,1,70,Haliclona sp.,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2428,22 Mar 2024
+ZZ_coded,318,Hallaxa chani,nudibranch,1,58,Halisarca sp.,sponge,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low tidepools,NA,yes,NA,NA,2429,22 Mar 2024
+ZZ_coded,331,Ancula gibbosa,nudibranch,1,630,Barentsia ramosa,entoproct,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low tidepools,NA,yes,NA,NA,2430,22 Mar 2024
+ZZ_coded,341,Onchidoris muricata,nudibranch,1,847,Cryptosula pallasiana,bryozoan,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2431,22 Mar 2024
+ZZ_coded,342,Triopha catalinae,nudibranch,1,806,Caulibugula ciliata,bryozoan,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; light & Smith",NA,middle to low,NA,yes,NA,NA,2432,22 Mar 2024
+ZZ_coded,342,Triopha catalinae,nudibranch,1,810,Cellaria mandibulata,bryozoan,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; light & Smith",NA,middle to low,NA,yes,NA,NA,2433,22 Mar 2024
+ZZ_coded,343,Triopha maculata,nudibranch,1,806,Caulibugula ciliata,bryozoan,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low tidepools,NA,yes,NA,NA,2434,22 Mar 2024
+ZZ_coded,343,Triopha maculata,nudibranch,1,807,Cauloramphus californiensis,bryozoan,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low tidepools,NA,yes,NA,NA,2435,22 Mar 2024
+ZZ_coded,345,Limacia cockerelli,nudibranch,1,632,Hincksina velata,bryozoan,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low tidepools,NA,yes,NA,NA,2436,22 Mar 2024
+ZZ_coded,346,Tritonia festiva,nudibranch,1,979,Cryptophyton goddardi,octocoral,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; light & Smith",NA,low,NA,yes,NA,NA,2437,22 Mar 2024
+ZZ_coded,346,Tritonia festiva,nudibranch,1,982,Discophyton rudyi,octocoral,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; light & Smith",NA,low,NA,yes,NA,NA,2438,22 Mar 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,90,Abietinaria sp.,hydroid,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2439,22 Mar 2024
+ZZ_coded,348,Dirona albolineata,nudibranch,1,234,Margarites pupillus,topsnail,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low tidepools,NA,yes,NA,NA,2440,22 Mar 2024
+ZZ_coded,348,Dirona albolineata,nudibranch,1,636,Dendrobeania lichenoides,bryozoan,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low tidepools,NA,yes,NA,NA,2441,22 Mar 2024
+ZZ_coded,349,Dirona picta,nudibranch,1,635,Celleporella hyalina,bryozoan,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2442,22 Mar 2024
+ZZ_coded,350,Antiopella barbarensis,nudibranch,1,129,Bugula californica,bryozoan,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2443,22 Mar 2024
+ZZ_coded,357,Hermissenda opalescens,nudibranch,1,171,Aplidium solidum,tunicate,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016",NA,low,NA,yes,NA,NA,2444,22 Mar 2024
+ZZ_coded,358,Aeolidia loui,nudibranch,1,107,Metridium senile,anemone,1,3,NA,4,NA,"Kienberger et al, 2016; Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2445,22 Mar 2024
+ZZ_coded,358,Aeolidia loui,nudibranch,1,101,Anthopleura elegantissima,anemone,1,3,NA,4,NA,"Kienberger et al, 2016; Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2446,22 Mar 2024
+ZZ_coded,358,Aeolidia loui,nudibranch,1,102,Epiactis prolifera,anemone,1,3,NA,4,NA,"Kienberger et al, 2016; Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2447,22 Mar 2024
+ZZ_coded,359,Anteaeolidiella oliviae,nudibranch,1,107,Metridium senile,anemone,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low tidepools,NA,yes,NA,NA,2448,22 Mar 2024
+ZZ_coded,359,Anteaeolidiella oliviae,nudibranch,1,102,Epiactis prolifera,anemone,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low tidepools,NA,yes,NA,NA,2449,22 Mar 2024
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,653,Hildenbrandia sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,"high tide pools, nocturnal",NA,yes,NA,NA,2450,22 Mar 2024
+ZZ_coded,409,Nuttallina californica,chiton,1,640,Endocladia muricata,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2451,22 Mar 2024
+ZZ_coded,409,Nuttallina californica,chiton,1,655,Gelidium sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2452,22 Mar 2024
+ZZ_coded,409,Nuttallina californica,chiton,1,656,Cladophora columbiana,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle,NA,yes,NA,NA,2453,22 Mar 2024
+ZZ_coded,411,Mopalia muscosa,chiton,1,640,Endocladia muricata,algae,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2454,22 Mar 2024
+ZZ_coded,411,Mopalia muscosa,chiton,1,656,Cladophora columbiana,algae,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2455,22 Mar 2024
+ZZ_coded,414,Mopalia lignosa,chiton,1,758,small crustaceans,zooplankton,NA,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2456,22 Mar 2024
+ZZ_coded,415,Placiphorella velata,chiton,1,758,small crustaceans,zooplankton,NA,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,very low,NA,yes,NA,NA,2457,22 Mar 2024
+ZZ_coded,417,Cryptochiton stelleri,chiton,1,601,Ulva sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low tidepools,NA,yes,NA,NA,2458,22 Mar 2024
+ZZ_coded,417,Cryptochiton stelleri,chiton,1,624,Laminaria sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low tidepools,NA,yes,NA,NA,2459,22 Mar 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,229,Haliotis cracherodii,abalone,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2460,22 Mar 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,237,Tegula funebralis,topsnail,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2461,22 Mar 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,239,Tegula gallina,topsnail,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2462,22 Mar 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,367,Mytilus edulis,mussel,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2463,22 Mar 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,3,Hypsoblennius gilberti,fish,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2464,22 Mar 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,747,Hypsoblennius gentilis,fish,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2465,22 Mar 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,287,Kelletia kelletii,whelk,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2466,22 Mar 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,235,Norrisia norrisii,topsnail,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2467,22 Mar 2024
+ZZ_coded,421,Octopus micropyrsus,octopus,1,758,small crustaceans,zooplankton,NA,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2468,22 Mar 2024
+ZZ_coded,429,Nereis grubei,polychaete,1,758,small crustaceans,zooplankton,NA,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,middle to low,NA,yes,NA,NA,2469,22 Mar 2024
+ZZ_coded,433,Arabella endonata,polychaete,1,676,Diopatra ornata,polychaete,1,6,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2470,22 Mar 2024
+ZZ_coded,483,Limnoria algarum,isopod,1,617,Egregia menziesii,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2471,22 Mar 2024
+ZZ_coded,483,Limnoria algarum,isopod,1,587,Macrocystis pyrifera,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2472,22 Mar 2024
+ZZ_coded,483,Limnoria algarum,isopod,1,624,Laminaria sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2473,22 Mar 2024
+ZZ_coded,502,Cymadusa uncinata,gammarid,1,587,Macrocystis pyrifera,algae,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,very low,NA,yes,NA,NA,2474,22 Mar 2024
+ZZ_coded,504,Oligochinus lighti,gammarid,1,640,Endocladia muricata,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,high to middle,NA,yes,NA,NA,2475,22 Mar 2024
+ZZ_coded,524,Pagurus samuelis,hermit crab,1,587,Macrocystis pyrifera,algae,1,30,NA,4,NA,"Morris, Abbott, & Haderlie",NA,high to middle,NA,yes,NA,NA,2476,22 Mar 2024
+ZZ_coded,538,Taliepus nuttallii,true crab,1,587,Macrocystis pyrifera,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2477,22 Mar 2024
+ZZ_coded,539,Pugettia producta,true crab,NA,587,Macrocystis pyrifera,algae,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2478,22 Mar 2024
+ZZ_coded,546,Loxorhynchus crispatus,true crab,1,168,Strongylocentrotus purpuratus,urchin,1,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2479,22 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,1972,Leukoma staminea,clam,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2480,22 Mar 2024
+ZZ_coded,559,Fabia subquadrata,true crab,1,367,Mytilus edulis,mussel,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2481,22 Mar 2024
+ZZ_coded,559,Fabia subquadrata,true crab,1,366,Mytilus californianus,mussel,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2482,22 Mar 2024
+ZZ_coded,559,Fabia subquadrata,true crab,1,168,Strongylocentrotus purpuratus,urchin,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2483,22 Mar 2024
+ZZ_coded,559,Fabia subquadrata,true crab,1,622,Styela gibbsii,tunicate,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,low,NA,yes,NA,NA,2484,22 Mar 2024
+ZZ_coded,560,Hermissenda crassicornis,nudibranch,1,91,Aglaophenia struthionides,hydroid,5,1,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2485,22 Mar 2024
+ZZ_coded,560,Hermissenda crassicornis,nudibranch,1,101,Anthopleura elegantissima,anemone,1,1,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2486,22 Mar 2024
+ZZ_coded,560,Hermissenda crassicornis,nudibranch,1,102,Epiactis prolifera,anemone,1,1,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2487,22 Mar 2024
+ZZ_coded,560,Hermissenda crassicornis,nudibranch,1,108,Diadumene lineata,anemone,1,1,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2488,22 Mar 2024
+ZZ_coded,560,Hermissenda crassicornis,nudibranch,1,107,Metridium senile,anemone,1,1,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2489,22 Mar 2024
+ZZ_coded,561,Pinnixa faba,true crab,4,301,Aplysia vaccaria,sea hare,1,6,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2490,22 Mar 2024
+ZZ_coded,561,Pinnixa faba,true crab,4,622,Styela gibbsii,tunicate,1,6,NA,4,NA,"Morris, Abbott, & Haderlie",NA,low,NA,yes,NA,NA,2491,22 Mar 2024
+ZZ_coded,566,Pachygrapsus crassipes,true crab,1,601,Ulva sp.,algae,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2492,22 Mar 2024
+ZZ_coded,568,Tigriopus californicus,copepod,1,568,Tigriopus californicus,copepod,1,1,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high,NA,yes,NA,NA,2493,22 Mar 2024
+ZZ_coded,569,Pycnogonum stearnsi,sea spider,1,99,Anthopleura xanthogrammica,anemone,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,middle to low,NA,yes,NA,NA,2494,22 Mar 2024
+ZZ_coded,574,Garypus californicus,other arthropod,1,758,small crustaceans,zooplankton,NA,1,NA,4,NA,"Morris, Abbott, & Haderlie",NA,high,NA,yes,NA,NA,2495,22 Mar 2024
+ZZ_coded,581,Canaceoides nudatus,insect,1,601,Ulva sp.,algae,1,3,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,high to middle,NA,yes,NA,NA,2496,22 Mar 2024
+ZZ_coded,594,Haplosaccus elongatus,copepod,1,173,Aplidium arenatum,tunicate,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,NA,NA,yes,NA,NA,2497,22 Mar 2024
+ZZ_coded,595,Haplostomella dubia,copepod,1,173,Aplidium arenatum,tunicate,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,NA,NA,yes,NA,NA,2498,22 Mar 2024
+ZZ_coded,596,Haplostomella distincta,copepod,1,173,Aplidium arenatum,tunicate,1,6,NA,4,NA,"Morris, Abbott, & Haderlie",NA,NA,NA,yes,NA,NA,2499,22 Mar 2024
+ZZ_coded,597,Haplostomella oceanica,copepod,1,182,Eudistoma ritteri,tunicate,1,6,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,NA,NA,yes,NA,NA,2500,22 Mar 2024
+ZZ_coded,634,Doto kya,nudibranch,1,85,Obelia dichotoma,hydroid,5,3,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2501,22 Mar 2024
+ZZ_coded,634,Doto kya,nudibranch,1,90,Abietinaria sp.,hydroid,1,3,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2502,22 Mar 2024
+ZZ_coded,634,Doto kya,nudibranch,1,84,Eudendrium californicum,hydroid,5,3,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2503,22 Mar 2024
+ZZ_coded,634,Doto kya,nudibranch,1,767,Sarsia sp.,hydroid,5,3,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2504,22 Mar 2024
+ZZ_coded,634,Doto kya,nudibranch,1,927,Sarsia sp.,plankton,1,3,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2505,22 Mar 2024
+ZZ_coded,702,Crangon alaskensis,shrimp,1,1219,Argeia pugettensis,isopod,1,6,NA,4,NA,PO; Light & Smith,NA,NA,NA,no,NA,NA,2506,22 Mar 2024
+ZZ_coded,706,Apodichthys fucorum,fish,1,758,small crustaceans,zooplankton,NA,1,NA,4,NA,"Morris, Abbott,, Haderlie; FishBase",NA,NA,NA,yes,NA,NA,2507,22 Mar 2024
+ZZ_coded,711,Carcinonemertes epialti,nemertean,1,566,Pachygrapsus crassipes,true crab,1,23,NA,4,NA,"Morris, Abbott, & Haderlie; Light & Smith",NA,all,NA,yes,NA,NA,2508,22 Mar 2024
+ZZ_coded,748,Leptochelia sp.,tanaid,1,749,Detritus,dead stuff,NA,30,NA,4,NA,OIMB; Light & Smith,NA,all,NA,no,NA,NA,2509,22 Mar 2024
+ZZ_coded,1119,Anthessius fitchi,copepod,1,386,Chaceia ovoidea,boring clam,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2510,22 Mar 2024
+ZZ_coded,1122,Anthessius nortoni,copepod,1,195,Diodora aspera,limpet,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2511,22 Mar 2024
+ZZ_coded,1124,Bomolochus constrictus,copepod,1,8,Atherinops affinis,fish,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2512,22 Mar 2024
+ZZ_coded,1126,Bomolochus longicaudus,copepod,1,2072,Paralabrax nebulifer,fish,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2513,22 Mar 2024
+ZZ_coded,1126,Bomolochus longicaudus,copepod,1,2073,Paralabrax nebulifer,fish,4,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2514,22 Mar 2024
+ZZ_coded,1128,Holobomolochus prolixus,copepod,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2515,22 Mar 2024
+ZZ_coded,1220,Bopyrella calmani,isopod,1,985,Alpheus sp.,shrimp,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2516,22 Mar 2024
+ZZ_coded,1222,Cabirops montereyensis,isopod,1,485,Aporobopyrus muguensis,parasitic isopod,1,6,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2517,22 Mar 2024
+ZZ_coded,1227,Elthusa californica,isopod,1,6,Micrometrus minimus,fish,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2518,22 Mar 2024
+ZZ_coded,1227,Elthusa californica,isopod,1,8,Atherinops affinis,fish,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2519,22 Mar 2024
+ZZ_coded,1322,Carinonajna barnardi,gammarid,1,759,macroalgae,algae,1,NA,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2520,22 Mar 2024
+ZZ_coded,1366,Chromopleustes oculatus,gammarid,1,155,Cucumaria miniata,cucumber,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2521,22 Mar 2024
+ZZ_coded,1434,Tanystylum duospinum,sea spider,NA,964,Orthopyxis everta,hydroid,5,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2522,22 Mar 2024
+ZZ_coded,1468,Chironomids,insect,NA,601,Ulva sp.,algae,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2523,22 Mar 2024
+ZZ_coded,1543,Heptacyclus viridus,leech,1,2086,Enophrys bison,fish,1,6,NA,4,NA,Light & Smith,NA,low,NA,no,NA,NA,2524,22 Mar 2024
+ZZ_coded,1544,Heptacyclus buthi,leech,1,2094,Oligocottus snyderi,fish,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2525,22 Mar 2024
+ZZ_coded,1544,Heptacyclus buthi,leech,1,2093,Oligocottus rubellio,fish,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2526,22 Mar 2024
+ZZ_coded,1544,Heptacyclus buthi,leech,1,15,Clinocottus analis,fish,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2527,22 Mar 2024
+ZZ_coded,1545,Pterobdella abditovesiculata,leech,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2528,22 Mar 2024
+ZZ_coded,1724,Nemertopsis gracilis,nemertean,1,374,Lasaea adansoni,clam,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2529,22 Mar 2024
+ZZ_coded,1736,Dicyemennea abreida,rhombozoan,6,420,Enteroctopus dofleini,octopus,NA,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2530,22 Mar 2024
+ZZ_coded,1736,Dicyemennea abreida,rhombozoan,6,1745,Enteroctopus dofleini,octopus,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2531,22 Mar 2024
+ZZ_coded,1736,Dicyemennea abreida,rhombozoan,6,1746,Enteroctopus dofleini,octopus,NA,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2532,22 Mar 2024
+ZZ_coded,1737,Dicyemennea nouveli,rhombozoan,6,420,Enteroctopus dofleini,octopus,NA,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2533,22 Mar 2024
+ZZ_coded,1737,Dicyemennea nouveli,rhombozoan,6,1745,Enteroctopus dofleini,octopus,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2534,22 Mar 2024
+ZZ_coded,1737,Dicyemennea nouveli,rhombozoan,6,1746,Enteroctopus dofleini,octopus,NA,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2535,22 Mar 2024
+ZZ_coded,1738,Dicyemodeca deca,rhombozoan,6,420,Enteroctopus dofleini,octopus,NA,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2536,22 Mar 2024
+ZZ_coded,1738,Dicyemodeca deca,rhombozoan,6,1745,Enteroctopus dofleini,octopus,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2537,22 Mar 2024
+ZZ_coded,1738,Dicyemodeca deca,rhombozoan,6,1746,Enteroctopus dofleini,octopus,NA,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2538,22 Mar 2024
+ZZ_coded,1739,Dicyemennea abelis,rhombozoan,6,1750,Octopus bimaculatus,octopus,1,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2539,22 Mar 2024
+ZZ_coded,1739,Dicyemennea abelis,rhombozoan,6,1751,Octopus bimaculatus,octopus,NA,6,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2540,22 Mar 2024
+ZZ_coded,1799,Lacuna unifasciata,snail,1,602,epiphytic diatoms,algae,NA,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2541,22 Mar 2024
+ZZ_coded,1892,Okenia plana,nudibranch,1,847,Cryptosula pallasiana,bryozoan,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2542,22 Mar 2024
+ZZ_coded,1899,Palio zosterae,nudibranch,1,140,Bowerbankia gracilis,bryozoan,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2543,22 Mar 2024
+ZZ_coded,1901,Polycera atra,nudibranch,1,820,Membranipora membranacea,bryozoan,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2544,22 Mar 2024
+ZZ_coded,1905,Chromodoris macfarlandi,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2545,22 Mar 2024
+ZZ_coded,1906,Hypselodoris californiensis,nudibranch,1,70,Haliclona sp.,sponge,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2546,22 Mar 2024
+ZZ_coded,1921,Dendronotus albus,nudibranch,1,90,Abietinaria sp.,hydroid,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2547,22 Mar 2024
+ZZ_coded,1923,Dendronotus frondosus,nudibranch,1,91,Aglaophenia struthionides,hydroid,5,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2548,22 Mar 2024
+ZZ_coded,1924,Dendronotus subramosus,nudibranch,1,91,Aglaophenia struthionides,hydroid,5,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2549,22 Mar 2024
+ZZ_coded,1926,Dirona pellucida,nudibranch,1,801,Bugula pacifica,bryozoan,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2550,22 Mar 2024
+ZZ_coded,1929,Janolus fuscus,nudibranch,1,801,Bugula pacifica,bryozoan,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2551,22 Mar 2024
+ZZ_coded,1932,Flabellina pricei,nudibranch,1,946,Halecium sp.,hydroid,5,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2552,22 Mar 2024
+ZZ_coded,1932,Flabellina pricei,nudibranch,1,947,Halecium sp.,plankton,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2553,22 Mar 2024
+ZZ_coded,1933,Flabellina trilineata,nudibranch,1,84,Eudendrium californicum,hydroid,5,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2554,22 Mar 2024
+ZZ_coded,1933,Flabellina trilineata,nudibranch,1,83,Garveia annulata,hydroid,5,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2555,22 Mar 2024
+ZZ_coded,1944,Cuthona fulgens,nudibranch,1,767,Sarsia sp.,hydroid,5,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2556,22 Mar 2024
+ZZ_coded,1944,Cuthona fulgens,nudibranch,1,927,Sarsia sp.,plankton,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2557,22 Mar 2024
+ZZ_coded,1954,Aeolidiella chromosoma,nudibranch,1,107,Metridium senile,anemone,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2558,22 Mar 2024
+ZZ_coded,1955,Aeolidiella oliviae,nudibranch,1,109,Corynactis californica,anemone,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2559,22 Mar 2024
+ZZ_coded,1955,Aeolidiella oliviae,nudibranch,1,102,Epiactis prolifera,anemone,1,3,NA,4,NA,Light & Smith,NA,all,NA,no,NA,NA,2560,22 Mar 2024

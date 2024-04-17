@@ -1,0 +1,474 @@
+INITIALS,consumerNum,consumerName,consumerStage,consumerKing,consumerPh,consumerCl,consumerOr,consumerFam,consumerGen,consumerCat,resourceNum,resourceName,resourceKing,resourcePh,resourceCl,resourceOr,resourceFam,resourceGen,resourceCat,resourceStage,interaction.type
+ZZ,328,Doriopsilla albopunctata,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Dendrodorididae,Doriopsilla,Nudibranch,66,Cliona celata,Animalia,Porifera,Demospongiae,Clionaida,Clionaidae,Cliona,Sponge,1,3
+ZZ,306,Tylodina fungina,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Tylodinidae,Tylodina,Nudibranch,64,Aplysina fistularis,Animalia,Porifera,Demospongiae,Verongiida,Aplysinidae,Aplysina,Sponge,1,3
+ZZ,326,Diaulula sandiegensis,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Discodorididae,Diaulula,Nudibranch,70,3,Animalia,Porifera,Demospongiae,Haplosclerida,Chalinidae,Haliclona,Sponge,1,3
+ZZ,312,Cadlina luteomarginata,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Cadlinidae,Cadlina,Nudibranch,71,Higginsia sp.,Animalia,Porifera,Demospongiae,Axinellida,Stelligeridae,Higginsia,Sponge,1,3
+ZZ,319,Rostanga pulchra,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Discodorididae,Rostanga,Nudibranch,77,Ophlitaspongia pennata,Animalia,Porifera,Demospongiae,Poecilosclerida,Microcionidae,Ophlitaspongia,Sponge,1,3
+ZZ,320,Aldisa sanguinea,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Cadlinidae,Aldisa,Nudibranch,77,Ophlitaspongia pennata,Animalia,Porifera,Demospongiae,Poecilosclerida,Microcionidae,Ophlitaspongia,Sponge,1,3
+ZZ,317,Hypselodoris californiensis,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Chromodorididae,Hypselodoris,Nudibranch,77,Ophlitaspongia pennata,Animalia,Porifera,Demospongiae,Poecilosclerida,Microcionidae,Ophlitaspongia,Sponge,1,3
+ZZ,88,Sertularia furcata,1,Animalia,Cnidaria,Hydrozoa,Leptothecata,Sertulariidae,Sertularia,Hydroid,608,Phyllospadix torreyi,Plantae,NA,NA,Alismatales,Zosteraceae,Phyllospadix,Surfgrass,1,2
+ZZ,88,Sertularia furcata,1,Animalia,Cnidaria,Hydrozoa,Leptothecata,Sertulariidae,Sertularia,Hydroid,609,Phyllospadix scouleri,Plantae,NA,NA,Alismatales,Zosteraceae,Phyllospadix,Surfgrass,1,2
+ZZ,,Dendronotus subramosus,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Dendronotidae,Dendronotus,Nudibranch,91,Aglaophenia struthionides,Animalia,Cnidaria,Hydrozoa,Hydroidea,Aglaopheniidae,Aglaophenia,Hydroid,1,2
+ZZ,,Aeolidia loui ,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Aeolidiidae,Aeolidia,Nudibranch,102,Epiactis prolifera,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Epiactis,Anemone,1,1
+ZZ,144,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,Seastar,102,Epiactis prolifera,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Epiactis,Anemone,1,1
+ZZ,112,Imogine tripartitus,1,Animalia,Platyhelminthes,Rhabditophora,Polycladida,Stylochidae,Imogine,Flatworm,467,Paraconcavus pacificus,Animalia,Arthropoda,Thecostraca,Balanomorpha,Balanidae,Paraconcavus,Barnacle,1,1
+ZZ,114,Notoplana acticola,1,Animalia,Platyhelminthes,Rhabditophora,Polycladida,Notoplanidae,Notoplana,Flatworm,319,Rostanga pulchra,Animalia,Mollusca,Gastropoda,Nudibranchia,Discodorididae,Rostanga,Nudibranch,1,1
+ZZ,114,Notoplana acticola,1,Animalia,Platyhelminthes,Rhabditophora,Polycladida,Notoplanidae,Notoplana,Flatworm,199,Lottia digitalis,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,Limpet,1,1
+ZZ,114,Notoplana acticola,1,Animalia,Platyhelminthes,Rhabditophora,Polycladida,Notoplanidae,Notoplana,Flatworm,,Balanus sp.,Animalia,Arthropoda,Thecostraca,Balanomorpha,Balanidae,Balanus,Barnacle,SMALL??,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,475,Cirolana harfordi,Animalia,Arthropoda,Malacostraca,Isopoda,Cirolanidae,Cirolana,isopod,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Idotea rectilinea,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Idotea,isopod,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Pentidotea wosnesenskii,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Pentidotea,isopod,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Pentidotea resecata,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Pentidotea,isopod,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Spirontocaris picta,Animalia,Arthropoda,Malacostraca,Decapoda,Hippolytidae,Spirintocaris,shrimp,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Crangon sp. ,Animalia,Arthropoda,Malacostraca,Decapoda,Crangonidae,crangon,shrimp,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Lophopanopeus frontalis,Animalia,Arthropoda,Malacostraca,Decapoda,Panopeidae,Lophopanopeus,crab,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Pagurus sp. ,Animalia,Arthropoda,Malacostraca,Decapoda,Paguridae,Pagurus,hermit crab,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,430,Platynereis bicanaliculata,Animalia,"	Annelida ",Polychaeta,Phyllodocida,Nereididae,Platynereis,polychaete,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,609,Protohyale frequens,Animalia,Arthropoda,malacostraca,amphipoda,Hyalidae,Hyale,amphipod,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Fissurella volcano,Animalia,Mollusca,gastropoda,Archaeogastropoda,Fissurellidae,Fissurella,limpet,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Acemea cona,***actually can't find taxonomy on this??? ,,,,,,limpet,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Barlecia bentleyi,***actually can't find taxonomy on this??? ,,,,,,,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Eurystheus tenuicornis,Animalia,Arthopoda,Malacostraca,Amphipoda,Isaeidae,Eurystheus,,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Hayle frequens,Animalia,Arthopoda,malacostraca,amphipoda,Hyalidae,Hyale,amphipod,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Amphitihoe sp. ,***actually can't find taxonomy on this??? ,,,,,,amphipod,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Pentidotea rescata,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Pentidotea,isopod,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Pentidotea aculeata,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Pentidotea,isopod,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Idotea rectilinea,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Idotea,isopod,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Heptacarpus paludicola,Animalia,Arthropoda,Malacostraca,Caridae,Heptacarpus,,shrimp,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Pagurus samuelis,Animalia,Arthropoda,Malacostraca,Decapoda,Paguridae,Pagurus,hermit crab,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Mimulus foliatus,Animalia,Arthropoda,Malacostraca,Decapoda,Epialtidae,Mimulus,crab,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Pugettia gracilis,Animalia,Arthropoda,Malacostraca,Decapoda,"	Epialtidae ",Pugettia,crab,1,1
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Platynereis agassizi,Animalia,Annelida,Polychaeta,Phyllodocida,Nereididae,Platynereis,polychaete,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Sphaeromyxa gibbonsia,Animalia,Cnidaria,Myxozoa,Bivalvulida,Sphaeromyxidae,Sphaeromyxa,myxozoan,1,24
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Podocyte gibbonsia,***actually can't find taxonomy on this??? ,,,,,,,1,24
+EMH,2,Gibbonsia metzi ,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,,Leptotheca sphaerula,Animalia,Cnidaria,Hydrozoa,Leptothecatae,unsure which one ,Leptotheca,,1,24
+EMH,72,Dermasterias Imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,Sea star,101,Anthopleura elegantissima,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,1
+EMH,358,Aeolidia loui ,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Aeolidiidae,Aeolidia,Nudibranch,101,Anthopleura elegantissima,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,1
+EMH,56,Anthopleura sola,1,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,40,Aplysia californica,Animalia,Mollusca,Gastropoda,Anaspidea,Aplysiidae,Aplysia,sea hare,1,1
+EMH,57,Anthopleura xanthogrammica,1,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,40,Aplysia californica,Animalia,Mollusca,Gastropoda,Anaspidea,Aplysiidae,Aplysia,sea hare,1,1
+ZZ,124,Paranemertes peregrina,1,,,,,,,Nemertean,430,Platynereis bicanaliculata,,,,,,,,1,
+EMH,4,Hypsoblennius gilberti,1,Animalia,Chordata,Teleostei,Perciformes,Bleniidae,Hypsoblennius,Fish,NA,Colidoteu rostruta,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Colidoteu,isopod,1,1
+EMH,16,Clinocottus analis ,1,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Clinocottus,Fish,NA,Colidoteu rostruta,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Colidoteu,isopod,1,1
+EMH,583,Amyloodinium ocellatum,1?,Animalia,Alveolata,Dinophyceae,Thoracosphaerales,Thoracosphaeraceae,Amyloodinium,dinoflagellate,4,Hypsoblennius gilberti ,Animalia,Chordata,Teleostei,Perciformes,Bleniidae,Hypsoblennius,fish,1,7
+EMH,4,Hypsoblennius gilberti,1,Animalia,Chordata,Teleostei,Perciformes,Bleniidae,Hypsoblennius ,Fish,3,Gibbonsia elegans,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,fish,1,9
+EMH,144,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,seastar,110,Corynactis californica,Animalia,Cnidaria,Anthozoa,Corallimorpharia,Corallimorphidae,Corynactis,anemone,1,1
+EMH,144,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,seastar,"55, 113",Anthopleura elegantissima,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,1
+EMH,144,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,seastar,NA,Urticina piscivora,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Urticina,anemone ,1,1
+EMH,144,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,seastar,NA,Psolus chitonoides,Animalia,Echinodermata,Holothuroidea,Dendrochirotida,Psolidae,Psolus,sea cucumber,1,1
+EMH,144,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,seastar,147,Solaster dawsonii,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Solaster,seastar,1,9
+EMH,144,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,seastar,157,Eupentacta quinquesemita,Animalia,Echinodermata,Holothuroidea,Dendrochirotida,"	Sclerodactylidae",Eupentacta,sea cucumber,1,1
+EMH,145,Patiria miniata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asterinidae,Patiria,seastar,NA,Tubulipora spp. ,Animalia,Bryozoa,Stenolaemata,Cyclostomata,Tubuliporidae,Tubulipora,bryozoan,1?,1
+EMH,145,Patiria miniata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asterinidae,Patiria,seastar,NA,Lytechinus anamesus,Animalia,Echinodermata,"	Echinoidea ","	Temnopleuroida","	Toxopneustidae ","	Lytechinus",sea urchin,1,1
+EMH,145,Patiria miniata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asterinidae,Patiria,seastar,NA,Phaeophyta algae,Chromista,can't determine,can't determine,can't determine,can't determine,can't determine,algae,1?,3
+EMH,145,Patiria miniata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asterinidae,Patiria,seastar,NA,Chlorophyta algae,Plantae,can't determine,can't determine,can't determine,can't determine,can't determine,algae,1?,3
+EMH,582,Orchitophyra stellarum,1,Alveolata,Ciliophora,Scuticociliatia;,Philasterida,Orchitophryidae,Orchitophyra,ciliate,145,Patiria miniata,Animalia,Echinodermata,Asteroidea,Valvatida,Asterinidae,Patiria,seastar,1,4
+EMH,582,Orchitophyra stellarum,1,Alveolata,Ciliophora,Scuticociliatia;,Philasterida,Orchitophryidae,Orchitophyra,ciliate,151,Pisaster ochraceus,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,1,4
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,367,Mytilus californianus,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+EMH,582,Orchitophrya stellarum,1,Alveolata,Ciliophora,Scuticociliatia;,Philasterida,Orchitophryidae,Orchitophyra,ciliate,149,Leptasterias pusilla,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,seastar,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,150,Leptasterias hexactis,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,seastar,1,1
+EMH,150,Pisaster ochraceus,3,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,NA,Chaetoceros calcitrans,Chromista,Ochrophyta,Bacillariophyceae,,,,phytoplankton,1,1
+EMH,150,Pisaster ochraceus,3,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,NA,Dunaliella tertiolecta,"	Plantae",?can't find,Chlorophyceae,Chlamydomonadales,Dunaliellaceae,Dunaliella,phtyoplankton,1,1
+EMH,150,Pisaster ochraceus,3,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,NA,Isochrysis galbana,"	Chromista ",?can't find,Prymnesiophyceae,Isochrysidales,Isochrysidaceae,Isochrysis,phtyoplankton,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,464,Balanus glandula,Animalia,Arthropoda,Maxillopoda,Sessilia,Balanidae,Balanus,barnacle,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,458,Tetraclita rubescens,Animalia,Arthropoda,Maxillopoda,Sessilia,Tetraclitidae,Tetraclita,barnacle,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Archaeogastropoda,Trochidae,Tegula,snail,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,210,Lottia scabra,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottiidae,Acmaea,limpet,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,455,Pollicipes polymerus,Animalia,Mollusca,Thecostraca,Pollicipedomorpha,Pollicipedidae,Mitella,barnacle,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,411,Mopalia muscosa,Animalia,Mollusca,Polyplacophora,Chitonida,Mopaliidae,Mopalia,chiton,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,230,Haliotis cracherodii,Animalia,Mollusca,Gastropoda,Archaeogastropoda,Haliotidae,Haliotis,abalone,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,284,Nucella emarginata,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,471,Balanus nubilis,Animalia,Arthropoda,Maxillopoda,Sessilia,Balanidae,Balanus,barnacle,1,1
+EMH,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,NA,Spirorbis sp. ,Animalia,Annelida,Polychaeta,Sabellida,Serpulidae,Spirorbis,polychaete,1,1
+EMH,154,Pisaster brevispinus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,NA,Tresus nuttallii,Animalia,Mollusca,Bivalvia,Veneroida,Mactridae,Tresus,clam,1,1
+EMH,151,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,NA,Stellarchytrium dubum,Eukaryota,› Stramenopiles,› Labyrinthulomycetes,,› Labyrinthulida,Stellarchtrium,ciliate,1,"parasite, unsure what kind"
+EMH,151,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,NA,Aplanochytrium blankum,Eukaryota,› Stramenopiles,Labyrinthulomycetes,Thraustochytrida,Thraustochytriaceae;,Aplanochytrium,ciliate,1,"parasite, unsure what kind"
+EMH,151,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,NA,Oblongichytrium porteri,Eukaryota,› Stramenopiles,Labyrinthulomycetes,Oblongichytrida,unknown? I can't seem to find it listed for some reason? ,Oblongichytrium,ciliate,1,"parasite, unsure what kind"
+EMH,147,Solaster dawsonii,1,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Solaster,seastar,151,Pisaster ochraceus,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,1,1
+EMH,147,Solaster dawsonii,1,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Solaster,seastar,154,Pisaster brevispinus,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,1,1
+EMH,147,Solaster dawsonii,1,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Solaster,seastar,NA,Mediaster aequalis,Animalia,Echinodermata,Asteroidea,Valvatida,Goniasteridae,Mediaster,seastar,1,1
+EMH,147,Solaster dawsonii,1,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Solaster,seastar,NA,Crossaster papposus,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Crossaster,seastar,1,1
+EMH,147,Solaster dawsonii,1,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Solaster,seastar,NA,Ptilosarcus gurneyi,Animalia,Cnidaria,Anthozoa,Pennatulacea,Pennatulidae,Ptilosarcrus,sea pen,1,1
+EMH,144,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,seastar,NA,Ptilosarcus gurneyi,Animalia,Cnidaria,Anthozoa,Pennatulacea,Pennatulidae,Ptilosarcrus,sea pen,1,1
+EMH,147,Solaster dawsonii,1,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Solaster,seastar,160,Parastichopus californicus,Animalia,Echinodermata,Holothuroidea,Synallactida,Stichopodidae,Parastichopus,sea cucumber,juvenile,1
+EMH,424,Arctonoe vittata,1?,Animalia,Annelida,Polychaeta,Phyllodocida,Polynoidae,Arctonoe,polychaete,147,Solaster dawsonii,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Solaster,seastar,1,9
+EMH,424,Arctonoe vittata,1?,Animalia,Echinodermata,Asteroidea,Valvatida,Solasteridae,Arctonoe,polychaete,144,Dermasterias imbricata,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,seastar,1,9
+EMH,105,Tealia crassicornis,1,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Tealia,anemone,NA,Neptunea pribiloffensis,Animalia,Mollusca,gastropoda,Prosobranchia,Buccinidae,Neptunea,snail,2,10 or 22 ( not confirmed )
+EMH,584,Foettingeria actiniarum,1,Alveolata,Ciliophora,Oligohymenophorea,Apostomatida,Foettingeriidae,Foettingeria,ciliate,105,Urticina crassicornis,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Tealia,anemone,1,10
+EMH,7,Micrometrus minimus,1,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,,Pentidotea aculeata,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Pentidotea,isopod,1,1
+EMH,7,Micrometrus minimus,1,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,,Idothea rectilinea,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Idothea,isopod,1,1
+EMH,7,Micrometrus minimus,1,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,,Allorchestes sp. ,Animalia,Arthropoda,Malacostraca,amphipoda,Dogielinotidae,Allorchestes,amphipod,1,1
+EMH,7,Micrometrus minimus,1,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,,Acmea scabra,*taxonomy is currently unverified?,,,,,,,1,1
+EMH,7,Micrometrus minimus,1,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,,Barlecia bentleyi,*Cannot find the taxonomy on this either :( ,,,,,,,1,1
+EMH,7,Micrometrus minimus,1,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,,Platynereis agassizi,Animalia,"	Annelida ",Polychaeta,Phyllodocida,Nereididae,Platynereis,polycheate,1,1
+EMH,7,Micrometrus minimus,1,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,,Cirolana harfordi,Animalia,Arthopoda,malacostraca,isopoda,Cirolanidae,Cirolana,isopod,1,1
+EMH,7,Micrometrus minimus,1,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,,Hayle frequens,Animalia,Arthopoda,malacostraca,amphipoda,Hyalidae,Hyale,amphipod,1,1
+EMH,7,Micrometrus minimus,1,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,,Marphysa sanguinea,Animalia,Annelida,Polychaeta,Eunicida,Eunicidae,Marphysa,polycheate,1,1
+EMH,586,Postmonorchis donacis,1,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,Monorchiidae,Postmonorchris,trematode,7,Micrometrus minimus,Animalia,Chordata,Teleostei,Perciformes,Embiotocidae,Micrometrus ,fish,1,6
+EMH,NA,Asterias vulgaris,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Asterias,worm,161,Ophiopolus aculeata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Ophiactidae,Ophiopholis,brittle star,1,1
+EMH,NA,Strongylocentrotus droebachiensis,1,Animalia,Echinodermata,Echinoidea,Camarodonta (,Strongylocentrotidae,Strongylocentrotus,worm,161,Ophiopolus aculeata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Ophiactidae,Ophiopholis,brittle star,1,1
+EMH,NA,Leptasterias polaris,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,seastar,161,Ophiopolus aculeata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Ophiactidae,Ophiopholis,brittle star,1,1
+EMH,NA,Eulima bilineata,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Eulimidae,Eulima,sea snail,161,Ophiopolus aculeata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Ophiactidae,Ophiopholis,brittle star,1,"parasite, unsure which kind"
+EMH,NA,Homarus americanus,immature/juvinile,Animalia,Arthropoda,Malacostraca,Decapoda,Nephropidae,Homarus,lobster,161,Ophiopolus aculeata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Ophiactidae,Ophiopholis,brittle star,1,1
+ZZ,585,Haplosporidium malacobdellae,1,I can't find the taxnomoic information for this specific species? Only a different species of the same genus? ,,,,,,,127,Malacobdella grossa,Animalia,Nemertea,Hoplonemertea,Monostilifera,Malacobdellidae,Malacobdella,ribbon worm,1,5
+EMH,NA,Gadus morhua,1,Animalia,Chordata,Teleostei,Gadiformes,Gadidae,Gadus,fish,161,Ophiopolus aculeata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Ophiactidae,Ophiopholis,brittle star,1,1
+ZZ,127,Malacobdella grossa,1,Animalia,Nemertea,Hoplonemertea,Monostilifera,Malacobdellidae,Malacobdella,ribbon worm,,Macoma seta,,,,,,,,,
+ZZ,127,Malacobdella grossa,1,Animalia,Nemertea,Hoplonemertea,Monostilifera,Malacobdellidae,Malacobdella,ribbon worm,,Macoma nasuta,,,,,,,,,
+ZZ,127,Malacobdella grossa,1,Animalia,Nemertea,Hoplonemertea,Monostilifera,Malacobdellidae,Malacobdella,ribbon worm,,Siliqua patula,,,,,,,,,
+ZZ,127,Malacobdella grossa,1,Animalia,Nemertea,Hoplonemertea,Monostilifera,Malacobdellidae,Malacobdella,ribbon worm,,Tresus nuttallii,,,,,,,,,
+EMH,NA,Philichthys amphiurae,1,I can't find the taxnomoic information for this specific species? Only a different species of the same genus?,,,,,,,161,Amphipholis squamata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Amphiuridae,Amphipholis,brittle star,2,4?
+EMH,NA,Carcinus maenas,1,Animalia,Arthropoda,Malacostraca,Decapoda,Portunidae,Carcinus,crab,161,Amphipholis squamata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Amphiuridae,Amphipholis,brittle star,1,1
+EMH,NA,Ophiactis savignyi,juvinile,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Ophiactidae,Ophiactis,brittle star,161,Amphipholis squamata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Amphiuridae,Amphipholis,brittle star,1,10
+EMH,NA,Ophiothrix angulata,juvinile,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Ophiothricidae,Ophiothrix,brittle star,161,Amphipholis squamata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Amphiuridae,Amphipholis,brittle star,1,10
+EMH,168,Strongylocentrotus purpuratus,1,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,,Iridophycus flaccidum,,I can't seem to find the taxonomy for this?,,,,,algae,1,3
+EMH,168,Strongylocentrotus purpuratus,1,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,,Phyllospadix. sp,Plantae,,Magnoliopsida,Alismatales,Zosteraceae,Phyllospadix,sea grass,1,3
+EMH,168,Strongylocentrotus purpuratus,1,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,,Caltiarthron tuberculosurn,,I can't seem to find the taxonomy for this?,,,,,coralline algae,1,3
+EMH,168,Strongylocentrotus purpuratus,1,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,,Caltiarthron cheilosporioides,Plantae,,Florideophyceae,Corallinales,Corallinaceae,Caltiarthron,coralline algae,1,3
+EMH,168,Strongylocentrotus purpuratus,1,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,,Bossietla californica ssp. schmittii,,I can't seem to find the taxonomy for this?,,,,,coralline algae,1,3
+EMH,,Pycnopodia helianthoides,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Pycnopodiidae,Pycnopodia,sea star,168,Strongylocentrotus purpuratus,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,1,1
+EMH,,Enhydra lutris,1,Animalia,Chordata,Mammalia,Carnivora,Mustelidae,Enhydra,marine mammal,168,Strongylocentrotus purpuratus,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,1,1
+EMH,144,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,sea star,168,Strongylocentrotus purpuratus,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,1,1
+EMH,NA,Panulirus interruptus,1,Animalia,Arthropoda,Malacostraca,Decapoda,Palinuridae,Panulirus,lobster,168,Strongylocentrotus purpuratus,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,sea urchin,1,1
+ZZ,335,Okenia rosacea,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Goniodorididae,Okenia,nudibranch,134,Integripelta bilabiata,Animalia,Bryozoa,Gymnolaemata (,Cheilostomatida,Eurystomellidae,Integripelta,Bryozoan,1,3
+ZZ,,Holoplana californica,1,Animalia,Platyhelminthes,,,,,flatworm,136,Celleporariae brunnea,Animalia,Bryozoa,,,,,bryozoan,1,1
+ZZ,137,Crisulipora occidentalis,1,Animalia,Bryozoa,,,,,bryozoan,366,Mytilus californianus,Animalia,Mollusca,Bivalvia,Mytilida,Mytilidae,Mytilus,bivalve,1,2
+ZZ,137,Crisulipora occidentalis,1,Animalia,Bryozoa,,,,,bryozoan,367,Mytilus edulis,Animalia,Mollusca,Bivalvia,Mytilida,Mytilidae,Mytilus,bivalve,1,2
+ZZ,135,Costazia robertsoniae,1,Animalia,Bryozoa,,,,,bryozoan,587,Macrocystis pyrifera,Eukaryota,Ochrophyta,Phaeophyceae,Laminariales,Laminariaeceae,Macrocystis,algae,1,2
+ZZ,143,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,sea star,101,Anthopleura elegantissima,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,1
+ZZ,143,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,sea star,99,Anthopleura xanthogrammatica,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,1
+ZZ,147,Astrometis sertulifera,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Astrometis,sea star,163,Ophiothrix spiculata,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Amphiuridae,Ophiothrix,brittle star,1,1
+ZZ,148,Leptasterias pusilla,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,sea star,NA,Pseudodiala acuta,Animalia,Mollusca,Gastropoda,Littorinimorpha,Barleeiidae,Pseudodiala,snail,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,367,Mytilus edulis,Animalia,Mollusca,Bivalvia,Mytilida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,366,Mytilus californianus,Animalia,Mollusca,Bivalvia,Mytilida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,287,Kelletia kelletii,Animalia,Mollusca,Gastropoda,,Buccinidae,Kelletia,snail,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,368,Mytilisepta bifurcata,Animalia,Mollusca,Bivalvia,Mytilida,Mytilidae,Mytilisepta,bivalve,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,284,Nucella emarginata,Animalia,Mollusca,Gastropoda,,Muricidae,Nucella,snail,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,282,Acanthina spirata,Animalia,Mollusca,Gastropoda,,Nucellidae,Acanthina,snail,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,409,Nuttallina californica,Animalia,Mollusca,Polyplacophora,Chitonida,Tonicellidae,Nuttallina,chiton,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,436,Phragmatopoma californica,Animalia,Annelida,Polychaeta,Canalipalpata,Sabellarididae,Phragmatopoma,polychaete,1,1
+ZZ,149,Leptasterias hexactis,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,sea star,156,Eupentacta quinquesemita,Animalia,Echinodermata,Holothuroidea,Dendrochirotida,"	Sclerodactylidae",Eupentacta,sea cucumber,1,1
+ZZ,588,Rhopalura ophiocomae,1,Animalia,Orthonectida,,,Rhopaluridae,Rhopalura,orthonectid,162,Amphipholus pugetana,Animalia,Echinodermata,Ophiuroidea,Ophiurida,Amphiuridae,Amphipholis,brittle star,1,4
+ZZ,168,Strongylocentrotus purpuratus,1,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,sea urchin,587,Macrocystis pyrifera,Eukaryota,Ochrophyta,Phaeophyceae,Laminariales,Laminariaeceae,Macrocystis,algae,1,1
+EMH,15,Clinocottus analis ,1,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Clinocottus,fish,508,Betaeus harfordi,Animalia,Arthropoda,Malacostraca,Decapoda,Alpheidae,Betaeus,crab,1,1
+EMH,15,Clinocottus analis ,1,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Clinocottus,fish,540,Pugettia gracilis,Animalia,Arthropoda,Malacostraca,Decapoda,Epialtidae,Pugettia,crab,1,1
+EMH,15,Clinocottus analis ,1,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Clinocottus,fish,NA,Spirontocaris picta,**Actually can't find taxonomy on this? ,,,,,,crab,1,1
+EMH,15,Clinocottus analis ,1,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Clinocottus,fish,NA,Pelotonia spp. ,**Actually can't find taxonomy on this? ,,,,,,algae,1,3
+EMH,15,Clinocottus analis ,1,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Clinocottus,fish,NA,Ascarophis morronei **new parasite!,Animalia,Nematoda,Chromadorea,Rhabditida,Cystidicolidae,Ascarophis,nematode,1,6
+SML,,Deutella californica,1,Animalia,Anthropoda,Malacostraca,Amphipoda,Capreallidae,Deutella,Crustacean,85,Obelia dichotoma,Animalia,,,,,,jelly,,
+EMH,15,Clinocottus analis ,1,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Clinocottus,fish,312,Cadlina luteomarginata,Animalia,Mollusca,Gastropoda,Nudibranchia,Cadlinidae,cadlina,nudibranch,1,1
+EMH,15,Clinocottus analis ,1,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Clinocottus,fish,NA,Trichodina jadranica** new parasite!,,Ciliophora,Oligohymenophorea,Mobilida,Trichodinidae,Trichodina,ciliate,1,7
+EMH,16,Oligocottus maculosus,1,Animalia,Chordata,Teleostei,Scorpaeniformes –,Cottidae,Oligocottus,fish,NA,Artemia salina,Animalia,Arthropoda,Branchiopoda,Anostraca,Artemiidae,Artemia,shrimp,1,1
+EMH,16,Oligocottus maculosus,1,Animalia,Chordata,Teleostei,Scorpaeniformes –,Cottidae,Oligocottus,fish,367,Mytilus edulis,Animalia,Mollusca,Bivalvia,Mytilida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,589,Syndesmis sp.,1,Animalia,Platyhelminthes,,,,,flatworm,168,Strongylocentrotus purpuratus,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,1,10
+ZZ,590,Syndisyrinx franciscanus,1,Animalia,Platyhelminthes,,,,,flatworm,168,Strongylocentrotus purpuratus,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,1,10
+ZZ,591,Flabesymbios commensalis,1,Animalia,Annelida,,,,,polychaete,168,Strongylocentrotus purpuratus,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,1,10
+ZZ,495,Colidotea rostrata,1,Animalia,Arthropoda,Malacostraca,Isopoda,Idoteidae,Colidotea,isopod,168,Strongylocentrotus purpuratus,Animalia,Echinodermata,Echinoidea,Echinoida,Strongylocentrotidae,Strongylocentrotus,Sea urchin,1,10
+ZZ,144,Patiria miniata,1,Animalia,Echinodermata,Asteroidea,,,,sea star,170,Aplidium californicum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,1
+ZZ,143,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,sea star,170,Aplidium californicum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,1
+ZZ,592,Pholeterides furtiva,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Notodelphyidae,Pholeterides,copepod,170,Aplidium californicum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,6
+ZZ,503,Polycheria osborni,1,Animalia,Arthropoda,Malacostraca,Amphipoda,Dexaminidae,Polycheria,amphipod,170,Aplidium californicum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,9
+ZZ,130,Bugula neritina,1,Animalia,Bryozoa,,,,,bryozoan,170,Aplidium californicum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,9
+ZZ,357,Hermissenda crassicornis,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Facelinidae,Hermissenda,nudibranch,171,Aplidium solidum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,1
+ZZ,145,Patiria miniata,1,Animalia,Echinodermata,Asteroidea,,,,sea star,178,Euherdmania claviformis,Animalia,Chordata,Ascidiacea,Aplousobranchia,Euherdmaniidae,Euherdmania,tunicate,1,1
+ZZ,143,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,sea star,179,Didemnum carnulentum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Didemnidae,Didemnum,tunicate,1,1
+ZZ,265,Marsenina stearnsii,1,Animalia,Mollusca,Gastropoda,,Velutinidae,Marsenina,snail,180,Trididemnum opacum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Didemnidae,Trididemnum,tunicate,1,27
+ZZ,143,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,sea star,183,Archidistoma psammion,Animalia,Chordata,Ascidiacea,Aplousobranchia,,,tunicate,1,1
+ZZ,145,Patiria miniata,1,Animalia,Echinodermata,Asteroidea,,,,sea star,183,Archidistoma psammion,Animalia,Chordata,Ascidiacea,Aplousobranchia,,,tunicate,1,1
+ZZ,393,Mytilimeria nuttalli,1,Animalia,Mollusca,Bivalvia,Pholadomyoida,Lyonsiidae,Mytilimeria,bivalve,183,Archidistoma psammion,Animalia,Chordata,Ascidiacea,Aplousobranchia,,,tunicate,1,2
+ZZ,503,Polycheria osborni,1,Animalia,Arthropoda,Malacostraca,Amphipoda,Dexaminidae,Polycheria,amphipod,183,Archidistoma psammion,Animalia,Chordata,Ascidiacea,Aplousobranchia,,,tunicate,1,2
+ZZ,593,Haplostoma minutum,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Botryllophiidae,Haplostoma,copepod,173,Aplidium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,2
+ZZ,594,Haplosaccus elongatus,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,,,,173,Aplidium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,2
+ZZ,595,Haplostomella dubia,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,,,,173,Aplidium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,2
+ZZ,596,Haplostomella distincta,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,,,,173,Aplidium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,2
+ZZ,597,Haplostomella oceanica,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,,,,173,Aplidium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Aplidium,tunicate,1,2
+ZZ,503,Polycheria osborni,1,Animalia,Arthropoda,Malacostraca,Amphipoda,Dexaminidae,Polycheria,amphipod,174,Polyclinum planum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Polyclinum,tunicate,1,2
+ZZ,503,Polycheria osborni,1,Animalia,Arthropoda,Malacostraca,Amphipoda,Dexaminidae,Polycheria,amphipod,176,Ritterella pulchra,Animalia,Chordata,Ascidaceae,Aplousobranchia,Ritterellidae,Ritterella,tunicate,1,2
+ZZ,393,Mytilimeria nuttalli,1,Animalia,Mollusca,Bivalvia,Pholadomyoida,Lyonsiidae,Mytilimeria,bivalve,185,Cystodytes lobatus,Animalia,Chordata,Ascidaceae,Aplousobranchia,Polycitoridae,Cystodytes,tunicate,1,2
+ZZ,503,Polycheria osborni,1,Animalia,Arthropoda,Malacostraca,Amphipoda,Dexaminidae,Polycheria,amphipod,185,Cystodytes lobatus,Animalia,Chordata,Ascidaceae,Aplousobranchia,Polycitoridae,Cystodytes,tunicate,1,2
+ZZ,503,Polycheria osborni,1,Animalia,Arthropoda,Malacostraca,Amphipoda,Dexaminidae,Polycheria,amphipod,186,Clavelina huntsmani,Animalia,Chordata,Ascidaceae,Aplousobranchia,Clavelinidae,Clavelina,tunicate,1,2
+ZZ,503,Polycheria osborni,1,Animalia,Arthropoda,Malacostraca,Amphipoda,Dexaminidae,Polycheria,amphipod,187,Distaplia occidentalis,Animalia,Chordata,Ascidaceae,Aplousobranchia,Holozoidae,Distaplia,tunicate,1,2
+ZZ,81,Bythotiara huntsmani,5,Animalia,Cnidaria,Hydrozoa,Anthoathecata,Bythotiaridae,Bythotiara,hydroid,189,Ascidia ceratodes,Animalia,Chordata,Ascidaceae,Phlebobranchia,Ascidiidae,Ascidia,tunicate,1,9
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,190,Fissurella volcano,Animalia,Mollusca,gastropoda,Archaeogastropoda,Fissurellidae,Fissurella,limpet,1,1
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,191,Fissurella volcano crucifera,Animalia,Mollusca,gastropoda,Archaeogastropoda,Fissurellidae,Fissurella,limpet,1,1
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,195,Diodora aspera,Animalia,Mollusca,gastropoda,Archaeogastropoda,Fissurellidae,Diodora,limpet,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,195,Diodora aspera,Animalia,Mollusca,gastropoda,Archaeogastropoda,Fissurellidae,Diodora,limpet,1,1
+ZZ,148,Leptasterias pusilla,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,sea star,195,Diodora aspera,Animalia,Mollusca,gastropoda,Archaeogastropoda,Fissurellidae,Diodora,limpet,1,1
+ZZ,149,Leptasterias hexactis,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,sea star,195,Diodora aspera,Animalia,Mollusca,gastropoda,Archaeogastropoda,Fissurellidae,Diodora,limpet,1,1
+ZZ,60,Orthasterias koehleri,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Orthasterias,sea star,195,Diodora aspera,Animalia,Mollusca,gastropoda,Archaeogastropoda,Fissurellidae,Diodora,limpet,1,1
+ZZ,424,Arctonoe vittata,1,Animalia,Annelida,Polychaeta,Phyllodocida,Polynoidae,Arctonoe,polychaete,195,Diodora aspera,Animalia,Mollusca,gastropoda,Archaeogastropoda,Fissurellidae,Diodora,limpet,1,9
+ZZ,197,Lottia asmi,1,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,snail,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,2
+ZZ,598,Pharcidia balani,1,Fungi,Ascomycota,Dothidiomycetes,Capnodiales,Mycosphaerellaceae,Pharcidia,fungus,199,Lottia digitalis,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,5
+ZZ,599,Apohyale grandicornis,2,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalidae,Apohyale,amphipod,199,Lottia digitalis,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,9
+ZZ,566,Pachygrapsus crassipes,1,Animalia,Arthropoda,Malacostraca,Decapoda,Grapsidae,Pachygrapsus,crab,199,Lottia digitalis,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,1
+ZZ,599,Apohyale grandicornis,2,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalidae,Apohyale,amphipod,203,Lottia limatula,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,9
+ZZ,599,Apohyale grandicornis,2,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalidae,Apohyale,amphipod,208,Lottia pelta,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,9
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,208,Lottia pelta,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,208,Lottia pelta,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,1
+ZZ,,Evasterias troschelli,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Evasterias,sea star,208,Lottia pelta,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,1
+ZZ,149,Leptasterias hexactis,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,sea star,208,Lottia pelta,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,1
+ZZ,148,Leptasterias pusilla,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,sea star,208,Lottia pelta,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,1
+ZZ,599,Apohyale grandicornis,2,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalidae,Apohyale,amphipod,210,Lottia scabra,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,9
+ZZ,599,Apohyale grandicornis,2,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalidae,Apohyale,amphipod,215,Lottia scutum,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,9
+ZZ,599,Apohyale grandicornis,2,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalidae,Apohyale,amphipod,201,Lottia gigantea,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,9
+ZZ,599,Apohyale grandicornis,2,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalidae,Apohyale,amphipod,601,Ulva sp.,,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,algae,1,1
+ZZ,600,Apohyale grandicornis,1,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalidae,Apohyale,amphipod,601,Ulva sp.,,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,algae,1,1
+SML,,Haplostoma albicatum,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostoma,copepod,,Distaplia occidentalis,Animalia,Chordata,Ascidiacea,Enterogona,Holozoidae,Distaplia,tunicate,1,2
+SML,,Haplostoma minutum,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostoma,copepod,,Amaroucium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplostoma dentatum (female only),1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostoma,copepod,,Cystordytes lobatus,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polycitoridae,Cystordytes,tunicate,1,2
+SML,,Haplostoma setiferum,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostoma,copepod,,Eudistoma ritteri,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polycitoridae,Eudistoma,tunicate,1,2
+SML,,Haplostoma ambiguum ,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostoma,copepod,,Didemnum albidum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Didemnidae,Didemnum,tunicate,1,2
+SML,,Haplostoma elegans,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostoma,copepod,,Amaroucium constellatum ,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplostoma elegans,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostoma,copepod,,Amaroucium propinquum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplostomides bellus (female only),1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostomides,copepod,,Sigillinaria aequali-siphonis,Animalia,Chordata,Ascidiacea,Aplousobranchia,Placentelidae,Sigillinaria,tunicate,1,2
+SML,,Haplostomides luteolus (female only),1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostomides,copepod,,Amaroucium glabrum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplosaccus elongatus (female only),1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplosaccus,copepod,,Amaroucium glabrum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplosaccus elongatus (female only),1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplosaccus,copepod,,Amaroucium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplostomella dubia,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostomella,copepod,,Amaroucium glabrum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplostomella dubia,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostomella,copepod,,Amaroucium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplostomella distincta,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostomella,copepod,,Amaroucium arenatum ,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplostomella distincta,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostomella,copepod,,Amaroucium glabrum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplostomella oceanica,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostomella,copepod,,Amaroucium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Haplostomella oceanica,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostomella,copepod,,Eudistoma ritteri ,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polycitoridae,Eudistoma,tunicate,1,2
+SML,,Haplostomella reducta,1,Animalia,Arthropoda,Maxillopoda,Cyclopoida,Ascidicolidae,Haplostomella,copepod,,Distaplia occidentalis,Animalia,Chordata,Ascidiacea,Enterogona,Holozoidae,Distaplia,tunicate,1,2
+SML,,Botryllophilus sp.,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Botryllophilidae,Botryllophilus,copepod,,Amaroucium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Botryllophilus sp.,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Botryllophilidae,Botryllophilus,copepod,,Amaroucium constellatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Botryllophilus sp.,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Botryllophilidae,Botryllophilus,copepod,,Amaroucium propinquum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Botryllophilus sp.,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Botryllophilidae,Botryllophilus,copepod,,Eudistoma ritteri,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polycitoridae,Eudistoma,tunicate,1,2
+SML,,Botryllophilus sp.,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Botryllophilidae,Botryllophilus,copepod,,Cystodytes lobatus,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polycitoridae,Cystodytes,tunicate,1,2
+SML,,Pholeterides furtiva,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Notodelphyidae,Pholeterides,copepod,,Amaroucium arenatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+SML,,Pholeterides furtiva,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Notodelphyidae,Pholeterides,copepod,,Amaroucium constellatum,Animalia,Chordata,Ascidiacea,Aplousobranchia,Polyclinidae,Amaroucium,tunicate,1,2
+EMH,, Gyrodactylus maculosi,1,Animalia,Platyhelminthes,Monogenea,Gyrodactylidea,Gyrodactylidae,Gyrodactylus,monogene,16,Oligocottus maculosus,Animalia,Chordata,Teleostei,Scorpaeniformes –,Cottidae,Oligocottus,fish,1,7
+EMH,,Pseudodelphis oligocotti,1,Animalia,Nematoda,Chromadorea,Rhabditida (,Guyanemidae,Pseudodelphis,nematode,16,Oligocottus maculosus,Animalia,Chordata,Teleostei,Scorpaeniformes –,Cottidae,Oligocottus,fish,1,6
+EMH,,Haemobaphes intermedius,1,Animalia,Arthropoda,Maxillopoda,Siphonostomatoida,Pennellidae,Haemobaphes,copepod,16,Oligocottus maculosus,Animalia,Chordata,Teleostei,Scorpaeniformes –,Cottidae,Oligocottus,fish,1,7
+EMH,,Ardea herodias,1,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Ardea,shorebird,16,Oligocottus maculosus,Animalia,Chordata,Teleostei,Scorpaeniformes –,Cottidae,Oligocottus,fish,1,1
+EMH,16,Oligocottus maculosus,1,Animalia,Chordata,Teleostei,Scorpaeniformes –,Cottidae,Oligocottus,fish,NA,Parophyrus vetulus,Animalia,Chordata,Teleostei,Pleuronectiformes,Pleuronectidae,Parophyrus,fish,1,1
+EMH,18,Heterostichus rostratus,4,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,NA,Brachionus plicatilis,Animalia,Rotifera,Monogonta,Ploima,Brachionidae,Brachionus,rotifer,1,1
+EMH,18,Heterostichus rostratus,4,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,NA,Artemia salina,Animalia,Arthropoda,Branchiopoda,Anostraca,Artemiidae,Artemia,shrimp,1,1
+EMH,18,Heterostichus rostratus,4,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,NA,Acartia sp.,Animalia,Arthropoda,Maxillopoda,Calanoida,Acartiidae,Arcatia,copepod,1,1
+EMH,18,Heterostichus rostratus,1,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,NA,Gelidium nudifrons,Plantae,Biliphyta,Florideophyceae,Gelidiales,Gelidiaceae,Gelidium,algae,1,10
+EMH,18,Heterostichus rostratus,1,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,NA,Hippolyte californiensis,Animalia,Arthropoda,Malacostraca,Decapoda,Hippolytidae,Hippolyte,shrimp,1,1
+EMH,3,Gibbonsia elegans,1,Animalia,chordata,Teleostei,Perciformes,Clinidae,Gibbonsia,Fish,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,1
+EMH,12,girella nigricans,1,Animalia,Chordata,Actinopterygii,Perciformes,Kyphosidae,Girella,fish,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,1
+EMH,18,semicossyphus pulcher,1,Animalia,Chordata,Teleostei,Perciformes,Labridae,Semicossyphus,fish,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,1
+EMH,NA,oxyjulis californica,1,Animalia,Chordata,Teleostei,Perciformes,Labridae,Oxyjulis,fish,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,1
+EMH,NA,Halichoeres semisinctus,1,Animalia,Chordata,Teleostei,Perciformes,Labridae,Halichoeres,fish,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,1
+EMH,NA,Rhacochilus toxotes,1,Animalia,Chordata,Actinopterygii,Perciformes,Embiotocidae,Rhacochilus,fish,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,1
+EMH,NA,Hypsopops rubicundus,1,Animalia,Chordata,Teleostei,Perciformes,Pomacentridae,Hypsopops,fish,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,1
+EMH,18,Heterostichus rostratus,1,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,NA,Pteroclaudia capillacea,Plantae,?,Florideophyceae,Gelidiales,Pterocladiaceae,Pteroclaudia,algae,1,10
+EMH,18,Heterostichus rostratus,1,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,NA,Cystoseira neglecta,Chromista,,Phaeophyceae,Fucales,Fucales,Cystoseira,algae,1,10
+EMH,18,Heterostichus rostratus,1,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,NA,Eisenia arborea,Plantae,Ochrophyta,Phaeophyceae,Laminariales,Lessoniaceae,Eisenia,algae,1,10
+EMH,18,Heterostichus rostratus,1,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,NA,Sargassum muticum,Chromista,,Phaeophyceae,Fucales,Sargassaceae,Sargassum,algae,1,10
+EMH,,Lepeophtheirus schaadti,1,Animalia,Arthropoda,Copepoda,Siphonostomatoida,Caligidae,Lepeophtheirus,new parasite! ,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,6
+EMH,,Heptacyclus cabrilloi,1,Animalia,,,,,,new parasite! ,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,6
+EMH,,Lepeophtheirus parviventris,1,Animalia,Arthropoda,Maxillopoda,Siphonostomatoida,Caligidae,Lepeophtheirus,new parasite! ,18,Heterostichus rostratus,Animalia ,Chordata,Teleostei,Perciformes,Clinidae,Heterostichus,fish,1,6
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,203,Lottia limatula,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,1
+ZZ,566,Pachygrapsus crassipes,1,Animalia,Arthropoda,Malacostraca,Decapoda,Grapsidae,Pachygrapsus,crab,203,Lottia limatula,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Hemigrapsus oregonensis,Animalia,Arthropoda,Malacostraca,Decapoda,Varunidae,Hemigraspsus,crab,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Urechis caupo,Animalia,Annelida,Polychaeta,Echiuroidea,Urechidae,Genus:,echiurid,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Leptocottus armatus,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Leptocottus,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Cancer spp,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer,crab,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Cancer gracilis,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer,crab,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Tresus nuttallii,Animalia,Mollusca,Bivalvia,Veneroida,Mactridae,Tresus,bivalve,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Saxidomus nuttalli,Animalia,Mollusca,Bivalvia,Venerida,Veneridae,Saxidomus,bivalve,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Nereis spp,Animalia,Annelida,Polychaeta,Phyllodocida,Nereididae,Nereis,polychaete,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Ulva spp,Viridiplantae,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,algae,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Zostera marina,Plantae,,,Alismatales,Zosteraceae,Zostera,sea grass,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Atherinops affinis,Animalia,Chordata,Teleostei,Atheriniformes,Atherinopsidae,Atherinops,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Cymatogaster aggregata,Animalia,Chordata,Teleostei,Perciformes –,Embiotocidae,Cymatogaster,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,,Engraulis mordax,Animalia,Chordata,Teleostei,Clupeiformes –,Engraulidae,Engraulis,fish,1,1
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,seastar,210,Lottia scabra,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,599,Apohyale grandicornis,2,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalidae,Apohyale,amphipod,215,Lottia scabra,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,9
+ZZ,212,Lottia triangularis,1,Animalia,Mollusca,Gastropoda,,Lottidae,Lottia,limpet,236,Tegula brunnea,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,2
+ZZ,213,Notoacmea inessa,1,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Notoacmea,limpet,617,Egregia menziesii,,Ochrophyta,Phaeophyceae,Laminariales,Lessioniaceae,Egregia,brown algae,1,3
+ZZ,214,Notoacmea paleacea,1,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Notoacmea,limpet,607,Phyllospadix torreyi,Plantae,,,Alismatales,Zosteraceae,Phyllospadix,sea grass,1,3
+ZZ,214,Notoacmea paleacea,1,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Notoacmea,limpet,608,Phyllospadix scouleri,Plantae,,,Alismatales,Zosteraceae,Phyllospadix,sea grass,1,3
+ZZ,566,Pachygrapsus crassipes,1,Animalia,Arthropoda,Malacostraca,Decapoda,Grapsidae,Pachygrapsus,crab,215,Lottia scutum,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,215,Lottia scutum,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,215,Lottia scutum,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,149,Leptasterias hexactis,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,sea star,215,Lottia scutum,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,148,Leptasterias pusilla,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,sea star,215,Lottia scutum,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,,Evasterias troschelli,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Evasterias,sea star,215,Lottia scutum,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,,Orthasterias koehleri,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Orthasterias,sea star,215,Lottia scutum,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,601,Ulva sp. ,1,,,,,,Ulva,green algae,215,Lottia scutum,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,2
+ZZ,618,Pygodelphys aquilonaris,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Notodelphyidae,Pygodelphys,copepod,220,Pyura haustor,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Pyura,tunicate,1,9
+ZZ,618,Pygodelphys aquilonaris,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Notodelphyidae,Pygodelphys,copepod,222,Boltenia villosa,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Boltenia,tunicate,1,9
+ZZ,618,Pygodelphys aquilonaris,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Notodelphyidae,Pygodelphys,copepod,217,Styela montereyensis,Animalia,Chordata,Ascidaceae,Stolidobranchia,Styelidae,Styela,tunicate,1,9
+ZZ,619,Trichophyra salparum,1,Chromista,Ciliophora,Phyllopharyngea,SubCl Suctoria,,Trichophyra,ciliate,220,Pyura haustor,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Pyura,tunicate,1,9
+ZZ,620,Parahypocoma rhamphisokarya,1,Chromista,Ciliophora,Phyllopharyngea,Hypocomatida,Hypocomidae,Parahypocoma,ciliate,220,Pyura haustor,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Pyura,tunicate,1,9
+ZZ,621,Euplotastpis cionaecola,1,Chromista,Ciliophora,Phyllopharyngea,,,,ciliate,220,Pyura haustor,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Pyura,tunicate,1,9
+ZZ,620,Parahypocoma rhamphisokarya,1,Chromista,Ciliophora,Phyllopharyngea,Hypocomatida,Hypocomidae,Parahypocoma,ciliate,222,Boltenia villosa,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Boltenia,tunicate,1,9
+ZZ,619,Trichophyra salparum,1,Chromista,Ciliophora,Phyllopharyngea,SubCl Suctoria,,Trichophyra,ciliate,222,Boltenia villosa,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Boltenia,tunicate,1,9
+ZZ,143,Dermasterias imbricata,1,Animalia,Echinodermata,Asteroidea,Valvatida,Asteropseidae,Dermasterias,sea star,222,Boltenia villosa,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Boltenia,tunicate,1,1
+ZZ,60,Orthasterias koehleri,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Orthasterias,sea star,222,Boltenia villosa,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Boltenia,tunicate,1,1
+ZZ,NA,Doropygus fernaldi,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Notodelphyidae,Doropygus,copepod,222,Boltenia villosa,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Boltenia,tunicate,1,9
+ZZ,NA,Scolecodes huntsmani,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Notodelphyidae,Scolecodes,copepod,222,Boltenia villosa,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Boltenia,tunicate,1,6
+ZZ,NA,Doropygus fernaldi,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Notodelphyidae,Doropygus,copepod,223,Halocynthia hilgendorfi igaboja,Animalia,Chordata,Ascidaceae,Stolidobranchia,Pyuridae,Halocynthia,tunicate,1,9
+ZZ,66,Cliona celata,1,Animalia,Porifera,Demospongiae,Clionaida,Clionaidae,Cliona,sponge,225,Haliotis rufescens,Animalia,Mollusca,,,Haliotidae,Haliotis,snail,1,28
+ZZ,388,Penitella conradi,1,Animalia,Mollusca,Bivalvia,Myida,Pholadidae,Penitella,bivalve,225,Haliotis rufescens,Animalia,Mollusca,,,Haliotidae,Haliotis,snail,1,28
+ZZ,66,Cliona celata,1,Animalia,Porifera,Demospongiae,Clionaida,Clionaidae,Cliona,sponge,225,Haliotis rufescens,Animalia,Mollusca,,,Haliotidae,Haliotis,snail,1,28
+ZZ,388,Penitella conradi,1,Animalia,Mollusca,Bivalvia,Myida,Pholadidae,Penitella,bivalve,225,Haliotis rufescens,Animalia,Mollusca,,,Haliotidae,Haliotis,snail,1,28
+ZZ,388,Penitella conradi,1,Animalia,Mollusca,Bivalvia,Myida,Pholadidae,Penitella,bivalve,225,Haliotis cracherodi,Animalia,Mollusca,,,Haliotidae,Haliotis,snail,1,28
+ZZ,66,Cliona celata,1,Animalia,Porifera,Demospongiae,Clionaida,Clionaidae,Cliona,sponge,225,Haliotis cracherodi,Animalia,Mollusca,,,Haliotidae,Haliotis,snail,1,28
+ZZ,508,Betaeus harfordi,1,Animalia,Arthropoda,Malacostraca,Decapoda,Alpheidae,Betaeus,shrimp,225,Haliotis cracherodi,Animalia,Mollusca,,,Haliotidae,Haliotis,snail,1,9
+ZZ,230,Calliostoma annulatum,1,Animalia,Mollusca,Gastropoda,,Calliostomatidae,Calliostoma,snail,,Membranipora,Animalia,Bryozoa,Gymnolaemata,Cheilostomatida,Membraniporidae,Membranipora,bryozoan,1,1
+ZZ,230,Calliostoma annulatum,1,Animalia,Mollusca,Gastropoda,,Calliostomatidae,Calliostoma,snail,623,Celleporella sp.,Animalia,Bryozoa,Gymnolaemata,Cheilostomatida,Hippothoidae,Celleporella,bryozoan,1,1
+ZZ,230,Calliostoma annulatum,1,Animalia,Mollusca,Gastropoda,,Calliostomatidae,Calliostoma,snail,109,Corynactis californica,Animalia,Cnidaria,,,,,anemone,1,1
+ZZ,230,Calliostoma annulatum,1,Animalia,Mollusca,Gastropoda,,Calliostomatidae,Calliostoma,snail,85,Obelia dichotoma,Animalia,Cnidaria,,,,,hydroid,1,1
+ZZ,230,Calliostoma annulatum,1,Animalia,Mollusca,Gastropoda,,Calliostomatidae,Calliostoma,snail,86,Obelia bidentata,Animalia,Cnidaria,,,,,hydroid,1,1
+ZZ,230,Calliostoma annulatum,1,Animalia,Mollusca,Gastropoda,,Calliostomatidae,Calliostoma,snail,87,Obelia geniculata,Animalia,Cnidaria,,,,,hydroid,1,1
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,232,Calliostoma ligatum,Animalia,Mollusca,Gastropoda,,Calliostomatidae,Calliostoma,snail,1,1
+ZZ,348,Dirona albolineata,1,Animalia,Mollusca,Gastropoda,Nudibranchia,Dironidae,Dirona,nudibranch,234,Margarites pupillus,Animalia,Mollusca,Gastropoda,,,,snail,<7mm,1
+ZZ,235,Norrisia norrisi,1,Animalia,Mollusca,Gastropoda,,Tegulidae,Norrisia,snail,587,Macrocystis pyrifera,,Ochrophyta,Phaeophyceae,Laminariales,Laminariaceae,Macrocystis,brown algae,1,3
+ZZ,235,Norrisia norrisi,1,Animalia,Mollusca,Gastropoda,,Tegulidae,Norrisia,snail,617,Egregia menziesii,,Ochrophyta,Phaeophyceae,Laminariales,Lessioniaceae,Egregia,brown algae,1,3
+ZZ,235,Norrisia norrisi,1,Animalia,Mollusca,Gastropoda,,Tegulidae,Norrisia,snail,624,Laminaria sp.,,Ochrophyta,Phaeophyceae,Laminariales,Laminariaceae,Laminaria,brown algae,1,3
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,236,Tegula brunnea,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,1
+ZZ,549,Cancer antennarius,1,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer,crab,236,Tegula brunnea,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,1
+ZZ,,Enhydra lutris,1,Animalia,Chordata,Mammalia,Carnivora,Mustelidae,Enhydra,mammal,236,Tegula brunnea,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,1
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,1
+ZZ,549,Cancer antennarius,1,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer,crab,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,1
+ZZ,,Enhydra lutris,1,Animalia,Chordata,Mammalia,Carnivora,Mustelidae,Enhydra,mammal,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,1
+ZZ,197,Lottia asmi,1,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,10
+ZZ,208,Lottia pelta,1,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,10
+ZZ,199,Lottia digitalis,1,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,10
+ZZ,205,Lottia strigatella,4,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,10
+ZZ,203,Lottia limatula,1,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,10
+ZZ,258,Crepidula adunca,1,Animalia,Mollusca,Gastropoda,Patellogastropoda,Calyptraeidae,Crepidula,snail,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,10
+ZZ,261,Crepidula perforans,1,Animalia,Mollusca,Gastropoda,Patellogastropoda,Calyptraeidae,Crepidula,snail,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,10
+ZZ,280,Acanthina paucilirata,1,Animalia,Mollusca,Gastropoda,,Muricidae,Acanthina,snail,247,Littorina planaxis,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,281,Acanthina punctulata,1,Animalia,Mollusca,Gastropoda,,Muricidae,Acanthina,snail,247,Littorina planaxis,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,282,Acanthina spirata,1,Animalia,Mollusca,Gastropoda,,Muricidae,Acanthina,snail,247,Littorina planaxis,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,281,Acanthina punctulata,1,Animalia,Mollusca,Gastropoda,,Muricidae,Acanthina,snail,248,Littorina scutulata,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,282,Acanthina spirata,1,Animalia,Mollusca,Gastropoda,,Muricidae,Acanthina,snail,248,Littorina scutulata,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,149,Leptasterias hexactis,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,sea star,248,Littorina scutulata,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,249,Vitrinella oldroydi,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Vitrinellidae,Vitrinella,snail,401,Stenoplax heathiana,Animalia,Mollusca,Polyplacophora,Chitonida,Ischnochitonidae,Stenoplax,chiton,1,9
+ZZ,249,Vitrinella oldroydi,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Vitrinellidae,Vitrinella,snail,403,Stenoplax conspicua,Animalia,Mollusca,Polyplacophora,Chitonida,Ischnochitonidae,Stenoplax,chiton,1,9
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,250,Thylacodes squamigerous,Animalia,Mollusca,Gastropoda,,Vermetidae,Thylacodes,snail,1,1
+ZZ,272,Ceratostoma foliatum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,250,Thylacodes squamigerous,Animalia,Mollusca,Gastropoda,,Vermetidae,Thylacodes,snail,1,1
+ZZ,272,Ceratostoma foliatum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,464,Balanus glandula,Animalia,Arthropoda,Thecostraca,Balanomorpha,Balanidae,Balanus,barnacle,1,1
+ZZ,272,Ceratostoma foliatum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,462,Semibalanus cariosus,Animalia,Arthropoda,Thecostraca,Balanomorpha,Balanidae,Semibalanus,barnacle,1,1
+ZZ,272,Ceratostoma foliatum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,371,Pododesmus cepio,Animalia,Mollusca,Bivalvia,Pectinida,Anomiidae,Pododesmus,bivalve,1,1
+ZZ,272,Ceratostoma foliatum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,390,Penitella penita,Animalia,Mollusca,Bivalvia,Myoida,Pholadidae,Penitella,bivalve,1,1
+ZZ,272,Ceratostoma foliatum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,363,Adula californiensis,Animalia,Mollusca,Bivalvia,,,,bivalve,1,1
+ZZ,272,Ceratostoma foliatum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,366,Mytilus californianus,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,272,Ceratostoma foliatum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,384,Hiatella arctica,Animalia,Mollusca,Bivalvia,,,,bivalve,1,1
+ZZ,272,Ceratostoma foliatum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,NA,Protothaca staminea,Animalia,Mollusca,Bivalvia,,,,bivalve,1,1
+ZZ,625,Pteropurpura festiva,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Pteropurpura,snail,250,Thylacodes squamigerous,,Mollusca,Gastropoda,,Vermetidae,Thylacodes,snail,1,1
+ZZ,274,Pteropurpura trialata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Pteropurpura,snail,250,Thylacodes squamigerous,,Mollusca,Gastropoda,,Vermetidae,Thylacodes,snail,1,1
+ZZ,565,Opisthopus transversus,1,Animalia,Arthropoda,Malacostraca,Decapoda,Pinnotheridae,Opisthopus,crab,250,Thylacodes squamigerous,,Mollusca,Gastropoda,,Vermetidae,Thylacodes,snail,1,9
+ZZ,,TREMATODE METACERCARIAE,5,Animalia,Platyhelminthes,,,,,,250,Thylacodes squamigerous,,Mollusca,Gastropoda,,Vermetidae,Thylacodes,snail,1,4
+ZZ,151,Pisaster giganteus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,251,Petaloconchus montereyensis,,Mollusca,Gastropoda,,Vermetidae,Petaloconchus,snail,1,1
+ZZ,,TREMATODE METACERCARIAE,5,Animalia,Platyhelminthes,,,,,,251,Petaloconchus montereyensis,,Mollusca,Gastropoda,,Vermetidae,Petaloconchus,snail,,4
+ZZ,435,Dodecaceria fewkesi,1,Animalia,Annelida,Polychaeta,Terebellida,Cirratulidae,Dodecaceria,polychaete,251,Petaloconchus montereyensis,,Mollusca,Gastropoda,,Vermetidae,Petaloconchus,snail,1,2
+ZZ,626,Dodecaceria fistulicola,,Animalia,Annelida,Polychaeta,Terebellida,Cirratulidae,Dodecaceria,polychaete,251,Petaloconchus montereyensis,,Mollusca,Gastropoda,,Vermetidae,Petaloconchus,snail,1,2
+ZZ,253,Epitonium tinctum,1,Animalia,Mollusca,Gastropoda,,Epitoniidae,Epitonium,snail,99,Anthopleura xanthogrammatica,,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,3
+ZZ,253,Epitonium tinctum,1,Animalia,Mollusca,Gastropoda,,Epitoniidae,Epitonium,snail,101,Anthopleura elegantissima,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,3
+ZZ,254,Opalia chacei,1,Animalia,Mollusca,Gastropoda,,Epitoniidae,Opalia,snail,101,Anthopleura elegantissima,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,3
+ZZ,255,Opalia funiculata,1,Animalia,Mollusca,Gastropoda,,Epitoniidae,Opalia,snail,101,Anthopleura elegantissima,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,3
+ZZ,358,Aeolidia loui,1,Animalia,Mollusca,Gastropoda,Nudibranchia,,,nudibranch,101,Anthopleura elegantissima,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,3
+ZZ,569,Pycnogonum stearnsi,1,Animalia,Arthropoda,Pycnogonida,Pantopoda,Pycnogonidae,Pycnogonum,sea spider,101,Anthopleura elegantissima,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,3
+ZZ,570,Pycnogonum rickettsi,1,Animalia,Arthropoda,Pycnogonida,Pantopoda,Pycnogonidae,Pycnogonum,sea spider,99,Anthopleura xanthogrammatica,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,3
+ZZ,569,Pycnogonum stearnsi,1,Animalia,Arthropoda,Pycnogonida,Pantopoda,Pycnogonidae,Pycnogonum,sea spider,99,Anthopleura xanthogrammatica,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,anemone,1,3
+ZZ,569,Pycnogonum stearnsi,1,Animalia,Arthropoda,Pycnogonida,Pantopoda,Pycnogonidae,Pycnogonum,sea spider,186,Clavelina huntsmani,Animalia,Chordata,Ascidaceae,Aplousobranchia,Clavelinidae,Clavelina,tunicate,1,3
+ZZ,258,Crepidula adunca,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,2
+ZZ,258,Crepidula adunca,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,236,Tegula brunnea,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,2
+ZZ,258,Crepidula adunca,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,232,Calliostoma ligatum,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,2
+ZZ,261,Crepidula perforans,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,524,Pagurus samuelis,Animalia,Arthropoda,Malacostraca,Decapoda,Paguridae,Pagurus,hermit crab,1,9
+ZZ,261,Crepidula perforans,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,525,Pagurus hirsutiusculus,Animalia,Arthropoda,Malacostraca,Decapoda,Paguridae,Pagurus,hermit crab,1,9
+ZZ,261,Crepidula perforans,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,526,Pagurus hemphilli,Animalia,Arthropoda,Malacostraca,Decapoda,Paguridae,Pagurus,hermit crab,1,9
+ZZ,261,Crepidula perforans,1,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,527,Pagurus granosimanus,Animalia,Arthropoda,Malacostraca,Decapoda,Paguridae,Pagurus,hermit crab,1,9
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Allorchestes angusta,Animalia,Arthropoda,Malacostraca,Amphipoda,Hyalellidae,Allorchestes,arthropod,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Corophium sp.,Animalia,Arthropoda,Malacostraca,Amphipoda,Corophiidae,Corophium,arrhropod,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA*new parasite! ,Miamiensis avidus,Animalia,Ciliophora,Oligohymenophorea,Philasterida,Parauronematidae,Miamiensis,Eukaryote,1,6
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Branchellion lobata,Animalia,Annelida,Clitellata,Hirudinida,Piscicolidae,Branchellion,Annelid,1,7
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Achtheinus oblongu,,***Can't find the taxonomy on this ,,,,,,1,7
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Pandarus bicolor,Animalia,Arthropoda,Maxillopoda,Siphonostomatoida,Pandaridae,Pandarus,Arthropod,1,7
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Lernaeopoda galei,Animalia,Arthropoda,Maxillopoda,Siphonostomatoida,Lernaeopodidae,Lernaeopoda,Copepod,1,7
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA* but I thought this was an intertidal species? ,Callianassa pacifica,,Arthropoda,Malacostraca,Decapoda,Callianassidae,Callianassa,Decopod,1,1
+EMH,NA,Carcharodon carcharias,1,Animalia,Chordata,Chondrichthyes,Lamniformes –,Lamnidae,Carcharodon,shark,9,Triakis Semifasciata,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,1,1
+EMH,NA,Notorynchus cepedianus,1,Animalia,Chordata,Chondrichthyes,Hexanchiformes C,Notorynchidae,Notorynchus,shark,9,Triakis Semifasciata,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Clupea pallasii,Animalia,Chordata –,Teleostei,Clupeiformes,Clupeidae,Clupea,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Porichthys sp.,,,Actinopterygii,Batrachoidiformes,Batrachoididae,Porichthys,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Atherinops affinis,Animalia,Chordata –,Actinopterygii,Atheriniformes,Atherinopsidae,Atherinops,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Upogebia pugettensis,Animalia,Arthropoda,Malacostraca,Decapoda,Upogebiidae,Upogebia,Decopod,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Solen sicarius,Animalia,Mollusca,Bivalvia,Veneroida,Solenidae,Solen,Bivalve,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Tresus nutallii,Animalia,Mollusca,Bivalvia,Venerida,Mactridae,Tresus,Bivalve,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Loligo opalescens,Animalia,Mollusca,Cephalopoda,Teuthida,Loliginidae,Loligo,cephalopod,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Lampetra tridentata,Animalia,Chordata,Cephalaspidomorphi,Petromyzontiformes –,Petromyzontidae,Lampetra,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Myliobatis californica,Animalia,Chordata,Chondrichthyes,Myliobatiformes,Myliobatidae,Myliobatis,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Raja binoculata,Animalia,Chordata,Chondrichthyes,Rajiformes,Rajidae,Raja,(ray) batoid,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Squalus acanthias,Animalia,Chordata,Chondrichthyes,Squaliformes,Squalidae,Squalus,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Chilara taylori,Animalia,Chordata,Teleostei,Ophidiiformes,Ophidiidae,Chilara,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Citharichthys stigmaeus,Animalia,Chordata,Teleostei,Pleuronectiformes,Paralichthyidae,Citharichthys,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Embiotoca lateralis,Animalia,Chordata,Actinopterygii,possibly unknown?,Embiotocidae,Embiotoca,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,14,Leptocottus armatus,Animalia,Chordata,Teleostei,Scorpaeniformes,Cottidae,Leptocottus,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Syngathus leptorhynchus,Animalia,Chordata,Teleostei,Gasterosteiformes,Syngnathidae,Syngathus,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,"Atherinopsis californiensis
+",Animalia,Chordata,Actinopterygii,Atheriniformes,Atherinopsidae,Atherinopsis,fish,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,549,Cancer antennarius,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer,crab,1,1
+EMH,9,Triakis semifasciata,1,Animalia,Chordata,Chondrichthyes,Carcharhiniformes,Triakidae,Triakis,shark,NA,Cancer magister,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer,crab,1,1
+ZZ,273,Ceratostoma nuttalli,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,366,Mytilus californianus,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,273,Ceratostoma nuttali,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Ceratostoma,snail,,Mytilus edulis,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,274,Pteropurpura trialata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Pteropurpura,snail,258,Crepidula adunca,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,1,1
+ZZ,274,Pteropurpura trialata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Pteropurpura,snail,261,Crepidula perforans,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,1,1
+ZZ,274,Pteropurpura trialata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Pteropurpura,snail,260,Crepidula aculeata,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,1,1
+ZZ,274,Pteropurpura trialata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Pteropurpura,snail,262,Crepidula nummaria,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,1,1
+ZZ,274,Pteropurpura trialata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Pteropurpura,snail,263,Crepidula onyx,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,1,1
+ZZ,274,Pteropurpura trialata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Pteropurpura,snail,259,Crepidula adunca,Animalia,Mollusca,Gastropoda,Littorinimorpha,Calyptreidae,Crepidula,snail,4,1
+ZZ,278,Paciocinebrina lurida,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Paciocinebrina,snail,417,Cryptochiton stelleri,Animalia,Mollusca,Polyplacophora,Chitonida,Acanthochitonidae,Cryptochiton,chiton,1,3
+ZZ,278,Paciocinebrina lurida,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Paciocinebrina,snail,464,Balanus glandula,Animalia,Arthropoda,Maxillopoda,Balanomorpha,Balanidae,Balanus,barnacle,1,1
+ZZ,279,Roperia poulsoni,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Roperia,snail,366,Mytilus californianus,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,279,Roperia poulsoni,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Roperia,snail,,Mytilus edulis,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,279,Roperia poulsoni,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Roperia,snail,390,Penitella penita,Animalia,Mollusca,Bivalvia,Myoida,Pholadidae,Penitella,bivalve,1,1
+ZZ,549,Cancer antennarius,1,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer,crab,279,Roperia poulsoni,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Roperia,snail,1,1
+ZZ,281,Acanthinucella punctulata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Acanthinucella,snail,464,Balanus glandula,Animalia,Arthropoda,Thecostraca,Balanomorpha,Balanidae,Balanus,barnacle,,
+ZZ,281,Acanthinucella punctulata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Acanthinucella,snail,456,Chthamalus dalli,Animalia,Arthropoda,Thecostraca,Balanomorpha,Chthamalidae,Chthamalus,barnacle,1,1
+ZZ,281,Acanthinucella punctulata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Acanthinucella,snail,247,Littorina scutulata,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,281,Acanthinucella punctulata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Acanthinucella,snail,248,Littorina planaxis,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,281,Acanthinucella punctulata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Acanthinucella,snail,284,Nucella emarginata,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,1,1
+ZZ,281,Acanthinucella punctulata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Acanthinucella,snail,374,Lasaea cistula,Animalia,Mollusca,Bivalvia,Galeommatida,Laseidae,Lasaea,bivalve,1,1
+ZZ,281,Acanthinucella punctulata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Acanthinucella,snail,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,1
+ZZ,149,Leptasterias hexactis,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Leptasterias,seastar,627,Acanthinucella punctulata,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Acanthinucella,snail,4,1
+ZZ,283,Nucella canaliculata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,366,Mytilus californianus,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,283,Nucella canaliculata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,367,Mytilus edulis,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,283,Nucella canaliculata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,462,Semibalanus cariosus,Animalia,Arthropoda,Thecostraca,Balanomorpha,Balanidae,Semibalanus,barnacle,1,1
+ZZ,283,Nucella emarginata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,366,Mytilus californianus,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,283,Nucella emarginata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,367,Mytilus edulis,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,1
+ZZ,283,Nucella emarginata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,464,Balanus glandula,Animalia,Arthropoda,Thecostraca,Balanomorpha,Balanidae,Balanus,barnacle,1,1
+ZZ,283,Nucella emarginata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,455,Pollicipes polymerus,Animalia,Arthropoda,Thecostraca,Pollicipedomorpha,Pollicipedidae,Pollicipes,barnacle,1,1
+ZZ,283,Nucella emarginata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,456,Chthamalus dalli,Animalia,Arthropoda,Thecostraca,Balanomorpha,Chthamalidae,Chthamalus,barnacle,1,1
+ZZ,283,Nucella emarginata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,210,Lottia scabra,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,283,Nucella emarginata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,203,Lottia limatula,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,283,Nucella emarginata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,1
+ZZ,283,Nucella emarginata,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,248,Littorina planaxis,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,549,Cancer antennarius,1,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer,crab,283,Nucella emarginata,Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,snail,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,248,Littorina scutulata,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,,Littorina sitkana,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Littorina,snail,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,215,Lottia scutum,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,208,Lottia pelta,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,199,Lottia digitalis,Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottidae,Lottia,limpet,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,232,Calliostoma ligatum,Animalia,Mollusca,Gastropoda,,Calliostomatidae,Calliostoma,snail,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,234,Margarites pupillus,,,,,,,,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,246,Lacuna marmorata,Animalia,Mollusca,Gastropoda,Littorinimorpha,Littorinidae,Lacuna,snail,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,286,Lirabuccinum dirum,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,395,Ischnochiton interstinctus,Animalia,Mollusca,?,?,?,?,?,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,396,Ischnochiton regularis,Animalia,Mollusca,Polyplacophora,Chitonida,Ischnochitonidae,Tripoplax,chiton,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,416,Katharina tunicata,Animalia,Mollusca,Polyplacophora,Neoloricata,Mopaliidae,Katharina,chiton,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,464,Balanus glandula,Animalia,Arthropoda,Thecostraca,Balanomorpha,Balanidae,Balanus,barnacle,1,1
+ZZ,286,Lirabuccinum dirum,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,snail,462,Semibalanus cariosus,Animalia,Arthropoda,Thecostraca,Balanomorpha,Balanidae,Semibalanus,barnacle,1,1
+ZZ,150,Pisaster ochraceus,1,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Pisaster,sea star,287,Kelletia kelletii,Animalia,Mollusca,Gastropoda,,Buccinidae,Kelletia,snail,1,1
+ZZ,294,Olivella biplicata,1,Animalia,Mollusca,Gastropoda,,Olivellidae,Olivella,snail,587,Macrocystis pyrifera,Eukaryota,Ochrophyta,Phaeophyceae,Laminariales,Laminariaeceae,Macrocystis,algae,1,3
+ZZ,294,Olivella biplicata,1,Animalia,Mollusca,Gastropoda,,Olivellidae,Olivella,snail,237,Tegula funebralis,Animalia,Mollusca,Gastropoda,Trochida,Tegulidae,Tegula,snail,1,30
+ZZ,294,Olivella biplicata,1,Animalia,Mollusca,Gastropoda,,Olivellidae,Olivella,snail,366,Mytilus californianus,Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,bivalve,1,30
+ZZ,295,Atrimitra idae,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Mitridae,Atrimitra,snail,448,Phascolosoma agassizii,Animalia,Sipuncula,Sipunculidea,Sipunculida,Phascolosomatidae,Phascolosoma,sipunculid,1,1
+ZZ,298,Conus californicus,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Conidae,Conus,snail,294,Olivella biplicata,Animalia,Mollusca,Gastropoda,,Olivellidae,Olivella,snail,1,1
+ZZ,298,Conus californicus,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Conidae,Conus,snail,291,Nassarius mendicus,Animalia,Mollusca,Gastropoda,Neogastropoda,Nassariidae,Nassarius,snail,1,1
+ZZ,298,Conus californicus,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Conidae,Conus,snail,N/A,Bulla gouldiana,,,,,,,,1,1
+ZZ,298,Conus californicus,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Conidae,Conus,snail,N/A,Macoma nasuta,,,,,,,,1,1
+ZZ,298,Conus californicus,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Conidae,Conus,snail,N/A,Tagelus californianus,,,,,,,,1,1
+ZZ,298,Conus californicus,1,Animalia,Mollusca,Gastropoda,Neogastropoda,Conidae,Conus,snail,N/A,Solen rosaceus,,,,,,,,1,1
+ZZ,299,Navanax inermis,1,Animalia,Mollusca,Gastropoda,Cephalaspidea,Aglajidae,Navanax,sea slug,299,Navanax inermis,Animalia,Mollusca,Gastropoda,Cephalaspidea,Aglajidae,Navanax,sea slug,1,1
+ZZ,299,Navanax inermis,1,Animalia,Mollusca,Gastropoda,Cephalaspidea,Aglajidae,Navanax,sea slug,N/A,Haminoea vesicula,,,,,,,,1,
+ZZ,627,Anthessius navanacis,1,Animalia,Arthropoda,Hexanauplia,Cyclopoida,Anthesiidae,Anthessius,copepod,299,Navanax inermis,Animalia,Mollusca,Gastropoda,Cephalaspidea,Aglajidae,Navanax,sea slug,1,7
+ZZ,565,Opisthopus transversus,1,Animalia,Arthropoda,Malacostraca,Decapoda,Pinnotheridae,Opisthopus,crab,299,Navanax inermis,Animalia,Mollusca,Gastropoda,Cephalaspidea,Aglajidae,Navanax,sea slug,1,9
+ZZ,565,Opisthopus transversus,1,Animalia,Arthropoda,Malacostraca,Decapoda,Pinnotheridae,Opisthopus,crab,301,Aplysia vaccaria,Animalia,Mollusca,Gastropoda,,Aplysiidae,Aplysia,sea slug,1,9
+ZZ,301,Aplysia vaccaria,1,Animalia,Mollusca,Gastropoda,,Aplysiidae,Aplysia,sea slug,617,Egregia menziesii,,Ochrophyta,Phaeophyceae,Laminariales,Lessioniaceae,Egregia,brown algae,,
