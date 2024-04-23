@@ -34,7 +34,13 @@ date: "2024-04-17"
  ✔ ONGOING: cross checking node list (working) and edge list and making sure both are ready for publication
   - **specifically making sure every node at least has a trophic strategy, even if it's unknown**
   - in **this markdown** I will be seeing how many of the nodes are not represented in the current edge list
-  - **might also use this markdown to code in some resources for generalist consumers**
+  - **will also use this markdown to code in some resources for generalist consumers**
+  - can definitely do this for
+    ✔ grazers
+    ✔ filter feeders
+    - deposit feeders
+    - detritivores
+    - scavengers
        
  • create code to incorporate GLOBI data into edgelist
   
@@ -88,10 +94,10 @@ edge_consumers <- edges %>%
   unite(numname, c(consumerNum, consumerName), sep = ".", remove = TRUE)
 
 # current working node list:
-nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_17apr24.csv")
+nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_22apr24.csv")
 
 nodes_redux <- nodes %>% 
-  select(id.x, species, life_stage, category, trophic_strategy, preys_on, parasitic_on, zone, habitat_notes) %>% 
+  select(id.x, species, life_stage, category, trophic_strategy, source, preys_on, parasitic_on, zone, habitat_notes) %>% 
   rename( consumerNum = id.x, 
           consumerName = species,
           consumerCat = category)
@@ -122,6 +128,7 @@ nodes_wo_edges2 <- anti_join(nodes_redux, edges_redux, by = join_by(consumerNum)
 #### starting with filter feeders
 ```{r filter feeder inferred links}
 
+# sort out just filter feeders
 filter_feeders <- nodes_wo_edges2 %>% 
   filter(trophic_strategy == "filter feeder") %>% 
   mutate(preys_on = "filtrate")
@@ -131,7 +138,7 @@ ff_prey <- read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/
   rename(resourceNum = id.x,
          resourceName = species,
          resourceCat = category) %>% 
-  mutate(preys_on = "filtrate")
+  mutate(preys_on = "filtrate") # just added this on so the join will work (needs a common column)
 
 ff_edges <- full_join(filter_feeders, ff_prey, by = join_by(preys_on)) %>% 
   # clean em up so they match the edge list and add in confidence, justifcation, etc
@@ -159,5 +166,168 @@ ff_edges <- full_join(filter_feeders, ff_prey, by = join_by(preys_on)) %>%
          date_added = "17-Apr-2024")  # today's date
   
 ```
+#### next we will do generalist grazers
 
- 
+```{r generalist grazer inferred links}
+
+# lots of non-generalists in this list so going to go through and make some manual edits to the edge list first 4/17/2024
+
+# sort out just grazers
+grazers <- nodes_wo_edges2 %>% 
+  filter(trophic_strategy == "grazer") %>% 
+  mutate(preys_on = "primary producers")
+
+grazer_prey <- read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "grazer_prey") %>% 
+  select(id.x, species, category) %>% 
+  rename(resourceNum = id.x,
+         resourceName = species,
+         resourceCat = category) %>% 
+  mutate(preys_on = "primary producers")
+
+grazer_edges <- full_join(grazers, grazer_prey, by = join_by(preys_on)) %>% 
+  # clean em up so they match the edge list and add in confidence, justifcation, etc
+  mutate(consumerStage = case_when( # make the life stages match the nice clean numbers in the edge list
+    life_stage == "adult" ~ 1,
+    life_stage == "big" ~1, 
+    life_stage == "juvenile" ~ 4 # i think default should be otherwise NA which is how I want it
+  )) %>% 
+  mutate(resourceStage = 1) %>%  # life stage for algae all adult, idk
+  select(consumerNum, consumerName, consumerCat, consumerStage, resourceNum, resourceName, resourceCat, resourceStage, zone) %>% 
+  # adding in all other columns necessary
+  mutate(intials = "ZZ_coded", .before = consumerNum) %>% 
+  mutate(interaction.type = 1,
+         confidence = 4, 
+         justification = 4,
+         incl.code = "",
+         ref_num = NA,
+         .before = zone) %>% 
+  mutate(pools_exposed = "both", # lots of conjecture here
+         epibiota_consumed = "yes",
+         notes = " ",
+         link.ID = "", # i'm going to manually fill in because i'm lazy
+         date_added = "18-Apr-2024")  # today's date
+  
+```
+
+
+#### next detritivores
+```{r detritivore inferred links}
+
+# sort out just detritivores
+detritivores <- nodes_wo_edges2 %>% 
+  filter(trophic_strategy == "detritivore") %>% 
+  mutate(preys_on = "dead stuff") # need to make it match
+
+detritivore_prey <- read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "scavenger_prey") %>% 
+  # but we want to remove the carrion and wrack
+  filter(species != "Carrion",
+         species != "Wrack") %>% 
+  select(id.x, species, category) %>% 
+  rename(resourceNum = id.x,
+         resourceName = species,
+         resourceCat = category) %>% 
+  mutate(preys_on = "dead stuff") # to match the other data frame
+
+detritivore_edges <- full_join(detritivores, detritivore_prey, by = join_by(preys_on)) %>% 
+  # clean em up so they match the edge list and add in confidence, justifcation, etc
+  mutate(consumerStage = case_when( # make the life stages match the nice clean numbers in the edge list
+    life_stage == "adult" ~ 1 # only adults in this list
+    # i think default should be otherwise NA which is how I want it
+  )) %>% 
+  mutate(resourceStage = NA) %>%  # no life stages in dead stuff!
+  select(consumerNum, consumerName, consumerCat, consumerStage, resourceNum, resourceName, resourceCat, resourceStage, zone) %>% 
+  # adding in all other columns necessary
+  mutate(intials = "ZZ_coded", .before = consumerNum) %>% 
+  mutate(interaction.type = 1,
+         confidence = 4, 
+         justification = 4,
+         incl.code = "",
+         ref_num = NA,
+         .before = zone) %>% 
+  mutate(pools_exposed = "pools", # lots of conjecture here
+         epibiota_consumed = "yes",
+         notes = " ",
+         link.ID = "", # i'm going to manually fill in because i'm lazy
+         date_added = "22-Apr-2024")  # today's date
+  
+```
+
+
+#### next scavengers
+```{r scavenger inferred links}
+
+# sort out just scavengers 
+scavengers <- nodes_wo_edges2 %>% 
+  filter(trophic_strategy == "scavenger") %>% 
+  mutate(preys_on = "dead stuff") # need to make it match
+
+scavenger_prey <- read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "scavenger_prey") %>% 
+  select(id.x, species, category) %>% 
+  rename(resourceNum = id.x,
+         resourceName = species,
+         resourceCat = category) %>% 
+  mutate(preys_on = "dead stuff") # to match the other data frame
+
+scavenger_edges <- full_join(scavengers, scavenger_prey, by = join_by(preys_on)) %>% 
+  # clean em up so they match the edge list and add in confidence, justifcation, etc
+  mutate(consumerStage = case_when( # make the life stages match the nice clean numbers in the edge list
+    life_stage == "adult" ~ 1 # only adults in this list
+    # i think default should be otherwise NA which is how I want it
+  )) %>% 
+  mutate(resourceStage = NA) %>%  # no life stages in dead stuff!
+  select(consumerNum, consumerName, consumerCat, consumerStage, resourceNum, resourceName, resourceCat, resourceStage, source, zone) %>% # in this one we're including source/reference
+  # adding in all other columns necessary
+  mutate(intials = "ZZ_coded", .before = consumerNum) %>% 
+  mutate(interaction.type = 1,
+         confidence = 1, # we're more confident in these
+         justification = 3,
+         incl.code = "",
+         .before = source) %>% 
+  rename(ref_num = source) %>% 
+  mutate(pools_exposed = "pools", # lots of conjecture here
+         epibiota_consumed = "yes",
+         notes = " ",
+         link.ID = "", # i'm going to manually fill in because i'm lazy
+         date_added = "22-Apr-2024")  # today's date
+  
+```
+
+#### next carnivores (their scavenging links only)
+```{r carnivore inferred links}
+
+# sort out just carns 
+carnivores <- nodes_wo_edges2 %>% 
+  filter(trophic_strategy == "carnivore (scavenger + predator)") %>% 
+  mutate(preys_on = "dead stuff") # need to make it match
+
+carnivore_prey <- read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Data/Food Web Data/DO NOT EDIT/RIZspeciesList_MASTER.xlsx", sheet = "scavenger_prey") %>% 
+  filter(species == "Carrion") %>%   # meat only bish
+  select(id.x, species, category) %>% 
+  rename(resourceNum = id.x,
+         resourceName = species,
+         resourceCat = category) %>% 
+  mutate(preys_on = "dead stuff") # to match the other data frame
+
+carnivore_edges <- full_join(carnivores, carnivore_prey, by = join_by(preys_on)) %>% 
+  # clean em up so they match the edge list and add in confidence, justifcation, etc
+  mutate(consumerStage = case_when( # make the life stages match the nice clean numbers in the edge list
+    life_stage == "adult" ~ 1 # only adults in this list
+    # i think default should be otherwise NA which is how I want it
+  )) %>% 
+  mutate(resourceStage = NA) %>%  # no life stages in dead stuff!
+  select(consumerNum, consumerName, consumerCat, consumerStage, resourceNum, resourceName, resourceCat, resourceStage, source, zone) %>% # in this one we're including source/reference
+  # adding in all other columns necessary
+  mutate(intials = "ZZ_coded", .before = consumerNum) %>% 
+  mutate(interaction.type = 1,
+         confidence = 1, # we're more confident in these
+         justification = 3,
+         incl.code = "",
+         .before = source) %>% 
+  rename(ref_num = source) %>% 
+  mutate(pools_exposed = "pools", # lots of conjecture here
+         epibiota_consumed = "yes",
+         notes = " ",
+         link.ID = "", # i'm going to manually fill in because i'm lazy
+         date_added = "22-Apr-2024")  # today's date
+  
+```
