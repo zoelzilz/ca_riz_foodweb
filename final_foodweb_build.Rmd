@@ -1,0 +1,186 @@
+---
+title: "final_foodweb"
+output: html_document
+date: "2024-04-23"
+---
+
+```{r packages, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#install.packages("igraph") 
+#install.packages("network") 
+#install.packages("sna")
+#install.packages("ggraph")
+#install.packages("visNetwork")
+#install.packages("threejs")
+#install.packages("networkD3")
+#install.packages("ndtv")
+#install.packages("tidyverse")
+#install.packages("NetIndices")
+#install.packages("cheddar")
+
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+```
+
+# Round One of Building: Generate Real Node List from Potential Node List Using Edge List
+## First import both datasets
+```{r import potential nodes and edge list}
+
+## nodes ##
+potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_23apr24.1.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy
+  rename(nodeNum = id.x)
+View(potential_nodes)
+
+#2340 nodes
+
+## edges ##
+edges_unclean <- read_csv("data/edges_frommaster_23apr2024.1.csv") %>% 
+  filter(!is.na(consumerNum)) %>% 
+  filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
+  filter(!is.na(resourceNum)) %>% 
+  filter(resourceNum != 0)  # removing consumers that I've already decided don't exist in the RIZ
+View(edges_unclean)
+
+```
+
+
+## Then build real node list using edges and bind it with metadata from potential node list
+```{r generate real node list from edges}
+
+# first pull out dataframe of just consumers and their IDs
+consumers_from_edgelist <- edges_unclean %>% 
+  select(consumerNum, consumerName) %>% 
+  rename(nodeNum = consumerNum,
+         nodeName = consumerName) # column names need to match resources df
+
+# then dataframe of just resources and their IDs
+resources_from_edgelist <- edges_unclean %>% 
+  select(resourceNum, resourceName) %>% 
+  rename(nodeNum = resourceNum,
+         nodeName = resourceName) # column names need to match consumers df
+
+# stack them with rbind
+all_nodes <- rbind(resources_from_edgelist, consumers_from_edgelist) %>% 
+  #unique() # this would be the way to get unique ROWS but we only want to get unique nodeNUMS
+  distinct(nodeNum, .keep_all = TRUE)
+  
+# got to this point in the code and realized that a lot of nodes in the edge list don't have id numbers even though they belong in the web, so leaving to manually fix those real quick
+# fixed and updated edge list to version .1
+
+# add attributes from potential nodes list
+all_nodes_w_attributes <- left_join(all_nodes, potential_nodes, by = join_by(nodeNum)) %>% 
+  select(!nodeName) # removing this column because it's actually often innacurate (old sp name, etc)
+
+### 1912 nodes, so about 400 in the list that didn't have any interactions. I can live with that
+
+```
+
+
+## Now we should clean up our node list based on some of the attributes
+### removing:
+####- rare species
+####- species whose commonality is listed as "not present" or "unclear"
+####- leaving "uncommon" and "unknown"
+
+```{r cleaning up node list}
+
+nodes_attributes_clean <- all_nodes_w_attributes %>% 
+  
+  # selecting nodes that are useful for end users
+  dplyr::select(nodeNum, species, alternate_nomenclature, category, common_name, range, life_stage, body_size_mm, n_s_both, commonality, source, zone, habitat_notes, solitary_aggregating_colonial, mobile_or_sessile, trophic_strategy, notes, node_type, node_resolution, aphia, kingdom, phylum, class, order, family, genus) %>% 
+  
+  # changing column names so they're more useful to end users
+  rename(synonymies = alternate_nomenclature,
+         organismal_category = category, 
+         province = n_s_both,
+         reference_justification = source) %>% 
+  
+# removing irrelevant species from node list
+  filter(commonality != "rare",
+         commonality != "very rare",
+         commonality != "not present",
+         commonality != "unclear")
+
+### down to 1658 reasonable nodes for the web
+
+```
+
+## Next step is to rebuild the edge list from our cleaned up node list, including relatively common species that are known to be present in the CA RIZ
+#### we only want consumers/resources and their links in the web if those consumers/resources are in our clean node list
+
+```{r rebuild edges from cleaned nodes}
+
+# starting with 10,028 edges #
+
+############# we will "filter" out unmatched consumers first #############
+
+# create a list of just the nodes we are allowed to KEEP (numbers only)
+consumerNums_keep <- nodes_attributes_clean %>% 
+  select(nodeNum) %>% 
+  rename(consumerNum = nodeNum) # to match consumerNum for joining
+
+# inner join lets us make a dataset that keeps only the nodeNums (if we join by node num) that are in BOTH datasets
+
+consumers_clean <- inner_join(consumerNums_keep, edges_unclean, by = join_by(consumerNum))
+
+# down to 8822 edges, we filtered out a lot of rares/not presents I guess!
+
+############# and finish but "filtering" out unmatched resources first ############# 
+
+# create a list of just the nodes we are allowed to KEEP (numbers only) - this dataset is identical to consumerNums_keep
+resourceNums_keep <- nodes_attributes_clean %>% 
+  select(nodeNum) %>% 
+  rename(resourceNum = nodeNum) # to match consumerNum for joining
+
+# inner join lets us make a dataset that keeps only the nodeNums (if we join by numbers) that are in BOTH datasets
+
+edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resourceNum)) # we can name this one edges_clean because we're done!
+
+# down to 8654 total edges... I'm guessing removing the "rare/not present" resources didn't cut as many because we really focused on nodes as consumers instead of nodes as diet items??
+```
+
+## We're going to take a pause to save these dataframes as CSVs for reproducability's sake
+```{r saving current working node list and edge list}
+
+write_csv(nodes_attributes_clean, "data/foodweb_V1/nodes_final_23apr2024.csv")
+
+write_csv(edges_clean, "data/foodweb_V1/edges_final_23apr2024.csv")
+
+```
+
+## Now we are going to further parse the edges down to only include trophic links, and to exclude parasites (for now)
+```{r trophic web no parasites}
+
+trophic_edges <- edges_clean %>% 
+  
+  filter(incl.code != 0, 
+         incl.code != 5, 
+         ) %>% # remove further interactions that we know occur outside the system (0s and 5s)
+  
+  # need to remove non-trophic interactions!
+  filter(interaction.type != 2, #epibiont
+         interaction.type !=9, #endocommensal
+         interaction.type !=10, #ectocommensal
+         interaction.type !=22, #mutualism
+         interaction.type !=28, #boring
+         interaction.type != 29) %>%  
+  dplyr::select(resourceNum,consumerNum,  interaction.type) %>%  # RESOURCE NUM HAS TO GO FIRST OR WEB IS UPSIDEDOWN
+  
+  # and finally we need to add a column coding for parasitic interaction or nah
+  mutate(parasitic = case_when(
+    interaction.type > 4 & interaction.type < 8 ~ "y",
+    interaction.type == 12 ~ "y",
+    interaction.type > 23 & interaction.type < 27 ~ "y", # we're calling sessile micropredation parasitic here
+    TRUE ~ "n"
+  ))
+
+```
+
