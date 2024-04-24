@@ -35,14 +35,14 @@ library(tidyverse)
 ```{r import potential nodes and edge list}
 
 ## nodes ##
-potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_23apr24.1.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy
+potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_24apr24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes
   rename(nodeNum = id.x)
 View(potential_nodes)
 
 #2340 nodes
 
 ## edges ##
-edges_unclean <- read_csv("data/edges_frommaster_23apr2024.1.csv") %>% 
+edges_unclean <- read_csv("data/edges_frommaster_24apr2024.csv") %>% # updated to 4/24 version because I had forgotten to include dissection data
   filter(!is.na(consumerNum)) %>% 
   filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
   filter(!is.na(resourceNum)) %>% 
@@ -57,13 +57,13 @@ View(edges_unclean)
 
 # first pull out dataframe of just consumers and their IDs
 consumers_from_edgelist <- edges_unclean %>% 
-  select(consumerNum, consumerName) %>% 
+  dplyr::select(consumerNum, consumerName) %>% 
   rename(nodeNum = consumerNum,
          nodeName = consumerName) # column names need to match resources df
 
 # then dataframe of just resources and their IDs
 resources_from_edgelist <- edges_unclean %>% 
-  select(resourceNum, resourceName) %>% 
+  dplyr::select(resourceNum, resourceName) %>% 
   rename(nodeNum = resourceNum,
          nodeName = resourceName) # column names need to match consumers df
 
@@ -77,7 +77,7 @@ all_nodes <- rbind(resources_from_edgelist, consumers_from_edgelist) %>%
 
 # add attributes from potential nodes list
 all_nodes_w_attributes <- left_join(all_nodes, potential_nodes, by = join_by(nodeNum)) %>% 
-  select(!nodeName) # removing this column because it's actually often innacurate (old sp name, etc)
+  dplyr::select(!nodeName) # removing this column because it's actually often innacurate (old sp name, etc)
 
 ### 1912 nodes, so about 400 in the list that didn't have any interactions. I can live with that
 
@@ -107,9 +107,9 @@ nodes_attributes_clean <- all_nodes_w_attributes %>%
   filter(commonality != "rare",
          commonality != "very rare",
          commonality != "not present",
-         commonality != "unclear")
+         commonality != "unclear") 
 
-### down to 1658 reasonable nodes for the web
+### down to 1680 reasonable nodes for the web
 
 ```
 
@@ -124,7 +124,7 @@ nodes_attributes_clean <- all_nodes_w_attributes %>%
 
 # create a list of just the nodes we are allowed to KEEP (numbers only)
 consumerNums_keep <- nodes_attributes_clean %>% 
-  select(nodeNum) %>% 
+  dplyr::select(nodeNum) %>% 
   rename(consumerNum = nodeNum) # to match consumerNum for joining
 
 # inner join lets us make a dataset that keeps only the nodeNums (if we join by node num) that are in BOTH datasets
@@ -133,11 +133,11 @@ consumers_clean <- inner_join(consumerNums_keep, edges_unclean, by = join_by(con
 
 # down to 8822 edges, we filtered out a lot of rares/not presents I guess!
 
-############# and finish but "filtering" out unmatched resources first ############# 
+############# and finish by "filtering" out unmatched resources ############# 
 
 # create a list of just the nodes we are allowed to KEEP (numbers only) - this dataset is identical to consumerNums_keep
 resourceNums_keep <- nodes_attributes_clean %>% 
-  select(nodeNum) %>% 
+  dplyr::select(nodeNum) %>% 
   rename(resourceNum = nodeNum) # to match consumerNum for joining
 
 # inner join lets us make a dataset that keeps only the nodeNums (if we join by numbers) that are in BOTH datasets
@@ -150,11 +150,33 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
 ## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
 ```{r saving current working node list and edge list}
 
-write_csv(nodes_attributes_clean, "data/foodweb_V1/nodes_final_23apr2024.csv")
+write_csv(nodes_attributes_clean, "data/foodweb_V2/nodes_final_24apr2024.csv")
 
-write_csv(edges_clean, "data/foodweb_V1/edges_final_23apr2024.csv")
+write_csv(edges_clean, "data/foodweb_V2/edges_final_24apr2024.csv")
 
 ```
+
+## Really quick, let's check if we're going to run into any messes with trophic levels by making sure all of the primary consumers have feeding links (e.g. resources)
+#### basically, we will cross check the consumer list with the resource list and make sure that the resources that AREN'T in the consumer list are all non-feeding organisms (primary producers, dead stuff, non feeding life stages)
+```{r cross checking}
+
+consumers <- edges_clean %>% 
+  dplyr::select(consumerNum, consumerName, consumerStage, consumerCat) %>% 
+  rename(num = consumerNum)
+
+resources <- edges_clean %>% 
+  dplyr::select(resourceNum, resourceName, resourceStage, resourceCat) %>% 
+  rename(num = resourceNum)
+
+resources_without_food <- anti_join(resources, consumers, by = join_by(num)) %>% # returns all rows in x without a match in y, so resources that don't have a match in consumers, right??
+  # returned a lot of duplicates oops so
+  unique()
+
+write_csv(resources_without_food, "data/nodes_needing_resources_24apr2024.csv")
+
+# welp, there are too many to ignore so BACK TO THE DRAWING BOARD 4/24/2024
+```
+
 
 ## Building the Web WITHOUT Parasites
 ### Now we are going to further parse the edges down to only include trophic links, and to exclude parasites (for now)
@@ -196,18 +218,10 @@ trophic_web_nopsites <- graph_from_data_frame(d= trophic_edges, # links
 deg <- igraph::degree(trophic_web_nopsites, mode = "all") 
 # put in later when we are editing graph vis
 
-# preliminary plot:
-plot(trophic_web_nopsites, edge.arrow.size=.1, vertex.size = 1, vertex.shape="none", vertex.label=V(trophic_web_nopsites)$species, 
-     vertex.label.font=2, vertex.label.color="gray40",
-     vertex.label.cex=.7, edge.color="gray85")
-
-# there's literally no point to this plot
-
 ```
-### Now we can analyze the web a little bit - using NetIndices package
-
-```{r netIndices for web metrics}
-
+### Now we can prep the web for visualization a little bit - using NetIndices package
+#### We can also use netindices to calculate trophic level, which will help us better plot our network graph
+```{r netIndices for trophic levels}
 library(NetIndices) # remember this masks select in dplyr
 
 # we can use igraph to pull an adjacency matrix from our igraph web object
@@ -218,13 +232,9 @@ RIZadjmatrix <- as_adjacency_matrix(trophic_web_nopsites,
 # following tutorial from 2013 :/ https://assemblingnetwork.wordpress.com/2013/07/01/network-basics-with-r-and-igraph-part-iii-of-iii/
  
 # Get the basic network indices from the matrices with GenInd()
-RIZindices <- GenInd(RIZadjmatrix) # running this takes forever so its ## out
+#RIZindices <- GenInd(RIZadjmatrix) # running this takes forever so its ## out
 
-RIZindices 
-```
-
-### We can also use netindices to calculate trophic level, which will help us better plot our network graph
-```{r netIndices for trophic levels}
+#RIZindices 
 # TrophInd() takes in an adjacency matrix and gives an output of the trophic level of each node,
 # as well as an index of the degree of omnivory for each node
  
@@ -237,9 +247,9 @@ trophic_level <- trophRIZ$TL # name this vector, we should be able to add it to 
 # This way, I can plot the food web nodes according to trophic height. I think that this adds greatly to a plot of a food web, since you can gain more information about the trophic structure of the web by simply glancing at the plot.
  
 # First we need to create a two-column matrix identifying the x and y values for each node.
-layout.matrix.1 <- matrix(nrow=length(V(net)), # Rows equal to the number of vertices
+layout.matrix.1 <- matrix(nrow=length(V(trophic_web_nopsites)), # Rows equal to the number of vertices
                         ncol=2)
-layout.matrix.1[,1] <- runif(length(V(net))) # randomly assign positions along x-axis (like jitter)
+layout.matrix.1[,1] <- runif(length(V(trophic_web_nopsites))) # randomly assign positions along x-axis (like jitter)
 layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
 
  
@@ -247,8 +257,8 @@ layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
  
 # par(mar=c(.1,.1,.1,.1),mfrow=c(1,2)) # wtf is this doing - parameterizing plot space maybe?
  
-rizvis <- plot.igraph(net,
-                      vertex.label = V(net)$label, # this is terrible syntax, but it works
+rizvis <- plot.igraph(trophic_web_nopsites,
+                      vertex.label = V(trophic_web_nopsites)$label, # this is terrible syntax, but it works
                       vertex.label.cex = .35,
                       vertex.size=3,
                       edge.arrow.size=.25,
@@ -260,3 +270,4 @@ rizvis <- plot.igraph(net,
 
 ```
 
+### Actually calculating indices using cheddar

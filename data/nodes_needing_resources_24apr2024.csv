@@ -1,0 +1,262 @@
+num,resourceName,resourceStage,resourceCat
+607,Phyllospadix torreyi,1,angiosperm
+607,Phyllospadix torreyi,1,sea grass
+608,Phyllospadix scouleri,1,angiosperm
+608,Phyllospadix scouleri,1,sea grass
+608,Phyllospadix scouleri,1,surfgrass
+1011,Pagurus armatus,1,hermit crab
+540,Pugettia gracilis,1,crab
+540,Pugettia gracilis,1,true crab
+645,Alaria marginata,1,brown algae
+645,Alaria marginata,1,algae
+2294,Bryopsis corticulans,1,green algae
+2294,Bryopsis corticulans,1,algae
+739,Dunaliella tertiolecta,1,phtyoplankton
+739,Dunaliella tertiolecta,1,phytoplankton
+739,Dunaliella tertiolecta,1,green algae
+1606,Marphysa sanguinea,1,polycheate
+7,Micrometrus minimus,1,fish
+127,Malacobdella grossa,1,nemertean
+587,Macrocystis pyrifera,1,NA
+587,Macrocystis pyrifera,1,algae
+587,Macrocystis pyrifera,1,brown algae
+99,Anthopleura xanthogrammica,1,anemone
+195,Diodora aspera,1,limpet
+2348,rotifers,6,microorganisms
+2348,rotifers,1,microorganism
+2348,rotifers,1,microorganisms
+655,Gelidium sp.,1,algae
+655,Gelidium sp.,1,red algae
+765,Pteroclaudia capillacea,1,algae
+765,Pterocladiella capillacea,1,red algae
+649,Eisenia arborea,1,algae
+649,Eisenia arborea,1,brown algae
+2378,Sargassum muticum,1,brown algae
+1596,Nereis eakini,1,polychaete
+2291,Zostera sp.,1,angiosperm
+2291,Zostera sp.,1,sea grass
+8,Atherinops affinis,1,fish
+617,Egregia menziesii,1,brown algae
+617,Egregia menziesii,1,algae
+617,Egregia menziesii,NA,brown algae
+234,Margarites pupillus,1,NA
+234,Margarites pupillus,1,topsnail
+234,Margarites pupillus,<7mm,snail
+234,Margarites pupillus,1,snail
+624,Laminaria sp.,1,algae
+624,Saccharina dentigera,1,brown algae
+624,Saccharina dentigera,1,algae
+419,Octopus rubescens,1,octopus
+419,Octopus rufescens,1,cephalopod
+2293,Porichthys notatus,1,fish
+627,Acanthinucella punctulata,4,snail
+316,Cuthona divae,1,nudibranch
+2286,Tubulovesicula sp.,1,trematode
+1595,Neanthes virens,1,annelid
+315,Felimida macfarlandi,1,nudibranch
+756,Bacteria,NA,microorganisms
+756,Bacteria,6,microorganism
+756,bacteria,1,microorganism
+756,Bacteria,1,microorganism
+771,Viruses,NA,microorganisms
+771,Viruses,6,microorganism
+771,Viruses,NA,microorganism
+771,Viruses,1,microorganism
+754,Zooplankton,NA,zooplankton
+754,Zooplankton,6,zooplankton
+754,Zooplankton,1,zooplankton
+753,Phytoplankton,NA,phytoplankton
+753,Phytoplankton,6,phytoplankton
+753,Phytoplankton,1,phytoplankton
+664,Plocamium violacium,1,algae
+664,Plocamium violaceum,1,red algae
+742,Gigartina canaliculata,1,algae
+742,Chondracanthus canaliculatus,1,red algae
+766,Rhodymenia lobata,1,algae
+766,Rhodymenia lobata,1,red algae
+642,fish eggs,2,gametes
+642,fish eggs,1,gametes
+743,Gigartina non-canaliculata,1,algae
+743,Gigartina non-canaliculata,1,red algae
+652,Sylvetia compressa,1,brown algae
+652,Sylvetia sp.,1,algae
+653,Hildenbrandia sp.,1,algae
+653,Hildenbrandia sp.,1,red algae
+654,Mastocarpus sp.,1,algae
+654,Mastocarpus sp.,1,red algae
+659,Mastocarpus papillatus,1,NA
+659,Mastocarpus papillatus,1,algae
+659,Mastocarpus papillatus,1,red algae
+663,Mazzaella laminarioides,1,algae
+663,Mazzaella laminarioides,1,red algae
+646,Mazzaella splendens,1,algae
+646,Mazzaella splendens,1,red algae
+650,Pelvetiopsis limitata,1,NA
+650,Pelvetiopsis limitata,1,brown algae
+650,Pelvetiopsis limitata,1,algae
+542,Pugettia dalli,1,true crab
+714,Porphyra sp.,1,algae
+714,Porphyra sp.,1,red algae
+770,Holoplankton (planktonic larvae),6,zooplankton
+770,Holoplankton (planktonic larvae),3,zooplankton
+770,Holoplankton (planktonic larvae),1,zooplankton
+749,Detritus,NA,dead stuff
+749,Detritus,1,dead stuff
+749,Detritus,na,dead stuff
+750,Carrion,NA,dead stuff
+750,carrion,NA,dead stuff
+750,Carrion,na,dead stuff
+750,Carrion,1,dead stuff
+751,Wrack,NA,algae
+751,Wrack,NA,dead stuff
+751,Wrack,1,dead stuff
+752,Mulm,NA,dead stuff
+752,Mulm,1,dead stuff
+758,small crustaceans,NA,zooplankton
+758,small crustaceans,6,microorganisms
+758,small crustaceans,NA,functional group
+758,small crustaceans,6,microorganism
+759,macroalgae,NA,algae
+759,macroalgae,1,algae
+759,macroalgae,NA,functional group
+755,microorganisms,NA,microorganisms
+755,Microorganisms,6,microorganism
+755,Microorganisms,6,microorganisms
+755,Microorganisms,1,microorganism
+1748,Octopus bimaculoides,NA,octopus
+1873,Haminoea virescens,1,snail
+553,Cancer oregonensis,1,true crab
+553,Cancer oregonensis,1,NA
+2090,Hexagrammos lagocephalus,1,fish
+11,Artedius fenestralis,1,fish
+2077,Artedius harringtoni,1,fish
+2086,Enophrys bison,1,fish
+2088,Hemilepidotus hemilepidotus,1,fish
+2097,Scorpaenichthys marmoratus,1,fish
+5,Amphistichus argenteus,1,fish
+2080,Cebidichthys violaceus,1,fish
+2089,Hemilepidotus spinosus,1,fish
+2094,Oligocottus snyderi,1,fish
+2103,Xiphister mucosus,1,fish
+2078,Artedius lateralis,1,fish
+1365,Chromopleustes lineatus,1,gammarid
+1354,Cryptodius kelleri,1,gammarid
+1406,Caprella equilibra,1,caprellid
+1012,Pagurus beringanus,1,hermit crab
+1012,Pagurus beringanus,1,NA
+1980,Solaster stimpsoni,1,asteroid
+2093,Oligocottus rubellio,1,fish
+2292,Pleurophycus gardneri,1,brown algae
+2292,Pleurophycus gardneri,1,algae
+2087,Enophrys bison,1,fish
+2296,Farlowia mollis,1,algae
+2296,Farlowia mollis,1,red algae
+643,Fucus distichus,1,brown algae
+643,Fucus distichus,1,algae
+2297,Griffithsia pacifica,1,red algae
+2298,Halosaccion glandiforme,1,algae
+2298,Halosaccion glandiforme,1,red algae
+784,Laminaria sinclairii,1,brown algae
+784,Laminaria sinclairii,1,algae
+2303,Lessoniopsis littoralis,1,brown algae
+2303,Lessoniopsis littoralis,1,algae
+2308,Lithothamnion sp.,1,coralline algae
+2309,Gigartina sp.,1,red algae
+2310,Lithophyllum sp.,1,coralline algae
+2305,Nereocystis luetkeana,1,brown algae
+2311,Petrocelis franciscana,1,coralline algae
+2312,Petrocelis haematis,1,coralline algae
+2313,Peyssonnelia sp.,1,red algae
+2314,Plocamium cartilagineum,1,red algae
+2315,Plocamium oregonum,1,red algae
+2316,Polysiphonia hendryi,1,red algae
+644,Postelsia palmaeformis,1,brown algae
+2317,Pterocladiella media,1,red algae
+2319,Rhizoclonium riparium,1,green algae
+2320,Rhodoglossum sp.,1,red algae
+2321,Odonthalia floccosa,1,red algae
+1454,Agaue californica,1,mite
+1455,Agaue variabilis,1,mite
+1448,Agauopsis curvata,1,mite
+1453,Agauopsis filirostris,1,mite
+1449,Agauopsis newelli,1,mite
+1456,Copidognathus curtus,1,mite
+1450,Halacarus magniporus,1,mite
+1457,Hyadesiid mites,1,mite
+2322,cyanobacteria,1,microorganism
+2323,coralline algae,1,coralline algae
+2076,Artedius corallinus,1,fish
+2084,Clinocottus recalvus,1,fish
+2085,Clinocottus spp.,1,fish
+2095,Oligocottus spp.,1,fish
+603,planktonic diatoms,6,phytoplankton
+603,planktonic diatoms,1,microalgae
+603,planktonic diatoms,1,phytoplankton
+603,planktonic diatoms,NA,phytoplankton
+2325,drift algae,NA,algae
+2325,drift algae,1,algae
+2325,drift algae,6,algae
+992,Pugettia producta,2,brooded invertebrate eggs
+2324,epiphytic diatoms,1,microalgae
+2324,epiphytic diatoms,NA,microalgae
+1469,Canace sp.,1,insect
+1469,Canace sp.,1,shore fly
+1470,Nocticanace arnaudi,1,insect
+2328,Canace sp.,2,insect
+2328,Canace sp.,2,shore fly
+2329,Canaceoides nudatus,2,insect
+2329,Canaceoides nudatus,2,beach fly
+2330,Nocticanace arnaudi,2,insect
+2330,Nocticanace arnaudi,2,shore fly
+2331,Chironomids,2,insect
+2331,Chironomids,2,midge
+2332,Coelopa (Fucomyia) frigida,2,insect
+2332,Coelopa (Fucomyia) frigida,2,kelp fly
+2333,Paraphrosylus praedator,2,insect
+2333,Paraphrosylus praedator,2,long legged fly
+2334,Oedoparena glauca,2,insect
+2334,Oedoparena glauca,2,fly
+2335,Dicranomyia (Idioglochina) marmorata,2,insect
+2335,Dicranomyia (Idioglochina) marmorata,2,crane fly
+2336,Sarcophagid flies,2,insect
+2336,Sarcophagid flies,2,carrion fly
+2337,Fucellia sp.,2,insect
+2337,Fucellia sp.,2,kelp fly
+2338,Foraminifera,6,microorganisms
+2338,Foraminifera,6,microorganism
+2338,Foraminifera,1,microorganisms
+2338,Foraminifera,1,microorganism
+1533,Thalasselephas testaceus,3,insect
+1533,Thalasselephas testaceus,3,NA
+1483,Cercyon fimbriatus,3,insect
+1483,Cercyon fimbriatus,3,NA
+1485,Cercyon luniger,3,insect
+1485,Cercyon luniger,3,NA
+1515,Liparocephalus cordicollis,3,insect
+1515,Liparocephalus cordicollis,3,NA
+2341,Alienacanthomysis macropsis,1,mysid
+2343,Holmesimysis costata,1,mysid
+2344,Holmesimysis sculpta,1,mysid
+2346,Nucella sp.,2,snail
+2347,nudibranch eggs,2,nudibranch
+2349,Pseudopotamilla occelata,2,polychaete
+616,Calliarthron cheilosporioides,1,coralline algae
+2350,Calliarthron tuberculosum,1,coralline algae
+1420,Perotripus brevis,1,caprellid
+2355,Prorocentrum micans,1,dinoflagellate
+611,Jania tenella,1,coralline algae
+612,Jania crassa,1,coralline algae
+610,Lithothrix aspergillum,1,corraline algae
+2306,Callithamnion sp.,1,red algae
+2377,Codium fragile californicum,1,green algae
+2374,fecal pellets,NA,dead stuff
+2374,fecal pellets,1,dead stuff
+651,Analipus japonicus,1,brown algae
+647,Ralfsia sp.,1,brown algae
+615,Bossiella orbigniana,1,corraline algae
+2307,Chaetomorpha sp.,1,green algae
+657,Chondracanthus exasperatus,1,red algae
+757,Free living ciliates,6,microorganisms
+1597,Nereis latescens,1,NA
+1598,Nereis pelagica,1,NA
+1599,Nereis procera,1,NA
