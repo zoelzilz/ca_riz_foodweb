@@ -1,0 +1,150 @@
+---
+title: "CA RIZ eDNA Food Web"
+output: html_document
+date: "2024-04-23"
+---
+
+```{r packages, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#install.packages("igraph") 
+#install.packages("network") 
+#install.packages("sna")
+#install.packages("ggraph")
+#install.packages("visNetwork")
+#install.packages("threejs")
+#install.packages("networkD3")
+#install.packages("ndtv")
+#install.packages("tidyverse")
+#install.packages("NetIndices")
+#install.packages("cheddar")
+
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+library(NetIndices)
+```
+
+# Round One of Building: Generate Real Node List from Potential eDNA Node List 
+## First import both datasets
+```{r import potential nodes and edge list}
+
+## Mary's eDNA nodes ##
+eDNA_species <- read_excel("data/MaryMcElroy_RIZeDNA/2021_eDNA_data.xlsx", sheet = "ASV") %>% 
+  dplyr::select(reads_sum, species, site) %>% 
+  mutate(clean_species = str_remove(species, "s__")) %>% # mary's species have a "s__" in front of them and a "_" between genus and sp.
+  mutate(clean_species = str_replace_all(clean_species, "_", " "))
+
+eDNA_nodes <- eDNA_species %>% # keep this separate from species list because we might subset species list later
+  distinct(clean_species, .keep_all = FALSE) %>%  # we can get rid of other columns for now
+  rename(species = clean_species)
+
+View(eDNA_species)
+View(eDNA_nodes)
+
+## full RIZ node list
+potential_nodes <- read_csv("data/foodweb_V1/nodes_final_23apr2024.csv")
+
+## edges ##
+# can just import super clean dataframe we made in final_foodweb_build
+edges <- read_csv("data/foodweb_V1/edges_final_23apr2024.csv")
+
+```
+
+### Create "real" node list by matching Mary's species list to our node list using inner join
+```{r inner join both node lists to add attributes like numbers}
+
+eDNA_nodes_attributes <- inner_join(potential_nodes, eDNA_nodes, by = join_by(species)) # make sure nodeNum is the first column, for igraph
+
+```
+
+### only 97 out of 213 eDNA results matched which is a bummer but oh well, let's see what we can do with it
+## Let's subset the web!
+```{r subset edges using eDNA nodes}
+
+############# we will "filter" out unmatched consumers first #############
+
+# create a list of just the nodes we are allowed to KEEP (numbers only)
+consumerNums_keep <- eDNA_nodes_attributes %>% 
+  dplyr::select(nodeNum) %>% 
+  rename(consumerNum = nodeNum) # to match consumerNum for joining
+
+# inner join lets us make a dataset that keeps only the nodeNums (if we join by node num) that are in BOTH datasets
+
+consumers_eDNA <- inner_join(consumerNums_keep, edges, by = join_by(consumerNum))
+
+############# and finish but "filtering" out unmatched resources  ############# 
+
+# create a list of just the nodes we are allowed to KEEP (numbers only) - this dataset is identical to consumerNums_keep
+resourceNums_keep <- eDNA_nodes_attributes %>% 
+  dplyr::select(nodeNum) %>% 
+  rename(resourceNum = nodeNum) # to match consumerNum for joining
+
+# inner join lets us make a dataset that keeps only the nodeNums (if we join by numbers) that are in BOTH datasets
+
+edges_eDNA <- inner_join(resourceNums_keep, consumers_eDNA, by = join_by(resourceNum)) # we can name this one edges_clean because we're done!
+
+# down to 86 total edges... a pretty simple web! 
+## I should make sure to double check everything
+```
+
+## Visualize a preliminary web
+
+```{r preliminary web graph}
+CA_eDNA_web <- graph_from_data_frame(d= edges_eDNA, # links
+                             vertices = eDNA_nodes_attributes, # nodes
+                             directed=T) # i think this makes sure consumers "point" to resources
+
+# we want to calculate degree to set the size of circles in the future:
+deg <- igraph::degree(CA_eDNA_web, mode = "all") 
+# put in later when we are editing graph vis
+
+# preliminary plot:
+plot(CA_eDNA_web, edge.arrow.size=.1, vertex.size = 1, vertex.shape="none", vertex.label=V(CA_eDNA_web)$species, 
+     vertex.label.font=2, vertex.label.color="gray40",
+     vertex.label.cex=.7, edge.color="gray85")
+
+# there's literally no point to this plot
+```
+```{r building a nicer web using igraph web}
+
+# build an adjacency matrix
+eDNA_matrix <- as_adjacency_matrix(CA_eDNA_web,
+                                    sparse = FALSE)
+
+# TrophInd() takes in an adjacency matrix and gives an output of the trophic level of each node,
+# as well as an index of the degree of omnivory for each node
+ 
+tl_eDNA<-TrophInd(eDNA_matrix) # vector of trophic indices I think
+trophic_level <- tl_eDNA$TL # and of just trophic levels
+
+# This way, I can plot the food web nodes according to trophic height
+
+# First we need to create a two-column matrix identifying the x and y values for each node, using the original igraph object
+layout.matrix.1 <- matrix(nrow=length(V(CA_eDNA_web)), # Rows equal to the number of vertices
+                        ncol=2)
+layout.matrix.1[,1] <- runif(length(V(CA_eDNA_web))) # randomly assign positions along x-axis (like jitter)
+layout.matrix.1[,2] <- trophic_level # y-axis value based on trophic level
+
+# Now we can use these matrices to define the layout instead of using the circle layout
+
+######## actually graphing #########
+
+edna_layout <- create_layout(CA_eDNA_web, layout = layout.matrix.1) # we constructed this layout.matrix.1 earlier by hand kinda using trophic levels
+# this code pretty much just appends the coordinates matrix to the web dataframe
+# later we use layout in place of the igraph object as the graph object
+
+eDNA <- ggraph(edna_layout) + 
+  geom_edge_link(aes(edge_color = "black")) +
+  geom_node_point(color = "gray30", aes(size = deg))+
+  geom_node_text(aes(label = species), size=3, color="gray50", repel=T)+
+  theme_void()
+
+```
+

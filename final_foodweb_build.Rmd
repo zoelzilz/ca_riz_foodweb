@@ -147,7 +147,7 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
 # down to 8654 total edges... I'm guessing removing the "rare/not present" resources didn't cut as many because we really focused on nodes as consumers instead of nodes as diet items??
 ```
 
-## We're going to take a pause to save these dataframes as CSVs for reproducability's sake
+## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
 ```{r saving current working node list and edge list}
 
 write_csv(nodes_attributes_clean, "data/foodweb_V1/nodes_final_23apr2024.csv")
@@ -156,8 +156,9 @@ write_csv(edges_clean, "data/foodweb_V1/edges_final_23apr2024.csv")
 
 ```
 
-## Now we are going to further parse the edges down to only include trophic links, and to exclude parasites (for now)
-```{r trophic web no parasites}
+## Building the Web WITHOUT Parasites
+### Now we are going to further parse the edges down to only include trophic links, and to exclude parasites (for now)
+```{r trophic links no parasites}
 
 trophic_edges <- edges_clean %>% 
   
@@ -181,6 +182,81 @@ trophic_edges <- edges_clean %>%
     interaction.type > 23 & interaction.type < 27 ~ "y", # we're calling sessile micropredation parasitic here
     TRUE ~ "n"
   ))
+
+```
+
+### time to put together into an igraph object
+```{r create igraph object}
+
+trophic_web_nopsites <- graph_from_data_frame(d= trophic_edges, # links
+                             vertices = nodes_attributes_clean, # nodes
+                             directed=T) # i think this makes sure consumers "point" to resources
+
+# we want to calculate degree to set the size of circles in the future:
+deg <- igraph::degree(trophic_web_nopsites, mode = "all") 
+# put in later when we are editing graph vis
+
+# preliminary plot:
+plot(trophic_web_nopsites, edge.arrow.size=.1, vertex.size = 1, vertex.shape="none", vertex.label=V(trophic_web_nopsites)$species, 
+     vertex.label.font=2, vertex.label.color="gray40",
+     vertex.label.cex=.7, edge.color="gray85")
+
+# there's literally no point to this plot
+
+```
+### Now we can analyze the web a little bit - using NetIndices package
+
+```{r netIndices for web metrics}
+
+library(NetIndices) # remember this masks select in dplyr
+
+# we can use igraph to pull an adjacency matrix from our igraph web object
+
+RIZadjmatrix <- as_adjacency_matrix(trophic_web_nopsites,
+                                    sparse = FALSE) # necessary to get a regular matrix, which we need for....
+
+# following tutorial from 2013 :/ https://assemblingnetwork.wordpress.com/2013/07/01/network-basics-with-r-and-igraph-part-iii-of-iii/
+ 
+# Get the basic network indices from the matrices with GenInd()
+RIZindices <- GenInd(RIZadjmatrix) # running this takes forever so its ## out
+
+RIZindices 
+```
+
+### We can also use netindices to calculate trophic level, which will help us better plot our network graph
+```{r netIndices for trophic levels}
+# TrophInd() takes in an adjacency matrix and gives an output of the trophic level of each node,
+# as well as an index of the degree of omnivory for each node
+ 
+trophRIZ<-TrophInd(RIZadjmatrix)
+#troph.otago.p<-TrophInd(otago.adjmatrix.p)
+
+trophic_level <- trophRIZ$TL # name this vector, we should be able to add it to the nodes
+
+# An interesting use for this trophic level function is to then use trophic level as a plotting parameter.
+# This way, I can plot the food web nodes according to trophic height. I think that this adds greatly to a plot of a food web, since you can gain more information about the trophic structure of the web by simply glancing at the plot.
+ 
+# First we need to create a two-column matrix identifying the x and y values for each node.
+layout.matrix.1 <- matrix(nrow=length(V(net)), # Rows equal to the number of vertices
+                        ncol=2)
+layout.matrix.1[,1] <- runif(length(V(net))) # randomly assign positions along x-axis (like jitter)
+layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
+
+ 
+# Now we can use these matrices to define the layout instead of using the circle layout
+ 
+# par(mar=c(.1,.1,.1,.1),mfrow=c(1,2)) # wtf is this doing - parameterizing plot space maybe?
+ 
+rizvis <- plot.igraph(net,
+                      vertex.label = V(net)$label, # this is terrible syntax, but it works
+                      vertex.label.cex = .35,
+                      vertex.size=3,
+                      edge.arrow.size=.25,
+                      layout=layout.matrix.1)
+ 
+# I am still working on the best way to plot the nodes along the x-axis. You may notice that using
+# runif() means that there is some chance that two nodes with the same trophic level
+# will be right on top of one another
 
 ```
 
