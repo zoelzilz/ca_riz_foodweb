@@ -73,7 +73,7 @@ Source,where did the report of this organism in the RIZ come from?,can include m
 ,,LS,Light and Smith,
 ,,PO,Personal observation,
 ,,OIMB,Oregon Institute of Marine Biology,
-,,PISCO,,
+,,PISCO,Partnership for the Interdisciplinary Study of Coastal Oceans,
 Zone,where is this organism located in the RIZ,"can be a range, using ""to"" or ""and""",,NEED
 ,,very low,,TO
 ,,low,,DEFINE

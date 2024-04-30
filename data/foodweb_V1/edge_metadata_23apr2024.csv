@@ -43,8 +43,8 @@ justification,what evidence do we have that this link exists,1,personal observat
 ,,12,inferred based on parasite presence and known life cycle,
 ,,13,GLOBI,
 confidence,how confident are we that this link exists,1,very certain,"applies when both species are known from CA, known to frequent RIZ, and reported or observed interacting"
-,,2,certain,applies when both species are known from CA but are reported to interact in a different part of the Eastern Pacific OR when interactions are reported at genus level and applied to all reasonable members of that genus
-,,3,somewhat certain,applies when both species are known from CA but are reported to interact at higher taxonomic levels than genus
+,,2,certain,"applies when both species are known from CA but are reported to interact in a different part of the Eastern Pacific OR when interactions are reported at genus level and applied to all reasonable members of that genus; if both simultaneously, then downgrade to confidence of 3"
+,,3,somewhat certain,applies when both species are known from CA but are reported to interact at higher taxonomic levels than genus OR when interaction is reported only from a lab setting
 ,,4,uncertain but plausible,"usually means link was assigned based on trophic strategy and one of the link assignment rules, e.g. the two nodes share habitat"
 ,,5,certain on interaction but uncertain whether parasitic or commensal,
 epibiota_consumed,"if this interaction occurs, is the consumer likely to ingest organisms that are epibiotic on the resource",yes,either this trophic interaction would result in any epibionts being consumed or the listed epibiont would be consumed with the host if it were consumed,

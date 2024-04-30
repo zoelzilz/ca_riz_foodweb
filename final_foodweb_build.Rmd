@@ -35,18 +35,27 @@ library(tidyverse)
 ```{r import potential nodes and edge list}
 
 ## nodes ##
-potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_24apr24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes
+potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_29apr24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links
   rename(nodeNum = id.x)
 View(potential_nodes)
 
 #2340 nodes
 
 ## edges ##
-edges_unclean <- read_csv("data/edges_frommaster_24apr2024.csv") %>% # updated to 4/24 version because I had forgotten to include dissection data
+edges_unclean <- read_csv("data/edges_frommaster_29apr2024.csv") %>% # updated to 4/24 version because I had forgotten to include dissection data
   filter(!is.na(consumerNum)) %>% 
   filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
   filter(!is.na(resourceNum)) %>% 
-  filter(resourceNum != 0)  # removing consumers that I've already decided don't exist in the RIZ
+  filter(resourceNum != 0) %>%  # removing consumers that I've already decided don't exist in the RIZ
+  
+  # I didn't always fill in include code because the default should be to include it, but I do need to filter OUT some
+  # unfortunately filtering also kicks out any NAs, so we need to replace those with 1s
+  mutate(incl.code = case_when(is.na(incl.code) ~ 1,
+                   .default = as.numeric(incl.code))) %>% 
+  # now we can remove links that don't belong in the riz web:
+  
+  filter(incl.code != 7 # interaction occurs outside RIZ
+         )
 View(edges_unclean)
 
 ```
@@ -79,7 +88,7 @@ all_nodes <- rbind(resources_from_edgelist, consumers_from_edgelist) %>%
 all_nodes_w_attributes <- left_join(all_nodes, potential_nodes, by = join_by(nodeNum)) %>% 
   dplyr::select(!nodeName) # removing this column because it's actually often innacurate (old sp name, etc)
 
-### 1912 nodes, so about 400 in the list that didn't have any interactions. I can live with that
+### 1912 nodes, so about 400 in the list that didn't have any interactions. I can live with that # update, I could not live with that so I fixed them
 
 ```
 
@@ -88,6 +97,7 @@ all_nodes_w_attributes <- left_join(all_nodes, potential_nodes, by = join_by(nod
 ### removing:
 ####- rare species
 ####- species whose commonality is listed as "not present" or "unclear"
+####- anything that I coded as "web enter code" 0 
 ####- leaving "uncommon" and "unknown"
 
 ```{r cleaning up node list}
@@ -95,7 +105,7 @@ all_nodes_w_attributes <- left_join(all_nodes, potential_nodes, by = join_by(nod
 nodes_attributes_clean <- all_nodes_w_attributes %>% 
   
   # selecting nodes that are useful for end users
-  dplyr::select(nodeNum, species, alternate_nomenclature, category, common_name, range, life_stage, body_size_mm, n_s_both, commonality, source, zone, habitat_notes, solitary_aggregating_colonial, mobile_or_sessile, trophic_strategy, notes, node_type, node_resolution, aphia, kingdom, phylum, class, order, family, genus) %>% 
+  dplyr::select(nodeNum, species, alternate_nomenclature, category, common_name, range,  body_size_mm, n_s_both, commonality, source, zone, habitat_notes, solitary_aggregating_colonial, mobile_or_sessile, trophic_strategy, notes, node_type, node_resolution, aphia, kingdom, phylum, class, order, family, genus, life_stage, web_enter_code) %>% 
   
   # changing column names so they're more useful to end users
   rename(synonymies = alternate_nomenclature,
@@ -103,11 +113,86 @@ nodes_attributes_clean <- all_nodes_w_attributes %>%
          province = n_s_both,
          reference_justification = source) %>% 
   
+  # we're going to use life stages from this list instead of the ones I coded into the links (because I made mistakes), but we need to replace them with numbers:
+
+  mutate(clean_stage = case_when(life_stage == "adult" ~ 1,
+                                 life_stage == "medusa" ~ 1,
+                                 life_stage == "big" ~ 1,
+                                 species == "Peachia quinquecapitata"& life_stage == "juvenile" ~ 1,
+                                 
+                                 life_stage == "egg" ~ 2,
+                                 life_stage == "eggs" ~2,
+                                 
+                                 # first stage larvae
+                                 life_stage == "juvenile" & order == "Isopoda" ~ 3,
+                                 life_stage == "juvenile" & order == "Amphipoda" ~ 3,
+                                 life_stage == "larva" & organismal_category == "fish" ~ 3,
+                                 life_stage == "larva" & organismal_category == "insect" ~ 3,
+                                 life_stage == "larva" & organismal_category == "sea spider" ~ 3,
+                                 life_stage == "larva" & organismal_category == "chiton" ~ 3, 
+                                 life_stage == "larva" & organismal_category == "anemone" ~ 3, 
+                                 life_stage == "procercoid" ~ 3,
+                                 life_stage == "cysticercoid" ~ 3,
+                                 life_stage == "cystacanth" ~ 3,
+                                 life_stage == "hatchling" ~ 3,
+                                 life_stage == "megalops" ~ 3,
+                                 
+                                 # second stage larvae
+                                 life_stage == "plerocercoid" ~ 4,
+                                 life_stage == "plerocercoid?" ~ 4,
+                                 life_stage == "juvenile" & organismal_category == "fish" ~ 4, 
+                                 life_stage == "juvenile" & str_detect(organismal_category, "snail") ~ 4, 
+                                 life_stage == "juvenile" & organismal_category == "chiton" ~ 4, 
+                                 life_stage == "juvenile" & organismal_category == "true crab" ~ 4, 
+                                 life_stage == "juvenile" & organismal_category == "lobster" ~ 4, 
+                                 life_stage == "juvenile" & organismal_category == "shark" ~ 4, 
+                                 life_stage == "juvenile" & organismal_category == "brittle star" ~ 4, 
+                                 life_stage == "juvenile" & organismal_category == "polychaete" ~ 4,
+                                 life_stage == "juvenile" & organismal_category == "chaetognath" ~ 4,
+                                 life_stage == "juvenile" & organismal_category == "acanthocephalan" ~ 4,
+                                 life_stage == "juvenile" & organismal_category == "leech" ~ 4,
+                                 life_stage == "pupae" ~ 4,
+                                 life_stage == "small" ~ 4,
+                                 life_stage == "young" ~ 4,
+                                 str_detect(species, "nematode_") ~ 4, # all the nematodes I found in dissections were in crustaceans
+                                 
+                                 # 3rd stage larvae
+                                 life_stage == "metacercaria" ~ 5,
+                                 life_stage == "metacercariae" ~ 5,
+                                 life_stage == "hydroid" ~ 5,
+                                 life_stage == "hydroid colony" ~ 5,
+                                 life_stage == "juvenile" & organismal_category == "barnacle" ~ 5,
+                                 life_stage == "juvenile" & organismal_category == "copepod" ~ 5,
+                                
+                                 
+                                 # these species are all L3 nematodes in fish
+                                 str_detect(species, "Phocanema") ~ 5,
+                                 species == "Anisakis sp." ~ 5,
+                                 species == "Contracaecum sp." ~ 5,
+                                 species == "Parafilaroides decorus" ~ 5,
+                                 
+                                 # multiple
+                                 life_stage == "multiple" ~ 6,
+                                 
+                                 # dead
+                                 is.na(life_stage) ~ 0, 
+                                 
+                                 .default = NA
+                                   )) %>% 
+  
+  
 # removing irrelevant species from node list
   filter(commonality != "rare",
          commonality != "very rare",
          commonality != "not present",
-         commonality != "unclear") 
+         commonality != "unclear") %>% 
+# finally removing anything with web_enter_code = 0 (my last minute way of excluding nodes)
+# unfortunately filtering also kicks out any NAs, so we need to replace those with 1s
+  mutate(web_enter_code = case_when(is.na(web_enter_code) ~ 1,
+                   .default = as.numeric(web_enter_code))) %>% 
+  # now we can remove nodes that don't belong in the riz web:
+  filter(web_enter_code != 0 # interaction occurs outside RIZ
+         )
 
 ### down to 1680 reasonable nodes for the web
 
@@ -124,12 +209,16 @@ nodes_attributes_clean <- all_nodes_w_attributes %>%
 
 # create a list of just the nodes we are allowed to KEEP (numbers only)
 consumerNums_keep <- nodes_attributes_clean %>% 
-  dplyr::select(nodeNum) %>% 
-  rename(consumerNum = nodeNum) # to match consumerNum for joining
+  dplyr::select(nodeNum, species, organismal_category, clean_stage) %>% # we want all three of these because we will be replacing what's in the web with them
+  rename(consumerNum = nodeNum,
+         consumerName = species,
+         consumerStage = clean_stage, 
+         consumerCat = organismal_category) # to match consumerNum for joining
 
 # inner join lets us make a dataset that keeps only the nodeNums (if we join by node num) that are in BOTH datasets
 
-consumers_clean <- inner_join(consumerNums_keep, edges_unclean, by = join_by(consumerNum))
+consumers_clean <- inner_join(consumerNums_keep, edges_unclean, by = join_by(consumerNum)) %>% 
+  select(!c(consumerName.y, consumerStage.y, consumerCat.y)) # keep the right versions of the node attributes
 
 # down to 8822 edges, we filtered out a lot of rares/not presents I guess!
 
@@ -137,12 +226,30 @@ consumers_clean <- inner_join(consumerNums_keep, edges_unclean, by = join_by(con
 
 # create a list of just the nodes we are allowed to KEEP (numbers only) - this dataset is identical to consumerNums_keep
 resourceNums_keep <- nodes_attributes_clean %>% 
-  dplyr::select(nodeNum) %>% 
-  rename(resourceNum = nodeNum) # to match consumerNum for joining
+  dplyr::select(nodeNum, species, organismal_category, clean_stage) %>% 
+  rename(resourceNum = nodeNum,
+         resourceName = species,
+         resourceStage = clean_stage,
+         resourceCat = organismal_category) # to match consumerNum for joining
 
 # inner join lets us make a dataset that keeps only the nodeNums (if we join by numbers) that are in BOTH datasets
 
-edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resourceNum)) # we can name this one edges_clean because we're done!
+edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resourceNum)) %>%  # we can name this one edges_clean because we're done!
+  
+  # we need to select out the edge list version of species name/life stage/category now:
+  select(!c(resourceName.y, resourceCat.y, resourceStage.y)) %>% 
+  
+  # and do some other housekeeping
+  select(!c(INITIALS, date_added)) %>% 
+  rename(
+         resourceName = resourceName.x,
+         resourceStage = resourceStage.x,
+         resourceCat = resourceCat.x,
+         
+         consumerName = consumerName.x,
+         consumerStage = consumerStage.x,
+         consumerCat = consumerCat.x
+         )
 
 # down to 8654 total edges... I'm guessing removing the "rare/not present" resources didn't cut as many because we really focused on nodes as consumers instead of nodes as diet items??
 ```
@@ -150,9 +257,9 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
 ## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
 ```{r saving current working node list and edge list}
 
-write_csv(nodes_attributes_clean, "data/foodweb_V2/nodes_final_24apr2024.csv")
+write_csv(nodes_attributes_clean, "data/foodweb_V2/nodes_final_30apr2024.csv")
 
-write_csv(edges_clean, "data/foodweb_V2/edges_final_24apr2024.csv")
+write_csv(edges_clean, "data/foodweb_V2/links_final_30apr2024.csv")
 
 ```
 
@@ -172,9 +279,10 @@ resources_without_food <- anti_join(resources, consumers, by = join_by(num)) %>%
   # returned a lot of duplicates oops so
   unique()
 
-write_csv(resources_without_food, "data/nodes_needing_resources_24apr2024.csv")
+#write_csv(resources_without_food, "data/nodes_needing_resources_29apr2024.csv")
 
 # welp, there are too many to ignore so BACK TO THE DRAWING BOARD 4/24/2024
+# as of 30 april, seems good, mostly eggs and algae
 ```
 
 
@@ -182,11 +290,7 @@ write_csv(resources_without_food, "data/nodes_needing_resources_24apr2024.csv")
 ### Now we are going to further parse the edges down to only include trophic links, and to exclude parasites (for now)
 ```{r trophic links no parasites}
 
-trophic_edges <- edges_clean %>% 
-  
-  filter(incl.code != 0, 
-         incl.code != 5, 
-         ) %>% # remove further interactions that we know occur outside the system (0s and 5s)
+trophic_links <- edges_clean %>% # swapping to "links" lingo because armand thinks it more intuitive, so fine
   
   # need to remove non-trophic interactions!
   filter(interaction.type != 2, #epibiont
@@ -205,12 +309,22 @@ trophic_edges <- edges_clean %>%
     TRUE ~ "n"
   ))
 
+free_living_links <- trophic_links %>% 
+  filter(parasitic == "n")
+
+# check for duplicate nodes before creating igraph:
+dupes <- nodes_attributes_clean%>% 
+  group_by(nodeNum) %>% 
+  filter(n()>1)
+
+# none, excellent
+
 ```
 
-### time to put together into an igraph object
+### time to put together trophic links into two igraph objects, one with parasites and one without
 ```{r create igraph object}
 
-trophic_web_nopsites <- graph_from_data_frame(d= trophic_edges, # links
+trophic_web_nopsites <- graph_from_data_frame(d= free_living_links, # links
                              vertices = nodes_attributes_clean, # nodes
                              directed=T) # i think this makes sure consumers "point" to resources
 
@@ -218,30 +332,38 @@ trophic_web_nopsites <- graph_from_data_frame(d= trophic_edges, # links
 deg <- igraph::degree(trophic_web_nopsites, mode = "all") 
 # put in later when we are editing graph vis
 
+
+trophic_web_psites <- graph_from_data_frame(d= trophic_links, # all links
+                             vertices = nodes_attributes_clean, # nodes
+                             directed=T) # i think this makes sure consumers "point" to resources
+
+# we want to calculate degree to set the size of circles in the future:
+deg_psites <- igraph::degree(trophic_web_psites, mode = "all") 
+# put in later when we are editing graph vis
+
 ```
 ### Now we can prep the web for visualization a little bit - using NetIndices package
 #### We can also use netindices to calculate trophic level, which will help us better plot our network graph
 ```{r netIndices for trophic levels}
+# following tutorial from 2013 :/ https://assemblingnetwork.wordpress.com/2013/07/01/network-basics-with-r-and-igraph-part-iii-of-iii/
 library(NetIndices) # remember this masks select in dplyr
 
 # we can use igraph to pull an adjacency matrix from our igraph web object
 
 RIZadjmatrix <- as_adjacency_matrix(trophic_web_nopsites,
                                     sparse = FALSE) # necessary to get a regular matrix, which we need for....
-
-# following tutorial from 2013 :/ https://assemblingnetwork.wordpress.com/2013/07/01/network-basics-with-r-and-igraph-part-iii-of-iii/
  
 # Get the basic network indices from the matrices with GenInd()
 #RIZindices <- GenInd(RIZadjmatrix) # running this takes forever so its ## out
 
 #RIZindices 
-# TrophInd() takes in an adjacency matrix and gives an output of the trophic level of each node,
-# as well as an index of the degree of omnivory for each node
+# TrophInd() takes in an adjacency matrix and gives an output of the trophic level of each node (TL)
+# as well as an index of the degree of omnivory for each node (OI)
  
 trophRIZ<-TrophInd(RIZadjmatrix)
-#troph.otago.p<-TrophInd(otago.adjmatrix.p)
 
 trophic_level <- trophRIZ$TL # name this vector, we should be able to add it to the nodes
+# takes a sec
 
 # An interesting use for this trophic level function is to then use trophic level as a plotting parameter.
 # This way, I can plot the food web nodes according to trophic height. I think that this adds greatly to a plot of a food web, since you can gain more information about the trophic structure of the web by simply glancing at the plot.
@@ -257,17 +379,114 @@ layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
  
 # par(mar=c(.1,.1,.1,.1),mfrow=c(1,2)) # wtf is this doing - parameterizing plot space maybe?
  
-rizvis <- plot.igraph(trophic_web_nopsites,
-                      vertex.label = V(trophic_web_nopsites)$label, # this is terrible syntax, but it works
-                      vertex.label.cex = .35,
-                      vertex.size=3,
-                      edge.arrow.size=.25,
-                      layout=layout.matrix.1)
+#rizvis <- plot.igraph(trophic_web_nopsites,
+#                      vertex.label = V(trophic_web_nopsites)$label, # this is terrible syntax, but it works
+#                      vertex.label.cex = .35,
+#                      vertex.size=3,
+#                      edge.arrow.size=.25,
+#                      layout=layout.matrix.1)
  
 # I am still working on the best way to plot the nodes along the x-axis. You may notice that using
 # runif() means that there is some chance that two nodes with the same trophic level
 # will be right on top of one another
 
+########## repeat for parasite inclusive web #########
+RIZadjmatrix_psites <- as_adjacency_matrix(trophic_web_psites,
+                                    sparse = FALSE) # necessary to get a regular matrix, which we need for....
+ 
+trophRIZ_psites<-TrophInd(RIZadjmatrix_psites)
+
+trophic_level_psites <- trophRIZ_psites$TL # name this vector, we should be able to add it to the nodes
+# takes a sec
+
+# First we need to create a two-column matrix identifying the x and y values for each node.
+layout.matrix.1.p <- matrix(nrow=length(V(trophic_web_psites)), # Rows equal to the number of vertices
+                        ncol=2)
+layout.matrix.1.p[,1] <- runif(length(V(trophic_web_psites))) # randomly assign positions along x-axis (like jitter)
+layout.matrix.1.p[,2] <- trophRIZ_psites$TL # y-axis value based on trophic level
+
 ```
+
+### Finally we can make nice figures
+Here's the new figure with different colored nodes and links based on interaction type
+```{r pretty network graphs}
+
+# fuck igraph, the syntax is poop. let's try with ggplot
+library(ggraph)
+
+trophic_layout <- create_layout(trophic_web_nopsites, #igraph object
+                                layout = layout.matrix.1) # we constructed this layout.matrix.1 earlier by hand kinda using trophic levels
+# later we use trophic_layout in place of "trophic_web" as the graph object
+
+web_freeliving <- ggraph(trophic_layout) + 
+  geom_edge_link(aes(edge_color = interaction.type)) +
+  #scale_edge_color_manual(values = c(3 = "green",
+  #                                   1 = "red",
+  #                                   30 = "grey"))+
+
+  geom_node_point(aes(size = deg, # size of nodes based on number of links
+                      color = trophic_strategy
+                      ))+
+  
+  scale_color_manual(values = c("grazer" = "darkgreen",
+                                "micropredator" = "pink",
+                                "non-feeding" = "grey",
+                                "various (assemblage)" = "grey",
+                                "detritivore" = "tan",
+                                "scavenger" = "tan",
+                                "deposit feeder" = "tan",
+                                "filter feeder" = "blue",
+                                "primary producer" = "limegreen",
+                                "mixotroph" = "limegreen",
+                                "omnivore" = "orange",
+                                "typical predator" = "red",
+                                "carnivore (scavenger + predator)" = "red"))+
+  geom_node_text(aes(label = species), size=3, color="gray50", repel=T)+
+  theme_void()
+
+```
+
+ 
+### Let's Make it pretty and interactive using visNetwork
+```{r visNetwork}
+library(visNetwork)
+
+# before attempting this step, we need to remove all non-UTF8 characters from the entire dataset
+# perhaps like this?
+# didn't work
+#nodes_utf <- nodes %>%
+#    mutate_at(vars(species, lifestage, category), function(x){gsub('[^ -~]', '', x)}) #function states that for every cell x, if it contains one of these, delete it? i guess?
+
+# also - the node data frame needs to have an id column, and the link data needs to have from and to columns denoting the start and end of each tie.
+
+links2 <- links %>% 
+  rename(to = consumerNum) %>% 
+  rename(from = resourceNum) #right?
+
+nodes2 <- nodes %>% 
+  mutate(degree = deg) %>%  # swe calculated deg a while ago, now added it to df
+  mutate(trophic = trophic_level)
+
+
+
+visNetwork(nodes2, links2, width= "100%")
+
+# now lets get fancy!! copied from tutorial
+
+vis.nodes <- nodes2 #necessary?
+vis.links <- links2
+
+vis.nodes$shape  <- "dot"  
+vis.nodes$shadow <- TRUE # Nodes will drop shadow
+vis.nodes$title  <- vis.nodes$Name # Text on click
+#vis.nodes$label  <- vis.nodes$type.label # Node label # for our purposes, redundant with text on click. can add type.label later
+vis.nodes$size   <- vis.nodes$degree # Node size - will calculate degree later and use this to determine node size
+vis.nodes$borderWidth <- 2 # Node border width
+
+visNetwork(vis.nodes, vis.links, width = "100%")
+  visIgraphLayout(layout = layout.matrix.1)
+
+```
+
 
 ### Actually calculating indices using cheddar
