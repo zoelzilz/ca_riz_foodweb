@@ -37,7 +37,7 @@ library(tidyverse)
 ## nodes ##
 potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_29apr24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links
   rename(nodeNum = id.x)
-View(potential_nodes)
+#View(potential_nodes)
 
 #2340 nodes
 
@@ -56,7 +56,7 @@ edges_unclean <- read_csv("data/edges_frommaster_29apr2024.csv") %>% # updated t
   
   filter(incl.code != 7 # interaction occurs outside RIZ
          )
-View(edges_unclean)
+#View(edges_unclean)
 
 ```
 
@@ -324,14 +324,7 @@ dupes <- nodes_attributes_clean%>%
 ### time to put together trophic links into two igraph objects, one with parasites and one without
 ```{r create igraph object}
 
-trophic_web_nopsites <- graph_from_data_frame(d= free_living_links, # links
-                             vertices = nodes_attributes_clean, # nodes
-                             directed=T) # i think this makes sure consumers "point" to resources
-
-# we want to calculate degree to set the size of circles in the future:
-deg <- igraph::degree(trophic_web_nopsites, mode = "all") 
-# put in later when we are editing graph vis
-
+######## w/ parasites first #########
 
 trophic_web_psites <- graph_from_data_frame(d= trophic_links, # all links
                              vertices = nodes_attributes_clean, # nodes
@@ -339,6 +332,20 @@ trophic_web_psites <- graph_from_data_frame(d= trophic_links, # all links
 
 # we want to calculate degree to set the size of circles in the future:
 deg_psites <- igraph::degree(trophic_web_psites, mode = "all") 
+# put in later when we are editing graph vis
+
+########## no parasites
+
+#nodes_nopsites <- nodes_attributes_clean %>% 
+#  filter(!str_detect(trophic_strategy, "parasit")) %>% 
+#  filter(!trophic_strategy == "pathogen")
+
+#trophic_web_nopsites <- graph_from_data_frame(d= free_living_links, # links
+#                             vertices = nodes_nopsites, # nodes
+#                             directed=T) # i think this makes sure consumers "point" to resources
+
+# we want to calculate degree to set the size of circles in the future:
+#deg <- igraph::degree(trophic_web_nopsites, mode = "all") 
 # put in later when we are editing graph vis
 
 ```
@@ -350,7 +357,7 @@ library(NetIndices) # remember this masks select in dplyr
 
 # we can use igraph to pull an adjacency matrix from our igraph web object
 
-RIZadjmatrix <- as_adjacency_matrix(trophic_web_nopsites,
+RIZadjmatrix <- as_adjacency_matrix(trophic_web_psites,
                                     sparse = FALSE) # necessary to get a regular matrix, which we need for....
  
 # Get the basic network indices from the matrices with GenInd()
@@ -369,9 +376,9 @@ trophic_level <- trophRIZ$TL # name this vector, we should be able to add it to 
 # This way, I can plot the food web nodes according to trophic height. I think that this adds greatly to a plot of a food web, since you can gain more information about the trophic structure of the web by simply glancing at the plot.
  
 # First we need to create a two-column matrix identifying the x and y values for each node.
-layout.matrix.1 <- matrix(nrow=length(V(trophic_web_nopsites)), # Rows equal to the number of vertices
+layout.matrix.1 <- matrix(nrow=length(V(trophic_web_psites)), # Rows equal to the number of vertices
                         ncol=2)
-layout.matrix.1[,1] <- runif(length(V(trophic_web_nopsites))) # randomly assign positions along x-axis (like jitter)
+layout.matrix.1[,1] <- runif(length(V(trophic_web_psites))) # randomly assign positions along x-axis (like jitter)
 layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
 
  
@@ -390,22 +397,105 @@ layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
 # runif() means that there is some chance that two nodes with the same trophic level
 # will be right on top of one another
 
-########## repeat for parasite inclusive web #########
-RIZadjmatrix_psites <- as_adjacency_matrix(trophic_web_psites,
-                                    sparse = FALSE) # necessary to get a regular matrix, which we need for....
+########## repeat for NO parasite  web #########
+#RIZadjmatrix_nopsites <- as_adjacency_matrix(trophic_web_nopsites,
+#                                    sparse = FALSE) # necessary to get a regular matrix, which we need for....
  
-trophRIZ_psites<-TrophInd(RIZadjmatrix_psites)
+#trophRIZ_nopsites<-TrophInd(RIZadjmatrix_nopsites)
 
-trophic_level_psites <- trophRIZ_psites$TL # name this vector, we should be able to add it to the nodes
+#trophic_level_nopsites <- trophRIZ_nopsites$TL # name this vector, we should be able to add it to the nodes
 # takes a sec
 
 # First we need to create a two-column matrix identifying the x and y values for each node.
-layout.matrix.1.p <- matrix(nrow=length(V(trophic_web_psites)), # Rows equal to the number of vertices
-                        ncol=2)
-layout.matrix.1.p[,1] <- runif(length(V(trophic_web_psites))) # randomly assign positions along x-axis (like jitter)
-layout.matrix.1.p[,2] <- trophRIZ_psites$TL # y-axis value based on trophic level
+#layout.matrix.1.np <- matrix(nrow=length(V(trophic_web_nopsites)), # Rows equal to the number of vertices
+#                        ncol=2)
+#layout.matrix.1.np[,1] <- runif(length(V(trophic_web_nopsites))) # randomly assign positions along x-axis (like jitter)
+#layout.matrix.1.np[,2] <- trophRIZ_psites$TL # y-axis value based on trophic level
 
 ```
+
+### Let's Make it interactive so we can explore using visNetwork or networkD3
+```{r visNetwork}
+library(visNetwork)
+library(networkD3)
+
+######### VISNETWORK #########
+
+# first going to try to plot the igraph object using visNetwork, which is apparently still experimental
+#visIgraph(trophic_web_psites)
+
+# also - the node data frame needs to have an id column, and the link data needs to have from and to columns denoting the start and end of each tie.
+
+trophic_links2 <- trophic_links %>% 
+  rename(to = consumerNum) %>% 
+  rename(from = resourceNum) #right?
+
+nodes2 <- nodes_attributes_clean %>% 
+  rename(id = nodeNum) %>% 
+  mutate(degree = deg_psites) %>%  # swe calculated deg a while ago, now added it to df
+  mutate(trophic = trophic_level)
+
+
+
+#visNetwork(nodes2, trophic_links2, width= "100%") %>% 
+#  visPhysics(enabled = FALSE)
+
+# now lets get fancy!! copied from tutorial
+
+vis.nodes <- nodes2 #necessary?
+vis.links <- trophic_links2
+
+vis.nodes$shape  <- "dot"  
+vis.nodes$shadow <- TRUE # Nodes will drop shadow
+vis.nodes$title  <- vis.nodes$species # Text on click is species name
+#vis.nodes$label  <- vis.nodes$type.label # Node label # for our purposes, redundant with text on click. can add type.label later
+vis.nodes$size   <- vis.nodes$degree # Node size - will calculate degree later and use this to determine node size
+vis.nodes$borderWidth <- 2 # Node border width
+
+# mutate in a column for color
+vis.nodes <- vis.nodes %>% 
+  mutate(color = case_when(trophic_strategy == "grazer" ~ "darkgreen",
+                           trophic_strategy == "micropredator" ~ "pink",
+                           trophic_strategy ==   "non-feeding" ~ "grey",
+                           trophic_strategy ==     "various (assemblage)" ~ "grey",
+                           trophic_strategy ==     "detritivore" ~ "tan",
+                           trophic_strategy ==     "scavenger" ~ "tan",
+                           trophic_strategy ==     "deposit feeder" ~ "tan",
+                           trophic_strategy ==   "filter feeder" ~ "blue",
+                           trophic_strategy ==     "primary producer" ~ "limegreen",
+                           trophic_strategy ==     "mixotroph" ~ "limegreen",
+                           trophic_strategy ==     "omnivore" ~ "orange",
+                           trophic_strategy ==     "typical predator" ~ "purple",
+                           trophic_strategy ==     "carnivore (scavenger + predator)" ~ "purple",
+                           trophic_strategy ==     "parasite" ~ "red",
+                           trophic_strategy ==     "ectoparasite" ~ "red",
+                           trophic_strategy ==     "pathogen" ~ "red",
+                           trophic_strategy ==    "parasitic castrator" ~ "red",
+                           .default = "black"))
+
+visNetwork(vis.nodes, vis.links, width = "2000px", height = "2000px") %>% 
+  visPhysics(enabled = FALSE) %>% 
+  visIgraphLayout(layout = "layout.norm", layoutMatrix = layout.matrix.1)  # woo this one worked! but it's upsidedown
+  #visIgraphLayout(layout = "layout_nicely")
+  #visHierarchicalLayout() this layout crashes R
+  #visIgraphLayout(layout = trophic_layout) # not currently working because our custom layout matrix is not an igraph layout
+
+```
+
+```{r networkD3}
+
+############ NETWORK D3 ############
+
+
+```
+
+
+### Found a new package called metanetwork, let's play with that
+```{r}
+install.packages("metanetwork")
+library(metanetwork)
+```
+
 
 ### Finally we can make nice figures
 Here's the new figure with different colored nodes and links based on interaction type
@@ -414,79 +504,46 @@ Here's the new figure with different colored nodes and links based on interactio
 # fuck igraph, the syntax is poop. let's try with ggplot
 library(ggraph)
 
-trophic_layout <- create_layout(trophic_web_nopsites, #igraph object
+######## full web first ########
+
+trophic_layout <- create_layout(trophic_web_psites, #igraph object
                                 layout = layout.matrix.1) # we constructed this layout.matrix.1 earlier by hand kinda using trophic levels
 # later we use trophic_layout in place of "trophic_web" as the graph object
 
-web_freeliving <- ggraph(trophic_layout) + 
+web_full <- ggraph(trophic_layout) + 
   geom_edge_link(aes(edge_color = interaction.type)) +
   #scale_edge_color_manual(values = c(3 = "green",
   #                                   1 = "red",
   #                                   30 = "grey"))+
 
-  geom_node_point(aes(size = deg, # size of nodes based on number of links
+  geom_node_point(aes(size = deg_psites, # size of nodes based on number of links
                       color = trophic_strategy
                       ))+
   
-  scale_color_manual(values = c("grazer" = "darkgreen",
-                                "micropredator" = "pink",
-                                "non-feeding" = "grey",
-                                "various (assemblage)" = "grey",
-                                "detritivore" = "tan",
-                                "scavenger" = "tan",
-                                "deposit feeder" = "tan",
-                                "filter feeder" = "blue",
-                                "primary producer" = "limegreen",
-                                "mixotroph" = "limegreen",
-                                "omnivore" = "orange",
-                                "typical predator" = "red",
-                                "carnivore (scavenger + predator)" = "red"))+
+  #scale_color_manual(values = c("grazer" = "darkgreen",
+   #                             "micropredator" = "pink",
+   #                            "non-feeding" = "grey",
+   #                             "various (assemblage)" = "grey",
+   #                             "detritivore" = "tan",
+   #                             "scavenger" = "tan",
+   #                             "deposit feeder" = "tan",
+    #                            "filter feeder" = "blue",
+  #                              "primary producer" = "limegreen",
+  #                              "mixotroph" = "limegreen",
+  #                              "omnivore" = "orange",
+  #                              "typical predator" = "purple",
+  #                              "carnivore (scavenger + predator)" = "purple",
+  #                              "parasite" = "red",
+  #                              "ectoparasite" = "red",
+  #                              "pathogen" = "red",
+   #                             "parasitic castrator" = "red"))+
   geom_node_text(aes(label = species), size=3, color="gray50", repel=T)+
   theme_void()
 
 ```
 
  
-### Let's Make it pretty and interactive using visNetwork
-```{r visNetwork}
-library(visNetwork)
 
-# before attempting this step, we need to remove all non-UTF8 characters from the entire dataset
-# perhaps like this?
-# didn't work
-#nodes_utf <- nodes %>%
-#    mutate_at(vars(species, lifestage, category), function(x){gsub('[^ -~]', '', x)}) #function states that for every cell x, if it contains one of these, delete it? i guess?
-
-# also - the node data frame needs to have an id column, and the link data needs to have from and to columns denoting the start and end of each tie.
-
-links2 <- links %>% 
-  rename(to = consumerNum) %>% 
-  rename(from = resourceNum) #right?
-
-nodes2 <- nodes %>% 
-  mutate(degree = deg) %>%  # swe calculated deg a while ago, now added it to df
-  mutate(trophic = trophic_level)
-
-
-
-visNetwork(nodes2, links2, width= "100%")
-
-# now lets get fancy!! copied from tutorial
-
-vis.nodes <- nodes2 #necessary?
-vis.links <- links2
-
-vis.nodes$shape  <- "dot"  
-vis.nodes$shadow <- TRUE # Nodes will drop shadow
-vis.nodes$title  <- vis.nodes$Name # Text on click
-#vis.nodes$label  <- vis.nodes$type.label # Node label # for our purposes, redundant with text on click. can add type.label later
-vis.nodes$size   <- vis.nodes$degree # Node size - will calculate degree later and use this to determine node size
-vis.nodes$borderWidth <- 2 # Node border width
-
-visNetwork(vis.nodes, vis.links, width = "100%")
-  visIgraphLayout(layout = layout.matrix.1)
-
-```
 
 
 ### Actually calculating indices using cheddar
