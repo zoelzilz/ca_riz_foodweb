@@ -1,0 +1,56 @@
+---
+title: "Sanak Foodweb Incorporation"
+output: html_notebook
+---
+```{r packages}
+
+library(tidyverse)
+
+```
+
+#Sanak Archipelago Food Web from:
+### Dunne, J. A., Maschner, H., Betts, M. W., Huntly, N., Russell, R., Williams, R. J., & Wood, S. A. (2016). The roles and impacts of human hunter-gatherers in North Pacific marine food webs. Scientific Reports, 6(1), Article 1. https://doi.org/10.1038/srep21179
+
+```{r import sanak data and my data}
+
+## my node list
+ca_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_28may24.csv") %>% 
+  rename(Name = species,
+         ca_id = id.x) # so it matches name
+
+# sanak node list 
+
+sanak_nodes_all <- read_csv("data/sanak_web/sanak_nodelist.csv") %>% 
+  rename(sanak_id = ID)
+
+sanak_nodes_iz <- sanak_nodes_all %>% 
+  filter(habitat == "intertidal")
+
+# sanak iz web
+sanak_iz <- read_csv("data/sanak_web/sanak_iz_links.csv")
+
+# might include sanak subtidal web later
+
+
+```
+## Step 1: Wrangle sanak nodes so they match my nodes
+```{r node wrangling}
+
+# first start by keeping species in my list that are present in sanak list
+matched_species <- inner_join(sanak_nodes_iz, ca_nodes, by = join_by(Name))
+
+```
+
+## Step 2: Wrangling the sanak links to match my nodes
+```{r link wrangling}
+# make a version of the matched species list to join with the link list (need to make sure IDs can bind)
+
+# first for consumers
+consumers_to_match <- matched_species %>% 
+  rename(Consumer = sanak_id)  # ID column name in link list
+
+consumers_all_data <- inner_join(sanak_iz, consumers_to_match, by = join_by(Consumer))
+  
+
+```
+

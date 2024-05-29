@@ -49,11 +49,13 @@ View(eDNA_species)
 View(eDNA_nodes)
 
 ## full RIZ node list
-potential_nodes <- read_csv("data/foodweb_V1/nodes_final_23apr2024.csv")
+#potential_nodes <- read_csv("data/foodweb_V1/nodes_final_23apr2024.csv")
+potential_nodes <- read_csv("data/foodweb_V3/nodes_final_3may2024.csv")
 
 ## edges ##
 # can just import super clean dataframe we made in final_foodweb_build
-edges <- read_csv("data/foodweb_V1/edges_final_23apr2024.csv")
+#edges <- read_csv("data/foodweb_V1/edges_final_23apr2024.csv")
+edges <- read_csv("data/foodweb_V3/links_final_3may2024.csv")
 
 ```
 
@@ -102,7 +104,7 @@ CA_eDNA_web <- graph_from_data_frame(d= edges_eDNA, # links
                              directed=T) # i think this makes sure consumers "point" to resources
 
 # we want to calculate degree to set the size of circles in the future:
-deg <- igraph::degree(CA_eDNA_web, mode = "all") 
+deg <- igraph::degree(CA_eDNA_web, mode = "all")
 # put in later when we are editing graph vis
 
 # preliminary plot:
@@ -112,6 +114,8 @@ plot(CA_eDNA_web, edge.arrow.size=.1, vertex.size = 1, vertex.shape="none", vert
 
 # there's literally no point to this plot
 ```
+
+
 ```{r building a nicer web using igraph web}
 
 # build an adjacency matrix
@@ -148,3 +152,64 @@ eDNA <- ggraph(edna_layout) +
 
 ```
 
+```{r visNetwork}
+library(visNetwork)
+library(networkD3)
+
+######### VISNETWORK #########
+
+# need two data frames, vis.links and vis.nodes
+
+# we will create them from elements of the igraph object, for the utmost consistency
+
+# also - the node data frame needs to have an id column, and the link data needs to have from and to columns denoting the start and end of each tie.
+
+vis.links <- igraph::as_data_frame(CA_eDNA_web, what = "edges") # edges are links; this code has renamed the columns correctly for us, what luck!
+  
+vis.nodes <- igraph::as_data_frame(CA_eDNA_web, what = "vertices")%>% # vertices are nodes
+  rename(id = name) %>% 
+  mutate(degree = deg + 1) %>%  # we calculated deg a while ago, now added it to df, it should match?!
+  mutate(trophic = trophic_level) # should also match?? since it was created from the same list in the same order i fycjking hope
+
+######## now lets get fancy!! copied from tutorial ##########
+
+vis.nodes$shape  <- "dot"  
+vis.nodes$shadow <- TRUE # Nodes will drop shadow
+vis.nodes$title  <- vis.nodes$species # Text on click is species name
+vis.nodes$label  <- vis.nodes$trophic # Node label # shows up all the time, we don't want that
+vis.nodes$size   <- vis.nodes$degree # use degree to determine node size
+vis.nodes$borderWidth <- 2 # Node border width
+
+# mutate in a column for color
+vis.nodes <- vis.nodes %>% 
+  mutate(color = case_when(trophic_strategy == "grazer" ~ "darkgreen",
+                           trophic_strategy == "micropredator" ~ "pink",
+                           trophic_strategy ==   "non-feeding" ~ "grey",
+                           trophic_strategy ==     "various (assemblage)" ~ "grey",
+                           trophic_strategy ==     "detritivore" ~ "tan",
+                           trophic_strategy ==     "scavenger" ~ "tan",
+                           trophic_strategy ==     "deposit feeder" ~ "tan",
+                           trophic_strategy ==   "filter feeder" ~ "blue",
+                           trophic_strategy ==     "primary producer" ~ "limegreen",
+                           trophic_strategy ==     "mixotroph" ~ "limegreen",
+                           trophic_strategy ==     "omnivore" ~ "orange",
+                           trophic_strategy ==     "typical predator" ~ "purple",
+                           trophic_strategy ==     "carnivore (scavenger + predator)" ~ "purple",
+                           trophic_strategy ==     "parasite" ~ "red",
+                           trophic_strategy ==     "ectoparasite" ~ "red",
+                           trophic_strategy ==     "pathogen" ~ "red",
+                           trophic_strategy ==    "parasitic castrator" ~ "red",
+                           .default = "black"))
+
+visNetwork(vis.nodes, vis.links, width = "2000px", height = "2000px") %>% 
+  visPhysics(enabled = FALSE) %>% 
+  visIgraphLayout(layout = "layout.norm", layoutMatrix = layout.matrix.1) %>%   # woo this one worked! but it's upsidedown
+  visOptions(selectedBy =  "trophic_strategy",
+             highlightNearest = list(enabled = T, 
+                                     #degree = c(from = 1, to = 1) # this should work but throws a JSON related error, i think becayse layout isn't hierarchical?
+                                     algorithm = "hierarchical",
+                                     degree = list(from = 1, to = 1) # i cannot get these to work correctly
+                                     ) 
+             )
+
+```

@@ -1,0 +1,749 @@
+﻿ID,TSN,Name,Phylum,habitat
+1,10824,Pilayella littoralis,Phaeophyta,intertidal
+2,11217,Laminaria,Phaeophyta,intertidal
+3,11246,Agarum,Phaeophyta,intertidal
+4,11250,Costaria costata,Phaeophyta,intertidal
+5,11255,Saccharina sessile,Phaeophyta,intertidal
+6,11277,Nereocystis luetkeana,Phaeophyta,intertidal
+7,11289,Alaria,Phaeophyta,intertidal
+8,11314,Desmarestia,Phaeophyta,intertidal
+9,113265,Staphylinidae,Arthropoda,intertidal
+10,11334,Fucus,Phaeophyta,intertidal
+11,11365,Cystoseira,Phaeophyta,intertidal
+12,11424,Colpomenia,Phaeophyta,intertidal
+13,11531,Bangia,Rhodophyta,intertidal
+14,11540,Porphyra,Rhodophyta,intertidal
+15,12322,Corallina,Rhodophyta,intertidal
+16,12441,Bossiella,Rhodophyta,intertidal
+17,12841,Palmaria,Rhodophyta,intertidal
+18,13080,Microcladia,Rhodophyta,intertidal
+19,13440,Polysiphonia,Rhodophyta,intertidal
+20,13583,Odonthalia,Rhodophyta,intertidal
+21,14035,Caloplaca,Ascomycota,intertidal
+22,14050,Verrucaria,Ascomycota,intertidal
+23,1447,Chrysophyta,Chrysophyta,intertidal
+24,154883,Phascolosomatidae,Sipuncula,intertidal
+25,155456,Phoronida,Phoronida,intertidal
+26,155471,Gymnolaemata,Ectoprocta,intertidal
+27,156829,Terebratalia transversa,Brachiopoda,intertidal
+28,157075,Solaster dawsoni,Echinodermata,intertidal
+29,157076,Solaster endeca,Echinodermata,intertidal
+30,157078,Solaster stimpsoni,Echinodermata,intertidal
+31,157139,Dermasterias imbricata,Echinodermata,intertidal
+32,157152,Henricia,Echinodermata,intertidal
+33,157224,Evasterias troschelii,Echinodermata,intertidal
+34,157225,Leptasterias,Echinodermata,intertidal
+35,157270,Orthasterias koehleri,Echinodermata,intertidal
+36,157274,Pycnopodia helianthoides,Echinodermata,intertidal
+37,157325,Ophiuroidea,Echinodermata,intertidal
+38,157969,Strongylocentrotus droebachiensis,Echinodermata,intertidal
+39,158187,Eupentacta,Echinodermata,intertidal
+40,158191,Cucumaria,Echinodermata,intertidal
+41,158423,Apodacea,Echinodermata,intertidal
+42,159300,Styela,Chordata,intertidal
+43,159446,Pyura,Chordata,intertidal
+44,162030,Hypomesus pretiosus,Chordata,intertidal
+45,164457,Gobiesocidae,Chordata,intertidal
+46,166365,Gasterosteus aculeatus,Chordata,intertidal
+47,167211,Artedius,Chordata,intertidal
+48,167222,Clinocottus,Chordata,intertidal
+49,167279,Hemilepidotus hemilepidotus,Chordata,intertidal
+50,167333,Oligocottus maculosus,Chordata,intertidal
+51,170919,Trichodon trichodon,Chordata,intertidal
+52,171564,Anoplarchus purpurescens,Chordata,intertidal
+53,171598,Xiphister atropurpureus,Chordata,intertidal
+54,171599,Xiphister mucosus,Chordata,intertidal
+55,171637,Pholis,Chordata,intertidal
+56,171672,Ammodytes hexapterus,Chordata,intertidal
+57,180092,Homo sapiens,Chordata,intertidal
+58,180547,Enhydra lutris,Chordata,intertidal
+59,180603,Vulpes,Chordata,intertidal
+60,180625,Eumetopias jubatus,Chordata,intertidal
+61,180649,Phoca vitulina,Chordata,intertidal
+62,202421,Bacteria,Bacteria,intertidal
+63,2135,Prymnesiophyceae,Haptophyta,intertidal
+64,2286,Bacillariophyta,Bacillariophyta,intertidal
+65,39074,Zostera marina,Magnoliophyta,intertidal
+66,43781,Sarcomastigophora,Sarcomastigophora,intertidal
+67,44030,Foraminiferida,Protozoa,intertidal
+68,46088,Radiolaria,Protozoa,intertidal
+69,46211,Ciliophora,Ciliophora,intertidal
+70,47771,Haliclona,Porifera,intertidal
+71,48005,Ophlitaspongia,Porifera,intertidal
+72,48396,Halichondria panicea,Porifera,intertidal
+73,48739,Hydrozoa,Cnidaria,intertidal
+74,52551,Anthopleura,Cnidaria,intertidal
+75,52562,Epiactis,Cnidaria,intertidal
+76,52569,Urticina,Cnidaria,intertidal
+77,52737,Metridium senile,Cnidaria,intertidal
+78,557227,Enteroctopus dofleini,Mollusca,intertidal
+79,566908,Pharidae,Mollusca,intertidal
+80,567816,Lottia digitalis,Mollusca,intertidal
+81,567823,Lottia pelta,Mollusca,intertidal
+82,568350,Lottia persona,Mollusca,intertidal
+83,568351,Lottia scutum,Mollusca,intertidal
+84,57443,Lineidae,Nemertea,intertidal
+85,57493,Emplectonematidae,Nemertea,intertidal
+86,57522,Amphiporidae,Nemertea,intertidal
+87,601,Cyanophycota,Cyanophycota,intertidal
+88,64397,Polynoidae,Annelida,intertidal
+89,6501,Ulvaceae,Chlorophyta,intertidal
+90,656266,Balanus nubilus,Arthropoda,intertidal
+91,65870,Nereididae,Annelida,intertidal
+92,66101,Glyceridae,Annelida,intertidal
+93,66335,Lumbrineridae,Annelida,intertidal
+94,6720,Acrosiphoniaceae,Chlorophyta,intertidal
+95,67224,Flabelligeridae,Annelida,intertidal
+96,6746,Cladophoraceae,Chlorophyta,intertidal
+97,67899,Terebellidae,Annelida,intertidal
+98,68076,Sabellidae,Annelida,intertidal
+99,6895,Codiaceae,Chlorophyta,intertidal
+100,69662,Acmaea mitra,Mollusca,intertidal
+101,69794,Trochidae,Mollusca,intertidal
+102,70370,Lacuna,Mollusca,intertidal
+103,70395,Littorina,Mollusca,intertidal
+104,72023,Cerithiopsis,Mollusca,intertidal
+105,72600,Trichotropis cancellata,Mollusca,intertidal
+106,72711,Velutina,Mollusca,intertidal
+107,72878,Naticidae,Mollusca,intertidal
+108,73017,Fusitriton,Mollusca,intertidal
+109,73293,Nucella canaliculata,Mollusca,intertidal
+110,73294,Nucella lamellosa,Mollusca,intertidal
+111,73296,Nucella lima,Mollusca,intertidal
+112,73727,Buccinum,Mollusca,intertidal
+113,76444,Siphonaria thersites,Mollusca,intertidal
+114,78188,Diaulula sandiegensis,Mollusca,intertidal
+115,78211,Rostanga pulchra,Mollusca,intertidal
+116,78213,Archidoris montereyensis,Mollusca,intertidal
+117,78215,Archidoris odhneri,Mollusca,intertidal
+118,78332,Triopha catalinae,Mollusca,intertidal
+119,78699,Hermissenda crassicornis,Mollusca,intertidal
+120,78728,Aeolidia papillosa,Mollusca,intertidal
+121,78761,Onchidella,Mollusca,intertidal
+122,78819,Leptochiton rugatus,Mollusca,intertidal
+123,78897,Tonicella,Mollusca,intertidal
+124,78979,Katharina tunicata,Mollusca,intertidal
+125,78980,Mopalia,Mollusca,intertidal
+126,79032,Cryptochiton stelleri,Mollusca,intertidal
+127,79452,Mytilus,Mollusca,intertidal
+128,79500,Modiolus,Mollusca,intertidal
+129,79791,Pododesmus,Mollusca,intertidal
+130,80866,Clinocardium,Mollusca,intertidal
+131,80954,Tresus,Mollusca,intertidal
+132,80982,Mactromeris,Mollusca,intertidal
+133,81033,Macoma,Mollusca,intertidal
+134,81446,Saxidomus,Mollusca,intertidal
+135,81464,Protothaca staminea,Mollusca,intertidal
+136,81760,Hiatellidae,Mollusca,intertidal
+137,81910,Entodesma,Mollusca,intertidal
+138,82770,Prostigmata,Arthropoda,intertidal
+139,83545,Pycnogonida,Arthropoda,intertidal
+140,84195,Ostracoda,Arthropoda,intertidal
+141,86329,Harpacticidae,Arthropoda,intertidal
+142,89592,Chthamalus dalli,Arthropoda,intertidal
+143,89606,Balanus crenatus,Arthropoda,intertidal
+144,89609,Balanus glandula,Arthropoda,intertidal
+145,89687,Semibalanus balanoides,Arthropoda,intertidal
+146,89688,Semibalanus cariosus,Arthropoda,intertidal
+147,92283,Sphaeromatidae,Arthropoda,intertidal
+148,92426,Limnoria,Arthropoda,intertidal
+149,92564,Idoteidae,Arthropoda,intertidal
+150,93295,Gammaridea,Arthropoda,intertidal
+151,9512,Prasinophyta,Prasinophyta,intertidal
+152,95375,Caprellidae,Arthropoda,intertidal
+153,95500,Euphausiidae,Arthropoda,intertidal
+154,96746,Hippolytidae,Arthropoda,intertidal
+155,97106,Crangonidae,Arthropoda,intertidal
+156,97774,Paguridae,Arthropoda,intertidal
+157,98432,Mimulus,Arthropoda,intertidal
+158,98435,Pugettia,Arthropoda,intertidal
+159,98449,Scyra,Arthropoda,intertidal
+160,98663,Telmessus cheiragonus,Arthropoda,intertidal
+161,98671,Cancer,Arthropoda,intertidal
+162,9874,Dinophyceae,Pyrrophycophyta,intertidal
+163,san12,Mastocarpus,Rhodophyta,intertidal
+164,san14,Mazzaella,Rhodophyta,intertidal
+165,san21,Neorhodomela,Rhodophyta,intertidal
+166,san252,Phaeophyta Crust,Phaeophyta,intertidal
+167,san262,Crustose coralline algae complex,Rhodophyta,intertidal
+168,san266,Detritus complex,NA,intertidal
+169,san272,Biofilm Complex,NA,intertidal
+170,san338,Red crust complex,Rhodophyta,intertidal
+171,san339,Chlorophyta Crust,Chlorophyta,intertidal
+172,174468,Gavia,Chordata,intertidal
+173,174478,Podiceps,Chordata,intertidal
+174,174513,Diomedeidae,Chordata,intertidal
+175,174536,Fulmarus glacialis,Chordata,intertidal
+176,174554,Puffinus tenuirostris,Chordata,intertidal
+177,174624,Oceanodroma,Chordata,intertidal
+178,174717,Phalacrocorax auritus,Chordata,intertidal
+179,174725,Phalacrocorax pelagicus,Chordata,intertidal
+180,174987,Cygnus columbianus,Chordata,intertidal
+181,174999,Branta canadensis,Chordata,intertidal
+182,175011,Branta bernicla,Chordata,intertidal
+183,175042,Chen canagica,Chordata,intertidal
+184,175062,Anas,Chordata,intertidal
+185,175130,Aythya marila,Chordata,intertidal
+186,175140,Bucephala,Chordata,intertidal
+187,175147,Clangula hyemalis,Chordata,intertidal
+188,175149,Histrionicus histrionicus,Chordata,intertidal
+189,175153,Polysticta stelleri,Chordata,intertidal
+190,175155,Somateria mollissima,Chordata,intertidal
+191,175160,Somateria spectabilis,Chordata,intertidal
+192,175163,Melanitta fusca,Chordata,intertidal
+193,175170,Melanitta perspicillata,Chordata,intertidal
+194,175171,Melanitta nigra,Chordata,intertidal
+195,175184,Mergus,Chordata,intertidal
+196,175373,Buteo lagopus,Chordata,intertidal
+197,175407,Aquila chrysaetos,Chordata,intertidal
+198,175420,Haliaeetus leucocephalus,Chordata,intertidal
+199,175599,Falco rusticolus,Chordata,intertidal
+200,175604,Falco peregrinus,Chordata,intertidal
+201,176177,Grus canadensis,Chordata,intertidal
+202,176475,Haematopus bachmani,Chordata,intertidal
+203,176506,Charadrius semipalmatus,Chordata,intertidal
+204,176614,Tringa melanoleuca,Chordata,intertidal
+205,176630,Tringa incana,Chordata,intertidal
+206,176641,Calidris,Chordata,intertidal
+207,176687,Limosa lapponica,Chordata,intertidal
+208,176698,Gallinago,Chordata,intertidal
+209,176735,Phalaropus lobatus,Chordata,intertidal
+210,176793,Stercorarius parasiticus,Chordata,intertidal
+211,176808,Larus hyperboreus,Chordata,intertidal
+212,176814,Larus glaucescens,Chordata,intertidal
+213,176824,Larus argentatus,Chordata,intertidal
+214,176832,Larus canus,Chordata,intertidal
+215,176875,Rissa tridactyla,Chordata,intertidal
+216,176885,Sterna,Chordata,intertidal
+217,176974,Uria aalge,Chordata,intertidal
+218,176978,Uria lomvia,Chordata,intertidal
+219,176991,Cepphus columba,Chordata,intertidal
+220,176996,Brachyramphus marmoratus,Chordata,intertidal
+221,177008,Synthliboramphus antiquus,Chordata,intertidal
+222,177013,Ptychoramphus aleuticus,Chordata,intertidal
+223,177019,Aethia cristatella,Chordata,intertidal
+224,177029,Fratercula corniculata,Chordata,intertidal
+225,177032,Fratercula cirrhata,Chordata,intertidal
+226,177935,Asio flammeus,Chordata,intertidal
+227,178511,Lanius excubitor,Chordata,intertidal
+228,179492,Melospiza melodia,Chordata,intertidal
+229,179526,Calcarius lapponicus,Chordata,intertidal
+230,179531,Plectrophenax,Chordata,intertidal
+231,179725,Corvus corax,Chordata,intertidal
+232,554029,Aethia psittacula,Chordata,intertidal
+233,554127,Anthus rubescens,Chordata,intertidal
+234,686683,Bubo scandiacus,Chordata,intertidal
+235,78536,Cinclus mexicanus,Mollusca,intertidal
+1,10031,Gymnodinium,Pyrrophycophyta,nearshore
+2,10212,Peridinium,Pyrrophycophyta,nearshore
+3,10340,Protoperidinium,Pyrrophycophyta,nearshore
+4,10359,Gonyaulax,Pyrrophycophyta,nearshore
+5,10397,Ceratium,Pyrrophycophyta,nearshore
+6,10536,Scrippsiella,Pyrrophycophyta,nearshore
+7,11217,Laminaria,Phaeophyta,nearshore
+8,11246,Agarum,Phaeophyta,nearshore
+9,11250,Costaria costata,Phaeophyta,nearshore
+10,11277,Nereocystis luetkeana,Phaeophyta,nearshore
+11,11289,Alaria,Phaeophyta,nearshore
+12,11314,Desmarestia,Phaeophyta,nearshore
+13,11365,Cystoseira,Phaeophyta,nearshore
+14,11424,Colpomenia,Phaeophyta,nearshore
+15,11531,Bangia,Rhodophyta,nearshore
+16,12322,Corallina,Rhodophyta,nearshore
+17,12441,Bossiella,Rhodophyta,nearshore
+18,12841,Palmaria,Rhodophyta,nearshore
+19,13080,Microcladia,Rhodophyta,nearshore
+20,13440,Polysiphonia,Rhodophyta,nearshore
+21,13583,Odonthalia,Rhodophyta,nearshore
+22,1447,Chrysophyta,Chrysophyta,nearshore
+23,154972,Echiura,Echiura,nearshore
+24,155456,Phoronida,Phoronida,nearshore
+25,155471,Gymnolaemata,Ectoprocta,nearshore
+26,156940,Ctenodiscus crispatus,Echinodermata,nearshore
+27,157066,Crossaster papposus,Echinodermata,nearshore
+28,157075,Solaster dawsoni,Echinodermata,nearshore
+29,157076,Solaster endeca,Echinodermata,nearshore
+30,157113,Pteraster tesselatus,Echinodermata,nearshore
+31,157152,Henricia,Echinodermata,nearshore
+32,157215,Asterias,Echinodermata,nearshore
+33,157224,Evasterias troschelii,Echinodermata,nearshore
+34,157274,Pycnopodia helianthoides,Echinodermata,nearshore
+35,157325,Ophiuroidea,Echinodermata,nearshore
+36,157969,Strongylocentrotus droebachiensis,Echinodermata,nearshore
+37,157971,Strongylocentrotus franciscanus,Echinodermata,nearshore
+38,158016,Echinarachnius parma,Echinodermata,nearshore
+39,158150,Psolus,Echinodermata,nearshore
+40,158191,Cucumaria,Echinodermata,nearshore
+41,158307,Aspidochirotacea,Echinodermata,nearshore
+42,158423,Apodacea,Echinodermata,nearshore
+43,158541,Crinoidea,Echinodermata,nearshore
+44,158650,Chaetognatha,Chaetognatha,nearshore
+45,158857,Clavelinidae,Chordata,nearshore
+46,159038,Aplidium,Chordata,nearshore
+47,159484,Boltenia,Chordata,nearshore
+48,159498,Halocynthia,Chordata,nearshore
+49,159540,Molgulidae,Chordata,nearshore
+50,159632,Thaliacea,Chordata,nearshore
+51,159664,Appendicularia,Chordata,nearshore
+52,159910,Lamna ditropis,Chordata,nearshore
+53,160424,Prionace glauca,Chordata,nearshore
+54,160610,Somniosus pacificus,Chordata,nearshore
+55,160617,Squalus acanthias,Chordata,nearshore
+56,160848,Raja binoculata,Chordata,nearshore
+57,160851,Raja rhina,Chordata,nearshore
+58,160935,Bathyraja aleutica,Chordata,nearshore
+59,160937,Bathyraja interrupta,Chordata,nearshore
+60,160939,Bathyraja parmifera,Chordata,nearshore
+61,160942,Bathyraja trachura,Chordata,nearshore
+62,161015,Hydrolagus colliei,Chordata,nearshore
+63,161702,Alosa sapidissima,Chordata,nearshore
+64,161975,Oncorhynchus gorbuscha,Chordata,nearshore
+65,161976,Oncorhynchus keta,Chordata,nearshore
+66,161977,Oncorhynchus kisutch,Chordata,nearshore
+67,161979,Oncorhynchus nerka,Chordata,nearshore
+68,161980,Oncorhynchus tshawytscha,Chordata,nearshore
+69,161999,Salvelinus,Chordata,nearshore
+70,162030,Hypomesus pretiosus,Chordata,nearshore
+71,162035,Mallotus villosus,Chordata,nearshore
+72,162038,Osmerus,Chordata,nearshore
+73,162051,Thaleichthys pacificus,Chordata,nearshore
+74,162081,Bathylagus,Chordata,nearshore
+75,162098,Leuroglossus schmidti,Chordata,nearshore
+76,162164,Cyclothone,Chordata,nearshore
+77,162282,Stomiidae,Chordata,nearshore
+78,162527,Alepisaurus ferox,Chordata,nearshore
+79,162633,Lampanyctus jordani,Chordata,nearshore
+80,162664,Stenobrachius leucopsarus,Chordata,nearshore
+81,162665,Stenobrachius nannochir,Chordata,nearshore
+82,162673,Tarletonbeania crenularis,Chordata,nearshore
+83,162684,Protomyctophum,Chordata,nearshore
+84,164413,Porichthys,Chordata,nearshore
+85,164706,Boreogadus saida,Chordata,nearshore
+86,164708,Eleginus gracilis,Chordata,nearshore
+87,164711,Gadus macrocephalus,Chordata,nearshore
+88,164718,Microgadus,Chordata,nearshore
+89,164722,Theragra chalcogramma,Chordata,nearshore
+90,164792,Merluccius productus,Chordata,nearshore
+91,165218,Bothrocara,Chordata,nearshore
+92,165226,Gymnelus,Chordata,nearshore
+93,165249,Lycodapus,Chordata,nearshore
+94,165255,Lycodes,Chordata,nearshore
+95,165333,Coryphaenoides,Chordata,nearshore
+96,165427,Albatrossia pectoralis,Chordata,nearshore
+97,166092,Melamphaidae,Chordata,nearshore
+98,166340,Trachipterus,Chordata,nearshore
+99,166365,Gasterosteus aculeatus,Chordata,nearshore
+100,166386,Pungitius,Chordata,nearshore
+101,166706,Sebastes aleutianus,Chordata,nearshore
+102,166707,Sebastes alutus,Chordata,nearshore
+103,166712,Sebastes borealis,Chordata,nearshore
+104,166713,Sebastes caurinus,Chordata,nearshore
+105,166714,Sebastes ciliatus,Chordata,nearshore
+106,166715,Sebastes crameri,Chordata,nearshore
+107,166716,Sebastes diploproa,Chordata,nearshore
+108,166717,Sebastes elongatus,Chordata,nearshore
+109,166719,Sebastes entomelas,Chordata,nearshore
+110,166720,Sebastes flavidus,Chordata,nearshore
+111,166723,Sebastes helvomaculatus,Chordata,nearshore
+112,166725,Sebastes jordani,Chordata,nearshore
+113,166726,Sebastes maliger,Chordata,nearshore
+114,166727,Sebastes melanops,Chordata,nearshore
+115,166730,Sebastes mystinus,Chordata,nearshore
+116,166734,Sebastes pinniger,Chordata,nearshore
+117,166735,Sebastes polyspinis,Chordata,nearshore
+118,166740,Sebastes ruberrimus,Chordata,nearshore
+119,166743,Sebastes wilsoni,Chordata,nearshore
+120,166744,Sebastes zacentrus,Chordata,nearshore
+121,166782,Sebastolobus,Chordata,nearshore
+122,167110,Hexagrammos decagrammus,Chordata,nearshore
+123,167111,Hexagrammos lagocephalus,Chordata,nearshore
+124,167116,Ophiodon elongatus,Chordata,nearshore
+125,167120,Pleurogrammus monopterygius,Chordata,nearshore
+126,167123,Anoplopoma fimbria,Chordata,nearshore
+127,167187,Icelus,Chordata,nearshore
+128,167201,Artediellus,Chordata,nearshore
+129,167211,Artedius,Chordata,nearshore
+130,167222,Clinocottus,Chordata,nearshore
+131,167265,Dasycottus setiger,Chordata,nearshore
+132,167267,Enophrys bison,Chordata,nearshore
+133,167273,Gymnocanthus geleatus,Chordata,nearshore
+134,167274,Gymnocanthus pistilliger,Chordata,nearshore
+135,167275,Gymnocanthus tricuspis,Chordata,nearshore
+136,167279,Hemilepidotus hemilepidotus,Chordata,nearshore
+137,167280,Hemilepidotus jordani,Chordata,nearshore
+138,167284,Hemilepidotus zapus,Chordata,nearshore
+139,167285,Hemitripterus,Chordata,nearshore
+140,167302,Leptocottus armatus,Chordata,nearshore
+141,167303,Malacocottus,Chordata,nearshore
+142,167311,Myoxocephalus,Chordata,nearshore
+143,167333,Oligocottus maculosus,Chordata,nearshore
+144,167335,Oligocottus snyderi,Chordata,nearshore
+145,167368,Triglops,Chordata,nearshore
+146,167435,Aspidophoroides,Chordata,nearshore
+147,167445,Bathyagonus nigripinnis,Chordata,nearshore
+148,167452,Hypsagonus quadricornis,Chordata,nearshore
+149,167456,Occella dodecaedron,Chordata,nearshore
+150,167463,Sarritor,Chordata,nearshore
+151,167488,Careproctus,Chordata,nearshore
+152,167537,Eumicrotremus,Chordata,nearshore
+153,167550,Liparis,Chordata,nearshore
+154,170919,Trichodon trichodon,Chordata,nearshore
+155,170946,Bathymaster,Chordata,nearshore
+156,171336,Anarhichas,Chordata,nearshore
+157,171345,Anarrhichthys ocellatus,Chordata,nearshore
+158,171581,Lumpenus,Chordata,nearshore
+159,171603,Leptoclinus maculatus,Chordata,nearshore
+160,171637,Pholis,Chordata,nearshore
+161,171659,Zaprora silenus,Chordata,nearshore
+162,171672,Ammodytes hexapterus,Chordata,nearshore
+163,172715,Citharichthys,Chordata,nearshore
+164,172867,Eopsetta,Chordata,nearshore
+165,172871,Lyopsetta exilis,Chordata,nearshore
+166,172875,Hippoglossoides elassodon,Chordata,nearshore
+167,172887,Microstomus pacificus,Chordata,nearshore
+168,172892,Platichthys,Chordata,nearshore
+169,172900,Pleuronectes,Chordata,nearshore
+170,172907,Limanda aspera,Chordata,nearshore
+171,172911,Limanda proboscidea,Chordata,nearshore
+172,172917,Lepidopsetta bilineata,Chordata,nearshore
+173,172919,Isopsetta isolepis,Chordata,nearshore
+174,172921,Parophrys vetulus,Chordata,nearshore
+175,172928,Psettichthys melanostictus,Chordata,nearshore
+176,172930,Reinhardtius hippoglossoides,Chordata,nearshore
+177,172932,Hippoglossus stenolepis,Chordata,nearshore
+178,172978,Glyptocephalus zachirus,Chordata,nearshore
+179,180092,Homo sapiens,Chordata,nearshore
+180,180469,Orcinus orca,Chordata,nearshore
+181,180473,Phocoena phocoena,Chordata,nearshore
+182,180480,Phocoenoides dalli,Chordata,nearshore
+183,180485,Monodon monoceros,Chordata,nearshore
+184,180496,Berardius bairdii,Chordata,nearshore
+185,180498,Ziphius cavirostris,Chordata,nearshore
+186,180506,Mesoplodon,Chordata,nearshore
+187,180521,Eschrichtius robustus,Chordata,nearshore
+188,180523,Balaenoptera,Chordata,nearshore
+189,180530,Megaptera novaeangliae,Chordata,nearshore
+190,180533,Balaena mysticetus,Chordata,nearshore
+191,180547,Enhydra lutris,Chordata,nearshore
+192,180625,Eumetopias jubatus,Chordata,nearshore
+193,180627,Callorhinus ursinus,Chordata,nearshore
+194,180639,Odobenus rosmarus,Chordata,nearshore
+195,180642,Phoca largha,Chordata,nearshore
+196,180649,Phoca vitulina,Chordata,nearshore
+197,180672,Mirounga angustirostris,Chordata,nearshore
+198,202421,Bacteria,Bacteria,nearshore
+199,204945,Lottia testudinalis,Mollusca,nearshore
+200,2135,Prymnesiophyceae,Haptophyta,nearshore
+201,2546,Coscinodiscus,Bacillariophyta,nearshore
+202,2758,Chaetoceros,Bacillariophyta,nearshore
+203,2878,Rhizosoleniaceae,Bacillariophyta,nearshore
+204,2928,Ditylum brightwellii,Bacillariophyta,nearshore
+205,2930,Pennales,Bacillariophyta,nearshore
+206,3131,Thalassiothrix,Bacillariophyta,nearshore
+207,3139,Thalassionema nitzschioides,Bacillariophyta,nearshore
+208,3155,Licmophora,Bacillariophyta,nearshore
+209,3429,Achnanthes,Bacillariophyta,nearshore
+210,3577,Cocconeis,Bacillariophyta,nearshore
+211,3649,Navicula,Bacillariophyta,nearshore
+212,39074,Zostera marina,Magnoliophyta,nearshore
+213,43789,Silicoflagellida,Sarcomastigophora,nearshore
+214,44030,Foraminiferida,Protozoa,nearshore
+215,46088,Radiolaria,Protozoa,nearshore
+216,46620,Tintinnina,Ciliophora,nearshore
+217,48739,Hydrozoa,Cnidaria,nearshore
+218,51612,Periphylla periphylla,Cnidaria,nearshore
+219,51640,Chrysaora,Cnidaria,nearshore
+220,51696,Phacellophora camtschatica,Cnidaria,nearshore
+221,52004,Octocorallia,Cnidaria,nearshore
+222,54651,Trochopus trituba,Platyhelminthes,nearshore
+223,55062,Microcotyle sebastis,Platyhelminthes,nearshore
+224,551209,Clupea pallasii,Chordata,nearshore
+225,556353,Berryteuthis anonychus,Mollusca,nearshore
+226,55658,Lecithaster gibbosus,Platyhelminthes,nearshore
+227,55717,Brachyphallus crenatus,Platyhelminthes,nearshore
+228,557227,Enteroctopus dofleini,Mollusca,nearshore
+229,55768,Derogenes varicus,Platyhelminthes,nearshore
+230,564263,Bathyraja maculata,Chordata,nearshore
+231,564264,Bathyraja minispinosa,Chordata,nearshore
+232,564280,Rhinoraja taranetzi,Chordata,nearshore
+233,566908,Pharidae,Mollusca,nearshore
+234,567816,Lottia digitalis,Mollusca,nearshore
+235,567823,Lottia pelta,Mollusca,nearshore
+236,568350,Lottia persona,Mollusca,nearshore
+237,568351,Lottia scutum,Mollusca,nearshore
+238,56971,Podocotyle,Platyhelminthes,nearshore
+239,572758,Bacillariaceae,Bacillariophyta,nearshore
+240,57411,Nemertea,Nemertea,nearshore
+241,590745,Thalassiosirales,Bacillariophyta,nearshore
+242,590774,Pleurosigmataceae,Bacillariophyta,nearshore
+243,593501,Metridinidae,Arthropoda,nearshore
+244,601,Cyanophycota,Cyanophycota,nearshore
+245,610015,Clausocalanidae,Arthropoda,nearshore
+246,616027,Reinhardtius evermanni,Chordata,nearshore
+247,616029,Reinhardtius stomias,Chordata,nearshore
+248,616392,Lepidopsetta polyxystra,Chordata,nearshore
+249,622092,Phoca richardii,Chordata,nearshore
+250,63843,Contracaecum,Nemata,nearshore
+251,63864,Anisakis,Nemata,nearshore
+252,64279,Echinorhynchus gadi,Acanthocephala,nearshore
+253,64296,Corynosoma,Acanthocephala,nearshore
+254,64359,Aphroditidae,Annelida,nearshore
+255,64397,Polynoidae,Annelida,nearshore
+256,644358,Podothecus acipenserinus,Chordata,nearshore
+257,6501,Ulvaceae,Chlorophyta,nearshore
+258,65072,Sigalionidae,Annelida,nearshore
+259,65228,Phyllodocidae,Annelida,nearshore
+260,65587,Syllidae,Annelida,nearshore
+261,656266,Balanus nubilus,Arthropoda,nearshore
+262,65870,Nereididae,Annelida,nearshore
+263,66010,Nephtyidae,Annelida,nearshore
+264,660852,Thysanoessa raschii,Arthropoda,nearshore
+265,66101,Glyceridae,Annelida,nearshore
+266,66126,Goniadidae,Annelida,nearshore
+267,66157,Onuphidae,Annelida,nearshore
+268,66335,Lumbrineridae,Annelida,nearshore
+269,66570,Orbiniidae,Annelida,nearshore
+270,66659,Paraonidae,Annelida,nearshore
+271,667083,Neocalanus cristatus,Arthropoda,nearshore
+272,667085,Neocalanus plumchrus,Arthropoda,nearshore
+273,66781,Spionidae,Annelida,nearshore
+274,67095,Chaetopteridae,Annelida,nearshore
+275,67224,Flabelligeridae,Annelida,nearshore
+276,67342,Opheliidae,Annelida,nearshore
+277,67413,Capitellidae,Annelida,nearshore
+278,6746,Cladophoraceae,Chlorophyta,nearshore
+279,67515,Maldanidae,Annelida,nearshore
+280,67644,Oweniidae,Annelida,nearshore
+281,67692,Pectinariidae,Annelida,nearshore
+282,67718,Ampharetidae,Annelida,nearshore
+283,67899,Terebellidae,Annelida,nearshore
+284,68076,Sabellidae,Annelida,nearshore
+285,68232,Serpulidae,Annelida,nearshore
+286,68422,Oligochaeta,Annelida,nearshore
+287,6895,Codiaceae,Chlorophyta,nearshore
+288,69662,Acmaea mitra,Mollusca,nearshore
+289,69794,Trochidae,Mollusca,nearshore
+290,70370,Lacuna,Mollusca,nearshore
+291,70395,Littorina,Mollusca,nearshore
+292,72023,Cerithiopsis,Mollusca,nearshore
+293,72600,Trichotropis cancellata,Mollusca,nearshore
+294,72619,Crepidula,Mollusca,nearshore
+295,72711,Velutina,Mollusca,nearshore
+296,72878,Naticidae,Mollusca,nearshore
+297,73017,Fusitriton,Mollusca,nearshore
+298,73294,Nucella lamellosa,Mollusca,nearshore
+299,73295,Nucella emarginata,Mollusca,nearshore
+300,73296,Nucella lima,Mollusca,nearshore
+301,73726,Buccinidae,Mollusca,nearshore
+302,76047,Cephalaspidea,Mollusca,nearshore
+303,76340,Limacina helicina,Mollusca,nearshore
+304,78089,Clione limacina,Mollusca,nearshore
+305,78897,Tonicella,Mollusca,nearshore
+306,78979,Katharina tunicata,Mollusca,nearshore
+307,79123,Nuculidae,Mollusca,nearshore
+308,79188,Nuculana,Mollusca,nearshore
+309,79258,Yoldia,Mollusca,nearshore
+310,79325,Arcoida,Mollusca,nearshore
+311,79452,Mytilus,Mollusca,nearshore
+312,79472,Musculus,Mollusca,nearshore
+313,79500,Modiolus,Mollusca,nearshore
+314,79611,Pectinidae,Mollusca,nearshore
+315,79791,Pododesmus,Mollusca,nearshore
+316,79866,Ostreidae,Mollusca,nearshore
+317,80494,Thyasiridae,Mollusca,nearshore
+318,80866,Clinocardium,Mollusca,nearshore
+319,80954,Tresus,Mollusca,nearshore
+320,80982,Mactromeris,Mollusca,nearshore
+321,81033,Macoma,Mollusca,nearshore
+322,81074,Tellina,Mollusca,nearshore
+323,81446,Saxidomus,Mollusca,nearshore
+324,81464,Protothaca staminea,Mollusca,nearshore
+325,81691,Mya,Mollusca,nearshore
+326,81760,Hiatellidae,Mollusca,nearshore
+327,82115,Scaphopoda,Mollusca,nearshore
+328,82415,Gonatopsis,Mollusca,nearshore
+329,82430,Berryteuthis magister,Mollusca,nearshore
+330,82437,Moroteuthis,Mollusca,nearshore
+331,83545,Pycnogonida,Arthropoda,nearshore
+332,84195,Ostracoda,Arthropoda,nearshore
+333,85263,Calanus,Arthropoda,nearshore
+334,85300,Eucalanus,Arthropoda,nearshore
+335,85413,Aetideidae,Arthropoda,nearshore
+336,85524,Euchaetidae,Arthropoda,nearshore
+337,85761,Centropages,Arthropoda,nearshore
+338,85855,Temoridae,Arthropoda,nearshore
+339,86038,Pontellidae,Arthropoda,nearshore
+340,86084,Acartia,Arthropoda,nearshore
+341,88802,Oithona,Arthropoda,nearshore
+342,89324,Chondracanthus pinguis,Arthropoda,nearshore
+343,89359,Clavella parva,Arthropoda,nearshore
+344,89379,Neobrachiella robusta,Arthropoda,nearshore
+345,89606,Balanus crenatus,Arthropoda,nearshore
+346,89855,Mysida,Arthropoda,nearshore
+347,90745,Cumacea,Arthropoda,nearshore
+348,92283,Sphaeromatidae,Arthropoda,nearshore
+349,92502,Rocinela,Arthropoda,nearshore
+350,92564,Idoteidae,Arthropoda,nearshore
+351,92645,Saduria,Arthropoda,nearshore
+352,93108,Bopyridae,Arthropoda,nearshore
+353,93295,Gammaridea,Arthropoda,nearshore
+354,95107,Hyperiidea,Arthropoda,nearshore
+355,9513,Prasinophyceae,Prasinophyta,nearshore
+356,95375,Caprellidae,Arthropoda,nearshore
+357,95501,Euphausia,Arthropoda,nearshore
+358,95573,Thysanoessa inermis,Arthropoda,nearshore
+359,95576,Thysanoessa longipes,Arthropoda,nearshore
+360,95578,Thysanoessa spinifera,Arthropoda,nearshore
+361,96113,Acanthephyra,Arthropoda,nearshore
+362,96746,Hippolytidae,Arthropoda,nearshore
+363,96965,Pandalidae,Arthropoda,nearshore
+364,97106,Crangonidae,Arthropoda,nearshore
+365,97774,Paguridae,Arthropoda,nearshore
+366,97934,Paralithodes,Arthropoda,nearshore
+367,97940,Lithodes,Arthropoda,nearshore
+368,98417,Majidae,Arthropoda,nearshore
+369,98418,Oregonia,Arthropoda,nearshore
+370,98421,Hyas,Arthropoda,nearshore
+371,98428,Chionoecetes opilio,Arthropoda,nearshore
+372,98429,Chionoecetes bairdi,Arthropoda,nearshore
+373,98663,Telmessus cheiragonus,Arthropoda,nearshore
+374,98665,Erimacrus isenbeckii,Arthropoda,nearshore
+375,98671,Cancer,Arthropoda,nearshore
+376,9877,Prorocentrum,Pyrrophycophyta,nearshore
+377,98964,Pinnotheridae,Arthropoda,nearshore
+378,9928,Dinophysis,Pyrrophycophyta,nearshore
+379,san1483,Scolex,Platyhelminthes,nearshore
+380,san252,Phaeophyta Crust,Phaeophyta,nearshore
+381,san262,Crustose coralline algae complex,Rhodophyta,nearshore
+382,san266,Detritus complex,NA,nearshore
+383,san272,Biofilm Complex,NA,nearshore
+384,san338,Red crust complex,Rhodophyta,nearshore
+385,san419,Phyllobothrium,Platyhelminthes,nearshore
+386,san420,Nybelinia surmenicola,Platyhelminthes,nearshore
+387,san455,Thalassomyces,Protozoa,nearshore
+388,san788,Hysterothylacium aduncum,Nemata,nearshore
+389,san934,Pseudoterranova,Nemata,nearshore
+390,10824,Pilayella littoralis,Phaeophyta,nearshore
+391,11255,Saccharina sessile,Phaeophyta,nearshore
+392,113265,Staphylinidae,Arthropoda,nearshore
+393,11334,Fucus,Phaeophyta,nearshore
+394,11540,Porphyra,Rhodophyta,nearshore
+395,14035,Caloplaca,Ascomycota,nearshore
+396,14050,Verrucaria,Ascomycota,nearshore
+397,154883,Phascolosomatidae,Sipuncula,nearshore
+398,156829,Terebratalia transversa,Brachiopoda,nearshore
+399,157078,Solaster stimpsoni,Echinodermata,nearshore
+400,157139,Dermasterias imbricata,Echinodermata,nearshore
+401,157225,Leptasterias,Echinodermata,nearshore
+402,157270,Orthasterias koehleri,Echinodermata,nearshore
+403,158187,Eupentacta,Echinodermata,nearshore
+404,159300,Styela,Chordata,nearshore
+405,159446,Pyura,Chordata,nearshore
+406,164457,Gobiesocidae,Chordata,nearshore
+407,171564,Anoplarchus purpurescens,Chordata,nearshore
+408,171598,Xiphister atropurpureus,Chordata,nearshore
+409,171599,Xiphister mucosus,Chordata,nearshore
+410,180603,Vulpes,Chordata,nearshore
+411,47771,Haliclona,Porifera,nearshore
+412,48005,Ophlitaspongia,Porifera,nearshore
+413,48396,Halichondria panicea,Porifera,nearshore
+414,52551,Anthopleura,Cnidaria,nearshore
+415,52562,Epiactis,Cnidaria,nearshore
+416,52569,Urticina,Cnidaria,nearshore
+417,52737,Metridium senile,Cnidaria,nearshore
+418,57443,Lineidae,Nemertea,nearshore
+419,57493,Emplectonematidae,Nemertea,nearshore
+420,57522,Amphiporidae,Nemertea,nearshore
+421,6720,Acrosiphoniaceae,Chlorophyta,nearshore
+422,73293,Nucella canaliculata,Mollusca,nearshore
+423,76444,Siphonaria thersites,Mollusca,nearshore
+424,78188,Diaulula sandiegensis,Mollusca,nearshore
+425,78211,Rostanga pulchra,Mollusca,nearshore
+426,78213,Archidoris montereyensis,Mollusca,nearshore
+427,78215,Archidoris odhneri,Mollusca,nearshore
+428,78332,Triopha catalinae,Mollusca,nearshore
+429,78699,Hermissenda crassicornis,Mollusca,nearshore
+430,78728,Aeolidia papillosa,Mollusca,nearshore
+431,78761,Onchidella,Mollusca,nearshore
+432,78819,Leptochiton rugatus,Mollusca,nearshore
+433,78980,Mopalia,Mollusca,nearshore
+434,79032,Cryptochiton stelleri,Mollusca,nearshore
+435,81910,Entodesma,Mollusca,nearshore
+436,82770,Prostigmata,Arthropoda,nearshore
+437,86329,Harpacticidae,Arthropoda,nearshore
+438,89592,Chthamalus dalli,Arthropoda,nearshore
+439,89609,Balanus glandula,Arthropoda,nearshore
+440,89687,Semibalanus balanoides,Arthropoda,nearshore
+441,89688,Semibalanus cariosus,Arthropoda,nearshore
+442,92426,Limnoria,Arthropoda,nearshore
+443,98432,Mimulus,Arthropoda,nearshore
+444,98435,Pugettia,Arthropoda,nearshore
+445,98449,Scyra,Arthropoda,nearshore
+446,san12,Mastocarpus,Rhodophyta,nearshore
+447,san14,Mazzaella,Rhodophyta,nearshore
+448,san21,Neorhodomela,Rhodophyta,nearshore
+449,san339,Chlorophyta Crust,Chlorophyta,nearshore
+450,174468,Gavia,Chordata,nearshore
+451,174478,Podiceps,Chordata,nearshore
+452,174513,Diomedeidae,Chordata,nearshore
+453,174536,Fulmarus glacialis,Chordata,nearshore
+454,174554,Puffinus tenuirostris,Chordata,nearshore
+455,174624,Oceanodroma,Chordata,nearshore
+456,174717,Phalacrocorax auritus,Chordata,nearshore
+457,174725,Phalacrocorax pelagicus,Chordata,nearshore
+458,174987,Cygnus columbianus,Chordata,nearshore
+459,174999,Branta canadensis,Chordata,nearshore
+460,175011,Branta bernicla,Chordata,nearshore
+461,175042,Chen canagica,Chordata,nearshore
+462,175062,Anas,Chordata,nearshore
+463,175130,Aythya marila,Chordata,nearshore
+464,175140,Bucephala,Chordata,nearshore
+465,175147,Clangula hyemalis,Chordata,nearshore
+466,175149,Histrionicus histrionicus,Chordata,nearshore
+467,175153,Polysticta stelleri,Chordata,nearshore
+468,175155,Somateria mollissima,Chordata,nearshore
+469,175160,Somateria spectabilis,Chordata,nearshore
+470,175163,Melanitta fusca,Chordata,nearshore
+471,175170,Melanitta perspicillata,Chordata,nearshore
+472,175171,Melanitta nigra,Chordata,nearshore
+473,175184,Mergus,Chordata,nearshore
+474,175373,Buteo lagopus,Chordata,nearshore
+475,175407,Aquila chrysaetos,Chordata,nearshore
+476,175420,Haliaeetus leucocephalus,Chordata,nearshore
+477,175599,Falco rusticolus,Chordata,nearshore
+478,175604,Falco peregrinus,Chordata,nearshore
+479,176177,Grus canadensis,Chordata,nearshore
+480,176475,Haematopus bachmani,Chordata,nearshore
+481,176506,Charadrius semipalmatus,Chordata,nearshore
+482,176614,Tringa melanoleuca,Chordata,nearshore
+483,176630,Tringa incana,Chordata,nearshore
+484,176641,Calidris,Chordata,nearshore
+485,176687,Limosa lapponica,Chordata,nearshore
+486,176698,Gallinago,Chordata,nearshore
+487,176735,Phalaropus lobatus,Chordata,nearshore
+488,176793,Stercorarius parasiticus,Chordata,nearshore
+489,176808,Larus hyperboreus,Chordata,nearshore
+490,176814,Larus glaucescens,Chordata,nearshore
+491,176824,Larus argentatus,Chordata,nearshore
+492,176832,Larus canus,Chordata,nearshore
+493,176875,Rissa tridactyla,Chordata,nearshore
+494,176885,Sterna,Chordata,nearshore
+495,176974,Uria aalge,Chordata,nearshore
+496,176978,Uria lomvia,Chordata,nearshore
+497,176991,Cepphus columba,Chordata,nearshore
+498,176996,Brachyramphus marmoratus,Chordata,nearshore
+499,177008,Synthliboramphus antiquus,Chordata,nearshore
+500,177013,Ptychoramphus aleuticus,Chordata,nearshore
+501,177019,Aethia cristatella,Chordata,nearshore
+502,177029,Fratercula corniculata,Chordata,nearshore
+503,177032,Fratercula cirrhata,Chordata,nearshore
+504,177935,Asio flammeus,Chordata,nearshore
+505,178511,Lanius excubitor,Chordata,nearshore
+506,179492,Melospiza melodia,Chordata,nearshore
+507,179526,Calcarius lapponicus,Chordata,nearshore
+508,179531,Plectrophenax,Chordata,nearshore
+509,179725,Corvus corax,Chordata,nearshore
+510,554029,Aethia psittacula,Chordata,nearshore
+511,554127,Anthus rubescens,Chordata,nearshore
+512,686683,Bubo scandiacus,Chordata,nearshore
+513,78536,Cinclus mexicanus,Chordata,nearshore

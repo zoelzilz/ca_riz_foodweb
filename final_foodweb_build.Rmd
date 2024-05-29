@@ -35,14 +35,14 @@ library(tidyverse)
 ```{r import potential nodes and edge list}
 
 ## nodes ##
-potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_29apr24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links
+potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_6may24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links AND THEN AGAIN UPDATE TO 5/3 VERSION to fix some mistakes and finally 5/6 i hope
   rename(nodeNum = id.x)
 #View(potential_nodes)
 
 #2340 nodes
 
 ## edges ##
-edges_unclean <- read_csv("data/edges_frommaster_29apr2024.csv") %>% # updated to 4/24 version because I had forgotten to include dissection data
+edges_unclean <- read_csv("data/edges_frommaster_6may2024.csv") %>% # updated again, as above
   filter(!is.na(consumerNum)) %>% 
   filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
   filter(!is.na(resourceNum)) %>% 
@@ -218,7 +218,7 @@ consumerNums_keep <- nodes_attributes_clean %>%
 # inner join lets us make a dataset that keeps only the nodeNums (if we join by node num) that are in BOTH datasets
 
 consumers_clean <- inner_join(consumerNums_keep, edges_unclean, by = join_by(consumerNum)) %>% 
-  select(!c(consumerName.y, consumerStage.y, consumerCat.y)) # keep the right versions of the node attributes
+  dplyr::select(!c(consumerName.y, consumerStage.y, consumerCat.y)) # keep the right versions of the node attributes
 
 # down to 8822 edges, we filtered out a lot of rares/not presents I guess!
 
@@ -237,10 +237,10 @@ resourceNums_keep <- nodes_attributes_clean %>%
 edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resourceNum)) %>%  # we can name this one edges_clean because we're done!
   
   # we need to select out the edge list version of species name/life stage/category now:
-  select(!c(resourceName.y, resourceCat.y, resourceStage.y)) %>% 
+  dplyr::select(!c(resourceName.y, resourceCat.y, resourceStage.y)) %>% 
   
   # and do some other housekeeping
-  select(!c(INITIALS, date_added)) %>% 
+  dplyr::select(!c(INITIALS, date_added)) %>% 
   rename(
          resourceName = resourceName.x,
          resourceStage = resourceStage.x,
@@ -257,9 +257,9 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
 ## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
 ```{r saving current working node list and edge list}
 
-write_csv(nodes_attributes_clean, "data/foodweb_V2/nodes_final_30apr2024.csv")
+write_csv(nodes_attributes_clean, "data/foodweb_V3/nodes_final_3may2024.csv")
 
-write_csv(edges_clean, "data/foodweb_V2/links_final_30apr2024.csv")
+write_csv(edges_clean, "data/foodweb_V3/links_final_3may2024.csv")
 
 ```
 
@@ -288,7 +288,7 @@ resources_without_food <- anti_join(resources, consumers, by = join_by(num)) %>%
 
 ## Building the Web WITHOUT Parasites
 ### Now we are going to further parse the edges down to only include trophic links, and to exclude parasites (for now)
-```{r trophic links no parasites}
+```{r trophic links only}
 
 trophic_links <- edges_clean %>% # swapping to "links" lingo because armand thinks it more intuitive, so fine
   
@@ -326,13 +326,18 @@ dupes <- nodes_attributes_clean%>%
 
 ######## w/ parasites first #########
 
-trophic_web_psites <- graph_from_data_frame(d= trophic_links, # all links
-                             vertices = nodes_attributes_clean, # nodes
+trophic_web_psites1 <- graph_from_data_frame(d= trophic_links, # all links
+                             vertices = nodes_attributes_clean, # can use these nodes because igraph filters out nodes that don't have any interactions automatically
                              directed=T) # i think this makes sure consumers "point" to resources
+
+trophic_web_psites <- delete_vertices(trophic_web_psites1, 
+                                      which(igraph::degree(trophic_web_psites1) == 0)) # hoping this will remove all unlinked links
 
 # we want to calculate degree to set the size of circles in the future:
 deg_psites <- igraph::degree(trophic_web_psites, mode = "all") 
 # put in later when we are editing graph vis
+
+species_list <- unlist(V(trophic_web_psites)$species) #unlist makes this list of characters into a vector, we need this for checking shit
 
 ########## no parasites
 
@@ -355,7 +360,7 @@ deg_psites <- igraph::degree(trophic_web_psites, mode = "all")
 # following tutorial from 2013 :/ https://assemblingnetwork.wordpress.com/2013/07/01/network-basics-with-r-and-igraph-part-iii-of-iii/
 library(NetIndices) # remember this masks select in dplyr
 
-# we can use igraph to pull an adjacency matrix from our igraph web object
+# we can use netindices to pull an adjacency matrix from our igraph web object
 
 RIZadjmatrix <- as_adjacency_matrix(trophic_web_psites,
                                     sparse = FALSE) # necessary to get a regular matrix, which we need for....
@@ -386,12 +391,13 @@ layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
  
 # par(mar=c(.1,.1,.1,.1),mfrow=c(1,2)) # wtf is this doing - parameterizing plot space maybe?
  
-#rizvis <- plot.igraph(trophic_web_nopsites,
-#                      vertex.label = V(trophic_web_nopsites)$label, # this is terrible syntax, but it works
-#                      vertex.label.cex = .35,
-#                      vertex.size=3,
-#                      edge.arrow.size=.25,
-#                      layout=layout.matrix.1)
+# test plot
+rizvis <- plot.igraph(trophic_web_psites,
+                      vertex.label = V(trophic_web_psites)$label, # this is terrible syntax, but it works
+                      vertex.label.cex = .35,
+                      vertex.size=3,
+                      edge.arrow.size=.25,
+                      layout=layout.matrix.1)
  
 # I am still working on the best way to plot the nodes along the x-axis. You may notice that using
 # runif() means that there is some chance that two nodes with the same trophic level
@@ -414,42 +420,62 @@ layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
 
 ```
 
-### Let's Make it interactive so we can explore using visNetwork or networkD3
+### Let's Make it interactive so we can explore using visNetwork
 ```{r visNetwork}
 library(visNetwork)
 library(networkD3)
 
 ######### VISNETWORK #########
 
-# first going to try to plot the igraph object using visNetwork, which is apparently still experimental
-#visIgraph(trophic_web_psites)
+# need two data frames, vis.links and vis.nodes
+
+# we will create them from elements of the igraph object, for the utmost consistency
 
 # also - the node data frame needs to have an id column, and the link data needs to have from and to columns denoting the start and end of each tie.
 
-trophic_links2 <- trophic_links %>% 
+vis.links <- igraph::as_data_frame(trophic_web_psites, what = "edges") # edges are links; this code has renamed the columns correctly for us, what luck!
+  
+vis.nodes <- igraph::as_data_frame(trophic_web_psites, what = "vertices")%>% # vertices are nodes
+  rename(id = name) %>% 
+  mutate(degree = deg_psites) %>%  # we calculated deg a while ago, now added it to df, it should match?!
+  mutate(trophic = trophic_level) # should also match?? since it was created from the same list in the same order i fycjking hope
+
+
+########## hide all below, old code #########
+#vis.links <- trophic_links %>% 
   rename(to = consumerNum) %>% 
   rename(from = resourceNum) #right?
 
-nodes2 <- nodes_attributes_clean %>% 
-  rename(id = nodeNum) %>% 
-  mutate(degree = deg_psites) %>%  # swe calculated deg a while ago, now added it to df
-  mutate(trophic = trophic_level)
+# now we need to make a node list that filters out anyone without a consumer, annoying (only do this for building the NetIndices web)
+# another option for this is to remove nodes with degree = zero from the igraph object, but that returns a list that MIGHT not be in the same order as the original node list, which means the degree column we append on may not match up
+
+# first pull out dataframe of just consumers and their IDs
+#t_consumers <- trophic_links %>% 
+#  dplyr::select(consumerNum) %>% 
+#  rename(nodeNum = consumerNum) # column names need to match resources df
+# then dataframe of just resources and their IDs
+#t_resources <- trophic_links %>% 
+#  dplyr::select(resourceNum) %>% 
+#  rename(nodeNum = resourceNum) # column names need to match consumers df
+# stack them with rbind
+#trophic_nodes_only <- rbind(t_consumers, t_resources) %>% 
+#  distinct(nodeNum, .keep_all = TRUE)
+# add attributes from potential nodes list
+#trophic_nodes <- left_join(trophic_nodes_only, nodes_attributes_clean, by = join_by(nodeNum))
+
+#vis.nodes <- trophic_nodes %>% 
+#  rename(id = nodeNum) %>% 
+#  mutate(degree = deg_psites) %>%  # we calculated deg a while ago, now added it to df, let's hope it matches
+#  mutate(trophic = trophic_level)
 
 
-
-#visNetwork(nodes2, trophic_links2, width= "100%") %>% 
-#  visPhysics(enabled = FALSE)
-
-# now lets get fancy!! copied from tutorial
-
-vis.nodes <- nodes2 #necessary?
-vis.links <- trophic_links2
+######## now lets get fancy!! copied from tutorial ##########
 
 vis.nodes$shape  <- "dot"  
 vis.nodes$shadow <- TRUE # Nodes will drop shadow
 vis.nodes$title  <- vis.nodes$species # Text on click is species name
-#vis.nodes$label  <- vis.nodes$type.label # Node label # for our purposes, redundant with text on click. can add type.label later
-vis.nodes$size   <- vis.nodes$degree # Node size - will calculate degree later and use this to determine node size
+vis.nodes$label  <- vis.nodes$trophic # Node label # shows up all the time, we don't want that
+vis.nodes$size   <- vis.nodes$degree # use degree to determine node size
 vis.nodes$borderWidth <- 2 # Node border width
 
 # mutate in a column for color
@@ -475,17 +501,49 @@ vis.nodes <- vis.nodes %>%
 
 visNetwork(vis.nodes, vis.links, width = "2000px", height = "2000px") %>% 
   visPhysics(enabled = FALSE) %>% 
-  visIgraphLayout(layout = "layout.norm", layoutMatrix = layout.matrix.1)  # woo this one worked! but it's upsidedown
-  #visIgraphLayout(layout = "layout_nicely")
-  #visHierarchicalLayout() this layout crashes R
-  #visIgraphLayout(layout = trophic_layout) # not currently working because our custom layout matrix is not an igraph layout
+  visIgraphLayout(layout = "layout.norm", layoutMatrix = layout.matrix.1) %>%   # woo this one worked! but it's upsidedown
+  visOptions(selectedBy =  "trophic_strategy",
+             highlightNearest = list(enabled = T, 
+                                     #degree = c(from = 1, to = 1) # this should work but throws a JSON related error, i think becayse layout isn't hierarchical?
+                                     algorithm = "hierarchical",
+                                     degree = list(from = 1, to = 1) # i cannot get these to work correctly
+                                     ) 
+             )
 
 ```
 
-```{r networkD3}
+```{r troubleshooting}
 
-############ NETWORK D3 ############
+############ there are still a lot of consumers at the "bottom" ############
 
+resources <- trophic_links2 %>% 
+  dplyr::select(from) %>% 
+  rename(nodeNum = from) 
+
+consumers <- trophic_links2 %>% 
+  dplyr::select(to) %>% 
+  rename(nodeNum = to)
+
+resources_without_food <- anti_join(resources, consumers, by = join_by(nodeNum)) %>% # returns all rows in x without a match in y, so resources that don't have a match in consumers, right??
+  # returned a lot of duplicates oops so
+  unique() %>% 
+  left_join(., nodes_attributes_clean, by = join_by(nodeNum))
+```
+
+
+```{r test delete later}
+
+x <- data.frame(num = c(1,2,3,5,6,7,10),
+                name.x = c("a","b","c","d","e","f","g"))
+
+y <- data.frame( num = c(1,2,3,4,5,6,7,8,9,10),
+                 name.y = c("a","b","c","d","e","f","g", "h", "i", "j"))
+
+z <- anti_join(x, y) # should return the rows in x that don't have a match in y, which should be none
+z
+
+a <- anti_join(y, x) # should return the rows in y that don't have a match in x, which should be 4, 8, 9
+a
 
 ```
 
@@ -541,9 +599,5 @@ web_full <- ggraph(trophic_layout) +
   theme_void()
 
 ```
-
- 
-
-
 
 ### Actually calculating indices using cheddar
