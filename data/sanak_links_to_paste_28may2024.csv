@@ -1,0 +1,164 @@
+INITIALS,consumerNum,consumerName,consumerCat,consumerStage,resourceNum,resourceName,resourceCat,resourceStage,interaction.type,confidence,justification,incl.code,ref_num,localities,zone,pools_exposed,MorrisHaderlie,epibiota_consumed,notes,link.ID,date_added
+ZZ_coded,146,Solaster dawsoni,asteroid,1,146,Solaster dawsoni,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11850,29 May 2024
+ZZ_coded,146,Solaster dawsoni,asteroid,1,1980,Solaster stimpsoni,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11851,29 May 2024
+ZZ_coded,146,Solaster dawsoni,asteroid,1,143,Dermasterias imbricata,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11852,29 May 2024
+ZZ_coded,146,Solaster dawsoni,asteroid,1,720,Evasterias troschelii,asteroid,1,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11853,29 May 2024
+ZZ_coded,146,Solaster dawsoni,asteroid,1,152,Pycnopodia helianthoides,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11854,29 May 2024
+ZZ_coded,146,Solaster dawsoni,asteroid,1,465,Balanus crenatus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11855,29 May 2024
+ZZ_coded,1980,Solaster stimpsoni,asteroid,1,891,Terebratalia transversa,brachiopod,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11856,29 May 2024
+ZZ_coded,1980,Solaster stimpsoni,asteroid,1,152,Pycnopodia helianthoides,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11857,29 May 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,2392,Hydrozoa,NA,6,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11858,29 May 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,107,Metridium senile,anemone,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11859,29 May 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,416,Katharina tunicata,chiton,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11860,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,891,Terebratalia transversa,brachiopod,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11861,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,208,Lottia pelta,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11862,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,215,Lottia scutum,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle,NA,no,y,,11863,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,470,Balanus nubilus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11864,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,285,Nucella lamellosa,snail,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11865,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,416,Katharina tunicata,chiton,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11866,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,465,Balanus crenatus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11867,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11868,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11869,29 May 2024
+ZZ_coded,720,Evasterias troschelii,asteroid,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11870,29 May 2024
+ZZ_coded,60,Orthasterias koehleri,asteroid,NA,891,Terebratalia transversa,brachiopod,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11871,29 May 2024
+ZZ_coded,60,Orthasterias koehleri,asteroid,NA,470,Balanus nubilus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11872,29 May 2024
+ZZ_coded,60,Orthasterias koehleri,asteroid,NA,196,Acmaea mitra,true limpet,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11873,29 May 2024
+ZZ_coded,60,Orthasterias koehleri,asteroid,NA,416,Katharina tunicata,chiton,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11874,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,891,Terebratalia transversa,brachiopod,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11875,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,146,Solaster dawsoni,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11876,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,143,Dermasterias imbricata,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11877,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,720,Evasterias troschelii,asteroid,1,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11878,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,152,Pycnopodia helianthoides,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11879,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,420,Enteroctopus dofleini,octopus,4,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11880,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,1745,Enteroctopus dofleini,octopus,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11881,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,1746,Enteroctopus dofleini,octopus,NA,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11882,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,199,Lottia digitalis,true limpet,1,1,2,3,2,375,Sanak Archipelago,high,NA,no,y,,11883,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,208,Lottia pelta,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11884,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,215,Lottia scutum,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle,NA,no,y,,11885,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,285,Nucella lamellosa,snail,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11886,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,416,Katharina tunicata,chiton,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11887,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,417,Cryptochiton stelleri,chiton,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11888,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,456,Chthamalus dalli,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11889,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,465,Balanus crenatus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11890,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11891,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11892,29 May 2024
+ZZ_coded,152,Pycnopodia helianthoides,asteroid,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11893,29 May 2024
+ZZ_coded,2388,Ophiuroidea,NA,6,756,Bacteria,microorganism,1,1,2,3,2,375,Sanak Archipelago,NA,NA,no,y,,11894,29 May 2024
+ZZ_coded,2388,Ophiuroidea,NA,6,2392,Hydrozoa,NA,6,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11895,29 May 2024
+ZZ_coded,2088,Hemilepidotus hemilepidotus,fish,1,2388,Ophiuroidea,NA,6,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11896,29 May 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,208,Lottia pelta,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11897,29 May 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,417,Cryptochiton stelleri,chiton,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11898,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,719,Enhydra lutris,mammal,1,1,2,3,2,375,Sanak Archipelago,NA,NA,no,y,,11899,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,420,Enteroctopus dofleini,octopus,4,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11900,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,1745,Enteroctopus dofleini,octopus,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11901,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,1746,Enteroctopus dofleini,octopus,NA,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11902,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,209,Lottia persona,true limpet,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11903,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,470,Balanus nubilus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11904,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,283,Nucella canaliculata,snail,1,1,2,3,2,375,Sanak Archipelago,middle,NA,no,y,,11905,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,285,Nucella lamellosa,snail,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11906,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,416,Katharina tunicata,chiton,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11907,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,417,Cryptochiton stelleri,chiton,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11908,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11909,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11910,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,997,Telmessus cheiragonus,true crab,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11911,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,3031,Tringa melanoleuca,bird,1,1,2,3,2,375,Sanak Archipelago,middle,NA,no,y,,11912,29 May 2024
+ZZ_coded,712,Homo sapiens,human,1,3019,Larus glaucescens,bird,1,1,2,3,2,375,Sanak Archipelago,middle to high,NA,no,y,,11913,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,720,Evasterias troschelii,asteroid,1,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11914,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,152,Pycnopodia helianthoides,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11915,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,420,Enteroctopus dofleini,octopus,4,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11916,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,1745,Enteroctopus dofleini,octopus,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11917,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,1746,Enteroctopus dofleini,octopus,NA,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11918,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,285,Nucella lamellosa,snail,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11919,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,416,Katharina tunicata,chiton,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11920,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,417,Cryptochiton stelleri,chiton,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11921,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,997,Telmessus cheiragonus,true crab,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11922,29 May 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,3049,Melanitta perspicillata,bird,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11923,29 May 2024
+ZZ_coded,69,Halichondria panicea,sponge,1,756,Bacteria,microorganism,1,1,2,3,2,375,Sanak Archipelago,NA,NA,no,y,,11924,29 May 2024
+ZZ_coded,2392,Hydrozoa,NA,6,756,Bacteria,microorganism,1,1,2,3,2,375,Sanak Archipelago,NA,NA,no,y,,11925,29 May 2024
+ZZ_coded,2392,Hydrozoa,NA,6,2392,Hydrozoa,NA,6,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11926,29 May 2024
+ZZ_coded,107,Metridium senile,anemone,1,456,Chthamalus dalli,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11927,29 May 2024
+ZZ_coded,107,Metridium senile,anemone,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11928,29 May 2024
+ZZ_coded,107,Metridium senile,anemone,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11929,29 May 2024
+ZZ_coded,107,Metridium senile,anemone,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11930,29 May 2024
+ZZ_coded,420,Enteroctopus dofleini,octopus,NA,420,Enteroctopus dofleini,octopus,4,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11931,29 May 2024
+ZZ_coded,420,Enteroctopus dofleini,octopus,NA,1745,Enteroctopus dofleini,octopus,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11932,29 May 2024
+ZZ_coded,420,Enteroctopus dofleini,octopus,NA,1746,Enteroctopus dofleini,octopus,NA,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11933,29 May 2024
+ZZ_coded,1745,Enteroctopus dofleini,octopus,1,420,Enteroctopus dofleini,octopus,4,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11934,29 May 2024
+ZZ_coded,1745,Enteroctopus dofleini,octopus,1,1745,Enteroctopus dofleini,octopus,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11935,29 May 2024
+ZZ_coded,1745,Enteroctopus dofleini,octopus,1,1746,Enteroctopus dofleini,octopus,NA,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11936,29 May 2024
+ZZ_coded,1746,Enteroctopus dofleini,octopus,NA,420,Enteroctopus dofleini,octopus,4,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11937,29 May 2024
+ZZ_coded,1746,Enteroctopus dofleini,octopus,NA,1745,Enteroctopus dofleini,octopus,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11938,29 May 2024
+ZZ_coded,1746,Enteroctopus dofleini,octopus,NA,1746,Enteroctopus dofleini,octopus,NA,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11939,29 May 2024
+ZZ_coded,420,Enteroctopus dofleini,octopus,NA,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11940,29 May 2024
+ZZ_coded,1745,Enteroctopus dofleini,octopus,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11941,29 May 2024
+ZZ_coded,1746,Enteroctopus dofleini,octopus,NA,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11942,29 May 2024
+ZZ_coded,420,Enteroctopus dofleini,octopus,NA,997,Telmessus cheiragonus,true crab,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11943,29 May 2024
+ZZ_coded,1745,Enteroctopus dofleini,octopus,1,997,Telmessus cheiragonus,true crab,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11944,29 May 2024
+ZZ_coded,1746,Enteroctopus dofleini,octopus,NA,997,Telmessus cheiragonus,true crab,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11945,29 May 2024
+ZZ_coded,199,Lottia digitalis,true limpet,1,456,Chthamalus dalli,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11946,29 May 2024
+ZZ_coded,199,Lottia digitalis,true limpet,1,465,Balanus crenatus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11947,29 May 2024
+ZZ_coded,199,Lottia digitalis,true limpet,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11948,29 May 2024
+ZZ_coded,199,Lottia digitalis,true limpet,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11949,29 May 2024
+ZZ_coded,199,Lottia digitalis,true limpet,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11950,29 May 2024
+ZZ_coded,208,Lottia pelta,true limpet,1,456,Chthamalus dalli,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11951,29 May 2024
+ZZ_coded,208,Lottia pelta,true limpet,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11952,29 May 2024
+ZZ_coded,208,Lottia pelta,true limpet,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11953,29 May 2024
+ZZ_coded,208,Lottia pelta,true limpet,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11954,29 May 2024
+ZZ_coded,215,Lottia scutum,true limpet,1,456,Chthamalus dalli,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11955,29 May 2024
+ZZ_coded,215,Lottia scutum,true limpet,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11956,29 May 2024
+ZZ_coded,215,Lottia scutum,true limpet,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11957,29 May 2024
+ZZ_coded,215,Lottia scutum,true limpet,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11958,29 May 2024
+ZZ_coded,283,Nucella canaliculata,snail,1,456,Chthamalus dalli,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11959,29 May 2024
+ZZ_coded,283,Nucella canaliculata,snail,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11960,29 May 2024
+ZZ_coded,283,Nucella canaliculata,snail,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11961,29 May 2024
+ZZ_coded,283,Nucella canaliculata,snail,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11962,29 May 2024
+ZZ_coded,285,Nucella lamellosa,snail,1,208,Lottia pelta,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11963,29 May 2024
+ZZ_coded,285,Nucella lamellosa,snail,1,456,Chthamalus dalli,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11964,29 May 2024
+ZZ_coded,285,Nucella lamellosa,snail,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11965,29 May 2024
+ZZ_coded,285,Nucella lamellosa,snail,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11966,29 May 2024
+ZZ_coded,285,Nucella lamellosa,snail,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11967,29 May 2024
+ZZ_coded,326,Diaulula sandiegensis,nudibranch,1,69,Halichondria panicea,sponge,1,1,2,3,2,375,Sanak Archipelago,NA,NA,no,y,,11968,29 May 2024
+ZZ_coded,560,Hermissenda crassicornis,nudibranch,1,2392,Hydrozoa,NA,6,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11969,29 May 2024
+ZZ_coded,560,Hermissenda crassicornis,nudibranch,1,560,Hermissenda crassicornis,nudibranch,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11970,29 May 2024
+ZZ_coded,394,Leptochiton rugatus,chiton,1,756,Bacteria,microorganism,1,1,2,3,2,375,Sanak Archipelago,NA,NA,no,y,,11971,29 May 2024
+ZZ_coded,416,Katharina tunicata,chiton,1,69,Halichondria panicea,sponge,1,1,2,3,2,375,Sanak Archipelago,NA,NA,no,y,,11972,29 May 2024
+ZZ_coded,416,Katharina tunicata,chiton,1,2392,Hydrozoa,NA,6,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11973,29 May 2024
+ZZ_coded,416,Katharina tunicata,chiton,1,456,Chthamalus dalli,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11974,29 May 2024
+ZZ_coded,997,Telmessus cheiragonus,true crab,1,152,Pycnopodia helianthoides,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11975,29 May 2024
+ZZ_coded,3049,Melanitta perspicillata,bird,1,2388,Ophiuroidea,NA,6,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11976,29 May 2024
+ZZ_coded,3049,Melanitta perspicillata,bird,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11977,29 May 2024
+ZZ_coded,3049,Melanitta perspicillata,bird,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11978,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,2392,Hydrozoa,NA,6,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11979,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,199,Lottia digitalis,true limpet,1,1,2,3,2,375,Sanak Archipelago,high,NA,no,y,,11980,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,208,Lottia pelta,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11981,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,209,Lottia persona,true limpet,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11982,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,215,Lottia scutum,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle,NA,no,y,,11983,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,196,Acmaea mitra,true limpet,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11984,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,283,Nucella canaliculata,snail,1,1,2,3,2,375,Sanak Archipelago,middle,NA,no,y,,11985,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,285,Nucella lamellosa,snail,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11986,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,416,Katharina tunicata,chiton,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,11987,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11988,29 May 2024
+ZZ_coded,3012,Haematopus bachmani,bird,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,11989,29 May 2024
+ZZ_coded,3031,Tringa melanoleuca,bird,1,3031,Tringa melanoleuca,bird,1,1,2,3,2,375,Sanak Archipelago,middle,NA,no,y,,11990,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,2305,Nereocystis luetkeana,brown algae,1,3,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11991,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,1980,Solaster stimpsoni,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11992,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,143,Dermasterias imbricata,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11993,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,720,Evasterias troschelii,asteroid,1,1,2,3,2,375,Sanak Archipelago,all,NA,no,y,,11994,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,60,Orthasterias koehleri,asteroid,4,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,11995,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,152,Pycnopodia helianthoides,asteroid,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,11996,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,420,Enteroctopus dofleini,octopus,4,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11997,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,1745,Enteroctopus dofleini,octopus,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11998,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,1746,Enteroctopus dofleini,octopus,NA,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,11999,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,199,Lottia digitalis,true limpet,1,1,2,3,2,375,Sanak Archipelago,high,NA,no,y,,12000,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,208,Lottia pelta,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,12001,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,215,Lottia scutum,true limpet,1,1,2,3,2,375,Sanak Archipelago,middle,NA,no,y,,12002,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,196,Acmaea mitra,true limpet,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,12003,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,283,Nucella canaliculata,snail,1,1,2,3,2,375,Sanak Archipelago,middle,NA,no,y,,12004,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,285,Nucella lamellosa,snail,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,12005,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,416,Katharina tunicata,chiton,1,1,2,3,2,375,Sanak Archipelago,middle to low,NA,no,y,,12006,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,417,Cryptochiton stelleri,chiton,1,1,2,3,2,375,Sanak Archipelago,low tidepools,NA,no,y,,12007,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,463,Balanus glandula,barnacle,1,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,12008,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,464,Balanus glandula,barnacle,4,1,2,3,2,375,Sanak Archipelago,high to middle,NA,no,y,,12009,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,462,Semibalanus cariosus,barnacle,1,1,2,3,2,375,Sanak Archipelago,low,NA,no,y,,12010,29 May 2024
+ZZ_coded,3019,Larus glaucescens,bird,1,997,Telmessus cheiragonus,true crab,1,1,2,3,2,375,Sanak Archipelago,very low,NA,no,y,,12011,29 May 2024
+ZZ_coded,3017,Larus argentatus,bird,1,3010,Charadrius semipalmatus,bird,1,1,2,3,2,375,Sanak Archipelago,high,NA,no,y,,12012,29 May 2024
