@@ -1,0 +1,154 @@
+---
+title: "tattoosh web incorporation"
+output: html_document
+date: "2024-05-30"
+---
+```{r packages}
+
+library(tidyverse)
+
+```
+# Tatoosh Island Web from:
+## Sander, E. L., Wootton, J. T., & Allesina, S. (2015). What Can Interaction Webs Tell Us About Species Roles? PLOS Computational Biology, 11(7), e1004330. https://doi.org/10.1371/journal.pcbi.1004330
+
+```{r import tatoosh data and my data}
+
+## my node list
+ca_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_28may24.csv") %>% 
+  rename(Name = species,
+         ca_id = id.x) # so it matches name
+
+# tatoosh node list 
+
+tat_nodes <- read_csv("data/tatoosh_web/Tatoosh-Taxonomy.csv")
+
+# tatoosh iz web
+tat_web <- read_csv("data/tatoosh_web/Tatoosh_EdgeList.csv")
+
+```
+
+## Step 1: Wrangle Tattoosh nodes so they match my nodes
+```{r node wrangling}
+
+# first start by keeping species in my list that are present in sanak list
+matched_species <- inner_join(sanak_nodes_iz, ca_nodes, by = join_by(Name)) %>% 
+  mutate(matched_using = "species")
+
+# now we will make a list of genera in the sanak list that are in my list 
+sanak_genera <- sanak_nodes_iz %>% 
+  rename(genus = Name) # so we can join on genus column in ca_nodes
+
+matched_genera <- inner_join(sanak_genera, ca_nodes, by = join_by(genus))%>% 
+  mutate(matched_using = "genus")
+
+sanak_fams <- sanak_nodes_iz %>% 
+  rename(family = Name) # so we can join on genus column in ca_nodes
+
+matched_families <- inner_join(sanak_fams, ca_nodes, by = join_by(family))%>% 
+  mutate(matched_using = "family")
+
+# need to make a full list of all the matched taxa and include a column indicating how that taxon was matched (e.g. species, genus, family)
+
+matched_nodes_all <- rbind(matched_species, matched_genera, matched_families)
+
+```
+
+## Step 2: Wrangling the sanak links to match my node info
+
+### first i did this piecemeal for species:species first, then genus:genus, finally family:family, but then realized i need all interactions between matched taxa including species:species, species:genus, species: family, etc, so I went back and made a big combo list of all the taxa that matched from species:family level (i excluded higher levels based on logic). taxonomic level matches are below this next chunk
+
+#### 361 nodes in the california web are represented in the sanak web, either by their exact species (n = 52), their genus (n = 111), or their family (n = 198). This leaves out nodes that might be the same but be called a different or old name. Oh well!
+
+```{r link wrangling for all matched taxa}
+# make a version of the matched nodes list to join with the link list (need to make sure IDs can bind)
+
+# first for consumers
+consumers_to_match <- matched_nodes_all %>% 
+  rename(Consumer = sanak_id)  # ID column name in link list
+
+consumers_data <- inner_join(sanak_iz, consumers_to_match, by = join_by(Consumer), relationship = "many-to-many") %>% 
+  select(Consumer, Name, ca_id, common_name, category, life_stage, Resource, matched_using) # only need some relevant data, can add more later
+
+# then for resources
+resources_to_match <- matched_nodes_all %>% 
+  rename(Resource = sanak_id) %>%   # resource ID column name in link list, to match
+  select(Resource, Name, ca_id, common_name, category, life_stage, matched_using, zone)
+
+# now put all links together
+consumer_resource_links <- inner_join( # did left_join at first but it included a lot of resources that didn't match ca nodes
+  consumers_data, resources_to_match, by = join_by(Resource), relationship = "many-to-many") # this matching should also automatically add .x to columns from consumers_data and .y to resources_to_match
+
+```
+
+## Step 3: Create links to add to main edge list
+### MASTER CODE for manipulating dataframes to match with edgelist_master
+```{r match edgelist_MASTER}
+
+sanak_links_to_paste <- consumer_resource_links %>% 
+  #filter(!is.na(resourceNum)) %>% ## we already did this by using inner join above
+  
+  #add in columns that are present in edgelist master:
+  mutate(date_added = "29 May 2024") %>% 
+  mutate(INITIALS = "ZZ_coded") %>% 
+  
+  # need to change the below so they are different based on what taxon they were matched using (species, genus, or family)
+  mutate(justification = case_when(matched_using.x == "species" & matched_using.y == "species" ~ 3, # read in a paper
+                                   .default = 6) # read in lit at higher taxonomic level
+                                   ) %>% 
+  mutate(incl.code = 2) %>% # both species in web but interaction reported elsewhere
+  mutate(confidence = case_when(justification == 3 ~ 2,
+                                justification == 6 ~ 3) # 2 both higher taxa in web but interaction reported elsewhere
+           ) %>% 
+  mutate(pools_exposed = NA) %>% # keep this empty for now
+  mutate(localities = "Sanak Archipelago") %>%  
+  mutate(MorrisHaderlie = "no") %>%
+  mutate(epibiota_consumed = "y") %>% 
+  mutate(notes = "") %>% 
+  mutate(link.ID = (11849 + seq_len(length.out = n()))) %>%  # 11849 is currently the last link id # in edgelist_master so make sure to change
+  mutate(ref_num = "375, 376") %>% # ref nums for both sanak web papers
+  mutate(interaction.type = case_when(
+    str_detect(category.y, "algae") ~ 3, 
+    .default = 1)
+  ) %>%  
+  rename(consumerNum = ca_id.x, 
+         consumerName = Name.x,
+         consumerCat = category.x,
+         resourceNum = ca_id.y,
+         resourceName = Name.y,
+         resourceCat = category.y
+         ) %>% 
+    
+   # need to add a column that creates numeric life stage for consumers
+  mutate(consumerStage = case_when(
+    life_stage.x == "adult" | life_stage.x == "medusa" ~ 1,
+    life_stage.x == "egg" ~ 2,
+    life_stage.x == "juvenile" ~ 4, # juvenile fish/snail/crab
+    life_stage.x == "hydroid" ~ 5, # polyp stage in cnidarians
+    life_stage.x == "multiple" ~ 6, 
+    .default = NA
+  )) %>% 
+  
+  # need to add a column that creates numeric life stage for resources as well
+  mutate(resourceStage = case_when(
+    life_stage.y == "adult" | life_stage.y == "medusa" ~ 1,
+    life_stage.y == "egg" ~ 2,
+    life_stage.y == "juvenile" ~ 4, # juvenile fish/snail/crab
+    life_stage.y == "small" ~ 4, # juvenile other
+    life_stage.y == "nauplii" ~ 3, # first stage larva
+    life_stage.y == "hydroid" | life_stage.y == "hydroid colony" ~ 5, # polyp stage in cnidarians
+    life_stage.y == "multiple" ~ 6,
+    .default = NA
+  )) %>% 
+
+  # now select out all the columns that don't match and put them in the right order
+  select(INITIALS, consumerNum, consumerName, consumerCat, consumerStage, resourceNum, resourceName, resourceCat, resourceStage, interaction.type, confidence, justification, incl.code, ref_num, localities, zone, pools_exposed, MorrisHaderlie, epibiota_consumed, notes, link.ID, date_added)
+                                                          
+
+```
+
+## Step 4: export to CSV
+```{r create csv to merge with edgelist master}
+
+write_csv(sanak_links_to_paste, "data/sanak_links_to_paste_29may2024.csv")
+
+```

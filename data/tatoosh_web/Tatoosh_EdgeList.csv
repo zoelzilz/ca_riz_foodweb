@@ -1,0 +1,870 @@
+Consumer,Resource
+Mytilus californianus,Semibalanus cariosus
+Mytilus californianus,Balanus glandula
+Mytilus californianus,Endocladia muricata
+Mytilus californianus,Microcladia borealis
+Mytilus californianus,Balanus nubilus
+Mytilus californianus,Polysiphonia
+Mytilus californianus,Neorhodomela
+Mytilus californianus,Callithamnion pikeanum
+Mytilus californianus,Phytoplankton
+Mytilus californianus,Particulate Detritus
+Mytilus trossulus,Semibalanus cariosus
+Mytilus trossulus,Balanus glandula
+Mytilus trossulus,Endocladia muricata
+Mytilus trossulus,Microcladia borealis
+Mytilus trossulus,Balanus nubilus
+Mytilus trossulus,Polysiphonia
+Mytilus trossulus,Neorhodomela
+Mytilus trossulus,Callithamnion pikeanum
+Mytilus trossulus,Phytoplankton
+Mytilus trossulus,Particulate Detritus
+Pollicipes polymerus,Balanus nubilus
+Pollicipes polymerus,Particulate Detritus
+Semibalanus cariosus,Phytoplankton
+Semibalanus cariosus,Particulate Detritus
+Balanus glandula,Phytoplankton
+Balanus glandula,Particulate Detritus
+Fucus distichus,Semibalanus cariosus
+Fucus distichus,Balanus glandula
+Halichondria Haliclona,Corallina vancouvriensis
+Halichondria Haliclona,Articulated corralines
+Halichondria Haliclona,Phyllospadix
+Halichondria Haliclona,Phytoplankton
+Halichondria Haliclona,Particulate Detritus
+Sacharina (Hedophyllum) sessilis,Balanus nubilus
+Anthopleura,Mytilus californianus
+Anthopleura,Nucella ostrina
+Anthopleura,Nucella canalicalata
+Anthopleura,Nucella lamellosa
+Anthopleura,Lottia pelta
+Anthopleura,Lottia digitalis
+Anthopleura,Lottia paradigitalis
+Anthopleura,Lottia (Tectura) scutum
+Anthopleura,Littorina sitkana
+Anthopleura,Littorina scutulata
+Anthopleura,Strongylocentrotus purpuratus
+Anthopleura,Strongylocentrotus droebachensis
+Anthopleura,Amphipoda
+Anthopleura,Amphissa columbiana
+Anthopleura,Idotea wosnesenskii
+Anthopleura,Cirolana
+Anthopleura,Calliostoma ligatum
+Anthopleura,Pagurid
+Anthopleura,Ocenebra interfossa
+Anthopleura,Petrolisthes
+Anthopleura,Chlorostoma (Tegula) funebralis
+Anthopleura,Lacuna vincta
+Anthopleura,Alia
+Anthopleura,Oedignathus inermis
+Anthopleura,Odostomia columbiana
+Anthopleura,Ceratostoma foliatum
+Anthopleura,Small Turrid
+Balanus nubilus,Phytoplankton
+Balanus nubilus,Particulate Detritus
+Chthamalus dalli,Phytoplankton
+Chthamalus dalli,Particulate Detritus
+Entodesma saxicola,Phytoplankton
+Entodesma saxicola,Particulate Detritus
+Laminaria,Balanus nubilus
+Alaria,Balanus nubilus
+Costaria costata,Balanus nubilus
+ Serpula vermicularis,Phytoplankton
+ Serpula vermicularis,Particulate Detritus
+Phyllospadix,Corallina vancouvriensis
+Phyllospadix,Microcladia borealis
+Phyllospadix,Polysiphonia
+Phyllospadix,Neorhodomela
+Phyllospadix,Callithamnion pikeanum
+Phyllospadix,Articulated corralines
+Eudistylia,Phytoplankton
+Eudistylia,Particulate Detritus
+Postelsia palmaeformis,Semibalanus cariosus
+Postelsia palmaeformis,Balanus glandula
+Nucella ostrina,Mytilus californianus
+Nucella ostrina,Mytilus trossulus
+Nucella ostrina,Pollicipes polymerus
+Nucella ostrina,Semibalanus cariosus
+Nucella ostrina,Balanus glandula
+Nucella ostrina,Entodesma saxicola
+Nucella ostrina, Serpula vermicularis
+Nucella ostrina,Lottia pelta
+Nucella ostrina,Lottia digitalis
+Nucella ostrina,Lottia paradigitalis
+Nucella ostrina,Lottia (Tectura) scutum
+Nucella canalicalata,Mytilus californianus
+Nucella canalicalata,Mytilus trossulus
+Nucella canalicalata,Pollicipes polymerus
+Nucella canalicalata,Semibalanus cariosus
+Nucella canalicalata,Balanus glandula
+Nucella canalicalata,Balanus nubilus
+Nucella canalicalata,Entodesma saxicola
+Nucella canalicalata, Serpula vermicularis
+Nucella canalicalata,Lottia pelta
+Nucella canalicalata,Lottia digitalis
+Nucella canalicalata,Lottia paradigitalis
+Nucella canalicalata,Lottia (Tectura) scutum
+Nucella canalicalata,Tonicella lineata
+Nucella lamellosa,Mytilus californianus
+Nucella lamellosa,Mytilus trossulus
+Nucella lamellosa,Pollicipes polymerus
+Nucella lamellosa,Semibalanus cariosus
+Nucella lamellosa,Balanus glandula
+Nucella lamellosa,Balanus nubilus
+Nucella lamellosa,Entodesma saxicola
+Nucella lamellosa, Serpula vermicularis
+Nucella lamellosa,Eudistylia
+Nucella lamellosa,Lottia pelta
+Nucella lamellosa,Lottia digitalis
+Nucella lamellosa,Lottia paradigitalis
+Nucella lamellosa,Lottia (Tectura) scutum
+Nucella lamellosa,Lepidochitona
+Lottia pelta,Halosaccion glandiforme
+Lottia pelta,Mastocarpus (Gigartina)
+Lottia pelta,Endocladia muricata
+Lottia pelta,Ulva
+Lottia pelta,Porphyra
+Lottia pelta,Acrosiphonia (Spongomorpha) coalita
+Lottia pelta,Diatoms
+Lottia pelta,Fucus distichus
+Lottia pelta,Microcladia borealis
+Lottia pelta,Sacharina (Hedophyllum) sessilis
+Lottia pelta,Iridaea
+Lottia pelta,Leathesia marine (difformis)
+Lottia pelta,Polysiphonia
+Lottia pelta,Neorhodomela
+Lottia pelta,Prionitis
+Lottia pelta,Laminaria
+Lottia pelta,Alaria
+Lottia pelta,Costaria costata
+Lottia pelta,Petalonia fasciata
+Lottia pelta,Callithamnion pikeanum
+Lottia pelta,Scytosiphon lomentaria
+Lottia pelta,Cumagloia andersonii
+Lottia pelta,Postelsia palmaeformis
+Lottia pelta,Analipus japonicus
+Lottia pelta,Enteromorpha
+Lottia digitalis,Pollicipes polymerus
+Lottia digitalis,Semibalanus cariosus
+Lottia digitalis,Halosaccion glandiforme
+Lottia digitalis,Mastocarpus (Gigartina)
+Lottia digitalis,Endocladia muricata
+Lottia digitalis,Ulva
+Lottia digitalis,Porphyra
+Lottia digitalis,Acrosiphonia (Spongomorpha) coalita
+Lottia digitalis,Diatoms
+Lottia digitalis,Fucus distichus
+Lottia digitalis,Microcladia borealis
+Lottia digitalis,Iridaea
+Lottia digitalis,Leathesia marine (difformis)
+Lottia digitalis,Polysiphonia
+Lottia digitalis,Neorhodomela
+Lottia digitalis,Prionitis
+Lottia digitalis,Petalonia fasciata
+Lottia digitalis,Callithamnion pikeanum
+Lottia digitalis,Scytosiphon lomentaria
+Lottia digitalis,Cumagloia andersonii
+Lottia digitalis,Postelsia palmaeformis
+Lottia digitalis,Analipus japonicus
+Lottia digitalis,Enteromorpha
+Lottia paradigitalis,Semibalanus cariosus
+Lottia paradigitalis,Halosaccion glandiforme
+Lottia paradigitalis,Mastocarpus (Gigartina)
+Lottia paradigitalis,Endocladia muricata
+Lottia paradigitalis,Ulva
+Lottia paradigitalis,Porphyra
+Lottia paradigitalis,Acrosiphonia (Spongomorpha) coalita
+Lottia paradigitalis,Diatoms
+Lottia paradigitalis,Fucus distichus
+Lottia paradigitalis,Microcladia borealis
+Lottia paradigitalis,Iridaea
+Lottia paradigitalis,Leathesia marine (difformis)
+Lottia paradigitalis,Polysiphonia
+Lottia paradigitalis,Neorhodomela
+Lottia paradigitalis,Prionitis
+Lottia paradigitalis,Petalonia fasciata
+Lottia paradigitalis,Callithamnion pikeanum
+Lottia paradigitalis,Scytosiphon lomentaria
+Lottia paradigitalis,Cumagloia andersonii
+Lottia paradigitalis,Postelsia palmaeformis
+Lottia paradigitalis,Analipus japonicus
+Lottia paradigitalis,Enteromorpha
+Lottia (Tectura) scutum,Halosaccion glandiforme
+Lottia (Tectura) scutum,Mastocarpus (Gigartina)
+Lottia (Tectura) scutum,Endocladia muricata
+Lottia (Tectura) scutum,Ulva
+Lottia (Tectura) scutum,Porphyra
+Lottia (Tectura) scutum,Petrocelis Ralfsia
+Lottia (Tectura) scutum,Acrosiphonia (Spongomorpha) coalita
+Lottia (Tectura) scutum,Diatoms
+Lottia (Tectura) scutum,Fucus distichus
+Lottia (Tectura) scutum,Microcladia borealis
+Lottia (Tectura) scutum,Sacharina (Hedophyllum) sessilis
+Lottia (Tectura) scutum,Iridaea
+Lottia (Tectura) scutum,Leathesia marine (difformis)
+Lottia (Tectura) scutum,Polysiphonia
+Lottia (Tectura) scutum,Neorhodomela
+Lottia (Tectura) scutum,Prionitis
+Lottia (Tectura) scutum,Laminaria
+Lottia (Tectura) scutum,Alaria
+Lottia (Tectura) scutum,Costaria costata
+Lottia (Tectura) scutum,Petalonia fasciata
+Lottia (Tectura) scutum,Callithamnion pikeanum
+Lottia (Tectura) scutum,Scytosiphon lomentaria
+Lottia (Tectura) scutum,Cumagloia andersonii
+Lottia (Tectura) scutum,Postelsia palmaeformis
+Lottia (Tectura) scutum,Analipus japonicus
+Lottia (Tectura) scutum,Enteromorpha
+Onchidella borealis,Ulva
+Onchidella borealis,Acrosiphonia (Spongomorpha) coalita
+Onchidella borealis,Diatoms
+Onchidella borealis,Fucus distichus
+Onchidella borealis,Microcladia borealis
+Onchidella borealis,Iridaea
+Katharina tunicata,Halosaccion glandiforme
+Katharina tunicata,Mastocarpus (Gigartina)
+Katharina tunicata,Corallina vancouvriensis
+Katharina tunicata,Endocladia muricata
+Katharina tunicata,Ulva
+Katharina tunicata,Porphyra
+Katharina tunicata,Acrosiphonia (Spongomorpha) coalita
+Katharina tunicata,Diatoms
+Katharina tunicata,Fucus distichus
+Katharina tunicata,Microcladia borealis
+Katharina tunicata,Sacharina (Hedophyllum) sessilis
+Katharina tunicata,Iridaea
+Katharina tunicata,Leathesia marine (difformis)
+Katharina tunicata,Polysiphonia
+Katharina tunicata,Neorhodomela
+Katharina tunicata,Prionitis
+Katharina tunicata,Laminaria
+Katharina tunicata,Alaria
+Katharina tunicata,Costaria costata
+Katharina tunicata,Petalonia fasciata
+Katharina tunicata,Callithamnion pikeanum
+Katharina tunicata,Scytosiphon lomentaria
+Katharina tunicata,Cumagloia andersonii
+Katharina tunicata,Articulated corralines
+Katharina tunicata,Postelsia palmaeformis
+Katharina tunicata,Analipus japonicus
+Katharina tunicata,Enteromorpha
+Mopalia,Halosaccion glandiforme
+Mopalia,Mastocarpus (Gigartina)
+Mopalia,Endocladia muricata
+Mopalia,Ulva
+Mopalia,Porphyra
+Mopalia,Acrosiphonia (Spongomorpha) coalita
+Mopalia,Diatoms
+Mopalia,Fucus distichus
+Mopalia,Microcladia borealis
+Mopalia,Sacharina (Hedophyllum) sessilis
+Mopalia,Iridaea
+Mopalia,Leathesia marine (difformis)
+Mopalia,Polysiphonia
+Mopalia,Neorhodomela
+Mopalia,Prionitis
+Mopalia,Laminaria
+Mopalia,Alaria
+Mopalia,Costaria costata
+Mopalia,Petalonia fasciata
+Mopalia,Callithamnion pikeanum
+Mopalia,Scytosiphon lomentaria
+Mopalia,Cumagloia andersonii
+Mopalia,Postelsia palmaeformis
+Mopalia,Analipus japonicus
+Mopalia,Enteromorpha
+Mopalia,Nucella canalicalata
+Nereis vexillosa,Ulva
+Nereis vexillosa,Porphyra
+Nereis vexillosa,Diatoms
+Nereis vexillosa,Enteromorpha
+Emplectonema gracile,Balanus glandula
+Emplectonema gracile,Balanus nubilus
+Emplectonema gracile,Chthamalus dalli
+Emplectonema gracile, Serpula vermicularis
+Emplectonema gracile,Eudistylia
+Emplectonema gracile,Nucella ostrina
+Emplectonema gracile,Nucella canalicalata
+Emplectonema gracile,Nucella lamellosa
+Emplectonema gracile,Lottia pelta
+Emplectonema gracile,Lottia digitalis
+Emplectonema gracile,Lottia paradigitalis
+Emplectonema gracile,Lottia (Tectura) scutum
+Emplectonema gracile,Nereis vexillosa
+Emplectonema gracile,Nereis sp.
+Emplectonema gracile,Halosydna brevisetosa
+Littorina sitkana,Halosaccion glandiforme
+Littorina sitkana,Mastocarpus (Gigartina)
+Littorina sitkana,Endocladia muricata
+Littorina sitkana,Ulva
+Littorina sitkana,Porphyra
+Littorina sitkana,Acrosiphonia (Spongomorpha) coalita
+Littorina sitkana,Diatoms
+Littorina sitkana,Fucus distichus
+Littorina sitkana,Microcladia borealis
+Littorina sitkana,Iridaea
+Littorina sitkana,Polysiphonia
+Littorina sitkana,Neorhodomela
+Littorina sitkana,Prionitis
+Littorina sitkana,Petalonia fasciata
+Littorina sitkana,Callithamnion pikeanum
+Littorina sitkana,Scytosiphon lomentaria
+Littorina sitkana,Cumagloia andersonii
+Littorina sitkana,Analipus japonicus
+Littorina sitkana,Enteromorpha
+Littorina scutulata,Halosaccion glandiforme
+Littorina scutulata,Mastocarpus (Gigartina)
+Littorina scutulata,Endocladia muricata
+Littorina scutulata,Ulva
+Littorina scutulata,Porphyra
+Littorina scutulata,Acrosiphonia (Spongomorpha) coalita
+Littorina scutulata,Diatoms
+Littorina scutulata,Fucus distichus
+Littorina scutulata,Microcladia borealis
+Littorina scutulata,Iridaea
+Littorina scutulata,Polysiphonia
+Littorina scutulata,Neorhodomela
+Littorina scutulata,Prionitis
+Littorina scutulata,Petalonia fasciata
+Littorina scutulata,Callithamnion pikeanum
+Littorina scutulata,Scytosiphon lomentaria
+Littorina scutulata,Cumagloia andersonii
+Littorina scutulata,Analipus japonicus
+Littorina scutulata,Enteromorpha
+Strongylocentrotus purpuratus,Halosaccion glandiforme
+Strongylocentrotus purpuratus,Mastocarpus (Gigartina)
+Strongylocentrotus purpuratus,Corallina vancouvriensis
+Strongylocentrotus purpuratus,Endocladia muricata
+Strongylocentrotus purpuratus,Ulva
+Strongylocentrotus purpuratus,Porphyra
+Strongylocentrotus purpuratus,Acrosiphonia (Spongomorpha) coalita
+Strongylocentrotus purpuratus,Diatoms
+Strongylocentrotus purpuratus,Fucus distichus
+Strongylocentrotus purpuratus,Microcladia borealis
+Strongylocentrotus purpuratus,Sacharina (Hedophyllum) sessilis
+Strongylocentrotus purpuratus,Iridaea
+Strongylocentrotus purpuratus,Leathesia marine (difformis)
+Strongylocentrotus purpuratus,Polysiphonia
+Strongylocentrotus purpuratus,Neorhodomela
+Strongylocentrotus purpuratus,Prionitis
+Strongylocentrotus purpuratus,Laminaria
+Strongylocentrotus purpuratus,Alaria
+Strongylocentrotus purpuratus,Costaria costata
+Strongylocentrotus purpuratus,Petalonia fasciata
+Strongylocentrotus purpuratus,Callithamnion pikeanum
+Strongylocentrotus purpuratus,Scytosiphon lomentaria
+Strongylocentrotus purpuratus,Cumagloia andersonii
+Strongylocentrotus purpuratus,Articulated corralines
+Strongylocentrotus purpuratus,Phyllospadix
+Strongylocentrotus purpuratus,Postelsia palmaeformis
+Strongylocentrotus purpuratus,Analipus japonicus
+Strongylocentrotus purpuratus,Enteromorpha
+Strongylocentrotus droebachensis,Halosaccion glandiforme
+Strongylocentrotus droebachensis,Mastocarpus (Gigartina)
+Strongylocentrotus droebachensis,Corallina vancouvriensis
+Strongylocentrotus droebachensis,Endocladia muricata
+Strongylocentrotus droebachensis,Ulva
+Strongylocentrotus droebachensis,Porphyra
+Strongylocentrotus droebachensis,Acrosiphonia (Spongomorpha) coalita
+Strongylocentrotus droebachensis,Diatoms
+Strongylocentrotus droebachensis,Fucus distichus
+Strongylocentrotus droebachensis,Microcladia borealis
+Strongylocentrotus droebachensis,Sacharina (Hedophyllum) sessilis
+Strongylocentrotus droebachensis,Iridaea
+Strongylocentrotus droebachensis,Leathesia marine (difformis)
+Strongylocentrotus droebachensis,Polysiphonia
+Strongylocentrotus droebachensis,Neorhodomela
+Strongylocentrotus droebachensis,Prionitis
+Strongylocentrotus droebachensis,Laminaria
+Strongylocentrotus droebachensis,Alaria
+Strongylocentrotus droebachensis,Costaria costata
+Strongylocentrotus droebachensis,Petalonia fasciata
+Strongylocentrotus droebachensis,Callithamnion pikeanum
+Strongylocentrotus droebachensis,Scytosiphon lomentaria
+Strongylocentrotus droebachensis,Cumagloia andersonii
+Strongylocentrotus droebachensis,Articulated corralines
+Strongylocentrotus droebachensis,Phyllospadix
+Strongylocentrotus droebachensis,Postelsia palmaeformis
+Strongylocentrotus droebachensis,Analipus japonicus
+Strongylocentrotus droebachensis,Enteromorpha
+Strongylocentrotus franciscanus,Halosaccion glandiforme
+Strongylocentrotus franciscanus,Mastocarpus (Gigartina)
+Strongylocentrotus franciscanus,Corallina vancouvriensis
+Strongylocentrotus franciscanus,Endocladia muricata
+Strongylocentrotus franciscanus,Ulva
+Strongylocentrotus franciscanus,Porphyra
+Strongylocentrotus franciscanus,Acrosiphonia (Spongomorpha) coalita
+Strongylocentrotus franciscanus,Diatoms
+Strongylocentrotus franciscanus,Fucus distichus
+Strongylocentrotus franciscanus,Microcladia borealis
+Strongylocentrotus franciscanus,Sacharina (Hedophyllum) sessilis
+Strongylocentrotus franciscanus,Iridaea
+Strongylocentrotus franciscanus,Leathesia marine (difformis)
+Strongylocentrotus franciscanus,Polysiphonia
+Strongylocentrotus franciscanus,Neorhodomela
+Strongylocentrotus franciscanus,Prionitis
+Strongylocentrotus franciscanus,Laminaria
+Strongylocentrotus franciscanus,Alaria
+Strongylocentrotus franciscanus,Costaria costata
+Strongylocentrotus franciscanus,Petalonia fasciata
+Strongylocentrotus franciscanus,Callithamnion pikeanum
+Strongylocentrotus franciscanus,Scytosiphon lomentaria
+Strongylocentrotus franciscanus,Cumagloia andersonii
+Strongylocentrotus franciscanus,Phyllospadix
+Strongylocentrotus franciscanus,Postelsia palmaeformis
+Strongylocentrotus franciscanus,Analipus japonicus
+Strongylocentrotus franciscanus,Enteromorpha
+Leptasterias hexactis,Mytilus californianus
+Leptasterias hexactis,Mytilus trossulus
+Leptasterias hexactis,Pollicipes polymerus
+Leptasterias hexactis,Semibalanus cariosus
+Leptasterias hexactis,Balanus glandula
+Leptasterias hexactis,Balanus nubilus
+Leptasterias hexactis,Chthamalus dalli
+Leptasterias hexactis,Entodesma saxicola
+Leptasterias hexactis, Serpula vermicularis
+Leptasterias hexactis,Nucella ostrina
+Leptasterias hexactis,Nucella canalicalata
+Leptasterias hexactis,Nucella lamellosa
+Leptasterias hexactis,Lottia pelta
+Leptasterias hexactis,Lottia digitalis
+Leptasterias hexactis,Lottia paradigitalis
+Leptasterias hexactis,Lottia (Tectura) scutum
+Leptasterias hexactis,Katharina tunicata
+Leptasterias hexactis,Littorina sitkana
+Leptasterias hexactis,Littorina scutulata
+Leptasterias hexactis,Amphissa columbiana
+Leptasterias hexactis,Tonicella lineata
+Leptasterias hexactis,Calliostoma ligatum
+Leptasterias hexactis,Ocenebra interfossa
+Leptasterias hexactis,Chlorostoma (Tegula) funebralis
+Leptasterias hexactis,Lacuna vincta
+Leptasterias hexactis,Lepidochitona
+Leptasterias hexactis,Alia
+Leptasterias hexactis,Odostomia columbiana
+Leptasterias hexactis,Ceratostoma foliatum
+Leptasterias hexactis,Opalia montereyensis
+Amphipoda,Halosaccion glandiforme
+Amphipoda,Mastocarpus (Gigartina)
+Amphipoda,Endocladia muricata
+Amphipoda,Ulva
+Amphipoda,Porphyra
+Amphipoda,Acrosiphonia (Spongomorpha) coalita
+Amphipoda,Diatoms
+Amphipoda,Fucus distichus
+Amphipoda,Microcladia borealis
+Amphipoda,Sacharina (Hedophyllum) sessilis
+Amphipoda,Iridaea
+Amphipoda,Leathesia marine (difformis)
+Amphipoda,Polysiphonia
+Amphipoda,Neorhodomela
+Amphipoda,Prionitis
+Amphipoda,Laminaria
+Amphipoda,Costaria costata
+Amphipoda,Petalonia fasciata
+Amphipoda,Callithamnion pikeanum
+Amphipoda,Scytosiphon lomentaria
+Amphipoda,Cumagloia andersonii
+Amphipoda,Postelsia palmaeformis
+Amphipoda,Analipus japonicus
+Amphipoda,Enteromorpha
+Amphissa columbiana,Diatoms
+Amphissa columbiana,Detritus
+Idotea wosnesenskii,Halosaccion glandiforme
+Idotea wosnesenskii,Mastocarpus (Gigartina)
+Idotea wosnesenskii,Ulva
+Idotea wosnesenskii,Porphyra
+Idotea wosnesenskii,Acrosiphonia (Spongomorpha) coalita
+Idotea wosnesenskii,Diatoms
+Idotea wosnesenskii,Fucus distichus
+Idotea wosnesenskii,Microcladia borealis
+Idotea wosnesenskii,Sacharina (Hedophyllum) sessilis
+Idotea wosnesenskii,Iridaea
+Idotea wosnesenskii,Leathesia marine (difformis)
+Idotea wosnesenskii,Polysiphonia
+Idotea wosnesenskii,Neorhodomela
+Idotea wosnesenskii,Prionitis
+Idotea wosnesenskii,Laminaria
+Idotea wosnesenskii,Alaria
+Idotea wosnesenskii,Costaria costata
+Idotea wosnesenskii,Petalonia fasciata
+Idotea wosnesenskii,Callithamnion pikeanum
+Idotea wosnesenskii,Scytosiphon lomentaria
+Idotea wosnesenskii,Cumagloia andersonii
+Idotea wosnesenskii,Postelsia palmaeformis
+Idotea wosnesenskii,Analipus japonicus
+Idotea wosnesenskii,Enteromorpha
+Idotea wosnesenskii,Nucella ostrina
+Idotea wosnesenskii,Nucella canalicalata
+Idotea wosnesenskii,Nucella lamellosa
+Cirolana,Diatoms
+Cirolana,Detritus
+Chironomidae,Diatoms
+Chironomidae,Enteromorpha
+Tonicella lineata,Corallina vancouvriensis
+Tonicella lineata,Diatoms
+Tonicella lineata,Articulated corralines
+Calliostoma ligatum,Diatoms
+Calliostoma ligatum,Halichondria Haliclona
+Calliostoma ligatum,Detritus
+Pagurid,Diatoms
+Phascolosoma agassizii,Diatoms
+Phascolosoma agassizii,Detritus
+Cucumaria pseudocurata,Diatoms
+Cucumaria pseudocurata,Detritus
+Ocenebra interfossa,Mytilus trossulus
+Ocenebra interfossa,Semibalanus cariosus
+Ocenebra interfossa,Balanus glandula
+Ocenebra interfossa,Entodesma saxicola
+Ocenebra interfossa, Serpula vermicularis
+Ocenebra interfossa,Eudistylia
+Ocenebra interfossa,Lottia pelta
+Ocenebra interfossa,Lottia digitalis
+Ocenebra interfossa,Lottia paradigitalis
+Ocenebra interfossa,Lottia (Tectura) scutum
+Ocenebra interfossa,Mopalia
+Ocenebra interfossa,Tonicella lineata
+Ocenebra interfossa,Lepidochitona
+Petrolisthes,Detritus
+Chlorostoma (Tegula) funebralis,Halosaccion glandiforme
+Chlorostoma (Tegula) funebralis,Mastocarpus (Gigartina)
+Chlorostoma (Tegula) funebralis,Endocladia muricata
+Chlorostoma (Tegula) funebralis,Ulva
+Chlorostoma (Tegula) funebralis,Porphyra
+Chlorostoma (Tegula) funebralis,Acrosiphonia (Spongomorpha) coalita
+Chlorostoma (Tegula) funebralis,Diatoms
+Chlorostoma (Tegula) funebralis,Fucus distichus
+Chlorostoma (Tegula) funebralis,Microcladia borealis
+Chlorostoma (Tegula) funebralis,Iridaea
+Chlorostoma (Tegula) funebralis,Leathesia marine (difformis)
+Chlorostoma (Tegula) funebralis,Polysiphonia
+Chlorostoma (Tegula) funebralis,Neorhodomela
+Chlorostoma (Tegula) funebralis,Prionitis
+Chlorostoma (Tegula) funebralis,Laminaria
+Chlorostoma (Tegula) funebralis,Alaria
+Chlorostoma (Tegula) funebralis,Costaria costata
+Chlorostoma (Tegula) funebralis,Petalonia fasciata
+Chlorostoma (Tegula) funebralis,Callithamnion pikeanum
+Chlorostoma (Tegula) funebralis,Scytosiphon lomentaria
+Chlorostoma (Tegula) funebralis,Cumagloia andersonii
+Chlorostoma (Tegula) funebralis,Analipus japonicus
+Chlorostoma (Tegula) funebralis,Enteromorpha
+Lacuna vincta,Ulva
+Lacuna vincta,Porphyra
+Lacuna vincta,Diatoms
+Lacuna vincta,Fucus distichus
+Lacuna vincta,Sacharina (Hedophyllum) sessilis
+Lacuna vincta,Iridaea
+Lacuna vincta,Neorhodomela
+Lacuna vincta,Laminaria
+Lacuna vincta,Alaria
+Lacuna vincta,Costaria costata
+Ophiuroidea,Detritus
+Ophiuroidea,Phytoplankton
+Ophiuroidea,Particulate Detritus
+Notoplana,Mytilus trossulus
+Notoplana,Pollicipes polymerus
+Notoplana,Semibalanus cariosus
+Notoplana,Balanus glandula
+Notoplana,Balanus nubilus
+Notoplana,Chthamalus dalli
+Notoplana,Nucella ostrina
+Notoplana,Nucella canalicalata
+Notoplana,Nucella lamellosa
+Notoplana,Lottia pelta
+Notoplana,Lottia digitalis
+Notoplana,Lottia paradigitalis
+Notoplana,Lottia (Tectura) scutum
+Notoplana,Littorina sitkana
+Notoplana,Littorina scutulata
+Notoplana,Amphipoda
+Notoplana,Cirolana
+Notoplana,Chironomidae
+Notoplana,Ocenebra interfossa
+Lepidochitona,Halosaccion glandiforme
+Lepidochitona,Mastocarpus (Gigartina)
+Lepidochitona,Ulva
+Lepidochitona,Porphyra
+Lepidochitona,Acrosiphonia (Spongomorpha) coalita
+Lepidochitona,Diatoms
+Lepidochitona,Fucus distichus
+Lepidochitona,Iridaea
+Lepidochitona,Leathesia marine (difformis)
+Lepidochitona,Prionitis
+Lepidochitona,Petalonia fasciata
+Lepidochitona,Scytosiphon lomentaria
+Lepidochitona,Cumagloia andersonii
+Lepidochitona,Analipus japonicus
+Lepidochitona,Enteromorpha
+Dialula (Discodoris)  sandiegensis,Halichondria Haliclona
+Alia,Diatoms
+Archidoris montereyensis,Halichondria Haliclona
+Oedignathus inermis,Sacharina (Hedophyllum) sessilis
+Oedignathus inermis,Laminaria
+Oedignathus inermis,Detritus
+Pinnotheres plsum,Mytilus californianus
+Pinnotheres plsum,Mytilus trossulus
+Odostomia columbiana,Mytilus californianus
+Odostomia columbiana,Mytilus trossulus
+Odostomia columbiana,Entodesma saxicola
+sand tube worm,Particulate Detritus
+Fissurelidia (Megatebennus) bimaculatus,Halichondria Haliclona
+Oligocottus maculosus,Mytilus californianus
+Oligocottus maculosus,Mytilus trossulus
+Oligocottus maculosus,Pollicipes polymerus
+Oligocottus maculosus,Semibalanus cariosus
+Oligocottus maculosus,Balanus glandula
+Oligocottus maculosus, Serpula vermicularis
+Oligocottus maculosus,Eudistylia
+Oligocottus maculosus,Nucella ostrina
+Oligocottus maculosus,Nucella canalicalata
+Oligocottus maculosus,Lottia pelta
+Oligocottus maculosus,Lottia digitalis
+Oligocottus maculosus,Lottia paradigitalis
+Oligocottus maculosus,Lottia (Tectura) scutum
+Oligocottus maculosus,Nereis vexillosa
+Oligocottus maculosus,Littorina sitkana
+Oligocottus maculosus,Littorina scutulata
+Oligocottus maculosus,Amphipoda
+Oligocottus maculosus,Idotea wosnesenskii
+Oligocottus maculosus,Cirolana
+Oligocottus maculosus,Chironomidae
+Oligocottus maculosus,Pagurid
+Oligocottus maculosus,Ocenebra interfossa
+Oligocottus maculosus,Ophiuroidea
+Oligocottus maculosus,Nereis sp.
+Oligocottus maculosus,sand tube worm
+Oligocottus maculosus,Staphylinid  Beetle
+Oligocottus maculosus,Small Turrid
+Oligocottus maculosus,Halosydna brevisetosa
+Hermissenda (Phidiana) crassicornis,Anthopleura
+Ceratostoma foliatum,Semibalanus cariosus
+Ceratostoma foliatum,Balanus nubilus
+Pisaster ochraceus,Mytilus californianus
+Pisaster ochraceus,Mytilus trossulus
+Pisaster ochraceus,Pollicipes polymerus
+Pisaster ochraceus,Semibalanus cariosus
+Pisaster ochraceus,Balanus glandula
+Pisaster ochraceus,Balanus nubilus
+Pisaster ochraceus,Entodesma saxicola
+Pisaster ochraceus,Eudistylia
+Pisaster ochraceus,Nucella ostrina
+Pisaster ochraceus,Nucella canalicalata
+Pisaster ochraceus,Nucella lamellosa
+Pisaster ochraceus,Lottia pelta
+Pisaster ochraceus,Lottia digitalis
+Pisaster ochraceus,Lottia paradigitalis
+Pisaster ochraceus,Lottia (Tectura) scutum
+Pisaster ochraceus,Katharina tunicata
+Pisaster ochraceus,Mopalia
+Pisaster ochraceus,Amphissa columbiana
+Pisaster ochraceus,Cirolana
+Pisaster ochraceus,Tonicella lineata
+Pisaster ochraceus,Calliostoma ligatum
+Pisaster ochraceus,Pagurid
+Pisaster ochraceus,Ocenebra interfossa
+Pisaster ochraceus,Chlorostoma (Tegula) funebralis
+Pisaster ochraceus,Lepidochitona
+Pisaster ochraceus,Fissurelidia (Megatebennus) bimaculatus
+Pisaster ochraceus,Ceratostoma foliatum
+Clinocottus embryum,Mytilus californianus
+Clinocottus embryum,Mytilus trossulus
+Clinocottus embryum,Pollicipes polymerus
+Clinocottus embryum,Semibalanus cariosus
+Clinocottus embryum,Balanus glandula
+Clinocottus embryum,Balanus nubilus
+Clinocottus embryum, Serpula vermicularis
+Clinocottus embryum,Eudistylia
+Clinocottus embryum,Nucella ostrina
+Clinocottus embryum,Nucella canalicalata
+Clinocottus embryum,Lottia pelta
+Clinocottus embryum,Lottia digitalis
+Clinocottus embryum,Lottia paradigitalis
+Clinocottus embryum,Lottia (Tectura) scutum
+Clinocottus embryum,Nereis vexillosa
+Clinocottus embryum,Littorina sitkana
+Clinocottus embryum,Littorina scutulata
+Clinocottus embryum,Amphipoda
+Clinocottus embryum,Idotea wosnesenskii
+Clinocottus embryum,Cirolana
+Clinocottus embryum,Chironomidae
+Clinocottus embryum,Pagurid
+Clinocottus embryum,Ocenebra interfossa
+Clinocottus embryum,Ophiuroidea
+Clinocottus embryum,Nereis sp.
+Clinocottus embryum,sand tube worm
+Clinocottus embryum,Staphylinid  Beetle
+Clinocottus embryum,Halosydna brevisetosa
+Staphylinid  Beetle,Diatoms
+Staphylinid  Beetle,Amphipoda
+Siphonaria thersites,Mastocarpus (Gigartina)
+Siphonaria thersites,Endocladia muricata
+Siphonaria thersites,Ulva
+Siphonaria thersites,Porphyra
+Siphonaria thersites,Diatoms
+Siphonaria thersites,Fucus distichus
+Siphonaria thersites,Microcladia borealis
+Siphonaria thersites,Iridaea
+Siphonaria thersites,Polysiphonia
+Siphonaria thersites,Neorhodomela
+Siphonaria thersites,Petalonia fasciata
+Siphonaria thersites,Callithamnion pikeanum
+Siphonaria thersites,Cumagloia andersonii
+Siphonaria thersites,Analipus japonicus
+Siphonaria thersites,Enteromorpha
+Small Turrid,Diatoms
+Small Turrid,Detritus
+Halosydna brevisetosa,Detritus
+Stichaeidae,Ulva
+Stichaeidae,Porphyra
+Stichaeidae,Enteromorpha
+Henricia,Diatoms
+Henricia,Detritus
+Opalia montereyensis,Anthopleura
+Clinocottus globiceps,Mytilus californianus
+Clinocottus globiceps,Mytilus trossulus
+Clinocottus globiceps,Pollicipes polymerus
+Clinocottus globiceps,Semibalanus cariosus
+Clinocottus globiceps,Balanus glandula
+Clinocottus globiceps, Serpula vermicularis
+Clinocottus globiceps,Eudistylia
+Clinocottus globiceps,Nucella ostrina
+Clinocottus globiceps,Nucella canalicalata
+Clinocottus globiceps,Lottia pelta
+Clinocottus globiceps,Lottia digitalis
+Clinocottus globiceps,Lottia paradigitalis
+Clinocottus globiceps,Lottia (Tectura) scutum
+Clinocottus globiceps,Nereis vexillosa
+Clinocottus globiceps,Littorina sitkana
+Clinocottus globiceps,Littorina scutulata
+Clinocottus globiceps,Amphipoda
+Clinocottus globiceps,Idotea wosnesenskii
+Clinocottus globiceps,Cirolana
+Clinocottus globiceps,Chironomidae
+Clinocottus globiceps,Pagurid
+Clinocottus globiceps,Ocenebra interfossa
+Clinocottus globiceps,Ophiuroidea
+Clinocottus globiceps,Nereis sp.
+Clinocottus globiceps,sand tube worm
+Clinocottus globiceps,Staphylinid  Beetle
+Clinocottus globiceps,Halosydna brevisetosa
+Larus glaucescens,Mytilus californianus
+Larus glaucescens,Mytilus trossulus
+Larus glaucescens,Pollicipes polymerus
+Larus glaucescens,Eudistylia
+Larus glaucescens,Nucella ostrina
+Larus glaucescens,Nucella canalicalata
+Larus glaucescens,Nucella lamellosa
+Larus glaucescens,Lottia pelta
+Larus glaucescens,Lottia digitalis
+Larus glaucescens,Lottia (Tectura) scutum
+Larus glaucescens,Katharina tunicata
+Larus glaucescens,Mopalia
+Larus glaucescens,Nereis vexillosa
+Larus glaucescens,Emplectonema gracile
+Larus glaucescens,Strongylocentrotus purpuratus
+Larus glaucescens,Strongylocentrotus droebachensis
+Larus glaucescens,Strongylocentrotus franciscanus
+Larus glaucescens,Leptasterias hexactis
+Larus glaucescens,Amphipoda
+Larus glaucescens,Idotea wosnesenskii
+Larus glaucescens,Tonicella lineata
+Larus glaucescens,Pagurid
+Larus glaucescens,Phascolosoma agassizii
+Larus glaucescens,Cucumaria pseudocurata
+Larus glaucescens,Ocenebra interfossa
+Larus glaucescens,Petrolisthes
+Larus glaucescens,Chlorostoma (Tegula) funebralis
+Larus glaucescens,Nereis sp.
+Larus glaucescens,Oedignathus inermis
+Larus glaucescens,Oligocottus maculosus
+Larus glaucescens,Ceratostoma foliatum
+Larus glaucescens,Pisaster ochraceus
+Larus glaucescens,Clinocottus embryum
+Larus glaucescens,Halosydna brevisetosa
+Larus glaucescens,Stichaeidae
+Larus glaucescens,Clinocottus globiceps
+Larus glaucescens,Haematopus bachmani
+Larus glaucescens,Paranemertes peregrina
+Larus glaucescens,Amphiporus bimaculatus
+Larus glaucescens,Pelagic Fish
+Haematopus bachmani,Mytilus californianus
+Haematopus bachmani,Mytilus trossulus
+Haematopus bachmani,Pollicipes polymerus
+Haematopus bachmani,Entodesma saxicola
+Haematopus bachmani,Nucella ostrina
+Haematopus bachmani,Nucella canalicalata
+Haematopus bachmani,Nucella lamellosa
+Haematopus bachmani,Lottia pelta
+Haematopus bachmani,Lottia digitalis
+Haematopus bachmani,Lottia (Tectura) scutum
+Haematopus bachmani,Katharina tunicata
+Haematopus bachmani,Mopalia
+Haematopus bachmani,Nereis vexillosa
+Haematopus bachmani,Strongylocentrotus purpuratus
+Haematopus bachmani,Strongylocentrotus droebachensis
+Haematopus bachmani,Strongylocentrotus franciscanus
+Haematopus bachmani,Amphipoda
+Haematopus bachmani,Idotea wosnesenskii
+Haematopus bachmani,Tonicella lineata
+Haematopus bachmani,Pagurid
+Haematopus bachmani,Ocenebra interfossa
+Haematopus bachmani,Petrolisthes
+Haematopus bachmani,Chlorostoma (Tegula) funebralis
+Haematopus bachmani,Nereis sp.
+Haematopus bachmani,Oedignathus inermis
+Haematopus bachmani,Ceratostoma foliatum
+Haematopus bachmani,Halosydna brevisetosa
+Corvus caurinus,Pollicipes polymerus
+Corvus caurinus,Eudistylia
+Corvus caurinus,Nucella ostrina
+Corvus caurinus,Nucella canalicalata
+Corvus caurinus,Nucella lamellosa
+Corvus caurinus,Lottia pelta
+Corvus caurinus,Lottia digitalis
+Corvus caurinus,Lottia (Tectura) scutum
+Corvus caurinus,Mopalia
+Corvus caurinus,Nereis vexillosa
+Corvus caurinus,Emplectonema gracile
+Corvus caurinus,Strongylocentrotus purpuratus
+Corvus caurinus,Strongylocentrotus droebachensis
+Corvus caurinus,Strongylocentrotus franciscanus
+Corvus caurinus,Amphipoda
+Corvus caurinus,Idotea wosnesenskii
+Corvus caurinus,Pagurid
+Corvus caurinus,Phascolosoma agassizii
+Corvus caurinus,Cucumaria pseudocurata
+Corvus caurinus,Ocenebra interfossa
+Corvus caurinus,Petrolisthes
+Corvus caurinus,Chlorostoma (Tegula) funebralis
+Corvus caurinus,Notoplana
+Corvus caurinus,Nereis sp.
+Corvus caurinus,Oedignathus inermis
+Corvus caurinus,Oligocottus maculosus
+Corvus caurinus,Ceratostoma foliatum
+Corvus caurinus,Clinocottus embryum
+Corvus caurinus,Halosydna brevisetosa
+Corvus caurinus,Stichaeidae
+Corvus caurinus,Clinocottus globiceps
+Corvus caurinus,Haematopus bachmani
+Corvus caurinus,Amphiporus bimaculatus
+Detritus,Mytilus californianus
+Detritus,Mytilus trossulus
+Detritus,Semibalanus cariosus
+Detritus,Balanus glandula
+Detritus,Corallina vancouvriensis
+Detritus,Halichondria Haliclona
+Detritus,Articulated corralines
+Zooplankton,Phytoplankton
+Zooplankton,Particulate Detritus
+Paranemertes peregrina, Serpula vermicularis
+Paranemertes peregrina,Eudistylia
+Paranemertes peregrina,Nereis vexillosa
+Paranemertes peregrina,Nereis sp.
+Paranemertes peregrina,sand tube worm
+Paranemertes peregrina,Halosydna brevisetosa
+Amphiporus bimaculatus,Amphipoda
+Haliaeetus leucocephalus,Larus glaucescens
+Haliaeetus leucocephalus,Pelagic Fish
+Falco peregrinus,Corvus caurinus
+Pelagic Fish,Zooplankton

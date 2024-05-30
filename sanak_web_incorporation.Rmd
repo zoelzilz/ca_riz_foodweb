@@ -152,10 +152,10 @@ sanak_links_to_paste <- consumer_resource_links %>%
 
 ```
 
-
+## Step 4: export to CSV
 ```{r create csv to merge with edgelist master}
 
-write_csv(sanak_links_to_paste_species, "data/sanak_links_to_paste_29may2024.csv")
+write_csv(sanak_links_to_paste, "data/sanak_links_to_paste_29may2024.csv")
 
 ```
 
