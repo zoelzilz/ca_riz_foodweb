@@ -15,7 +15,7 @@ output: html_notebook
 #install.packages("tidyverse")
 #install.packages("NetIndices")
 #install.packages("cheddar")
-install.packages("grDevices")
+#install.packages("grDevices")
 
 library(igraph) 
 library(network) 

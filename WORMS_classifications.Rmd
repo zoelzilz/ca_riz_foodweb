@@ -97,79 +97,6 @@ nodes_master <- readxl::read_xlsx("/Users/zoe/Library/CloudStorage/GoogleDrive-z
 
 ```
 
-### Just some fun summary stuff
-```{r summary}
-
-# how many unique species?
-n_distinct(nodes_master$species)
-
-# how many species below point conception and above
-
-north_nodes <- nodes_master %>% 
-  filter(n_s_both != "S")
-
-n_distinct(north_nodes$species)
-
-south_nodes <- nodes_master %>% 
-  filter(n_s_both != "N") 
-
-n_distinct(south_nodes$species)
-
-both_nodes <- nodes_master %>% 
-  filter(n_s_both == "Both" | n_s_both == "Central")
-
-n_distinct(south_nodes$species)
-
-```
-
-
-### Some stacked barcharts, for fun!
-
-```{r stacked barcharts}
-
-# comparison of functional groups north and south of PC
-south_func_groups <- south_nodes %>% 
-  filter(!is.na(trophic_strategy)) %>% 
-  group_by(trophic_strategy) %>% 
-  summarise(count = n()) %>%  # count of nodes in each trophic group
-  mutate(n_s = "south") # add a column notating these are south so I can combine tibbles later
-
-
-north_func_groups <- north_nodes %>% 
-  filter(!is.na(trophic_strategy)) %>% 
-  group_by(trophic_strategy) %>% 
-  summarise(count = n()) %>% 
-  mutate(n_s = "north")
-
-func_groups <- rbind(north_func_groups, south_func_groups)
-
-func_barplot <- ggplot(func_groups, aes(fill = trophic_strategy, x = n_s, y = count)) +
-  geom_bar(position = "stack", stat = "identity")
-
-
-# comparison of zone fidelity north and south of PC
-
-south_zone_groups <- south_nodes %>% 
-  filter(!is.na(clean_zone)) %>% 
-  group_by(clean_zone) %>% 
-  summarise(count = n()) %>%  # count of nodes in each trophic group
-  mutate(n_s = "south") # add a column notating these are south so I can combine tibbles later
-
-
-north_zone_groups <- north_nodes %>% 
-  filter(!is.na(clean_zone)) %>% 
-  group_by(clean_zone) %>% 
-  summarise(count = n()) %>% 
-  mutate(n_s = "north")
-
-zone_groups <- rbind(north_zone_groups, south_zone_groups)
-
-zone_barplot <- ggplot(zone_groups, aes(fill = clean_zone, x = n_s, y = count)) +
-  geom_bar(position = "stack", stat = "identity")
-
-```
-
-
 ## Starting with coding in full taxonomy using worrms package, which queries the WORMS api
 ### as of 3/14 no longer need to do this!
 
@@ -380,6 +307,61 @@ write.csv(nodes_fulltax, "new_nodes_w_wormstaxonomy_4apr2024.csv", row.names = F
 
 ```
 
+
+### ANDDDD one last time on 2 june because i added all the birds! Not going to do the whole dataset this time, just appending the new species (id numbers greater than 3009)
+
+```{r getting WORMS taxonomy for new nodes 2 jun}
+
+new_nodes3 <- read_csv("data/RIZspecieslist_fulltaxonomy_2jun24.csv") %>% 
+  mutate(species = trimws(species)) %>% 
+  filter(!is.na(species)) %>%  # popped a bunch of NAs on the end by accident, taking the, out
+  filter(id.x > 3008) %>%  # just include the nodes i recently added so we don't classify the whole fucking thing, dates are being fucky so using id instead
+  ### trying something new below: I don't want to manually enter all the ones ID'd only to genus, so I'm going to remove "sp."
+  mutate(species2 = str_remove_all(species, "sp.")) %>% 
+  mutate(species2 = trimws(species2)) 
+
+
+input_species <- new_nodes3$species2
+
+WORMS_taxonomy_new <- wm_classification_(name = input_species) %>% 
+  select(!AphiaID) %>% # aphiaID messes up the next step and we don't need it (each taxon has a different aphiaID)
+  pivot_wider(names_from = rank, values_from = scientificname)  #makes this more tidy for our purposes
+
+beep() #bitch tell me when ur done
+
+# the following code unnests the lists within cells that are created by pivot_wider
+WORMS_taxonomy_new2 <- WORMS_taxonomy_new %>% 
+  mutate(across(1:17, ~replace(., lengths(.) == 0, NA))) %>%  # replacing nulls with NAs
+  mutate(across(where(is.list), ~ map(., first))) %>% # also returned lists in columns and I have to collapse them
+  unnest() %>%  # threw a warning about including cols but it worked so suck it nerd
+  #select(2:9) %>% 
+  clean_names() %>% 
+  #filter(is.na(species))
+  mutate(species2 = case_when(is.na(species) ~ as.character(genus), # need to make it so that the "species" column also has the genus names, for binding to the other dataframe (where it's called species2)
+                              .default = as.character(species))) %>% 
+  select(!species)
+
+# don't need to write a csv at this point this round
+
+# first remove taxonomy columns from new_nodes
+nodes_notaxa <- new_nodes3 %>% 
+  select(!31:74) %>%  # removing existing taxonomy + cols we dont need (but double chekc that these col numbers are still correct)
+  rename(species2 = species)
+
+
+# can't join by species alone anymore
+nodes_fulltax <- left_join(nodes_notaxa, WORMS_taxonomy_new2, by = join_by(species2)) %>% 
+  rename(species = species2, # back to normal
+         aphia = id) 
+
+count_taxmissing <- sum(is.na(nodes_fulltax$aphia))
+count_taxmissing
+# 31
+
+write.csv(nodes_fulltax, "new_nodes_w_wormstaxonomy_2june2024.add.csv", row.names = FALSE) # will need to manually QA QC this outside of R to look for typos, etc, and then append to 2jun2024 csv
+
+
+```
 
 ### Have to leave R now to manually fill in all of the taxonomy that WORMS couldn't do via code, uploading new and improved manually edited dataframe!
 #### for reproducibility, did the following:

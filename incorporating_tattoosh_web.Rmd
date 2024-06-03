@@ -8,19 +8,26 @@ date: "2024-05-30"
 library(tidyverse)
 
 ```
+# giving up, this web is full of lies (eg errors)
+
 # Tatoosh Island Web from:
 ## Sander, E. L., Wootton, J. T., & Allesina, S. (2015). What Can Interaction Webs Tell Us About Species Roles? PLOS Computational Biology, 11(7), e1004330. https://doi.org/10.1371/journal.pcbi.1004330
+
+## Network and taxonomic data for the Tatoosh network is available on Dryad at https://datadryad.org/stash/dataset/doi:10.5061/dryad.39jv1
+
+### before this (a long time ago) I converted the matrix in that repository into an edgelist csv (r project: RIZ, Tatoosh.Rmd)
 
 ```{r import tatoosh data and my data}
 
 ## my node list
 ca_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_28may24.csv") %>% 
-  rename(Name = species,
-         ca_id = id.x) # so it matches name
+  rename(Name = species) # name is just easier
 
 # tatoosh node list 
 
-tat_nodes <- read_csv("data/tatoosh_web/Tatoosh-Taxonomy.csv")
+tat_nodes <- read_csv("data/tatoosh_web/Tatoosh-Taxonomy.csv") %>% 
+  rename(Name = input) %>% # also so it matches
+  select(!3:17) # these columns are useless to us
 
 # tatoosh iz web
 tat_web <- read_csv("data/tatoosh_web/Tatoosh_EdgeList.csv")
@@ -30,49 +37,50 @@ tat_web <- read_csv("data/tatoosh_web/Tatoosh_EdgeList.csv")
 ## Step 1: Wrangle Tattoosh nodes so they match my nodes
 ```{r node wrangling}
 
-# first start by keeping species in my list that are present in sanak list
-matched_species <- inner_join(sanak_nodes_iz, ca_nodes, by = join_by(Name)) %>% 
+# first start by keeping species in my list that are present in tatoosh list
+matched_species <- inner_join(tat_nodes, ca_nodes, by = join_by(Name)) %>% 
   mutate(matched_using = "species")
 
-# now we will make a list of genera in the sanak list that are in my list 
-sanak_genera <- sanak_nodes_iz %>% 
-  rename(genus = Name) # so we can join on genus column in ca_nodes
+# i also want to see which species didn't get matched to make sure i should actually leave them out, because this dataset is funky
+unmatched <- anti_join(tat_nodes, ca_nodes, by = join_by(Name))
 
-matched_genera <- inner_join(sanak_genera, ca_nodes, by = join_by(genus))%>% 
-  mutate(matched_using = "genus")
+# now we will make a list of genera in the tatoosh list that are in my list 
+tat_genera <- tat_nodes %>% 
+  rename(genus = Name) # so we can join on genus column in ca_nodes (e.g. see where the name in the tatoosh list matches a genus in our list)
 
-sanak_fams <- sanak_nodes_iz %>% 
-  rename(family = Name) # so we can join on genus column in ca_nodes
+matched_genera <- inner_join(tat_genera, ca_nodes, by = join_by(genus))%>% 
+  mutate(matched_using = "genus") # resulted in like 40 ish species being matched
 
-matched_families <- inner_join(sanak_fams, ca_nodes, by = join_by(family))%>% 
+tat_fams <- tat_nodes %>% 
+  rename(family = Name) # so we can join on family column in ca_nodes (e.g. see where the name in the tatoosh list matches a family in our list)
+
+matched_families <- inner_join(tat_fams, ca_nodes, by = join_by(family))%>% 
   mutate(matched_using = "family")
 
 # need to make a full list of all the matched taxa and include a column indicating how that taxon was matched (e.g. species, genus, family)
 
-matched_nodes_all <- rbind(matched_species, matched_genera, matched_families)
+matched_nodes_all <- rbind(matched_species, matched_genera, matched_families) # about 146 nodes!
 
 ```
 
-## Step 2: Wrangling the sanak links to match my node info
+## Step 2: Wrangling the tatoosh links to match my node info
 
-### first i did this piecemeal for species:species first, then genus:genus, finally family:family, but then realized i need all interactions between matched taxa including species:species, species:genus, species: family, etc, so I went back and made a big combo list of all the taxa that matched from species:family level (i excluded higher levels based on logic). taxonomic level matches are below this next chunk
-
-#### 361 nodes in the california web are represented in the sanak web, either by their exact species (n = 52), their genus (n = 111), or their family (n = 198). This leaves out nodes that might be the same but be called a different or old name. Oh well!
+#### 146 nodes in the california web are represented in the tatoosh web, either by their exact species (n = 56), their genus (n = 47), or their family (n = 43 spp from 2 families). This leaves out nodes that might be the same but be called a different or old name. Oh well!
 
 ```{r link wrangling for all matched taxa}
 # make a version of the matched nodes list to join with the link list (need to make sure IDs can bind)
 
 # first for consumers
 consumers_to_match <- matched_nodes_all %>% 
-  rename(Consumer = sanak_id)  # ID column name in link list
+  rename(Consumer = original_name)  # ID column name in link list is Consumer, need to match using the original names from the dataset (because i manually changed some names to match my names)
 
-consumers_data <- inner_join(sanak_iz, consumers_to_match, by = join_by(Consumer), relationship = "many-to-many") %>% 
-  select(Consumer, Name, ca_id, common_name, category, life_stage, Resource, matched_using) # only need some relevant data, can add more later
+consumers_data <- inner_join(tat_web, consumers_to_match, by = join_by(Consumer), relationship = "many-to-many") %>% 
+  select(Consumer, Name, id.x, common_name, category, life_stage, Resource, matched_using) # only need some relevant data, can add more later
 
 # then for resources
 resources_to_match <- matched_nodes_all %>% 
-  rename(Resource = sanak_id) %>%   # resource ID column name in link list, to match
-  select(Resource, Name, ca_id, common_name, category, life_stage, matched_using, zone)
+  rename(Resource = original_name) %>%   # ID column name in link list is Resource, need to match using the original names from the dataset (because i manually changed some names to match my names)
+  select(Resource, Name, id.x, common_name, category, life_stage, matched_using, zone)
 
 # now put all links together
 consumer_resource_links <- inner_join( # did left_join at first but it included a lot of resources that didn't match ca nodes
