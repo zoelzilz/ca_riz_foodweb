@@ -35,14 +35,14 @@ library(tidyverse)
 ```{r import potential nodes and edge list}
 
 ## nodes ##
-potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_6may24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links AND THEN AGAIN UPDATE TO 5/3 VERSION to fix some mistakes and finally 5/6 i hope
+potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_2jun24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links AND THEN AGAIN UPDATE TO 5/3 VERSION to fix some mistakes and finally 5/6 i hope; lol jk its june 2nd and i'm still updating things
   rename(nodeNum = id.x)
 #View(potential_nodes)
 
 #2340 nodes
 
 ## edges ##
-edges_unclean <- read_csv("data/edges_frommaster_6may2024.csv") %>% # updated again, as above
+edges_unclean <- read_csv("data/edges_frommaster_2jun2024.csv") %>% # updated again, as above
   filter(!is.na(consumerNum)) %>% 
   filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
   filter(!is.na(resourceNum)) %>% 
@@ -257,9 +257,9 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
 ## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
 ```{r saving current working node list and edge list}
 
-write_csv(nodes_attributes_clean, "data/foodweb_V3/nodes_final_3may2024.csv")
+write_csv(nodes_attributes_clean, "data/foodweb_V4/nodes_final_2jun2024.csv")
 
-write_csv(edges_clean, "data/foodweb_V3/links_final_3may2024.csv")
+write_csv(edges_clean, "data/foodweb_V4/links_final_2jun2024.csv")
 
 ```
 
@@ -297,7 +297,7 @@ trophic_links <- edges_clean %>% # swapping to "links" lingo because armand thin
          interaction.type !=9, #endocommensal
          interaction.type !=10, #ectocommensal
          interaction.type !=22, #mutualism
-         interaction.type !=28, #boring
+         #interaction.type !=28, #boring # i think we need to leave boring in because of the gammarids that bore and eat
          interaction.type != 29) %>%  
   dplyr::select(resourceNum,consumerNum,  interaction.type) %>%  # RESOURCE NUM HAS TO GO FIRST OR WEB IS UPSIDEDOWN
   

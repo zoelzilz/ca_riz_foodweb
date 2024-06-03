@@ -247,3 +247,177 @@ inxs_to_paste <- edges_from_node_metadata %>%
 
 write_csv(inxs_to_paste, "data/specieslist_inxs_to_paste_22mar2024.csv")
 ```
+
+
+### also decided pretty late in the game (june) to enter the interactions from the "eaten_by" column - in a new version of the species list i added a "clean_pred" column for this purpose
+```{r pull in latest species list}
+
+nodes_unclean2 <- read_csv("data/RIZspecieslist_fulltaxonomy_2jun24.csv")
+
+```
+```{r clean dataset for expanding resource relationships}
+resource_nodes <- nodes_unclean2 %>% 
+  select(!c(preys_on, non_trophic_epicommensal_w, mutualist_w, parasitized_by, unknown_symbiosis, how_picky_symbiotically, x41, clean_zone, googled, justification, confidence, node_type, node_resolution)) %>% 
+  filter(!is.na(preds_clean))
+
+
+################ now we need to expand the consumers (preds) for each resource  ##################
+
+###### all we need to do is separate by comma because i prepped the dataframe ahead of time ###### 
+
+resources_all_ints <- resource_nodes %>% 
+  select(id.x, species, category, common_name, life_stage, n_s_both, zone, preds_clean, source) %>% 
+  separate_rows(preds_clean, sep = ",") %>% 
+  mutate(preds_clean = trimws(preds_clean)) %>% 
+  rename(consumerName = preds_clean)
+  
+  
+################ next we can join with the species list and include relevant metadata, mainly the id number  ##################
+
+########### FIRST BY SPECIES ###########
+
+##### make resource metadata for clean binding 
+consumer_nodes <- nodes_unclean %>% 
+  select(id.x, species, alternate_nomenclature, zone, category, genus, life_stage, n_s_both) %>% 
+  rename(consumerNum = id.x, 
+         consumerName = species, # needs to match consumerName in other dataframe so we can use that column to bind
+         consumer_alt = alternate_nomenclature, 
+         c_zone = zone, 
+         consumerCat = category, 
+         consumerGenus = genus,
+         consumerStage = life_stage, 
+         c_nsboth = n_s_both)
+
+##### bind the two, only including consumers with matched resources
+
+edges_from_node_metadata <- left_join(resources_all_ints, consumer_nodes, by = join_by(consumerName)) 
+
+# split into two dataframes, the ones that matched and the ones that didnt
+matched_species <- edges_from_node_metadata%>% 
+  filter(!is.na(consumerNum)) %>%  # taking out the ones that didn't work
+  mutate(matched_by = "species") %>% 
+  select(!consumerGenus) # we wont need this and makes it hard to rbind
+
+unmatched <- edges_from_node_metadata%>% 
+  filter(is.na(consumerNum)) %>%  # keeping the ones that didn't work
+  select(!c(consumerGenus, # we need this column to be gone for the next bind
+         consumerNum, consumer_alt, consumerCat, consumerStage, c_zone, c_nsboth)) 
+
+########### THEN BY GENUS ###########
+
+# make resource dataframe for matching
+genus_resource_nodes <- unmatched %>% 
+  rename(consumerGenus = consumerName) # so we can bind using this column in consumer nodes
+
+# bind
+edges_from_genus <- left_join(genus_resource_nodes, consumer_nodes, by = join_by(consumerGenus)) 
+
+# split into two dataframes, the ones that matched and the ones that didnt
+matched_genus <- edges_from_genus%>% 
+  filter(!is.na(consumerNum)) %>%  # taking out the ones that didn't work
+  mutate(matched_by = "genus") %>% 
+  select(!consumerGenus) # we wont need this after checking and makes it hard to rbind
+
+unmatched_still <- edges_from_genus%>% 
+  filter(is.na(consumerNum)) %>%  # keeping the ones that didn't work
+  select(!c(consumerCat, # we need this column to be gone for the next bind
+         consumerName, consumerNum, consumer_alt, consumerStage, c_zone, c_nsboth)) 
+ 
+
+########### THEN BY CATEGORY ###########
+# make resource dataframe for matching
+cat_resource_nodes <- unmatched_still %>% 
+  rename(consumerCat = consumerGenus) # so we can bind using this column in consumer nodes
+
+# bind
+edges_from_category <- left_join(cat_resource_nodes, consumer_nodes, by = join_by(consumerCat)) 
+
+# split into two dataframes, the ones that matched and the ones that didnt
+matched_cat <- edges_from_category%>% 
+  filter(!is.na(consumerNum)) %>%  # taking out the ones that didn't work
+  mutate(matched_by = "category") %>% 
+  select(!consumerGenus) # we wont need this and makes it hard to rbind
+
+unmatched4evr <- edges_from_category%>% 
+  filter(is.na(consumerNum))  # keeping the ones that didn't work
+
+
+```
+
+
+### now to prepare to paste into edgelist again
+
+```{r make csv to paste}  
+
+# combine all successful matches
+matched_all <- rbind(matched_species, matched_genus, matched_cat)%>% 
+  mutate(justification = case_when(matched_by == "species" ~ 3,
+                                   matched_by == "genus" ~ 6,
+                                   matched_by == "category" ~ 6)) %>% 
+  mutate(confidence = case_when(justification == 3 ~ 1,
+                                justification == 6 ~ 2
+                                ))
+
+# remove higher taxonomy and make column names match
+to_paste <- matched_all %>% 
+  
+  #add in columns that are present in edgelist master:
+  mutate(date_added = "3 Jun 2024") %>% 
+  mutate(INITIALS = "ZZ_coded") %>% 
+  mutate(pools_exposed = NA) %>% # keep this empty for now
+  mutate(incl.code = 1) %>% # keep this empty for now
+  mutate(localities = "California") %>%  # keep this empty for now
+  mutate(MorrisHaderlie = "y") %>%
+  mutate(epibiota_consumed = "y") %>% 
+  mutate(notes = NA) %>% 
+  mutate(link.ID = (20491 + seq_len(length.out = n()))) %>%  # 19167 is currently the last link id # in edgelist_master so make sure to change
+  rename(ref_num = source, 
+         #consumerName matches
+         #consumerCat already matches
+         resourceNum = id.x,
+         resourceStage = life_stage, # redundant with below but whatever
+         resourceName = species,
+         resourceCat = category,
+         remove_zone = zone,
+         zone = c_zone # i looked thorugh and i want to keep the consumer zone instead of resource zone
+         ) %>% 
+  
+  # need to add a column that creates numeric life stage (i'm going to clean some of this manually bc its a disaster) for consumers
+  mutate(consumerStage = case_when(
+    consumerStage == "adult" | consumerStage == "medusa" ~ 1,
+    consumerStage == "egg" ~ 2,
+    #consumerStage == "larva" & consumerCat != "nematode" ~ 5, # first stage larva
+    consumerStage == "nauplii" ~ 3, # first stage larva
+    consumerStage == "procercoid" ~ 3, # first stage larva
+    consumerStage == "redia" ~ 3, # first stage larva
+    consumerStage == "cercaria" ~ 3, # first stage larva
+    consumerStage == "sporocyst" ~ 3, # first stage larva
+    #consumerStage == "cystacanth" & resource_phylum == "Arthropoda" ~ 3, # first stage larva eg cystacanth in arthropod
+    consumerStage == "plerocercoid" ~ 4, # 2nd stage larva
+    consumerStage == "juvenile" ~ 4, # juvenile fish/snail/crab
+    #consumerStage == "cystacanth" & resource_phylum == "Chordata" ~ 4, #2nd stage larva
+    consumerStage == "hydroid" ~ 5, # polyp stage in cnidarians
+    consumerStage == "metacercaria" ~ 5,
+    #consumerStage == "larva" & consumerCat == "nematode" ~ 5, #L3 larva in nematodes (pretty sure there are none in this list other than L3s in fish but double check)
+    consumerStage == "multiple" ~ 6, 
+    .default = NA
+  )) %>% # i think that if this isn't perfect, that's ok because later in the pipeline i replace all this info with info from the node list
+  
+  # need to add a column that creates numeric life stage for resources as well
+  mutate(resourceStage = case_when(
+    resourceStage == "adult" | resourceStage == "medusa" ~ 1,
+    resourceStage == "egg" ~ 2,
+    resourceStage == "juvenile" ~ 4, # juvenile fish/snail/crab
+    resourceStage == "nauplii" ~ 3, # first stage larva
+    resourceStage == "hydroid" | resourceStage == "hydroid colony" ~ 5, # polyp stage in cnidarians
+    resourceStage == "multiple" ~ 6,
+    .default = NA
+  )) %>% 
+  
+  mutate(interaction.type = 1)%>% # only predation here
+  # now select out all the columns that don't match and put them in the right order
+  select(INITIALS, consumerNum, consumerName, consumerCat, consumerStage, resourceNum, resourceName, resourceCat, resourceStage, interaction.type, confidence, justification, incl.code, ref_num, localities, zone, pools_exposed, MorrisHaderlie, epibiota_consumed, notes, link.ID, date_added)
+                                                          
+
+write_csv(to_paste, "data/specieslist_inxs_to_paste_3jun2024.csv")
+```
