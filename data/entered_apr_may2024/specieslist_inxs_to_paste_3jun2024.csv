@@ -1,0 +1,743 @@
+INITIALS,consumerNum,consumerName,consumerCat,consumerStage,resourceNum,resourceName,resourceCat,resourceStage,interaction.type,confidence,justification,incl.code,ref_num,localities,zone,pools_exposed,MorrisHaderlie,epibiota_consumed,notes,link.ID,date_added
+ZZ_coded,2060,Stylochus tripartitus,turbellarian,1,467,Paraconcavus pacificus,barnacle,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,all,NA,y,y,NA,20492,3 Jun 2024
+ZZ_coded,705,Pleioplana inquieta,flatworm,1,467,Paraconcavus pacificus,barnacle,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20493,3 Jun 2024
+ZZ_coded,2395,Asteroidea,sea star,6,467,Paraconcavus pacificus,barnacle,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,all,NA,y,y,NA,20494,3 Jun 2024
+ZZ_coded,284,Nucella emarginata,snail,1,366,Mytilus californianus,mussel,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,high to middle,NA,y,y,NA,20495,3 Jun 2024
+ZZ_coded,273,Ceratostoma nuttalli,murex,1,366,Mytilus californianus,mussel,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,middle to low,NA,y,y,NA,20496,3 Jun 2024
+ZZ_coded,1836,Ceratostoma nuttalli,snail,NA,366,Mytilus californianus,mussel,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,middle to low,NA,y,y,NA,20497,3 Jun 2024
+ZZ_coded,279,Roperia poulsoni,murex,1,366,Mytilus californianus,mussel,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low tidepools,NA,y,y,NA,20498,3 Jun 2024
+ZZ_coded,150,Pisaster ochraceus,asteroid,1,366,Mytilus californianus,mussel,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,"middle, low",NA,y,y,NA,20499,3 Jun 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,366,Mytilus californianus,mussel,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,NA,NA,y,y,NA,20500,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,366,Mytilus californianus,mussel,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,NA,NA,y,y,NA,20501,3 Jun 2024
+ZZ_coded,330,Corambe steinbergae,nudibranch,1,821,Membranipora serrilamella,bryozoan,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20502,3 Jun 2024
+ZZ_coded,150,Pisaster ochraceus,asteroid,1,293,Callianax biplicata,snail,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,"middle, low",NA,y,y,NA,20503,3 Jun 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,293,Callianax biplicata,snail,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20504,3 Jun 2024
+ZZ_coded,144,Patiria miniata,asteroid,1,293,Callianax biplicata,snail,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20505,3 Jun 2024
+ZZ_coded,566,Pachygrapsus crassipes,true crab,1,566,Pachygrapsus crassipes,true crab,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,high to middle,NA,y,y,NA,20506,3 Jun 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,420,Enteroctopus dofleini,octopus,NA,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20507,3 Jun 2024
+ZZ_coded,9,Triakis semifasciata,shark,1,420,Enteroctopus dofleini,octopus,NA,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20508,3 Jun 2024
+ZZ_coded,605,Triakis semifasciata,shark,4,420,Enteroctopus dofleini,octopus,NA,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20509,3 Jun 2024
+ZZ_coded,606,Triakis semifasciata,shark,NA,420,Enteroctopus dofleini,octopus,NA,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20510,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,420,Enteroctopus dofleini,octopus,NA,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20511,3 Jun 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,1745,Enteroctopus dofleini,octopus,1,1,1,3,1,Light & Smith,California,NA,NA,y,y,NA,20512,3 Jun 2024
+ZZ_coded,9,Triakis semifasciata,shark,1,1745,Enteroctopus dofleini,octopus,1,1,1,3,1,Light & Smith,California,NA,NA,y,y,NA,20513,3 Jun 2024
+ZZ_coded,605,Triakis semifasciata,shark,4,1745,Enteroctopus dofleini,octopus,1,1,1,3,1,Light & Smith,California,NA,NA,y,y,NA,20514,3 Jun 2024
+ZZ_coded,606,Triakis semifasciata,shark,NA,1745,Enteroctopus dofleini,octopus,1,1,1,3,1,Light & Smith,California,NA,NA,y,y,NA,20515,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,1745,Enteroctopus dofleini,octopus,1,1,1,3,1,Light & Smith,California,NA,NA,y,y,NA,20516,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,550,Cancer anthonyi,true crab,1,1,1,3,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20517,3 Jun 2024
+ZZ_coded,150,Pisaster ochraceus,asteroid,1,203,Lottia limatula,true limpet,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,"middle, low",NA,y,y,NA,20518,3 Jun 2024
+ZZ_coded,566,Pachygrapsus crassipes,true crab,1,203,Lottia limatula,true limpet,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,high to middle,NA,y,y,NA,20519,3 Jun 2024
+ZZ_coded,282,Acanthinucella spirata,snail,1,248,Littorina scutulata,littorine,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,high to middle,NA,y,y,NA,20520,3 Jun 2024
+ZZ_coded,627,Acanthinucella punctulata,snail,NA,248,Littorina scutulata,littorine,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,high,NA,y,y,NA,20521,3 Jun 2024
+ZZ_coded,281,Acanthinucella punctulata,snail,1,248,Littorina scutulata,littorine,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,high,NA,y,y,NA,20522,3 Jun 2024
+ZZ_coded,149,Leptasterias hexactis,asteroid,1,248,Littorina scutulata,littorine,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,middle,NA,y,y,NA,20523,3 Jun 2024
+ZZ_coded,3004,Porichthys notatus,fish,NA,3004,Porichthys notatus,fish,NA,1,1,3,1,363; 364,California,low,NA,y,y,NA,20524,3 Jun 2024
+ZZ_coded,3006,Porichthys notatus,fish,NA,3004,Porichthys notatus,fish,NA,1,1,3,1,363; 364,California,low,NA,y,y,NA,20525,3 Jun 2024
+ZZ_coded,2293,Porichthys notatus,fish,1,3004,Porichthys notatus,fish,NA,1,1,3,1,363; 364,California,low,NA,y,y,NA,20526,3 Jun 2024
+ZZ_coded,3004,Porichthys notatus,fish,NA,3006,Porichthys notatus,fish,NA,1,1,3,1,364,California,low,NA,y,y,NA,20527,3 Jun 2024
+ZZ_coded,3006,Porichthys notatus,fish,NA,3006,Porichthys notatus,fish,NA,1,1,3,1,364,California,low,NA,y,y,NA,20528,3 Jun 2024
+ZZ_coded,2293,Porichthys notatus,fish,1,3006,Porichthys notatus,fish,NA,1,1,3,1,364,California,low,NA,y,y,NA,20529,3 Jun 2024
+ZZ_coded,358,Aeolidia loui,nudibranch,1,104,Urticina crassicornis,anemone,1,1,1,3,1,"Morris, Abbott, & Haderlie; LIght & Smith",California,low,NA,y,y,NA,20530,3 Jun 2024
+ZZ_coded,358,Aeolidia loui,nudibranch,1,105,Urticina coriacea,anemone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20531,3 Jun 2024
+ZZ_coded,358,Aeolidia loui,nudibranch,1,102,Epiactis prolifera,anemone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20532,3 Jun 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,102,Epiactis prolifera,anemone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20533,3 Jun 2024
+ZZ_coded,358,Aeolidia loui,nudibranch,1,107,Metridium senile,anemone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20534,3 Jun 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,107,Metridium senile,anemone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20535,3 Jun 2024
+ZZ_coded,2180,Ancula pacifica,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,1,3,1,Wasson 1997,California,all,NA,y,y,NA,20536,3 Jun 2024
+ZZ_coded,312,Cadlina luteomarginata,nudibranch,1,71,Higginsia sp.,sponge,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20537,3 Jun 2024
+ZZ_coded,549,Cancer antennaria,true crab,1,279,Roperia poulsoni,murex,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20538,3 Jun 2024
+ZZ_coded,549,Cancer antennaria,true crab,1,284,Nucella emarginata,snail,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20539,3 Jun 2024
+ZZ_coded,555,Cancer productus,true crab,1,945,Eutonina indicans,plankton,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20540,3 Jun 2024
+ZZ_coded,554,Cancer productus,true crab,4,945,Eutonina indicans,plankton,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20541,3 Jun 2024
+ZZ_coded,711,Carcinonemertes epialti,nemertean,1,992,Pugettia producta,true crab,NA,1,1,3,1,Light & Smith,California,all,NA,y,y,NA,20542,3 Jun 2024
+ZZ_coded,711,Carcinonemertes epialti,nemertean,1,999,Carcinus maenas,true crab,NA,1,1,3,1,Light & Smith,California,all,NA,y,y,NA,20543,3 Jun 2024
+ZZ_coded,2097,Scorpaenichthys marmoratus,fish,1,546,Loxorhynchus crispatus,true crab,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,NA,NA,y,y,NA,20544,3 Jun 2024
+ZZ_coded,1905,Chromodoris macfarlandi,nudibranch,1,2351,Aplysilla polyraphis,sponge,1,1,1,3,1,Light & Smith,California,all,NA,y,y,NA,20545,3 Jun 2024
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,652,Sylvetia compressa,brown algae,1,1,1,3,1,Abbott & Hollenberg; Algaebase,California,"high tide pools, nocturnal",NA,y,y,NA,20546,3 Jun 2024
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,656,Cladophora columbiana,green algae,1,1,1,3,1,Abbott & Hollenberg; 2021 Algae ID Workshop,California,"high tide pools, nocturnal",NA,y,y,NA,20547,3 Jun 2024
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,640,Endocladia muricata,red algae,1,1,1,3,1,Abbott & Hollenberg,California,"high tide pools, nocturnal",NA,y,y,NA,20548,3 Jun 2024
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,653,Hildenbrandia sp.,red algae,1,1,1,3,1,Abbott & Hollenberg,California,"high tide pools, nocturnal",NA,y,y,NA,20549,3 Jun 2024
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,654,Mastocarpus sp.,red algae,1,1,1,3,1,Abbott & Hollenberg,California,"high tide pools, nocturnal",NA,y,y,NA,20550,3 Jun 2024
+ZZ_coded,1924,Dendronotus subramosus,nudibranch,1,91,Aglaophenia struthionides,hydroid,5,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20551,3 Jun 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,110,Balanophyllia elegans,anemone,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20552,3 Jun 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,179,Didemnum carnulentum,tunicate,1,1,1,3,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20553,3 Jun 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,876,Phidolopora pacifica,bryozoan,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20554,3 Jun 2024
+ZZ_coded,230,Calliostoma annulatum,topsnail,1,876,Phidolopora pacifica,bryozoan,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20555,3 Jun 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,222,Boltenia villosa,tunicate,1,1,1,3,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20556,3 Jun 2024
+ZZ_coded,60,Orthasterias koehleri,asteroid,NA,222,Boltenia villosa,tunicate,1,1,1,3,1,"Morris, Abbott, & Haderlie; L&S",California,very low,NA,y,y,NA,20557,3 Jun 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,183,Eudistoma psammion,tunicate,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20558,3 Jun 2024
+ZZ_coded,144,Patiria miniata,asteroid,1,183,Eudistoma psammion,tunicate,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20559,3 Jun 2024
+ZZ_coded,326,Diaulula sandiegensis,nudibranch,1,70,Haliclona sp.,sponge,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low tidepools,NA,y,y,NA,20560,3 Jun 2024
+ZZ_coded,348,Dirona albolineata,nudibranch,1,636,Dendrobeania lichenoides,bryozoan,1,1,1,3,1,Light & Smith,California,low tidepools,NA,y,y,NA,20561,3 Jun 2024
+ZZ_coded,349,Dirona picta,nudibranch,1,635,Celleporella hyalina,bryozoan,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20562,3 Jun 2024
+ZZ_coded,330,Corambe steinbergae,nudibranch,1,819,Membranipora raymondi,bryozoan,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20563,3 Jun 2024
+ZZ_coded,330,Corambe steinbergae,nudibranch,1,820,Membranipora membranacea,bryozoan,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20564,3 Jun 2024
+ZZ_coded,341,Onchidoris muricata,nudibranch,1,820,Membranipora membranacea,bryozoan,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20565,3 Jun 2024
+ZZ_coded,328,Doriopsilla albopunctata,nudibranch,1,66,Cliona celata,sponge,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20566,3 Jun 2024
+ZZ_coded,323,Doris odhneri,nudibranch,1,44,Mycale adhaerens,sponge,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20567,3 Jun 2024
+ZZ_coded,323,Doris odhneri,nudibranch,1,45,Mycale hispida,sponge,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20568,3 Jun 2024
+ZZ_coded,323,Doris odhneri,nudibranch,1,46,Mycale macginitiei,sponge,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20569,3 Jun 2024
+ZZ_coded,323,Doris odhneri,nudibranch,1,47,Mycale richardsoni,sponge,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20570,3 Jun 2024
+ZZ_coded,323,Doris odhneri,nudibranch,1,48,Mycale psila,sponge,1,1,1,3,1,Light & Smith,California,low,NA,y,y,NA,20571,3 Jun 2024
+ZZ_coded,323,Doris odhneri,nudibranch,1,69,Halichondria panicea,sponge,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20572,3 Jun 2024
+ZZ_coded,335,Okenia rosacea,nudibranch,1,134,Integripelta bilabiata,bryozoan,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20573,3 Jun 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,372,Chama arcana,clam,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20574,3 Jun 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,237,Tegula funebralis,topsnail,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,NA,NA,y,y,NA,20575,3 Jun 2024
+ZZ_coded,549,Cancer antennaria,true crab,1,237,Tegula funebralis,topsnail,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20576,3 Jun 2024
+ZZ_coded,150,Pisaster ochraceus,asteroid,1,237,Tegula funebralis,topsnail,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,"middle, low",NA,y,y,NA,20577,3 Jun 2024
+ZZ_coded,353,Flabellinopsis iodinea,nudibranch,1,181,Diplosoma listerianum,tunicate,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20578,3 Jun 2024
+ZZ_coded,2,Gibbonsia elegans,fish,1,475,Cirolana harfordi,isopod,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,NA,NA,y,y,NA,20579,3 Jun 2024
+ZZ_coded,706,Apodichthys fucorum,fish,1,475,Cirolana harfordi,isopod,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,NA,NA,y,y,NA,20580,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,475,Cirolana harfordi,isopod,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,NA,NA,y,y,NA,20581,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,543,Mimulus foliatus,true crab,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20582,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,541,Pugettia richii,true crab,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20583,3 Jun 2024
+ZZ_coded,15,Clinocottus analis,fish,1,541,Pugettia richii,true crab,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20584,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,489,Pentidotea aculeata,isopod,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20585,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,489,Pentidotea aculeata,isopod,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20586,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,490,Pentidotea wosnesenskii,isopod,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,NA,NA,y,y,NA,20587,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,490,Pentidotea wosnesenskii,isopod,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,NA,NA,y,y,NA,20588,3 Jun 2024
+ZZ_coded,226,Haliotis fulgens,abalone,1,784,Laminaria sinclairii,brown algae,1,1,1,3,1,Marine Algae of California,California,low,NA,y,y,NA,20589,3 Jun 2024
+ZZ_coded,560,Hermissenda crassicornis,nudibranch,1,171,Aplidium solidum,tunicate,1,1,1,3,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20590,3 Jun 2024
+ZZ_coded,115,Hylocelis californica,flatworm,1,136,Celleporaria brunnea,bryozoan,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,high,NA,y,y,NA,20591,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,226,Haliotis fulgens,abalone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20592,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,470,Balanus nubilus,barnacle,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20593,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,549,Cancer antennaria,true crab,1,1,1,3,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20594,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,555,Cancer productus,true crab,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20595,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,229,Haliotis cracherodii,abalone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20596,3 Jun 2024
+ZZ_coded,150,Pisaster ochraceus,asteroid,1,229,Haliotis cracherodii,abalone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,"middle, low",NA,y,y,NA,20597,3 Jun 2024
+ZZ_coded,2097,Scorpaenichthys marmoratus,fish,1,229,Haliotis cracherodii,abalone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20598,3 Jun 2024
+ZZ_coded,719,Enhydra lutris,mammal,1,229,Haliotis cracherodii,abalone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20599,3 Jun 2024
+ZZ_coded,712,Homo sapiens,human,1,227,Haliotis corrugata,abalone,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20600,3 Jun 2024
+ZZ_coded,286,Lirabuccinum dirum,whelk,1,234,Margarites pupillus,topsnail,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,middle,NA,y,y,NA,20601,3 Jun 2024
+ZZ_coded,348,Dirona albolineata,nudibranch,1,234,Margarites pupillus,topsnail,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low tidepools,NA,y,y,NA,20602,3 Jun 2024
+ZZ_coded,14,Leptocottus armatus,fish,1,748,Leptochelia sp.,isopod,1,1,1,3,1,OIMB; Light & Smith,California,NA,NA,y,y,NA,20603,3 Jun 2024
+ZZ_coded,265,Marsenina stearnsii,snail,1,180,Trididemnum opacum,tunicate,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20604,3 Jun 2024
+ZZ_coded,1824,Marsenina stearnsii,snail,NA,180,Trididemnum opacum,tunicate,1,1,1,3,1,"Morris, Abbott, & Haderlie",California,all,NA,y,y,NA,20605,3 Jun 2024
+ZZ_coded,149,Leptasterias hexactis,asteroid,1,627,Acanthinucella punctulata,snail,NA,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,middle,NA,y,y,NA,20606,3 Jun 2024
+ZZ_coded,149,Leptasterias hexactis,asteroid,1,156,Eupentacta quinquesemita,cucumber,1,1,1,3,1,"Morris, Abbott, & Haderlie; Light & Smith",California,middle,NA,y,y,NA,20607,3 Jun 2024
+ZZ_coded,148,Leptasterias pusilla,asteroid,1,764,Pseudodiala acuta,snail,1,1,1,3,1,Light & Smith,California,pools,NA,y,y,NA,20608,3 Jun 2024
+ZZ_coded,345,Limacia cockerelli,nudibranch,1,632,Hincksina velata,bryozoan,1,1,1,3,1,Light & Smith,California,low tidepools,NA,y,y,NA,20609,3 Jun 2024
+ZZ_coded,353,Flabellinopsis iodinea,nudibranch,1,84,Eudendrium californicum,hydroid,5,1,1,3,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20610,3 Jun 2024
+ZZ_coded,627,Acanthinucella punctulata,snail,NA,247,Littorina keenae,littorine,1,1,2,6,1,"Morris, Abbott, & Haderlie",California,high,NA,y,y,NA,20611,3 Jun 2024
+ZZ_coded,281,Acanthinucella punctulata,snail,1,247,Littorina keenae,littorine,1,1,2,6,1,"Morris, Abbott, & Haderlie",California,high,NA,y,y,NA,20612,3 Jun 2024
+ZZ_coded,282,Acanthinucella spirata,snail,1,247,Littorina keenae,littorine,1,1,2,6,1,"Morris, Abbott, & Haderlie",California,high to middle,NA,y,y,NA,20613,3 Jun 2024
+ZZ_coded,355,Cuthona divae,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,low,NA,y,y,NA,20614,3 Jun 2024
+ZZ_coded,1940,Cuthona abronia,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,all,NA,y,y,NA,20615,3 Jun 2024
+ZZ_coded,1941,Cuthona albocrusta,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,all,NA,y,y,NA,20616,3 Jun 2024
+ZZ_coded,1942,Cuthona cocoachroma,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,all,NA,y,y,NA,20617,3 Jun 2024
+ZZ_coded,1943,Cuthona flavovulta,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,all,NA,y,y,NA,20618,3 Jun 2024
+ZZ_coded,1944,Cuthona fulgens,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,all,NA,y,y,NA,20619,3 Jun 2024
+ZZ_coded,1945,Cuthona hamanni,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,all,NA,y,y,NA,20620,3 Jun 2024
+ZZ_coded,1946,Cuthona lagunae,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,all,NA,y,y,NA,20621,3 Jun 2024
+ZZ_coded,1947,Cuthona phoenix,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,all,NA,y,y,NA,20622,3 Jun 2024
+ZZ_coded,1948,Cuthona virens,nudibranch,1,630,Barentsia ramosa,entoproct,1,1,2,6,1,Wasson 1997,California,all,NA,y,y,NA,20623,3 Jun 2024
+ZZ_coded,711,Carcinonemertes epialti,nemertean,1,991,Loxorhynchus grandis,true crab,NA,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20624,3 Jun 2024
+ZZ_coded,1722,Carcinonemertes wickhami,nemertean,1,991,Loxorhynchus grandis,true crab,NA,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20625,3 Jun 2024
+ZZ_coded,550,Cancer anthonyi,true crab,1,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20626,3 Jun 2024
+ZZ_coded,549,Cancer antennaria,true crab,1,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20627,3 Jun 2024
+ZZ_coded,555,Cancer productus,true crab,1,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20628,3 Jun 2024
+ZZ_coded,551,Cancer jordani,true crab,1,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20629,3 Jun 2024
+ZZ_coded,552,Cancer branneri,true crab,1,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,20630,3 Jun 2024
+ZZ_coded,553,Cancer oregonensis,true crab,1,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20631,3 Jun 2024
+ZZ_coded,562,Cancer gracilis,true crab,1,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20632,3 Jun 2024
+ZZ_coded,995,Cancer gracilis,true crab,4,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20633,3 Jun 2024
+ZZ_coded,996,Cancer gracilis,true crab,NA,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20634,3 Jun 2024
+ZZ_coded,554,Cancer productus,true crab,4,1880,Littorina subrotundata,limpet,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20635,3 Jun 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,91,Aglaophenia struthionides,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20636,3 Jun 2024
+ZZ_coded,633,Doto columbiana,nudibranch,1,91,Aglaophenia struthionides,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20637,3 Jun 2024
+ZZ_coded,634,Doto kya,nudibranch,1,91,Aglaophenia struthionides,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20638,3 Jun 2024
+ZZ_coded,1925,Doto lancei,nudibranch,1,91,Aglaophenia struthionides,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20639,3 Jun 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,85,Obelia dichotoma,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20640,3 Jun 2024
+ZZ_coded,633,Doto columbiana,nudibranch,1,85,Obelia dichotoma,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20641,3 Jun 2024
+ZZ_coded,634,Doto kya,nudibranch,1,85,Obelia dichotoma,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20642,3 Jun 2024
+ZZ_coded,1925,Doto lancei,nudibranch,1,85,Obelia dichotoma,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,all,NA,y,y,NA,20643,3 Jun 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,86,Obelia bidentata,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20644,3 Jun 2024
+ZZ_coded,633,Doto columbiana,nudibranch,1,86,Obelia bidentata,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20645,3 Jun 2024
+ZZ_coded,634,Doto kya,nudibranch,1,86,Obelia bidentata,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20646,3 Jun 2024
+ZZ_coded,1925,Doto lancei,nudibranch,1,86,Obelia bidentata,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,all,NA,y,y,NA,20647,3 Jun 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,87,Obelia geniculata,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20648,3 Jun 2024
+ZZ_coded,633,Doto columbiana,nudibranch,1,87,Obelia geniculata,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20649,3 Jun 2024
+ZZ_coded,634,Doto kya,nudibranch,1,87,Obelia geniculata,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,low,NA,y,y,NA,20650,3 Jun 2024
+ZZ_coded,1925,Doto lancei,nudibranch,1,87,Obelia geniculata,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie; L&S",California,all,NA,y,y,NA,20651,3 Jun 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,89,Xingyurella turgida,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20652,3 Jun 2024
+ZZ_coded,633,Doto columbiana,nudibranch,1,89,Xingyurella turgida,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20653,3 Jun 2024
+ZZ_coded,634,Doto kya,nudibranch,1,89,Xingyurella turgida,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20654,3 Jun 2024
+ZZ_coded,1925,Doto lancei,nudibranch,1,89,Xingyurella turgida,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie",California,all,NA,y,y,NA,20655,3 Jun 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,90,Abietinaria sp.,hydroid,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20656,3 Jun 2024
+ZZ_coded,633,Doto columbiana,nudibranch,1,90,Abietinaria sp.,hydroid,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20657,3 Jun 2024
+ZZ_coded,634,Doto kya,nudibranch,1,90,Abietinaria sp.,hydroid,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20658,3 Jun 2024
+ZZ_coded,1925,Doto lancei,nudibranch,1,90,Abietinaria sp.,hydroid,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20659,3 Jun 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,93,Kirchenpaueria plumularioides,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20660,3 Jun 2024
+ZZ_coded,633,Doto columbiana,nudibranch,1,93,Kirchenpaueria plumularioides,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20661,3 Jun 2024
+ZZ_coded,634,Doto kya,nudibranch,1,93,Kirchenpaueria plumularioides,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20662,3 Jun 2024
+ZZ_coded,1925,Doto lancei,nudibranch,1,93,Kirchenpaueria plumularioides,hydroid,5,1,2,6,1,"Morris, Abbott, & Haderlie",California,all,NA,y,y,NA,20663,3 Jun 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,767,Sarsia sp.,hydroid,5,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20664,3 Jun 2024
+ZZ_coded,633,Doto columbiana,nudibranch,1,767,Sarsia sp.,hydroid,5,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20665,3 Jun 2024
+ZZ_coded,634,Doto kya,nudibranch,1,767,Sarsia sp.,hydroid,5,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20666,3 Jun 2024
+ZZ_coded,1925,Doto lancei,nudibranch,1,767,Sarsia sp.,hydroid,5,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,20667,3 Jun 2024
+ZZ_coded,347,Doto amyra,nudibranch,1,946,Halecium sp.,hydroid,5,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20668,3 Jun 2024
+ZZ_coded,633,Doto columbiana,nudibranch,1,946,Halecium sp.,hydroid,5,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20669,3 Jun 2024
+ZZ_coded,634,Doto kya,nudibranch,1,946,Halecium sp.,hydroid,5,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20670,3 Jun 2024
+ZZ_coded,1925,Doto lancei,nudibranch,1,946,Halecium sp.,hydroid,5,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,20671,3 Jun 2024
+ZZ_coded,148,Leptasterias pusilla,asteroid,1,246,Lacuna marmorata,littorine,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,pools,NA,y,y,NA,20672,3 Jun 2024
+ZZ_coded,149,Leptasterias hexactis,asteroid,1,246,Lacuna marmorata,littorine,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,middle,NA,y,y,NA,20673,3 Jun 2024
+ZZ_coded,672,Leptasterias aequalis,asteroid,1,246,Lacuna marmorata,littorine,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,middle,NA,y,y,NA,20674,3 Jun 2024
+ZZ_coded,525,Pagurus hirsutiusculus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,middle to low,NA,y,y,NA,20675,3 Jun 2024
+ZZ_coded,526,Pagurus hemphilli,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,middle to low,NA,y,y,NA,20676,3 Jun 2024
+ZZ_coded,527,Pagurus granosimanus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,low,NA,y,y,NA,20677,3 Jun 2024
+ZZ_coded,1011,Pagurus armatus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,low,NA,y,y,NA,20678,3 Jun 2024
+ZZ_coded,1012,Pagurus beringanus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,low,NA,y,y,NA,20679,3 Jun 2024
+ZZ_coded,1013,Pagurus caurinus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,low,NA,y,y,NA,20680,3 Jun 2024
+ZZ_coded,524,Pagurus samuelis,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,high to middle,NA,y,y,NA,20681,3 Jun 2024
+ZZ_coded,707,Hexagrammos decagrammus,fish,1,488,Idotea stenops,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20682,3 Jun 2024
+ZZ_coded,2090,Hexagrammos lagocephalus,fish,1,488,Idotea stenops,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20683,3 Jun 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,middle to low,NA,y,y,NA,20684,3 Jun 2024
+ZZ_coded,421,Octopus micropyrsus,octopus,1,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20685,3 Jun 2024
+ZZ_coded,1747,Octopus rubescens,octopus,NA,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20686,3 Jun 2024
+ZZ_coded,1748,Octopus bimaculoides,octopus,NA,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20687,3 Jun 2024
+ZZ_coded,1749,Octopus bimaculoides,octopus,NA,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20688,3 Jun 2024
+ZZ_coded,1750,Octopus bimaculatus,octopus,1,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20689,3 Jun 2024
+ZZ_coded,1751,Octopus bimaculatus,octopus,NA,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20690,3 Jun 2024
+ZZ_coded,1752,Octopus micropyrsus,octopus,NA,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20691,3 Jun 2024
+ZZ_coded,1753,Octopus micropyrsus,octopus,NA,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20692,3 Jun 2024
+ZZ_coded,419,Octopus rubescens,octopus,1,229,Haliotis cracherodii,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20693,3 Jun 2024
+ZZ_coded,418,Octopus bimaculoides,octopus,1,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,middle to low,NA,y,y,NA,20694,3 Jun 2024
+ZZ_coded,421,Octopus micropyrsus,octopus,1,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20695,3 Jun 2024
+ZZ_coded,1747,Octopus rubescens,octopus,NA,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20696,3 Jun 2024
+ZZ_coded,1748,Octopus bimaculoides,octopus,NA,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20697,3 Jun 2024
+ZZ_coded,1749,Octopus bimaculoides,octopus,NA,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20698,3 Jun 2024
+ZZ_coded,1750,Octopus bimaculatus,octopus,1,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20699,3 Jun 2024
+ZZ_coded,1751,Octopus bimaculatus,octopus,NA,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20700,3 Jun 2024
+ZZ_coded,1752,Octopus micropyrsus,octopus,NA,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20701,3 Jun 2024
+ZZ_coded,1753,Octopus micropyrsus,octopus,NA,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20702,3 Jun 2024
+ZZ_coded,419,Octopus rubescens,octopus,1,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20703,3 Jun 2024
+ZZ_coded,203,Lottia limatula,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,middle to low,NA,y,y,NA,20704,3 Jun 2024
+ZZ_coded,1876,Lottia digitalis situs,limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,all,NA,y,y,NA,20705,3 Jun 2024
+ZZ_coded,197,Lottia asmi,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,middle,NA,y,y,NA,20706,3 Jun 2024
+ZZ_coded,198,Lottia austrodigitalis,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,high,NA,y,y,NA,20707,3 Jun 2024
+ZZ_coded,200,Lottia fenestrata,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,middle to low,NA,y,y,NA,20708,3 Jun 2024
+ZZ_coded,202,Lottia instabilis,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20709,3 Jun 2024
+ZZ_coded,204,Lottia ochracea,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,very low,NA,y,y,NA,20710,3 Jun 2024
+ZZ_coded,205,Lottia strigatella,true limpet,NA,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,middle to low,NA,y,y,NA,20711,3 Jun 2024
+ZZ_coded,206,Lottia strigatella,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,middle to low,NA,y,y,NA,20712,3 Jun 2024
+ZZ_coded,207,Lottia paradigitalis,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,high to middle,NA,y,y,NA,20713,3 Jun 2024
+ZZ_coded,209,Lottia persona,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,high to middle,NA,y,y,NA,20714,3 Jun 2024
+ZZ_coded,211,Lottia sp.,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20715,3 Jun 2024
+ZZ_coded,212,Lottia triangularis,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,low,NA,y,y,NA,20716,3 Jun 2024
+ZZ_coded,736,Lottia conus,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,high,NA,y,y,NA,20717,3 Jun 2024
+ZZ_coded,215,Lottia scutum,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,middle,NA,y,y,NA,20718,3 Jun 2024
+ZZ_coded,210,Lottia scabra,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,high,NA,y,y,NA,20719,3 Jun 2024
+ZZ_coded,208,Lottia pelta,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,middle to low,NA,y,y,NA,20720,3 Jun 2024
+ZZ_coded,201,Lottia gigantea,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,high to middle,NA,y,y,NA,20721,3 Jun 2024
+ZZ_coded,199,Lottia digitalis,true limpet,1,464,Balanus glandula,barnacle,4,1,2,6,1,"Morris, Abbott, & Haderlie",California,high,NA,y,y,NA,20722,3 Jun 2024
+ZZ_coded,3004,Porichthys notatus,fish,NA,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20723,3 Jun 2024
+ZZ_coded,3006,Porichthys notatus,fish,NA,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20724,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20725,3 Jun 2024
+ZZ_coded,2,Gibbonsia elegans,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20726,3 Jun 2024
+ZZ_coded,3,Hypsoblennius gilberti,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20727,3 Jun 2024
+ZZ_coded,4,Amphistichus koelzi,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20728,3 Jun 2024
+ZZ_coded,5,Amphistichus argenteus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20729,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20730,3 Jun 2024
+ZZ_coded,7,Syngnathus californiensis,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20731,3 Jun 2024
+ZZ_coded,8,Atherinops affinis,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,middle to low,NA,y,y,NA,20732,3 Jun 2024
+ZZ_coded,10,Hypsoblennius jenkinsi,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20733,3 Jun 2024
+ZZ_coded,11,Artedius fenestralis,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20734,3 Jun 2024
+ZZ_coded,12,Girella nigricans,fish,4,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20735,3 Jun 2024
+ZZ_coded,13,Hypomesus transpacificus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20736,3 Jun 2024
+ZZ_coded,14,Leptocottus armatus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20737,3 Jun 2024
+ZZ_coded,15,Clinocottus analis,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20738,3 Jun 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20739,3 Jun 2024
+ZZ_coded,17,Syngnathus sp.,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20740,3 Jun 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20741,3 Jun 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20742,3 Jun 2024
+ZZ_coded,604,Heterostichus rostratus,fish,4,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20743,3 Jun 2024
+ZZ_coded,706,Apodichthys fucorum,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20744,3 Jun 2024
+ZZ_coded,707,Hexagrammos decagrammus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20745,3 Jun 2024
+ZZ_coded,710,Phanerodon vacca,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20746,3 Jun 2024
+ZZ_coded,731,Kyphosus azureus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,very low,NA,y,y,NA,20747,3 Jun 2024
+ZZ_coded,732,Kyphosus azureus,fish,4,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20748,3 Jun 2024
+ZZ_coded,747,Hypsoblennius gentilis,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20749,3 Jun 2024
+ZZ_coded,2072,Paralabrax nebulifer,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20750,3 Jun 2024
+ZZ_coded,2073,Paralabrax nebulifer,fish,4,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20751,3 Jun 2024
+ZZ_coded,2074,Anoplarchus purpurescens,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20752,3 Jun 2024
+ZZ_coded,2075,Apodichthys flavidus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20753,3 Jun 2024
+ZZ_coded,2076,Artedius corallinus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20754,3 Jun 2024
+ZZ_coded,2077,Artedius harringtoni,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20755,3 Jun 2024
+ZZ_coded,2078,Artedius lateralis,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20756,3 Jun 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20757,3 Jun 2024
+ZZ_coded,2080,Cebidichthys violaceus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20758,3 Jun 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20759,3 Jun 2024
+ZZ_coded,2082,Clinocottus embryum,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20760,3 Jun 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20761,3 Jun 2024
+ZZ_coded,2084,Clinocottus recalvus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20762,3 Jun 2024
+ZZ_coded,2085,Clinocottus spp.,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20763,3 Jun 2024
+ZZ_coded,2086,Enophrys bison,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20764,3 Jun 2024
+ZZ_coded,2087,Gibbonsia montereyensis,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20765,3 Jun 2024
+ZZ_coded,2088,Hemilepidotus hemilepidotus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20766,3 Jun 2024
+ZZ_coded,2089,Hemilepidotus spinosus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20767,3 Jun 2024
+ZZ_coded,2090,Hexagrammos lagocephalus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20768,3 Jun 2024
+ZZ_coded,2091,Liparis florae,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20769,3 Jun 2024
+ZZ_coded,2092,Oligocottus rimensis,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20770,3 Jun 2024
+ZZ_coded,2093,Oligocottus rubellio,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20771,3 Jun 2024
+ZZ_coded,2094,Oligocottus snyderi,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20772,3 Jun 2024
+ZZ_coded,2095,Oligocottus spp.,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20773,3 Jun 2024
+ZZ_coded,2096,Phytichthys chirus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20774,3 Jun 2024
+ZZ_coded,2097,Scorpaenichthys marmoratus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20775,3 Jun 2024
+ZZ_coded,2098,Sebastes carnatus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20776,3 Jun 2024
+ZZ_coded,2099,Sebastes melanops,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20777,3 Jun 2024
+ZZ_coded,2100,Sebastes miniatus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20778,3 Jun 2024
+ZZ_coded,2101,Unknown Stichaeid,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20779,3 Jun 2024
+ZZ_coded,2102,Xiphister atropurpureus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20780,3 Jun 2024
+ZZ_coded,2103,Xiphister mucosus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20781,3 Jun 2024
+ZZ_coded,2109,Pseudodelphis oligocotti,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20782,3 Jun 2024
+ZZ_coded,2293,Porichthys notatus,fish,1,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20783,3 Jun 2024
+ZZ_coded,3002,Xiphister mucosus,fish,4,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20784,3 Jun 2024
+ZZ_coded,3000,Cebidichthys violaceus,fish,4,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20785,3 Jun 2024
+ZZ_coded,2394,Teleostei,fish,6,442,Bispira sp.,polychaete,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20786,3 Jun 2024
+ZZ_coded,575,Neomolgus littoralis,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,high,NA,y,y,NA,20787,3 Jun 2024
+ZZ_coded,1448,Agauopsis curvata,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20788,3 Jun 2024
+ZZ_coded,1449,Agauopsis newelli,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20789,3 Jun 2024
+ZZ_coded,1450,Halacarus magniporus,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20790,3 Jun 2024
+ZZ_coded,1451,Thalassarachna rhaphidochela,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20791,3 Jun 2024
+ZZ_coded,1452,Copidognathus ilsebartschi,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20792,3 Jun 2024
+ZZ_coded,1453,Agauopsis filirostris,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20793,3 Jun 2024
+ZZ_coded,1454,Agaue californica,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20794,3 Jun 2024
+ZZ_coded,1455,Agaue variabilis,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20795,3 Jun 2024
+ZZ_coded,1456,Copidognathus curtus,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20796,3 Jun 2024
+ZZ_coded,1457,Hyadesiid mites,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20797,3 Jun 2024
+ZZ_coded,1458,Ameronothroiid mites,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,high,NA,y,y,NA,20798,3 Jun 2024
+ZZ_coded,1459,Thalassacarus spp.,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20799,3 Jun 2024
+ZZ_coded,1460,Isobactrus spp.,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20800,3 Jun 2024
+ZZ_coded,1461,Rhombognathus spp.,mite,1,579,Dicranomyia (Idioglochina) marmorata,insect,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20801,3 Jun 2024
+ZZ_coded,3004,Porichthys notatus,fish,NA,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20802,3 Jun 2024
+ZZ_coded,3006,Porichthys notatus,fish,NA,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20803,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20804,3 Jun 2024
+ZZ_coded,2,Gibbonsia elegans,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20805,3 Jun 2024
+ZZ_coded,3,Hypsoblennius gilberti,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20806,3 Jun 2024
+ZZ_coded,4,Amphistichus koelzi,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20807,3 Jun 2024
+ZZ_coded,5,Amphistichus argenteus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20808,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20809,3 Jun 2024
+ZZ_coded,7,Syngnathus californiensis,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20810,3 Jun 2024
+ZZ_coded,8,Atherinops affinis,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,middle to low,NA,y,y,NA,20811,3 Jun 2024
+ZZ_coded,10,Hypsoblennius jenkinsi,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20812,3 Jun 2024
+ZZ_coded,11,Artedius fenestralis,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20813,3 Jun 2024
+ZZ_coded,12,Girella nigricans,fish,4,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20814,3 Jun 2024
+ZZ_coded,13,Hypomesus transpacificus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20815,3 Jun 2024
+ZZ_coded,14,Leptocottus armatus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20816,3 Jun 2024
+ZZ_coded,15,Clinocottus analis,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20817,3 Jun 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20818,3 Jun 2024
+ZZ_coded,17,Syngnathus sp.,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20819,3 Jun 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20820,3 Jun 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20821,3 Jun 2024
+ZZ_coded,604,Heterostichus rostratus,fish,4,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20822,3 Jun 2024
+ZZ_coded,706,Apodichthys fucorum,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20823,3 Jun 2024
+ZZ_coded,707,Hexagrammos decagrammus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20824,3 Jun 2024
+ZZ_coded,710,Phanerodon vacca,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20825,3 Jun 2024
+ZZ_coded,731,Kyphosus azureus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,very low,NA,y,y,NA,20826,3 Jun 2024
+ZZ_coded,732,Kyphosus azureus,fish,4,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20827,3 Jun 2024
+ZZ_coded,747,Hypsoblennius gentilis,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20828,3 Jun 2024
+ZZ_coded,2072,Paralabrax nebulifer,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20829,3 Jun 2024
+ZZ_coded,2073,Paralabrax nebulifer,fish,4,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20830,3 Jun 2024
+ZZ_coded,2074,Anoplarchus purpurescens,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20831,3 Jun 2024
+ZZ_coded,2075,Apodichthys flavidus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20832,3 Jun 2024
+ZZ_coded,2076,Artedius corallinus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20833,3 Jun 2024
+ZZ_coded,2077,Artedius harringtoni,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20834,3 Jun 2024
+ZZ_coded,2078,Artedius lateralis,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20835,3 Jun 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20836,3 Jun 2024
+ZZ_coded,2080,Cebidichthys violaceus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20837,3 Jun 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20838,3 Jun 2024
+ZZ_coded,2082,Clinocottus embryum,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20839,3 Jun 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20840,3 Jun 2024
+ZZ_coded,2084,Clinocottus recalvus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20841,3 Jun 2024
+ZZ_coded,2085,Clinocottus spp.,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20842,3 Jun 2024
+ZZ_coded,2086,Enophrys bison,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20843,3 Jun 2024
+ZZ_coded,2087,Gibbonsia montereyensis,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20844,3 Jun 2024
+ZZ_coded,2088,Hemilepidotus hemilepidotus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20845,3 Jun 2024
+ZZ_coded,2089,Hemilepidotus spinosus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20846,3 Jun 2024
+ZZ_coded,2090,Hexagrammos lagocephalus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20847,3 Jun 2024
+ZZ_coded,2091,Liparis florae,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20848,3 Jun 2024
+ZZ_coded,2092,Oligocottus rimensis,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20849,3 Jun 2024
+ZZ_coded,2093,Oligocottus rubellio,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20850,3 Jun 2024
+ZZ_coded,2094,Oligocottus snyderi,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20851,3 Jun 2024
+ZZ_coded,2095,Oligocottus spp.,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20852,3 Jun 2024
+ZZ_coded,2096,Phytichthys chirus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20853,3 Jun 2024
+ZZ_coded,2097,Scorpaenichthys marmoratus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20854,3 Jun 2024
+ZZ_coded,2098,Sebastes carnatus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20855,3 Jun 2024
+ZZ_coded,2099,Sebastes melanops,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20856,3 Jun 2024
+ZZ_coded,2100,Sebastes miniatus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20857,3 Jun 2024
+ZZ_coded,2101,Unknown Stichaeid,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20858,3 Jun 2024
+ZZ_coded,2102,Xiphister atropurpureus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20859,3 Jun 2024
+ZZ_coded,2103,Xiphister mucosus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20860,3 Jun 2024
+ZZ_coded,2109,Pseudodelphis oligocotti,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20861,3 Jun 2024
+ZZ_coded,2293,Porichthys notatus,fish,1,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,low,NA,y,y,NA,20862,3 Jun 2024
+ZZ_coded,3002,Xiphister mucosus,fish,4,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,NA,NA,y,y,NA,20863,3 Jun 2024
+ZZ_coded,3000,Cebidichthys violaceus,fish,4,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20864,3 Jun 2024
+ZZ_coded,2394,Teleostei,fish,6,491,Idotea montereyensis,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,20865,3 Jun 2024
+ZZ_coded,3004,Porichthys notatus,fish,NA,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,low,NA,y,y,NA,20866,3 Jun 2024
+ZZ_coded,3006,Porichthys notatus,fish,NA,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,low,NA,y,y,NA,20867,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20868,3 Jun 2024
+ZZ_coded,2,Gibbonsia elegans,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20869,3 Jun 2024
+ZZ_coded,3,Hypsoblennius gilberti,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20870,3 Jun 2024
+ZZ_coded,4,Amphistichus koelzi,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20871,3 Jun 2024
+ZZ_coded,5,Amphistichus argenteus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20872,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20873,3 Jun 2024
+ZZ_coded,7,Syngnathus californiensis,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20874,3 Jun 2024
+ZZ_coded,8,Atherinops affinis,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,middle to low,NA,y,y,NA,20875,3 Jun 2024
+ZZ_coded,10,Hypsoblennius jenkinsi,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20876,3 Jun 2024
+ZZ_coded,11,Artedius fenestralis,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20877,3 Jun 2024
+ZZ_coded,12,Girella nigricans,fish,4,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20878,3 Jun 2024
+ZZ_coded,13,Hypomesus transpacificus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20879,3 Jun 2024
+ZZ_coded,14,Leptocottus armatus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20880,3 Jun 2024
+ZZ_coded,15,Clinocottus analis,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20881,3 Jun 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20882,3 Jun 2024
+ZZ_coded,17,Syngnathus sp.,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20883,3 Jun 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20884,3 Jun 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20885,3 Jun 2024
+ZZ_coded,604,Heterostichus rostratus,fish,4,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20886,3 Jun 2024
+ZZ_coded,706,Apodichthys fucorum,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20887,3 Jun 2024
+ZZ_coded,707,Hexagrammos decagrammus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20888,3 Jun 2024
+ZZ_coded,710,Phanerodon vacca,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,low,NA,y,y,NA,20889,3 Jun 2024
+ZZ_coded,731,Kyphosus azureus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,very low,NA,y,y,NA,20890,3 Jun 2024
+ZZ_coded,732,Kyphosus azureus,fish,4,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,all,NA,y,y,NA,20891,3 Jun 2024
+ZZ_coded,747,Hypsoblennius gentilis,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20892,3 Jun 2024
+ZZ_coded,2072,Paralabrax nebulifer,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,low,NA,y,y,NA,20893,3 Jun 2024
+ZZ_coded,2073,Paralabrax nebulifer,fish,4,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,low,NA,y,y,NA,20894,3 Jun 2024
+ZZ_coded,2074,Anoplarchus purpurescens,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20895,3 Jun 2024
+ZZ_coded,2075,Apodichthys flavidus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20896,3 Jun 2024
+ZZ_coded,2076,Artedius corallinus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20897,3 Jun 2024
+ZZ_coded,2077,Artedius harringtoni,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,low,NA,y,y,NA,20898,3 Jun 2024
+ZZ_coded,2078,Artedius lateralis,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20899,3 Jun 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20900,3 Jun 2024
+ZZ_coded,2080,Cebidichthys violaceus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,all,NA,y,y,NA,20901,3 Jun 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20902,3 Jun 2024
+ZZ_coded,2082,Clinocottus embryum,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20903,3 Jun 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20904,3 Jun 2024
+ZZ_coded,2084,Clinocottus recalvus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20905,3 Jun 2024
+ZZ_coded,2085,Clinocottus spp.,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20906,3 Jun 2024
+ZZ_coded,2086,Enophrys bison,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20907,3 Jun 2024
+ZZ_coded,2087,Gibbonsia montereyensis,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20908,3 Jun 2024
+ZZ_coded,2088,Hemilepidotus hemilepidotus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20909,3 Jun 2024
+ZZ_coded,2089,Hemilepidotus spinosus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20910,3 Jun 2024
+ZZ_coded,2090,Hexagrammos lagocephalus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20911,3 Jun 2024
+ZZ_coded,2091,Liparis florae,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20912,3 Jun 2024
+ZZ_coded,2092,Oligocottus rimensis,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20913,3 Jun 2024
+ZZ_coded,2093,Oligocottus rubellio,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20914,3 Jun 2024
+ZZ_coded,2094,Oligocottus snyderi,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20915,3 Jun 2024
+ZZ_coded,2095,Oligocottus spp.,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20916,3 Jun 2024
+ZZ_coded,2096,Phytichthys chirus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20917,3 Jun 2024
+ZZ_coded,2097,Scorpaenichthys marmoratus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20918,3 Jun 2024
+ZZ_coded,2098,Sebastes carnatus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20919,3 Jun 2024
+ZZ_coded,2099,Sebastes melanops,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20920,3 Jun 2024
+ZZ_coded,2100,Sebastes miniatus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20921,3 Jun 2024
+ZZ_coded,2101,Unknown Stichaeid,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20922,3 Jun 2024
+ZZ_coded,2102,Xiphister atropurpureus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20923,3 Jun 2024
+ZZ_coded,2103,Xiphister mucosus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20924,3 Jun 2024
+ZZ_coded,2109,Pseudodelphis oligocotti,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20925,3 Jun 2024
+ZZ_coded,2293,Porichthys notatus,fish,1,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,low,NA,y,y,NA,20926,3 Jun 2024
+ZZ_coded,3002,Xiphister mucosus,fish,4,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,NA,NA,y,y,NA,20927,3 Jun 2024
+ZZ_coded,3000,Cebidichthys violaceus,fish,4,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,all,NA,y,y,NA,20928,3 Jun 2024
+ZZ_coded,2394,Teleostei,fish,6,550,Cancer anthonyi,true crab,1,1,2,6,1,"Morris, Abbott, & Haderlie; light & Smith",California,all,NA,y,y,NA,20929,3 Jun 2024
+ZZ_coded,566,Pachygrapsus crassipes,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,high to middle,NA,y,y,NA,20930,3 Jun 2024
+ZZ_coded,550,Cancer anthonyi,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20931,3 Jun 2024
+ZZ_coded,991,Loxorhynchus grandis,true crab,NA,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20932,3 Jun 2024
+ZZ_coded,992,Pugettia producta,true crab,NA,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20933,3 Jun 2024
+ZZ_coded,999,Carcinus maenas,true crab,NA,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20934,3 Jun 2024
+ZZ_coded,546,Loxorhynchus crispatus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20935,3 Jun 2024
+ZZ_coded,543,Mimulus foliatus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20936,3 Jun 2024
+ZZ_coded,541,Pugettia richii,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20937,3 Jun 2024
+ZZ_coded,549,Cancer antennaria,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20938,3 Jun 2024
+ZZ_coded,555,Cancer productus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20939,3 Jun 2024
+ZZ_coded,521,Hapalogaster cavicauda,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20940,3 Jun 2024
+ZZ_coded,522,Oedignathus inermis,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,middle to low,NA,y,y,NA,20941,3 Jun 2024
+ZZ_coded,537,Epialtoides hiltoni,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20942,3 Jun 2024
+ZZ_coded,538,Taliepus nuttallii,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20943,3 Jun 2024
+ZZ_coded,539,Pugettia producta,true crab,NA,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20944,3 Jun 2024
+ZZ_coded,540,Pugettia gracilis,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20945,3 Jun 2024
+ZZ_coded,542,Pugettia dalli,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20946,3 Jun 2024
+ZZ_coded,544,Scyra acutifrons,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20947,3 Jun 2024
+ZZ_coded,545,Loxorhynchus grandis,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20948,3 Jun 2024
+ZZ_coded,547,Pelia tumida,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20949,3 Jun 2024
+ZZ_coded,548,Herbstia parvifrons,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20950,3 Jun 2024
+ZZ_coded,551,Cancer jordani,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20951,3 Jun 2024
+ZZ_coded,552,Cancer branneri,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,20952,3 Jun 2024
+ZZ_coded,553,Cancer oregonensis,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20953,3 Jun 2024
+ZZ_coded,556,Cycloxanthops novemdentatus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20954,3 Jun 2024
+ZZ_coded,557,Lophopanopeus leucomanus leucomanus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20955,3 Jun 2024
+ZZ_coded,558,Paraxanthias taylori,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,middle to low,NA,y,y,NA,20956,3 Jun 2024
+ZZ_coded,559,Fabia subquadrata,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20957,3 Jun 2024
+ZZ_coded,561,Pinnixa faba,true crab,4,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20958,3 Jun 2024
+ZZ_coded,562,Cancer gracilis,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20959,3 Jun 2024
+ZZ_coded,563,Pinnixa longipes,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20960,3 Jun 2024
+ZZ_coded,564,Pinnixa tubicola,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,middle to low,NA,y,y,NA,20961,3 Jun 2024
+ZZ_coded,565,Opisthopus transversus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20962,3 Jun 2024
+ZZ_coded,567,Hemigrapsus nudus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,middle to low,NA,y,y,NA,20963,3 Jun 2024
+ZZ_coded,993,Parapinnixa affinis,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20964,3 Jun 2024
+ZZ_coded,994,Pinnixa tomentosa,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,20965,3 Jun 2024
+ZZ_coded,995,Cancer gracilis,true crab,4,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20966,3 Jun 2024
+ZZ_coded,996,Cancer gracilis,true crab,NA,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20967,3 Jun 2024
+ZZ_coded,1000,Lophopanopeus bellus bellus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,20968,3 Jun 2024
+ZZ_coded,1001,Lophopanopeus bellus digensis,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,20969,3 Jun 2024
+ZZ_coded,1002,Lophopanopeus leucomanus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,20970,3 Jun 2024
+ZZ_coded,1006,Phyllolithodes papillosus,true crab,4,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20971,3 Jun 2024
+ZZ_coded,1007,Lopholithodes foraminatus,true crab,4,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20972,3 Jun 2024
+ZZ_coded,1008,Lopholithodes mandtii,true crab,4,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,very low,NA,y,y,NA,20973,3 Jun 2024
+ZZ_coded,554,Cancer productus,true crab,4,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20974,3 Jun 2024
+ZZ_coded,998,Carcinus maenas,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,20975,3 Jun 2024
+ZZ_coded,997,Telmessus cheiragonus,true crab,1,772,Phoronis architecta,phoronid,1,1,2,6,1,Light & Smith,California,very low,NA,y,y,NA,20976,3 Jun 2024
+ZZ_coded,3004,Porichthys notatus,fish,NA,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,low,NA,y,y,NA,20977,3 Jun 2024
+ZZ_coded,3006,Porichthys notatus,fish,NA,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,low,NA,y,y,NA,20978,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20979,3 Jun 2024
+ZZ_coded,2,Gibbonsia elegans,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20980,3 Jun 2024
+ZZ_coded,3,Hypsoblennius gilberti,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20981,3 Jun 2024
+ZZ_coded,4,Amphistichus koelzi,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20982,3 Jun 2024
+ZZ_coded,5,Amphistichus argenteus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20983,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20984,3 Jun 2024
+ZZ_coded,7,Syngnathus californiensis,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20985,3 Jun 2024
+ZZ_coded,8,Atherinops affinis,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,middle to low,NA,y,y,NA,20986,3 Jun 2024
+ZZ_coded,10,Hypsoblennius jenkinsi,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20987,3 Jun 2024
+ZZ_coded,11,Artedius fenestralis,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20988,3 Jun 2024
+ZZ_coded,12,Girella nigricans,fish,4,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20989,3 Jun 2024
+ZZ_coded,13,Hypomesus transpacificus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20990,3 Jun 2024
+ZZ_coded,14,Leptocottus armatus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20991,3 Jun 2024
+ZZ_coded,15,Clinocottus analis,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20992,3 Jun 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20993,3 Jun 2024
+ZZ_coded,17,Syngnathus sp.,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20994,3 Jun 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20995,3 Jun 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20996,3 Jun 2024
+ZZ_coded,604,Heterostichus rostratus,fish,4,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20997,3 Jun 2024
+ZZ_coded,706,Apodichthys fucorum,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20998,3 Jun 2024
+ZZ_coded,707,Hexagrammos decagrammus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,20999,3 Jun 2024
+ZZ_coded,710,Phanerodon vacca,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,low,NA,y,y,NA,21000,3 Jun 2024
+ZZ_coded,731,Kyphosus azureus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,very low,NA,y,y,NA,21001,3 Jun 2024
+ZZ_coded,732,Kyphosus azureus,fish,4,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,all,NA,y,y,NA,21002,3 Jun 2024
+ZZ_coded,747,Hypsoblennius gentilis,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21003,3 Jun 2024
+ZZ_coded,2072,Paralabrax nebulifer,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,low,NA,y,y,NA,21004,3 Jun 2024
+ZZ_coded,2073,Paralabrax nebulifer,fish,4,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,low,NA,y,y,NA,21005,3 Jun 2024
+ZZ_coded,2074,Anoplarchus purpurescens,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21006,3 Jun 2024
+ZZ_coded,2075,Apodichthys flavidus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21007,3 Jun 2024
+ZZ_coded,2076,Artedius corallinus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21008,3 Jun 2024
+ZZ_coded,2077,Artedius harringtoni,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,low,NA,y,y,NA,21009,3 Jun 2024
+ZZ_coded,2078,Artedius lateralis,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21010,3 Jun 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21011,3 Jun 2024
+ZZ_coded,2080,Cebidichthys violaceus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,all,NA,y,y,NA,21012,3 Jun 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21013,3 Jun 2024
+ZZ_coded,2082,Clinocottus embryum,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21014,3 Jun 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21015,3 Jun 2024
+ZZ_coded,2084,Clinocottus recalvus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21016,3 Jun 2024
+ZZ_coded,2085,Clinocottus spp.,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21017,3 Jun 2024
+ZZ_coded,2086,Enophrys bison,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21018,3 Jun 2024
+ZZ_coded,2087,Gibbonsia montereyensis,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21019,3 Jun 2024
+ZZ_coded,2088,Hemilepidotus hemilepidotus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21020,3 Jun 2024
+ZZ_coded,2089,Hemilepidotus spinosus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21021,3 Jun 2024
+ZZ_coded,2090,Hexagrammos lagocephalus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21022,3 Jun 2024
+ZZ_coded,2091,Liparis florae,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21023,3 Jun 2024
+ZZ_coded,2092,Oligocottus rimensis,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21024,3 Jun 2024
+ZZ_coded,2093,Oligocottus rubellio,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21025,3 Jun 2024
+ZZ_coded,2094,Oligocottus snyderi,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21026,3 Jun 2024
+ZZ_coded,2095,Oligocottus spp.,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21027,3 Jun 2024
+ZZ_coded,2096,Phytichthys chirus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21028,3 Jun 2024
+ZZ_coded,2097,Scorpaenichthys marmoratus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21029,3 Jun 2024
+ZZ_coded,2098,Sebastes carnatus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21030,3 Jun 2024
+ZZ_coded,2099,Sebastes melanops,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21031,3 Jun 2024
+ZZ_coded,2100,Sebastes miniatus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21032,3 Jun 2024
+ZZ_coded,2101,Unknown Stichaeid,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21033,3 Jun 2024
+ZZ_coded,2102,Xiphister atropurpureus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21034,3 Jun 2024
+ZZ_coded,2103,Xiphister mucosus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21035,3 Jun 2024
+ZZ_coded,2109,Pseudodelphis oligocotti,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21036,3 Jun 2024
+ZZ_coded,2293,Porichthys notatus,fish,1,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,low,NA,y,y,NA,21037,3 Jun 2024
+ZZ_coded,3002,Xiphister mucosus,fish,4,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,NA,NA,y,y,NA,21038,3 Jun 2024
+ZZ_coded,3000,Cebidichthys violaceus,fish,4,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,all,NA,y,y,NA,21039,3 Jun 2024
+ZZ_coded,2394,Teleostei,fish,6,495,Colidotea rostrata,isopod,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith; 288",California,all,NA,y,y,NA,21040,3 Jun 2024
+ZZ_coded,3004,Porichthys notatus,fish,NA,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21041,3 Jun 2024
+ZZ_coded,3006,Porichthys notatus,fish,NA,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21042,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21043,3 Jun 2024
+ZZ_coded,2,Gibbonsia elegans,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21044,3 Jun 2024
+ZZ_coded,3,Hypsoblennius gilberti,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21045,3 Jun 2024
+ZZ_coded,4,Amphistichus koelzi,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21046,3 Jun 2024
+ZZ_coded,5,Amphistichus argenteus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21047,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21048,3 Jun 2024
+ZZ_coded,7,Syngnathus californiensis,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21049,3 Jun 2024
+ZZ_coded,8,Atherinops affinis,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,middle to low,NA,y,y,NA,21050,3 Jun 2024
+ZZ_coded,10,Hypsoblennius jenkinsi,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21051,3 Jun 2024
+ZZ_coded,11,Artedius fenestralis,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21052,3 Jun 2024
+ZZ_coded,12,Girella nigricans,fish,4,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21053,3 Jun 2024
+ZZ_coded,13,Hypomesus transpacificus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21054,3 Jun 2024
+ZZ_coded,14,Leptocottus armatus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21055,3 Jun 2024
+ZZ_coded,15,Clinocottus analis,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21056,3 Jun 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21057,3 Jun 2024
+ZZ_coded,17,Syngnathus sp.,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21058,3 Jun 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21059,3 Jun 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21060,3 Jun 2024
+ZZ_coded,604,Heterostichus rostratus,fish,4,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21061,3 Jun 2024
+ZZ_coded,706,Apodichthys fucorum,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21062,3 Jun 2024
+ZZ_coded,707,Hexagrammos decagrammus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21063,3 Jun 2024
+ZZ_coded,710,Phanerodon vacca,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21064,3 Jun 2024
+ZZ_coded,731,Kyphosus azureus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,very low,NA,y,y,NA,21065,3 Jun 2024
+ZZ_coded,732,Kyphosus azureus,fish,4,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21066,3 Jun 2024
+ZZ_coded,747,Hypsoblennius gentilis,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21067,3 Jun 2024
+ZZ_coded,2072,Paralabrax nebulifer,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21068,3 Jun 2024
+ZZ_coded,2073,Paralabrax nebulifer,fish,4,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21069,3 Jun 2024
+ZZ_coded,2074,Anoplarchus purpurescens,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21070,3 Jun 2024
+ZZ_coded,2075,Apodichthys flavidus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21071,3 Jun 2024
+ZZ_coded,2076,Artedius corallinus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21072,3 Jun 2024
+ZZ_coded,2077,Artedius harringtoni,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21073,3 Jun 2024
+ZZ_coded,2078,Artedius lateralis,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21074,3 Jun 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21075,3 Jun 2024
+ZZ_coded,2080,Cebidichthys violaceus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21076,3 Jun 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21077,3 Jun 2024
+ZZ_coded,2082,Clinocottus embryum,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21078,3 Jun 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21079,3 Jun 2024
+ZZ_coded,2084,Clinocottus recalvus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21080,3 Jun 2024
+ZZ_coded,2085,Clinocottus spp.,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21081,3 Jun 2024
+ZZ_coded,2086,Enophrys bison,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21082,3 Jun 2024
+ZZ_coded,2087,Gibbonsia montereyensis,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21083,3 Jun 2024
+ZZ_coded,2088,Hemilepidotus hemilepidotus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21084,3 Jun 2024
+ZZ_coded,2089,Hemilepidotus spinosus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21085,3 Jun 2024
+ZZ_coded,2090,Hexagrammos lagocephalus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21086,3 Jun 2024
+ZZ_coded,2091,Liparis florae,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21087,3 Jun 2024
+ZZ_coded,2092,Oligocottus rimensis,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21088,3 Jun 2024
+ZZ_coded,2093,Oligocottus rubellio,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21089,3 Jun 2024
+ZZ_coded,2094,Oligocottus snyderi,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21090,3 Jun 2024
+ZZ_coded,2095,Oligocottus spp.,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21091,3 Jun 2024
+ZZ_coded,2096,Phytichthys chirus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21092,3 Jun 2024
+ZZ_coded,2097,Scorpaenichthys marmoratus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21093,3 Jun 2024
+ZZ_coded,2098,Sebastes carnatus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21094,3 Jun 2024
+ZZ_coded,2099,Sebastes melanops,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21095,3 Jun 2024
+ZZ_coded,2100,Sebastes miniatus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21096,3 Jun 2024
+ZZ_coded,2101,Unknown Stichaeid,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21097,3 Jun 2024
+ZZ_coded,2102,Xiphister atropurpureus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21098,3 Jun 2024
+ZZ_coded,2103,Xiphister mucosus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21099,3 Jun 2024
+ZZ_coded,2109,Pseudodelphis oligocotti,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21100,3 Jun 2024
+ZZ_coded,2293,Porichthys notatus,fish,1,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21101,3 Jun 2024
+ZZ_coded,3002,Xiphister mucosus,fish,4,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21102,3 Jun 2024
+ZZ_coded,3000,Cebidichthys violaceus,fish,4,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21103,3 Jun 2024
+ZZ_coded,2394,Teleostei,fish,6,1423,Euphausia pacifica,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21104,3 Jun 2024
+ZZ_coded,3004,Porichthys notatus,fish,NA,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21105,3 Jun 2024
+ZZ_coded,3006,Porichthys notatus,fish,NA,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21106,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21107,3 Jun 2024
+ZZ_coded,2,Gibbonsia elegans,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21108,3 Jun 2024
+ZZ_coded,3,Hypsoblennius gilberti,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21109,3 Jun 2024
+ZZ_coded,4,Amphistichus koelzi,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21110,3 Jun 2024
+ZZ_coded,5,Amphistichus argenteus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21111,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21112,3 Jun 2024
+ZZ_coded,7,Syngnathus californiensis,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21113,3 Jun 2024
+ZZ_coded,8,Atherinops affinis,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,middle to low,NA,y,y,NA,21114,3 Jun 2024
+ZZ_coded,10,Hypsoblennius jenkinsi,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21115,3 Jun 2024
+ZZ_coded,11,Artedius fenestralis,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21116,3 Jun 2024
+ZZ_coded,12,Girella nigricans,fish,4,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21117,3 Jun 2024
+ZZ_coded,13,Hypomesus transpacificus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21118,3 Jun 2024
+ZZ_coded,14,Leptocottus armatus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21119,3 Jun 2024
+ZZ_coded,15,Clinocottus analis,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21120,3 Jun 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21121,3 Jun 2024
+ZZ_coded,17,Syngnathus sp.,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21122,3 Jun 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21123,3 Jun 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21124,3 Jun 2024
+ZZ_coded,604,Heterostichus rostratus,fish,4,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21125,3 Jun 2024
+ZZ_coded,706,Apodichthys fucorum,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21126,3 Jun 2024
+ZZ_coded,707,Hexagrammos decagrammus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21127,3 Jun 2024
+ZZ_coded,710,Phanerodon vacca,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21128,3 Jun 2024
+ZZ_coded,731,Kyphosus azureus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,very low,NA,y,y,NA,21129,3 Jun 2024
+ZZ_coded,732,Kyphosus azureus,fish,4,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21130,3 Jun 2024
+ZZ_coded,747,Hypsoblennius gentilis,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21131,3 Jun 2024
+ZZ_coded,2072,Paralabrax nebulifer,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21132,3 Jun 2024
+ZZ_coded,2073,Paralabrax nebulifer,fish,4,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21133,3 Jun 2024
+ZZ_coded,2074,Anoplarchus purpurescens,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21134,3 Jun 2024
+ZZ_coded,2075,Apodichthys flavidus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21135,3 Jun 2024
+ZZ_coded,2076,Artedius corallinus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21136,3 Jun 2024
+ZZ_coded,2077,Artedius harringtoni,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21137,3 Jun 2024
+ZZ_coded,2078,Artedius lateralis,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21138,3 Jun 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21139,3 Jun 2024
+ZZ_coded,2080,Cebidichthys violaceus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21140,3 Jun 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21141,3 Jun 2024
+ZZ_coded,2082,Clinocottus embryum,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21142,3 Jun 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21143,3 Jun 2024
+ZZ_coded,2084,Clinocottus recalvus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21144,3 Jun 2024
+ZZ_coded,2085,Clinocottus spp.,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21145,3 Jun 2024
+ZZ_coded,2086,Enophrys bison,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21146,3 Jun 2024
+ZZ_coded,2087,Gibbonsia montereyensis,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21147,3 Jun 2024
+ZZ_coded,2088,Hemilepidotus hemilepidotus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21148,3 Jun 2024
+ZZ_coded,2089,Hemilepidotus spinosus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21149,3 Jun 2024
+ZZ_coded,2090,Hexagrammos lagocephalus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21150,3 Jun 2024
+ZZ_coded,2091,Liparis florae,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21151,3 Jun 2024
+ZZ_coded,2092,Oligocottus rimensis,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21152,3 Jun 2024
+ZZ_coded,2093,Oligocottus rubellio,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21153,3 Jun 2024
+ZZ_coded,2094,Oligocottus snyderi,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21154,3 Jun 2024
+ZZ_coded,2095,Oligocottus spp.,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21155,3 Jun 2024
+ZZ_coded,2096,Phytichthys chirus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21156,3 Jun 2024
+ZZ_coded,2097,Scorpaenichthys marmoratus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21157,3 Jun 2024
+ZZ_coded,2098,Sebastes carnatus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21158,3 Jun 2024
+ZZ_coded,2099,Sebastes melanops,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21159,3 Jun 2024
+ZZ_coded,2100,Sebastes miniatus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21160,3 Jun 2024
+ZZ_coded,2101,Unknown Stichaeid,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21161,3 Jun 2024
+ZZ_coded,2102,Xiphister atropurpureus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21162,3 Jun 2024
+ZZ_coded,2103,Xiphister mucosus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21163,3 Jun 2024
+ZZ_coded,2109,Pseudodelphis oligocotti,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21164,3 Jun 2024
+ZZ_coded,2293,Porichthys notatus,fish,1,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21165,3 Jun 2024
+ZZ_coded,3002,Xiphister mucosus,fish,4,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21166,3 Jun 2024
+ZZ_coded,3000,Cebidichthys violaceus,fish,4,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21167,3 Jun 2024
+ZZ_coded,2394,Teleostei,fish,6,1424,Nyctiphanes simplex,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21168,3 Jun 2024
+ZZ_coded,3004,Porichthys notatus,fish,NA,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21169,3 Jun 2024
+ZZ_coded,3006,Porichthys notatus,fish,NA,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21170,3 Jun 2024
+ZZ_coded,1,Gibbonsia metzi,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21171,3 Jun 2024
+ZZ_coded,2,Gibbonsia elegans,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21172,3 Jun 2024
+ZZ_coded,3,Hypsoblennius gilberti,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21173,3 Jun 2024
+ZZ_coded,4,Amphistichus koelzi,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21174,3 Jun 2024
+ZZ_coded,5,Amphistichus argenteus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21175,3 Jun 2024
+ZZ_coded,6,Micrometrus minimus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21176,3 Jun 2024
+ZZ_coded,7,Syngnathus californiensis,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21177,3 Jun 2024
+ZZ_coded,8,Atherinops affinis,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,middle to low,NA,y,y,NA,21178,3 Jun 2024
+ZZ_coded,10,Hypsoblennius jenkinsi,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21179,3 Jun 2024
+ZZ_coded,11,Artedius fenestralis,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21180,3 Jun 2024
+ZZ_coded,12,Girella nigricans,fish,4,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21181,3 Jun 2024
+ZZ_coded,13,Hypomesus transpacificus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21182,3 Jun 2024
+ZZ_coded,14,Leptocottus armatus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21183,3 Jun 2024
+ZZ_coded,15,Clinocottus analis,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21184,3 Jun 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21185,3 Jun 2024
+ZZ_coded,17,Syngnathus sp.,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21186,3 Jun 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21187,3 Jun 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21188,3 Jun 2024
+ZZ_coded,604,Heterostichus rostratus,fish,4,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21189,3 Jun 2024
+ZZ_coded,706,Apodichthys fucorum,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21190,3 Jun 2024
+ZZ_coded,707,Hexagrammos decagrammus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21191,3 Jun 2024
+ZZ_coded,710,Phanerodon vacca,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21192,3 Jun 2024
+ZZ_coded,731,Kyphosus azureus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,very low,NA,y,y,NA,21193,3 Jun 2024
+ZZ_coded,732,Kyphosus azureus,fish,4,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21194,3 Jun 2024
+ZZ_coded,747,Hypsoblennius gentilis,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21195,3 Jun 2024
+ZZ_coded,2072,Paralabrax nebulifer,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21196,3 Jun 2024
+ZZ_coded,2073,Paralabrax nebulifer,fish,4,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21197,3 Jun 2024
+ZZ_coded,2074,Anoplarchus purpurescens,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21198,3 Jun 2024
+ZZ_coded,2075,Apodichthys flavidus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21199,3 Jun 2024
+ZZ_coded,2076,Artedius corallinus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21200,3 Jun 2024
+ZZ_coded,2077,Artedius harringtoni,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21201,3 Jun 2024
+ZZ_coded,2078,Artedius lateralis,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21202,3 Jun 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21203,3 Jun 2024
+ZZ_coded,2080,Cebidichthys violaceus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21204,3 Jun 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21205,3 Jun 2024
+ZZ_coded,2082,Clinocottus embryum,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21206,3 Jun 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21207,3 Jun 2024
+ZZ_coded,2084,Clinocottus recalvus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21208,3 Jun 2024
+ZZ_coded,2085,Clinocottus spp.,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21209,3 Jun 2024
+ZZ_coded,2086,Enophrys bison,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21210,3 Jun 2024
+ZZ_coded,2087,Gibbonsia montereyensis,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21211,3 Jun 2024
+ZZ_coded,2088,Hemilepidotus hemilepidotus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21212,3 Jun 2024
+ZZ_coded,2089,Hemilepidotus spinosus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21213,3 Jun 2024
+ZZ_coded,2090,Hexagrammos lagocephalus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21214,3 Jun 2024
+ZZ_coded,2091,Liparis florae,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21215,3 Jun 2024
+ZZ_coded,2092,Oligocottus rimensis,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21216,3 Jun 2024
+ZZ_coded,2093,Oligocottus rubellio,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21217,3 Jun 2024
+ZZ_coded,2094,Oligocottus snyderi,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21218,3 Jun 2024
+ZZ_coded,2095,Oligocottus spp.,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21219,3 Jun 2024
+ZZ_coded,2096,Phytichthys chirus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21220,3 Jun 2024
+ZZ_coded,2097,Scorpaenichthys marmoratus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21221,3 Jun 2024
+ZZ_coded,2098,Sebastes carnatus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21222,3 Jun 2024
+ZZ_coded,2099,Sebastes melanops,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21223,3 Jun 2024
+ZZ_coded,2100,Sebastes miniatus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21224,3 Jun 2024
+ZZ_coded,2101,Unknown Stichaeid,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21225,3 Jun 2024
+ZZ_coded,2102,Xiphister atropurpureus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21226,3 Jun 2024
+ZZ_coded,2103,Xiphister mucosus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21227,3 Jun 2024
+ZZ_coded,2109,Pseudodelphis oligocotti,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21228,3 Jun 2024
+ZZ_coded,2293,Porichthys notatus,fish,1,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,low,NA,y,y,NA,21229,3 Jun 2024
+ZZ_coded,3002,Xiphister mucosus,fish,4,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,NA,NA,y,y,NA,21230,3 Jun 2024
+ZZ_coded,3000,Cebidichthys violaceus,fish,4,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21231,3 Jun 2024
+ZZ_coded,2394,Teleostei,fish,6,1425,Thysanoessa spinifera,euphausid,1,1,2,6,1,Light & Smith,California,all,NA,y,y,NA,21232,3 Jun 2024
+ZZ_coded,2395,Asteroidea,sea star,6,227,Haliotis corrugata,abalone,1,1,2,6,1,"Morris, Abbott, & Haderlie; Light & Smith",California,all,NA,y,y,NA,21233,3 Jun 2024

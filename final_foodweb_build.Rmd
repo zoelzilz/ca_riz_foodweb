@@ -39,10 +39,9 @@ potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_2jun24.csv") %>% #
   rename(nodeNum = id.x)
 #View(potential_nodes)
 
-#2340 nodes
 
 ## edges ##
-edges_unclean <- read_csv("data/edges_frommaster_2jun2024.csv") %>% # updated again, as above
+edges_unclean <- read_csv("data/links_frommaster_3jun2024.csv") %>% # updated again, as above
   filter(!is.na(consumerNum)) %>% 
   filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
   filter(!is.na(resourceNum)) %>% 
@@ -86,7 +85,8 @@ all_nodes <- rbind(resources_from_edgelist, consumers_from_edgelist) %>%
 
 # add attributes from potential nodes list
 all_nodes_w_attributes <- left_join(all_nodes, potential_nodes, by = join_by(nodeNum)) %>% 
-  dplyr::select(!nodeName) # removing this column because it's actually often innacurate (old sp name, etc)
+  dplyr::select(!nodeName) %>%  # removing this column because it's actually often innacurate (old sp name, etc)
+  filter(!is.na(species))
 
 ### 1912 nodes, so about 400 in the list that didn't have any interactions. I can live with that # update, I could not live with that so I fixed them
 
@@ -207,7 +207,7 @@ nodes_attributes_clean <- all_nodes_w_attributes %>%
 
 ############# we will "filter" out unmatched consumers first #############
 
-# create a list of just the nodes we are allowed to KEEP (numbers only)
+# create a list of just the nodes we are allowed to KEEP (numbers only) based on whats in clean node list
 consumerNums_keep <- nodes_attributes_clean %>% 
   dplyr::select(nodeNum, species, organismal_category, clean_stage) %>% # we want all three of these because we will be replacing what's in the web with them
   rename(consumerNum = nodeNum,
@@ -251,15 +251,43 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
          consumerCat = consumerCat.x
          )
 
+
+# make a nice list with all of the confidences and references collapsed
+edges_final <- edges_clean %>% 
+  group_by(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type) %>% 
+  summarize(ref_num = paste0(ref_num, collapse = ", "),
+            justification = paste0(justification, collapse = ", "),
+            confidence = min(confidence),
+            incl.code = min(incl.code)
+            ) # decided i dont need localities, or the other columns i left out
+
+
+############# some dicking around
+
+edges_experiment <- edges_clean %>% 
+  group_by(resourceNum, consumerNum,interaction.type) %>% 
+  summarize(ref_num = paste0(ref_num, collapse = ", "),
+            justification = paste0(justification, collapse = ", "),
+            confidence = min(confidence),
+            incl.code = min(incl.code)
+            )
+
+view(edges_experiment)
+
+what_missing <- anti_join(edges_final, edges_clean, by = join_by(consumerNum))
+what_missing2 <- anti_join(edges_final, edges_clean, by = join_by(resourceNum))
+
 # down to 8654 total edges... I'm guessing removing the "rare/not present" resources didn't cut as many because we really focused on nodes as consumers instead of nodes as diet items??
 ```
 
 ## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
 ```{r saving current working node list and edge list}
 
-write_csv(nodes_attributes_clean, "data/foodweb_V4/nodes_final_2jun2024.csv")
+write_csv(nodes_attributes_clean, "data/foodweb_V4/nodes_final_3jun2024.csv")
 
-write_csv(edges_clean, "data/foodweb_V4/links_final_2jun2024.csv")
+write_csv(edges_final, "data/foodweb_V4/links_collapsed_3jun2024.csv")
+
+write_csv(edges_clean, "data/foodweb_V4/links_final_3jun2024.csv")
 
 ```
 
@@ -290,8 +318,8 @@ resources_without_food <- anti_join(resources, consumers, by = join_by(num)) %>%
 ### Now we are going to further parse the edges down to only include trophic links, and to exclude parasites (for now)
 ```{r trophic links only}
 
-trophic_links <- edges_clean %>% # swapping to "links" lingo because armand thinks it more intuitive, so fine
-  
+trophic_links1 <- edges_final %>% # swapping to "links" lingo because armand thinks it more intuitive, so fine
+  ungroup() %>% 
   # need to remove non-trophic interactions!
   filter(interaction.type != 2, #epibiont
          interaction.type !=9, #endocommensal
@@ -299,7 +327,6 @@ trophic_links <- edges_clean %>% # swapping to "links" lingo because armand thin
          interaction.type !=22, #mutualism
          #interaction.type !=28, #boring # i think we need to leave boring in because of the gammarids that bore and eat
          interaction.type != 29) %>%  
-  dplyr::select(resourceNum,consumerNum,  interaction.type) %>%  # RESOURCE NUM HAS TO GO FIRST OR WEB IS UPSIDEDOWN
   
   # and finally we need to add a column coding for parasitic interaction or nah
   mutate(parasitic = case_when(
@@ -307,7 +334,9 @@ trophic_links <- edges_clean %>% # swapping to "links" lingo because armand thin
     interaction.type == 12 ~ "y",
     interaction.type > 23 & interaction.type < 27 ~ "y", # we're calling sessile micropredation parasitic here
     TRUE ~ "n"
-  ))
+  )) %>% 
+    dplyr::select(resourceNum,consumerNum, interaction.type)  # RESOURCE NUM HAS TO GO FIRST OR WEB IS UPSIDEDOWN (resourcenum is FROM and consumernum is TO)
+  
 
 free_living_links <- trophic_links %>% 
   filter(parasitic == "n")
@@ -326,9 +355,9 @@ dupes <- nodes_attributes_clean%>%
 
 ######## w/ parasites first #########
 
-trophic_web_psites1 <- graph_from_data_frame(d= trophic_links, # all links
+trophic_web_psites1 <- graph_from_data_frame(d= trophic_links1, # all links
                              vertices = nodes_attributes_clean, # can use these nodes because igraph filters out nodes that don't have any interactions automatically
-                             directed=T) # i think this makes sure consumers "point" to resources
+                             directed=T) # this makes sure resources (from) "point" to consumers (to)
 
 trophic_web_psites <- delete_vertices(trophic_web_psites1, 
                                       which(igraph::degree(trophic_web_psites1) == 0)) # hoping this will remove all unlinked links
@@ -396,8 +425,9 @@ rizvis <- plot.igraph(trophic_web_psites,
                       vertex.label = V(trophic_web_psites)$label, # this is terrible syntax, but it works
                       vertex.label.cex = .35,
                       vertex.size=3,
-                      edge.arrow.size=.25,
-                      layout=layout.matrix.1)
+                      edge.arrow.size=.25#,
+                     # layout=layout.matrix.1 # in the updated (june 2024) version of igraph this no longer works
+                     )
  
 # I am still working on the best way to plot the nodes along the x-axis. You may notice that using
 # runif() means that there is some chance that two nodes with the same trophic level
@@ -443,8 +473,8 @@ vis.nodes <- igraph::as_data_frame(trophic_web_psites, what = "vertices")%>% # v
 
 ########## hide all below, old code #########
 #vis.links <- trophic_links %>% 
-  rename(to = consumerNum) %>% 
-  rename(from = resourceNum) #right?
+#  rename(to = consumerNum) %>% 
+#  rename(from = resourceNum) #right?
 
 # now we need to make a node list that filters out anyone without a consumer, annoying (only do this for building the NetIndices web)
 # another option for this is to remove nodes with degree = zero from the igraph object, but that returns a list that MIGHT not be in the same order as the original node list, which means the degree column we append on may not match up
@@ -475,8 +505,10 @@ vis.nodes$shape  <- "dot"
 vis.nodes$shadow <- TRUE # Nodes will drop shadow
 vis.nodes$title  <- vis.nodes$species # Text on click is species name
 vis.nodes$label  <- vis.nodes$trophic # Node label # shows up all the time, we don't want that
-vis.nodes$size   <- vis.nodes$degree # use degree to determine node size
-vis.nodes$borderWidth <- 2 # Node border width
+vis.nodes$size   <- 10 #vis.nodes$degree # use degree to determine node size
+vis.nodes$borderWidth <- 1 # Node border width
+vis.nodes$y <- layout.matrix.1[,2] # trying this out instead of layout.norm
+vis.nodes$x <- layout.matrix.1[,1]
 
 # mutate in a column for color
 vis.nodes <- vis.nodes %>% 
@@ -499,7 +531,8 @@ vis.nodes <- vis.nodes %>%
                            trophic_strategy ==    "parasitic castrator" ~ "red",
                            .default = "black"))
 
-visNetwork(vis.nodes, vis.links, width = "2000px", height = "2000px") %>% 
+visNetwork(vis.nodes, vis.links, width = "2000px", height = "2000px"
+           ) %>% 
   visPhysics(enabled = FALSE) %>% 
   visIgraphLayout(layout = "layout.norm", layoutMatrix = layout.matrix.1) %>%   # woo this one worked! but it's upsidedown
   visOptions(selectedBy =  "trophic_strategy",

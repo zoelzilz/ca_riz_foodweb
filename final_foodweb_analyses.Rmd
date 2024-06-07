@@ -37,7 +37,7 @@ library(cheddar)
 (we created and saved these csvs in the final_foodweb_build RMD)
 ```{r read in clean data}
 
-nodes <- read_csv("data/foodweb_V3/nodes_final_3may2024.csv") %>% 
+nodes <- read_csv("data/foodweb_V4/nodes_final_3jun2024.csv") %>% 
   mutate(zone = case_when(
     zone == "low tidepools" ~ "low",
     zone == "low to very low" ~ "low",
@@ -56,9 +56,35 @@ nodes <- read_csv("data/foodweb_V3/nodes_final_3may2024.csv") %>%
     zone == "varies" ~ "all",
     zone == "unknown" ~ "no data",
     is.na(zone) ~ "all", # this is a bit of a stretch but we need to not have NAs
-    .default = as.character(zone)))
+    .default = as.character(zone))) %>% 
+  mutate(parasite = case_when(str_detect(trophic_strategy, "parasit") ~ "y",
+                              trophic_strategy == "pathogen" ~ "y",
+                              .default = "n"))
 
-links <- read_csv("data/foodweb_V3/links_final_3may2024.csv")
+view(nodes)
+
+all_links <- read_csv("data/foodweb_V4/links_final_3jun2024.csv")
+
+# calling the links list "links" but it's ONLY trophic links
+#also switched from using the uncollapsed link list (~15k links) to the [final] list with no duplicates (~14k links)
+
+links <- all_links %>% 
+  
+  # need to remove non-trophic interactions!
+  filter(interaction.type != 2, #epibiont
+         interaction.type !=9, #endocommensal
+         interaction.type !=10, #ectocommensal
+         interaction.type !=22, #mutualism
+         #interaction.type !=28, #boring # i think we need to leave boring in because of the gammarids that bore and eat
+         interaction.type != 29) %>%  
+  
+  # and finally we need to add a column coding for parasitic interaction or nah
+  mutate(parasitic = case_when(
+    interaction.type > 4 & interaction.type < 8 ~ "y",
+    interaction.type == 12 ~ "y",
+    interaction.type > 23 & interaction.type < 27 ~ "y", # we're calling sessile micropredation parasitic here
+    TRUE ~ "n"
+  ))
 
 ```
 
@@ -207,6 +233,8 @@ properties <- list(title = "ca riz total") #syntax that the help doc suggests
 
 # create community object
 ca_riz_total <- Community(cheddar_nodes, properties, trophic.links = trophic.links)
+ca_riz_total
+
 ```
 
 ### Actual analysis time!
@@ -227,14 +255,52 @@ FractionBasalNodes(ca_riz_total)
 FractionIsolatedNodes(ca_riz_total)
 IsolatedNodes(ca_riz_total)
 
-# parasites
+# parasite nodes
+pnodes <- nodes %>% 
+  filter(parasite == "y") %>% 
+  count()
+pnodes
+
+#parasite species
+sp_pnodes <- nodes %>% 
+  filter(parasite == "y") %>% 
+  distinct(species) %>% 
+  count()
+sp_pnodes
+
+# all species
+spnodes <- nodes %>% 
+  distinct(species) %>% 
+  count()
+spnodes
+
+# free living nodes
+
+fnodes <- nodes %>% 
+  filter(parasite == "n") %>% 
+  count()
+fnodes
+
+# free living species
+
+sp_fnodes <- nodes %>% 
+  filter(parasite == "n") %>% 
+  distinct(species) %>% 
+  count()
+sp_fnodes
+
+# parasitic links
+plinks <- links %>% 
+  filter(parasitic == "y") %>% 
+  count()
+plinks
 
 # omnivory (taxa feeding on multiple trophic levels)
 
 # cannibalism
 
-TrophicChains(ca_riz_total)
-chain.stats <- TrophicChainsStats(ca_riz_total)
+#TrophicChains(ca_riz_total) # web is too big for this
+#chain.stats <- TrophicChainsStats(ca_riz_total) # web is also too big for this
 
 ```
 

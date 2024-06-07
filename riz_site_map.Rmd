@@ -1,0 +1,81 @@
+---
+title: "Site Map"
+output: html_document
+date: "2024-06-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(here)
+library(ggmap)
+library(janitor)
+library(ggrepel)
+library(rnaturalearth)
+
+```
+
+
+```{r make coords data}
+
+rizsites_bad <- data.frame(sitename = c("Rancho Marino", "Hazard Canyon", "Shell Beach", "Vandenberg", "Tarantula's", "Point Conception", "Alegria", "Arroyo Hondo", "Ellwood Boulder Fields", "Hammond's Beach", "Mussel Shoals"),
+                       lat = c(35.547723, 35.289401,35.168629,  34.554069, 34.494562, 34.448370, 34.468624, 34.473579, 34.435190, 34.415645, 34.355507),
+                       lon = c(-121.097682, -120.882923, -120.696753, -120.611496,  -120.495639, -120.471875, -120.270451, -120.141999, -119.929766, -119.637757,  -119.441076))
+
+rizsites <- rizsites_bad %>% 
+  filter(sitename != "Vandenberg",
+         sitename != "Alegria")
+  
+
+```
+
+## Set map parameters and make the base map
+```{r set basemap}
+register_google(key = "AIzaSyDMo_xQFMKeU320T6-fnJgvQ4KwzoLubgA") # new key june 2024
+
+rizbase <- get_map(location = c(lon = -120.4243818, lat = 34.6757962), 
+                   zoom = 8,
+                   maptype = "satellite", 
+                   source = "google")
+
+basemap <- ggmap(rizbase) 
+
+basemap # to make sure it's in the right place
+
+```
+## Looks good, now we can plot our points
+```{r}
+riz <- ggmap(rizbase) 
+  geom_point(data = hr_combined, aes(x = lon, y = lat, colour = service))+
+  # messing with the legend
+  scale_color_discrete(name = "Cell Service Coverage")+
+  # wildlife access points added in to cross check which sites might be good
+  #geom_text_repel(data = waps, color = "white", aes(label = wildlife_access_area))+
+  scale_y_continuous(limits=c(34.44, 34.48))+
+  scale_x_continuous(limits = c(-120.37, -120.25)) +
+  # adding in access points
+  geom_point(data = waps, aes(x = lon, y = lat, shape = 2), colour = "black") + 
+  scale_shape_identity(guide = "legend",
+                       name = NULL,
+                       labels = "Potential Trap Sites")+
+                       
+  geom_label_repel(data = labls, aes(label = human_access_area), 
+                   min.segment.length = 0,
+                   force = 200,
+                   segment.color = "white"
+                   )+
+  theme_bw()+
+  theme(legend.position = c(0.9,0), 
+        legend.direction = "vertical",
+        legend.justification = c(0.9,0),
+        legend.title = element_text(size = 8),
+        legend.text = element_text(size = 8))
+  
+  
+
+hr_cell
+
+ggsave("hr_cell.png", hr_cell, width = 10, units = "in")
+```
+
