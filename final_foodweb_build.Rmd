@@ -41,7 +41,7 @@ potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_2jun24.csv") %>% #
 
 
 ## edges ##
-edges_unclean <- read_csv("data/links_frommaster_3jun2024.csv") %>% # updated again, as above
+edges_unclean <- read_csv("data/links_frommaster_7jun2024.csv") %>% # updated again, as above
   filter(!is.na(consumerNum)) %>% 
   filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
   filter(!is.na(resourceNum)) %>% 
@@ -279,6 +279,16 @@ what_missing2 <- anti_join(edges_final, edges_clean, by = join_by(resourceNum))
 
 # down to 8654 total edges... I'm guessing removing the "rare/not present" resources didn't cut as many because we really focused on nodes as consumers instead of nodes as diet items??
 ```
+## Now we need to code in some missing elements of columns:
+1. locality: if ref = 435, 436 (MAH, LS) then = "California"
+2. stage: if category = hydroid, = 5
+3. confidence: if locality = california or CA and justification = 3, = 1. 
+               if locality = california or CA and justification = 6, = 2.
+               if locality /= california or CA and justification = 3, = 2. 
+               if locality /= california or CA and justification = 6, = 3. 
+               if anything else, 4
+               
+4. Justification: if incl "diss" = PO, if incl "PO", PO
 
 ## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
 ```{r saving current working node list and edge list}

@@ -86,6 +86,8 @@ links <- all_links %>%
     TRUE ~ "n"
   ))
 
+write_csv(links, "data/foodweb_V4/trophic_links.csv")
+
 ```
 
 

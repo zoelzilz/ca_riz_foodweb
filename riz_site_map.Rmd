@@ -25,7 +25,11 @@ rizsites_bad <- data.frame(sitename = c("Rancho Marino", "Hazard Canyon", "Shell
 
 rizsites <- rizsites_bad %>% 
   filter(sitename != "Vandenberg",
-         sitename != "Alegria")
+         sitename != "Alegria", 
+         sitename != "Point Conception")
+
+pc <- rizsites_bad %>% 
+  filter(sitename == "Point Conception")
   
 
 ```
@@ -46,36 +50,37 @@ basemap # to make sure it's in the right place
 ```
 ## Looks good, now we can plot our points
 ```{r}
-riz <- ggmap(rizbase) 
-  geom_point(data = hr_combined, aes(x = lon, y = lat, colour = service))+
-  # messing with the legend
-  scale_color_discrete(name = "Cell Service Coverage")+
-  # wildlife access points added in to cross check which sites might be good
-  #geom_text_repel(data = waps, color = "white", aes(label = wildlife_access_area))+
-  scale_y_continuous(limits=c(34.44, 34.48))+
-  scale_x_continuous(limits = c(-120.37, -120.25)) +
-  # adding in access points
-  geom_point(data = waps, aes(x = lon, y = lat, shape = 2), colour = "black") + 
-  scale_shape_identity(guide = "legend",
-                       name = NULL,
-                       labels = "Potential Trap Sites")+
-                       
-  geom_label_repel(data = labls, aes(label = human_access_area), 
-                   min.segment.length = 0,
-                   force = 200,
-                   segment.color = "white"
-                   )+
-  theme_bw()+
-  theme(legend.position = c(0.9,0), 
-        legend.direction = "vertical",
-        legend.justification = c(0.9,0),
-        legend.title = element_text(size = 8),
-        legend.text = element_text(size = 8))
+rizmap <- ggmap(rizbase) +
+  geom_point(data = rizsites, 
+             aes(x = lon, y = lat),
+             colour = "lightblue")+
+  geom_label_repel(data = rizsites,  # need to use ggrepel because the stupid labels overlap
+             aes(x = lon, y = lat, label = sitename), 
+             size = 2,
+             min.segment.length = unit(0, "lines") #adds a line to point
+             )+
   
+  # add in point conception label
+  geom_point(data = pc, 
+             aes(x = lon, y = lat),
+             size = 4,
+             colour = "yellow")+
   
+  geom_label_repel(data = pc,  # need to use ggrepel because the stupid labels overlap
+             aes(x = lon , y = lat , label = sitename), 
+             size = 3,
+             nudge_x = -0.25,
+             nudge_y = -0.25,
+             min.segment.length = unit(0, "lines")
+             )+
+  
+  # want a specific part of the map only 
+  scale_y_continuous(limits = c(33.9, 35.6))+
+  
+  theme_bw()
 
-hr_cell
+rizmap
 
-ggsave("hr_cell.png", hr_cell, width = 10, units = "in")
+ggsave("figures/cariz_sitemap.png", rizmap, width = 7, units = "in")
 ```
 
