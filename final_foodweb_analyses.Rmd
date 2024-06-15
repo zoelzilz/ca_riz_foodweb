@@ -37,33 +37,15 @@ library(cheddar)
 (we created and saved these csvs in the final_foodweb_build RMD)
 ```{r read in clean data}
 
-nodes <- read_csv("data/foodweb_V4/nodes_final_3jun2024.csv") %>% 
-  mutate(zone = case_when(
-    zone == "low tidepools" ~ "low",
-    zone == "low to very low" ~ "low",
-    zone == "middle and low" ~ "middle", 
-    zone == "middle to low" ~ "middle",
-    zone == "middle, low" ~ "middle",
-    zone == "high and middle" ~ "high",
-    zone == "mid to low" ~ "middle",
-    zone == "high tide pools, nocturnal" ~ "high",
-    zone == "high, middle" ~ "high",
-    zone == "high to middle" ~ "high",
-    zone == "low to high" ~ "all",
-    zone == "pools" ~ "all",
-    zone == "tidepools" ~ "all",
-    zone == "host range" ~ "all",
-    zone == "varies" ~ "all",
-    zone == "unknown" ~ "no data",
-    is.na(zone) ~ "all", # this is a bit of a stretch but we need to not have NAs
-    .default = as.character(zone))) %>% 
+nodes <- read_csv("data/foodweb_V5/nodes_final_15jun2024.csv") %>% 
   mutate(parasite = case_when(str_detect(trophic_strategy, "parasit") ~ "y",
                               trophic_strategy == "pathogen" ~ "y",
-                              .default = "n"))
+                              .default = "n")) %>% 
+  unite(node, c(nodeNum, species, clean_stage), sep = "_", remove = FALSE) # downstream, cheddar requires a column called node that is non-numeric to identify each unique node
 
 view(nodes)
 
-all_links <- read_csv("data/foodweb_V4/links_final_3jun2024.csv")
+all_links <- read_csv("data/foodweb_V5/links_final_15jun2024.csv")
 
 # calling the links list "links" but it's ONLY trophic links
 #also switched from using the uncollapsed link list (~15k links) to the [final] list with no duplicates (~14k links)
@@ -84,9 +66,18 @@ links <- all_links %>%
     interaction.type == 12 ~ "y",
     interaction.type > 23 & interaction.type < 27 ~ "y", # we're calling sessile micropredation parasitic here
     TRUE ~ "n"
-  ))
+  )) %>% 
+  # rename some columns to match what i put in column_descriptions.csv
+  rename(interactionType = interaction.type,
+         referenceNum = ref_num) %>% 
+  
+  # make a new column that concatenates node name, num, and life stage bc cheddar can't handle numeric node names
+  unite(resource, c(resourceNum, resourceName, resourceStage), sep = "_", remove = FALSE) %>% 
+  unite(consumer, c(consumerNum, consumerName, consumerStage), sep = "_", remove = FALSE) %>% 
+  rename(link_zone = zone, 
+         link_notes = notes)
 
-write_csv(links, "data/foodweb_V4/trophic_links.csv")
+write_csv(links, "data/foodweb_V5/trophic_links.csv")
 
 ```
 
@@ -217,16 +208,10 @@ https://cran.r-project.org/web/packages/cheddar/vignettes/ImportExport.pdf
 ```{r create cheddar data}
 # adjust dataframes a littel for cheddar (node column needs to be called node, links column needs to have consumer and resource columns, need a properties dataframe?)
 
-cheddar_nodes <- nodes %>% # ugh i hate this but i don't have a choice
-  # make a new column that concatenates node name, num, and life stage bc cheddar can't handle numeric node names
-  unite(node, c(nodeNum, species, clean_stage), sep = "_", remove = FALSE)
+cheddar_nodes <- nodes # ugh i hate this but i don't have a choice
+
 
 trophic.links <- links %>% 
-  # make a new column that concatenates node name, num, and life stage bc cheddar can't handle numeric node names
-  unite(resource, c(resourceNum, resourceName, resourceStage), sep = "_", remove = FALSE) %>% 
-  unite(consumer, c(consumerNum, consumerName, consumerStage), sep = "_", remove = FALSE) %>% 
-  rename(link_zone = zone, 
-         link_notes = notes) %>% 
   # cheddar can't handle duplicates so we need to get rid of them
   distinct(consumer, resource, .keep_all = TRUE)
 

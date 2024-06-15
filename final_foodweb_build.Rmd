@@ -248,7 +248,30 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
          consumerName = consumerName.x,
          consumerStage = consumerStage.x,
          consumerCat = consumerCat.x
-         )
+         ) %>% 
+  
+  # need to clean up zones for downstream sorting!
+    mutate(zone = case_when(
+    zone == "low tidepools" ~ "low",
+    zone == "low to very low" ~ "low",
+    zone == "middle and low" ~ "middle", 
+    zone == "middle to low" ~ "middle",
+    zone == "middle, low" ~ "middle",
+    zone == "high and middle" ~ "high",
+    zone == "mid to low" ~ "middle",
+    zone == "high tide pools, nocturnal" ~ "high",
+    zone == "high, middle" ~ "high",
+    zone == "high to middle" ~ "high",
+    zone == "low to high" ~ "all",
+    zone == "pools" ~ "all",
+    zone == "tidepools" ~ "all",
+    zone == "host range" ~ "all",
+    zone == "varies" ~ "all",
+    zone == "unknown" ~ "no data",
+    is.na(zone) ~ "all", # this is a bit of a stretch but we need to not have NAs
+    .default = as.character(zone))) %>% 
+  # rename this one col for ease of use
+  rename(habitat = pools_exposed_interstitial)
 ```
 
 ## We also need to code in some missing elements of columns:
@@ -261,6 +284,8 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
                if anything else, 4 [done]
                
 4. Justification: if incl "diss" = PO, if incl "PO", PO (done manually in excel)
+5. habitat: if fish, gammarids, shrimp, nudibranch, pools
+            if filter feeder, pools
 
 ```{r clean further by filling in gaps}
 
@@ -311,9 +336,101 @@ edges_cleaner <- edges_locs %>%
   # this is making a lot of duplicate rows for some reason so:
   distinct(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type, ref_num, localities, .keep_all = TRUE) %>% 
   
-  ## need to add one more line of code collapsing all localities for each reference
+  ###### HABITAT ######
+  mutate(habitat = case_when(is.na(habitat) & consumerCat == "fish" ~ "pools",
+                             is.na(habitat) & resourceCat == "fish" ~ "pools",
+                             is.na(habitat) & consumerCat == "shark" ~ "pools",
+                             is.na(habitat) & resourceCat == "shark" ~ "pools",
+                             is.na(habitat) & resourceCat == "amphipod" ~ "pools",
+                             is.na(habitat) & consumerCat == "amphipod" ~ "pools",
+                             is.na(habitat) & resourceCat == "gammarid" ~ "pools",
+                             is.na(habitat) & consumerCat == "gammarid" ~ "pools",
+                             is.na(habitat) & resourceCat == "euphausid" ~ "pools",
+                             is.na(habitat) & consumerCat == "euphausid" ~ "pools",
+                             is.na(habitat) & resourceCat == "caprellid" ~ "pools",
+                             is.na(habitat) & consumerCat == "caprellid" ~ "pools",
+                             is.na(habitat) & resourceCat == "hermit crab" ~ "pools",
+                             is.na(habitat) & consumerCat == "hermit crab" ~ "pools",
+                             is.na(habitat) & resourceCat == "shrimp" ~ "pools",
+                             is.na(habitat) & consumerCat == "shrimp" ~ "pools",
+                             is.na(habitat) & resourceCat == "nudibranch" ~ "pools",
+                             is.na(habitat) & consumerCat == "nudibranch" ~ "pools",
+                             is.na(habitat) & consumerCat == "sponge" ~ "pools",
+                             is.na(habitat) & consumerCat == "sea hare" ~ "pools",
+                             is.na(habitat) & resourceCat == "sea hare" ~ "pools",
+                             is.na(habitat) & consumerCat == "copepod" ~ "pools",
+                             is.na(habitat) & resourceCat == "copepod" ~ "pools",
+                             is.na(habitat) & consumerCat == "insect" ~ "exposed",
+                             is.na(habitat) & resourceCat == "insect" ~ "exposed",
+                             is.na(habitat) & resourceCat == "limpet" & consumerCat != "fish" ~ "exposed",
+                             is.na(habitat) & consumerCat == "isopod" ~ "both",
+                             is.na(habitat) & resourceCat == "isopod" & consumerCat != "fish" ~ "both",
+                             is.na(habitat) & consumerCat == "polychaete" ~ "both",
+                             is.na(habitat) & resourceCat == "polychaete" & consumerCat != "fish" ~ "both",
+                             is.na(habitat) & consumerCat == "octopus" ~ "pools",
+                             is.na(habitat) & resourceCat == "octopus" ~ "pools",
+                             is.na(habitat) & consumerCat == "anemone" ~ "pools",
+                             is.na(habitat) & consumerCat == "mammal" ~ "pools",
+                             is.na(habitat) & resourceCat == "true crab" ~ "both",
+                             is.na(habitat) & consumerCat == "true crab" ~ "both",
+                             is.na(habitat) & consumerCat == "chiton" ~ "both",
+                             is.na(habitat) & resourceCat == "chiton" & consumerCat != "fish" ~ "both",
+                             is.na(habitat) & consumerCat == "sea star" ~ "pools",
+                             is.na(habitat) & resourceCat == "sea star" ~ "both",
+                             is.na(habitat) & consumerCat == "cucumber" ~ "pools",
+                             is.na(habitat) & resourceCat == "cucumber" ~ "pools",
+                             is.na(habitat) & consumerCat == "mussel" ~ "pools",
+                             is.na(habitat) & resourceCat == "mussel" ~ "both",
+                             is.na(habitat) & consumerCat == "limpet" ~ "both",
+                             is.na(habitat) & consumerCat == "human" ~ "both",
+                             is.na(habitat) & resourceCat == "barnacle" ~ "both",
+                             is.na(habitat) & consumerCat == "barnacle" ~ "pools",
+                             is.na(habitat) & resourceCat == "urchin" ~ "both",
+                             is.na(habitat) & consumerCat == "urchin" ~ "pools",
+                             is.na(habitat) & resourceCat == "hydroid" ~ "both",
+                             is.na(habitat) & consumerCat == "hydroid" ~ "pools",
+                             is.na(habitat) & resourceCat == "anomuran" ~ "both",
+                             is.na(habitat) & consumerCat == "anomuran" ~ "both",
+                             is.na(habitat) & resourceCat == "bryozoan" ~ "both",
+                             is.na(habitat) & consumerCat == "bryozoan" ~ "pools",
+                             is.na(habitat) & resourceCat == "clam" ~ "pools",
+                             is.na(habitat) & consumerCat == "clam" ~ "pools",
+                             is.na(habitat) & resourceCat == "ciliate" ~ "pools",
+                             is.na(habitat) & consumerCat == "ciliate" ~ "pools",
+                             is.na(habitat) & resourceCat == "tunicate" ~ "both",
+                             is.na(habitat) & consumerCat == "tunicate" ~ "pools",
+                             is.na(habitat) & resourceCat == "snail" ~ "both",
+                             is.na(habitat) & consumerCat == "snail" ~ "both",
+                             is.na(habitat) & consumerCat == "brittle star" ~ "pools",
+                             is.na(habitat) & consumerCat == "sea spider" ~ "pools",
+                             is.na(habitat) & resourceCat == "sea spider" ~ "pools",
+                             is.na(habitat) & consumerCat == "nemertean" ~ "both",
+                             is.na(habitat) & resourceCat == "nemertean" ~ "both",
+                             is.na(habitat) & consumerCat == "scale worm" ~ "pools",
+                             is.na(habitat) & resourceCat == "scale worm" ~ "both",
+                             is.na(habitat) & consumerCat == "porcelain crab" ~ "pools",
+                             is.na(habitat) & resourceCat == "porcelain crab" ~ "both",
+                             is.na(habitat) & consumerCat == "bird" ~ "both",
+                             is.na(habitat) & resourceCat == "bird" ~ "exposed",
+                             is.na(habitat) & str_detect(resourceCat, "plankton") ~ "pools",
+                             is.na(habitat) & consumerCat == "abalone" ~ "pools",
+                             is.na(habitat) & resourceCat == "abalone" ~ "both",
+                             is.na(habitat) & resourceCat == "algae" ~ "both",
+                             is.na(habitat) & resourceName == "Wrack" ~ "exposed",
+                             is.na(habitat) & resourceCat == "microorganism" ~ "pools",
+                             
+                             
+                             TRUE ~ as.character(habitat)
+                             )) %>% 
+  
+  ## need to add one more line of code collapsing all localities/habitats/zones for each reference
   group_by(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type, ref_num) %>%
-  summarize(localities = paste0(unique(localities), collapse = "; "))
+  summarize(localities = paste0(unique(localities), collapse = "; "),
+            justification = min(justification), 
+            confidence = min(confidence),
+            zone = paste0(unique(na.omit(zone)), collapse = ", "),
+            habitat = paste0(unique(na.omit(habitat)), collapse = ", ")
+            )
 
 
 
@@ -321,14 +438,43 @@ edges_cleaner <- edges_locs %>%
 edges_final <- edges_cleaner %>% 
   group_by(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type) %>% 
   summarize(ref_num = paste0(ref_num, collapse = ", "),
-            justification = min(justification), 
-            #justification = paste0(justification, collapse = ", "), # actually, we want BEST justification, so using above instead
+            justification = min(justification),
+            zone = paste0(unique(na.omit(zone)), collapse = ", "),
+            habitat = paste0(unique(na.omit(habitat)), collapse = ", "),
             localities = paste0(unique(localities), collapse = "; "), # collapse localities into one col, unique is important to remove duplicate locations
-            confidence = min(confidence),
-            incl.code = min(incl.code)
-            ) # decided i dont need the other columns i left out
+            confidence = min(confidence)
+            ) %>% # decided i dont need the other columns i left out
+  
+  ##### further cleaning now that we've made it messy again:
+  mutate(localities = str_replace(localities, ",", ";")) %>%  # replace commas with semicolons to make the next line possible:
+  mutate(localities = sapply(localities, function(x) paste(unique(unlist(strsplit(x, ";"))), collapse = ";"))) %>% 
+  
+  # also some justifications still have more than one so apply the same formula there:
+  #mutate(justification = sapply(justification, function(x) paste(min(unlist(strsplit(x, ","))), collapse = ";")))
+  # above works, below is cleaner:
+  ungroup() %>% # not sure if necessary
+  mutate(justification = parse_number(justification)) #This parses the first number it finds, dropping any non-numeric characters before the first number and all characters after the first number (we're assuming lowest number is first)
 
 
+
+
+```
+
+
+## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
+```{r saving current working node list and edge list}
+
+write_csv(nodes_attributes_clean, "data/foodweb_V5/nodes_final_15jun2024.csv")
+
+write_csv(edges_final, "data/foodweb_V5/links_final_15jun2024.csv")
+
+write_csv(edges_clean, "data/foodweb_V5/links_uncollapsed_15jun2024.csv")
+
+```
+
+### At this point we can move over to final_foodweb_analyses ->
+
+```{r}
 ############# some dicking around ############# 
 
 edges_experiment <- edges_clean %>% 
@@ -347,17 +493,6 @@ what_missing2 <- anti_join(edges_final, edges_clean, by = join_by(resourceNum))
 # down to 8654 total edges... I'm guessing removing the "rare/not present" resources didn't cut as many because we really focused on nodes as consumers instead of nodes as diet items??
 ```
 
-
-## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
-```{r saving current working node list and edge list}
-
-write_csv(nodes_attributes_clean, "data/foodweb_V4/nodes_final_3jun2024.csv")
-
-write_csv(edges_final, "data/foodweb_V4/links_collapsed_3jun2024.csv")
-
-write_csv(edges_clean, "data/foodweb_V4/links_final_3jun2024.csv")
-
-```
 
 ## Really quick, let's check if we're going to run into any messes with trophic levels by making sure all of the primary consumers have feeding links (e.g. resources)
 #### basically, we will cross check the consumer list with the resource list and make sure that the resources that AREN'T in the consumer list are all non-feeding organisms (primary producers, dead stuff, non feeding life stages)
