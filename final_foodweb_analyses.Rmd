@@ -41,9 +41,20 @@ nodes <- read_csv("data/foodweb_V5/nodes_final_15jun2024.csv") %>%
   mutate(parasite = case_when(str_detect(trophic_strategy, "parasit") ~ "y",
                               trophic_strategy == "pathogen" ~ "y",
                               .default = "n")) %>% 
-  unite(node, c(nodeNum, species, clean_stage), sep = "_", remove = FALSE) # downstream, cheddar requires a column called node that is non-numeric to identify each unique node
+  unite(node, c(nodeNum, species, clean_stage), sep = "_", remove = FALSE) %>%  # downstream, cheddar requires a column called node that is non-numeric to identify each unique node
+  
+  # i changed the names of some cols for clarity, so doing that here (make sure consistent downstream)
+  rename(nodeName = species,
+         category = organismal_category,
+         life_stage_code = clean_stage,
+         grouping_habits = solitary_aggregating_colonial, 
+         reference = reference_justification, 
+         mobility = mobile_or_sessile
+         ) %>% 
+  # select and reorder
+  select(node, nodeNum, nodeName, synonymies, category, common_name, life_stage, life_stage_code, province, commonality, reference, zone, habitat_notes, grouping_habits, mobility, trophic_strategy, node_type, node_resolution, aphia, kingdom, phylum, class, order, family, genus)
 
-view(nodes)
+#view(nodes)
 
 all_links <- read_csv("data/foodweb_V5/links_final_15jun2024.csv")
 
@@ -74,10 +85,12 @@ links <- all_links %>%
   # make a new column that concatenates node name, num, and life stage bc cheddar can't handle numeric node names
   unite(resource, c(resourceNum, resourceName, resourceStage), sep = "_", remove = FALSE) %>% 
   unite(consumer, c(consumerNum, consumerName, consumerStage), sep = "_", remove = FALSE) %>% 
-  rename(link_zone = zone, 
-         link_notes = notes)
+  rename(interactionZone = zone)
 
-write_csv(links, "data/foodweb_V5/trophic_links.csv")
+
+# final time we will write csvs!! these are what we're publishing
+write_csv(links, "data/foodweb_V5/trophic_links.csv") # cols a little out of order so fix manually or whatever
+write_csv(nodes, "data/foodweb_V5/trophic_nodes.csv")
 
 ```
 

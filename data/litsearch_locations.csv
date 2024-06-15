@@ -1,11 +1,11 @@
 reference_number,nsboth,ca,ep_riz,general_location_of_study
-1,s,y,y,"San Pedro, CA; Garden Grove, CA."
-2,s,y,y,"Lunada Bay, CA; Palos Verdes, CA"
+1,s,y,y,"San Pedro, CA;Garden Grove, CA."
+2,s,y,y,"Lunada Bay, CA;Palos Verdes, CA"
 3,n,y,y,"Long Marine Laboratory, CA"
 4,n,y,y,"Hopkins Marine Laboratory, CA"
 4,n,y,y,"Hopkins Marine Laboratory, CA"
-5,n,n,y,"Fossil Point, Charleston, OR; OIMB, Charleston, OR"
-6,n,n,y,"San Juan Island, WA; Shannon Point Beach, WA; University of Washington Friday Harbor Marine Laboratories, WA"
+5,n,n,y,"Fossil Point, Charleston, OR;OIMB, Charleston, OR"
+6,n,n,y,"San Juan Island, WA;Shannon Point Beach, WA;University of Washington Friday Harbor Marine Laboratories, WA"
 7,s,y,NA,"Portugese Bend, CA"
 7,s,y,NA,"Portugese Bend, CA"
 7,s,y,NA,"Portugese Bend, CA"
@@ -19,8 +19,8 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 12,s,y,y,"Palos Verdes Peninsula, CA"
 12,s,y,y,"Palos Verdes Peninsula, CA"
 13,s,y,NA,"San Diego, CA"
-14,n,y,y,"Monterey Coast Guard Breakwater, CA; Stillwater Cove, Carmel Bay, CA"
-14,n,y,y,"Monterey Coast Guard Breakwater, CA; Stillwater Cove, Carmel Bay, CA"
+14,n,y,y,"Monterey Coast Guard Breakwater, CA;Stillwater Cove, Carmel Bay, CA"
+14,n,y,y,"Monterey Coast Guard Breakwater, CA;Stillwater Cove, Carmel Bay, CA"
 15,n,n,y,"Deer Group Islands, Barkley Sound"
 16,n,n,y,"Friday Harbor, WA"
 17,n,y,NA,"Bodega Marine Lab, CA"
@@ -28,7 +28,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 17,n,y,NA,"Bodega Marine Lab, CA"
 18,n,n,y,"Victoria, B.C. Canada"
 19,s,y,y,"Channel Islands, CA"
-20,s,y,y,"Naples Reef, Santa Barbara, CA; Santa Cruz Island, CA; Santa Catalina Island, CA; Santa Barbara, CA; San Mateo, CA; San Onofre, CA"
+20,s,y,y,"Naples Reef, Santa Barbara, CA;Santa Cruz Island, CA;Santa Catalina Island, CA;Santa Barbara, CA;San Mateo, CA;San Onofre, CA"
 21,s,y,y,"San Clemente, CA"
 22,s,y,y,"Pacific Grove,CA"
 23,s,y,y,"San Nicolas Island, CA"
@@ -67,7 +67,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 51,na,n,n,Lab
 52,na,n,n,"Gulf of St. Lawrence,  Canada"
 53,na,n,n,Barents Sea
-54,na,n,n,"University of Liege, Calvi, Corsica; Tjarno Marine Biological Laboratory of the University of Goteborg"
+54,na,n,n,"University of Liege, Calvi, Corsica;Tjarno Marine Biological Laboratory of the University of Goteborg"
 55,na,n,n,"Placentia Bay, Newfoundland"
 56,na,n,n,Gulf of Maine
 57,NA,NA,NA,
@@ -77,9 +77,9 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 61,na,n,n,Appledore Island
 61,na,n,n,Appledore Island
 62,NA,NA,NA,Lab
-63,na,n,n,"Laing Island, Papua New Guinea and Langrune-sur-Mer, France"
+63,na,n,n,"Laing Island, Papua New Guinea;Langrune-sur-Mer, France"
 64,na,n,n,"Sao Sebastiao Channel, Sao Paulo, Brazil"
-65,both,y,y,"Santa Cruz Island, CA; San Diego, CA"
+65,both,y,y,"Santa Cruz Island, CA;San Diego, CA"
 66,n,y,y,"Monterey Peninsula, Cal Hopkins Marine Station, CA"
 66,n,y,y,"Monterey Peninsula, Cal Hopkins Marine Station, CA"
 67,n,y,y,"Stillwater Cove in Carmel Bay, CA"
@@ -93,60 +93,60 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 70,n,n,y,"San Juan Archipelago, WA"
 70,n,n,y,"San Juan Archipelago, WA"
 71,s,n,y,"Granada Cove, Todos Santos Bay, Mexico"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
-72,n,y,y,"San Mateo Coast State Beaches, California"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
+72,n,y,y,"San Mateo Coast State Beaches, CA"
 81,s,n,y,"Bahia Kino, Sonora, Mexico"
-82,n,n,y,"San Juan Archipelago, WA; Whiffin Spit, Sooke, British Columbia"
-82,n,n,y,"San Juan Archipelago, WA; Whiffin Spit, Sooke, British Columbia"
-82,n,n,y,"San Juan Archipelago, WA; Whiffin Spit, Sooke, British Columbia"
-82,n,n,y,"San Juan Archipelago, WA; Whiffin Spit, Sooke, British Columbia"
-82,n,n,y,"Cape Flattery, WA; Whiffin Spit, Sooke, British Columbia"
-82,n,n,y,"Cape Flattery, WA; Whiffin Spit, Sooke, British Columbia"
-82,n,n,y,"Cape Flattery, WA; Whiffin Spit, Sooke, British Columbia"
+82,n,n,y,"San Juan Archipelago, WA;Whiffin Spit, Sooke, British Columbia"
+82,n,n,y,"San Juan Archipelago, WA;Whiffin Spit, Sooke, British Columbia"
+82,n,n,y,"San Juan Archipelago, WA;Whiffin Spit, Sooke, British Columbia"
+82,n,n,y,"San Juan Archipelago, WA;Whiffin Spit, Sooke, British Columbia"
+82,n,n,y,"Cape Flattery, WA;Whiffin Spit, Sooke, British Columbia"
+82,n,n,y,"Cape Flattery, WA;Whiffin Spit, Sooke, British Columbia"
+82,n,n,y,"Cape Flattery, WA;Whiffin Spit, Sooke, British Columbia"
 82,n,n,y,"San Juan Archipelago, WA"
 82,n,n,y,"San Juan Archipelago, WA"
 82,n,n,y,"San Juan Archipelago, WA"
@@ -258,15 +258,15 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 105,n,n,y,"Upright Head, Lopez Island, WA"
 105,n,n,y,"Upright Head, Lopez Island, WA"
 105,n,n,y,"Upright Head, Lopez Island, WA"
-106,n,n,y,"San Juan Archipelago, WA; Puget Sound WA"
+106,n,n,y,"San Juan Archipelago, WA;Puget Sound WA"
 107,s,y,y,"Catalina Island, CA"
 107,s,y,y,"La Jolla, CA"
 107,s,y,y,"Laguna Beach, CA"
 107,s,y,y,"Laguna Beach, CA"
-107,s,y,y,
-107,s,y,y,
-107,s,y,y,
-107,s,y,y,
+107,s,y,y,Southern California
+107,s,y,y,Southern California
+107,s,y,y,Southern California
+107,s,y,y,Southern California
 107,s,y,y,"Rocky Point, San Pedro, CA"
 108,n,n,y,"Brown Island, Friday Harbor, WA"
 108,n,n,y,"Brown Island, Friday Harbor, WA"
@@ -275,18 +275,18 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 108,n,n,y,"Brown Island, Friday Harbor, WA"
 108,n,n,y,"Brown Island, Friday Harbor, WA"
 108,n,n,y,"Brown Island, Friday Harbor, WA"
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,NA,NA,NA,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
-109,n,n,y,"San Juan Island, WA; Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,NA,NA,NA,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
+109,n,n,y,"San Juan Island, WA;Vancouver B.C."
 110,s,y,y,"Malibu, CA"
 110,NA,NA,NA,
 110,NA,NA,NA,
@@ -295,7 +295,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 110,NA,NA,NA,
 110,NA,NA,NA,
 110,s,y,y,"Mussel Point, Pacific Grove, CA"
-110,NA,NA,NA,N/S
+110,NA,NA,NA,
 111,n,y,y,"Elkhorn Slough, Monterey Bay, CA"
 112,n,y,y,"Tomales Bay, CA"
 113,NA,NA,NA,
@@ -357,7 +357,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 132,s,y,y,"Casa Cove, La Jolla, CA"
 133,s,y,y,"Corona del Mar State Beach, CA"
 134,s,y,y,"Anaheim Slough, CA"
-134,n,y,y,"Bodega Bay, cA"
+134,n,y,y,"Bodega Bay, CA"
 134,s,y,y,"Carpinteria, CA"
 134,n,n,y,"Culver's Point, San Juan, WA"
 134,s,y,y,"Laguna Beach, cA"
@@ -366,11 +366,11 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 135,n,n,y,Oregon
 136,n,y,y,"Duxbury Reef,CA"
 136,n,y,y,"Duxbury Reef,CA"
-137,s,y,y,"Channel Islands, CA; Southern California; Northern Baja California"
-137,s,y,y,"Channel Islands, CA; Southern California; Northern Baja California"
+137,s,y,y,"Channel Islands, CA;Southern California;Northern Baja California"
+137,s,y,y,"Channel Islands, CA;Southern California;Northern Baja California"
 138,NA,y,y,"Naples Reef, Santa Barbara, CA"
-139,s,y,y,"Santa Catalina Island, CA; San Diego, CA"
-139,s,y,y,"Santa Catalina Island, CA; San Diego, CA"
+139,s,y,y,"Santa Catalina Island, CA;San Diego, CA"
+139,s,y,y,"Santa Catalina Island, CA;San Diego, CA"
 140,s,y,y,"La Jolla, CA"
 140,s,y,y,"La Jolla, CA"
 140,s,y,y,"La Jolla, CA"
@@ -400,9 +400,9 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 150,s,y,y,"Santa Catalina Island, CA"
 151,s,y,y,"Bolsa Chica Ecological Reserve, CA"
 152,s,y,y,"Los Angeles Harbor, CA"
-153,NA,y,y,"Corona del Mar State Beach, CA; Hearst Memorial State Beach, CA"
-153,NA,y,y,"Corona del Mar State Beach, CA; Hearst Memorial State Beach, CA"
-153,s,y,y,"Corona del Mar State Beach, CA; Hearst Memorial State Beach, CA"
+153,NA,y,y,"Corona del Mar State Beach, CA;Hearst Memorial State Beach, CA"
+153,NA,y,y,"Corona del Mar State Beach, CA;Hearst Memorial State Beach, CA"
+153,s,y,y,"Corona del Mar State Beach, CA;Hearst Memorial State Beach, CA"
 154,s,n,y,"Granada cove, Ensanada, Baja California Mexico"
 154,s,n,y,"Granada cove, Ensanada, Baja California Mexico"
 154,s,n,y,"Granada cove, Ensanada, Baja California Mexico"
@@ -421,13 +421,13 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 154,s,n,y,"Granada cove, Ensanada, Baja California Mexico"
 154,s,n,y,"Granada cove, Ensanada, Baja California Mexico"
 154,s,n,y,"Granada cove, Ensanada, Baja California Mexico"
-155,n,y,y,"Trinidad, CA; Westport, CA"
-155,n,y,y,"Trinidad, CA; Westport, CA"
-155,n,y,y,"Trinidad, CA; Westport, CA"
-155,n,y,y,"Trinidad, CA; Westport, CA"
-155,n,y,y,"Trinidad, CA; Westport, CA"
-155,n,y,y,"Trinidad, CA; Westport, CA"
-155,n,y,y,"Trinidad, CA; Westport, CA"
+155,n,y,y,"Trinidad, CA;Westport, CA"
+155,n,y,y,"Trinidad, CA;Westport, CA"
+155,n,y,y,"Trinidad, CA;Westport, CA"
+155,n,y,y,"Trinidad, CA;Westport, CA"
+155,n,y,y,"Trinidad, CA;Westport, CA"
+155,n,y,y,"Trinidad, CA;Westport, CA"
+155,n,y,y,"Trinidad, CA;Westport, CA"
 156,s,n,y,"Fish Culture and Biotechnology Unit of the Marine Science School, University of Baja California"
 156,s,n,y,"Fish Culture and Biotechnology Unit of the Marine Science School, University of Baja California"
 157,s,y,y,"Santa Catalina Island, CA"
@@ -458,101 +458,101 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 160,s,y,y,"Bird Rock, La Jolla, CA"
 160,s,y,y,"Bird Rock, La Jolla, CA"
 161,s,y,y,"Bird Rock, La Jolla, CA"
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
-162,both,y,y,
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
+162,both,y,y,California
 163,n,y,y,"Morro Bay, CA"
 163,s,y,y,"San Diego, CA"
 163,s,y,y,"San Diego, CA"
@@ -673,8 +673,8 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 182,n,y,y,"Elkhorn Slough, Monterey County, CA"
 182,n,y,y,"Elkhorn Slough, Monterey County, CA"
 183,s,y,y,"Santa Barbara County, CA"
-184,s,y,y,"San Diego CA; Washington, USA"
-184,s,y,y,"San Diego CA; Washington, USA"
+184,s,y,y,San Diego CA;Washington
+184,s,y,y,San Diego CA;Washington
 185,s,y,y,San Diego CA
 185,s,y,y,San Diego CA
 185,s,y,y,San Diego CA
@@ -744,7 +744,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 189,n,y,y,"Bolinas Lagoon, CA"
 189,n,y,y,"Bolinas Lagoon, CA"
 189,n,y,y,"Bolinas Lagoon, CA"
-190,n,n,y,"Vancouver Island; San Juan Island, WA"
+190,n,n,y,"Vancouver Island;San Juan Island, WA"
 191,n,n,y,"Vancouver Island, BC"
 191,s,n,y,
 191,s,n,y,
@@ -794,8 +794,8 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 197,n,n,y,"Turn Island, WA"
 198,s,y,y,"Santa Catalina Island, CA"
 199,NA,NA,NA,
-200,n,y,y,"Monterey Bay, CA; Santa Cruz, CA"
-200,n,y,y,"Monterey Bay, CA; Santa Cruz, CA"
+200,n,y,y,"Monterey Bay, CA;Santa Cruz, CA"
+200,n,y,y,"Monterey Bay, CA;Santa Cruz, CA"
 201,n,n,y,Hecate Strait
 201,n,n,y,Hecate Strait
 201,n,n,y,Hecate Strait
@@ -970,16 +970,16 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 205,n,y,y,Central California
 205,n,y,y,Central California
 205,n,y,y,Central California
-205,s,n,y,Cerros Island. Mexico
-205,s,n,y,Cerros Island. Mexico
-205,s,y,y,"Gulf of California, Southern California"
+205,s,n,y,"Cerros Island, Mexico"
+205,s,n,y,"Cerros Island, Mexico"
+205,s,y,y,Gulf of California;Southern California
 205,na,n,n,Japan
 205,na,n,n,Japan
 205,na,n,n,Japan
 205,na,n,n,New York Aquarium
-205,n,y,y,Northern Californa
-205,n,y,y,Northern Californa
-205,n,y,y,Northern Californa
+205,n,y,y,Northern California
+205,n,y,y,Northern California
+205,n,y,y,Northern California
 205,n,y,y,Northern California
 205,n,y,y,Northern California
 205,n,y,y,Northern California
@@ -1049,7 +1049,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 205,n,n,y,Oregon
 205,n,n,y,Oregon
 205,n,n,y,Oregon
-205,n,n,y,"Oregon, California"
+205,n,n,y,Oregon;California
 205,s,n,y,Pacific coast of Baja California
 205,na,n,n,Sea of Japan
 205,na,n,n,Sea of Japan
@@ -1174,8 +1174,8 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 205,n,n,y,Washington
 205,n,n,y,"Washington, British Columbia"
 205,n,n,y,"Washington, British Columbia"
-205,n,n,y,"Washington, Oregon"
-205,n,n,y,"Washington, Oregon"
+205,n,n,y,Washington;Oregon
+205,n,n,y,Washington;Oregon
 205,both,y,y,NA
 205,both,y,y,NA
 205,both,n,y,NA
@@ -1193,7 +1193,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 205,n,n,y,British Columbia
 205,n,n,y,British Columbia
 205,n,n,y,British Columbia
-205,both,n,y,NA
+205,both,n,y,California
 205,n,n,y,Alaska
 205,n,n,y,Alaska
 205,n,n,y,British Columbia
@@ -1331,14 +1331,14 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 239,na,n,n,"Lough Hyne, County Cork, Ireland"
 240,n,y,y,"Monterey Bay, CA"
 240,n,y,y,"Monterey Bay, CA"
-241,n,n,y,"Vancouver Island and San Juan Island,"
-241,n,n,y,"Vancouver Island and San Juan Island,"
-241,n,n,y,"Vancouver Island and San Juan Island,"
-241,n,n,y,"Vancouver Island and San Juan Island,"
-241,n,n,y,"Vancouver Island and San Juan Island,"
-241,n,n,y,"Vancouver Island and San Juan Island,"
-241,n,n,y,"Vancouver Island and San Juan Island,"
-241,n,n,y,"Vancouver Island and San Juan Island,"
+241,n,n,y,"Vancouver Island;San Juan Island, WA"
+241,n,n,y,"Vancouver Island;San Juan Island, WA"
+241,n,n,y,"Vancouver Island;San Juan Island, WA"
+241,n,n,y,"Vancouver Island;San Juan Island, WA"
+241,n,n,y,"Vancouver Island;San Juan Island, WA"
+241,n,n,y,"Vancouver Island;San Juan Island, WA"
+241,n,n,y,"Vancouver Island;San Juan Island, WA"
+241,n,n,y,"Vancouver Island;San Juan Island, WA"
 242,NA,NA,NA,
 243,NA,NA,NA,
 244,n,n,y,"Friday Harbor Laboratory, San Juan Island, WA"
@@ -1455,11 +1455,11 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 255,s,y,y,"Long Beach Marina, Long Beach, CA"
 255,s,y,y,"Long Beach Marina, Long Beach, CA"
 256,NA,NA,NA,Lab
-256,NA,NA,NA,
-257,s,y,y,"Newport Bay, California"
-257,s,y,y,"Newport Bay, California"
-257,s,y,y,"Newport Bay, California"
-257,s,y,y,"Newport Bay, California"
+256,NA,NA,NA,Lab
+257,s,y,y,"Newport Bay, CA"
+257,s,y,y,"Newport Bay, CA"
+257,s,y,y,"Newport Bay, CA"
+257,s,y,y,"Newport Bay, CA"
 258,n,n,y,Straight of Juan de Fuca
 258,n,n,y,Straight of Juan de Fuca
 258,n,n,y,Straight of Juan de Fuca
@@ -1801,14 +1801,14 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 264,n,y,y,"Sea Ranch, Sonoma County, CA"
 264,n,y,y,"Jenner, Sonoma County, CA"
 264,n,y,y,"Horseshoe Cove, Sonoma County, CA"
-265,both,y,y,"From Bering Sea to San Diego Bay, California"
+265,both,y,y,"From Bering Sea to San Diego Bay, CA"
 266,NA,NA,NA,
 267,s,y,y,"south Mission Bay Jetty, San Diego, CA"
 267,s,y,y,"south Mission Bay Jetty, San Diego, CA"
 267,s,y,y,"south Mission Bay Jetty, San Diego, CA"
 267,s,y,y,"south Mission Bay Jetty, San Diego, CA"
 267,s,y,y,"south Mission Bay Jetty, San Diego, CA"
-268,both,y,y,"Bodega Bay, CA, and San Pedro, CA"
+268,both,y,y,"Bodega Bay, CA;San Pedro, CA"
 269,NA,NA,NA,
 270,na,n,n,
 271,NA,NA,NA,
@@ -1980,11 +1980,11 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 312,n,n,y,"Tomales Point, CA"
 312,n,n,y,"San Juan Archipelago, WA"
 312,n,n,y,"San Juan Archipelago, WA"
-312,n,n,y,"SE Alaska; Brown Island, WA; Flat Point, Lopez Island, WA; Frost Island, WA"
+312,n,n,y,"SE Alaska;Brown Island, WA;Flat Point, Lopez Island, WA;Frost Island, WA"
 312,n,n,y,"Orcas Island, WA"
 312,n,n,y,"Orcas Island, WA"
 312,n,n,y,"Orcas Island, WA"
-313,n,n,y,"British Columbia; Southeast Alaska; Puget Sound, WA"
+313,n,n,y,"British Columbia;Southeast Alaska;Puget Sound, WA"
 314,s,y,y,"Santa Barbara Channel, CA"
 315,NA,NA,NA,
 315,NA,NA,NA,
@@ -2095,8 +2095,8 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 320,n,n,y,"Puget Sound, WA"
 320,n,n,y,"Puget Sound, WA"
 320,n,n,y,"Puget Sound, WA"
-321,na,n,n,lab observations
-322,na,n,n,lab observations
+321,na,n,n,Lab
+322,na,n,n,Lab
 323,n,n,y,"Federal Way, WA"
 323,n,n,y,"Federal Way, WA"
 323,n,n,y,"Federal Way, WA"
@@ -2179,7 +2179,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 336,n,n,n,Japan
 337,n,n,y,"Friday Harbor, WA"
 337,n,n,y,"Friday Harbor, WA"
-338,na,n,n,Woods Hole?
+338,na,n,n,"Woods Hole, MA"
 338,na,n,n,"Woods Hole, MA"
 338,na,n,n,"Woods Hole, MA"
 338,na,n,n,"Woods Hole, MA"
@@ -2203,7 +2203,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 342,s,y,y,"Point Fermin, San Pedro, CA"
 342,s,y,y,"Point Fermin, San Pedro, CA"
 342,s,y,y,"Point Fermin, San Pedro, CA"
-343,n,y,y,Northern California; Oregon; Washington
+343,n,y,y,Northern California;Oregon;Washington
 344,na,n,n,northern Germany
 344,na,n,n,northern Germany
 344,na,n,n,northern Germany
@@ -2406,27 +2406,27 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 362,NA,NA,NA,
 362,NA,NA,NA,
 362,NA,NA,NA,
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
-363,n,y,y,"British Columbia, Canada; Washington, California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
+363,n,y,y,"British Columbia, Canada;Washington;California"
 364,n,y,y,"Monterey Bay, CA"
 364,n,y,y,"Monterey Bay, CA"
 364,n,y,y,"Monterey Bay, CA"
 364,n,y,y,"Monterey Bay, CA"
-365,n,y,y,"Tomales Bay, CA; Campbell Cove, CA"
-365,n,y,y,"Tomales Bay, CA; Campbell Cove, CA"
+365,n,y,y,"Tomales Bay, CA;Campbell Cove, CA"
+365,n,y,y,"Tomales Bay, CA;Campbell Cove, CA"
 366,NA,NA,NA,
 366,NA,NA,NA,
 367,na,n,n,"Sao Paolo, Brazil"
@@ -2568,8 +2568,8 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 386,n,n,y,Alaska
 386,n,n,y,Alaska
 386,n,n,y,Alaska
-386,n,n,y,"Friday Harbor, WA; Vancouver BC"
-386,n,n,y,"Friday Harbor, WA; Vancouver BC"
+386,n,n,y,"Friday Harbor, WA;Vancouver BC"
+386,n,n,y,"Friday Harbor, WA;Vancouver BC"
 386,n,n,y,"Saturnina I., BC"
 386,n,n,y,"Vancouver, BC"
 386,n,n,y,"Friday Harbor, WA"
@@ -2578,7 +2578,7 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 386,n,n,y,"Vancouver, BC"
 386,n,n,y,"Saturnina I., BC"
 386,n,n,y,"Vancouver, BC"
-386,n,n,y,"Friday Harbor, WA; Vancouver, BC"
+386,n,n,y,"Friday Harbor, WA;Vancouver, BC"
 386,n,n,y,"Thetis I., BC"
 386,n,n,y,"Thetis I., BC"
 386,n,n,y,"Vancouver, BC"
@@ -2690,8 +2690,8 @@ reference_number,nsboth,ca,ep_riz,general_location_of_study
 399,n,n,y,"Seal Rock, OR"
 399,n,n,y,"Seal Rock, OR"
 399,n,n,y,"Seal Rock, OR"
-400,s,y,y,"Bolsa Chica, CA; San Diego, CA"
-400,s,y,y,"Bolsa Chica, CA; San Diego, CA"
+400,s,y,y,"Bolsa Chica, CA;San Diego, CA"
+400,s,y,y,"Bolsa Chica, CA;San Diego, CA"
 401,n,n,y,Washington
 401,n,n,y,Washington
 401,n,n,y,Washington
@@ -2904,19 +2904,19 @@ NA,NA,NA,NA,
 NA,NA,NA,NA,
 NA,NA,NA,NA,
 NA,NA,NA,NA,
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
-215,NA,NA,y,"Palos Verdes, CA; Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
+215,NA,NA,y,"Palos Verdes, CA;Point Dume, CA"
 216,NA,NA,NA,Lab
 216,NA,NA,NA,Lab
 216,NA,NA,NA,Lab

@@ -305,7 +305,7 @@ edges_cleaner <- edges_locs %>%
   
   ###### LOCALITY ######
   # first unite the two locality cols into a new col
-  unite("localities", c("localities", "general_location_of_study"), sep = "; ", na.rm = TRUE) %>% 
+  unite("localities", c("localities", "general_location_of_study"), sep = ";", na.rm = TRUE) %>% 
 
   mutate(localities = case_when(
     is.na(localities) & str_detect(ref_num, "435") ~ "California",
@@ -421,11 +421,12 @@ edges_cleaner <- edges_locs %>%
                              
                              
                              TRUE ~ as.character(habitat)
-                             )) %>% 
+                             )) 
   
+edges_collapse <- edges_cleaner %>% 
   ## need to add one more line of code collapsing all localities/habitats/zones for each reference
   group_by(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type, ref_num) %>%
-  summarize(localities = paste0(unique(localities), collapse = "; "),
+  summarize(localities = paste0(localities, collapse = ";"), # important to leave out the space after semicolon, for later
             justification = min(justification), 
             confidence = min(confidence),
             zone = paste0(unique(na.omit(zone)), collapse = ", "),
@@ -435,28 +436,25 @@ edges_cleaner <- edges_locs %>%
 
 
 # make a nice list with all of the confidences and references collapsed
-edges_final <- edges_cleaner %>% 
+edges_final <- edges_collapse %>% 
   group_by(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type) %>% 
   summarize(ref_num = paste0(ref_num, collapse = ", "),
             justification = min(justification),
             zone = paste0(unique(na.omit(zone)), collapse = ", "),
             habitat = paste0(unique(na.omit(habitat)), collapse = ", "),
-            localities = paste0(unique(localities), collapse = "; "), # collapse localities into one col, unique is important to remove duplicate locations
+            localities = paste0(unique(localities), collapse = ";"), # collapse localities into one col, unique is important to remove duplicate locations, also important to leave OUT the space, for later
             confidence = min(confidence)
             ) %>% # decided i dont need the other columns i left out
   
   ##### further cleaning now that we've made it messy again:
-  mutate(localities = str_replace(localities, ",", ";")) %>%  # replace commas with semicolons to make the next line possible:
-  mutate(localities = sapply(localities, function(x) paste(unique(unlist(strsplit(x, ";"))), collapse = ";"))) %>% 
+  #mutate(localities = str_replace(localities, ",", ";")) %>%  # replace commas with semicolons to make the next line possible:
+  mutate(localities = sapply(localities, function(x) paste(unique(unlist(strsplit(x, ";"))), collapse = "; "))) %>% 
   
   # also some justifications still have more than one so apply the same formula there:
   #mutate(justification = sapply(justification, function(x) paste(min(unlist(strsplit(x, ","))), collapse = ";")))
   # above works, below is cleaner:
   ungroup() %>% # not sure if necessary
   mutate(justification = parse_number(justification)) #This parses the first number it finds, dropping any non-numeric characters before the first number and all characters after the first number (we're assuming lowest number is first)
-
-
-
 
 ```
 
@@ -468,7 +466,7 @@ write_csv(nodes_attributes_clean, "data/foodweb_V5/nodes_final_15jun2024.csv")
 
 write_csv(edges_final, "data/foodweb_V5/links_final_15jun2024.csv")
 
-write_csv(edges_clean, "data/foodweb_V5/links_uncollapsed_15jun2024.csv")
+write_csv(edges_cleaner, "data/foodweb_V5/links_uncollapsed_15jun2024.csv")
 
 ```
 
