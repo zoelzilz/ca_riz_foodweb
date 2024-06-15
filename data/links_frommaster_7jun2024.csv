@@ -438,9 +438,6 @@ ZZ_coded,734,Lepeophtheirus schaadti,copepod,1,604,Heterostichus rostratus,fish,
 ZZ_coded,730,Heptacyclus cabrilloi,leech,1,18,Heterostichus rostratus,fish,1,7,,3,NA,98,NA,NA,NA,no,NA,NA,1815,21-Mar-24
 ZZ_coded,730,Heptacyclus cabrilloi,leech,1,604,Heterostichus rostratus,fish,4,7,,3,NA,98,NA,NA,NA,no,NA,NA,1816,21-Mar-24
 EMH,730,Heptacyclus cabrilloi,leech,1,18,Heterostichus rostratus,fish,1,6,,3,,98,USA,,,,,,261,
-ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,18,Heterostichus rostratus,fish,1,7,,3,NA,99,NA,NA,NA,no,NA,NA,1817,21-Mar-24
-ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,604,Heterostichus rostratus,fish,4,7,,3,NA,99,NA,NA,NA,no,NA,NA,1818,21-Mar-24
-EMH,733,Lepeophtheirus parviventris,copepod,1,18,Heterostichus rostratus,fish,1,6,,3,,99,"California, USA",,,,,,262,
 ZZ_coded,599,Apohyale grandicornis,amphipod,4,199,Lottia digitalis,true limpet,1,2,,3,NA,100,NA,high,NA,no,NA,NA,2247,21-Mar-24
 ZZ_coded,600,Apohyale grandicornis,amphipod,4,199,Lottia digitalis,true limpet,1,2,,3,NA,100,NA,high,NA,no,NA,NA,2248,21-Mar-24
 ZZ_coded,599,Apohyale grandicornis,amphipod,4,210,Lottia scabra,true limpet,1,2,,3,NA,100,NA,high,NA,no,NA,NA,2255,21-Mar-24
@@ -791,29 +788,10 @@ ZZ_coded,314,Cadlina sparsa,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,,3,NA
 ZZ_coded,354,Diaphoreolis lagunae,nudibranch,1,962,Symplectoscyphus turgidus,hydroid,5,3,,3,NA,175,NA,all,NA,no,NA,NA,1852,21-Mar-24
 ZZ_coded,299,Navanax inermis,nudibranch,1,1873,Haminoea virescens,snail,1,3,,3,NA,175,NA,high to middle,NA,no,NA,NA,1849,21-Mar-24
 ZZ_coded,299,Navanax inermis,nudibranch,1,357,Hermissenda opalescens,nudibranch,1,3,,3,NA,175,NA,low,NA,no,NA,NA,1850,21-Mar-24
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,18,Heterostichus rostratus,fish,1,7,,3,NA,176,NA,NA,NA,no,NA,NA,1817,21-Mar-24
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,604,Heterostichus rostratus,fish,4,7,,3,NA,176,NA,NA,NA,no,NA,NA,1818,21-Mar-24
+EMH,733,Lepeophtheirus parviventris,copepod,1,18,Heterostichus rostratus,fish,1,6,,3,,176,"California, USA",,,,,,262,
 ZZ_coded,1159,Modiolicola gracilis,copepod,1,367,Mytilus edulis,mussel,1,6,,3,NA,176,NA,low,NA,no,NA,NA,1853,21-Mar-24
-ZZ,401,Stenoplax heathiana,chiton,1,664,Plocamium violaceum,red algae,1,3,1,3,,178,,middle,both,,no,,3869,5-Apr-24
-ZZ,401,Stenoplax heathiana,chiton,1,742,Chondracanthus canaliculatus,red algae,1,3,1,3,,178,,middle to low,both,,no,,3839,3-Apr-24
-ZZ,401,Stenoplax heathiana,chiton,1,601,Ulva sp.,green algae,1,3,1,3,,178,,middle to low,both,,no,,3875,5-Apr-24
-ZZ_coded,401,Stenoplax heathiana,chiton,1,613,Corallina chilensis,corraline algae,1,3,,3,NA,178,NA,low to very low,NA,no,NA,NA,1854,21-Mar-24
-ZZ_coded,1755,Stenoplax heathiana,chiton,1,613,Corallina chilensis,corraline algae,1,3,,3,NA,178,NA,low to very low,NA,no,NA,NA,1855,21-Mar-24
-ZZ_coded,1756,Stenoplax heathiana,chiton,1,613,Corallina chilensis,corraline algae,1,3,,3,NA,178,NA,low to very low,NA,no,NA,NA,1856,21-Mar-24
-ZZ_coded,401,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,,3,NA,178,NA,NA,NA,no,NA,NA,1857,21-Mar-24
-ZZ_coded,1755,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,,3,NA,178,NA,NA,NA,no,NA,NA,1858,21-Mar-24
-ZZ_coded,1756,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,,3,NA,178,NA,NA,NA,no,NA,NA,1859,21-Mar-24
-ZZ_coded,401,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,,3,NA,178,NA,NA,NA,no,NA,NA,1860,21-Mar-24
-ZZ_coded,1755,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,,3,NA,178,NA,NA,NA,no,NA,NA,1861,21-Mar-24
-ZZ_coded,1756,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,,3,NA,178,NA,NA,NA,no,NA,NA,1862,21-Mar-24
-ZZ,401,Stenoplax heathiana,chiton,1,664,Plocamium violacium,algae,1,3,,3,,178,,middle,both,n,yes,,777,
-ZZ,401,Stenoplax heathiana,chiton,1,742,Gigartina canaliculata,algae,1,3,,3,,178,,middle,both,n,yes,,778,
-ZZ,401,Stenoplax heathiana,chiton,1,661,Polysiphonia sp.,algae,1,3,,3,,178,,middle,both,n,yes,,779,
-ZZ,401,Stenoplax heathiana,chiton,1,601,Ulva sp.,algae,1,3,,3,,178,,middle,both,n,yes,,780,
-ZZ,401,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,,3,,178,,middle,both,n,yes,,781,
-ZZ,401,Stenoplax heathiana,chiton,1,642,fish eggs,gametes,1,3,,3,,178,,middle,both,n,yes,,782,
-ZZ,401,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,,3,,178,,middle,both,n,yes,,783,
-ZZ,401,Stenoplax heathiana,chiton,1,613,Corallina chilensis,coralline algae,1,3,,3,,178,,middle,both,n,yes,,784,
-ZZ,401,Stenoplax heathiana,chiton,1,607,Phyllospadix torreyi,sea grass,1,3,,3,,178,,middle,both,n,yes,,785,
-ZZ,401,Stenoplax heathiana,chiton,1,608,Phyllospadix scouleri,angiosperm,1,3,,3,,178,,middle,both,n,yes,,786,
 ZZ_coded,2137,Rhinebothrium urobatidium,cestode,3,568,Tigriopus californicus,copepod,1,6,,3,NA,180,NA,high,NA,no,NA,NA,2323,21-Mar-24
 ZZ_coded,2138,Rhinebothrium urobatidium,cestode,3,568,Tigriopus californicus,copepod,1,6,,3,NA,180,NA,high,NA,no,NA,NA,2324,21-Mar-24
 ZZ_coded,2139,Rhinebothrium urobatidium,cestode,3,568,Tigriopus californicus,copepod,1,6,,3,NA,180,NA,high,NA,no,NA,NA,2325,21-Mar-24
@@ -1748,6 +1726,28 @@ ZZ,1987,Ophionereis diabloensis,brittle star,4,661,Polysiphonia sp.,red algae,1,
 ZZ,1987,Ophionereis diabloensis,brittle star,4,714,Porphyra sp.,red algae,1,3,4,10,2,310,,low,pools,,yes,,4347,18-Apr-24
 ZZ,1987,Ophionereis diabloensis,brittle star,4,2317,Pterocladiella media,red algae,1,3,4,10,2,310,,low,pools,,yes,,4348,18-Apr-24
 ZZ,1987,Ophionereis diabloensis,brittle star,4,2320,Rhodoglossum sp.,red algae,1,3,4,10,2,310,,low,pools,,yes,,4349,18-Apr-24
+ZZ,401,Stenoplax heathiana,chiton,1,664,Plocamium violaceum,red algae,1,3,1,3,,311,,middle,both,,no,,3869,5-Apr-24
+ZZ,401,Stenoplax heathiana,chiton,1,742,Chondracanthus canaliculatus,red algae,1,3,1,3,,311,,middle to low,both,,no,,3839,3-Apr-24
+ZZ,401,Stenoplax heathiana,chiton,1,601,Ulva sp.,green algae,1,3,1,3,,311,,middle to low,both,,no,,3875,5-Apr-24
+ZZ_coded,401,Stenoplax heathiana,chiton,1,613,Corallina chilensis,corraline algae,1,3,,3,NA,311,NA,low to very low,NA,no,NA,NA,1854,21-Mar-24
+ZZ_coded,1755,Stenoplax heathiana,chiton,1,613,Corallina chilensis,corraline algae,1,3,,3,NA,311,NA,low to very low,NA,no,NA,NA,1855,21-Mar-24
+ZZ_coded,1756,Stenoplax heathiana,chiton,1,613,Corallina chilensis,corraline algae,1,3,,3,NA,311,NA,low to very low,NA,no,NA,NA,1856,21-Mar-24
+ZZ_coded,401,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,,3,NA,311,NA,NA,NA,no,NA,NA,1857,21-Mar-24
+ZZ_coded,1755,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,,3,NA,311,NA,NA,NA,no,NA,NA,1858,21-Mar-24
+ZZ_coded,1756,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,,3,NA,311,NA,NA,NA,no,NA,NA,1859,21-Mar-24
+ZZ_coded,401,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,,3,NA,311,NA,NA,NA,no,NA,NA,1860,21-Mar-24
+ZZ_coded,1755,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,,3,NA,311,NA,NA,NA,no,NA,NA,1861,21-Mar-24
+ZZ_coded,1756,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,,3,NA,311,NA,NA,NA,no,NA,NA,1862,21-Mar-24
+ZZ,401,Stenoplax heathiana,chiton,1,664,Plocamium violacium,algae,1,3,,3,,311,,middle,both,n,yes,,777,
+ZZ,401,Stenoplax heathiana,chiton,1,742,Gigartina canaliculata,algae,1,3,,3,,311,,middle,both,n,yes,,778,
+ZZ,401,Stenoplax heathiana,chiton,1,661,Polysiphonia sp.,algae,1,3,,3,,311,,middle,both,n,yes,,779,
+ZZ,401,Stenoplax heathiana,chiton,1,601,Ulva sp.,algae,1,3,,3,,311,,middle,both,n,yes,,780,
+ZZ,401,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,,3,,311,,middle,both,n,yes,,781,
+ZZ,401,Stenoplax heathiana,chiton,1,642,fish eggs,gametes,1,3,,3,,311,,middle,both,n,yes,,782,
+ZZ,401,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,,3,,311,,middle,both,n,yes,,783,
+ZZ,401,Stenoplax heathiana,chiton,1,613,Corallina chilensis,coralline algae,1,3,,3,,311,,middle,both,n,yes,,784,
+ZZ,401,Stenoplax heathiana,chiton,1,607,Phyllospadix torreyi,sea grass,1,3,,3,,311,,middle,both,n,yes,,785,
+ZZ,401,Stenoplax heathiana,chiton,1,608,Phyllospadix scouleri,angiosperm,1,3,,3,,311,,middle,both,n,yes,,786,
 ZZ,1756,Stenoplax heathiana,chiton,1,664,Plocamium violaceum,red algae,1,3,1,3,,311,,middle to low,both,,yes,,4350,22-Apr-24
 ZZ,1756,Stenoplax heathiana,chiton,1,742,Chondracanthus canaliculatus,red algae,1,3,1,3,,311,,middle to low,both,,yes,,4351,22-Apr-24
 ZZ,1756,Stenoplax heathiana,chiton,1,661,Polysiphonia sp.,red algae,1,3,1,3,,311,,middle to low,both,,yes,,4352,22-Apr-24
@@ -15625,24 +15625,24 @@ ZZ,993,Parapinnixa affinis,true crab,1,2338,Foraminifera,microorganism,1,1,1,3,,
 ZZ,1513,Liparocephalus brevipennis,insect,1,1467,Chironomids,insect,1,16,1,3,,435; 351,,high,exposed,,yes,,3359,1-Apr-24
 ZZ,1513,Liparocephalus brevipennis,insect,1,2331,Chironomids,insect,2,16,1,3,,435; 351,,high,exposed,,yes,,3359,1-Apr-24
 ZZ,1515,Liparocephalus cordicollis,insect,3,2331,Chironomids,insect,2,16,1,3,,435; 351,,high,exposed,,yes,,3379,1-Apr-24
-ZZ,81,Bythotiara huntsmani,hydroid,1,189,Ascidia ceratodes,tunicate,1,9,2,3,2,435; 368,Washington and British Columbia,,pools,n,,,533,
-ZZ_coded,899,Paraspadella pimukatharos,chaetognath,1,750,Carrion,dead stuff,NA,1,1,3,,435; Alvari‚àö¬±o (1987),mid to low,mid to low,pools,,yes,,10080,22-Apr-24
-ZZ,702,Crangon alaskensis,shrimp,1,609,Protohyale (Protohyale) frequens,gammarid,1,1,,3,,"435; Kuris, Carlton 1977",,all,pools,,yes,,2713,27-Mar-24
-ZZ,984,Crangon handi,shrimp,1,609,Protohyale (Protohyale) frequens,gammarid,1,1,,3,,"435; Kuris, Carlton 1977",,all,pools,,yes,,2713,27-Mar-24
-ZZ,702,Crangon alaskensis,shrimp,1,1349,Hartmanodes hartmanae,gammarid,1,1,2,6,,"435; Kuris, Carlton 1977",,low,pools,,yes,,3609,3-Apr-24
-ZZ,984,Crangon handi,shrimp,1,1349,Hartmanodes hartmanae,gammarid,1,1,2,6,,"435; Kuris, Carlton 1977",,low,pools,,yes,,3609,3-Apr-24
-ZZ,928,Halimedusa typus,hydroid,5,2348,rotifers,microorganisms,1,1,1,3,,435; Mil435 2000,,low,pools,,yes,,3743,3-Apr-24
-ZZ,1474,Coelopa (Fucomyia) frigida,insect,1,751,Wrack,dead stuff,NA,30,,3,,435; PO,,all,exposed,,yes,,3155,1-Apr-24
-ZZ,634,Doto kya,nudibranch,1,91,Aglaophenia struthionides,hydroid,1,3,,3,,435M,,low,pools,n,,,728,
-ZZ,634,Doto kya,nudibranch,1,84,Eudendrium californicum,hydroid,1,3,,3,,435M,,low,pools,n,,,729,
-ZZ,634,Doto kya,nudibranch,1,93,Plumularia sp.,hydroid,1,3,,3,,435M,,low,pools,n,,,730,
-ZZ,634,Doto kya,nudibranch,1,767,Sarsia sp.,hydroid,1,3,,3,,435M,,low,pools,n,,,731,
-ZZ,634,Doto kya,nudibranch,1,89,Xingyurella turgida,hydroid,1,3,,3,,435M,,low,pools,n,,,732,
-ZZ,635,Celleporella hyalina,bryozoan,1,524,Pagurus samuelis,hermit crab,1,2,,6,,435M,,all,pools,n,,,733,
-ZZ,635,Celleporella hyalina,bryozoan,1,525,Pagurus hirsutiusculus,hermit crab,1,2,,6,,435M,,all,pools,n,,,734,
-ZZ,635,Celleporella hyalina,bryozoan,1,526,Pagurus hemphilli,hermit crab,1,2,,6,,435M,,all,pools,n,,,735,
-ZZ,635,Celleporella hyalina,bryozoan,1,527,Pagurus granosimanus,hermit crab,1,2,,6,,435M,,all,pools,n,,,736,
-ZZ,634,Doto kya,nudibranch,1,85,Obelia dichotoma,hydroid,1,3,,1,,"435M, PO1",,low,pools,n,,,727,
+ZZ,81,Bythotiara huntsmani,hydroid,1,189,Ascidia ceratodes,tunicate,1,9,2,3,2,435; 83,Washington and British Columbia,,pools,n,,,533,
+ZZ_coded,899,Paraspadella pimukatharos,chaetognath,1,750,Carrion,dead stuff,NA,1,1,3,,"435, 510",mid to low,mid to low,pools,,yes,,10080,22-Apr-24
+ZZ,702,Crangon alaskensis,shrimp,1,609,Protohyale (Protohyale) frequens,gammarid,1,1,,3,,"435, 251",,all,pools,,yes,,2713,27-Mar-24
+ZZ,984,Crangon handi,shrimp,1,609,Protohyale (Protohyale) frequens,gammarid,1,1,,3,,"435, 251",,all,pools,,yes,,2713,27-Mar-24
+ZZ,702,Crangon alaskensis,shrimp,1,1349,Hartmanodes hartmanae,gammarid,1,1,2,6,,"435, 251",,low,pools,,yes,,3609,3-Apr-24
+ZZ,984,Crangon handi,shrimp,1,1349,Hartmanodes hartmanae,gammarid,1,1,2,6,,"435, 251",,low,pools,,yes,,3609,3-Apr-24
+ZZ,928,Halimedusa typus,hydroid,5,2348,rotifers,microorganisms,1,1,1,3,,435; 516,,low,pools,,yes,,3743,3-Apr-24
+ZZ,1474,Coelopa (Fucomyia) frigida,insect,1,751,Wrack,dead stuff,NA,30,,3,,435; 530,,all,exposed,,yes,,3155,1-Apr-24
+ZZ,634,Doto kya,nudibranch,1,91,Aglaophenia struthionides,hydroid,1,3,,3,,435,,low,pools,n,,,728,
+ZZ,634,Doto kya,nudibranch,1,84,Eudendrium californicum,hydroid,1,3,,3,,435,,low,pools,n,,,729,
+ZZ,634,Doto kya,nudibranch,1,93,Plumularia sp.,hydroid,1,3,,3,,435,,low,pools,n,,,730,
+ZZ,634,Doto kya,nudibranch,1,767,Sarsia sp.,hydroid,1,3,,3,,435,,low,pools,n,,,731,
+ZZ,634,Doto kya,nudibranch,1,89,Xingyurella turgida,hydroid,1,3,,3,,435,,low,pools,n,,,732,
+ZZ,635,Celleporella hyalina,bryozoan,1,524,Pagurus samuelis,hermit crab,1,2,,6,,435,,all,pools,n,,,733,
+ZZ,635,Celleporella hyalina,bryozoan,1,525,Pagurus hirsutiusculus,hermit crab,1,2,,6,,435,,all,pools,n,,,734,
+ZZ,635,Celleporella hyalina,bryozoan,1,526,Pagurus hemphilli,hermit crab,1,2,,6,,435,,all,pools,n,,,735,
+ZZ,635,Celleporella hyalina,bryozoan,1,527,Pagurus granosimanus,hermit crab,1,2,,6,,435,,all,pools,n,,,736,
+ZZ,634,Doto kya,nudibranch,1,85,Obelia dichotoma,hydroid,1,3,,1,,"435, 530",,low,pools,n,,,727,
 EMH,306,Tylodina fungina,sea snail,1,64,Aplysina fistularis,sponge,1,1,,3,,"436,  132","San Diego, CA",,,,,,477,
 ZZ,621,Euplotaspis cionaecola,ciliate,1,220,Pyura haustor,tunicate,1,9,,3,3,"436, 102","San Juan Archipelago, WA and Oregon Coast",low,pools,y,,,297,
 ZZ,620,Parahypocoma rhamphisokarya,ciliate,1,220,Pyura haustor,tunicate,1,9,,3,3,"436, 102","San Juan Archipelago, WA and Oregon Coast",low,pools,y,,,296,
@@ -21012,10 +21012,10 @@ ZZ_coded,3002,Xiphister mucosus,fish,4,495,Colidotea rostrata,isopod,1,1,2,6,1,4
 ZZ,357,Hermissenda opalescens,nudibranch,1,357,Hermissenda opalescens,nudibranch,1,1,,3,,436; 437,,low,pools,,yes,,2710,27-Mar-24
 ZZ,357,Hermissenda opalescens,nudibranch,1,750,Carrion,dead stuff,NA,30,,3,,436; 437,,low,pools,,yes,,3056,1-Apr-24
 ZZ,357,Hermissenda opalescens,nudibranch,1,750,Carrion,dead stuff,NA,30,,3,,436; 437,,low,pools,,yes,,3146,1-Apr-24
-ZZ_coded,357,Hermissenda opalescens,nudibranch,1,171,Aplidium solidum,tunicate,1,1,,3,NA,"436; Lindsay, Valdez 2016",NA,low,NA,yes,NA,NA,2444,22-Mar-24
-,205,Lottia strigatella,true limpet,4,2324,epiphytic diatoms,microalgae,,1,4,3,1,"438, 435, Jessica Bean pers comm",,middle,both,,yes,,11348,6-May-24
-,206,Lottia strigatella,true limpet,4,2322,cyanobacteria,microorganism,,1,4,3,1,"438, 435, Jessica Bean pers comm",,middle,both,,yes,,11349,6-May-24
-,207,Lottia strigatella,true limpet,4,602,benthic diatoms,microalgae,,1,4,3,1,"438, 435, Jessica Bean pers comm",,middle,both,,yes,,11350,6-May-24
+ZZ_coded,357,Hermissenda opalescens,nudibranch,1,171,Aplidium solidum,tunicate,1,1,,3,NA,436; 437,NA,low,NA,yes,NA,NA,2444,22-Mar-24
+,205,Lottia strigatella,true limpet,4,2324,epiphytic diatoms,microalgae,,1,4,3,1,"438, 435, 530",,middle,both,,yes,,11348,6-May-24
+,206,Lottia strigatella,true limpet,4,2322,cyanobacteria,microorganism,,1,4,3,1,"438, 435, 530",,middle,both,,yes,,11349,6-May-24
+,207,Lottia strigatella,true limpet,4,602,benthic diatoms,microalgae,,1,4,3,1,"438, 435, 530",,middle,both,,yes,,11350,6-May-24
 ZZ,4,Hypsoblennius gilberti,fish,1,203,Lottia limatula,limpet,1,1,2,5,1,"450, 451, 452",USA,all,pools,n,y,,21234,8-Jun-24
 ZZ,4,Hypsoblennius gilberti,fish,1,210,Lottia scabra,limpet,1,1,2,5,1,"450, 451, 452",USA,all,pools,n,y,,21235,8-Jun-24
 ZZ,4,Hypsoblennius gilberti,fish,1,201,Lottia gigantea,limpet,1,1,2,5,1,"450, 451, 452",USA,all,pools,n,y,,21236,8-Jun-24
@@ -21069,18 +21069,18 @@ SML,728,Haplostomides bellus,copepod,1,177,Ritterella aequalisiphonis,tunicate,1
 SML,729,Haplostomides luteolus,copepod,1,0,Amaroucium glabrum,tunicate,1,2,,3,5,"82, 436",British Columbia,,,,, (female only),222,
 SML,592,Pholeterides furtiva,copepod,1,173,Aplidium arenatum,tunicate,1,2,,3,,"82, 436",WA,,,,,,237,
 SML,592,Pholeterides furtiva,copepod,1,0,Amaroucium constellatum,tunicate,1,2,,3,5,"82, 436",WA,,,,,,238,
-ZZ_coded,405,Cyanoplax hartwegii,chiton,1,640,Endocladia muricata,red algae,1,1,1,3,1,Abbott & Hollenberg,California,"high tide pools, nocturnal",NA,y,y,NA,20548,3-Jun-24
-ZZ_coded,405,Cyanoplax hartwegii,chiton,1,653,Hildenbrandia sp.,red algae,1,1,1,3,1,Abbott & Hollenberg,California,"high tide pools, nocturnal",NA,y,y,NA,20549,3-Jun-24
-ZZ_coded,405,Cyanoplax hartwegii,chiton,1,654,Mastocarpus sp.,red algae,1,1,1,3,1,Abbott & Hollenberg,California,"high tide pools, nocturnal",NA,y,y,NA,20550,3-Jun-24
-ZZ_coded,1011,Pagurus armatus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,low,NA,y,y,NA,20678,3-Jun-24
-ZZ_coded,1012,Pagurus beringanus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,low,NA,y,y,NA,20679,3-Jun-24
-ZZ_coded,1013,Pagurus caurinus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,low,NA,y,y,NA,20680,3-Jun-24
-ZZ_coded,527,Pagurus granosimanus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,low,NA,y,y,NA,20677,3-Jun-24
-ZZ_coded,526,Pagurus hemphilli,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,middle to low,NA,y,y,NA,20676,3-Jun-24
-ZZ_coded,525,Pagurus hirsutiusculus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,middle to low,NA,y,y,NA,20675,3-Jun-24
-ZZ_coded,524,Pagurus samuelis,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,Abbott & Hollenberg,California,high to middle,NA,y,y,NA,20681,3-Jun-24
-ZZ_coded,405,Cyanoplax hartwegii,chiton,1,656,Cladophora columbiana,green algae,1,1,1,3,1,Abbott & Hollenberg; 2021 Algae ID Workshop,California,"high tide pools, nocturnal",NA,y,y,NA,20547,3-Jun-24
-ZZ_coded,405,Cyanoplax hartwegii,chiton,1,652,Sylvetia compressa,brown algae,1,1,1,3,1,Abbott & Hollenberg; Algaebase,California,"high tide pools, nocturnal",NA,y,y,NA,20546,3-Jun-24
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,640,Endocladia muricata,red algae,1,1,1,3,1,528,California,"high tide pools, nocturnal",NA,y,y,NA,20548,3-Jun-24
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,653,Hildenbrandia sp.,red algae,1,1,1,3,1,528,California,"high tide pools, nocturnal",NA,y,y,NA,20549,3-Jun-24
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,654,Mastocarpus sp.,red algae,1,1,1,3,1,528,California,"high tide pools, nocturnal",NA,y,y,NA,20550,3-Jun-24
+ZZ_coded,1011,Pagurus armatus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,528,California,low,NA,y,y,NA,20678,3-Jun-24
+ZZ_coded,1012,Pagurus beringanus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,528,California,low,NA,y,y,NA,20679,3-Jun-24
+ZZ_coded,1013,Pagurus caurinus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,528,California,low,NA,y,y,NA,20680,3-Jun-24
+ZZ_coded,527,Pagurus granosimanus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,528,California,low,NA,y,y,NA,20677,3-Jun-24
+ZZ_coded,526,Pagurus hemphilli,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,528,California,middle to low,NA,y,y,NA,20676,3-Jun-24
+ZZ_coded,525,Pagurus hirsutiusculus,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,528,California,middle to low,NA,y,y,NA,20675,3-Jun-24
+ZZ_coded,524,Pagurus samuelis,hermit crab,1,650,Pelvetiopsis limitata,brown algae,1,1,2,6,1,528,California,high to middle,NA,y,y,NA,20681,3-Jun-24
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,656,Cladophora columbiana,green algae,1,1,1,3,1,528,California,"high tide pools, nocturnal",NA,y,y,NA,20547,3-Jun-24
+ZZ_coded,405,Cyanoplax hartwegii,chiton,1,652,Sylvetia compressa,brown algae,1,1,1,3,1,528,California,"high tide pools, nocturnal",NA,y,y,NA,20546,3-Jun-24
 ,5,Amphistichus argenteus,fish,1,3007,UNKNOWN OR UNRESOLVED,,NA,1,,,1,awaiting resolution,,,,,,,11294,29-Apr-24
 ,2076,Artedius corallinus,fish,1,3007,UNKNOWN OR UNRESOLVED,,NA,1,,,1,awaiting resolution,,,,,,,11295,29-Apr-24
 ,508,Betaeus harfordi,shrimp,1,3007,UNKNOWN,,NA,1,,,1,awaiting resolution,,,,,,,11381,6-May-24
@@ -21089,70 +21089,70 @@ ZZ_coded,405,Cyanoplax hartwegii,chiton,1,652,Sylvetia compressa,brown algae,1,1
 ,2088,Hemilepidotus hemilepidotus,fish,1,3007,UNKNOWN OR UNRESOLVED,,NA,1,,,1,awaiting resolution,,,,,,,11298,29-Apr-24
 ,1786,Margarites salmoneus,shrimp,1,3007,UNKNOWN,,NA,1,,,1,awaiting resolution,,,,,,,11384,6-May-24
 ,1786,Margarites salmoneus,snail,,3007,UNKNOWN,,NA,1,,,1,awaiting resolution,,,,,,,11392,6-May-24
-ZZ,604,Heterostichus rostratus,fish,4,2348,rotifers,microorganisms,1,1,1,3,,D. Canestro; FishBase,,all,pools,,yes,,3742,3-Apr-24
-ZZ,685,nematode_1,nematode,1,524,Pagurus samuelis,hermit crab,1,6,,1,6,diss_17,Ellwood Boulderfield ,high,pools,n,n,,10229,24-Apr-24
-ZZ,686,nematode_2,nematode,1,524,Pagurus samuelis,hermit crab,1,6,,1,6,diss_18,VSFB,high,pools,n,n,,10230,24-Apr-24
-ZZ,693,opecoelid_metacercaria_3,trematode,5,549,Cancer antennarius,true crab,1,6,,1,6,diss_188,Hammond's Beach,low,pools,n,n,,10240,24-Apr-24
-ZZ,693,opecoelid_metacercaria_3,trematode,5,513,Heptacarpus carinatus,shrimp,1,6,,1,6,diss_188,Hammond's Beach,middle,pools,n,n,,10244,24-Apr-24
-ZZ,693,opecoelid_metacercaria_3,trematode,5,513,Heptacarpus carinatus,shrimp,1,6,,1,6,diss_188,Miramar Beach,middle,pools,n,n,,10245,24-Apr-24
-ZZ,700,copepod_1,copepod,1,549,Cancer antennarius,true crab,1,7,,1,6,diss_189,Mussel Shoals,low,pools,n,n,,10241,24-Apr-24
-ZZ,701,nematode_9,nematode,4,549,Cancer antennarius,true crab,1,6,,1,6,diss_189,Mussel Shoals,low,pools,n,n,,10242,24-Apr-24
-ZZ,695,metacercaria_4,trematode,5,702,Crangon alaskensis,shrimp,1,6,,1,6,diss_190,Hammond's Beach,middle,pools,n,n,,10243,24-Apr-24
-ZZ,696,metacercaria_5,trematode,5,566,Pachygrapsus crassipes,true crab,1,6,,1,6,diss_193,Shell Beach,all,pools,n,n,,10249,24-Apr-24
-ZZ,696,metacercaria_5,trematode,5,513,Heptacarpus carinatus,shrimp,1,6,,1,6,diss_193,Miramar Beach,middle,pools,n,n,,10246,24-Apr-24
-ZZ,693,opecoelid_metacercaria_3,trematode,5,515,Heptacarpus paludicola,shrimp,1,6,,1,6,diss_194,Arroyo Hondo,middle,pools,n,n,,10247,24-Apr-24
-ZZ,697,metacercaria_6,trematode,5,515,Heptacarpus paludicola,shrimp,1,6,,1,6,diss_195,Shell Beach,middle,pools,n,n,,10248,24-Apr-24
-ZZ,694,trypanorhynch_2,cestode,4,525,Pagurus hirsutiusculus,hermit crab,1,7,,1,6,diss_197,Ellwood Boulder Fields,all,pools,n,n,,10250,24-Apr-24
-ZZ,693,opecoelid_metacercaria_3,trematode,5,525,Pagurus hirsutiusculus,hermit crab,1,6,,1,6,diss_199,Miramar Beach,all,pools,n,n,,10252,24-Apr-24
-ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,diss_201; diss_202; diss_35,Ellwood Boulder Fields,all,pools,n,n,,10254,24-Apr-24
-ZZ,693,opecoelid_metacercaria_3,trematode,5,514,Heptacarpus sitchensis,shrimp,1,6,,1,6,diss_204,unknown,low,pools,n,n,,10258,24-Apr-24
-ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,diss_205; diss_65; diss_67,Jalama,all,pools,n,n,,10256,24-Apr-24
-ZZ,687,nematode_3,nematode,1,0,Unknown shrimp,shrimp,1,6,,1,6,diss_21,Alegria Beach,mid,pools,n,n,,10238,24-Apr-24
-ZZ,688,nematode_4,nematode,1,524,Pagurus samuelis,hermit crab,1,6,,1,6,diss_23,VSFB,high,pools,n,n,,10231,24-Apr-24
-ZZ,473,Peltogasterella gracilis,rhizocephalan,1,525,Pagurus hirsutiusculus,hermit crab,1,6,,1,1,diss_25,Jalama,all,pools,n,n,,10253,24-Apr-24
-ZZ,473,Peltogasterella gracilis,rhizocephalan,1,525,Pagurus hirsutiusculus,hermit crab,1,6,,1,1,diss_25,Alegria Beach,high,pools,n,n,,10226,24-Apr-24
-ZZ,680,polychaete_1,polychaete,1,527,Pagurus granosimanus,hermit crab,1,9,,1,6,diss_28,VSFB,high,pools,n,n,,10224,24-Apr-24
-ZZ,680,polychaete_1,polychaete,3,527,Pagurus granosimanus,hermit crab,1,9,,1,6,diss_28,VSFB,high,pools,n,n,,10225,24-Apr-24
-ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,diss_35,Ellwood Boulderfield,high,pools,n,n,,10232,24-Apr-24
-ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,diss_65,Cambria,high,pools,n,n,,10233,24-Apr-24
-ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,diss_67,Cambria,high,pools,n,n,,10234,24-Apr-24
-ZZ,684,trypanorhynch_1,cestode,4,524,Pagurus samuelis,hermit crab,1,6,,1,6,diss_7,Ellwood Boulderfield,high,pools,n,n,,10228,24-Apr-24
-ZZ,473,Peltogasterella gracilis,rhizocephalan,1,525,Pagurus hirsutiusculus,hermit crab,1,6,,1,1,diss_75,Cambria,high,pools,n,n,,10227,24-Apr-24
-ZZ,690,nematode_6,nematode,1,558,Paraxanthias taylori,true crab,1,7,,1,6,diss_78,Cambria,high,pools,n,n,,10239,24-Apr-24
-ZZ,682,metacercaria_2,trematode,5,529,Petrolisthes eriomerus,porcelain crab,1,6,,1,6,diss_84,Rancho Marino,middle,pools,n,n,,10236,24-Apr-24
-ZZ,692,nematode_8,nematode,1,529,Petrolisthes eriomerus,porcelain crab,1,6,,1,6,diss_84,Rancho Marino,middle,pools,n,n,,10235,24-Apr-24
-ZZ,678,cestode_1,cestode,3,557,Lophopanopeus leucomanus,true crab,1,6,,1,6,diss_85,Rancho Marino,middle,pools,n,n,,10218,24-Apr-24
-ZZ,679,cestode_2,cestode,3,557,Lophopanopeus leucomanus,true crab,1,6,,1,6,diss_85,Rancho Marino,middle,pools,n,n,,10217,24-Apr-24
-ZZ,691,nematode_7,nematode,1,557,Lophopanopeus leucomanus,true crab,1,6,,1,6,diss_85,Rancho Marino,middle,pools,n,n,,10219,24-Apr-24
-ZZ,681,metacercaria_1,trematode,5,19,Gobeisox maeandricus,fish,1,6,,1,6,diss_86,Rancho Marino,low,pools,n,n,,10220,24-Apr-24
-ZZ,681,metacercaria_1,trematode,5,19,Gobeisox maeandricus,fish,1,6,,1,6,diss_86,Rancho Marino,low,pools,n,n,,10221,24-Apr-24
-ZZ,681,metacercaria_1,trematode,5,19,Gobeisox maeandricus,fish,1,6,,1,6,diss_86,Rancho Marino,low,pools,n,n,,10222,24-Apr-24
-ZZ,683,Sphaeromyxa sp.,myxozoan,1,19,Gobeisox maeandricus,fish,1,5,,1,6,diss_86,Rancho Marino,low,pools,n,n,,10223,24-Apr-24
-ZZ,677,ciliate_1,ciliate,1,513,Heptacarpus carinatus,shrimp,1,9,,1,6,diss_87,Rancho Marino,low,pools,n,n,,10216,24-Apr-24
-ZZ,689,nematode_5,nematode,1,529,Petrolisthes eriomerus,porcelain crab,1,6,,1,6,diss_89,Rancho Marino,low,pools,n,n,,10237,24-Apr-24
-ZZ_coded,255,Opalia funiculata,snail,1,101,Anthopleura elegantissima,anemone,1,3,,3,NA,iNaturalist: https://www.inaturalist.org/observations?user_id=cbates1,NA,NA,NA,no,NA,NA,2382,22-Mar-24
-ZZ,355,Cuthona divae,nudibranch,1,228,Hydractinia milleri,hydroid,1,3,,7-Jun,,Jeff Goddard,,,,n,,via nudibranch forum - confirm in writing?,612,
-ZZ_coded,358,Aeolidia loui,nudibranch,1,107,Metridium senile,anemone,1,3,,3,NA,"Kienberger et al, 2016; 436",NA,low,NA,yes,NA,NA,2445,22-Mar-24
-ZZ_coded,358,Aeolidia loui,nudibranch,1,101,Anthopleura elegantissima,anemone,1,3,,3,NA,"Kienberger et al, 2016; 436",NA,low,NA,yes,NA,NA,2446,22-Mar-24
-ZZ_coded,358,Aeolidia loui,nudibranch,1,102,Epiactis prolifera,anemone,1,3,,3,NA,"Kienberger et al, 2016; 436",NA,low,NA,yes,NA,NA,2447,22-Mar-24
-ZZ,358,Aeolidia loui,nudibranch,1,105,Urticina coriacea,anemone,1,3,,3,,"Kienberger et al, 2016; 436",,middle to low,,,no,,2933,29-Mar-24
-ZZ,358,Aeolidia loui,nudibranch,1,104,Urticina crassicornis,anemone,1,3,,3,,"Kienberger et al, 2016; 436",,middle to low,pools,,no,,2935,29-Mar-24
-ZZ_coded,226,Haliotis fulgens,abalone,1,784,Laminaria sinclairii,brown algae,1,1,1,3,1,Marine Algae of California,California,low,NA,y,y,NA,20589,3-Jun-24
-EMH,150,Pisaster ochraceus,sea star,1,1694,Spirorbis bifurcatus,polychaete,1,1,2,6,,missing ,,middle,pools,,y,,80,
-EMH,150,Pisaster ochraceus,sea star,1,1695,Spirorbis marioni,polychaete,1,1,2,6,,missing ,,middle,pools,,y,,10168,23-Apr-24
-ZZ,1247,Idarcturus hedgpethi,isopod,1,3007,UNKNOWN,,,,,"435, 436",,NA,,low,pools,no,y,,20239,2-Jun-24
-ZZ,508,Betaeus harfordi,shrimp,,3007,UNKNOWN,,NA,1,,,1,NA,,,,,,,20477,2-Jun-24
-ZZ,510,Betaeus longidactylus,shrimp,1,3007,UNKNOWN,,NA,,,,1,NA,,,,,,,20318,2-Jun-24
-ZZ,987,Betaeus setosus,shrimp,1,3007,UNKNOWN,,NA,,,,1,NA,,,,,,,20319,2-Jun-24
-ZZ,1213,Joeropsis dubia dubia,isopod,1,3007,UNKNOWN,,NA,,,,1,NA,,,,,,,20217,2-Jun-24
-ZZ,1214,Joeropsis dubia paucispinis,isopod,1,3007,UNKNOWN,,NA,,,,1,NA,,,,,,,20218,2-Jun-24
-ZZ,127,Malacobdella grossa,nemertean,1,0,Macoma seta,,,1,,,7,NA,,,,,,,113,
-ZZ,127,Malacobdella grossa,nemertean,1,0,Macoma nasuta,,,1,,,7,NA,,,,,,,114,
-ZZ,127,Malacobdella grossa,nemertean,1,0,Siliqua patula,,,1,,,7,NA,,,,,,,115,
-ZZ,127,Malacobdella grossa,nemertean,1,0,Tresus nuttallii,,,1,,,7,NA,,,,,,,116,
-ZZ,299,Navanax inermis,nudibranch,1,0,Haminoea vesicula,,1,1,,,0,NA,,,,y,,,468,
-ZZ,125,Nipponnemertes bimaculata,nemertean,1,3007,UNKNOWN,,NA,,,,1,NA,,,,,,,20159,2-Jun-24
-ZZ,1218,Santia hirsuta,isopod,1,3007,UNKNOWN,,NA,,,,,NA,,,,,,,20219,2-Jun-24
+ZZ,604,Heterostichus rostratus,fish,4,2348,rotifers,microorganisms,1,1,1,3,,532; 450,,all,pools,,yes,,3742,3-Apr-24
+ZZ,685,nematode_1,nematode,1,524,Pagurus samuelis,hermit crab,1,6,,1,6,530,Ellwood Boulderfield ,high,pools,n,n,,10229,24-Apr-24
+ZZ,686,nematode_2,nematode,1,524,Pagurus samuelis,hermit crab,1,6,,1,6,530,VSFB,high,pools,n,n,,10230,24-Apr-24
+ZZ,693,opecoelid_metacercaria_3,trematode,5,549,Cancer antennarius,true crab,1,6,,1,6,530,Hammond's Beach,low,pools,n,n,,10240,24-Apr-24
+ZZ,693,opecoelid_metacercaria_3,trematode,5,513,Heptacarpus carinatus,shrimp,1,6,,1,6,530,Hammond's Beach,middle,pools,n,n,,10244,24-Apr-24
+ZZ,693,opecoelid_metacercaria_3,trematode,5,513,Heptacarpus carinatus,shrimp,1,6,,1,6,530,Miramar Beach,middle,pools,n,n,,10245,24-Apr-24
+ZZ,700,copepod_1,copepod,1,549,Cancer antennarius,true crab,1,7,,1,6,530,Mussel Shoals,low,pools,n,n,,10241,24-Apr-24
+ZZ,701,nematode_9,nematode,4,549,Cancer antennarius,true crab,1,6,,1,6,530,Mussel Shoals,low,pools,n,n,,10242,24-Apr-24
+ZZ,695,metacercaria_4,trematode,5,702,Crangon alaskensis,shrimp,1,6,,1,6,530,Hammond's Beach,middle,pools,n,n,,10243,24-Apr-24
+ZZ,696,metacercaria_5,trematode,5,566,Pachygrapsus crassipes,true crab,1,6,,1,6,530,Shell Beach,all,pools,n,n,,10249,24-Apr-24
+ZZ,696,metacercaria_5,trematode,5,513,Heptacarpus carinatus,shrimp,1,6,,1,6,530,Miramar Beach,middle,pools,n,n,,10246,24-Apr-24
+ZZ,693,opecoelid_metacercaria_3,trematode,5,515,Heptacarpus paludicola,shrimp,1,6,,1,6,530,Arroyo Hondo,middle,pools,n,n,,10247,24-Apr-24
+ZZ,697,metacercaria_6,trematode,5,515,Heptacarpus paludicola,shrimp,1,6,,1,6,530,Shell Beach,middle,pools,n,n,,10248,24-Apr-24
+ZZ,694,trypanorhynch_2,cestode,4,525,Pagurus hirsutiusculus,hermit crab,1,7,,1,6,530,Ellwood Boulder Fields,all,pools,n,n,,10250,24-Apr-24
+ZZ,693,opecoelid_metacercaria_3,trematode,5,525,Pagurus hirsutiusculus,hermit crab,1,6,,1,6,530,Miramar Beach,all,pools,n,n,,10252,24-Apr-24
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,530,Ellwood Boulder Fields,all,pools,n,n,,10254,24-Apr-24
+ZZ,693,opecoelid_metacercaria_3,trematode,5,514,Heptacarpus sitchensis,shrimp,1,6,,1,6,530,unknown,low,pools,n,n,,10258,24-Apr-24
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,530,Jalama,all,pools,n,n,,10256,24-Apr-24
+ZZ,687,nematode_3,nematode,1,0,Unknown shrimp,shrimp,1,6,,1,6,530,Alegria Beach,mid,pools,n,n,,10238,24-Apr-24
+ZZ,688,nematode_4,nematode,1,524,Pagurus samuelis,hermit crab,1,6,,1,6,530,VSFB,high,pools,n,n,,10231,24-Apr-24
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,525,Pagurus hirsutiusculus,hermit crab,1,6,,1,1,530,Jalama,all,pools,n,n,,10253,24-Apr-24
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,525,Pagurus hirsutiusculus,hermit crab,1,6,,1,1,530,Alegria Beach,high,pools,n,n,,10226,24-Apr-24
+ZZ,680,polychaete_1,polychaete,1,527,Pagurus granosimanus,hermit crab,1,9,,1,6,530,VSFB,high,pools,n,n,,10224,24-Apr-24
+ZZ,680,polychaete_1,polychaete,3,527,Pagurus granosimanus,hermit crab,1,9,,1,6,530,VSFB,high,pools,n,n,,10225,24-Apr-24
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,530,Ellwood Boulderfield,high,pools,n,n,,10232,24-Apr-24
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,530,Cambria,high,pools,n,n,,10233,24-Apr-24
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,524,Pagurus samuelis,hermit crab,1,6,,1,1,530,Cambria,high,pools,n,n,,10234,24-Apr-24
+ZZ,684,trypanorhynch_1,cestode,4,524,Pagurus samuelis,hermit crab,1,6,,1,6,530,Ellwood Boulderfield,high,pools,n,n,,10228,24-Apr-24
+ZZ,473,Peltogasterella gracilis,rhizocephalan,1,525,Pagurus hirsutiusculus,hermit crab,1,6,,1,1,530,Cambria,high,pools,n,n,,10227,24-Apr-24
+ZZ,690,nematode_6,nematode,1,558,Paraxanthias taylori,true crab,1,7,,1,6,530,Cambria,high,pools,n,n,,10239,24-Apr-24
+ZZ,682,metacercaria_2,trematode,5,529,Petrolisthes eriomerus,porcelain crab,1,6,,1,6,530,Rancho Marino,middle,pools,n,n,,10236,24-Apr-24
+ZZ,692,nematode_8,nematode,1,529,Petrolisthes eriomerus,porcelain crab,1,6,,1,6,530,Rancho Marino,middle,pools,n,n,,10235,24-Apr-24
+ZZ,678,cestode_1,cestode,3,557,Lophopanopeus leucomanus,true crab,1,6,,1,6,530,Rancho Marino,middle,pools,n,n,,10218,24-Apr-24
+ZZ,679,cestode_2,cestode,3,557,Lophopanopeus leucomanus,true crab,1,6,,1,6,530,Rancho Marino,middle,pools,n,n,,10217,24-Apr-24
+ZZ,691,nematode_7,nematode,1,557,Lophopanopeus leucomanus,true crab,1,6,,1,6,530,Rancho Marino,middle,pools,n,n,,10219,24-Apr-24
+ZZ,681,metacercaria_1,trematode,5,19,Gobeisox maeandricus,fish,1,6,,1,6,530,Rancho Marino,low,pools,n,n,,10220,24-Apr-24
+ZZ,681,metacercaria_1,trematode,5,19,Gobeisox maeandricus,fish,1,6,,1,6,530,Rancho Marino,low,pools,n,n,,10221,24-Apr-24
+ZZ,681,metacercaria_1,trematode,5,19,Gobeisox maeandricus,fish,1,6,,1,6,530,Rancho Marino,low,pools,n,n,,10222,24-Apr-24
+ZZ,683,Sphaeromyxa sp.,myxozoan,1,19,Gobeisox maeandricus,fish,1,5,,1,6,530,Rancho Marino,low,pools,n,n,,10223,24-Apr-24
+ZZ,677,ciliate_1,ciliate,1,513,Heptacarpus carinatus,shrimp,1,9,,1,6,530,Rancho Marino,low,pools,n,n,,10216,24-Apr-24
+ZZ,689,nematode_5,nematode,1,529,Petrolisthes eriomerus,porcelain crab,1,6,,1,6,530,Rancho Marino,low,pools,n,n,,10237,24-Apr-24
+ZZ_coded,255,Opalia funiculata,snail,1,101,Anthopleura elegantissima,anemone,1,3,2,5,2,527,"Cambria, CA",NA,NA,no,NA,"inat link confirms presence of predator, not interaction",2382,22-Mar-24
+ZZ,355,Cuthona divae,nudibranch,1,228,Hydractinia milleri,hydroid,1,3,,7,,529,,,,n,,via nudibranch forum - confirm in writing?,612,
+ZZ_coded,358,Aeolidia loui,nudibranch,1,107,Metridium senile,anemone,1,3,,3,NA,465; 436,NA,low,NA,yes,NA,NA,2445,22-Mar-24
+ZZ_coded,358,Aeolidia loui,nudibranch,1,101,Anthopleura elegantissima,anemone,1,3,,3,NA,465; 436,NA,low,NA,yes,NA,NA,2446,22-Mar-24
+ZZ_coded,358,Aeolidia loui,nudibranch,1,102,Epiactis prolifera,anemone,1,3,,3,NA,465; 436,NA,low,NA,yes,NA,NA,2447,22-Mar-24
+ZZ,358,Aeolidia loui,nudibranch,1,105,Urticina coriacea,anemone,1,3,,3,,465; 436,,middle to low,,,no,,2933,29-Mar-24
+ZZ,358,Aeolidia loui,nudibranch,1,104,Urticina crassicornis,anemone,1,3,,3,,465; 436,,middle to low,pools,,no,,2935,29-Mar-24
+ZZ_coded,226,Haliotis fulgens,abalone,1,784,Laminaria sinclairii,brown algae,1,1,1,3,1,528,California,low,NA,y,y,NA,20589,3-Jun-24
+EMH,150,Pisaster ochraceus,sea star,1,1694,Spirorbis bifurcatus,polychaete,1,1,2,6,0,missing ,,middle,pools,,y,,80,
+EMH,150,Pisaster ochraceus,sea star,1,1695,Spirorbis marioni,polychaete,1,1,2,6,0,missing ,,middle,pools,,y,,10168,23-Apr-24
+ZZ,1247,Idarcturus hedgpethi,isopod,1,3007,UNKNOWN,,,,,"435, 436",,none,,low,pools,no,y,,20239,2-Jun-24
+ZZ,508,Betaeus harfordi,shrimp,,3007,UNKNOWN,,NA,1,,,1,none,,,,,,,20477,2-Jun-24
+ZZ,510,Betaeus longidactylus,shrimp,1,3007,UNKNOWN,,NA,,,,1,none,,,,,,,20318,2-Jun-24
+ZZ,987,Betaeus setosus,shrimp,1,3007,UNKNOWN,,NA,,,,1,none,,,,,,,20319,2-Jun-24
+ZZ,1213,Joeropsis dubia dubia,isopod,1,3007,UNKNOWN,,NA,,,,1,none,,,,,,,20217,2-Jun-24
+ZZ,1214,Joeropsis dubia paucispinis,isopod,1,3007,UNKNOWN,,NA,,,,1,none,,,,,,,20218,2-Jun-24
+ZZ,127,Malacobdella grossa,nemertean,1,0,Macoma seta,,,1,,,7,none,,,,,,,113,
+ZZ,127,Malacobdella grossa,nemertean,1,0,Macoma nasuta,,,1,,,7,none,,,,,,,114,
+ZZ,127,Malacobdella grossa,nemertean,1,0,Siliqua patula,,,1,,,7,none,,,,,,,115,
+ZZ,127,Malacobdella grossa,nemertean,1,0,Tresus nuttallii,,,1,,,7,none,,,,,,,116,
+ZZ,299,Navanax inermis,nudibranch,1,0,Haminoea vesicula,,1,1,,,0,none,,,,y,,,468,
+ZZ,125,Nipponnemertes bimaculata,nemertean,1,3007,UNKNOWN,,NA,,,,1,none,,,,,,,20159,2-Jun-24
+ZZ,1218,Santia hirsuta,isopod,1,3007,UNKNOWN,,NA,,,,,none,,,,,,,20219,2-Jun-24
 ZZ,2295,Bulla gouldiana,snail,1,2294,Bryopsis corticulans,green algae,1,3,1,3,0,none,,all,pools,,yes,,4209,17-Apr-24
 ZZ,2295,Bulla gouldiana,snail,1,2307,Chaetomorpha sp.,green algae,1,3,1,3,0,none,,all,pools,,yes,,4210,17-Apr-24
 ZZ,2295,Bulla gouldiana,snail,1,656,Cladophora columbiana,green algae,1,3,1,3,0,none,,all,pools,,yes,,4211,17-Apr-24
@@ -21170,38 +21170,38 @@ ZZ,754,Zooplankton,zooplankton,6,603,planktonic diatoms,phytoplankton,6,1,4,4,,n
 ZZ,754,Zooplankton,zooplankton,6,754,Zooplankton,zooplankton,6,1,4,4,,none,,all,pools,no,yes,pure inference,10372,24-Apr-24
 ZZ,754,Zooplankton,zooplankton,6,753,Phytoplankton,phytoplankton,6,1,4,4,,none,,all,pools,no,yes,pure inference,10373,24-Apr-24
 ZZ,754,Zooplankton,zooplankton,6,756,Bacteria,microorganism,6,1,4,4,,none,,all,pools,no,yes,pure inference,10374,24-Apr-24
-ZZ_coded,748,Leptochelia sp.,tanaid,1,749,Detritus,dead stuff,NA,30,,3,NA,OIMB; 435,NA,all,NA,no,NA,NA,2509,22-Mar-24
-ZZ_coded,14,Leptocottus armatus,fish,1,748,Leptochelia sp.,isopod,1,1,1,3,1,OIMB; 435,California,NA,NA,y,y,NA,20603,3-Jun-24
-ZZ,205,Lottia strigatella,limpet,4,237,Tegula funebralis,snail,1,10,,7,,pers.comm. Jessica Bean,,high,both,y,,,332,
-ZZ,3034,Cathartes aura,bird,1,750,Carrion,dead stuff,NA,30,1,1,1,PO,"Gaviota, CA",high,exposed,n,y,"eaten by ""birds""",11625,2-Jun-24
-ZZ,2375,Haliotis sp. ,snail,4,2324,epiphytic diatoms,microalgae,1,1,3,1,,PO,,middle to low,pools,,yes,,4215,17-Apr-24
-ZZ,234,Margarites pupillus,snail,1,77,Ophlitaspongia pennata,sponge,,3,1,1,,PO,,,,,,,1727,
-ZZ,694,trypanorhynch_2,cestode,4,418,Octopus bimaculoides,octopus,1,6,,1,6,PO,Santa Barbara,low,pools,n,n,,10259,24-Apr-24
-ZZ,99,Anthopleura xanthogrammica,anemone,1,750,Carrion,dead stuff,NA,30,,4,,PO,,all,pools,n,y,,10267,24-Apr-24
-ZZ,3013,Larus californicus,bird,1,750,Carrion,dead stuff,1,1,4,4,,PO,,all,both,n,y,,11805,29-May-24
-ZZ_coded,1219,Argeia pugettensis,isopod,1,702,Crangon alaskensis,shrimp,1,6,,3,0,PO; 435,NA,NA,NA,no,NA,NA,2506,22-Mar-24
-ZZ,3022,Calidris virgata,bird,1,455,Pollicipes polymerous,barnacle,1,1,2,3,2,,Oregon,all,exposed,no,y,,18995,1-Jun-24
-ZZ,1365,Chromopleustes lineatus,gammarid,1,2324,epiphytic diatoms,microalgae,1,1,2,3,2,,"Puget Sound, WA",low,pools,,yes,,10767,25-Apr-24
-ZZ,1365,Chromopleustes lineatus,gammarid,1,155,Cucumaria miniata,sea cucumber,1,3,2,3,2,,"Puget Sound, WA",low,pools,,yes,prey item best guess by reference authors given shape of ossicles in consumer fecal pellets,10768,25-Apr-24
-ZZ,1365,Chromopleustes lineatus,gammarid,1,1988,Cucumaria piperata,sea cucumber,1,3,2,3,2,,"Puget Sound, WA",low,pools,,yes,prey item best guess by reference authors given shape of ossicles in consumer fecal pellets,10769,25-Apr-24
-ZZ,1365,Chromopleustes lineatus,gammarid,1,602,benthic diatoms,microalgae,1,1,2,3,2,,"Puget Sound, WA",low,pools,,yes,,10770,25-Apr-24
-ZZ,1365,Chromopleustes lineatus,gammarid,1,758,small crustaceans,microorganism,6,1,2,3,2,,"Puget Sound, WA",low,pools,,yes,,10771,25-Apr-24
-ZZ,1354,Cryptodius kelleri,gammarid,1,2324,epiphytic diatoms,microalgae,1,1,2,3,2,,"Puget Sound, WA",low,pools,,yes,,10777,25-Apr-24
-ZZ,1354,Cryptodius kelleri,gammarid,1,155,Cucumaria miniata,sea cucumber,1,3,2,3,2,,"Puget Sound, WA",low,pools,,yes,prey item best guess by reference authors given shape of ossicles in consumer fecal pellets,10778,25-Apr-24
-ZZ,1354,Cryptodius kelleri,gammarid,1,1988,Cucumaria piperata,sea cucumber,1,3,2,3,2,,"Puget Sound, WA",low,pools,,yes,prey item best guess by reference authors given shape of ossicles in consumer fecal pellets,10779,25-Apr-24
-ZZ,1354,Cryptodius kelleri,gammarid,1,602,benthic diatoms,microalgae,1,1,2,3,2,,"Puget Sound, WA",low,pools,,yes,,10780,25-Apr-24
-ZZ,1354,Cryptodius kelleri,gammarid,1,758,small crustaceans,microorganism,6,1,2,3,2,,"Puget Sound, WA",low,pools,,yes,,10781,25-Apr-24
+ZZ_coded,748,Leptochelia sp.,tanaid,1,749,Detritus,dead stuff,NA,30,,3,NA,439; 435,NA,all,NA,no,NA,NA,2509,22-Mar-24
+ZZ_coded,14,Leptocottus armatus,fish,1,748,Leptochelia sp.,isopod,1,1,1,3,1,439; 435,California,NA,NA,y,y,NA,20603,3-Jun-24
+ZZ,205,Lottia strigatella,limpet,4,237,Tegula funebralis,snail,1,10,,7,,531,,high,both,y,,,332,
+ZZ,3034,Cathartes aura,bird,1,750,Carrion,dead stuff,NA,30,1,1,1,530,"Gaviota, CA",high,exposed,n,y,"eaten by ""birds""",11625,2-Jun-24
+ZZ,2375,Haliotis sp. ,snail,4,2324,epiphytic diatoms,microalgae,1,1,3,1,,530,,middle to low,pools,,yes,,4215,17-Apr-24
+ZZ,234,Margarites pupillus,snail,1,77,Ophlitaspongia pennata,sponge,,3,1,1,,530,,,,,,,1727,
+ZZ,694,trypanorhynch_2,cestode,4,418,Octopus bimaculoides,octopus,1,6,,1,6,530,Santa Barbara,low,pools,n,n,,10259,24-Apr-24
+ZZ,99,Anthopleura xanthogrammica,anemone,1,750,Carrion,dead stuff,NA,30,,4,,530,,all,pools,n,y,,10267,24-Apr-24
+ZZ,3013,Larus californicus,bird,1,750,Carrion,dead stuff,1,1,4,4,,530,,all,both,n,y,,11805,29-May-24
+ZZ_coded,1219,Argeia pugettensis,isopod,1,702,Crangon alaskensis,shrimp,1,6,,3,0,530; 435,NA,NA,NA,no,NA,NA,2506,22-Mar-24
+ZZ,3022,Calidris virgata,bird,1,455,Pollicipes polymerous,barnacle,1,1,2,3,2,254,Oregon,all,exposed,no,y,,18995,1-Jun-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,2324,epiphytic diatoms,microalgae,1,1,2,3,2,254,"Puget Sound, WA",low,pools,,yes,,10767,25-Apr-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,155,Cucumaria miniata,sea cucumber,1,3,2,3,2,254,"Puget Sound, WA",low,pools,,yes,prey item best guess by reference authors given shape of ossicles in consumer fecal pellets,10768,25-Apr-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,1988,Cucumaria piperata,sea cucumber,1,3,2,3,2,254,"Puget Sound, WA",low,pools,,yes,prey item best guess by reference authors given shape of ossicles in consumer fecal pellets,10769,25-Apr-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,602,benthic diatoms,microalgae,1,1,2,3,2,254,"Puget Sound, WA",low,pools,,yes,,10770,25-Apr-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,758,small crustaceans,microorganism,6,1,2,3,2,254,"Puget Sound, WA",low,pools,,yes,,10771,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,2324,epiphytic diatoms,microalgae,1,1,2,3,2,254,"Puget Sound, WA",low,pools,,yes,,10777,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,155,Cucumaria miniata,sea cucumber,1,3,2,3,2,254,"Puget Sound, WA",low,pools,,yes,prey item best guess by reference authors given shape of ossicles in consumer fecal pellets,10778,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,1988,Cucumaria piperata,sea cucumber,1,3,2,3,2,254,"Puget Sound, WA",low,pools,,yes,prey item best guess by reference authors given shape of ossicles in consumer fecal pellets,10779,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,602,benthic diatoms,microalgae,1,1,2,3,2,254,"Puget Sound, WA",low,pools,,yes,,10780,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,758,small crustaceans,microorganism,6,1,2,3,2,254,"Puget Sound, WA",low,pools,,yes,,10781,25-Apr-24
 EMH,4,Hypsoblennius gilberti,fish,1,3,Gibbonsia elegans,fish,1,9,,3,0,,,,,,,can't find any support for this - remove,52,
 EMH,150,Pisaster ochraceus,sea star,1,149,Leptasterias hexactis,sea star,1,1,,3,0,,,,,,,can't find any support for this - remove,67,
-ZZ,1365,Chromopleustes lineatus,gammarid,1,2340,Acanthomysis sp.,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10772,25-Apr-24
-ZZ,1365,Chromopleustes lineatus,gammarid,1,2341,Alienacanthomysis macropsis,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10773,25-Apr-24
-ZZ,1365,Chromopleustes lineatus,gammarid,1,2342,Columbiaemysis ignota,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10774,25-Apr-24
-ZZ,1365,Chromopleustes lineatus,gammarid,1,2343,Holmesimysis costata,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10775,25-Apr-24
-ZZ,1365,Chromopleustes lineatus,gammarid,1,2344,Holmesimysis sculpta,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10776,25-Apr-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,2340,Acanthomysis sp.,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10772,25-Apr-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,2341,Alienacanthomysis macropsis,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10773,25-Apr-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,2342,Columbiaemysis ignota,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10774,25-Apr-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,2343,Holmesimysis costata,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10775,25-Apr-24
+ZZ,1365,Chromopleustes lineatus,gammarid,1,2344,Holmesimysis sculpta,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10776,25-Apr-24
 ,614,Corallina vancouveriensis,algae,1,409,Nuttallina californica,chiton,1,2,,6,NA,,,low,pools,,,,802,
-ZZ,1354,Cryptodius kelleri,gammarid,1,2340,Acanthomysis sp.,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10782,25-Apr-24
-ZZ,1354,Cryptodius kelleri,gammarid,1,2341,Alienacanthomysis macropsis,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10783,25-Apr-24
-ZZ,1354,Cryptodius kelleri,gammarid,1,2342,Columbiaemysis ignota,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10784,25-Apr-24
-ZZ,1354,Cryptodius kelleri,gammarid,1,2343,Holmesimysis costata,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10785,25-Apr-24
-ZZ,1354,Cryptodius kelleri,gammarid,1,2344,Holmesimysis sculpta,mysid,1,1,4,6,2,,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10786,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,2340,Acanthomysis sp.,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10782,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,2341,Alienacanthomysis macropsis,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10783,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,2342,Columbiaemysis ignota,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10784,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,2343,Holmesimysis costata,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10785,25-Apr-24
+ZZ,1354,Cryptodius kelleri,gammarid,1,2344,Holmesimysis sculpta,mysid,1,1,4,6,2,254,"Puget Sound, WA",low,pools,,yes,consumed mysids in lab setting,10786,25-Apr-24
 ZZ,480,Paracerceis cordata,isopod,1,,ZOSTERA EPIPHYTES,,,,,,0,,,,,,,"as ""epiphytic macroalgae"" on eelgrass",4055,13-Apr-24

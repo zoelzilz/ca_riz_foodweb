@@ -1,0 +1,73 @@
+---
+title: "Prep References"
+output: html_document
+date: "2024-06-11"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(janitor)
+library(lubridate)
+
+```
+```{r import data}
+
+refs_unclean <- read_csv("data/cariz_foodweb_refs_11jun2024.csv")
+
+litsearch_unclean <- read_csv("data/riz_lit_search_11jun2024.csv")
+
+
+```
+## Need to cross reference lit search reference numbers with the references list from Zotero
+
+```{r}
+
+## clean data up first
+#refs <- refs_unclean %>% 
+#  clean_names() %>% # make colnames snake case
+#  mutate(title = str_remove_all(title, c("<i>|</i>"))) %>%  # remove these characters from title
+#  mutate(title = str_to_sentence(title)) %>% # convert to sentence case
+#  mutate(firstauthor = str_remove(word(author, 1), ",")) %>%  # extracts just the first word from the string and removes comma after
+  # construct reference from data
+#  unite(reference, c(author, publication_year, title, publication_title, publisher, volume, issue, pages, doi
+#                             ), sep = ". ", # adds a period between each element. won't be perfect but it's something
+#        remove= FALSE, # we want to keep our og cols
+#        na.rm = TRUE) %>%  # if there's a missing element it wont put an NA
+#  select(publication_year, firstauthor, title, reference) 
+
+#write_csv(refs, "data/refs2.csv")
+
+# reimport manually edited version of refs
+refs <- read_csv("data/refs_final.csv")
+
+litsearch <- litsearch_unclean %>% 
+  clean_names() %>% 
+  distinct(paper_title, .keep_all = TRUE) %>% 
+  mutate(title = str_remove_all(paper_title, c("<i>|</i>"))) %>%  # remove these characters from title
+  mutate(title = str_to_sentence(title)) %>% 
+  mutate(reference_number = as.numeric(reference_number)) %>% 
+  select(reference_number, title, author, year, link_or_doi)
+
+#write_csv(litsearch, "data/refnums.csv")
+
+```
+
+### will try to do using title first, then first author/year combo
+```{r combine using title}
+
+refs_w_nums <- full_join(refs, litsearch, by = join_by(title))
+
+write_csv(refs_w_nums, "data/refs_to_edit.csv")
+```
+### extracting clean location info
+```{r}
+litsearch_locs <- litsearch_unclean %>% 
+  clean_names() %>% 
+  select(reference_number, nsboth, ca, ep_riz, general_location_of_study)
+
+# ugh gonna manually edit
+#write_csv(litsearch_locs, "data/litsearch_locations2.csv")
+```
+

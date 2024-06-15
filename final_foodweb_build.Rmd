@@ -41,7 +41,7 @@ potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_2jun24.csv") %>% #
 
 
 ## edges ##
-edges_unclean <- read_csv("data/links_frommaster_7jun2024.csv") %>% # updated again, as above
+edges_unclean <- read_csv("data/links_frommaster_7jun2024.csv") %>% # updated again jun 14 2024 to include some missing elements
   filter(!is.na(consumerNum)) %>% 
   filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
   filter(!is.na(resourceNum)) %>% 
@@ -202,7 +202,6 @@ nodes_attributes_clean <- all_nodes_w_attributes %>%
 #### we only want consumers/resources and their links in the web if those consumers/resources are in our clean node list
 
 ```{r rebuild edges from cleaned nodes}
-
 # starting with 10,028 edges #
 
 ############# we will "filter" out unmatched consumers first #############
@@ -250,19 +249,87 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
          consumerStage = consumerStage.x,
          consumerCat = consumerCat.x
          )
+```
+
+## We also need to code in some missing elements of columns:
+1. locality: if ref = 435, 436 (MAH, LS) then = "California" [done]
+2. stage: if category = hydroid, = 5 [done]
+3. confidence: if locality = california or CA and justification = 3, = 1. 
+               if locality = california or CA and justification = 6, = 2.
+               if locality /= california or CA and justification = 3, = 2. 
+               if locality /= california or CA and justification = 6, = 3. 
+               if anything else, 4 [done]
+               
+4. Justification: if incl "diss" = PO, if incl "PO", PO (done manually in excel)
+
+```{r clean further by filling in gaps}
+
+### pull in locations from new csv i just made of lit search locations
+locs <- read_csv("data/litsearch_locations.csv") %>% 
+  rename(ref_num = reference_number) %>% 
+  select(ref_num, general_location_of_study) %>% 
+  filter(!is.na(general_location_of_study)) %>% 
+  distinct(ref_num, general_location_of_study) %>%  # keeps only one row for each reference : location combo
+  mutate(general_location_of_study = str_remove_all(general_location_of_study, "\\.")) # remove periods
+
+edges_locs <- left_join(edges_clean, locs, by = join_by(ref_num)) # creates a new dataframe where i pulled in locations of references and linked them to links using ref_num
+
+######### pop in the missing elements (confidence, justification, locality) ##########
+
+edges_cleaner <- edges_locs %>% 
+  
+  ###### LOCALITY ######
+  # first unite the two locality cols into a new col
+  unite("localities", c("localities", "general_location_of_study"), sep = "; ", na.rm = TRUE) %>% 
+
+  mutate(localities = case_when(
+    is.na(localities) & str_detect(ref_num, "435") ~ "California",
+    is.na(localities) & str_detect(ref_num, "436") ~ "California",
+    is.na(localities) & str_detect(ref_num, "205") ~ "Northeastern Pacific",
+    .default = as.character(localities))
+    ) %>% 
+  
+  ###### LIFESTAGE ######
+  mutate(consumerStage = case_when(consumerCat == "hydroid" ~ "5", TRUE ~ as.character(consumerStage))) %>% # TRUE is same as default but apparently better
+  mutate(resourceStage = case_when(resourceCat == "hydroid" ~ "5", TRUE ~ as.character(resourceStage))) %>% 
+  
+  ###### CONFIDENCE ######
+  mutate(confidence = case_when(is.na(confidence) & str_detect(localities, ", CA|California") & justification == "3" ~ "1",
+                                is.na(confidence) & str_detect(localities, ", CA|California") & justification == "6" ~ "2",
+                                TRUE ~ as.character(confidence)
+                                )) %>% 
+  # if STILL NA then we're assuming not in ca
+  mutate(confidence = case_when(is.na(confidence) & justification == "3" ~ "2",
+                                is.na(confidence) & justification == "6" ~ "3",
+                                is.na(confidence) & justification == "4" ~ "4",
+                                is.na(confidence) & justification == "10" ~ "4",
+                                is.na(confidence) & justification == "1" ~ "1",
+                                is.na(confidence) & justification == "7" ~ "1",
+                                is.na(confidence) & justification == "13" ~ "1",
+                                TRUE ~ as.character(confidence)
+                                )) %>% 
+  # this is making a lot of duplicate rows for some reason so:
+  distinct(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type, ref_num, localities, .keep_all = TRUE) %>% 
+  
+  ## need to add one more line of code collapsing all localities for each reference
+  group_by(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type, ref_num) %>%
+  summarize(localities = paste0(unique(localities), collapse = "; "))
+
 
 
 # make a nice list with all of the confidences and references collapsed
-edges_final <- edges_clean %>% 
+edges_final <- edges_cleaner %>% 
   group_by(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type) %>% 
   summarize(ref_num = paste0(ref_num, collapse = ", "),
-            justification = paste0(justification, collapse = ", "),
+            justification = min(justification), 
+            #justification = paste0(justification, collapse = ", "), # actually, we want BEST justification, so using above instead
+            localities = paste0(unique(localities), collapse = "; "), # collapse localities into one col, unique is important to remove duplicate locations
             confidence = min(confidence),
             incl.code = min(incl.code)
-            ) # decided i dont need localities, or the other columns i left out
+            ) # decided i dont need the other columns i left out
 
 
-############# some dicking around
+############# some dicking around ############# 
 
 edges_experiment <- edges_clean %>% 
   group_by(resourceNum, consumerNum,interaction.type) %>% 
@@ -279,16 +346,7 @@ what_missing2 <- anti_join(edges_final, edges_clean, by = join_by(resourceNum))
 
 # down to 8654 total edges... I'm guessing removing the "rare/not present" resources didn't cut as many because we really focused on nodes as consumers instead of nodes as diet items??
 ```
-## Now we need to code in some missing elements of columns:
-1. locality: if ref = 435, 436 (MAH, LS) then = "California"
-2. stage: if category = hydroid, = 5
-3. confidence: if locality = california or CA and justification = 3, = 1. 
-               if locality = california or CA and justification = 6, = 2.
-               if locality /= california or CA and justification = 3, = 2. 
-               if locality /= california or CA and justification = 6, = 3. 
-               if anything else, 4
-               
-4. Justification: if incl "diss" = PO, if incl "PO", PO
+
 
 ## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
 ```{r saving current working node list and edge list}
