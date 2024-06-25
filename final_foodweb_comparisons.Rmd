@@ -1,0 +1,105 @@
+---
+title: "Food Web Comparisons"
+output: html_document
+date: "2024-06-25"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+library(viridis)
+library(cheddar)
+library(kableExtra)
+```
+
+
+```{r read in data}
+
+nodes <- read_csv("data/foodweb_V6/trophic_nodes.csv")
+links <- read_csv("data/foodweb_V6/trophic_links.csv")
+
+```
+# Time to compare foodwebs!
+## Let's start with parasites vs no parasites
+
+### First make subweb data
+```{r make no parasite subwebs}
+######################################
+########### NO PARASITES #############
+######################################
+
+########### filter parasites out to create new node list ########### 
+nodes_nopsites <- nodes %>% 
+  filter(parasite == "n")
+
+###########  subset the web using this new node list ########### 
+# we only want consumers/resource links in the web if those consumers/resources are in our clean node list
+# we can do this in five steps
+
+#1. create a "keep" list of consumers
+consumers_keep <- nodes_nopsites %>% 
+  dplyr::select(node) %>%  # we only need the unique identifier, "node", for matching
+  rename(consumer = node) # the unique identifier of consumers in the link list is "consumer", and these colnames must match
+
+#2. create a version of the link list that only has links with consumers in our "keep" list, e.g. free living organisms only
+consumer_keep_links <- inner_join(consumers_keep, links, by = join_by(consumer)) # inner join keeps only rows in 'links' that match 'consumers_keep'
+  
+#3. create a "keep" list of resources (this is identical to our consumer keep list, we just need to change the column name)
+resources_keep <- consumers_keep %>% 
+  rename(resource = consumer) # the unique identifier of resources in the link list is "resource", and these colnames must match
+
+#4. use 'inner_join()' to create a link list from the consumer_keep_links list that ALSO only has resources from the keep list, e.g. free living organisms
+links_nopsites <- inner_join(resources_keep, consumer_keep_links, by = join_by(resource))
+
+```
+
+### Then make cheddar and igraph objects
+```{r network objects}
+
+########### CHEDDAR ###########
+
+## with parasites ##
+# create properties list
+properties.p <- list(title = "ca riz parasites") #syntax that the help doc suggests
+
+# create community object
+ca_riz_parasites <- Community(nodes = nodes, properties.p, trophic.links = links)
+ca_riz_parasites
+
+## no parasites ##
+
+# create properties list
+properties.np <- list(title = "ca riz no parasites") #syntax that the help doc suggests
+
+# create community object
+ca_riz_freeliving <- Community(nodes = nodes_nopsites, properties.p, trophic.links = links_nopsites)
+ca_riz_freeliving
+
+############ IGRAPH ############
+
+## with parasites ##
+igraph_links <- links %>% 
+  relocate(consumer, .after = resource) 
+
+igraph_psites <- graph_from_data_frame(d= igraph_links, # all links
+                             vertices = nodes,
+                             directed=T) # this makes sure resources (from) "point" to consumers (to)
+
+## no parasites ##
+igraph_links_np <- links_nopsites %>% 
+  relocate(consumer, .after = resource)
+
+igraph_nopsites <- graph_from_data_frame(d= igraph_links_np, # all links
+                             vertices = nodes_nopsites,
+                             directed=T) # this makes sure resources (from) "point" to consumers (to)
+
+```
+

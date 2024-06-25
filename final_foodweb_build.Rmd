@@ -35,13 +35,13 @@ library(tidyverse)
 ```{r import potential nodes and edge list}
 
 ## nodes ##
-potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_2jun24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links AND THEN AGAIN UPDATE TO 5/3 VERSION to fix some mistakes and finally 5/6 i hope; lol jk its june 2nd and i'm still updating things
+potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_18jun24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links AND THEN AGAIN UPDATE TO 5/3 VERSION to fix some mistakes and finally 5/6 i hope; lol jk its june 2nd and i'm still updating things
   rename(nodeNum = id.x)
 #View(potential_nodes)
 
 
 ## edges ##
-edges_unclean <- read_csv("data/links_frommaster_7jun2024.csv") %>% # updated again jun 14 2024 to include some missing elements
+edges_unclean <- read_csv("data/links_frommaster_18jun2024.csv") %>% # updated again jun 14 2024 to include some missing elements
   filter(!is.na(consumerNum)) %>% 
   filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
   filter(!is.na(resourceNum)) %>% 
@@ -54,7 +54,8 @@ edges_unclean <- read_csv("data/links_frommaster_7jun2024.csv") %>% # updated ag
   # now we can remove links that don't belong in the riz web:
   
   filter(incl.code != 7 # interaction occurs outside RIZ
-         )
+         ) %>% 
+  filter(incl.code != 0) # manually removed interaction late in the game
 #View(edges_unclean)
 
 ```
@@ -136,12 +137,17 @@ nodes_attributes_clean <- all_nodes_w_attributes %>%
                                  life_stage == "cystacanth" ~ 3,
                                  life_stage == "hatchling" ~ 3,
                                  life_stage == "megalops" ~ 3,
+                                 life_stage == "parthenitae" ~ 3,
+                                 life_stage == "redia" ~ 3,
+                                 life_stage == "cercaria" ~ 3,
+                                 life_stage == "sporocyst" ~ 3,
                                  
                                  # second stage larvae
                                  life_stage == "plerocercoid" ~ 4,
                                  life_stage == "plerocercoid?" ~ 4,
                                  life_stage == "juvenile" & organismal_category == "fish" ~ 4, 
                                  life_stage == "juvenile" & str_detect(organismal_category, "snail") ~ 4, 
+                                 life_stage == "juvenile" & organismal_category == "bivalve" ~ 4,
                                  life_stage == "juvenile" & organismal_category == "chiton" ~ 4, 
                                  life_stage == "juvenile" & organismal_category == "true crab" ~ 4, 
                                  life_stage == "juvenile" & organismal_category == "lobster" ~ 4, 
@@ -151,6 +157,7 @@ nodes_attributes_clean <- all_nodes_w_attributes %>%
                                  life_stage == "juvenile" & organismal_category == "chaetognath" ~ 4,
                                  life_stage == "juvenile" & organismal_category == "acanthocephalan" ~ 4,
                                  life_stage == "juvenile" & organismal_category == "leech" ~ 4,
+                                 life_stage == "juvenile" & organismal_category == "nematode" ~ 4,
                                  life_stage == "pupae" ~ 4,
                                  life_stage == "small" ~ 4,
                                  life_stage == "young" ~ 4,
@@ -160,6 +167,7 @@ nodes_attributes_clean <- all_nodes_w_attributes %>%
                                  life_stage == "metacercaria" ~ 5,
                                  life_stage == "metacercariae" ~ 5,
                                  life_stage == "hydroid" ~ 5,
+                                 organismal_category == "hydroid" ~ 5,
                                  life_stage == "hydroid colony" ~ 5,
                                  life_stage == "juvenile" & organismal_category == "barnacle" ~ 5,
                                  life_stage == "juvenile" & organismal_category == "copepod" ~ 5,
@@ -232,6 +240,7 @@ resourceNums_keep <- nodes_attributes_clean %>%
          resourceCat = organismal_category) # to match consumerNum for joining
 
 # inner join lets us make a dataset that keeps only the nodeNums (if we join by numbers) that are in BOTH datasets
+# "An inner_join() only keeps observations from x that have a matching key in y"
 
 edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resourceNum)) %>%  # we can name this one edges_clean because we're done!
   
@@ -317,6 +326,9 @@ edges_cleaner <- edges_locs %>%
   ###### LIFESTAGE ######
   mutate(consumerStage = case_when(consumerCat == "hydroid" ~ "5", TRUE ~ as.character(consumerStage))) %>% # TRUE is same as default but apparently better
   mutate(resourceStage = case_when(resourceCat == "hydroid" ~ "5", TRUE ~ as.character(resourceStage))) %>% 
+  
+  # we also (ugh, realized this 6/18) need to make sure that there are no consumers that are EGGS:
+  filter(consumerStage != 2) %>%  # ok only removing 77 interactions, phew
   
   ###### CONFIDENCE ######
   mutate(confidence = case_when(is.na(confidence) & str_detect(localities, ", CA|California") & justification == "3" ~ "1",
@@ -454,25 +466,64 @@ edges_final <- edges_collapse %>%
   #mutate(justification = sapply(justification, function(x) paste(min(unlist(strsplit(x, ","))), collapse = ";")))
   # above works, below is cleaner:
   ungroup() %>% # not sure if necessary
-  mutate(justification = parse_number(justification)) #This parses the first number it finds, dropping any non-numeric characters before the first number and all characters after the first number (we're assuming lowest number is first)
+  mutate(justification = parse_number(justification))#This parses the first number it finds, dropping any non-numeric characters before the first number and all characters after the first number (we're assuming lowest number is first)
+  
+```
+## Last thing we need to do (for pub, since this requires code downstream otherwise) is make a new node list containing ONLY the clean clean cleanest list of nodes that are present in the web, and nothing else 
+(e.g. removing nodes that dont have any interactions... which can be done in code but again, for the pub)
+
+```{r final node list from final links}
+
+# first pull out dataframe of just consumers and their IDs
+consumers_from_edgelist_final <- edges_final %>% 
+  dplyr::select(consumerNum, consumerName) %>% 
+  rename(nodeNum = consumerNum,
+         nodeName = consumerName) # column names need to match resources df
+
+# then dataframe of just resources and their IDs
+resources_from_edgelist_final <- edges_final %>% 
+  dplyr::select(resourceNum, resourceName) %>% 
+  rename(nodeNum = resourceNum,
+         nodeName = resourceName) # column names need to match consumers df
+
+# stack them with rbind
+nodes_final <- rbind(resources_from_edgelist_final, consumers_from_edgelist_final) %>% 
+  distinct(nodeNum, .keep_all = TRUE)
+  
+# got to this point in the code and realized that a lot of nodes in the edge list don't have id numbers even though they belong in the web, so leaving to manually fix those real quick
+# fixed and updated edge list to version .1
+
+# add attributes from potential nodes list
+final_nodes_w_attributes <- left_join(nodes_final, nodes_attributes_clean, by = join_by(nodeNum)) %>% 
+  dplyr::select(!nodeName) %>%  # removing this column because it's actually often innacurate (old sp name, etc)
+  filter(!is.na(species))
 
 ```
 
 
-## We're going to take a pause to save these dataframes as CSVs for reproducibility's sake
+## We're going to take a pause to save these dataframes as CSVs for the next rmd
 ```{r saving current working node list and edge list}
 
-write_csv(nodes_attributes_clean, "data/foodweb_V5/nodes_final_15jun2024.csv")
+write_csv(final_nodes_w_attributes, "data/foodweb_V6/nodes_final_18jun2024.csv")
 
-write_csv(edges_final, "data/foodweb_V5/links_final_15jun2024.csv")
+write_csv(edges_final, "data/foodweb_V6/links_final_18jun2024.csv")
 
-write_csv(edges_cleaner, "data/foodweb_V5/links_uncollapsed_15jun2024.csv")
+write_csv(edges_cleaner, "data/foodweb_V6/links_uncollapsed_18jun2024.csv")
 
 ```
 
 ### At this point we can move over to final_foodweb_analyses ->
 
 ```{r}
+############ some checks and balances e.g. why did removing eggs as consumers delete over 100 species from the web
+
+#view(final_nodes_w_attributes_test) # with eggs as consumers
+#view(final_nodes_w_attributes) # eggs as consumers removed, as it should be
+
+#why <- anti_join(final_nodes_w_attributes_test, final_nodes_w_attributes,  by = join_by(nodeNum))
+
+# turns out it was also filtering out NAs and I had some parasites in the node list that didn't have life stage categories
+
 ############# some dicking around ############# 
 
 edges_experiment <- edges_clean %>% 

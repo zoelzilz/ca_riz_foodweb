@@ -28,6 +28,7 @@ library(ndtv)
 library(tidyverse)
 library(viridis)
 library(cheddar)
+library(kableExtra)
 
 ```
 
@@ -37,7 +38,7 @@ library(cheddar)
 (we created and saved these csvs in the final_foodweb_build RMD)
 ```{r read in clean data}
 
-nodes <- read_csv("data/foodweb_V5/nodes_final_15jun2024.csv") %>% 
+nodes <- read_csv("data/foodweb_V6/nodes_final_18jun2024.csv") %>% 
   mutate(parasite = case_when(str_detect(trophic_strategy, "parasit") ~ "y",
                               trophic_strategy == "pathogen" ~ "y",
                               .default = "n")) %>% 
@@ -52,11 +53,10 @@ nodes <- read_csv("data/foodweb_V5/nodes_final_15jun2024.csv") %>%
          mobility = mobile_or_sessile
          ) %>% 
   # select and reorder
-  select(node, nodeNum, nodeName, synonymies, category, common_name, life_stage, life_stage_code, province, commonality, reference, zone, habitat_notes, grouping_habits, mobility, trophic_strategy, node_type, node_resolution, aphia, kingdom, phylum, class, order, family, genus)
-
+  select(node, nodeNum, nodeName, synonymies, category, common_name, life_stage, life_stage_code, province, commonality, reference, zone, habitat_notes, grouping_habits, mobility, trophic_strategy, node_type, node_resolution, aphia, kingdom, phylum, class, order, family, genus, parasite) 
 #view(nodes)
 
-all_links <- read_csv("data/foodweb_V5/links_final_15jun2024.csv")
+all_links <- read_csv("data/foodweb_V6/links_final_18jun2024.csv")
 
 # calling the links list "links" but it's ONLY trophic links
 #also switched from using the uncollapsed link list (~15k links) to the [final] list with no duplicates (~14k links)
@@ -85,12 +85,268 @@ links <- all_links %>%
   # make a new column that concatenates node name, num, and life stage bc cheddar can't handle numeric node names
   unite(resource, c(resourceNum, resourceName, resourceStage), sep = "_", remove = FALSE) %>% 
   unite(consumer, c(consumerNum, consumerName, consumerStage), sep = "_", remove = FALSE) %>% 
-  rename(interactionZone = zone)
+  rename(interactionZone = zone) %>% 
+  select(resource, resourceNum, resourceName, resourceCat, resourceStage, consumer, consumerNum, consumerName, consumerCat, consumerStage, interactionType, referenceNum, justification, confidence, localities, interactionZone, habitat, parasitic) # reorder so they match col descriptors
+
 
 
 # final time we will write csvs!! these are what we're publishing
-write_csv(links, "data/foodweb_V5/trophic_links.csv") # cols a little out of order so fix manually or whatever
-write_csv(nodes, "data/foodweb_V5/trophic_nodes.csv")
+# need to go multiple places:
+write_csv(links, "data/foodweb_V6/trophic_links.csv") 
+write_csv(links, "/Users/zoe/Documents_Local/GitHub/zilz_etal_2024_FoodWebForCARIZ/links.csv")
+write_csv(links, "/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Nature Data Paper Manuscript Materials/dataset/links.csv") 
+
+write_csv(nodes, "data/foodweb_V6/trophic_nodes.csv") # this project
+write_csv(nodes, "/Users/zoe/Documents_Local/GitHub/zilz_etal_2024_FoodWebForCARIZ/nodes.csv") # repo that we're publishing
+write_csv(nodes, "/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Nature Data Paper Manuscript Materials/dataset/nodes.csv") # dataset files with manuscript
+
+# if you change these, don't forget to update the dryad AND push to git
+
+```
+
+## Switching to cheddar for the analyses
+#### Our csvs have to be a little different now:
+https://cran.r-project.org/web/packages/cheddar/vignettes/ImportExport.pdf
+### OR we can manipulate our existing dataframes to fit cheddar's standards (more reproducible but cheddar hates this and makes it hard)
+```{r create cheddar data}
+# adjust dataframes a littel for cheddar (node column needs to be called node, links column needs to have consumer and resource columns, need a properties dataframe?)
+
+cheddar_nodes <- nodes %>% 
+  rename(nodeCat = category, # cheddar requires a category column to include very specific values
+         functional.group = trophic_strategy # cheddar recognizes "functional group" but not trophic strategy
+         ) #%>% 
+  
+  # we will also add a column for color
+  #mutate(nodeColor = case_when())
+
+trophic.links <- links %>% 
+  # cheddar can't handle duplicates so we need to get rid of them
+  distinct(consumer, resource, .keep_all = TRUE)
+
+# create properties list
+properties <- list(title = "ca riz total") #syntax that the help doc suggests
+
+# create community object
+ca_riz_total <- Community(cheddar_nodes, properties, trophic.links = trophic.links)
+ca_riz_total
+
+
+```
+
+### Actual analysis time!
+### some non-network metrics that food web papers usually report:
+https://cran.r-project.org/web/packages/cheddar/vignettes/Community.pdf
+```{r summary metrics}
+
+# top predators (incoming non-parasite links only)
+FractionNonTopLevelNodes(ca_riz_total)
+
+# intermediate consumers
+FractionIntermediateNodes(ca_riz_total)
+
+# primary producers or basal links
+FractionBasalNodes(ca_riz_total)
+
+# isolated nodes
+FractionIsolatedNodes(ca_riz_total)
+IsolatedNodes(ca_riz_total)
+
+# parasite nodes
+pnodes <- nodes %>% 
+  filter(parasite == "y") %>% 
+  count()
+pnodes
+
+#parasite taxa
+sp_pnodes <- nodes %>% 
+  #filter(node_resolution == "Species") %>% 
+  filter(parasite == "y") %>% 
+  distinct(nodeName) %>% 
+  count()
+sp_pnodes
+
+# all species
+spnodes <- nodes %>% 
+  filter(node_resolution == "Species") %>% 
+  distinct(nodeName) %>% 
+  count()
+spnodes
+
+# free living nodes
+
+fnodes <- nodes %>% 
+  filter(parasite =="n") %>% 
+  count()
+fnodes
+
+# free living taxa
+
+sp_fnodes <- nodes %>% 
+  filter(parasite == "n") %>% 
+  distinct(nodeName) %>% 
+  count()
+sp_fnodes
+
+# parasitic links
+plinks <- links %>% 
+  filter(parasitic == "y") %>% 
+  count()
+plinks
+
+# i really want to make a table... how??
+# we can make a nice table of all these metrics to visualize them all at once
+  metric_table <- as.data.frame(metrics <- c("species", "free living", "free living taxa", "parasites", "parasite taxa", "parasitic links", "basal nodes", "intermediate nodes", "top consumers", "isolated nodes" ),
+                                values <- 1:10, 
+                                rownames_to_column(values))
+
+vals <- as.numeric(c(sp_nodes, fnodes, sp_fnodes, pnodes, sp_pnodes, plinks, basal, int, top, isolated))
+
+# omnivory (taxa feeding on multiple trophic levels)
+
+# cannibalism
+
+options(cheddarMaxQueue=0)
+#TrophicChains(ca_riz_total) # web is too big for this
+#chain.stats <- TrophicChainsStats(ca_riz_total) # web is also too big for this
+
+#ca_riz_total_x <- RemoveIsolatedNodes(ca_riz_total) # have to do this downstream or the vector is the wrong length
+trophic_levels <- PreyAveragedTrophicLevel(ca_riz_total)
+
+#kable(cbind(c(spnodes, pnodes, sp_fnodes, sp_pnodes, plinks)))
+
+
+```
+
+```{r visualization with cheddar}
+
+PlotPredationMatrix(ca_riz_total, colour.by='parasitic')
+PlotWebByLevel(ca_riz_total, colour.by='functional.group')
+
+```
+
+```{r export cheddar community to igraph}
+# need to create function first
+ToIgraph <- function(community, weight=NULL)
+{
+if(is.null(TLPS(community)))
+{
+stop('The community has no trophic links')
+}
+else
+{
+tlps <- TLPS(community, link.properties=weight)
+if(!is.null(weight))
+{
+tlps$weight <- tlps[,weight]
+}
+return (graph_from_data_frame(tlps,
+vertices=NPS(community),
+directed=TRUE))
+}
+}
+
+ca_riz_ig <- ToIgraph(ca_riz_total)
+
+```
+
+```{r plot the igraph object and make it look nice}
+
+```
+
+
+```{r starting with igraph}
+
+############# set up igraph dataframes ################
+
+# igraph requires that first two columns of link dataframe are "symbolic edge list"
+igraph_links <- trophic.links %>% 
+  relocate(consumer, .after = resource) # need to make this from, to; so resource, consumer
+
+igraph_nodes <- cheddar_nodes %>% 
+  mutate(trophic_level = trophic_levels) # need to add the trophic levels on here that we calculated using cheddar
+
+############# make igraph object ################
+
+trophic_web_psites1 <- graph_from_data_frame(d= igraph_links, # all links
+                             vertices = igraph_nodes, # igraph filters out nodes that don't have any interactions automatically
+                             directed=T) # this makes sure resources (from) "point" to consumers (to)
+
+# save degree for later use and add it to nodes df:
+deg <- igraph::degree(trophic_web_psites1, mode = "all") 
+igraph_nodes_1 <- igraph_nodes %>% 
+  mutate(degree = deg)
+
+# remove unconnected nodes still remaining in web
+isolated = which(igraph::degree(trophic_web_psites1)==0)
+trophic_web_psites = delete_vertices(trophic_web_psites1, isolated)
+
+# make the right length of trophic level vector, removing unconnected nodes from igraph_nodes and therefore their TLs
+# very complicated, annoying
+# first make the isolated igraph object into a dataframe and extract the node column
+isolated.df <- as.data.frame(isolated) %>% 
+  rownames_to_column("node")
+#then turn that column into a list
+todelete <- as.list(isolated.df$node)
+# then filter OUT any nodes that are in that list
+igraph_nodes2 <- igraph_nodes_1 %>% 
+  filter(!node %in% todelete) #phew
+
+# save degree for later use (probably not necessary to do again, but just in case)
+deg <- igraph::degree(trophic_web_psites, mode = "all") 
+
+# make matrix for plotting
+RIZadjmatrix <- as_adjacency_matrix(trophic_web_psites,
+                                    sparse = FALSE)
+
+############### create custom layout using trophic levels ################
+# First we need to create a two-column matrix identifying the x and y values for each node.
+layout.matrix.1 <- matrix(nrow=length(V(trophic_web_psites)), # Rows equal to the number of vertices
+                        ncol=2)
+layout.matrix.1[,1] <- runif(length(V(trophic_web_psites))) # randomly assign positions along x-axis (like jitter)
+layout.matrix.1[,2] <- igraph_nodes2$trophic_level
+
+
+############### pre set some colors for plotting #################
+# node colors:
+V(trophic_web_psites)$color <- case_when(igraph_nodes2$parasite == "y" ~ "red",
+                                         igraph_nodes2$functional.group == "primary producer" ~ "green",
+                                         igraph_nodes2$functional.group == "mixotroph" ~ "green",
+                                         #igraph_nodes2$functional.group == "detritivore" ~ "brown",
+                                         #igraph_nodes2$functional.group == "deposit feeder" ~ "brown",
+                                         igraph_nodes2$functional.group == "non-feeding" ~ "gold",
+                                         igraph_nodes2$nodeName == "Bacteria" ~ "gold",
+                                         igraph_nodes2$nodeName == "UNKNOWN" ~ "gold",
+                                         igraph_nodes2$nodeCat == "dead stuff" ~ "tan",
+                                         TRUE ~ "blue")
+# edge colors
+E(trophic_web_psites)$color <- case_when(igraph_links$parasitic == "y" ~ "red",
+                                         igraph_links$parasitic == "n" ~ "blue",)
+
+igraph_nodes_colors <- igraph_nodes2 %>% 
+  mutate(colorz = V(trophic_web_psites)$color)
+
+############## PLOT! #############
+rizvis <- plot.igraph(trophic_web_psites,
+                      vertex.label = NA,
+                      vertex.frame.color = "white",
+                      vertex.size=3,
+                      edge.arrow.size=.25,
+                      layout=layout.matrix.1 
+                     )
+```
+
+```{r save plot to file}
+
+# make sure to run all together
+png(filename = "figures/ca_riz_foodweb_final.png", width = 11, height = 10, units = "in", res = 1000)
+plot.igraph(trophic_web_psites,
+                      vertex.label = NA, 
+                      vertex.frame.color = "white",
+                      vertex.size=3,
+                      edge.arrow.size=.25,
+                      layout=layout.matrix.1 
+                     )
+dev.off()
 
 ```
 
@@ -211,96 +467,3 @@ zone_barplot <- ggplot(zone_groups, aes(fill = zone, x = n_s, y = count)) +
 zone_barplot
 
 ```
-
-
-
-## Switching to cheddar for the analyses
-#### Our csvs have to be a little different now:
-https://cran.r-project.org/web/packages/cheddar/vignettes/ImportExport.pdf
-### OR we can manipulate our existing dataframes to fit cheddar's standards (more reproducible but cheddar hates this and makes it hard)
-```{r create cheddar data}
-# adjust dataframes a littel for cheddar (node column needs to be called node, links column needs to have consumer and resource columns, need a properties dataframe?)
-
-cheddar_nodes <- nodes # ugh i hate this but i don't have a choice
-
-
-trophic.links <- links %>% 
-  # cheddar can't handle duplicates so we need to get rid of them
-  distinct(consumer, resource, .keep_all = TRUE)
-
-# create properties list
-properties <- list(title = "ca riz total") #syntax that the help doc suggests
-
-# create community object
-ca_riz_total <- Community(cheddar_nodes, properties, trophic.links = trophic.links)
-ca_riz_total
-
-```
-
-### Actual analysis time!
-### some non-network metrics that food web papers usually report:
-https://cran.r-project.org/web/packages/cheddar/vignettes/Community.pdf
-```{r summary metrics}
-
-# top predators (incoming non-parasite links only)
-FractionNonTopLevelNodes(ca_riz_total)
-
-# intermediate consumers
-FractionIntermediateNodes(ca_riz_total)
-
-# primary producers or basal links
-FractionBasalNodes(ca_riz_total)
-
-# isolated nodes
-FractionIsolatedNodes(ca_riz_total)
-IsolatedNodes(ca_riz_total)
-
-# parasite nodes
-pnodes <- nodes %>% 
-  filter(parasite == "y") %>% 
-  count()
-pnodes
-
-#parasite species
-sp_pnodes <- nodes %>% 
-  filter(parasite == "y") %>% 
-  distinct(species) %>% 
-  count()
-sp_pnodes
-
-# all species
-spnodes <- nodes %>% 
-  distinct(species) %>% 
-  count()
-spnodes
-
-# free living nodes
-
-fnodes <- nodes %>% 
-  filter(parasite == "n") %>% 
-  count()
-fnodes
-
-# free living species
-
-sp_fnodes <- nodes %>% 
-  filter(parasite == "n") %>% 
-  distinct(species) %>% 
-  count()
-sp_fnodes
-
-# parasitic links
-plinks <- links %>% 
-  filter(parasitic == "y") %>% 
-  count()
-plinks
-
-# omnivory (taxa feeding on multiple trophic levels)
-
-# cannibalism
-
-#TrophicChains(ca_riz_total) # web is too big for this
-#chain.stats <- TrophicChainsStats(ca_riz_total) # web is also too big for this
-
-```
-
