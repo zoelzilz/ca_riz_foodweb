@@ -18,6 +18,9 @@ library(tidyverse)
 library(viridis)
 library(cheddar)
 library(kableExtra)
+library(devtools)
+#install_github("lsaravia/multiweb")
+library(multiweb)
 ```
 
 
@@ -101,5 +104,40 @@ igraph_nopsites <- graph_from_data_frame(d= igraph_links_np, # all links
                              vertices = nodes_nopsites,
                              directed=T) # this makes sure resources (from) "point" to consumers (to)
 
+```
+
+### I would first like to visualize degree (# links/node) distribution (PDF) for each web
+```{r degree distribution}
+
+# create degree and add it to nodes dfs:
+deg <- igraph::degree(igraph_psites, mode = "all") 
+nodes <- nodes %>% 
+  mutate(degree = deg)
+
+deg.p <- igraph::degree(igraph_nopsites, mode = "all") 
+nodes_nopsites <- nodes_nopsites %>% 
+  mutate(degree = deg.p)
+
+
+# plot degree PDF for parasites web
+
+ggplot(nodes, aes(x = degree)) +
+  geom_histogram(binwidth = 1) + 
+  geom_density()
+
+# plot degree eCDF for parasites web
+ggplot(nodes, aes(x = degree)) +
+  geom_line(stat = "ecdf")+
+  geom_point(stat = "ecdf")
+
+# plot degree PDF for no parasites web
+ggplot(nodes_nopsites, aes(x = degree)) +
+  geom_histogram(binwidth = 1) + 
+  geom_density()
+
+# plot degree eCDF for no parasites web
+ggplot(nodes_nopsites, aes(x = degree)) +
+  geom_line(stat = "ecdf")+
+  geom_point(stat = "ecdf")
 ```
 
