@@ -1,6 +1,8 @@
 ---
 title: "Food Web Comparisons"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 date: "2024-06-25"
 ---
 
@@ -21,6 +23,9 @@ library(kableExtra)
 library(devtools)
 #install_github("lsaravia/multiweb")
 library(multiweb)
+library(NetworkExtinction)
+
+#options(knitr.table.format = "latex")
 ```
 
 
@@ -83,7 +88,7 @@ ca_riz_parasites
 properties.np <- list(title = "ca riz no parasites") #syntax that the help doc suggests
 
 # create community object
-ca_riz_freeliving <- Community(nodes = nodes_nopsites, properties.p, trophic.links = links_nopsites)
+ca_riz_freeliving <- Community(nodes = nodes_nopsites, properties.np, trophic.links = links_nopsites)
 ca_riz_freeliving
 
 ############ IGRAPH ############
@@ -106,17 +111,17 @@ igraph_nopsites <- graph_from_data_frame(d= igraph_links_np, # all links
 
 ```
 
-### I would first like to visualize degree (# links/node) distribution (PDF) for each web
+### I would first like to visualize degree (# links/node) distribution (PDF) and cumulative distribution (eCDF) for each web
 ```{r degree distribution}
 
 # create degree and add it to nodes dfs:
-deg <- igraph::degree(igraph_psites, mode = "all") 
+deg.p <- igraph::degree(igraph_psites, mode = "all") 
 nodes <- nodes %>% 
-  mutate(degree = deg)
-
-deg.p <- igraph::degree(igraph_nopsites, mode = "all") 
-nodes_nopsites <- nodes_nopsites %>% 
   mutate(degree = deg.p)
+
+deg.np <- igraph::degree(igraph_nopsites, mode = "all") 
+nodes_nopsites <- nodes_nopsites %>% 
+  mutate(degree = deg.np)
 
 
 # plot degree PDF for parasites web
@@ -139,5 +144,160 @@ ggplot(nodes_nopsites, aes(x = degree)) +
 ggplot(nodes_nopsites, aes(x = degree)) +
   geom_line(stat = "ecdf")+
   geom_point(stat = "ecdf")
+
+# turns out package NetworkExtinction has a really nice function for this as well (oh oops so does igraph and cheddar)
+# parasites #
+psites_adj<- as.network(as_adjacency_matrix(igraph_psites), matrix.type = "adjacency")
+
+NetworkExtinction::DegreeDistribution(psites_adj)
+
+# without #
+nopsites_adj<- as.network(as_adjacency_matrix(igraph_nopsites), matrix.type = "adjacency")
+NetworkExtinction::DegreeDistribution(nopsites_adj)
+
 ```
+
+## Ok, so for actually comparing webs, Dana compared the following:
+- # nodes
+- # links
+- link density
+- Connectance
+- Adjusted connectance (Lafferty et al 2006)
+- Longest chain
+- Mean degree
+- Sd degree
+- Mean generality
+- Sd generality
+- Mean vulnerability
+- Sd vulnerability
+
+### For parasite web
+```{r calculating metrics parasites}
+
+########## Parasite Web ########## 
+# total potential links (m)
+m <- vcount(igraph_psites)^2
+
+# link density
+link_dens.p <- edge_density(igraph_psites, loops = TRUE) # links/# nodes
+
+# connectance # links/potential links
+connectance <- vcount(igraph_psites)/m
+
+# longest chain
+longest.p <- diameter(igraph_psites)
+
+# mean chain length:
+mean_chain <- mean_distance(igraph_psites, directed = TRUE, details = TRUE)
+average_chain_length_p <- mean_chain$res
+## cannot find a way to extract any measure of variance
+
+# histogram of chain lengths 1-8
+dtable.p <- distance_table(igraph_psites, directed = TRUE)
+
+# matrix of all distances between all nodes
+dist.p <- distances(igraph_psites, algorithm = "dijkstra")
+
+# mean degree
+mean_deg.p <- mean(deg.p)
+sd_deg.p <- sd(deg.p)
+
+# mean generality
+out.p <- igraph::degree(igraph_psites, mode = "out")
+mean_gen.p <- mean(out.p)
+sd_gen.p <- sd(out.p)
+
+# mean vulnerability
+inn <- igraph::degree(igraph_psites, mode = "in")
+mean_vul.p <- mean(inn)
+sd_vul.p <- sd(inn)
+
+```
+
+### For free no parasites/living web
+```{r calculating metrics free living}
+
+########## Parasite Web ########## 
+# total potential links (m)
+m.np <- vcount(igraph_nopsites)^2
+
+# link density
+link_dens.np <- edge_density(igraph_nopsites, loops = TRUE) # links/# nodes
+
+# connectance # links/potential links
+connectance.np <- vcount(igraph_nopsites)/m.np
+
+# longest chain
+longest.np <- diameter(igraph_nopsites)
+
+# mean chain length:
+mean_chain.np <- mean_distance(igraph_nopsites, directed = TRUE, details = TRUE)
+average_chain_length.np <- mean_chain.np$res
+## cannot find a way to extract any measure of variance
+
+# histogram of chain lengths 1-8
+dtable.np <- distance_table(igraph_nopsites, directed = TRUE)
+
+# matrix of all distances between all nodes
+dist.np <- distances(igraph_nopsites, algorithm = "dijkstra")
+
+# mean degree
+mean_deg.np <- mean(deg.np)
+sd_deg.np <- sd(deg.np)
+
+# mean generality
+out.np <- igraph::degree(igraph_nopsites, mode = "out")
+mean_gen.np <- mean(out.np)
+sd_gen.np <-sd(out.np)
+
+# mean vulnerability
+in.np <- igraph::degree(igraph_nopsites, mode = "in")
+mean_vul.np <- mean(in.np)
+sd_vul.np <- sd(in.np)
+```
+
+### Make a nice table comparing values
+```{r psite vs free living table}
+
+values <- c("Total Possible Links", "Link Density", "Connectance", "Longest Chain", "Mean Chain Length", "Mean Degree", "SD Degree","Mean Generality", "SD Generality", "Mean Vulnerability", "SD Vulnerability")
+parasite <- c(m, link_dens.p, connectance, longest.p, average_chain_length_p, mean_deg.p, sd_deg.p, mean_gen.p, sd_gen.p, mean_vul.p, sd_vul.p)
+free_living <- c(m.np, link_dens.np, connectance.np, longest.np, average_chain_length.np, mean_deg.np, sd_deg.np, mean_gen.np, sd_gen.np, mean_vul.np, sd_vul.np)
+
+psite_comp_table <- tibble(values, parasite, free_living)
+kable(psite_comp_table) %>% 
+  kable_classic(html_font = "Cambria")
+```
+
+
+```{r graveyard}
+
+##### attempts to use cheddar for chain length calculations failed because of web size #####
+
+#options(cheddarMaxQueue=0)
+
+# We remove cannibalistic links to avoid entering an infinte loop when calculating path lengths
+#ca_riz_parasites1 <- RemoveCannibalisticLinks(ca_riz_parasites, title='no cannibals')
+#ca_riz_parasites_ag <- LumpTrophicSpecies(ca_riz_parasites, include.isolated = FALSE, title = 'trophic sp', weight.by = NULL)
+
+#QuantitativeDescriptors(ca_riz_parasites_ag, weight = 'confidence')
+#TrophicChainsStats(ca_riz_parasites_ag)
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
