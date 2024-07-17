@@ -1,0 +1,56 @@
+---
+title: "Species Distributions with rgbif"
+output: html_document
+date: "2024-07-16"
+---
+
+```{r setup, include=FALSE}
+# packages
+
+library(rgbif)
+library(tidyverse)
+library(usethis)
+
+#usethis::edit_r_environ() #lets me enter my gbif name, email, password so I can use occ_download()
+
+
+```
+
+# We are going to attempt to fix the province column the lazy way, aka using GBIF location records.
+## Let's see if this is even possible
+#### https://doi.org/10.32614/CRAN.package.rgbif
+
+```{r read in and clean data}
+nodes <- read_csv("data/foodweb_V6/trophic_nodes.csv")
+
+# incorporate GBIF identifier
+gbif_names <- name_backbone_checklist(nodes$nodeName) %>% 
+  # removing the extraneous columns, we only really need the gbif taxonkey, the supplied name, and the matched name
+  # we will also keep match type so I can track down misspelled names
+  select(usageKey, scientificName, verbatim_name, matchType) %>% 
+  rename(gbif_key = usageKey,
+         gbif_name = scientificName, 
+         nodeName = verbatim_name)
+
+# connect back with main dataset
+
+nodes_w_gbif <- left_join(nodes, gbif_names, by = join_by(nodeName))
+
+```
+## Use Long-list Guidance to Download Occurence Data for all spp
+### we will actually start with just a subset
+#### https://docs.ropensci.org/rgbif/articles/downloading_a_long_species_list.html
+```{r testing long list download}
+
+test_data <- nodes_w_gbif %>% 
+  filter(nodeNum < 25)
+
+occ_download(
+  pred_in("taxonKey", test_data$gbif_key),
+  pred("hasCoordinate", TRUE), 
+  pred("hasGeospatialIssue", FALSE),
+  format = "SIMPLE_CSV"
+)
+
+```
+
