@@ -1,0 +1,330 @@
+---
+title: "Incorporating helminthR"
+output: html_document
+date: "2024-07-17"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#install.packages("helminthR")
+require(helminthR)
+require(tidyverse)
+```
+
+```{r load in data}
+
+nodes <- read_csv("data/foodweb_V6/trophic_nodes.csv") #using super downstream versions to test functionality, might change
+links <- read_csv("data/foodweb_V6/trophic_links.csv")
+
+```
+
+
+## Attempting to bulk load in parasite record data
+#### https://cran.r-project.org/web/packages/helminthR/vignettes/helminthR_vignette.html
+#### data from: https://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/index.html
+```{r bulk query ALL hosts in helminth data base}
+
+# get list of all (terrestrial included) reports for CA, just for fun
+ca_psite_list <- findLocation(location = 'California', citation = TRUE)
+
+
+# make test hosts vector for query:
+
+hosts_fish <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(category == "fish") %>% # testing this out with only fish first
+  select(nodeName) %>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+fish_psite_list <- plyr::ldply(hosts_test, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2]#,
+            #citation = TRUE # this will NOT work if even one organism in the list doesn't have a record in the database, so we will run this twice to get first a list of hosts and then a list of citations for those hosts
+            )
+    }
+)
+
+real_hosts_fish <- fish_psite_list %>% 
+  select(Host) %>%  # subsets the original host list to only the list of real hosts returned by the query
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+fish_psite_citations <- plyr::ldply(real_hosts_fish, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2],
+            citation = TRUE # this will NOT work if even one organism in the list doesn't have a record in the database
+            )
+    }
+)
+
+write_csv(fish_psite_citations, "data/LNHMdatabase_fish_parasite_records.csv")
+
+# takes a really effing long time even with JUST fish so we wil subset the list and do it in chunks
+
+####### ARTHROPODA ####### 
+### malacostraca ###
+hosts_decas <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(class == "Malacostraca") %>% 
+  select(nodeName)%>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+decas_psite_list <- plyr::ldply(hosts_decas, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2]#,
+            #citation = TRUE # this will NOT work if even one organism in the list doesn't have a record in the database, so we will run this twice to get first a list of hosts and then a list of citations for those hosts
+            )
+    }
+)
+beepr::beep()
+
+real_hosts_decas <- decas_psite_list %>% 
+  select(Host) %>%  # subsets the original host list to only the list of real hosts returned by the query
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+decapod_psite_citations <- plyr::ldply(real_hosts_decas, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2],
+            citation = TRUE # this will NOT work if even one organism in the list doesn't have a record in the database
+            )
+    }
+)
+
+### copepods ###
+hosts_copas <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(class == "Copepoda") %>% 
+  select(nodeName)%>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+copas_psite_list <- plyr::ldply(hosts_copas, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2])
+    }
+)
+beepr::beep()
+
+real_hosts_copas <- copas_psite_list %>% 
+  select(Host) %>%  # subsets the original host list to only the list of real hosts returned by the query
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+copepod_psite_citations <- plyr::ldply(real_hosts_copas, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2],
+            citation = TRUE # this will NOT work if even one organism in the list doesn't have a record in the database
+            )
+    }
+)
+
+### bugs ###
+hosts_bugs <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(class == "Insecta"|class == "Hexapoda"|class == "Arachnida") %>% 
+  select(nodeName)%>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+bugs_psite_list <- plyr::ldply(hosts_bugs, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2])
+    }
+)
+beepr::beep()
+
+ # EMPTY, no records apparently
+
+### the rest ###
+hosts_arths <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(class == "Thecostraca"|class == "Pycnogonida"|class =="Branchiopoda"|class == "Chilopoda"|class =="Ostracoda") %>% 
+  select(nodeName)%>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+arths_psite_list <- plyr::ldply(hosts_arths, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2])
+    }
+)
+beepr::beep()
+
+real_hosts_arths <- arths_psite_list %>% 
+  select(Host) %>%  # subsets the original host list to only the list of real hosts returned by the query
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+other_arthropod_psite_citations <- plyr::ldply(real_hosts_arths, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2],
+            citation = TRUE # this will NOT work if even one organism in the list doesn't have a record in the database
+            )
+    }
+)
+
+####### ANNELIDA ####### 
+hosts_worms <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(phylum == "Annelida") %>% 
+  select(nodeName)%>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+worms_psite_list <- plyr::ldply(hosts_worms, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2])
+    }
+)
+beepr::beep()
+
+real_hosts_worms <- worms_psite_list %>% 
+  select(Host) %>%  # subsets the original host list to only the list of real hosts returned by the query
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+annelid_psite_citations <- plyr::ldply(real_hosts_worms, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2],
+            citation = TRUE # this will NOT work if even one organism in the list doesn't have a record in the database
+            )
+    }
+)
+
+######## BRYOZOA #########
+hosts_bryos <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(phylum == "Bryozoa") %>% 
+  select(nodeName)%>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+bryos_psite_list <- plyr::ldply(hosts_bryos, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2])
+    }
+)
+# none, not surprising
+
+######## BRACHIOPODA #########
+hosts_brachs <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(phylum == "Brachiopoda") %>% 
+  select(nodeName)%>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+brach_psite_list <- plyr::ldply(hosts_brachs, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2])
+    }
+)
+
+# none, not surprising
+
+######## CHAETOGNATHA #########
+hosts_chaets <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(phylum == "Chaetognatha") %>% 
+  select(nodeName)%>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+chaets_psite_list <- plyr::ldply(hosts_chaets, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2])
+    }
+)
+
+# none, not surprising
+
+######## MAMMALS SHARKS #########
+hosts_mamsharks <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(class == "Mammalia"|class == "Elasmobranchii") %>% 
+  select(nodeName)%>% 
+  unique() %>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+otter_psites <- findHost(genus = "Enhydra", species = "lutris", citation = TRUE)
+shark_psites <- findHost(genus = "Triakis", species = "semifasciata", citation = TRUE)
+coyote_psites <- findHost(species = "latrans", citation = TRUE)
+
+#mamshark_psite_list <- plyr::ldply(hosts_mamsharks, 
+#    function(x){
+#        findHost(unlist(strsplit(x, ' '))[1], 
+#            unlist(strsplit(x,' '))[2])
+#    }
+#)
+#beepr::beep()
+
+# keeps timing out because of issues with coyote so doing it this way
+
+######## BIRDS #########
+
+hosts_birds <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(class == "Aves") %>% 
+  select(nodeName)%>% 
+  unique() %>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+bird_psite_list <- plyr::ldply(hosts_birds, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2])
+    }
+)
+beepr::beep()
+
+real_hosts_birds <- bird_psite_list %>% 
+  select(Host) %>%  # subsets the original host list to only the list of real hosts returned by the query
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+bird_psite_citations <- plyr::ldply(real_hosts_birds, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2],
+            citation = TRUE # this will NOT work if even one organism in the list doesn't have a record in the database
+            )
+    }
+)
+
+######## TUNICATES ########
+hosts_tunis <- nodes %>% 
+  filter(parasite == "n") %>% 
+  filter(node_resolution == "Species") %>% 
+  filter(class == "Ascidiacea") %>% 
+  select(nodeName)%>% 
+  unique() %>% 
+  unlist(., use.names = FALSE) #extracting values as a list in order to get them into the correct format for the function below
+
+tuni_psite_list <- plyr::ldply(hosts_tunis, 
+    function(x){
+        findHost(unlist(strsplit(x, ' '))[1], 
+            unlist(strsplit(x,' '))[2])
+    }
+)
+beepr::beep()
+
+# none which is surprising actually...
+
+
+######## CNIDARIA ########
+```
+

@@ -11,7 +11,7 @@ library(rgbif)
 library(tidyverse)
 library(usethis)
 
-#usethis::edit_r_environ() #lets me enter my gbif name, email, password so I can use occ_download()
+usethis::edit_r_environ() #lets me enter my gbif name, email, password so I can use occ_download()
 
 
 ```
@@ -38,6 +38,7 @@ nodes_w_gbif <- left_join(nodes, gbif_names, by = join_by(nodeName))
 
 ```
 ## Use Long-list Guidance to Download Occurence Data for all spp
+
 ### we will actually start with just a subset
 #### https://docs.ropensci.org/rgbif/articles/downloading_a_long_species_list.html
 ```{r testing long list download}
@@ -45,12 +46,85 @@ nodes_w_gbif <- left_join(nodes, gbif_names, by = join_by(nodeName))
 test_data <- nodes_w_gbif %>% 
   filter(nodeNum < 25)
 
-occ_download(
+occ_download(user = 'zoelzilz',
+             pwd = 'RXGFb5*8d8tZ@rQ',
+             email = 'zoelzilz@gmail.com',
   pred_in("taxonKey", test_data$gbif_key),
   pred("hasCoordinate", TRUE), 
   pred("hasGeospatialIssue", FALSE),
   format = "SIMPLE_CSV"
 )
 
+gbif_riz <- occ_download_get('0028203-240626123714530') %>%
+    occ_download_import()
+
+gbif_riz_test <- gbif_riz %>% 
+  filter(decimalLongitude > -168 & decimalLongitude < -105) # trying to make sure all records are related to the west coast, this filters out like 40 records lol
+
 ```
+2024-07-17 Download Info:
+  Username: zoelzilz
+  E-mail: zoelzilz@gmail.com
+  Format: SIMPLE_CSV
+  Download key: 0028203-240626123714530
+  Created: 2024-07-17T20:03:28.296+00:00
+Citation Info:  
+  Please always cite the download DOI when using this data.
+  https://www.gbif.org/citation-guidelines
+  DOI: 10.15468/dl.htykzz
+  Citation:
+  GBIF Occurrence Download https://doi.org/10.15468/dl.htykzz Accessed from R via rgbif (https://github.com/ropensci/rgbif) on 2024-07-17
+
+### now to test out a pipeline for turning occurrence data into categories for lat lon
+```{r test occurence to NSBoth}
+test_lat_summary <- gbif_riz_test %>% 
+  group_by(species) %>% # using species because some of the scientific names begin with BOLD:### and I don't know what that means yet
+  
+  # consider using quartiles in the future in addition to min/max
+  summarise(min_lat = min(decimalLatitude), 
+            max_lat = max(decimalLatitude), 
+            mean_lat = mean(decimalLatitude),
+            sd_lat = sd(decimalLatitude),
+            gbif_key = median(taxonKey)) # idk how else to do this
+
+#### lat lon of point conception is 34.442478, -120.452725 according to google maps ####
+
+# convert min lats to a code of north (N) south (S) or both
+test_lat_to_NSBOTH <- test_lat_summary %>% 
+  mutate(province_gbif = case_when(min_lat > 34.442478 ~ "N", # if the minimum latitude (southernmost report) is greater than PC
+                                   max_lat < 34.442478 ~ "S", # if the maximum latitude (northernmost report) is less than PC
+                                   TRUE ~ "Both"))
+
+# merge with original dataset
+test_data_w_gbif_range <- left_join(test_data, test_lat_to_NSBOTH, by = join_by(gbif_key))
+  
+```
+
+## Ok, let's try this for real this time
+
+```{r download gbif records for whole node list}
+
+occ_download(user = 'zoelzilz',
+             pwd = 'RXGFb5*8d8tZ@rQ',
+             email = 'zoelzilz@gmail.com',
+  pred_in("taxonKey", nodes_w_gbif$gbif_key),
+  pred("hasCoordinate", TRUE), 
+  pred("hasGeospatialIssue", FALSE),
+  format = "SIMPLE_CSV"
+)
+
+gbif_riz_download <- occ_download_get('0028203-240626123714530') %>%
+    occ_download_import()
+
+gbif_riz <- gbif_riz_download %>% 
+  filter(decimalLongitude > -168 & decimalLongitude < -105) # trying to make sure all records are related to the west coast, this filters out like 40 records lol
+
+```
+
+
+
+
+
+
+
 
