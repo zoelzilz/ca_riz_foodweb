@@ -33,8 +33,8 @@ library(NetworkExtinction)
 
 ```{r read in data}
 
-nodes <- read_csv("data/foodweb_V6/trophic_nodes.csv")
-links <- read_csv("data/foodweb_V6/trophic_links.csv")
+nodes <- read_csv("data/foodweb_V8/trophic_nodes.csv")
+links <- read_csv("data/foodweb_V8/trophic_links.csv")
 
 ```
 # Time to compare foodwebs!

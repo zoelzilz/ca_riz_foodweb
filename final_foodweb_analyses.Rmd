@@ -29,23 +29,33 @@ library(tidyverse)
 library(viridis)
 library(cheddar)
 library(kableExtra)
+library(needs)
 
+prioritize(dplyr)
 ```
 
 ## Part One: Summary Statistics and Graphs
+
+5	metacercaria, L3+ or paratenic nematode (not in crustacean), polyp stage in cnidarians, juvenile barnacle, megalops
+6	multiple stages (as in dicyemids)
  
-### Reading in the cleaned versions of the data from May 2024
+### Reading in the cleaned versions of the data from October 2024
 (we created and saved these csvs in the final_foodweb_build RMD)
 ```{r read in clean data}
 
-nodes <- read_csv("data/foodweb_V6/nodes_final_18jun2024.csv") %>% 
+nodes_orig <- read_csv("data/foodweb_V8/nodes_final_8oct2024.csv") %>% 
   mutate(parasite = case_when(str_detect(trophic_strategy, "parasit") ~ "y",
                               trophic_strategy == "pathogen" ~ "y",
                               .default = "n")) %>% 
-  unite(node, c(nodeNum, species, clean_stage), sep = "_", remove = FALSE) %>%  # downstream, cheddar requires a column called node that is non-numeric to identify each unique node
+  unite(node, c(nodeNum, species), sep = "_", remove = FALSE) %>%  # downstream, cheddar requires a column called node that is non-numeric to identify each unique node
+  # adding helpful life stage info to node name
+  mutate(nodeID = case_when(life_stage == "adult" ~paste(node), # dont change
+                          life_stage == "hydroid colony" ~paste(node), # dont change
+                          life_stage == "multiple" ~paste(node), # dont change
+                          TRUE ~ paste(node, life_stage, sep = "_"))) %>% 
   
   # i changed the names of some cols for clarity, so doing that here (make sure consistent downstream)
-  rename(nodeName = species,
+  rename(nodeTaxon = species,
          category = organismal_category,
          life_stage_code = clean_stage,
          grouping_habits = solitary_aggregating_colonial, 
@@ -53,15 +63,15 @@ nodes <- read_csv("data/foodweb_V6/nodes_final_18jun2024.csv") %>%
          mobility = mobile_or_sessile
          ) %>% 
   # select and reorder
-  select(node, nodeNum, nodeName, synonymies, category, common_name, life_stage, life_stage_code, province, commonality, reference, zone, habitat_notes, grouping_habits, mobility, trophic_strategy, node_type, node_resolution, aphia, kingdom, phylum, class, order, family, genus, parasite) 
+  dplyr::select(node, nodeID, nodeNum, nodeTaxon, synonymies, category, common_name, life_stage, life_stage_code, province, commonality, reference, zone, habitat_notes, grouping_habits, mobility, trophic_strategy, node_type, node_resolution, aphia, kingdom, phylum, class, order, family, genus, parasite) 
 #view(nodes)
 
-all_links <- read_csv("data/foodweb_V6/links_final_18jun2024.csv")
+all_links <- read_csv("data/foodweb_V8/links_final_8oct2024.csv")
 
 # calling the links list "links" but it's ONLY trophic links
 #also switched from using the uncollapsed link list (~15k links) to the [final] list with no duplicates (~14k links)
 
-links <- all_links %>% 
+links_orig <- all_links %>% # i dont think we need to make downstream changes to this df
   
   # need to remove non-trophic interactions!
   filter(interaction.type != 2, #epibiont
@@ -83,26 +93,216 @@ links <- all_links %>%
          referenceNum = ref_num) %>% 
   
   # make a new column that concatenates node name, num, and life stage bc cheddar can't handle numeric node names
-  unite(resource, c(resourceNum, resourceName, resourceStage), sep = "_", remove = FALSE) %>% 
-  unite(consumer, c(consumerNum, consumerName, consumerStage), sep = "_", remove = FALSE) %>% 
+  unite(resource, c(resourceNum, resourceName), sep = "_", remove = FALSE) %>% 
+  unite(consumer, c(consumerNum, consumerName), sep = "_", remove = FALSE) %>% 
   rename(interactionZone = zone) %>% 
-  select(resource, resourceNum, resourceName, resourceCat, resourceStage, consumer, consumerNum, consumerName, consumerCat, consumerStage, interactionType, referenceNum, justification, confidence, localities, interactionZone, habitat, parasitic) # reorder so they match col descriptors
+  dplyr::select(resource, resourceNum, resourceName, resourceCat, resourceStage, consumer, consumerNum, consumerName, consumerCat, consumerStage, interactionType, referenceNum, justification, confidence, ref_location_code, localities, interactionZone, habitat, parasitic) # reorder so they match col descriptors
+
+```
+
+# INCORPORATING NATURE EDITS JULY/OCTOBER 2024
+## Requested edits:
+1.	Revision of the trophic strategy column ==> consumer type (we will call it trophic category)??
+2.	Addition of a consumer strategy column categorizing all nodes using the 11 strategies defined by Lafferty et al., 2015
+3.  Deal with vague node IDs and historical human feeding links
+
+### What I said we did
+1. We updated the trophic strategy column, renaming it consumer strategy to match that in Morton et al., 2021, reflecting how consumers obtained their resources. We added a column for consumer type, also as in Morton et al., except we used the framework published by Lafferty et al., 2006, instead of Lafferty and Kuris, 2002.
+
+2. We elected to remove nodes that represented symbionts found during dissections that we could not identify past Class level
+
+3. We removed links that represented historical human consumption
+
+#### What Dana did trophic strategy wise:
+Consumer.Strategy	Organism feeding method. Values include: Autotroph, Castrator, Commensal, Detritivore, EctoCommensal, Ectoparasite, EggPredator, Endoparasite, Filter, Herbivore, MicroPredator, non-feeding, Omnivore, Pathogen, planktivore, Predator, Scavenger, Suspension
+
+Consumer.Type	Consumer strategy according to Lafferty and Kuris 2002. Values include: Castrator, Micropredator, non-feeding, Parasite, Pathogen, Predator, Trophically Transmitted Parasite
+
+-----------------------------------------------------------------
+### Revision of the trophic strategy column into consumer strategy
+herbivore/grazer, omnivore, carnivore (scavenger + predator), detritivore, symbiotic egg predator, mixotroph, primary producer (deposit feeder, filter feeder, mass feeder, parasitic, ??)
+more about HOW they acquire their food, not always mutually exclusive with consumer strategy, we do not include commensal but do include kleptoparasite to reflect organisms that eat their hosts food
+```{r fixing trophic strategy}
+nodes1 <- nodes_orig %>% 
+  mutate(consumer_strategy = case_when(trophic_strategy == "typical predator" ~ "typical predator",
+                                       trophic_strategy == "carnivore (scavenger + predator)" ~ "carnivore (scavenger + predator)",
+                                       trophic_strategy == "omnivore" ~ "omnivore",
+                                       trophic_strategy == "filter feeder" ~ "filter feeder",
+                                       trophic_strategy == "scavenger" ~ "scavenger", # but this is supposed to be like social predator
+                                       trophic_strategy == "grazer" ~ "grazer",
+                                       trophic_strategy == "micropredator" ~ "micropredator",
+                                       trophic_strategy == "symbiotic egg predator" ~ "symbiotic egg predator",
+                                       trophic_strategy == "parasite" ~ "endoparasite",
+                                       trophic_strategy == "ectoparasite" ~ "ectoparasite",
+                                       trophic_strategy == "deposit feeder" ~ "deposit feeder",
+                                       trophic_strategy == "primary producer" ~ "primary producer",
+                                       # not sure if we have true decomposers...
+                                       TRUE ~ as.character(trophic_strategy)
+                                       ))
+
+```
 
 
+### Add a consumer strategy column to follow Lafferty et al 2015
+If the resource is living and the consumer feeds on more than one prey/host:
+Predator – prey fitness is reduced to zero, deaths of prey are required to extend consumer life cycle, a single predator kills its prey (thus impact on a prey is density-independent), prey death does not lead to predator death. Examples: squids, mosquito larvae on algae. 
+Social predator – like typical predators, but more predators per attacked prey kill prey more effectively. Examples: wolves on moose, army ants. 
+Micropredator – prey/host fitness is not reduced to zero; death of the host is not required to continue consumer life cycle, impact on host is densitydependent. Examples: adult female mosquitos, cicadas, giraffes. 
+
+If the resource is living, death of the host leads to death of the consumer, and the consumer feeds on just a single individual resource (host): 
+Macroparasite – Host fitness is not reduced to zero; impact on host is densitydependent (impact on the host increases with the number of parasites). Examples: adult schistosomes, malaria in mosquitos, corn borer grubs. 
+Pathogen – Host fitness not necessarily reduced to zero, impact on host is densityindependent (impact is controlled by extent of effective host defenses, limiting the asexual reproduction of the consumer), Examples: malaria in humans, scale insects. 
+Castrators – Host fitness reduced to zero; impact on host is density-independent. Examples: larval trematodes in snail hosts, Sacculina on crabs, boll weevil larvae. 
+Parasitoid – Host fitness reduced to zero, consumer kills host to complete its life cycle; impact on host is intensity-independent. Examples: larval ichneumonid wasps, Pasteuria bacteria in Daphnia, bruchid beetles in seeds. 
+
+If the resource is not living (does not give birth), resources flux into the system: 
+Detritivore – As for a predator, but feeds on non-living organic particles. Examples: earthworms, sand dollars. 
+Scavenger – As for a social predator, but feeds dead organisms. Examples: marabou storks, hagfish, burying beetles
+Decomposer – As for a macroparasite, but feeds on a dead food source. Examples: termites, blow flies, oyster mushrooms. 
+Autotroph –Resources (nutrients) either flow through the system or are recycled on the death of consumers, or both. Examples: plants, chemosynthetic bacteria. Plants are often also limited by space (which influences access to light), though space limitation does not define their consumer strategy.
+
+```{r fixing consumer strategy}
+#unique(nodes_og$trophic_strategy)
+
+nodes2 <- nodes1 %>% 
+  mutate(consumer_type = case_when(trophic_strategy == "typical predator" ~ "predator",
+                                       trophic_strategy == "carnivore (scavenger + predator)" ~ "predator",
+                                       trophic_strategy == "omnivore" ~ "predator",
+                                       trophic_strategy == "filter feeder" ~ "predator",
+                                       #nodeName == "Canis latrans" ~ "social predator", #idk if we have other social predators
+                                       # on second thought, canis are normal predators in RIZ, just 1:1
+                                       trophic_strategy == "scavenger" ~ "scavenger", # but this is supposed to be like social predator
+                                       trophic_strategy == "grazer" ~ "micropredator",
+                                       trophic_strategy == "micropredator" ~ "micropredator",
+                                       trophic_strategy == "symbiotic egg predator" ~ "micropredator",
+                                       trophic_strategy == "parasite" ~ "macroparasite",
+                                       trophic_strategy == "ectoparasite" ~ "pathogen",
+                                       trophic_strategy == "deposit feeder" ~ "detritivore",
+                                       trophic_strategy == "primary producer" ~ "autotroph",
+                                       # not sure if we have true decomposers...
+                                       TRUE ~ as.character(trophic_strategy)
+                                       )) %>% 
+  select(-trophic_strategy) # don't need this anymore
+
+
+```
+
+### removing parasite morphospecies that we couldn't ID past Class level:
+filter out node_resolution == Morphospecies and Class == NA
+```{r remove vague morphosp}
+#nodes3 <- nodes2 %>% 
+#  filter(!(node_resolution == "Morphospecies" & is.na(class)))
+
+# decided to just do this manually in original nodes list
+```
+
+### Removing historical human feeding links:
+Jaden made a dataframe called "prehistoric_human_diet.csv" - her opinion on what contemporary humans do NOT eat
+Some of these links were manually removed upstream for other reasons
+```{r remove historical human feeding}
+hist_human_diet <- read_csv("data/prehistoric_human_diet.csv")
+
+removal_check <- semi_join(links_orig, hist_human_diet, by = join_by(resourceNum, consumerNum)) # anti join includes only nodes in the left that ARE not present in the right
+
+links <- anti_join(links_orig, hist_human_diet, by = join_by(resourceNum, consumerNum)) # anti join includes only nodes in the left that are not present in the right
+```
+
+### Still some missing WORMS aphia IDs
+
+```{r filling in missing APHIA}
+library(worrms)
+library(taxize)
+
+only_good_aphias <- nodes2 %>% 
+  filter(!is.na(aphia))
+
+# make a dataframe of nodes that are missing aphias that i can bind back to later
+missing_aphias <- nodes2 %>% 
+  filter(is.na(aphia)) %>% # only nodes where there are no aphias
+  mutate(nodeName = (str_remove(nodeTaxon, "\\."))) %>%  # take this out so WORMS can match on genus name, the escape is necessary to capture period
+  mutate(nodeName = (str_remove(nodeName, " sp"))) %>%  # take this out so WORMS can match on genus name, the escape is necessary to capture period
+  mutate(nodeName = trimws(nodeName)) 
+
+# make a vector of just the names to input
+input_names <- missing_aphias %>% 
+  pull(nodeName) # pull out just nodeName as a column
+
+# trying using taxize worms wrapper and hoping it'll work better
+
+#aphiaDF <- get_wormsid(input_names, searchtype = "scientific", fuzzy = TRUE, check = TRUE, ask = TRUE, marine_only = FALSE)
+
+#input_names_id <- as_tibble(cbind(input_names, aphiaDF)) %>% 
+#  rename(nodeName = input_names,
+#         aphia = aphiaDF)
+#write_csv(input_names_id, "data/missing_aphias_15oct24.csv") # so i don't have to run this every fucking time
+
+input_names_id <- read_csv("data/missing_aphias_15oct24.csv") %>% 
+  distinct(nodeName,aphia)
+
+#aphias <- wm_name2id_(input_names)
+
+#aphias2 <- enframe(aphias) %>% 
+#  rename(nodeName = name,
+#         aphia = value)
+
+# bind the names back with the orig 'missing aphias' dataframe
+fixed_aphias <- left_join(missing_aphias, input_names_id, by = join_by(nodeName)) %>%  # will create an aphia.x and aphia.y
+  mutate(aphia = aphia.y) %>% 
+  select(!c(aphia.x, aphia.y, nodeName))
+  
+# join everybody back together
+
+nodes3 <- rbind(only_good_aphias, fixed_aphias) %>% 
+  # just going to manually smash in the missing ones in code, sucks but oh well
+  mutate(aphia = case_when(nodeTaxon == "Zaus spinatus hopkinsi" ~ "363787",
+                           nodeTaxon == "Cerapus spp." ~ "101566",
+                           nodeTaxon == "Polycirrus spp." ~ "129710",
+                           nodeTaxon == "Clinocottus spp." ~ "268796",
+                           nodeTaxon == "drift algae" ~ "7",
+                           nodeTaxon == "Nocticanace arnaudi" ~ "1490649",
+                           nodeTaxon == "Euplotaspis cionaecola" ~ "(GBIF) 7925544",
+                           nodeTaxon == "Leptoplanella  californica" ~ "483465",
+                           nodeTaxon == "Myxidium calcariferi" ~ "1746748",
+                           str_detect(nodeTaxon, "metacercaria_") ~ "19948",
+                           
+                           TRUE ~ as.character(aphia)
+                           ))
+```
+
+### Some minutiae:
+```{r last fixes}
+nodes <- nodes3 %>% 
+  mutate(nodeID = case_when(nodeID == "2325_drift algae_NA" ~ "2325_drift algae",
+                            nodeID == "2374_fecal pellets_NA" ~ "2374_fecal pellets",
+                            nodeID == "3079_Cercaria margaritensis_NA" ~ "3079_Cercaria margaritensis",
+                            nodeID == "749_Detritus_NA" ~ "749_Detritus",
+                            nodeID == "750_Carrion_NA" ~ "750_Carrion",
+                            nodeID == "751_Wrack_NA" ~ "751_Wrack",
+                            nodeID == "752_Mulm/DOM_NA" ~ "752_Mulm/DOM",
+                            TRUE ~ as.character(nodeID)
+                            )) %>% 
+  mutate(aphia = as.character(aphia))
+
+```
+
+
+## final time we will write csvs!! these are what we're publishing
+### need to go multiple places:
+```{r writing csvs for publishing}
 
 # final time we will write csvs!! these are what we're publishing
 # need to go multiple places:
-write_csv(links, "data/foodweb_V6/trophic_links.csv") 
-write_csv(links, "/Users/zoe/Documents_Local/GitHub/zilz_etal_2024_FoodWebForCARIZ/links.csv")
-write_csv(links, "/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Nature Data Paper Manuscript Materials/dataset/links.csv") 
+#write_csv(links, "data/foodweb_V8/trophic_links.csv") 
+#write_csv(links, "/Users/zoe/Documents_Local/GitHub/zilz_etal_2024_FoodWebForCARIZ/links.csv")
+#write_csv(links, "/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Nature Data Paper Manuscript Materials/Revised Submission/dataset/links.csv") # oct 10: NOT THIS ONE, we don't want to overwrite manual changes yet
 
-write_csv(nodes, "data/foodweb_V6/trophic_nodes.csv") # this project
-write_csv(nodes, "/Users/zoe/Documents_Local/GitHub/zilz_etal_2024_FoodWebForCARIZ/nodes.csv") # repo that we're publishing
-write_csv(nodes, "/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Nature Data Paper Manuscript Materials/dataset/nodes.csv") # dataset files with manuscript
+#write_csv(nodes, "data/foodweb_V8/trophic_nodes.csv") # this project
+#write_csv(nodes, "/Users/zoe/Documents_Local/GitHub/zilz_etal_2024_FoodWebForCARIZ/nodes.csv") # repo that we're publishing
+#write_csv(nodes, "/Users/zoe/Library/CloudStorage/GoogleDrive-zilz@ucsb.edu/My Drive/SCHOOL/PHD_AT_UCSB/RIZ Food Web/Nature Data Paper Manuscript Materials/Revised Submission/dataset/nodes.csv") # oct 10: NOT THIS ONE, we don't want to overwrite manual changes yet
 
 # if you change these, don't forget to update the dryad AND push to git
-
 ```
+
 
 ## Switching to cheddar for the analyses
 #### Our csvs have to be a little different now:
@@ -111,9 +311,13 @@ https://cran.r-project.org/web/packages/cheddar/vignettes/ImportExport.pdf
 ```{r create cheddar data}
 # adjust dataframes a littel for cheddar (node column needs to be called node, links column needs to have consumer and resource columns, need a properties dataframe?)
 
+# so we don't have to run the cleaning stuff again above:
+nodes <- read_csv("data/foodweb_V8/trophic_nodes.csv")
+links <- read_csv("data/foodweb_V8/trophic_links.csv")
+
 cheddar_nodes <- nodes %>% 
   rename(nodeCat = category, # cheddar requires a category column to include very specific values
-         functional.group = trophic_strategy # cheddar recognizes "functional group" but not trophic strategy
+         functional.group = consumer_type # cheddar recognizes "functional group" but not trophic strategy/consumer_type
          ) #%>% 
   
   # we will also add a column for color
@@ -161,14 +365,14 @@ pnodes
 sp_pnodes <- nodes %>% 
   #filter(node_resolution == "Species") %>% 
   filter(parasite == "y") %>% 
-  distinct(nodeName) %>% 
+  distinct(nodeTaxon) %>% 
   count()
 sp_pnodes
 
 # all species
 spnodes <- nodes %>% 
   filter(node_resolution == "Species") %>% 
-  distinct(nodeName) %>% 
+  distinct(nodeTaxon) %>% 
   count()
 spnodes
 
@@ -183,7 +387,7 @@ fnodes
 
 sp_fnodes <- nodes %>% 
   filter(parasite == "n") %>% 
-  distinct(nodeName) %>% 
+  distinct(nodeTaxon) %>% 
   count()
 sp_fnodes
 
@@ -195,11 +399,11 @@ plinks
 
 # i really want to make a table... how??
 # we can make a nice table of all these metrics to visualize them all at once
-  metric_table <- as.data.frame(metrics <- c("species", "free living", "free living taxa", "parasites", "parasite taxa", "parasitic links", "basal nodes", "intermediate nodes", "top consumers", "isolated nodes" ),
+  #metric_table <- as.data.frame(metrics <- c("species", "free living", "free living taxa", "parasites", "parasite taxa", "parasitic links", "basal nodes", "intermediate nodes", "top consumers", "isolated nodes" ),
                                 values <- 1:10, 
                                 rownames_to_column(values))
 
-vals <- as.numeric(c(sp_nodes, fnodes, sp_fnodes, pnodes, sp_pnodes, plinks, basal, int, top, isolated))
+#vals <- as.numeric(c(spnodes, fnodes, sp_fnodes, pnodes, sp_pnodes, plinks, basal, int, top, isolated))
 
 # omnivory (taxa feeding on multiple trophic levels)
 
@@ -249,10 +453,7 @@ ca_riz_ig <- ToIgraph(ca_riz_total)
 
 ```
 
-```{r plot the igraph object and make it look nice}
-
-```
-
+## Plot iGraph object and ready for publication
 
 ```{r starting with igraph}
 
@@ -307,20 +508,74 @@ layout.matrix.1[,2] <- igraph_nodes2$trophic_level
 
 
 ############### pre set some colors for plotting #################
-# node colors:
-V(trophic_web_psites)$color <- case_when(igraph_nodes2$parasite == "y" ~ "red",
-                                         igraph_nodes2$functional.group == "primary producer" ~ "green",
-                                         igraph_nodes2$functional.group == "mixotroph" ~ "green",
+##### node colors: ##### 
+V(trophic_web_psites)$color <- case_when(igraph_nodes2$consumer_strategy == "grazer" ~ "darkgreen",
+                           igraph_nodes2$consumer_strategy == "micropredator" ~ "pink",
+                           igraph_nodes2$consumer_strategy ==   "non-feeding" ~ "grey",
+                           igraph_nodes2$consumer_strategy ==     "various (assemblage)" ~ "black",
+                           igraph_nodes2$consumer_strategy ==     "detritivore" ~ "tan",
+                           igraph_nodes2$consumer_strategy ==     "scavenger" ~ "tan",
+                           igraph_nodes2$consumer_strategy ==     "deposit feeder" ~ "tan",
+                           igraph_nodes2$consumer_strategy ==   "filter feeder" ~ "blue",
+                           igraph_nodes2$consumer_strategy ==     "primary producer" ~ "limegreen",
+                           igraph_nodes2$consumer_strategy ==     "mixotroph" ~ "limegreen",
+                           igraph_nodes2$consumer_strategy ==     "omnivore" ~ "orange",
+                           igraph_nodes2$consumer_strategy ==     "typical predator" ~ "purple",
+                           igraph_nodes2$consumer_strategy ==     "carnivore (scavenger + predator)" ~ "purple",
+                           igraph_nodes2$consumer_strategy ==     "parasite" ~ "red",
+                           igraph_nodes2$consumer_strategy ==     "symbiotic egg predator" ~ "red",
+                           igraph_nodes2$consumer_strategy ==     "endoparasite" ~ "red",
+                           igraph_nodes2$consumer_strategy ==     "ectoparasite" ~ "red",
+                           igraph_nodes2$consumer_strategy ==     "pathogen" ~ "red",
+                           igraph_nodes2$consumer_strategy ==    "parasitic castrator" ~ "red",
+                           .default = "black")
+
+#V(trophic_web_psites)$color <- case_when(igraph_nodes2$parasite == "y" ~ "red",
+#                                         igraph_nodes2$functional.group == "primary producer" ~ "green",
+#                                         igraph_nodes2$functional.group == "mixotroph" ~ "green",
                                          #igraph_nodes2$functional.group == "detritivore" ~ "brown",
                                          #igraph_nodes2$functional.group == "deposit feeder" ~ "brown",
-                                         igraph_nodes2$functional.group == "non-feeding" ~ "gold",
-                                         igraph_nodes2$nodeName == "Bacteria" ~ "gold",
-                                         igraph_nodes2$nodeName == "UNKNOWN" ~ "gold",
-                                         igraph_nodes2$nodeCat == "dead stuff" ~ "tan",
-                                         TRUE ~ "blue")
-# edge colors
-E(trophic_web_psites)$color <- case_when(igraph_links$parasitic == "y" ~ "red",
-                                         igraph_links$parasitic == "n" ~ "blue",)
+#                                         igraph_nodes2$functional.group == "non-feeding" ~ "gold",
+#                                         igraph_nodes2$nodeName == "Bacteria" ~ "gold",
+#                                         igraph_nodes2$nodeName == "UNKNOWN" ~ "gold",
+#                                         igraph_nodes2$nodeCat == "dead stuff" ~ "tan",
+#                                         TRUE ~ "blue")
+
+
+##### edge colors ##### 
+# easiest way is to just have edges inherit colors from resource nodes (tail_of) or consumer nodes (head of):
+E(trophic_web_psites)$color <- head_of(trophic_web_psites, E(trophic_web_psites))$color
+
+# deprecated below
+#E(trophic_web_psites)$color <- case_when(igraph_links$resourceCat == "algae" | 
+#                                           igraph_links$resourceCat == "angiosperm" |
+#                                           igraph_links$resourceCat == "dinoflagellate" |
+#                                           igraph_links$resourceCat == "microalgae" |
+#                                           igraph_links$resourceCat == "green algae" |
+#                                           igraph_links$resourceCat == "brown algae" |
+#                                           igraph_links$resourceCat == "red algae" |
+#                                           igraph_links$resourceCat == "phytoplankton" |
+#                                           igraph_links$resourceCat == "coralline algae" ~ "darkgreen", # primary consumption
+                                         
+#                           igraph_nodes2$consumer_strategy == "micropredator" ~ "pink",
+ #                          igraph_nodes2$consumer_strategy ==   "non-feeding" ~ "grey",
+#                           igraph_nodes2$consumer_strategy ==     "various (assemblage)" ~ "grey",
+#                           igraph_nodes2$consumer_strategy ==     "detritivore" ~ "tan",
+#                           igraph_nodes2$consumer_strategy ==     "scavenger" ~ "tan",
+#                           igraph_nodes2$consumer_strategy ==     "deposit feeder" ~ "tan",
+#                           igraph_nodes2$consumer_strategy ==   "filter feeder" ~ "blue",
+#                           igraph_nodes2$consumer_strategy ==     "primary producer" ~ "limegreen",
+#                           igraph_nodes2$consumer_strategy ==     "mixotroph" ~ "limegreen",
+#                           igraph_nodes2$consumer_strategy ==     "omnivore" ~ "orange",
+#                           igraph_nodes2$consumer_strategy ==     "typical predator" ~ "purple",
+#                           igraph_nodes2$consumer_strategy ==     "carnivore (scavenger + predator)" ~ "purple",
+#                           igraph_nodes2$consumer_strategy ==     "parasite" ~ "red",
+#                           igraph_nodes2$consumer_strategy ==     "ectoparasite" ~ "red",
+#                           igraph_nodes2$consumer_strategy ==     "pathogen" ~ "red",
+#                           igraph_nodes2$consumer_strategy ==    "parasitic castrator" ~ "red",
+#                           .default = "black")
+#E(trophic_web_psites)$color <- case_when(igraph_links$parasitic == "y" ~ "red",
+#                                         igraph_links$parasitic == "n" ~ "blue",)
 
 igraph_nodes_colors <- igraph_nodes2 %>% 
   mutate(colorz = V(trophic_web_psites)$color)
@@ -328,9 +583,9 @@ igraph_nodes_colors <- igraph_nodes2 %>%
 ############## PLOT! #############
 rizvis <- plot.igraph(trophic_web_psites,
                       vertex.label = NA,
-                      vertex.frame.color = "white",
+                      vertex.frame.color = NA,
                       vertex.size=3,
-                      edge.arrow.size=.25,
+                      edge.arrow.size=0,
                       layout=layout.matrix.1 
                      )
 ```
@@ -341,9 +596,9 @@ rizvis <- plot.igraph(trophic_web_psites,
 png(filename = "figures/ca_riz_foodweb_final.png", width = 11, height = 10, units = "in", res = 1000)
 plot.igraph(trophic_web_psites,
                       vertex.label = NA, 
-                      vertex.frame.color = "white",
+                      vertex.frame.color = NA,
                       vertex.size=3,
-                      edge.arrow.size=.25,
+                      edge.arrow.size=0, # i no longer want arrows they're annoying
                       layout=layout.matrix.1 
                      )
 dev.off()

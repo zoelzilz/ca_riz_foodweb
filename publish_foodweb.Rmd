@@ -18,16 +18,19 @@ library(tidyverse)
 library(readxl)
 library(NetIndices)
 library(visNetwork)
+library(cheddar)
 
 ```
 
 # Welcome to the California Rocky Intertidal Food Web interactive visualization tool!
 
-### This food web network was created as part of an ongoing research project based in the Parasite Ecology Lab at the University of California Santa Barbara. We have compiled interaction reports from published scientific literature, intertidal guidebooks, our own field and lab studies, and expert testimony to generate this network. The network currently represents **1692 species** and **over 8000 unique trophic links**, including grazing, predation, scavenging, and parasitism. We add data to the network on a daily basis!
+### This food web network was created as part of an ongoing research project based in the Parasite Ecology Lab at the University of California Santa Barbara. We have compiled interaction reports from published scientific literature, intertidal guidebooks, our own field and lab studies, and expert testimony to generate this network. The network currently represents **1845 taxa** and **over 13,000 unique trophic links**, including grazing, predation, scavenging, and parasitism. The raw data and usage suggestions are available at https://doi.org/10.5061/dryad.3ffbg79sb.
 
-#### To use this tool, simply select your species of interest using the drop down menu. You can also interact with the web by hovering over individual "nodes", which will display the associated species or group name. Clicking on nodes will highlight all links connected to that node. You can also drag the nodes around and change the shape of the network display!
+ ![The iconic California rocky intertidal zone at low tide in Santa Barbara, CA. Photo credit: Zoe Zilz.](/Users/zoe/Documents_Local/GitHub/ca_riz_foodweb/riz.jpg)
+
+#### To use this tool, simply select your organismal category of interest using the drop down menu. You can also interact with the web by hovering over individual "nodes", which will display the associated taxon or group name. **You can even delete nodes to visualize the cascading effects of extinction!** Node colors represent the consumer strategy of that node, and link colors are inherited from the consumer node in a consumer-resource pair. Arrows point from resource to consumer, demonstrating the flow of energy. Clicking on nodes will highlight all links connected to that node up to two degrees of separation. You can also drag the nodes around and change the shape of the network display!
  
-#### The web graph is organized so that the lowest trophic levels (e.g. primary producers like algae) are at the bottom, and the rest of the nodes are vertically arranged based on their trophic levels so that top predators (and their parasites) are at the very top!
+#### This *topographic* graph is organized so that the lowest trophic levels (e.g. primary producers like algae) are at the bottom, and the rest of the nodes are vertically arranged based on their trophic levels such that top predators (and their parasites) are at the very top!
 
 #### *If you have questions about this ongoing research or wish to report a species interaction for inclusion in the web, please contact us by emailing our project lead, Zoe Zilz, at [zilz\@ucsb.edu](mailto:zilz@ucsb.edu){.email}*.
 
@@ -35,67 +38,110 @@ library(visNetwork)
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-# import data
-nodes <- read_csv("data/foodweb_V3/nodes_final_3may2024.csv")
+######### import data ######## 
+nodes <- read_csv("data/foodweb_V8/trophic_nodes.csv")
+links <- read_csv("data/foodweb_V8/trophic_links.csv")
 
-links <- read_csv("data/foodweb_V3/links_final_3may2024.csv")
-
-
-# parse to trophic links only
-trophic_links <- links %>% # swapping to "links" lingo because armand thinks it more intuitive, so fine
+######## create cheddar object for reasons ######## 
+cheddar_nodes <- nodes %>% 
+  rename(nodeCat = category, # cheddar requires a category column to include very specific values
+         functional.group = consumer_type # cheddar recognizes "functional group" but not trophic strategy/consumer_type
+         ) #%>% 
   
-  # need to remove non-trophic interactions!
-  filter(interaction.type != 2, #epibiont
-         interaction.type !=9, #endocommensal
-         interaction.type !=10, #ectocommensal
-         interaction.type !=22, #mutualism
-         interaction.type !=28, #boring
-         interaction.type != 29) %>%  
-  dplyr::select(resourceNum,consumerNum,  interaction.type) %>%  # RESOURCE NUM HAS TO GO FIRST OR WEB IS UPSIDEDOWN
-  
-  # and finally we need to add a column coding for parasitic interaction or nah
-  mutate(parasitic = case_when(
-    interaction.type > 4 & interaction.type < 8 ~ "y",
-    interaction.type == 12 ~ "y",
-    interaction.type > 23 & interaction.type < 27 ~ "y", # we're calling sessile micropredation parasitic here
-    TRUE ~ "n"
-  ))
+  # we will also add a column for color
+  #mutate(nodeColor = case_when())
 
-# create igraph object for plotting
-trophic_web_psites <- graph_from_data_frame(d= trophic_links, # all links
-                             vertices = nodes, # nodes
-                             directed=T) # i think this makes sure consumers "point" to resources
+trophic.links <- links %>% 
+  # cheddar can't handle duplicates so we need to get rid of them
+  distinct(consumer, resource, .keep_all = TRUE)
 
-# we want to calculate degree to set the size of circles
-deg_psites <- igraph::degree(trophic_web_psites, mode = "all") 
+# create properties list
+properties <- list(title = "ca riz total") #syntax that the help doc suggests
 
-# we can use igraph to pull an adjacency matrix from our igraph web object
+# create community object
+ca_riz_total <- Community(cheddar_nodes, properties, trophic.links = trophic.links)
 
+# get trophic levels from community object
+options(cheddarMaxQueue=0)
+trophic_levels <- PreyAveragedTrophicLevel(ca_riz_total)
+
+
+#########  convert to igraph object from cheddar ######### 
+# need to create function first
+ToIgraph <- function(community, weight=NULL)
+{
+if(is.null(TLPS(community)))
+{
+stop('The community has no trophic links')
+}
+else
+{
+tlps <- TLPS(community, link.properties=weight)
+if(!is.null(weight))
+{
+tlps$weight <- tlps[,weight]
+}
+return (graph_from_data_frame(tlps,
+vertices=NPS(community),
+directed=TRUE))
+}
+}
+
+ca_riz_ig <- ToIgraph(ca_riz_total)
+
+############# set up igraph dataframes ################
+
+# igraph requires that first two columns of link dataframe are "symbolic edge list"
+igraph_links <- trophic.links %>% 
+  relocate(consumer, .after = resource) # need to make this from, to; so resource, consumer
+
+igraph_nodes <- cheddar_nodes %>% 
+  mutate(trophic_level = trophic_levels) # need to add the trophic levels on here that we calculated using cheddar
+
+############# make igraph object ################
+
+trophic_web_psites1 <- graph_from_data_frame(d= igraph_links, # all links
+                             vertices = igraph_nodes, # igraph filters out nodes that don't have any interactions automatically
+                             directed=T) # this makes sure resources (from) "point" to consumers (to)
+
+# save degree for later use and add it to nodes df:
+deg <- igraph::degree(trophic_web_psites1, mode = "all") 
+igraph_nodes_1 <- igraph_nodes %>% 
+  mutate(degree = deg) %>% 
+  mutate(trophic = trophic_levels)
+
+# remove unconnected nodes still remaining in web
+isolated = which(igraph::degree(trophic_web_psites1)==0)
+trophic_web_psites = delete_vertices(trophic_web_psites1, isolated)
+
+# make the right length of trophic level vector, removing unconnected nodes from igraph_nodes and therefore their TLs
+# very complicated, annoying
+# first make the isolated igraph object into a dataframe and extract the node column
+isolated.df <- as.data.frame(isolated) %>% 
+  rownames_to_column("node")
+#then turn that column into a list
+todelete <- as.list(isolated.df$node)
+# then filter OUT any nodes that are in that list
+igraph_nodes2 <- igraph_nodes_1 %>% 
+  filter(!node %in% todelete) #phew
+
+# make matrix for plotting
 RIZadjmatrix <- as_adjacency_matrix(trophic_web_psites,
                                     sparse = FALSE) # necessary to get a regular matrix, which we need for....
- 
-# Get the basic network indices from the matrices with GenInd()
-
-trophRIZ<-TrophInd(RIZadjmatrix)
-
-trophic_level <- trophRIZ$TL # name this vector, we should be able to add it to the nodes
-# takes a sec
 
 # create a two-column matrix identifying the x and y values for each node
 layout.matrix.1 <- matrix(nrow=length(V(trophic_web_psites)), # Rows equal to the number of vertices
                         ncol=2)
 layout.matrix.1[,1] <- runif(length(V(trophic_web_psites))) # randomly assign positions along x-axis (like jitter)
-layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
+layout.matrix.1[,2] <- igraph_nodes2$trophic_level # why is layout.norm reading these in upsidedown
 
 # make dataframes appropriate for VisNetwork
-trophic_links2 <- trophic_links %>% 
+trophic_links2 <- igraph_links %>% 
   rename(to = consumerNum) %>% 
   rename(from = resourceNum) #right?
 
-nodes2 <- nodes %>% 
-  rename(id = nodeNum) %>% 
-  mutate(degree = deg_psites) %>%  # swe calculated deg a while ago, now added it to df
-  mutate(trophic = trophic_level)
+nodes2 <- igraph_nodes2 %>% 
+  rename(id = nodeNum) 
 
 # some visualization customization first
 vis.nodes <- nodes2 #necessary?
@@ -103,42 +149,73 @@ vis.links <- trophic_links2
 
 vis.nodes$shape  <- "dot"  
 vis.nodes$shadow <- TRUE # Nodes will drop shadow
-vis.nodes$title  <- vis.nodes$species # Text on click is species name
-vis.nodes$label  <- vis.nodes$type.label # Node label # for our purposes, redundant with text on click. can add type.label later
-vis.nodes$size   <- vis.nodes$degree # Node size - will calculate degree later and use this to determine node size
+vis.nodes$title  <- vis.nodes$nodeID # Text on click is node num, taxon, and life stage
+vis.nodes$label  <- vis.nodes$nodeID # want node label to be blank but also want a node label for later
+vis.nodes$font.size <- 0 # should make label invisible?
+vis.nodes$size   <- 0.5*vis.nodes$degree # Node size - will calculate degree later and use this to determine node size
 vis.nodes$borderWidth <- 2 # Node border width
+vis.nodes$level <- 10*vis.nodes$trophic_level
+vis.nodes$group <- vis.nodes$consumer_strategy
 
 # mutate in a column for color
 vis.nodes <- vis.nodes %>% 
-  mutate(color = case_when(trophic_strategy == "grazer" ~ "darkgreen",
-                           trophic_strategy == "micropredator" ~ "pink",
-                           trophic_strategy ==   "non-feeding" ~ "grey",
-                           trophic_strategy ==     "various (assemblage)" ~ "grey",
-                           trophic_strategy ==     "detritivore" ~ "tan",
-                           trophic_strategy ==     "scavenger" ~ "tan",
-                           trophic_strategy ==     "deposit feeder" ~ "tan",
-                           trophic_strategy ==   "filter feeder" ~ "blue",
-                           trophic_strategy ==     "primary producer" ~ "limegreen",
-                           trophic_strategy ==     "mixotroph" ~ "limegreen",
-                           trophic_strategy ==     "omnivore" ~ "orange",
-                           trophic_strategy ==     "typical predator" ~ "purple",
-                           trophic_strategy ==     "carnivore (scavenger + predator)" ~ "purple",
-                           trophic_strategy ==     "parasite" ~ "red",
-                           trophic_strategy ==     "ectoparasite" ~ "red",
-                           trophic_strategy ==     "pathogen" ~ "red",
-                           trophic_strategy ==    "parasitic castrator" ~ "red",
+  mutate(color = case_when(consumer_strategy == "grazer" ~ "darkgreen",
+                           consumer_strategy == "micropredator" ~ "pink",
+                           consumer_strategy ==   "non-feeding" ~ "grey",
+                           consumer_strategy ==     "various (assemblage)" ~ "grey",
+                           consumer_strategy ==     "detritivore" ~ "tan",
+                           consumer_strategy ==     "scavenger" ~ "tan",
+                           consumer_strategy ==     "deposit feeder" ~ "tan",
+                           consumer_strategy ==   "filter feeder" ~ "blue",
+                           consumer_strategy ==     "primary producer" ~ "limegreen",
+                           consumer_strategy ==     "mixotroph" ~ "limegreen",
+                           consumer_strategy ==     "omnivore" ~ "orange",
+                           consumer_strategy ==     "typical predator" ~ "purple",
+                           consumer_strategy ==     "carnivore (scavenger + predator)" ~ "purple",
+                           consumer_strategy ==     "endoparasite" ~ "red",
+                           consumer_strategy ==     "ectoparasite" ~ "red",
+                           consumer_strategy ==     "pathogen" ~ "red",
+                           consumer_strategy ==    "parasitic castrator" ~ "red",
                            .default = "black"))
 
 # and plot
 visNetwork(vis.nodes, vis.links, width = "2000px", height = "2000px") %>% 
   visPhysics(enabled = FALSE) %>% 
-  visEdges(color = list(inherit = "both" 
+  visEdges(arrows = "to",
+           color = 
+             list(inherit = "to" 
                         #highlight = list(enabled = T, degree = 1)
-                        )) %>% 
-  visOptions(selectedBy =  "common_name",
-             highlightNearest = list(enabled = T, degree = 0)
+                        )
+) %>% 
+  visOptions(selectedBy =  "consumer_strategy",
+             #selectedBy = "nodeID",
+           # highlightNearest = list(enabled = TRUE, degree = 1,
+            #                         hideColor = "rgba(0,0,0,0.5)",
+            #                         labelOnly = FALSE, hover = TRUE),
+             nodesIdSelection = list(enabled = TRUE, useLabels = TRUE),
+             highlightNearest = list(enabled = T, degree = 1, hover = T),
+           manipulation = list(enabled = T, addEdge = F, addNode = F, editNode = F, editEdge = F)
              ) %>%
-  visIgraphLayout(layout = "layout.norm", layoutMatrix = layout.matrix.1)  # woo this one worked! but it's upsidedown
+  #visInteraction(navigationButtons = TRUE) %>% 
+  #visGroups(vis.nodes$consumer_strategy, vis.nodes$color) %>% 
+  visLegend(addNodes = list(
+    list(label = "other or unknown", shape = "oval", color = "black", font = list(color = "white"), size = 2),
+    list(label = "parasitic", shape = "oval", color = "red", font = list(color = "white"), size = 2),
+    list(label = "micropredator", shape = "oval", color = "pink", font = list(color = "white"), size = 2),
+    list(label = "carnivore", shape = "oval", color = "purple", font = list(color = "white"), size = 2),
+    list(label = "omnivore", shape = "oval", color = "orange", font = list(color = "white"), size = 2),
+    list(label = "filter feeder", shape = "oval", color = "blue", font = list(color = "white"), size = 2),
+    list(label = "detritivore or scavenger", shape = "oval", color = "tan", font = list(color = "white"), size = 2),
+    list(label = "grazer", shape = "oval", color = "darkgreen", font = list(color = "white"), size = 2),
+    list(label = "primary producer", shape = "oval", color = "limegreen", font = list(color = "white"), size = 2),
+    list(label = "non-feeding or assemblage (various)", shape = "oval", font = list(color = "white"), color = "grey", size = 2)
+         ), useGroups = FALSE) %>% # figuring this out still
+  
+ 
+                          
+  
+  visIgraphLayout(layout = "layout.norm", layoutMatrix = -(layout.matrix.1))  # woo this one worked! adding a "-" fixed the upsidedown which is crazy haha
+  #visHierarchicalLayout(levelSeparation = 1000, nodeSpacing = 0.01, sortMethod = "directed") # hierarchical layout is so fucky
 
 
 ```

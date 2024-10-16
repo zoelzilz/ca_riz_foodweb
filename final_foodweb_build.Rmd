@@ -28,6 +28,9 @@ library(threejs)
 library(networkD3)
 library(ndtv) 
 library(tidyverse)
+library(here)
+library(needs)
+prioritize(dplyr)
 ```
 
 # Round One of Building: Generate Real Node List from Potential Node List Using Edge List
@@ -35,13 +38,14 @@ library(tidyverse)
 ```{r import potential nodes and edge list}
 
 ## nodes ##
-potential_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_18jun24.csv") %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links AND THEN AGAIN UPDATE TO 5/3 VERSION to fix some mistakes and finally 5/6 i hope; lol jk its june 2nd and i'm still updating things
+potential_nodes <- read_csv(here("data/RIZspecieslist_fulltaxonomy_25sep24.csv")) %>% # updated to .1 version because I had to manually fix some higher taxonomy, then updated to 4/24 version because I fixed metadata of some dissection nodes, finally updated to 4/29 version because I had to add in an ass ton more links AND THEN AGAIN UPDATE TO 5/3 VERSION to fix some mistakes and finally 5/6 i hope; lol jk its june 2nd and i'm still updating things
+# LOL final update i hope with revisions on 7 oct 2024, using 25sep24 version
   rename(nodeNum = id.x)
 #View(potential_nodes)
 
 
 ## edges ##
-edges_unclean <- read_csv("data/links_frommaster_18jun2024.csv") %>% # updated again jun 14 2024 to include some missing elements
+edges_unclean <- read_csv("data/links_frommaster_8oct2024.csv") %>% # updated finally in oct to include revisions AND remove unrealiable sanak links
   filter(!is.na(consumerNum)) %>% 
   filter(consumerNum != 0) %>% # removing consumers that I've already decided don't exist in the RIZ
   filter(!is.na(resourceNum)) %>% 
@@ -301,7 +305,7 @@ edges_clean <- inner_join(resourceNums_keep, consumers_clean, by = join_by(resou
 ### pull in locations from new csv i just made of lit search locations
 locs <- read_csv("data/litsearch_locations.csv") %>% 
   rename(ref_num = reference_number) %>% 
-  select(ref_num, general_location_of_study) %>% 
+  dplyr::select(ref_num, general_location_of_study) %>% 
   filter(!is.na(general_location_of_study)) %>% 
   distinct(ref_num, general_location_of_study) %>%  # keeps only one row for each reference : location combo
   mutate(general_location_of_study = str_remove_all(general_location_of_study, "\\.")) # remove periods
@@ -441,6 +445,7 @@ edges_collapse <- edges_cleaner %>%
   summarize(localities = paste0(localities, collapse = ";"), # important to leave out the space after semicolon, for later
             justification = min(justification), 
             confidence = min(confidence),
+            ref_location_code = min(incl.code), # ADDED THIS IN POST-REVISION ON OCT 7 2024
             zone = paste0(unique(na.omit(zone)), collapse = ", "),
             habitat = paste0(unique(na.omit(habitat)), collapse = ", ")
             )
@@ -450,8 +455,9 @@ edges_collapse <- edges_cleaner %>%
 # make a nice list with all of the confidences and references collapsed
 edges_final <- edges_collapse %>% 
   group_by(resourceNum, resourceName, resourceCat, resourceStage, consumerNum, consumerName, consumerCat, consumerStage, interaction.type) %>% 
-  summarize(ref_num = paste0(ref_num, collapse = ", "),
+  summarize(ref_num = paste0(ref_num, collapse = "; "), # changed from comma oct 7
             justification = min(justification),
+            ref_location_code = min(ref_location_code), # ADDED THIS IN POST-REVISION ON OCT 7 2024
             zone = paste0(unique(na.omit(zone)), collapse = ", "),
             habitat = paste0(unique(na.omit(habitat)), collapse = ", "),
             localities = paste0(unique(localities), collapse = ";"), # collapse localities into one col, unique is important to remove duplicate locations, also important to leave OUT the space, for later
@@ -504,15 +510,15 @@ final_nodes_w_attributes <- left_join(nodes_final, nodes_attributes_clean, by = 
 ## We're going to take a pause to save these dataframes as CSVs for the next rmd
 ```{r saving current working node list and edge list}
 
-write_csv(final_nodes_w_attributes, "data/foodweb_V6/nodes_final_18jun2024.csv")
+write_csv(final_nodes_w_attributes, "data/foodweb_V8/nodes_final_8oct2024.csv")
 
-write_csv(edges_final, "data/foodweb_V6/links_final_18jun2024.csv")
+write_csv(edges_final, "data/foodweb_V8/links_final_8oct2024.csv")
 
-write_csv(edges_cleaner, "data/foodweb_V6/links_uncollapsed_18jun2024.csv")
+write_csv(edges_cleaner, "data/foodweb_V8/links_uncollapsed_8oct2024.csv")
 
 ```
 
-### At this point we can move over to final_foodweb_analyses ->
+# At this point we can move over to final_foodweb_analyses, which is where we will remove non-trophic links and make a food web for publication ---->
 
 ```{r}
 ############ some checks and balances e.g. why did removing eggs as consumers delete over 100 species from the web
@@ -534,7 +540,7 @@ edges_experiment <- edges_clean %>%
             incl.code = min(incl.code)
             )
 
-view(edges_experiment)
+#view(edges_experiment)
 
 what_missing <- anti_join(edges_final, edges_clean, by = join_by(consumerNum))
 what_missing2 <- anti_join(edges_final, edges_clean, by = join_by(resourceNum))
@@ -587,11 +593,12 @@ trophic_links1 <- edges_final %>% # swapping to "links" lingo because armand thi
     interaction.type > 23 & interaction.type < 27 ~ "y", # we're calling sessile micropredation parasitic here
     TRUE ~ "n"
   )) %>% 
-    dplyr::select(resourceNum,consumerNum, interaction.type)  # RESOURCE NUM HAS TO GO FIRST OR WEB IS UPSIDEDOWN (resourcenum is FROM and consumernum is TO)
+    dplyr::select(resourceNum,consumerNum, interaction.type#, parasitic
+                  )  # RESOURCE NUM HAS TO GO FIRST OR WEB IS UPSIDEDOWN (resourcenum is FROM and consumernum is TO)
   
 
-free_living_links <- trophic_links %>% 
-  filter(parasitic == "n")
+#free_living_links <- trophic_links1 %>% 
+#  filter(parasitic == "n")
 
 # check for duplicate nodes before creating igraph:
 dupes <- nodes_attributes_clean%>% 
@@ -787,7 +794,7 @@ visNetwork(vis.nodes, vis.links, width = "2000px", height = "2000px"
            ) %>% 
   visPhysics(enabled = FALSE) %>% 
   visIgraphLayout(layout = "layout.norm", layoutMatrix = layout.matrix.1) %>%   # woo this one worked! but it's upsidedown
-  visOptions(selectedBy =  "trophic_strategy",
+  visOptions(selectedBy =  "organismal_category",
              highlightNearest = list(enabled = T, 
                                      #degree = c(from = 1, to = 1) # this should work but throws a JSON related error, i think becayse layout isn't hierarchical?
                                      algorithm = "hierarchical",
@@ -813,6 +820,10 @@ resources_without_food <- anti_join(resources, consumers, by = join_by(nodeNum))
   # returned a lot of duplicates oops so
   unique() %>% 
   left_join(., nodes_attributes_clean, by = join_by(nodeNum))
+```
+
+```{r practice heatmap instead}
+heatmap()
 ```
 
 

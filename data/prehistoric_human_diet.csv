@@ -1,0 +1,55 @@
+﻿resource,resourceNum,resourceName,resourceCat,resourceStage,consumer,consumerNum,consumerName,consumerCat,consumerStage,interactionType,referenceNum,justification,confidence,localities,interactionZone,habitat,parasitic
+99_Anthopleura xanthogrammica_1,99,Anthopleura xanthogrammica,anemone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+100_Anthopleura sola_1,100,Anthopleura sola,anemone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+101_Anthopleura elegantissima_1,101,Anthopleura elegantissima,anemone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+102_Epiactis prolifera_1,102,Epiactis prolifera,anemone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,middle,both,n
+103_Anthopleura artemisia_1,103,Anthopleura artemisia,anemone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+104_Urticina crassicornis_1,104,Urticina crassicornis,anemone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,middle,both,n
+105_Urticina coriacea_1,105,Urticina coriacea,anemone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,middle,both,n
+106_Urticina lofotensis_1,106,Urticina lofotensis,anemone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+154_Cucumaria pseudocurata_1,154,Cucumaria pseudocurata,cucumber,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,middle,pools,n
+155_Cucumaria miniata_1,155,Cucumaria miniata,cucumber,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,pools,n
+209_Lottia persona_1,209,Lottia persona,limpet,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",3,2,Sanak Archipelago,high,exposed,n
+217_Styela montereyensis_1,217,Styela montereyensis,tunicate,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+218_Styela clava_1,218,Styela clava,tunicate,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+219_Styela truncata_1,219,Styela truncata,tunicate,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+220_Pyura haustor_1,220,Pyura haustor,tunicate,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+229_Haliotis cracherodii_1,229,Haliotis cracherodii,abalone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,436; 435,3,1,California,all,both,n
+247_Littorina keenae_1,247,Littorina keenae,snail,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,high,both,n
+248_Littorina scutulata_1,248,Littorina scutulata,snail,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,high,both,n
+285_Nucella lamellosa_1,285,Nucella lamellosa,snail,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",3,2,Sanak Archipelago,low,both,n
+384_Hiatella arctica_1,384,Hiatella arctica,boring clam,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+416_Katharina tunicata_1,416,Katharina tunicata,chiton,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",3,2,Sanak Archipelago,middle,both,n
+417_Cryptochiton stelleri_1,417,Cryptochiton stelleri,chiton,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",3,2,Sanak Archipelago,low,both,n
+463_Balanus glandula_1,463,Balanus glandula,barnacle,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",3,2,Sanak Archipelago,high,both,n
+464_Balanus glandula_5,464,Balanus glandula,barnacle,5,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",3,2,Sanak Archipelago,high,both,n
+470_Balanus nubilus_1,470,Balanus nubilus,barnacle,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376, 436; 435",3,1,Sanak Archipelago; California,"low, all",both,n
+517_Hippolyte californiensis_1,517,Hippolyte californiensis,shrimp,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,pools,n
+518_Hippolyte clarki_1,518,Hippolyte clarki,shrimp,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,pools,n
+551_Cancer jordani_1,551,Cancer jordani,true crab,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+550_Cancer anthonyi_1,550,Cancer anthonyi,true crab,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376, 436, 436; 435",3,1,Sanak Archipelago; ; California,"low, all","both, pools",n
+552_Cancer branneri_1,552,Cancer branneri,true crab,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+562_Cancer gracilis_1,562,Cancer gracilis,true crab,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+643_Fucus distichus_1,643,Fucus distichus,brown algae,1,712_Homo sapiens_1,712,Homo sapiens,human,1,3,"375, 376",6,3,Sanak Archipelago,high,both,n
+645_Alaria marginata_1,645,Alaria marginata,brown algae,1,712_Homo sapiens_1,712,Homo sapiens,human,1,3,"375, 376",6,3,Sanak Archipelago,all,both,n
+714_Porphyra sp._1,714,Porphyra sp.,red algae,1,712_Homo sapiens_1,712,Homo sapiens,human,1,3,"375, 376",6,3,Sanak Archipelago,all,both,n
+719_Enhydra lutris_1,719,Enhydra lutris,mammal,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",3,2,Sanak Archipelago,all,both,n
+972_Epiactis ritteri_1,972,Epiactis ritteri,anemone,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+995_Cancer gracilis_4,995,Cancer gracilis,true crab,4,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+996_Cancer gracilis_3,996,Cancer gracilis,true crab,3,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+1703_Euborlasia nigrocincta_1,1703,Euborlasia nigrocincta,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+1704_Lineus bilineatus_1,1704,Lineus bilineatus,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+1705_Lineus flavescens_1,1705,Lineus flavescens,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+1706_Lineus pictifrons_1,1706,Lineus pictifrons,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+1710_Lineus rubescens_1,1710,Lineus rubescens,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+1711_Lineus torquatus_1,1711,Lineus torquatus,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+1712_Micrura alaskensis_1,1712,Micrura alaskensis,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+1713_Micrura coei_1,1713,Micrura coei,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+1714_Micrura olivaris_1,1714,Micrura olivaris,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,low,both,n
+1715_Micrura verrilli_1,1715,Micrura verrilli,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+1717_Lineus sanguineus_1,1717,Lineus sanguineus,nemertean,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,high,both,n
+1877_Littorina littorea_1,1877,Littorina littorea,limpet,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,exposed,n
+1878_Littorina plena_1,1878,Littorina plena,limpet,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,exposed,n
+1977_Entodesma pictum_1,1977,Entodesma pictum,bivalve,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",6,3,Sanak Archipelago,all,both,n
+3019_Larus glaucescens_1,3019,Larus glaucescens,bird,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",3,2,Sanak Archipelago,middle to high,both,n
+3031_Tringa melanoleuca_1,3031,Tringa melanoleuca,bird,1,712_Homo sapiens_1,712,Homo sapiens,human,1,1,"375, 376",3,2,Sanak Archipelago,middle,both,n

@@ -1,0 +1,240 @@
+reference_number,consumerNum,focal_consumer_taxon,consumerCat,focal_consumer_life_stage,consumption_type,trophic_strategy.x,resource_species,resource_taxonomic_resolution,date_added
+15,143,Dermasterias imbricata,asteroid,adult,predation,typical predator,Urticina piscivora,species,NA
+16,143,Dermasterias imbricata,asteroid,adult,predation,typical predator,Psolus chitonoides,species,NA
+21,144,Patiria miniata,asteroid,adult,predation,carnivore (scavenger + predator),Lytechinus anamesus,species,NA
+38,146,Solaster dawsoni,asteroid,adult,predation,typical predator,Crossaster papposus,species,NA
+42,104,Urticina crassicornis,anemone,adult,non-feeding commensalism ( or mutalistic? ),filter feeder,Neptunea pribiloffensis,species,NA
+66,168,Strongylocentrotus purpuratus,urchin,adult,herbivory,grazer,Iridophycus flaccidum,species,NA
+67,168,Strongylocentrotus purpuratus,urchin,adult,herbivory,grazer,Bossietla californica schmittii,species,NA
+67,168,Strongylocentrotus purpuratus,urchin,adult,herbivory,grazer,Caltiarthron cheilosporioides,species,NA
+67,168,Strongylocentrotus purpuratus,urchin,adult,herbivory,grazer,Caltiarthron tuberculosurn,species,NA
+80,16,Oligocottus maculosus,fish,adult,predation,typical predator,Artemia salina,species,NA
+82,594,Haplosaccus elongatus,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium arenatum,species,NA
+82,596,Haplostomella distincta,copepod,adult,non-feeding endocommensalism,NA,Amaroucium arenatum,species,NA
+82,594,Haplosaccus elongatus,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium glabrum,species,NA
+82,596,Haplostomella distincta,copepod,adult,non-feeding endocommensalism,NA,Amaroucium glabrum,species,NA
+82,597,Haplostomella oceanica,copepod,adult,non-feeding endocommensalism,NA,Amaroucium arenatum,species,NA
+82,723,Haplostoma ambiguum,copepod,adult,non-feeding endocommensalism,parasite,Didemnum albidum,species,NA
+82,595,Haplostomella dubia,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium arenatum,species,NA
+82,593,Haplostoma minutum,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium arenatum,species,NA
+82,725,Haplostoma elegans,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium constellatum,species,NA
+82,595,Haplostomella dubia,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium glabrum,species,NA
+82,725,Haplostoma elegans,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium propinquum,species,NA
+82,724,Haplostoma dentatum,copepod,adult,non-feeding endocommensalism,parasite,Cystordytes lobatus,species,NA
+82,592,Pholeterides furtiva,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium arenatum,species,NA
+82,718,Botryllophilus sp.,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium arenatum,species,NA
+82,718,Botryllophilus sp.,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium arenatum,species,NA
+82,592,Pholeterides furtiva,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium constellatum,species,NA
+82,718,Botryllophilus sp.,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium constellatum,species,NA
+82,718,Botryllophilus sp.,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium propinquum,species,NA
+82,729,Haplostomides luteolus,copepod,adult,non-feeding endocommensalism,parasite,Amaroucium glabrum,species,NA
+82,728,Haplostomides bellus,copepod,adult,non-feeding endocommensalism,parasite,Sigillinaria aequali-siphonis,species,NA
+87,16,Oligocottus maculosus,fish,adult,predation,typical predator,Paryophyrus vetulus,species,NA
+101,9,Triakis semifasciata,shark,adult,predation,typical predator,Tresus nuttallii,species,NA
+101,605,Triakis semifasciata,shark,adult,predation,typical predator,Tresus nuttallii,species,NA
+101,606,Triakis semifasciata,shark,adult,predation,typical predator,Tresus nuttallii,species,NA
+101,9,Triakis semifasciata,shark,adult,predation,typical predator,Urechis caupo,species,NA
+101,605,Triakis semifasciata,shark,adult,predation,typical predator,Urechis caupo,species,NA
+101,606,Triakis semifasciata,shark,adult,predation,typical predator,Urechis caupo,species,NA
+101,9,Triakis semifasciata,shark,adult,unintentional ingestion,typical predator,Zostera marina,species,NA
+101,605,Triakis semifasciata,shark,adult,unintentional ingestion,typical predator,Zostera marina,species,NA
+101,606,Triakis semifasciata,shark,adult,unintentional ingestion,typical predator,Zostera marina,species,NA
+105,618,Pygodelphys aquilonaris,copepod,adult,non-feeding endocommensalism,parasite,Cnemidocarpa finmarkiensis,species,NA
+105,618,Pygodelphys aquilonaris,copepod,adult,non-feeding endocommensalism,parasite,Ascidia parairopa,species,NA
+105,618,Pygodelphys aquilonaris,copepod,adult,non-feeding endocommensalism,parasite,Halocynthia aurantium,species,NA
+105,618,Pygodelphys aquilonaris,copepod,adult,non-feeding endocommensalism,parasite,Cnemidocarpa finmarkiensis,species,NA
+105,618,Pygodelphys aquilonaris,copepod,adult,non-feeding endocommensalism,parasite,Cnemidocarpa finmarkiensis,species,NA
+105,618,Pygodelphys aquilonaris,copepod,adult,non-feeding endocommensalism,parasite,Molgula regularis,species,NA
+105,618,Pygodelphys aquilonaris,copepod,adult,non-feeding endocommensalism,parasite,Halocynthia aurantium,species,NA
+105,618,Pygodelphys aquilonaris,copepod,adult,non-feeding endocommensalism,parasite,Chelysoma productum,species,NA
+105,1170,Scolecodes huntsmani,copepod,adult,endoparasitism,parasite,Syela gibbsii,species,NA
+106,1170,Scolecodes huntsmani,copepod,adult,endoparasitism,parasite,Syela gibbsii,species,NA
+107,508,Betaeus harfordi,shrimp,adult,non-feeding endocommensalism,NA,Haliotis assimilis,species,NA
+107,508,Betaeus harfordi,shrimp,adult,non-feeding endocommensalism,NA,Haliotis kamtschatkana,species,NA
+107,508,Betaeus harfordi,shrimp,adult,non-feeding endocommensalism,NA,Haliotis sorensi,species,NA
+107,508,Betaeus harfordi,shrimp,adult,non-feeding endocommensalism,NA,Haliotis wallensis,species,NA
+108,348,Dirona albolineata,nudibranch,adult,predation,micropredator,Aglaophenia struthionoides,species,NA
+134,1122,Anthessius nortoni,copepod,adult,ectoparasitism,parasite,Diadora aspera,species,NA
+134,1122,Anthessius nortoni,copepod,adult,ectoparasitism,parasite,Diadora aspera,species,NA
+134,1122,Anthessius nortoni,copepod,adult,ectoparasitism,parasite,Diadora aspera,species,NA
+143,14,Leptocottus armatus,fish,adult,predation,typical predator,Oncorhynchus keta,species,NA
+172,418,Octopus bimaculoides,octopus,adult,predation,typical predator,Scorpaena guttata,species,NA
+172,1748,Octopus bimaculoides,octopus,adult,predation,non-feeding life stage,Scorpaena guttata,species,NA
+172,1749,Octopus bimaculoides,octopus,adult,predation,typical predator,Scorpaena guttata,species,NA
+175,1917,Doriopsilla gemela,nudibranch,adult,micropredation,micropredator,Cliona californiana,species,NA
+175,353,Flabellinopsis iodinea,nudibranch,adult,micropredation,micropredator,Eudendrium ramosum,species,NA
+175,2210,Doris pickensi,nudibranch,adult,micropredation,micropredator,Hymeniacidon sinapium,species,NA
+175,344,Aegires albopunctatus,nudibranch,adult,micropredation,micropredator,Lucilla nuttingi,species,NA
+175,1882,Berthella strongi,NA,adult,micropredation,unknown,Oscarella carmela,species,NA
+176,638,Hemicyclops thysanotus,copepod,adult,parasitism,parasite,Neotrypaea californiensis,species,NA
+178,401,Stenoplax heathiana,chiton,adult,herbivory,grazer,Gigartina canaliculata,species,NA
+178,1755,Stenoplax heathiana,chiton,adult,herbivory,non-feeding life stage,Gigartina canaliculata,species,NA
+178,1756,Stenoplax heathiana,chiton,adult,herbivory,unknown,Gigartina canaliculata,species,NA
+178,401,Stenoplax heathiana,chiton,adult,herbivory,grazer,Plocamium violacium,species,NA
+178,1755,Stenoplax heathiana,chiton,adult,herbivory,non-feeding life stage,Plocamium violacium,species,NA
+178,1756,Stenoplax heathiana,chiton,adult,herbivory,unknown,Plocamium violacium,species,NA
+178,401,Stenoplax heathiana,chiton,adult,herbivory,grazer,Ulva lobata,species,NA
+178,1755,Stenoplax heathiana,chiton,adult,herbivory,non-feeding life stage,Ulva lobata,species,NA
+178,1756,Stenoplax heathiana,chiton,adult,herbivory,unknown,Ulva lobata,species,NA
+179,2261,Otodistomum veliporum,trematode,adult,parasitism,parasite,Heterodontus francisci,species,NA
+180,2137,Rhinebothrium urobatidium,cestode,adult,parasitism,parasite,Urobatis halleri,species,NA
+180,2138,Rhinebothrium urobatidium,cestode,adult,parasitism,parasite,Urobatis halleri,species,NA
+180,2139,Rhinebothrium urobatidium,cestode,adult,parasitism,parasite,Urobatis halleri,species,NA
+186,1847,Nucella ostrina,snail,adult,predation,typical predator,Mytilus galloprovincialis,species,NA
+186,150,Pisaster ochraceus,asteroid,adult,predation,typical predator,Mytilus galloprovincialis,species,NA
+188,272,Ceratostoma foliatum,murex,adult,predation,typical predator,Nettastomella rostrata,species,NA
+188,1835,Ceratostoma foliatum,snail,adult,predation,non-feeding life stage,Nettastomella rostrata,species,NA
+188,272,Ceratostoma foliatum,murex,adult,predation,typical predator,Zirfaea pilsbryi,species,NA
+188,1835,Ceratostoma foliatum,snail,adult,predation,non-feeding life stage,Zirfaea pilsbryi,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Callianassa californiensis,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Cancer antennarius,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Cancer magister,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Capitella capitata,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Cerithidea californica,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Clinocardium nuttallii,species,NA
+189,2111,Numenius americanus,bird,adult,predation,typical predator,Cryptomya californica,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Gemma gemma,species,NA
+189,2111,Numenius americanus,bird,adult,predation,typical predator,Gemma gemma,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Grandidierella japonica,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Hemigraspus nudus,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Hemigraspus oregonensis,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Leptochelia dubia,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Lumbrineris zonata,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Orchestia traskiana,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Pachygraspus crassipes,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Phytia setifer,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Protothaca staminea,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Transenella tantilla,species,NA
+189,2110,Catoptrophorus semipalmatus,bird,adult,predation,typical predator,Upogebia pugettensis,species,NA
+194,284,Nucella emarginata,snail,adult,predation,typical predator,Collisella limatula,species,NA
+194,284,Nucella emarginata,snail,adult,predation,typical predator,Collisella scabra,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Amphipholis sguamata,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Amphipholis sguamata,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Amphitrite cirrata,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Amphitrite cirrata,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Ascidia paratropa,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Ascidia paratropa,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Balanus cariosus,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Balanus cariosus,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Chlamys rubida,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Chlamys rubida,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Clinocardium californiense,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Clinocardium californiense,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Clinocardium nuttallii,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Clinocardium nuttallii,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Glycymeris subobsoleta,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Glycymeris subobsoleta,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Harmothoe extenuata,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Harmothoe extenuata,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Laonice cirrata,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Laonice cirrata,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Mitrella gausapata,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Mitrella gausapata,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Mya truncata,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Mya truncata,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Nicomache personata,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Nicomache personata,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Olivella boetica,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Olivella boetica,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Pagurus aleuticus,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Pagurus aleuticus,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Psephidia lordi,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Psephidia lordi,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Spirorbis validus,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Spirorbis validus,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Strongylocentrotus droebachiensis,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Strongylocentrotus droebachiensis,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Tellina carpenteri,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Tellina carpenteri,species,NA
+202,554,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Terebellides stroemi,species,NA
+202,555,Cancer productus,true crab,adult,predation,carnivore (scavenger + predator),Terebellides stroemi,species,NA
+251,984,Crangon handi,shrimp,adult,predation,carnivore (scavenger + predator),Hyale frequens,species,NA
+252,1049,Diarthrodes cystoecus,copepod,adult,endoparasitism,filter feeder,Halosaccion glandiforme,species,NA
+255,505,Caprella californica,amphipod,adult,predation,omnivore,Corophium acherusicum,species,NA
+255,505,Caprella californica,amphipod,adult,predation,omnivore,Elasmopus rapax,species,NA
+255,505,Caprella californica,amphipod,adult,predation,omnivore,Pontogeneia minuta,species,NA
+255,505,Caprella californica,amphipod,adult,nondiscriminatory filter feeding,omnivore,Prorocentrum micans,species,NA
+257,1780,Lucapinella callomarginata,limpet,adult,micropredation,micropredator,Hymeniacidon synapium,species,NA
+257,1780,Lucapinella callomarginata,limpet,adult,micropredation,micropredator,Tetilla mutabilis,species,NA
+258,2079,Ascelichthys rhodorus,fish,adult,predation,NA,Aoroides columbinae,species,NA
+258,2074,Anoplarchus purpurescens,fish,adult,herbivory,NA,Desmarestia intermedia,species,NA
+258,2081,Clinocottus acuticeps,fish,adult,predation,NA,Gnorimosphaeroma oregonensis,species,NA
+258,2091,Liparis florae,fish,adult,predation,NA,Gnorimosphaeroma oregonensis,species,NA
+258,2079,Ascelichthys rhodorus,fish,adult,predation,NA,Hyale frequens,species,NA
+258,2079,Ascelichthys rhodorus,fish,adult,predation,NA,Parallorchestes ochotensis,species,NA
+258,2091,Liparis florae,fish,adult,predation,NA,Penidotea montereyensis,species,NA
+258,2079,Ascelichthys rhodorus,fish,adult,predation,NA,Telemesus cheiragonus,species,NA
+258,2074,Anoplarchus purpurescens,fish,adult,predation,NA,Gnorimosphaeroma oregonensis,species,NA
+258,2082,Clinocottus embryum,fish,adult,predation,NA,Aoroides columbinae,species,NA
+258,2083,Clinocottus globiceps,fish,adult,predation,NA,Aoroides columbinae,species,NA
+258,2074,Anoplarchus purpurescens,fish,adult,predation,NA,Aoroides columbinae,species,NA
+258,2096,Phytichthys chirus,fish,adult,predation,NA,Aytlus tridens,species,NA
+258,2092,Oligocottus rimensis,fish,adult,predation,NA,Caprellidae,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Collisella digitalis,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Collisella pelta,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Collisella pelta,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Collisella strigatella,species,NA
+258,2079,Ascelichthys rhodorus,fish,adult,predation,NA,Gnorimosphaeroma oregonensis,species,NA
+258,2082,Clinocottus embryum,fish,adult,predation,NA,Gnorimosphaeroma oregonensis,species,NA
+258,2083,Clinocottus globiceps,fish,adult,predation,NA,Gnorimosphaeroma oregonensis,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Gnorimosphaeroma oregonensis,species,NA
+258,2083,Clinocottus globiceps,fish,adult,predation,NA,Hyale frequens,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,L. sitkana,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Littorina sitkana,species,NA
+258,2083,Clinocottus globiceps,fish,adult,predation,NA,Melita californica,species,NA
+258,2074,Anoplarchus purpurescens,fish,adult,predation,NA,Melita californica,species,NA
+258,2079,Ascelichthys rhodorus,fish,adult,predation,NA,Melita desdichata,species,NA
+258,2083,Clinocottus globiceps,fish,adult,predation,NA,Melita desdichata,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Notoacmaea persona,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Notoacmea fenestrata,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Notoacmea persona,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Notoacmea scutum,species,NA
+258,2083,Clinocottus globiceps,fish,adult,predation,NA,Paracalliopiella pratti,species,NA
+258,2074,Anoplarchus purpurescens,fish,adult,predation,NA,Parallorchestes ochotensis,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Penidotea montereyensis,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Tonicella insignis,species,NA
+258,19,Gobiesox maeandricus,fish,adult,predation,typical predator,Polinices lewisii,species,NA
+258,2102,Xiphister atropurpureus,fish,adult,predation,NA,Aytlus tridens,species,NA
+258,2102,Xiphister atropurpureus,fish,adult,predation,NA,Emerita analoga,species,NA
+258,2075,Apodichthys flavidus,fish,adult,predation,NA,Gnorimosphaeroma oregonensis,species,NA
+258,2083,Clinocottus globiceps,fish,adult,predation,NA,Hemigrapsus oregonensis,species,NA
+159,418,Octopus bimaculoides,octopus,adult,predation,typical predator,Stenoplax conspicu,species,NA
+159,1748,Octopus bimaculoides,octopus,adult,predation,non-feeding life stage,Stenoplax conspicu,species,NA
+159,1749,Octopus bimaculoides,octopus,adult,predation,typical predator,Stenoplax conspicu,species,NA
+159,418,Octopus bimaculoides,octopus,adult,predation,typical predator,Tegula aureotinct,species,NA
+159,1748,Octopus bimaculoides,octopus,adult,predation,non-feeding life stage,Tegula aureotinct,species,NA
+159,1749,Octopus bimaculoides,octopus,adult,predation,typical predator,Tegula aureotinct,species,NA
+161,1905,Chromodoris macfarlandi,nudibranch,adult,micropredation,micropredator,Aplysilla polyraphis,species,NA
+33,153,Pisaster brevispinus,asteroid,adult,predation,typical predator,Tresus nuttallii,species,NA
+240,913,Proboscidactyla circumsabella,hydroid,hydroid,epibiosis,filter feeder,Pseudopotamilla intermedia,species,NA
+240,914,Proboscidactyla circumsabella,plankton,hydroid,epibiosis,filter feeder,Pseudopotamilla intermedia,species,NA
+240,913,Proboscidactyla circumsabella,hydroid,hydroid,epibiosis,filter feeder,Pseudopotamilla ocellata,species,NA
+240,914,Proboscidactyla circumsabella,plankton,hydroid,epibiosis,filter feeder,Pseudopotamilla ocellata,species,NA
+90,18,Heterostichus rostratus,fish,juvenile,predation,typical predator,Artemia salina,species,NA
+90,604,Heterostichus rostratus,fish,juvenile,predation,typical predator,Artemia salina,species,NA
+90,18,Heterostichus rostratus,fish,juvenile,predation,typical predator,Brachionus plicatilis,species,NA
+90,604,Heterostichus rostratus,fish,juvenile,predation,typical predator,Brachionus plicatilis,species,NA
+248,995,Cancer gracilis,true crab,juvenile,micropredation,carnivore (scavenger + predator),Artemia franciscana,species,NA
+248,996,Cancer gracilis,true crab,juvenile,micropredation,carnivore (scavenger + predator),Artemia franciscana,species,NA
+248,562,Cancer gracilis,true crab,juvenile,micropredation,carnivore (scavenger + predator),Artemia franciscana,species,NA
+248,995,Cancer gracilis,true crab,juvenile,micropredation,carnivore (scavenger + predator),Artemia labiata,species,NA
+248,996,Cancer gracilis,true crab,juvenile,micropredation,carnivore (scavenger + predator),Artemia labiata,species,NA
+248,562,Cancer gracilis,true crab,juvenile,micropredation,carnivore (scavenger + predator),Artemia labiata,species,NA
+248,2116,Hyperia medusarum,amphipod,juvenile,epibiosis,parasite,Aurelia labiata,species,NA
+248,995,Cancer gracilis,true crab,juvenile,cannibalism,carnivore (scavenger + predator),Cancer gracilis megalopae,species,NA
+248,996,Cancer gracilis,true crab,juvenile,cannibalism,carnivore (scavenger + predator),Cancer gracilis megalopae,species,NA
+248,562,Cancer gracilis,true crab,juvenile,cannibalism,carnivore (scavenger + predator),Cancer gracilis megalopae,species,NA
+248,2116,Hyperia medusarum,amphipod,juvenile,epibiosis,parasite,Pleurobrachia bachei,species,NA
+248,2116,Hyperia medusarum,amphipod,juvenile,epibiosis,parasite,Polyorchis penicillatus,species,NA
+153,15,Clinocottus analis,fish,juvenile,predation,typical predator,Aedes aegypti,species,NA
+248,2116,Hyperia medusarum,amphipod,larva,epibiosis,parasite,Aurelia labiata,species,NA
+248,2116,Hyperia medusarum,amphipod,larva,epibiosis,parasite,Pleurobrachia bachei,species,NA
+248,2116,Hyperia medusarum,amphipod,larva,epibiosis,parasite,Polyorchis penicillatus,species,NA
+200,2117,Helicometrina nimia,trematode,metacercaria,endoparasitism,parasite,Cancer antennarius,species,NA
+252,1049,Diarthrodes cystoecus,copepod,nauplii,endoparasitism,filter feeder,Halosaccion glandiforme,species,NA
+180,2137,Rhinebothrium urobatidium,cestode,plerocercoid,parasitism,parasite,Clevelandia ios,species,NA
+180,2138,Rhinebothrium urobatidium,cestode,plerocercoid,parasitism,parasite,Clevelandia ios,species,NA
+180,2139,Rhinebothrium urobatidium,cestode,plerocercoid,parasitism,parasite,Clevelandia ios,species,NA
+102,620,Parahypocoma rhamphisokarya,ciliate,adult,non-feeding endocommensalism,unknown,Ascidia callosa,species,NA
+102,619,Trichophrya salparum,ciliate,adult,non-feeding endocommensalism,unknown,Ascidia callosa,species,NA
+235,2228,Lankesteria ascidiae,protozoan,adult,endoparasitism,parasite,Ciona intestinalis,species,NA

@@ -5,16 +5,24 @@ output: html_notebook
 ```{r packages}
 
 library(tidyverse)
+library(needs)
+prioritize(dplyr) # prevents other packages from masking functions in dplyr (mostly select)
 
 ```
 
 #Sanak Archipelago Food Web from:
 ### Dunne, J. A., Maschner, H., Betts, M. W., Huntly, N., Russell, R., Williams, R. J., & Wood, S. A. (2016). The roles and impacts of human hunter-gatherers in North Pacific marine food webs. Scientific Reports, 6(1), Article 1. https://doi.org/10.1038/srep21179
 
+#### Permissions:
+This work is licensed under a Creative Commons Attribution 4.0 International License. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license, users will need to obtain permission from the license holder to reproduce the material. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
+### As of 8 Oct 2024, decided to run this again and exclude nodes matched based on family. I will manually assess those nodes and determine whether the links between them should be included AS RESOURCES ONLY (e.g. a specific bird species eats Staphylinidae)
+### I am also using the most updated node list
 ```{r import sanak data and my data}
 
 ## my node list
-ca_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_28may24.csv") %>% 
+#ca_nodes <- read_csv("data/archives/RIZspecieslist_fulltaxonomy_28may24.csv") %>% < original
+ca_nodes <- read_csv("data/RIZspecieslist_fulltaxonomy_25sep24.csv") %>% # newe
   rename(Name = species,
          ca_id = id.x) # so it matches name
 
@@ -28,9 +36,6 @@ sanak_nodes_iz <- sanak_nodes_all %>%
 
 # sanak iz web
 sanak_iz <- read_csv("data/sanak_web/sanak_iz_links.csv")
-
-# might include sanak subtidal web later
-
 
 ```
 ## Step 1: Wrangle sanak nodes so they match my nodes
@@ -47,15 +52,23 @@ sanak_genera <- sanak_nodes_iz %>%
 matched_genera <- inner_join(sanak_genera, ca_nodes, by = join_by(genus))%>% 
   mutate(matched_using = "genus")
 
+
+##### saving these to manually go through later #####
 sanak_fams <- sanak_nodes_iz %>% 
   rename(family = Name) # so we can join on genus column in ca_nodes
 
 matched_families <- inner_join(sanak_fams, ca_nodes, by = join_by(family))%>% 
   mutate(matched_using = "family")
 
-# need to make a full list of all the matched taxa and include a column indicating how that taxon was matched (e.g. species, genus, family)
+#####################################################
 
-matched_nodes_all <- rbind(matched_species, matched_genera, matched_families)
+# need to make a full list of all the matched taxa and include a column indicating how that taxon was matched (e.g. species, genus)
+
+matched_nodes_all <- rbind(matched_species, matched_genera#, matched_families # no longer including these
+                           )
+
+matched_nodes_check <- matched_nodes_all %>% 
+  dplyr::select(sanak_id, Name, matched_using)
 
 ```
 
@@ -65,7 +78,7 @@ matched_nodes_all <- rbind(matched_species, matched_genera, matched_families)
 
 #### 361 nodes in the california web are represented in the sanak web, either by their exact species (n = 52), their genus (n = 111), or their family (n = 198). This leaves out nodes that might be the same but be called a different or old name. Oh well!
 
-```{r link wrangling for all matched taxa}
+```{r link wrangling for matched genera and species}
 # make a version of the matched nodes list to join with the link list (need to make sure IDs can bind)
 
 # first for consumers
@@ -73,12 +86,12 @@ consumers_to_match <- matched_nodes_all %>%
   rename(Consumer = sanak_id)  # ID column name in link list
 
 consumers_data <- inner_join(sanak_iz, consumers_to_match, by = join_by(Consumer), relationship = "many-to-many") %>% 
-  select(Consumer, Name, ca_id, common_name, category, life_stage, Resource, matched_using) # only need some relevant data, can add more later
+  dplyr::select(Consumer, Name, ca_id, common_name, category, life_stage, Resource, matched_using) # only need some relevant data, can add more later
 
 # then for resources
 resources_to_match <- matched_nodes_all %>% 
   rename(Resource = sanak_id) %>%   # resource ID column name in link list, to match
-  select(Resource, Name, ca_id, common_name, category, life_stage, matched_using, zone)
+  dplyr::select(Resource, Name, ca_id, common_name, category, life_stage, matched_using, zone)
 
 # now put all links together
 consumer_resource_links <- inner_join( # did left_join at first but it included a lot of resources that didn't match ca nodes
@@ -94,7 +107,8 @@ sanak_links_to_paste <- consumer_resource_links %>%
   #filter(!is.na(resourceNum)) %>% ## we already did this by using inner join above
   
   #add in columns that are present in edgelist master:
-  mutate(date_added = "29 May 2024") %>% 
+  #mutate(date_added = "29 May 2024") %>% # original
+  mutate(date_added = "8 Oct 2024") %>% 
   mutate(INITIALS = "ZZ_coded") %>% 
   
   # need to change the below so they are different based on what taxon they were matched using (species, genus, or family)
@@ -110,8 +124,8 @@ sanak_links_to_paste <- consumer_resource_links %>%
   mutate(MorrisHaderlie = "no") %>%
   mutate(epibiota_consumed = "y") %>% 
   mutate(notes = "") %>% 
-  mutate(link.ID = (11849 + seq_len(length.out = n()))) %>%  # 11849 is currently the last link id # in edgelist_master so make sure to change
-  mutate(ref_num = "375, 376") %>% # ref nums for both sanak web papers
+  mutate(link.ID = (11849 + seq_len(length.out = n()))) %>%  # we deleted links # 11850 - 18984 from links_master on 8oct24 so this should just fill that gap
+  mutate(ref_num = "375") %>% # ref nums for ONLY 375 = Dunne 2016 becuase that's where the data is from
   mutate(interaction.type = case_when(
     str_detect(category.y, "algae") ~ 3, 
     .default = 1)
@@ -155,9 +169,98 @@ sanak_links_to_paste <- consumer_resource_links %>%
 ## Step 4: export to CSV
 ```{r create csv to merge with edgelist master}
 
-write_csv(sanak_links_to_paste, "data/sanak_links_to_paste_29may2024.csv")
+write_csv(sanak_links_to_paste, "data/sanak_links_to_paste_8oct2024.csv")
 
 ```
+
+## Step 5: Generate links from nodes matched by family to assess manually
+basically repeat steps 3 - 4 for the matched_families dataframe
+```{r link wrangling for matched families}
+# make a version of the matched nodes list to join with the link list (need to make sure IDs can bind)
+
+# first for consumers
+consumers_to_match_fams <- matched_families %>% 
+  rename(Consumer = sanak_id)  # ID column name in link list
+
+consumers_data_fams <- inner_join(sanak_iz, consumers_to_match_fams, by = join_by(Consumer), relationship = "many-to-many") %>% 
+  dplyr::select(family, Consumer, Name, ca_id, common_name, category, life_stage, Resource, matched_using) # only need some relevant data, can add more later
+
+# then for resources
+resources_to_match_fams <- matched_families %>% 
+  rename(Resource = sanak_id) %>%   # resource ID column name in link list, to match
+  dplyr::select(family, Resource, Name, ca_id, common_name, category, life_stage, matched_using, zone)
+
+# now put all links together
+consumer_resource_links_fam <- inner_join( # did left_join at first but it included a lot of resources that didn't match ca nodes
+  consumers_data_fams, resources_to_match_fams, by = join_by(Resource), relationship = "many-to-many") # this matching should also automatically add .x to columns from consumers_data and .y to resources_to_match
+
+```
+### MASTER CODE for manipulating dataframes to match with edgelist_master
+```{r match family nodes to edgelist_MASTER}
+
+sanak_links_to_paste_fams <- consumer_resource_links_fam %>% 
+  #filter(!is.na(resourceNum)) %>% ## we already did this by using inner join above
+  
+  #add in columns that are present in edgelist master:
+  #mutate(date_added = "29 May 2024") %>% # original
+  mutate(date_added = "8 Oct 2024") %>% 
+  mutate(INITIALS = "ZZ_coded") %>% 
+  
+  # need to change the below so they are different based on what taxon they were matched using (species, genus, or family)
+  mutate(justification = 6 ) %>% # read in lit at higher taxonomic level
+  mutate(incl.code = 2) %>% # both species in web but interaction reported elsewhere
+  mutate(confidence =  3) %>% # 2 both higher taxa in web but interaction reported elsewhere
+  mutate(pools_exposed = NA) %>% # keep this empty for now
+  mutate(localities = "Sanak Archipelago") %>%  
+  mutate(MorrisHaderlie = "no") %>%
+  mutate(epibiota_consumed = "y") %>% 
+  mutate(notes = "") %>% 
+  mutate(link.ID = (13723 + seq_len(length.out = n()))) %>%  # we deleted links # 11850 - 18984 from links_master, and last dataframe added back 11850-13742
+  mutate(ref_num = "375") %>% # ref nums for ONLY 375 = Dunne 2016 becuase that's where the data is from
+  mutate(interaction.type = case_when(
+    str_detect(category.y, "algae") ~ 3, 
+    .default = 1)
+  ) %>%  
+  rename(consumerNum = ca_id.x, 
+         consumerName = Name.x,
+         consumerCat = category.x,
+         resourceNum = ca_id.y,
+         resourceName = Name.y,
+         resourceCat = category.y,
+         consumerFam = family.x,
+         resourceFam = family.y # keepign these in so we can assess later
+         ) %>% 
+    
+   # need to add a column that creates numeric life stage for consumers
+  mutate(consumerStage = case_when(
+    life_stage.x == "adult" | life_stage.x == "medusa" ~ 1,
+    life_stage.x == "egg" ~ 2,
+    life_stage.x == "juvenile" ~ 4, # juvenile fish/snail/crab
+    life_stage.x == "hydroid" ~ 5, # polyp stage in cnidarians
+    life_stage.x == "multiple" ~ 6, 
+    .default = NA
+  )) %>% 
+  
+  # need to add a column that creates numeric life stage for resources as well
+  mutate(resourceStage = case_when(
+    life_stage.y == "adult" | life_stage.y == "medusa" ~ 1,
+    life_stage.y == "egg" ~ 2,
+    life_stage.y == "juvenile" ~ 4, # juvenile fish/snail/crab
+    life_stage.y == "small" ~ 4, # juvenile other
+    life_stage.y == "nauplii" ~ 3, # first stage larva
+    life_stage.y == "hydroid" | life_stage.y == "hydroid colony" ~ 5, # polyp stage in cnidarians
+    life_stage.y == "multiple" ~ 6,
+    .default = NA
+  )) %>% 
+
+  # now select out all the columns that don't match and put them in the right order
+  select(INITIALS, consumerFam, consumerNum, consumerName, consumerCat, consumerStage, resourceFam, resourceNum, resourceName, resourceCat, resourceStage, interaction.type, confidence, justification, incl.code, ref_num, localities, zone, pools_exposed, MorrisHaderlie, epibiota_consumed, notes, link.ID, date_added)
+                                                          
+######### FAMILY only CSV ######### 
+write_csv(sanak_links_to_paste_fams, "data/sanak_fams_to_review_8oct2024.csv")
+
+```
+
 
 ### deprecated code since i combined all matched nodes into one dataframe
 

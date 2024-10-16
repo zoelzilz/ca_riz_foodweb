@@ -1,0 +1,1035 @@
+web_enter_code,id.x,species,category,common_name,life_stage,n_s_both,zone,trophic_strategy,interaction_type,resourceName,source
+yes,151,Pisaster giganteus,asteroid,blue knobby star,adult,Both,very low,typical predator,preys_on,(in order of preference) Mytilus edulis,"Morris, Abbott, & Haderlie"
+no - too vague,1877,Littorina littorea,limpet,NA,adult,N,all,grazer,preys_on,a wide range of algae,Light & Smith
+yes,569,Pycnogonum stearnsi,sea spider,NA,adult,Both,middle to low,micropredator,parasitic_on,A. elegantissima,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,abalones,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,abalones,Light & Smith
+no - resource,1922,Dendronotus diversicolor,nudibranch,NA,adult,N,all,micropredator,preys_on,Abietinaria amphora,Light & Smith
+yes,560,Hermissenda crassicornis,nudibranch,opalescent nudibranch,adult,N,low,typical predator,preys_on,Abietinaria spp.,Light & Smith
+yes,1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Abietinaria spp.,Light & Smith
+no - resource,1922,Dendronotus diversicolor,nudibranch,NA,adult,N,all,micropredator,preys_on,Abietinaria traski,Light & Smith
+yes,151,Pisaster giganteus,asteroid,blue knobby star,adult,Both,very low,typical predator,preys_on,Acanthina spirata,"Morris, Abbott, & Haderlie"
+no - already in web,285,Nucella lamellosa,snail,frilled dogwinkle,adult,N,low,typical predator,preys_on,acorn barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,580,Paraphrosylus praedator,insect,long legged fly,adult,N,high to middle,typical predator,preys_on,adult chironimid flies,"Morris, Abbott, & Haderlie; Light & Smith"
+,2072,Paralabrax nebulifer,fish,barred sand bass,adult,Both,low,typical predator,preys_on,adults prey on fishes (especially Porichthys notatus),FishBase
+expanded,347,Doto amyra,nudibranch,hammerhead doto,adult,Both,low,micropredator,preys_on,Aglaophenia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,349,Dirona picta,nudibranch,spotted dirona,adult,Both,low,micropredator,preys_on,Aglaophenia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1925,Doto lancei,nudibranch,NA,adult,N,all,micropredator,preys_on,Aglaophenia sp.,Light & Smith
+yes,634,Doto kya,nudibranch,NA,adult,Both,low,micropredator,preys_on,Aglaophenia struthioides,Light & Smith
+yes,1322,Carinonajna barnardi,gammarid,NA,adult,NA,all,parasite,parasitic_on,Alaria,Light & Smith
+yes,1324,Carinonajna bispinosa,gammarid,NA,adult,NA,all,parasite,parasitic_on,Alaria,Light & Smith
+yes,1299,Peramphithoe humeralis,gammarid,NA,adult,NA,all,parasite,parasitic_on,Alaria or Macrocystis,Light & Smith
+yes,1300,Peramphithoe humeralis,gammarid,NA,juvenile,NA,all,parasite,parasitic_on,Alaria or Macrocystis,Light & Smith
+yes,336,Acanthodoris lutea,nudibranch,orange peel,adult,Both,low tidepools,micropredator,preys_on,Alcyonidium sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,337,Acanthodoris nanaimoensis,nudibranch,wine plume dorid,adult,N,low,micropredator,preys_on,Alcyonidium sp.,"Morris, Abbott, & Haderlie"
+yes,341,Onchidoris muricata,nudibranch,white onchodoris,adult,N,low,micropredator,preys_on,Alcyonidium spp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1893,Acanthodoris pilosa,nudibranch,NA,adult,N,all,micropredator,preys_on,Alcyonidium spp.,Light & Smith
+,225,Haliotis rufescens,abalone,red abalone,adult,Both,low,grazer,preys_on,algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,300,Aplysia californica,sea hare,California brown sea hare,adult,Both,low,grazer,preys_on,algae,"Morris, Abbott, & Haderlie"
+,557,Lophopanopeus leucomanus leucomanus,true crab,NA,adult,Both,low,omnivore,preys_on,algae,"Morris, Abbott, & Haderlie"
+,761,Ligia pallasii,isopod,NA,adult,Both,high,detritivore,preys_on,algae,Walla Walla; Light & Smith
+,1293,Ampithoe longimana,gammarid,NA,adult,NA,all,grazer,preys_on,algae,Light & Smith
+,1490,Bledius fenyesi,insect,NA,adult,NA,all,grazer,preys_on,algae,Light & Smith
+,1587,Typosyllis nipponica,polychaete,NA,adult,Both,all,grazer,preys_on,algae,Light & Smith
+,1780,Lucapinella callomarginata,limpet,NA,adult,Both,low,micropredator,preys_on,algae,Light & Smith
+,1798,Lacuna porrecta,snail,NA,adult,N,all,grazer,preys_on,algae,Light & Smith
+,1799,Lacuna unifasciata,snail,NA,adult,Both,all,grazer,preys_on,algae,Light & Smith
+yes,1401,Traskorchestia georgiana,gammarid,NA,adult,NA,high,detritivore,preys_on,algae wrack,Light & Smith
+yes,1402,Traskorchestia traskiana,gammarid,NA,adult,NA,high,detritivore,preys_on,algae wrack,Light & Smith
+,442,Bispira sp.,polychaete,plume worm,adult,Both,low,filter feeder,preys_on,algal spores. Protozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource,459,Armatobalanus nefrens,barnacle,NA,adult,Both,low,parasite,parasitic_on,Allopora californica,"Morris, Abbott, & Haderlie"
+,2072,Paralabrax nebulifer,fish,barred sand bass,adult,Both,low,typical predator,preys_on,also on crustaceans,FishBase
+,1717,Lineus sanguineus,nemertean,ribbon worm,adult,Both,high to middle,carnivore (scavenger + predator),preys_on,also on polychaetes,Light & Smith
+,126,Amphiporus imparispinosus,nemertean,NA,adult,Both,high,NA,preys_on,amphipods,"Morris, Abbott, & Haderlie; Light & Smith"
+,475,Cirolana harfordi,isopod,rock isopod,adult,Both,middle,carnivore (scavenger + predator),preys_on,amphipods,"Morris, Abbott, & Haderlie"
+,1495,Cafius luteipennis,insect,NA,adult,NA,all,typical predator,preys_on,amphipods,Light & Smith
+,1496,Cafius luteipennis,insect,NA,larvae,NA,all,typical predator,preys_on,amphipods,Light & Smith
+,271,Cypraea spadicea,snail,chestnut cowrie,adult,NA,low,typical predator,preys_on,anemones,"Morris, Abbott, & Haderlie"
+,1832,Epitonium indianorum,snail,NA,adult,N,low,micropredator,preys_on,anemones,Light & Smith
+,567,Hemigrapsus nudus,true crab,purple shore crab,adult,N,middle to low,omnivore,preys_on,animal material,"Morris, Abbott, & Haderlie"
+,761,Ligia pallasii,isopod,NA,adult,Both,high,detritivore,preys_on,animals,Walla Walla; Light & Smith
+,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,annelids,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+no - resource,1908,Aldisa cooperi,nudibranch,NA,adult,N,all,micropredator,preys_on,Anthoarcuata graciae,Light & Smith
+yes,253,Epitonium tinctum,snail,tinted wentletrap,adult,Both,high,micropredator,preys_on,Anthopleura xanthogrammica,"Morris, Abbott, & Haderlie; Light & Smith"
+,554,Cancer productus,true crab,red crab,juvenile,Both,low,carnivore (scavenger + predator),preys_on,any animal matter,"Morris, Abbott, & Haderlie; Light & Smith"
+,555,Cancer productus,true crab,red crab,adult,Both,low,carnivore (scavenger + predator),preys_on,any animal matter,"Morris, Abbott, & Haderlie; Light & Smith"
+,356,Phidiana hiltoni,nudibranch,fighting phidiana,adult,Both,low,carnivore (scavenger + predator),preys_on,any animal tissue,"Morris, Abbott, & Haderlie; Light & Smith"
+,231,Calliostoma canaliculatum,topsnail,channeled topsnail,adult,Both,very low,omnivore,preys_on,anything growing on Macrocystis,"Morris, Abbott, & Haderlie; Light & Smith"
+,232,Calliostoma ligatum,topsnail,blue topsnail,adult,Both,low,omnivore,preys_on,anything growing on Macrocystis,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,593,Haplostoma minutum,copepod,NA,adult,Both,NA,parasite,parasitic_on,Aplidium arenatum,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1120,Anthessius lighti,copepod,NA,adult,NA,all,parasite,parasitic_on,Aplysia californica.,Light & Smith
+no - resource,1905,Chromodoris macfarlandi,nudibranch,NA,adult,Both,all,micropredator,preys_on,Aplysilla polyraphis,Light & Smith
+,1528,Aegialites fuchsi,insect,NA,adult,NA,all,omnivore,preys_on,aquatic mites,Light & Smith
+,1529,Aegialites subopacus,insect,NA,adult,NA,middle,omnivore,preys_on,aquatic mites,Light & Smith
+,342,Triopha catalinae,nudibranch,sea clown,adult,Both,middle to low,micropredator,preys_on,arborescent bryozoans,"Morris, Abbott, & Haderlie; light & Smith"
+no - resource,920,Cladonema myersi,plankton,NA,medusa,S,low,filter feeder,preys_on,Artemia nauplii,Light & Smith
+no - resource,923,Dipurena bicircella,hydroid,NA,hydroid colony,N,low,filter feeder,preys_on,Artemia nauplii,Light & Smith
+no - resource,1729,Tetrastemma candidum,nemertean,ribbon worm,adult,Both,all,typical predator,preys_on,artemia nauplii in laboratory,Light & Smith
+,143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,ascidians,"Morris, Abbott, & Haderlie; Light & Smith"
+,267,Velutina sp.,snail,NA,adult,Both,low,micropredator,preys_on,ascidians,"Morris, Abbott, & Haderlie; light & Smith"
+,268,Erato vitellina,snail,appleseed erato,adult,Both,low,micropredator,preys_on,ascidians,"Morris, Abbott, & Haderlie"
+,271,Cypraea spadicea,snail,chestnut cowrie,adult,NA,low,typical predator,preys_on,ascidians,"Morris, Abbott, & Haderlie"
+,1123,Ascidicola rosea,copepod,NA,adult,Both,all,parasite,parasitic_on,ascidians,Light & Smith
+,1820,Erato columbella,snail,false cowry,adult,N,low,micropredator,preys_on,ascidians,Light & Smith
+,1822,Marsenina rhombica,snail,NA,adult,N,all,micropredator,preys_on,ascidians,Light & Smith
+,748,Leptochelia sp.,tanaid,NA,adult,NA,all,detritivore,preys_on,associated microorganisms,OIMB; Light & Smith
+no - resource,1914,Thordisa rubescens,nudibranch,NA,adult,S,all,micropredator,preys_on,Axinella,Light & Smith
+no - resource,310,Cadlina limbaughorum,nudibranch,Limbaugh's cadlina,adult,S,low,micropredator,preys_on,Axinella sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,145,Henricia leviuscula,asteroid,blood star,adult,Both,low,filter feeder,preys_on,bacteria,"Morris, Abbott, & Haderlie; Light & Smith"
+,776,Phoronopsis harmeri,phoronid,NA,adult,Both,all,filter feeder,preys_on,bacteria,Light & Smith
+,1482,Cercyon fimbriatus,insect,NA,adult,NA,high,detritivore,preys_on,bacteria,Light & Smith
+,1484,Cercyon luniger,insect,NA,adult,NA,all,detritivore,preys_on,bacteria,Light & Smith
+,143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,bacterial film,"Morris, Abbott, & Haderlie; Light & Smith"
+,1471,Oedoparena glauca,insect,fly,larvae,NA,all,parasite,parasitic_on,Balanus,Light & Smith
+yes,286,Lirabuccinum dirum,whelk,dire whelk,adult,Both,middle,typical predator,preys_on,Balanus cariosus,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,150,Pisaster ochraceus,asteroid,ochre star,adult,Both,"middle, low",typical predator,preys_on,balanus glandula,"Morris, Abbott, & Haderlie"
+yes,1896,Onchidoris bilamellata,nudibranch,NA,adult,N,all,typical predator,preys_on,Balanus sp.,Light & Smith
+,905,Chelyosoma productum,tunicate,"Flattop sea squirt, horseshoe ascidian",adult,Both,low,filter feeder,preys_on,barnacle,Light & Smith
+,60,Orthasterias koehleri,asteroid,rainbow star,small,Both,very low,typical predator,preys_on,barnacles,Light & Smith; Ref # 232
+,123,Emplectonema gracile,nemertean,ribbon worm,adult,Both,"high, middle",NA,preys_on,barnacles,"Morris, Abbott, & Haderlie"
+,147,Astrometis sertulifera,asteroid,red/yellow star,adult,S,very low,typical predator,preys_on,barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+,279,Roperia poulsoni,murex,Poulson's rock snail,adult,S,low tidepools,typical predator,preys_on,barnacles,"Morris, Abbott, & Haderlie"
+,282,Acanthinucella spirata,snail,angular unicorn,adult,Both,high to middle,typical predator,preys_on,barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+,411,Mopalia muscosa,chiton,mossy chiton,adult,Both,middle to low,omnivore,preys_on,barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+,412,Mopalia ciliata,chiton,NA,adult,Both,middle to low,omnivore,preys_on,barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+,413,Mopalia hindsii,chiton,NA,adult,Both,middle to low,omnivore,preys_on,barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+,553,Cancer oregonensis,true crab,Oregon cancer crab,adult,Both,low,typical predator,preys_on,barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+,554,Cancer productus,true crab,red crab,juvenile,Both,low,carnivore (scavenger + predator),preys_on,barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+,555,Cancer productus,true crab,red crab,adult,Both,low,carnivore (scavenger + predator),preys_on,barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+,625,Pteropurpura festiva,murex,festive murex,adult,S,NA,typical predator,preys_on,barnacles,Wikipedia
+,672,Leptasterias aequalis,asteroid,6 arm star,adult,Both,middle,carnivore (scavenger + predator),preys_on,barnacles,Light & Smith; Walla Walla
+yes,720,Evasterias troschelii,asteroid,NA,adult,N,all,typical predator,preys_on,barnacles (Balanus glandula),Light & Smith
+,574,Garypus californicus,other arthropod,pseudoscorpion,adult,Both,high,typical predator,preys_on,beetle larvae,"Morris, Abbott, & Haderlie"
+,228,Hydractinia milleri,hydroid,NA,adult,Both,low,carnivore (scavenger + predator),preys_on,benthic animals,"Morris, Abbott, & Haderlie"
+,143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,benthic diatoms,"Morris, Abbott, & Haderlie; Light & Smith"
+,914,Proboscidactyla circumsabella,plankton,NA,medusa,N,low,filter feeder,preys_on,bivalve veligers,Light & Smith
+,916,Proboscidactyla occidentalis,plankton,NA,medusa,S,low,filter feeder,preys_on,bivalve veligers,Light & Smith
+,60,Orthasterias koehleri,asteroid,rainbow star,small,Both,very low,typical predator,preys_on,bivalves,Light & Smith; Ref # 232
+,720,Evasterias troschelii,asteroid,NA,adult,N,all,typical predator,preys_on,bivalves,Light & Smith
+,2059,Stylochus californicus,turbellarian,NA,adult,N,all,micropredator,preys_on,bivalves,Light & Smith
+,2072,Paralabrax nebulifer,fish,barred sand bass,adult,Both,low,typical predator,preys_on,bivalves,FishBase
+,2073,Paralabrax nebulifer,fish,barred sand bass,juvenile,Both,low,typical predator,preys_on,bivalves,FishBase
+,1879,Littorina saxatilis,limpet,NA,adult,N,all,unknown,preys_on,blue-green algae,Light & Smith
+no - already in web,460,Membranobalanus orcutti,barnacle,sponge barnacle,adult,S,very low,filter feeder,parasitic_on,Bocquetia rosea,"Morris, Abbott, & Haderlie"
+,579,Dicranomyia (Idioglochina) marmorata,insect,crane fly,adult,N,high to middle,scavenger,preys_on,body fluids of dead animals,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (atlantic),1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Botryllus schlosseri,Light & Smith
+no - resource (bays),1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Bougainvillia glorietta,Light & Smith
+no - resource (bays),347,Doto amyra,nudibranch,hammerhead doto,adult,Both,low,micropredator,preys_on,Bougainvillia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,60,Orthasterias koehleri,asteroid,rainbow star,small,Both,very low,typical predator,preys_on,brachiopods (Terebratalia),Light & Smith; Ref # 232
+,720,Evasterias troschelii,asteroid,NA,adult,N,all,typical predator,preys_on,brachiopods (Terebratalia),Light & Smith
+,1879,Littorina saxatilis,limpet,NA,adult,N,all,unknown,preys_on,broad range of diatoms,Light & Smith
+,168,Strongylocentrotus purpuratus,urchin,NA,adult,Both,low,grazer,preys_on,brown,"Morris, Abbott, & Haderlie"
+,416,Katharina tunicata,chiton,NA,adult,N,middle to low,grazer,preys_on,brown,"Morris, Abbott, & Haderlie; Light & Smith"
+,241,Tegula montereyi,topsnail,monterey turban snail,adult,N,low,grazer,preys_on,brown algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,412,Mopalia ciliata,chiton,NA,adult,Both,middle to low,omnivore,preys_on,brown algae bryozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+,208,Lottia pelta,true limpet,shield limpet,adult,Both,middle to low,grazer,preys_on,brown macroalgae,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,305,Placida dendritica,nudibranch,NA,adult,N,all,grazer,preys_on,Bryopsis corticulans NOT ENTERED NOT IN EP [or on Codium fragile],Light & Smith
+yes,1884,Elysia hedgpethi,nudibranch,NA,adult,Both,all,grazer,preys_on,Bryopsis corticulans or on Codium fragile,Light & Smith
+,145,Henricia leviuscula,asteroid,blood star,adult,Both,low,filter feeder,preys_on,bryozoa,"Morris, Abbott, & Haderlie; Light & Smith"
+,143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,bryozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+,195,Diodora aspera,limpet,rough keyhole limpet,adult,Both,low,omnivore,preys_on,bryozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+,336,Acanthodoris lutea,nudibranch,orange peel,adult,Both,low tidepools,micropredator,preys_on,bryozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,bryozoans,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+,411,Mopalia muscosa,chiton,mossy chiton,adult,Both,middle to low,omnivore,preys_on,bryozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+,412,Mopalia ciliata,chiton,NA,adult,Both,middle to low,omnivore,preys_on,bryozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+,413,Mopalia hindsii,chiton,NA,adult,Both,middle to low,omnivore,preys_on,bryozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+,414,Mopalia lignosa,chiton,NA,adult,N,middle to low,omnivore,preys_on,bryozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+,429,Nereis grubei,polychaete,nereid,adult,Both,middle to low,omnivore,preys_on,bryozoans,"Morris, Abbott, & Haderlie"
+,1353,Iphimedia rickettsi,gammarid,NA,adult,NA,all,micropredator,preys_on,bryozoans,Light & Smith
+,1354,Cryptodius kelleri,gammarid,NA,adult,NA,all,micropredator,preys_on,bryozoans,Light & Smith
+,1898,Triopha occidentalis,nudibranch,NA,adult,N,all,micropredator,preys_on,bryozoans,Light & Smith
+,1979,Mediaster aequalis,asteroid,NA,adult,N,all,carnivore (scavenger + predator),preys_on,bryozoans,Light & Smith
+yes,1892,Okenia plana,nudibranch,NA,adult,Both,all,micropredator,preys_on,Membranipora membranacea,Light & Smith
+yes,1184,Lepeophtheirus bifidus,copepod,NA,adult,NA,all,parasite,parasitic_on,buffalo sculpin,Light & Smith
+yes,1185,Lepeophtheirus hospitalis,copepod,NA,adult,NA,all,parasite,parasitic_on,buffalo sculpin,Light & Smith
+yes,1928,Janolus barbarensis,nudibranch,NA,adult,Both,all,micropredator,preys_on,Bugula californica NOT ENTERED - BAY [Corymorpha palma],Light & Smith
+expanded,348,Dirona albolineata,nudibranch,chalk lined dirona,adult,Both,low tidepools,micropredator,preys_on,Bugula sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1901,Polycera atra,nudibranch,NA,adult,Both,all,micropredator,preys_on,Bugula sp.,Light & Smith
+expanded,1902,Polycera hedgpethi,nudibranch,NA,adult,Both,all,micropredator,preys_on,Bugula sp.,Light & Smith
+expanded,1903,Polycerella glandulosa,nudibranch,NA,adult,Both,all,micropredator,preys_on,Bugula sp.,Light & Smith
+yes,298,Conus californicus,snail,California cone,adult,Both,low,typical predator,preys_on,Bulla gouldiana,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,299,Navanax inermis,nudibranch,Navanax,adult,Both,low,typical predator,preys_on,Bulla gouldiana,"Morris, Abbott, & Haderlie"
+no,1780,Lucapinella callomarginata,limpet,NA,adult,Both,low,micropredator,preys_on,burrowing,Light & Smith
+,339,Acanthodoris brunnea,nudibranch,NA,adult,Both,low,micropredator,preys_on,byrozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1183,Caligus hobsoni,copepod,NA,adult,NA,all,parasite,parasitic_on,cabezon,Light & Smith
+yes,286,Lirabuccinum dirum,whelk,dire whelk,adult,Both,middle,typical predator,preys_on,Calliostoma ligatum,"Morris, Abbott, & Haderlie; Light & Smith"
+,302,Stiliger fuscovittatus,nudibranch,streaked stilliger,adult,Both,low,grazer,preys_on,Callithamnion,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,341,Onchidoris muricata,nudibranch,white onchodoris,adult,N,low,micropredator,preys_on,Callopora spp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,560,Hermissenda crassicornis,nudibranch,opalescent nudibranch,adult,N,low,typical predator,preys_on,Orthopyxis integra (Campanularia ritteri),Light & Smith
+expanded,711,Carcinonemertes epialti,nemertean,NA,adult,Both,all,symbiotic egg predator,preys_on,Cancer spp. except C. magister,"Morris, Abbott, & Haderlie; Light & Smith"
+,1476,Anisolabis maritima,insect,seaside earwig,adult,Both,high,typical predator,preys_on,cannibalism,Light & Smith
+,286,Lirabuccinum dirum,whelk,dire whelk,adult,Both,middle,typical predator,preys_on,carrion,"Morris, Abbott, & Haderlie; Light & Smith"
+,287,Kelletia kelletii,whelk,Kellet's whelk,adult,Both,low,scavenger,preys_on,carrion,"Morris, Abbott, & Haderlie; Light & Smith"
+,288,Amphissa columbiana,snail,wrinkled dove snail,adult,Both,low,scavenger,preys_on,carrion,"Morris, Abbott, & Haderlie; Light & Smith"
+,291,Nassarius mendicus,snail,lean nassa,adult,Both,low,scavenger,preys_on,carrion,"Morris, Abbott, & Haderlie; Light & Smith"
+,294,Callianax baetica,snail,purple olive,adult,Both,low,scavenger,preys_on,carrion,"Morris, Abbott, & Haderlie"
+,298,Conus californicus,snail,California cone,adult,Both,low,typical predator,preys_on,carrion,"Morris, Abbott, & Haderlie; Light & Smith"
+,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,carrion,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+,432,Arabella iricolor,polychaete,NA,adult,Both,low,scavenger,preys_on,carrion,"Morris, Abbott, & Haderlie; Light & Smith"
+,433,Arabella endonata,polychaete,NA,adult,Both,low,parasite,preys_on,carrion,"Morris, Abbott, & Haderlie"
+,475,Cirolana harfordi,isopod,rock isopod,adult,Both,middle,carnivore (scavenger + predator),preys_on,carrion,"Morris, Abbott, & Haderlie"
+,487,Ligia occidentalis,isopod,rock isopod,adult,Both,high,scavenger,preys_on,carrion,"Morris, Abbott, & Haderlie; Light & Smith"
+,524,Pagurus samuelis,hermit crab,blue banded hermit crab,adult,Both,high to middle,scavenger,preys_on,carrion,"Morris, Abbott, & Haderlie"
+,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,carrion,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (sand),561,Pinnixa faba,true crab,large pea crab,juvenile,Both,low,NA,parasitic_on,Caudina arenata,"Morris, Abbott, & Haderlie"
+no - resource (sand),561,Pinnixa faba,true crab,large pea crab,juvenile,Both,low,NA,parasitic_on,Caudina arenicola,"Morris, Abbott, & Haderlie"
+,1889,Aplysiopsis enteromorphae,nudibranch,NA,adult,N,all,grazer,preys_on,Chaetomorpha spp.,Light & Smith
+,1720,Amphiporus formidabilis,nemertean,ribbon worm,adult,N,all,carnivore (scavenger + predator),preys_on,chelipeds of Petrolisthes sp.,Light & Smith
+,60,Orthasterias koehleri,asteroid,rainbow star,small,Both,very low,typical predator,preys_on,chitons,Light & Smith; Ref # 232
+,107,Metridium senile,anemone,NA,adult,Both,low,filter feeder,preys_on,chitons,"Morris, Abbott, & Haderlie; Light & Smith"
+,147,Astrometis sertulifera,asteroid,red/yellow star,adult,S,very low,typical predator,preys_on,chitons,"Morris, Abbott, & Haderlie; Light & Smith"
+,150,Pisaster ochraceus,asteroid,ochre star,adult,Both,"middle, low",typical predator,preys_on,chitons,"Morris, Abbott, & Haderlie"
+,672,Leptasterias aequalis,asteroid,6 arm star,adult,Both,middle,carnivore (scavenger + predator),preys_on,chitons,Light & Smith; Walla Walla
+,1878,Littorina plena,limpet,NA,adult,Both,all,unknown,preys_on,Chow 1989,Light & Smith
+yes,278,Paciocinebrina lurida,snail,lurid rock snail,adult,Both,low,typical predator,preys_on,Chryptochiton stelleri,"Morris, Abbott, & Haderlie"
+yes,248,Littorina scutulata,littorine,checkered periwinkle,adult,Both,high to middle,grazer,preys_on,Cladophora sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,405,Cyanoplax hartwegii,chiton,NA,adult,Both,"high tide pools, nocturnal",grazer,preys_on,Cladophora sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,60,Orthasterias koehleri,asteroid,rainbow star,small,Both,very low,typical predator,preys_on,clams,Light & Smith; Ref # 232
+,147,Astrometis sertulifera,asteroid,red/yellow star,adult,S,very low,typical predator,preys_on,clams,"Morris, Abbott, & Haderlie; Light & Smith"
+,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,clams,"Morris, Abbott, & Haderlie; Light & Smith"
+,545,Loxorhynchus grandis,true crab,sheep crab,adult,Both,low,scavenger,preys_on,clams,"Morris, Abbott, & Haderlie"
+,998,Carcinus maenas,true crab,European Green Crab,adult,N,low,carnivore (scavenger + predator),preys_on,clams,Light & Smith
+,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,clams,Light & Smith
+yes,346,Tritonia festiva,nudibranch,diamondback,adult,Both,low,micropredator,preys_on,Clavularia sp. (southern California only),"Morris, Abbott, & Haderlie; light & Smith"
+,1353,Iphimedia rickettsi,gammarid,NA,adult,NA,all,micropredator,preys_on,coelenterates,Light & Smith
+,1354,Cryptodius kelleri,gammarid,NA,adult,NA,all,micropredator,preys_on,coelenterates,Light & Smith
+yes,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,Lottia limatula (Collisella limatula),"Morris, Abbott, & Haderlie; Light & Smith"
+,418,Octopus bimaculoides,octopus,two-spot octopus,adult,Both,middle to low,typical predator,preys_on,Collisella sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,193,Megathura crenulata,limpet,giant keyhole limpet,adult,Both,low,omnivore,preys_on,colonial ascidians,"Morris, Abbott, & Haderlie"
+,337,Acanthodoris nanaimoensis,nudibranch,wine plume dorid,adult,N,low,micropredator,preys_on,colonial ascidians,"Morris, Abbott, & Haderlie"
+,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,colonial ascidians,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+,428,Oxydromus pugettensis,polychaete,NA,adult,Both,low,omnivore,preys_on,commensal: same diet as host,"Morris, Abbott, & Haderlie; Light & Smith"
+,192,Fissurellidea bimaculata,limpet,two-spotted keyhole,adult,Both,low,omnivore,preys_on,compound ascidians,"Morris, Abbott, & Haderlie; Light & Smith"
+,266,Lamellaria rhombica,snail,NA,adult,Both,low,micropredator,preys_on,compound tunicates,"Morris, Abbott, & Haderlie"
+,593,Haplostoma minutum,copepod,NA,adult,Both,NA,parasite,preys_on,compound tunicates (see above),"Morris, Abbott, & Haderlie; Light & Smith"
+,594,Haplosaccus elongatus,copepod,NA,adult,Both,NA,parasite,preys_on,compound tunicates (see above),"Morris, Abbott, & Haderlie; Light & Smith"
+,595,Haplostomella dubia,copepod,NA,adult,Both,NA,parasite,preys_on,compound tunicates (see above),"Morris, Abbott, & Haderlie; Light & Smith"
+,596,Haplostomella distincta,copepod,NA,adult,Both,NA,NA,preys_on,compound tunicates (see above),"Morris, Abbott, & Haderlie"
+,597,Haplostomella oceanica,copepod,NA,adult,Both,NA,NA,preys_on,compound tunicates (see above),"Morris, Abbott, & Haderlie; Light & Smith"
+,905,Chelyosoma productum,tunicate,"Flattop sea squirt, horseshoe ascidian",adult,Both,low,filter feeder,preys_on,copepod nauplii (larvae),Light & Smith
+,129,Bugula californica,bryozoan,NA,adult,both,all,filter feeder,preys_on,copepods,"Morris, Abbott, & Haderlie"
+,230,Calliostoma annulatum,topsnail,purple ringed topsnail,adult,Both,low,omnivore,preys_on,copepods,"Morris, Abbott, & Haderlie; Light & Smith"
+,475,Cirolana harfordi,isopod,rock isopod,adult,Both,middle,carnivore (scavenger + predator),preys_on,copepods,"Morris, Abbott, & Haderlie"
+,604,Heterostichus rostratus,fish,kelpfish,juvenile,N,NA,typical predator,preys_on,copepods,D. Canestro; FishBase
+,894,Parasagitta euneritica,chaetognath,NA,adult,Both,all,carnivore (scavenger + predator),preys_on,copepods,Light & Smith
+,895,Flaccisagitta enflata,chaetognath,NA,adult,Both,all,carnivore (scavenger + predator),preys_on,copepods,Light & Smith
+,896,Flaccisagitta enflata,chaetognath,NA,juvenile,Both,all,carnivore (scavenger + predator),preys_on,copepods,Light & Smith
+,897,Mesosagitta minima,chaetognath,NA,adult,S,all,carnivore (scavenger + predator),preys_on,copepods,Light & Smith
+,898,Serratosagitta bierii,chaetognath,NA,adult,S,all,carnivore (scavenger + predator),preys_on,copepods,Light & Smith
+,899,Paraspadella pimukatharos,chaetognath,NA,adult,S,mid to low,carnivore (scavenger + predator),preys_on,copepods,Light & Smith; Alvariño (1987)
+,934,Hybocodon prolifer,plankton,NA,medusa,Both,low,filter feeder,preys_on,copepods,Light & Smith
+,212,Lottia triangularis,true limpet,triangular limpet,adult,Both,low,grazer,preys_on,coralline algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,229,Haliotis cracherodii,abalone,black abalone,adult,Both,all,grazer,preys_on,coralline algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,256,Antisabia panamensis,slipper snail,hoof snail,adult,Both,low,detritivore,preys_on,coralline algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,404,Tonicella lineata,chiton,NA,adult,N,low,grazer,preys_on,coralline algae,"Morris, Abbott, & Haderlie; light & Smith"
+,417,Cryptochiton stelleri,chiton,gumboot chiton,adult,Both,low tidepools,grazer,preys_on,coralline algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,556,Cycloxanthops novemdentatus,true crab,large pebble crab,adult,Both,low,omnivore,preys_on,coralline algae,"Morris, Abbott, & Haderlie"
+,558,Paraxanthias taylori,true crab,lumpy crab,adult,Both,middle to low,omnivore,preys_on,coralline algae,"Morris, Abbott, & Haderlie"
+no - resource (subtidal),359,Anteaeolidiella oliviae,nudibranch,Olive's spurilla,adult,Both,low tidepools,micropredator,preys_on,Coryanactis californica,"Morris, Abbott, & Haderlie"
+no - resource (sand),350,Antiopella barbarensis,nudibranch,cockscomb,adult,Both,low,micropredator,preys_on,Corymorpha palma,"Morris, Abbott, & Haderlie"
+no - resource (sand),355,Cuthona divae,nudibranch,rose-pink cuthona,adult,Both,low,omnivore,preys_on,Corymorpha sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Coryne spp.,Light & Smith
+,1129,Holobomolochus spinulus,copepod,NA,adult,NA,all,parasite,parasitic_on,Cottidae,Light & Smith
+,1192,Clavella parva,copepod,NA,adult,NA,all,parasite,parasitic_on,Cottidae,Light & Smith
+,1193,Naobranchia occidentalis,copepod,NA,adult,NA,all,parasite,parasitic_on,Cottidae,Light & Smith
+,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,crabs,"Morris, Abbott, & Haderlie; Light & Smith"
+,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,crabs,Light & Smith
+,1219,Argeia pugettensis,isopod,NA,adult,Both,all,parasite,parasitic_on,Crangonidae,Light & Smith
+expanded,343,Triopha maculata,nudibranch,spotted triopha,adult,Both,low tidepools,micropredator,preys_on,Crisia,"Morris, Abbott, & Haderlie"
+expanded,342,Triopha catalinae,nudibranch,sea clown,adult,Both,middle to low,micropredator,preys_on,Crisia spp.,"Morris, Abbott, & Haderlie; light & Smith"
+,228,Hydractinia milleri,hydroid,NA,adult,Both,low,carnivore (scavenger + predator),preys_on,crustacean larvae,"Morris, Abbott, & Haderlie"
+,348,Dirona albolineata,nudibranch,chalk lined dirona,adult,Both,low tidepools,micropredator,preys_on,crustaceans,"Morris, Abbott, & Haderlie; Light & Smith"
+,419,Octopus rubescens,octopus,red octopus,adult,N,low,typical predator,preys_on,crustaceans,"Morris, Abbott, & Haderlie; Light & Smith"
+,428,Oxydromus pugettensis,polychaete,NA,adult,Both,low,omnivore,preys_on,crustaceans,"Morris, Abbott, & Haderlie; Light & Smith"
+,556,Cycloxanthops novemdentatus,true crab,large pebble crab,adult,Both,low,omnivore,preys_on,crustaceans,"Morris, Abbott, & Haderlie"
+,1489,Amblopusa brevipes,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1491,Bryobiota bicolor,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1492,Bryobiota giulianii,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1493,Bryothinusa catalinae,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1501,Diaulota densissima,insect,NA,adult,NA,high to middle,typical predator,preys_on,crustaceans,Light & Smith
+,1502,Diaulota fulviventris,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1503,Diaulota vandykei,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1504,Diaulota vandykei,insect,NA,larvae,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1505,Diaulota harteri,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1513,Liparocephalus brevipennis,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1514,Liparocephalus cordicollis,insect,NA,adult,NA,middle,typical predator,preys_on,crustaceans,Light & Smith
+,1515,Liparocephalus cordicollis,insect,NA,larvae,NA,middle,typical predator,preys_on,crustaceans,Light & Smith
+,1516,Liparocephalus cordicollis,insect,NA,pupae,NA,middle,typical predator,preys_on,crustaceans,Light & Smith
+,1519,Pontomalota terminalia,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1520,Tarphiota geniculata,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1521,Tarphiota pallidipes,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1522,Thinusa maritima,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1523,Thinusa fletcheri,insect,NA,adult,NA,all,typical predator,preys_on,crustaceans,Light & Smith
+,1707,Lineus ruber,nemertean,ribbon worm,adult,N,middle,omnivore,preys_on,crustaceans,Light & Smith
+,1709,Lineus ruber,nemertean,ribbon worm,juvenile,N,middle,omnivore,preys_on,crustaceans,Light & Smith
+,455,Pollicipes polymerus,barnacle,leaf barnacle,adult,Both,middle,filter feeder,preys_on,crustaceans <1mm,"Morris, Abbott, & Haderlie"
+,557,Lophopanopeus leucomanus leucomanus,true crab,NA,adult,Both,low,omnivore,preys_on,crustose coralline algae,"Morris, Abbott, & Haderlie"
+,215,Lottia scutum,true limpet,plate limpet,adult,N,middle,grazer,preys_on,crustose red algae,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,281,Acanthinucella punctulata,snail,spotted unicorn,adult,Both,high,typical predator,preys_on,Chthamalus dalli,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,284,Nucella emarginata,snail,emarginate dogwinkle,adult,Both,high to middle,typical predator,preys_on,Chthamalus dalli,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1471,Oedoparena glauca,insect,fly,larvae,NA,all,parasite,parasitic_on,Cthamalus adults,Light & Smith
+no - resource (subtidal),143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,Cucumaria lubrica (subtidal),"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (subtidal),146,Solaster dawsoni,asteroid,sun star,adult,N,low,typical predator,preys_on,Cucumaria lubrica (subtidal),"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (atlantic),559,Fabia subquadrata,true crab,pea crab,adult,Both,low,filter feeder,parasitic_on,Cyclocardia borealis,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (sand),559,Fabia subquadrata,true crab,pea crab,adult,Both,low,filter feeder,parasitic_on,Cyclocardia ventricosa,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1825,Lamellaria diegoensis,snail,NA,adult,N,all,micropredator,preys_on,Cystodytes,Light & Smith
+,558,Paraxanthias taylori,true crab,lumpy crab,adult,Both,middle to low,omnivore,preys_on,dead animal matter,"Morris, Abbott, & Haderlie"
+,153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,dead animals,"Morris, Abbott, & Haderlie; Light & Smith"
+,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,dead animals,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+,1979,Mediaster aequalis,asteroid,NA,adult,N,all,carnivore (scavenger + predator),preys_on,dead animals,Light & Smith
+,230,Calliostoma annulatum,topsnail,purple ringed topsnail,adult,Both,low,omnivore,preys_on,dead fish,"Morris, Abbott, & Haderlie; Light & Smith"
+,554,Cancer productus,true crab,red crab,juvenile,Both,low,carnivore (scavenger + predator),preys_on,dead fishes,"Morris, Abbott, & Haderlie; Light & Smith"
+,555,Cancer productus,true crab,red crab,adult,Both,low,carnivore (scavenger + predator),preys_on,dead fishes,"Morris, Abbott, & Haderlie; Light & Smith"
+,144,Patiria miniata,asteroid,bat star,adult,Both,low,carnivore (scavenger + predator),preys_on,dead or alive,"Morris, Abbott, & Haderlie; Light & Smith"
+,761,Ligia pallasii,isopod,NA,adult,Both,high,detritivore,preys_on,dead plants,Walla Walla; Light & Smith
+,1717,Lineus sanguineus,nemertean,ribbon worm,adult,Both,high to middle,carnivore (scavenger + predator),preys_on,dead shrimp,Light & Smith
+,1474,Coelopa (Fucomyia) frigida,insect,kelp fly,larvae,NA,all,detritivore,preys_on,decaying kelp,Light & Smith; PO
+,1531,Emphyastes fucicola,insect,NA,larvae,NA,all,detritivore,preys_on,decaying kelp,Light & Smith
+,1518,Philonthus nudus,insect,NA,adult,NA,all,detritivore,preys_on,decaying organic matter,Light & Smith
+no - resource (sand),153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,Dendraster excentricus,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,342,Triopha catalinae,nudibranch,sea clown,adult,Both,middle to low,micropredator,preys_on,Dendrobeania spp.,"Morris, Abbott, & Haderlie; light & Smith"
+,142,Linckia columbiae,asteroid,NA,adult,S,low,NA,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,159,Apostichopus californicus,cucumber,NA,adult,Both,low,deposit feeder,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,161,Amphipholis squamata,brittle star,NA,adult,Both,low,deposit feeder,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,166,Ophioderma panamense,brittle star,NA,adult,Both,low tidepools,deposit feeder,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,167,Ophiopteris papillosa,brittle star,NA,adult,Both,low tidepools,carnivore (scavenger + predator),preys_on,detritus,"Morris, Abbott, & Haderlie"
+,230,Calliostoma annulatum,topsnail,purple ringed topsnail,adult,Both,low,omnivore,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,232,Calliostoma ligatum,topsnail,blue topsnail,adult,Both,low,omnivore,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,256,Antisabia panamensis,slipper snail,hoof snail,adult,Both,low,detritivore,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,262,Crepidula nummaria,slipper snail,white slipper snail,adult,Both,low,filter feeder,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,263,Crepidula onyx,slipper snail,onyx slipper snail,adult,S,low,filter feeder,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,290,Alia carinata,snail,carinated dove snail,adult,Both,low,detritivore,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,294,Callianax baetica,snail,purple olive,adult,Both,low,scavenger,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,367,Mytilus edulis,mussel,bay mussel,adult,Both,low,filter feeder,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,374,Lasaea adansoni,clam,NA,adult,Both,high to middle,filter feeder,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,429,Nereis grubei,polychaete,nereid,adult,Both,middle to low,omnivore,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,432,Arabella iricolor,polychaete,NA,adult,Both,low,scavenger,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,433,Arabella endonata,polychaete,NA,adult,Both,low,parasite,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,434,Cirriformia luxuriosa,polychaete,NA,juvenile,Both,middle to low,filter feeder,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,435,Dodecaceria fewkesi,polychaete,NA,adult,Both,middle,deposit feeder,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,439,Pectinaria californiensis,polychaete,terebellid tubeworm,adult,NA,very low,filter feeder,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,441,Thelepus setosus,polychaete,feather duster worm,adult,Both,low,deposit feeder,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,452,Trypetesa lateralis,barnacle,NA,adult,N,middle to low,symbiotic egg predator,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,503,Polycheria osborni,amphipod,NA,adult,Both,low,grazer,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,505,Caprella californica,amphipod,caprellid,adult,Both,low,omnivore,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,521,Hapalogaster cavicauda,true crab,NA,adult,Both,low,filter feeder,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,532,Petrolisthes cinctipes,porcelain crab,flat porcelain crab,adult,N,middle to low,filter feeder,preys_on,detritus,"Morris, Abbott, & Haderlie"
+,535,Pachycheles rudis,porcelain crab,thick clawed porcelain crab,adult,Both,low,filter feeder,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,568,Tigriopus californicus,copepod,tig,adult,Both,high,omnivore,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,577,Neomachilis halophila,insect,bristletail,adult,Both,high,grazer,preys_on,detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,1480,Neochthebius vandykei,insect,NA,adult,NA,high,detritivore,preys_on,detritus,Light & Smith
+,1532,Thalasselephas testaceus,insect,NA,adult,NA,high,detritivore,preys_on,detritus,Light & Smith
+yes,148,Leptasterias pusilla,asteroid,NA,adult,N,pools,typical predator,preys_on,Diala acuta,"Morris, Abbott, & Haderlie; Light & Smith"
+,154,Cucumaria pseudocurata,cucumber,NA,adult,N,middle,grazer,preys_on,diatom film,"Morris, Abbott, & Haderlie; Light & Smith"
+,412,Mopalia ciliata,chiton,NA,adult,Both,middle to low,omnivore,preys_on,diatoms,"Morris, Abbott, & Haderlie; Light & Smith"
+,414,Mopalia lignosa,chiton,NA,adult,N,middle to low,omnivore,preys_on,diatoms,"Morris, Abbott, & Haderlie; Light & Smith"
+,442,Bispira sp.,polychaete,plume worm,adult,Both,low,filter feeder,preys_on,diatoms,"Morris, Abbott, & Haderlie; Light & Smith"
+,503,Polycheria osborni,amphipod,NA,adult,Both,low,grazer,preys_on,diatoms,"Morris, Abbott, & Haderlie"
+,504,Oligochinus lighti,gammarid,NA,adult,Both,high to middle,grazer,preys_on,diatoms,"Morris, Abbott, & Haderlie"
+,529,Petrolisthes eriomerus,porcelain crab,porcelain crab,adult,Both,low,filter feeder,preys_on,diatoms,"Morris, Abbott, & Haderlie"
+,567,Hemigrapsus nudus,true crab,purple shore crab,adult,N,middle to low,omnivore,preys_on,diatoms,"Morris, Abbott, & Haderlie"
+,1472,Oedoparena glauca,insect,fly,adult,NA,all,grazer,preys_on,diatoms,Light & Smith
+,1803,Alvania compacta,microsnail,NA,adult,N,all,grazer,preys_on,diatoms,Light & Smith
+,1804,Alvania almo,microsnail,NA,adult,N,all,grazer,preys_on,diatoms,Light & Smith
+,1805,Alvinia aequisculpta,microsnail,NA,adult,N,all,grazer,preys_on,diatoms,Light & Smith
+,1806,Alvinia purpurea,microsnail,NA,adult,N,all,grazer,preys_on,diatoms,Light & Smith
+,1807,Onoba carpenteri,microsnail,NA,adult,N,all,grazer,preys_on,diatoms,Light & Smith
+,1808,Onoba mighelsii,microsnail,NA,adult,N,all,grazer,preys_on,diatoms,Light & Smith
+,1880,Littorina subrotundata,limpet,NA,adult,N,all,unknown,preys_on,diatoms,Light & Smith
+,107,Metridium senile,anemone,NA,adult,Both,low,filter feeder,preys_on,Diet is mostly small zooplankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,142,Linckia columbiae,asteroid,NA,adult,S,low,NA,preys_on,diet unknown,"Morris, Abbott, & Haderlie; Light & Smith"
+,1878,Littorina plena,limpet,NA,adult,Both,all,unknown,preys_on,diet),Light & Smith
+,102,Epiactis prolifera,anemone,NA,adult,Both,"middle, low",filter feeder,preys_on,dietary studies lacking,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,353,Flabellinopsis iodinea,nudibranch,NA,adult,Both,low,micropredator,preys_on,Diplosoma macdonaldi,"Morris, Abbott, & Haderlie"
+,1707,Lineus ruber,nemertean,ribbon worm,adult,N,middle,omnivore,preys_on,dissolved organics,Light & Smith
+,1709,Lineus ruber,nemertean,ribbon worm,juvenile,N,middle,omnivore,preys_on,dissolved organics,Light & Smith
+,226,Haliotis fulgens,abalone,green abalone,adult,S,low,grazer,preys_on,drift algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,227,Haliotis corrugata,abalone,pink abalone,adult,S,low,grazer,preys_on,drift algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,229,Haliotis cracherodii,abalone,black abalone,adult,Both,all,grazer,preys_on,drift algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,237,Tegula funebralis,topsnail,black turban snail,adult,Both,middle,grazer,preys_on,drift algae,"Morris, Abbott, & Haderlie"
+,430,Platynereis bicanaliculata,polychaete,NA,adult,Both,low,grazer,preys_on,drift algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,524,Pagurus samuelis,hermit crab,blue banded hermit crab,adult,Both,high to middle,scavenger,preys_on,drift algae,"Morris, Abbott, & Haderlie"
+no - resource (atlantic),1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Dynamena pumila,Light & Smith
+no - resource (subtidal),310,Cadlina limbaughorum,nudibranch,Limbaugh's cadlina,adult,S,low,micropredator,preys_on,Dysidea amblia,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (subtidal),312,Cadlina luteomarginata,nudibranch,yellow edged cadlina,adult,Both,low,micropredator,preys_on,Dysidea amblia,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (subtidal),316,Felimare porterae,nudibranch,Porter's nudibranch,adult,Both,low,micropredator,preys_on,Dysidea amblia,"Morris, Abbott, & Haderlie"
+no - resource (subtidal),317,Felimare californiensis,nudibranch,"blue, gold nudibranch",adult,Both,low,micropredator,preys_on,Dysidea amblia,"Morris, Abbott, & Haderlie"
+no - resource (subtidal),1906,Hypselodoris californiensis,nudibranch,NA,adult,Both,all,micropredator,preys_on,Dysidea amblia,Light & Smith
+no - resource (subtidal),1907,Mexichromis porterae,nudibranch,NA,adult,Both,all,micropredator,preys_on,Dysidea amblia.,Light & Smith
+,165,Ophioplocus esmarki,brittle star,NA,adult,Both,low tidepools,carnivore (scavenger + predator),preys_on,eats dying or slow moving small animals,"Morris, Abbott, & Haderlie; Light & Smith"
+,1365,Chromopleustes lineatus,gammarid,NA,adult,NA,all,micropredator,preys_on,echinoderms,Light & Smith
+,348,Dirona albolineata,nudibranch,chalk lined dirona,adult,Both,low tidepools,micropredator,preys_on,ectoprocts,"Morris, Abbott, & Haderlie; Light & Smith"
+,246,Lacuna marmorata,littorine,chink snail,adult,Both,low,grazer,preys_on,eelgrass,"Morris, Abbott, & Haderlie; Light & Smith"
+,1798,Lacuna porrecta,snail,NA,adult,N,all,grazer,preys_on,eelgrass,Light & Smith
+,1799,Lacuna unifasciata,snail,NA,adult,Both,all,grazer,preys_on,eelgrass,Light & Smith
+,905,Chelyosoma productum,tunicate,"Flattop sea squirt, horseshoe ascidian",adult,Both,low,filter feeder,preys_on,eggs,Light & Smith
+,1487,Aleochara (Coprochara) sulcicollis,insect,NA,adult,NA,all,typical predator,preys_on,eggs,Light & Smith
+,1488,Aleochara arenaria,insect,NA,adult,NA,all,typical predator,preys_on,eggs,Light & Smith
+,1497,Cafius opacus,insect,NA,adult,NA,all,typical predator,preys_on,eggs,Light & Smith
+,1498,Cafius sulcicollis,insect,NA,adult,NA,all,typical predator,preys_on,eggs,Light & Smith
+,1499,Cafius sulcicollis,insect,NA,larvae,NA,all,typical predator,preys_on,eggs,Light & Smith
+,1500,Cafius nauticus,insect,NA,adult,NA,all,typical predator,preys_on,eggs,Light & Smith
+,945,Eutonina indicans,plankton,NA,medusa,N,low,filter feeder,preys_on,eggs of invertebrates,Light & Smith
+,1722,Carcinonemertes wickhami,nemertean,ribbon worm,adult,S,low,symbiotic egg predator,preys_on,eggs of Panulirus interruptus,Light & Smith
+,711,Carcinonemertes epialti,nemertean,NA,adult,Both,all,symbiotic egg predator,preys_on,eggs of Pugettia producta,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1322,Carinonajna barnardi,gammarid,NA,adult,NA,all,parasite,parasitic_on,Egregia,Light & Smith
+yes,1324,Carinonajna bispinosa,gammarid,NA,adult,NA,all,parasite,parasitic_on,Egregia,Light & Smith
+yes,1326,Carinonajna kitamati,gammarid,NA,adult,NA,all,parasite,parasitic_on,Egregia,Light & Smith
+yes,538,Taliepus nuttallii,true crab,southern kelp crab,adult,S,low,grazer,preys_on,Egregia menszii,"Morris, Abbott, & Haderlie"
+yes,539,Pugettia producta,true crab,kelp crab,young,Both,low,omnivore,preys_on,Egregia menszii,"Morris, Abbott, & Haderlie"
+yes,208,Lottia pelta,true limpet,shield limpet,adult,Both,middle to low,grazer,preys_on,Egregia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,226,Haliotis fulgens,abalone,green abalone,adult,S,low,grazer,preys_on,Eisenia,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1304,Peramphithoe stypotrupetes,gammarid,NA,adult,NA,very low,parasite,parasitic_on,Eisenia,Light & Smith
+expanded,483,Limnoria algarum,isopod,gribble,adult,Both,low,micropredator,preys_on,Eisenia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (atlantic),341,Onchidoris muricata,nudibranch,white onchodoris,adult,N,low,micropredator,preys_on,Electra pilosa,"Morris, Abbott, & Haderlie; Light & Smith"
+,1125,Bomolochus cuneatus,copepod,NA,adult,NA,all,parasite,parasitic_on,Embiotocidae,Light & Smith
+,1127,Holobomolochus embiotocae,copepod,NA,adult,NA,all,parasite,parasitic_on,Embiotocidae,Light & Smith
+,1183,Caligus hobsoni,copepod,NA,adult,NA,all,parasite,parasitic_on,Embiotocidae,Light & Smith
+,1191,Clavella embiotocae,copepod,NA,adult,NA,all,parasite,parasitic_on,Embiotocidae,Light & Smith
+,1192,Clavella parva,copepod,NA,adult,NA,all,parasite,parasitic_on,Embiotocidae,Light & Smith
+,1195,Peniculus fissipes,copepod,NA,adult,NA,all,parasite,parasitic_on,Embiotocidae,Light & Smith
+,196,Acmaea mitra,true limpet,white-cap limpet,adult,Both,low,grazer,preys_on,encrusting coralline algae Lithothamnion,"Morris, Abbott, & Haderlie"
+,761,Ligia pallasii,isopod,NA,adult,Both,high,detritivore,preys_on,encrusting diatoms,Walla Walla; Light & Smith
+,1979,Mediaster aequalis,asteroid,NA,adult,N,all,carnivore (scavenger + predator),preys_on,encrusting sponges,Light & Smith
+expanded,208,Lottia pelta,true limpet,shield limpet,adult,Both,middle to low,grazer,preys_on,Endocladia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,405,Cyanoplax hartwegii,chiton,NA,adult,Both,"high tide pools, nocturnal",grazer,preys_on,Endocladia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,491,Idotea montereyensis,isopod,NA,adult,N,middle to low,unknown,preys_on,Endocladia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,Endocladia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,Ulva sp,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,581,Canaceoides nudatus,insect,beach fly,adult,Both,high to middle,grazer,preys_on,Ulva sp,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1880,Littorina subrotundata,limpet,NA,adult,N,all,unknown,preys_on,Ulva sp,Light & Smith
+,1879,Littorina saxatilis,limpet,NA,adult,N,all,unknown,preys_on,ephemeral filamentous,Light & Smith
+,1877,Littorina littorea,limpet,NA,adult,N,all,grazer,preys_on,ephemeral macroalgae,Light & Smith
+,1798,Lacuna porrecta,snail,NA,adult,N,all,grazer,preys_on,ephiphytic diatoms,Light & Smith
+,361,Onchidella borealis,snail,leather limpet,adult,N,high to middle,grazer,preys_on,epiphytic diatoms on O. floccosa,"Morris, Abbott, & Haderlie"
+,409,Nuttallina californica,chiton,Nuttall's chiton,adult,Both,middle,grazer,preys_on,erect coralline algae,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (subtidal),459,Armatobalanus nefrens,barnacle,NA,adult,Both,low,parasite,parasitic_on,Errinopora pourtalesii,"Morris, Abbott, & Haderlie"
+no,1877,Littorina littorea,limpet,NA,adult,N,all,grazer,preys_on,especially small,Light & Smith
+no,1717,Lineus sanguineus,nemertean,ribbon worm,adult,Both,high to middle,carnivore (scavenger + predator),preys_on,etc.,Light & Smith
+no - resource (atlantic),353,Flabellinopsis iodinea,nudibranch,NA,adult,Both,low,micropredator,preys_on,Eudendridum ramosum,"Morris, Abbott, & Haderlie"
+expanded,351,Orienthella trilineata,nudibranch,three-lined,adult,Both,low,micropredator,preys_on,Eudendridum sp.,"Morris, Abbott, & Haderlie"
+expanded,560,Hermissenda crassicornis,nudibranch,opalescent nudibranch,adult,N,low,typical predator,preys_on,Eudendrium spp.,Light & Smith
+expanded,1131,Botryllophilus abbotti,copepod,NA,adult,NA,all,parasite,parasitic_on,Eudistoma,Light & Smith
+yes,335,Okenia rosacea,nudibranch,Hopkin's rose,adult,Both,low,micropredator,preys_on,Eurystomella bilabiata,"Morris, Abbott, & Haderlie"
+,660,Larus occidentalis,bird,Western gull,adult,Both,all,carnivore (scavenger + predator),preys_on,everything,NA
+expanded,491,Idotea montereyensis,isopod,NA,adult,N,middle to low,unknown,preys_on,Farlowia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,102,Epiactis prolifera,anemone,NA,adult,Both,"middle, low",filter feeder,preys_on,feed on small crustaceans,"Morris, Abbott, & Haderlie; Light & Smith"
+,1780,Lucapinella callomarginata,limpet,NA,adult,Both,low,micropredator,preys_on,feeding on sponges Tetilla,Light & Smith
+,1720,Amphiporus formidabilis,nemertean,ribbon worm,adult,N,all,carnivore (scavenger + predator),preys_on,Feeds on amphipods,Light & Smith
+yes,342,Triopha catalinae,nudibranch,sea clown,adult,Both,middle to low,micropredator,preys_on,Filicrisia franciscana,"Morris, Abbott, & Haderlie; light & Smith"
+,442,Bispira sp.,polychaete,plume worm,adult,Both,low,filter feeder,preys_on,fine detritus,"Morris, Abbott, & Haderlie; Light & Smith"
+,440,Thelepus crispus,polychaete,terebellid tubeworm,adult,Both,middle to low,filter feeder,preys_on,fine particulate surface deposits,"Morris, Abbott, & Haderlie; Light & Smith"
+,107,Metridium senile,anemone,NA,adult,Both,low,filter feeder,preys_on,fish,"Morris, Abbott, & Haderlie; Light & Smith"
+,1228,Elthusa vulgaris,isopod,NA,adult,Both,all,parasite,parasitic_on,fish,Light & Smith
+,1229,Nerocila acuminata,isopod,NA,adult,S,all,parasite,parasitic_on,fish,Light & Smith
+,516,Lysmata californica,shrimp,red rock shrimp,adult,S - Both? possible range expansion,low tidepools,scavenger,preys_on,fish parasites,"Morris, Abbott, & Haderlie"
+,147,Astrometis sertulifera,asteroid,red/yellow star,adult,S,very low,typical predator,preys_on,fishes,"Morris, Abbott, & Haderlie; Light & Smith"
+,419,Octopus rubescens,octopus,red octopus,adult,N,low,typical predator,preys_on,fishes,"Morris, Abbott, & Haderlie; Light & Smith"
+,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,flatfishes,"Morris, Abbott, & Haderlie; Light & Smith"
+,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,flatfishes,Light & Smith
+,574,Garypus californicus,other arthropod,pseudoscorpion,adult,Both,high,typical predator,preys_on,flies,"Morris, Abbott, & Haderlie"
+,575,Neomolgus littoralis,mite,mite,adult,Both,high,carnivore (scavenger + predator),preys_on,flies,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1893,Acanthodoris pilosa,nudibranch,NA,adult,N,all,micropredator,preys_on,Flustrellidra sp.,Light & Smith
+,1495,Cafius luteipennis,insect,NA,adult,NA,all,typical predator,preys_on,fly (Fucellia) larvae,Light & Smith
+,1496,Cafius luteipennis,insect,NA,larvae,NA,all,typical predator,preys_on,fly (Fucellia) larvae,Light & Smith
+,1489,Amblopusa brevipes,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1491,Bryobiota bicolor,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1492,Bryobiota giulianii,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1493,Bryothinusa catalinae,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1501,Diaulota densissima,insect,NA,adult,NA,high to middle,typical predator,preys_on,fly eggs,Light & Smith
+,1502,Diaulota fulviventris,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1503,Diaulota vandykei,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1504,Diaulota vandykei,insect,NA,larvae,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1505,Diaulota harteri,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1513,Liparocephalus brevipennis,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1514,Liparocephalus cordicollis,insect,NA,adult,NA,middle,typical predator,preys_on,fly eggs,Light & Smith
+,1515,Liparocephalus cordicollis,insect,NA,larvae,NA,middle,typical predator,preys_on,fly eggs,Light & Smith
+,1516,Liparocephalus cordicollis,insect,NA,pupae,NA,middle,typical predator,preys_on,fly eggs,Light & Smith
+,1519,Pontomalota terminalia,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1520,Tarphiota geniculata,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1521,Tarphiota pallidipes,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1522,Thinusa maritima,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1523,Thinusa fletcheri,insect,NA,adult,NA,all,typical predator,preys_on,fly eggs,Light & Smith
+,1879,Littorina saxatilis,limpet,NA,adult,N,all,unknown,preys_on,foliose macroalgae,Light & Smith
+,360,Trimusculus reticulatus,snail,reticulate button snail,adult,Both,middle,filter feeder,preys_on,food particles,"Morris, Abbott, & Haderlie; light & Smith"
+,414,Mopalia lignosa,chiton,NA,adult,N,middle to low,omnivore,preys_on,foraminifera,"Morris, Abbott, & Haderlie; Light & Smith"
+,1872,Diaphana californica,snail,NA,adult,N,all,typical predator,preys_on,foraminiferan,Light & Smith
+,428,Oxydromus pugettensis,polychaete,NA,adult,Both,low,omnivore,preys_on,free living: diatoms,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,Fucus sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,1530,Phyconomus marinus,insect,NA,adult,NA,high,grazer,preys_on,fungus,Light & Smith
+,914,Proboscidactyla circumsabella,plankton,NA,medusa,N,low,filter feeder,preys_on,gastropod,Light & Smith
+,916,Proboscidactyla occidentalis,plankton,NA,medusa,S,low,filter feeder,preys_on,gastropod,Light & Smith
+yes,346,Tritonia festiva,nudibranch,diamondback,adult,Both,low,micropredator,preys_on,Alcyonium sp. (Gersemia rubiformis),"Morris, Abbott, & Haderlie; light & Smith"
+yes,411,Mopalia muscosa,chiton,mossy chiton,adult,Both,middle to low,omnivore,preys_on,Mastocarpus papillatus (Gigartina papilata),"Morris, Abbott, & Haderlie; Light & Smith"
+yes,417,Cryptochiton stelleri,chiton,gumboot chiton,adult,Both,low tidepools,grazer,preys_on,Mastocarpus papillatus (Gigartina papilata),"Morris, Abbott, & Haderlie; Light & Smith"
+yes,504,Oligochinus lighti,gammarid,NA,adult,Both,high to middle,grazer,preys_on,Mastocarpus papillatus (Gigartina papilata),"Morris, Abbott, & Haderlie"
+,226,Haliotis fulgens,abalone,green abalone,adult,S,low,grazer,preys_on,Gigartina sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (brackish),1947,Cuthona phoenix,nudibranch,NA,adult,Both,all,micropredator,preys_on,Gonothyraea serialis,Light & Smith
+no - resource (idk),566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,Grateloupia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,556,Cycloxanthops novemdentatus,true crab,large pebble crab,adult,Both,low,omnivore,preys_on,green algae,"Morris, Abbott, & Haderlie"
+,558,Paraxanthias taylori,true crab,lumpy crab,adult,Both,middle to low,omnivore,preys_on,green algae,"Morris, Abbott, & Haderlie"
+,581,Canaceoides nudatus,insect,beach fly,adult,Both,high to middle,grazer,preys_on,green algae,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1890,Hermaea oliviae,nudibranch,NA,adult,N,all,grazer,preys_on,Griffithsia pacifica,Light & Smith
+yes,711,Carcinonemertes epialti,nemertean,NA,adult,Both,all,symbiotic egg predator,preys_on,H. nudus,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,560,Hermissenda crassicornis,nudibranch,opalescent nudibranch,adult,N,low,typical predator,preys_on,Halecium corrugatum,Light & Smith
+expanded,1780,Lucapinella callomarginata,limpet,NA,adult,Both,low,micropredator,preys_on,Halochondria,Light & Smith
+yes,1049,Diarthrodes cystoecus,copepod,NA,adult,N,middle,filter feeder,parasitic_on,Halosaccion glandiforme,Light & Smith
+yes,1913,Taringa aivica,nudibranch,NA,adult,S,all,micropredator,preys_on,Hamacantha hyaloderma,Light & Smith
+,299,Navanax inermis,nudibranch,Navanax,adult,Both,low,typical predator,preys_on,Haminoea vesicula,"Morris, Abbott, & Haderlie"
+,1420,Perotripus brevis,caprellid,NA,adult,N,all,typical predator,preys_on,harpacticoid copepods,Light & Smith
+no - consumer (outside CA),1325,Carinonajna carli,gammarid,NA,adult,NA,all,parasite,parasitic_on,Hedophyllum,Light & Smith
+no - consumer (outside CA),1328,Carinonajna longimana,gammarid,NA,adult,NA,all,parasite,parasitic_on,Hedophyllum,Light & Smith
+no - resource (bays),486,Portunion conformis,parasitic isopod,NA,adult,N,host range,parasite,parasitic_on,Hemigrapsus oregonensis,Light & Smith
+no - resource (bays),711,Carcinonemertes epialti,nemertean,NA,adult,Both,all,symbiotic egg predator,preys_on,Hemigrapsus oregonensis,"Morris, Abbott, & Haderlie; Light & Smith"
+,463,Balanus glandula,barnacle,NA,adult,Both,high to middle,filter feeder,parasitic_on,Hemioniscus sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,Hermissinda crassicornis/opalescens,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,hermit crabs,"Morris, Abbott, & Haderlie; Light & Smith"
+,710,Phanerodon vacca,fish,pile perch,adult,Both,low,typical predator,preys_on,hermit crabs,"Morris, Abbott,, Haderlie"
+,1182,Caligus clemensi,copepod,NA,adult,NA,all,parasite,parasitic_on,Hexagrammidae,Light & Smith
+,1186,Lepeophtheirus oblitus,copepod,NA,adult,NA,all,parasite,parasitic_on,Hexagrammidae,Light & Smith
+,1187,Lepeophtheirus salmonis,copepod,NA,adult,NA,all,parasite,parasitic_on,Hexagrammidae,Light & Smith
+,1192,Clavella parva,copepod,NA,adult,NA,all,parasite,parasitic_on,Hexagrammidae,Light & Smith
+yes,1897,Crimora coneja,nudibranch,NA,adult,Both,all,micropredator,preys_on,Hincksina minuscula,Light & Smith; 261
+yes,230,Calliostoma annulatum,topsnail,purple ringed topsnail,adult,Both,low,omnivore,preys_on,Hippothoa sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,1833,Melanella thersites,snail,NA,adult,N,low,micropredator,preys_on,holothurians,Light & Smith
+no - resource (bays),153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,Humilaria kennerleyi,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,984,Crangon handi,shrimp,NA,adult,N,NA,carnivore (scavenger + predator),preys_on,Hyale frequens,"Light & Smith; Kuris, Carlton 1977"
+no - resource (atlantic),1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Hydractinia echinata,Light & Smith
+expanded,355,Cuthona divae,nudibranch,rose-pink cuthona,adult,Both,low,omnivore,preys_on,Hydractinia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,356,Phidiana hiltoni,nudibranch,fighting phidiana,adult,Both,low,carnivore (scavenger + predator),preys_on,Hydractinia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,hydroids,"Morris, Abbott, & Haderlie; Light & Smith"
+,348,Dirona albolineata,nudibranch,chalk lined dirona,adult,Both,low tidepools,micropredator,preys_on,hydroids,"Morris, Abbott, & Haderlie; Light & Smith"
+,354,Diaphoreolis lagunae,nudibranch,orange faced,adult,Both,low,micropredator,preys_on,hydroids,"Morris, Abbott, & Haderlie"
+,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,hydroids,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+,358,Aeolidia loui,nudibranch,shag-rug,adult,Both,low,micropredator,preys_on,hydroids,"Kienberger et al, 2016; Morris, Abbott, & Haderlie"
+,411,Mopalia muscosa,chiton,mossy chiton,adult,Both,middle to low,omnivore,preys_on,hydroids,"Morris, Abbott, & Haderlie; Light & Smith"
+,412,Mopalia ciliata,chiton,NA,adult,Both,middle to low,omnivore,preys_on,hydroids,"Morris, Abbott, & Haderlie; Light & Smith"
+,412,Mopalia ciliata,chiton,NA,adult,Both,middle to low,omnivore,preys_on,hydroids,"Morris, Abbott, & Haderlie; Light & Smith"
+,413,Mopalia hindsii,chiton,NA,adult,Both,middle to low,omnivore,preys_on,hydroids,"Morris, Abbott, & Haderlie; Light & Smith"
+,1343,Metopa cistella,gammarid,NA,adult,NA,all,micropredator,preys_on,hydroids,Light & Smith
+,1344,Stenothoe estacola,gammarid,NA,adult,NA,all,micropredator,preys_on,hydroids,Light & Smith
+,1345,Stenothoides burbanki,gammarid,NA,adult,NA,all,micropredator,preys_on,hydroids,Light & Smith
+,1346,Stenula incola,gammarid,NA,adult,NA,all,micropredator,preys_on,hydroids,Light & Smith
+,1920,Hancockia californica,nudibranch,NA,adult,Both,all,micropredator,preys_on,hydroids,Light & Smith
+,1943,Cuthona flavovulta,nudibranch,NA,adult,N,all,micropredator,preys_on,hydroids,Light & Smith
+,1946,Cuthona lagunae,nudibranch,NA,adult,Both,all,micropredator,preys_on,hydroids,Light & Smith
+,1949,Tenellia adspersa,nudibranch,NA,adult,Both,all,micropredator,preys_on,hydroids,Light & Smith
+expanded,1908,Aldisa cooperi,nudibranch,NA,adult,N,all,micropredator,preys_on,Hymedesmia sp,Light & Smith
+yes,143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,Strongylocentrus purpuratus,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (bays),1866,Boonea bisuturalis,snail,NA,adult,N,all,parasite,parasitic_on,Ilyanassa obsoleta,Light & Smith
+no,1717,Lineus sanguineus,nemertean,ribbon worm,adult,Both,high to middle,carnivore (scavenger + predator),preys_on,in laboratory conditions,Light & Smith
+no,475,Cirolana harfordi,isopod,rock isopod,adult,Both,middle,carnivore (scavenger + predator),preys_on,in order of importance,"Morris, Abbott, & Haderlie"
+,1328,Carinonajna longimana,gammarid,NA,adult,NA,all,parasite,parasitic_on,in Phyllospadix,Light & Smith
+,553,Cancer oregonensis,true crab,Oregon cancer crab,adult,Both,low,typical predator,preys_on,incidental algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,672,Leptasterias aequalis,asteroid,6 arm star,adult,Both,middle,carnivore (scavenger + predator),preys_on,including dead animals,Light & Smith; Walla Walla
+,761,Ligia pallasii,isopod,NA,adult,Both,high,detritivore,preys_on,insect larvae,Walla Walla; Light & Smith
+,573,Nyctunguis heathi,other arthropod,centipede,adult,Both,high,typical predator,preys_on,insects,"Morris, Abbott, & Haderlie"
+,1510,Hadrotes crassus,insect,NA,adult,NA,all,typical predator,preys_on,insects,Light & Smith
+,1361,Cephalophoxoides homilis,gammarid,NA,adult,NA,all,typical predator,preys_on,invertebrate larvae,Light & Smith
+,1362,Eyakia robusta,gammarid,NA,adult,NA,all,typical predator,preys_on,invertebrate larvae,Light & Smith
+expanded,417,Cryptochiton stelleri,chiton,gumboot chiton,adult,Both,low tidepools,grazer,preys_on,Iridaea,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,208,Lottia pelta,true limpet,shield limpet,adult,Both,middle to low,grazer,preys_on,Iridaea sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,286,Lirabuccinum dirum,whelk,dire whelk,adult,Both,middle,typical predator,preys_on,Lepidozona (Ischnochiton),"Morris, Abbott, & Haderlie; Light & Smith"
+,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,isopods,"Morris, Abbott, & Haderlie; Light & Smith"
+,707,Hexagrammos decagrammus,fish,kelp greenling,adult,NA,NA,typical predator,preys_on,isopods,"Morris, Abbott,, Haderlie"
+,1720,Amphiporus formidabilis,nemertean,ribbon worm,adult,N,all,carnivore (scavenger + predator),preys_on,isopods,Light & Smith
+no,1878,Littorina plena,limpet,NA,adult,Both,all,unknown,preys_on,J. Exp. Mar. Biol. Ecol. 130: 147-165 (competition,Light & Smith
+,2072,Paralabrax nebulifer,fish,barred sand bass,adult,Both,low,typical predator,preys_on,Juvenile feed on benthic invertebrates (crabs,FishBase
+,2073,Paralabrax nebulifer,fish,barred sand bass,juvenile,Both,low,typical predator,preys_on,Juvenile feed on benthic invertebrates (crabs,FishBase
+,1799,Lacuna unifasciata,snail,NA,adult,Both,all,grazer,preys_on,kelp,Light & Smith
+,1253,Idotea resecata,isopod,NA,adult,Both,all,unknown,preys_on,kelp canopy,Light & Smith
+,995,Cancer gracilis,true crab,NA,juvenile,Both,low,carnivore (scavenger + predator),preys_on,kleptoparasitic on medusae,Light & Smith
+,996,Cancer gracilis,true crab,NA,megalops,Both,low,carnivore (scavenger + predator),preys_on,kleptoparasitic on medusae,Light & Smith
+no - resource (outside CA),348,Dirona albolineata,nudibranch,chalk lined dirona,adult,Both,low tidepools,micropredator,preys_on,Lacuna carinatus,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,286,Lirabuccinum dirum,whelk,dire whelk,adult,Both,middle,typical predator,preys_on,Lacuna sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1304,Peramphithoe stypotrupetes,gammarid,NA,adult,NA,very low,parasite,parasitic_on,Laminaria,Light & Smith
+expanded,1323,Carinonajna bicarinata,gammarid,NA,adult,NA,all,parasite,parasitic_on,Laminaria,Light & Smith
+no - consumer (outside CA),1328,Carinonajna longimana,gammarid,NA,adult,NA,all,parasite,parasitic_on,Laminaria,Light & Smith
+yes,202,Lottia instabilis,true limpet,unstable seaweed limpet,adult,Both,low,grazer,preys_on,Saccharina dentigera (Laminaria dentigera),"Morris, Abbott, & Haderlie; Light & Smith"
+yes,242,Promartynia pulligo,topsnail,dusky turban snail,adult,Both,low,grazer,preys_on,Saccharina dentigera (Laminaria dentigera),"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (atlantic),1936,Eubranchus rupium,nudibranch,NA,adult,N,all,micropredator,preys_on,Laomedea flexuosa,Light & Smith
+,455,Pollicipes polymerus,barnacle,leaf barnacle,adult,Both,middle,filter feeder,preys_on,large particles of detritus,"Morris, Abbott, & Haderlie"
+yes,1708,Lineus ruber,nemertean,ribbon worm,larvae,N,middle,carnivore (scavenger + predator),preys_on,larvae engage in sibling cannibalism,Light & Smith
+,1487,Aleochara (Coprochara) sulcicollis,insect,NA,adult,NA,all,typical predator,preys_on,larvae of flies that are laid in decaying algae,Light & Smith
+,1488,Aleochara arenaria,insect,NA,adult,NA,all,typical predator,preys_on,larvae of flies that are laid in decaying algae,Light & Smith
+,1497,Cafius opacus,insect,NA,adult,NA,all,typical predator,preys_on,larvae of flies that are laid in decaying algae,Light & Smith
+,1498,Cafius sulcicollis,insect,NA,adult,NA,all,typical predator,preys_on,larvae of flies that are laid in decaying algae,Light & Smith
+,1499,Cafius sulcicollis,insect,NA,larvae,NA,all,typical predator,preys_on,larvae of flies that are laid in decaying algae,Light & Smith
+,1500,Cafius nauticus,insect,NA,adult,NA,all,typical predator,preys_on,larvae of flies that are laid in decaying algae,Light & Smith
+,580,Paraphrosylus praedator,insect,long legged fly,adult,N,high to middle,typical predator,preys_on,larval,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,281,Acanthinucella punctulata,snail,spotted unicorn,adult,Both,high,typical predator,preys_on,Lasaea cistula,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource,310,Cadlina limbaughorum,nudibranch,Limbaugh's cadlina,adult,S,low,micropredator,preys_on,Leiosella idia,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (subtidal),491,Idotea montereyensis,isopod,NA,adult,N,middle to low,unknown,preys_on,Leptocladia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,195,Diodora aspera,limpet,rough keyhole limpet,adult,Both,low,omnivore,preys_on,less commonly algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,less often sponges,"Morris, Abbott, & Haderlie; Light & Smith"
+no - consumer (outside CA),1322,Carinonajna barnardi,gammarid,NA,adult,NA,all,parasite,parasitic_on,Lessoniopsis (from family dsecritions),Light & Smith
+no - consumer (outside CA),1324,Carinonajna bispinosa,gammarid,NA,adult,NA,all,parasite,parasitic_on,Lessoniopsis (from family dsecritions),Light & Smith
+yes,1327,Carinonajna lessoniophila,gammarid,NA,adult,NA,all,parasite,parasitic_on,Lessoniopsis littoralis,Light & Smith
+no - resource (subtidal),344,Aegires albopunctatus,nudibranch,"salt, pepper",adult,Both,low tidepools,micropredator,preys_on,Leucetta losangelensis,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,344,Aegires albopunctatus,nudibranch,"salt, pepper",adult,Both,low tidepools,micropredator,preys_on,Leucilla nuttingi,"Morris, Abbott, & Haderlie; Light & Smith"
+,577,Neomachilis halophila,insect,bristletail,adult,Both,high,grazer,preys_on,lichen,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1118,Donsiella limnoriae,copepod,NA,adult,NA,all,parasite,parasitic_on,Limnoria sp.,Light & Smith
+,60,Orthasterias koehleri,asteroid,rainbow star,small,Both,very low,typical predator,preys_on,limpets,Light & Smith; Ref # 232
+,150,Pisaster ochraceus,asteroid,ochre star,adult,Both,"middle, low",typical predator,preys_on,limpets,"Morris, Abbott, & Haderlie"
+,625,Pteropurpura festiva,murex,festive murex,adult,S,NA,typical predator,preys_on,limpets,Wikipedia
+,672,Leptasterias aequalis,asteroid,6 arm star,adult,Both,middle,carnivore (scavenger + predator),preys_on,limpets,Light & Smith; Walla Walla
+,720,Evasterias troschelii,asteroid,NA,adult,N,all,typical predator,preys_on,limpets,Light & Smith
+,2049,Notocomplana litoricola,turbellarian,NA,adult,N,middle,typical predator,preys_on,limpets,Light & Smith
+expanded,1914,Thordisa rubescens,nudibranch,NA,adult,S,all,micropredator,preys_on,Lissodendoryx,Light & Smith
+,196,Acmaea mitra,true limpet,white-cap limpet,adult,Both,low,grazer,preys_on,Lithophyllum,"Morris, Abbott, & Haderlie"
+,203,Lottia limatula,true limpet,file limpet,adult,Both,middle to low,grazer,preys_on,Lithophyllum sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,203,Lottia limatula,true limpet,file limpet,adult,Both,middle to low,grazer,preys_on,Lithothamnium sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,281,Acanthinucella punctulata,snail,spotted unicorn,adult,Both,high,typical predator,preys_on,Littorina keenae (planaxis),"Morris, Abbott, & Haderlie; Light & Smith"
+yes,284,Nucella emarginata,snail,emarginate dogwinkle,adult,Both,high to middle,typical predator,preys_on,Littorina keenae (planaxis),"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (outside CA),286,Lirabuccinum dirum,whelk,dire whelk,adult,Both,middle,typical predator,preys_on,Littorina sitkana,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,Littorina sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,672,Leptasterias aequalis,asteroid,6 arm star,adult,Both,middle,carnivore (scavenger + predator),preys_on,littorine snails,Light & Smith; Walla Walla
+expanded,1707,Lineus ruber,nemertean,ribbon worm,adult,N,middle,omnivore,preys_on,littorines,Light & Smith
+expanded,1709,Lineus ruber,nemertean,ribbon worm,juvenile,N,middle,omnivore,preys_on,littorines,Light & Smith
+no,905,Chelyosoma productum,tunicate,"Flattop sea squirt, horseshoe ascidian",adult,Both,low,filter feeder,preys_on,located%20on%20a%20flattened%20disk.),Light & Smith
+yes,1894,Adalaria jannae,nudibranch,NA,adult,N,all,micropredator,preys_on,Jullienula hippocrepis (Lyrula hippocrepis),Light & Smith
+no - resource (bays),153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,Macoma,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (bays),298,Conus californicus,snail,California cone,adult,Both,low,typical predator,preys_on,Macoma nasuta,"Morris, Abbott, & Haderlie; Light & Smith"
+no - consumer (outside CA),1326,Carinonajna kitamati,gammarid,NA,adult,NA,all,parasite,parasitic_on,macrocystis,Light & Smith
+yes,168,Strongylocentrotus purpuratus,urchin,NA,adult,Both,low,grazer,preys_on,macrocystis,"Morris, Abbott, & Haderlie"
+no - consumer (outside CA),1322,Carinonajna barnardi,gammarid,NA,adult,NA,all,parasite,parasitic_on,Macrocystis,Light & Smith
+no - consumer (outside CA),1324,Carinonajna bispinosa,gammarid,NA,adult,NA,all,parasite,parasitic_on,Macrocystis,Light & Smith
+yes,417,Cryptochiton stelleri,chiton,gumboot chiton,adult,Both,low tidepools,grazer,preys_on,Macrocystis sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,1879,Littorina saxatilis,limpet,NA,adult,N,all,unknown,preys_on,macrophyte litter,Light & Smith
+,1264,Gnathia steveni,isopod,NA,juvenile praniza,S,low,parasite,parasitic_on,marine fishes,Light & Smith
+,938,Zanclella bryozoophila,hydroid,NA,hydroid colony,N,very low,filter feeder,preys_on,material gathered by the bryozoan lophophore. Diet microphagous,Light & Smith
+,142,Linckia columbiae,asteroid,NA,adult,S,low,NA,preys_on,maybe bacteria,"Morris, Abbott, & Haderlie; Light & Smith"
+no,254,Opalia wroblewskyi,snail,Chace's wentletrap,adult,Both,high,micropredator,preys_on,maybe more,"Morris, Abbott, & Haderlie; Light & Smith"
+,145,Henricia leviuscula,asteroid,blood star,adult,Both,low,filter feeder,preys_on,maybe sponges,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1880,Littorina subrotundata,limpet,NA,adult,N,all,unknown,preys_on,Mazzaella tips,Light & Smith
+yes,418,Octopus bimaculoides,octopus,two-spot octopus,adult,Both,middle to low,typical predator,preys_on,Megastrea undosa,"Morris, Abbott, & Haderlie; Light & Smith"
+,1361,Cephalophoxoides homilis,gammarid,NA,adult,NA,all,typical predator,preys_on,meiofauna,Light & Smith
+,1362,Eyakia robusta,gammarid,NA,adult,NA,all,typical predator,preys_on,meiofauna,Light & Smith
+expanded,230,Calliostoma annulatum,topsnail,purple ringed topsnail,adult,Both,low,omnivore,preys_on,Membranipora,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1894,Adalaria jannae,nudibranch,NA,adult,N,all,micropredator,preys_on,Membranipora,Light & Smith
+yes,1899,Palio zosterae,nudibranch,NA,adult,N,all,micropredator,preys_on,Membranipora membranacea.,Light & Smith
+expanded,341,Onchidoris muricata,nudibranch,white onchodoris,adult,N,low,micropredator,preys_on,Membranipora spp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1892,Okenia plana,nudibranch,NA,adult,Both,all,micropredator,preys_on,Membranipora tuberculata,Light & Smith
+yes,1955,Aeolidiella oliviae,nudibranch,NA,adult,Both,all,micropredator,preys_on,Metridium senile.,Light & Smith
+,197,Lottia asmi,true limpet,black limpet,adult,Both,middle,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,199,Lottia digitalis,true limpet,ribbed limpet,adult,Both,high,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,201,Lottia gigantea,true limpet,owl limpet,adult,Both,high to middle,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,203,Lottia limatula,true limpet,file limpet,adult,Both,middle to low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,210,Lottia scabra,true limpet,rough limpet,adult,Both,high,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,214,Tectura paleacea,true limpet,surfgrass limpet,adult,Both,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,215,Lottia scutum,true limpet,plate limpet,adult,N,middle,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,232,Calliostoma ligatum,topsnail,blue topsnail,adult,Both,low,omnivore,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,237,Tegula funebralis,topsnail,black turban snail,adult,Both,middle,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie"
+,247,Littorina keenae,littorine,eroded periwinke,adult,Both,high,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie"
+,248,Littorina scutulata,littorine,checkered periwinkle,adult,Both,high to middle,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,259,Crepidula adunca,slipper snail,hooked slipper snail,juvenile,Both,middle,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie"
+,361,Onchidella borealis,snail,leather limpet,adult,N,high to middle,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie"
+,394,Leptochiton rugatus,chiton,NA,adult,Both,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,395,Lepidozona interstincta,chiton,NA,adult,N,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie"
+,396,Lepidozona regularis,chiton,NA,adult,N,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,397,Lepidozona mertensii,chiton,NA,adult,Both,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,398,Lepidozona cooperi,chiton,NA,adult,Both,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,399,Lepidozona scrobiculata,chiton,NA,adult,Both,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,400,Lepidozona pectinulata,chiton,NA,adult,S,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie"
+,402,Stenoplax fallax,chiton,NA,adult,Both,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; light & Smith"
+,403,Stenoplax conspicua,chiton,NA,adult,S,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,406,Dendrochiton flectens,chiton,NA,adult,Both,very low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,407,Callistochiton crassicostatus,chiton,NA,adult,Both,middle to low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,408,Callistochiton palmulatus,chiton,NA,adult,Both,middle to low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,410,Chaetopleura gemma,chiton,NA,adult,Both,middle to low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,415,Placiphorella velata,chiton,veiled chiton,adult,Both,very low,omnivore,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,416,Katharina tunicata,chiton,NA,adult,N,middle to low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,487,Ligia occidentalis,isopod,rock isopod,adult,Both,high,scavenger,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,504,Oligochinus lighti,gammarid,NA,adult,Both,high to middle,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie"
+,505,Caprella californica,amphipod,caprellid,adult,Both,low,omnivore,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,568,Tigriopus californicus,copepod,tig,adult,Both,high,omnivore,preys_on,microalgal film,"Morris, Abbott, & Haderlie; Light & Smith"
+,1754,Stenoplax fallax,chiton,NA,juvenile,Both,low,grazer,preys_on,microalgal film,"Morris, Abbott, & Haderlie"
+,1803,Alvania compacta,microsnail,NA,adult,N,all,grazer,preys_on,microalgal films.,Light & Smith
+,1804,Alvania almo,microsnail,NA,adult,N,all,grazer,preys_on,microalgal films.,Light & Smith
+,1805,Alvinia aequisculpta,microsnail,NA,adult,N,all,grazer,preys_on,microalgal films.,Light & Smith
+,1806,Alvinia purpurea,microsnail,NA,adult,N,all,grazer,preys_on,microalgal films.,Light & Smith
+,1807,Onoba carpenteri,microsnail,NA,adult,N,all,grazer,preys_on,microalgal films.,Light & Smith
+,1808,Onoba mighelsii,microsnail,NA,adult,N,all,grazer,preys_on,microalgal films.,Light & Smith
+,229,Haliotis cracherodii,abalone,black abalone,adult,Both,all,grazer,preys_on,microalgal flim,"Morris, Abbott, & Haderlie; Light & Smith"
+,142,Linckia columbiae,asteroid,NA,adult,S,low,NA,preys_on,microherbivores,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,341,Onchidoris muricata,nudibranch,white onchodoris,adult,N,low,micropredator,preys_on,Microporella spp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,1717,Lineus sanguineus,nemertean,ribbon worm,adult,Both,high to middle,carnivore (scavenger + predator),preys_on,minced clams,Light & Smith
+,428,Oxydromus pugettensis,polychaete,NA,adult,Both,low,omnivore,preys_on,miscellaneous debris,"Morris, Abbott, & Haderlie; Light & Smith"
+,573,Nyctunguis heathi,other arthropod,centipede,adult,Both,high,typical predator,preys_on,mites,"Morris, Abbott, & Haderlie"
+,282,Acanthinucella spirata,snail,angular unicorn,adult,Both,high to middle,typical predator,preys_on,mollusks,"Morris, Abbott, & Haderlie; Light & Smith"
+,419,Octopus rubescens,octopus,red octopus,adult,N,low,typical predator,preys_on,mollusks,"Morris, Abbott, & Haderlie; Light & Smith"
+,421,Octopus micropyrsus,octopus,NA,adult,S,low,typical predator,preys_on,mollusks,"Morris, Abbott, & Haderlie; Light & Smith"
+,706,Apodichthys fucorum,fish,rockweed gunnel,adult,Both,NA,typical predator,preys_on,mollusks,"Morris, Abbott,, Haderlie; FishBase"
+,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,moon snails,"Morris, Abbott, & Haderlie; Light & Smith"
+,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,moon snails,Light & Smith
+no - already in web,143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,mostly Anthopleura xanthogrammatica/elegantissima,"Morris, Abbott, & Haderlie; Light & Smith"
+,285,Nucella lamellosa,snail,frilled dogwinkle,adult,N,low,typical predator,preys_on,mussels,"Morris, Abbott, & Haderlie; Light & Smith"
+,625,Pteropurpura festiva,murex,festive murex,adult,S,NA,typical predator,preys_on,mussels,Wikipedia
+,1845,Nucella analoga analoga,snail,NA,adult,N,all,typical predator,preys_on,mussels,Light & Smith
+no - resource (soft sediment),559,Fabia subquadrata,true crab,pea crab,adult,Both,low,filter feeder,parasitic_on,Mya arenaria,"Morris, Abbott, & Haderlie; Light & Smith"
+,2072,Paralabrax nebulifer,fish,barred sand bass,adult,Both,low,typical predator,preys_on,mysids),FishBase
+,2073,Paralabrax nebulifer,fish,barred sand bass,juvenile,Both,low,typical predator,preys_on,mysids),FishBase
+,150,Pisaster ochraceus,asteroid,ochre star,adult,Both,"middle, low",typical predator,preys_on,Mytilus,"Morris, Abbott, & Haderlie"
+no - resource (soft sediment),153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,Nassarius fossatus,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (soft sediment),298,Conus californicus,snail,California cone,adult,Both,low,typical predator,preys_on,Nassarius fossatus,"Morris, Abbott, & Haderlie; Light & Smith"
+,998,Carcinus maenas,true crab,European Green Crab,adult,N,low,carnivore (scavenger + predator),preys_on,native crabs,Light & Smith
+,1223,Cirolana diminuta,isopod,NA,adult,S,all,carnivore (scavenger + predator),preys_on,nearshore fishes,Light & Smith
+,228,Hydractinia milleri,hydroid,NA,adult,Both,low,carnivore (scavenger + predator),preys_on,nematodes,"Morris, Abbott, & Haderlie"
+,928,Halimedusa typus,hydroid,NA,hydroid colony,N,low,filter feeder,preys_on,nematodes,Light & Smith; Mills 2000
+,483,Limnoria algarum,isopod,gribble,adult,Both,low,micropredator,preys_on,Nereocystis sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,1510,Hadrotes crassus,insect,NA,adult,NA,all,typical predator,preys_on,Nocturnal predators of crustaceans,Light & Smith
+no - resource (atlantic),1895,Diaphorodoris lirulatocauda,nudibranch,NA,adult,N,all,unknown,preys_on,Nolella stipitata,Light & Smith
+yes,286,Lirabuccinum dirum,whelk,dire whelk,adult,Both,middle,typical predator,preys_on,Lottia scutum (Notoacmea scutum),"Morris, Abbott, & Haderlie; Light & Smith"
+yes,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,Lottia scutum (Notoacmea scutum),"Morris, Abbott, & Haderlie; Light & Smith"
+,418,Octopus bimaculoides,octopus,two-spot octopus,adult,Both,middle to low,typical predator,preys_on,Notoacmea sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,123,Emplectonema gracile,nemertean,ribbon worm,adult,Both,"high, middle",NA,preys_on,Nucella eggs,"Morris, Abbott, & Haderlie"
+expanded,230,Calliostoma annulatum,topsnail,purple ringed topsnail,adult,Both,low,omnivore,preys_on,Obelia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,347,Doto amyra,nudibranch,hammerhead doto,adult,Both,low,micropredator,preys_on,Obelia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,633,Doto columbiana,nudibranch,NA,adult,N,low,micropredator,preys_on,Obelia sp.,Light & Smith
+expanded,1924,Dendronotus subramosus,nudibranch,NA,adult,N,all,micropredator,preys_on,Obelia sp.,Light & Smith
+expanded,1937,Eubranchus rustyus,nudibranch,NA,adult,N,all,micropredator,preys_on,Obelia sp.,Light & Smith
+expanded,1939,Catriona columbiana,nudibranch,NA,adult,N,all,micropredator,preys_on,Obelia sp.,Light & Smith
+expanded,1949,Tenellia adspersa,nudibranch,NA,adult,Both,all,micropredator,preys_on,Obelia sp.,Light & Smith
+expanded,560,Hermissenda crassicornis,nudibranch,opalescent nudibranch,adult,N,low,typical predator,preys_on,Obelia spp.,Light & Smith
+expanded,1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Obelia spp.,Light & Smith
+expanded,1936,Eubranchus rupium,nudibranch,NA,adult,N,all,micropredator,preys_on,Obelia spp.,Light & Smith
+yes,761,Ligia pallasii,isopod,NA,adult,Both,high,detritivore,preys_on,occasional members of the same species,Walla Walla; Light & Smith
+,147,Astrometis sertulifera,asteroid,red/yellow star,adult,S,very low,typical predator,preys_on,occasionally sea urchins,"Morris, Abbott, & Haderlie; Light & Smith"
+,270,Trivia californiana,snail,California trivia,adult,NA,low,micropredator,preys_on,occidentalis,Light & Smith
+yes,1744,Dicyemennea sp.,rhombozoan,NA,adult,S,all,parasite,parasitic_on,Octopus microprysus,Light & Smith
+expanded,1740,Dicyema acheroni,rhombozoan,NA,adult,Both,all,parasite,parasitic_on,Octopus sp.,Light & Smith
+expanded,1741,Dicyema acciaccatum,rhombozoan,NA,adult,Both,all,parasite,parasitic_on,Octopus sp.,Light & Smith
+expanded,1742,Dicyemennea abasi,rhombozoan,NA,adult,Both,all,parasite,parasitic_on,Octopus sp.,Light & Smith
+expanded,1743,Dicyemennea abbreviata,rhombozoan,NA,adult,Both,all,parasite,parasitic_on,Octopus sp.,Light & Smith
+expanded,545,Loxorhynchus grandis,true crab,sheep crab,adult,Both,low,scavenger,preys_on,octopuses,"Morris, Abbott, & Haderlie"
+,984,Crangon handi,shrimp,NA,adult,N,NA,carnivore (scavenger + predator),preys_on,oedicerotid ganmmaridean amphipod,"Light & Smith; Kuris, Carlton 1977"
+no,748,Leptochelia sp.,tanaid,NA,adult,NA,all,detritivore,preys_on,often scraped from the surface of larger organisms (Kozloff 1993),OIMB; Light & Smith
+,1707,Lineus ruber,nemertean,ribbon worm,adult,N,middle,omnivore,preys_on,oligochaetes,Light & Smith
+,1709,Lineus ruber,nemertean,ribbon worm,juvenile,N,middle,omnivore,preys_on,oligochaetes,Light & Smith
+,1717,Lineus sanguineus,nemertean,ribbon worm,adult,Both,high to middle,carnivore (scavenger + predator),preys_on,oligochaetes,Light & Smith
+no - resource (soft sediment),153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,Olivella biplicata,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (soft sediment),298,Conus californicus,snail,California cone,adult,Both,low,typical predator,preys_on,Olivella biplicata,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (soft sediment),418,Octopus bimaculoides,octopus,two-spot octopus,adult,Both,middle to low,typical predator,preys_on,Olivella biplicata,"Morris, Abbott, & Haderlie; Light & Smith"
+,945,Eutonina indicans,plankton,NA,medusa,N,low,filter feeder,preys_on,on appendicularians,Light & Smith
+,945,Eutonina indicans,plankton,NA,medusa,N,low,filter feeder,preys_on,on other small hydromedusae,Light & Smith
+,1886,Olea hansineensis,nudibranch,NA,adult,N,all,typical predator,preys_on,opisthobranch eggs,Light & Smith
+,1889,Aplysiopsis enteromorphae,nudibranch,NA,adult,N,all,grazer,preys_on,or Cladophora spp,Light & Smith
+,1528,Aegialites fuchsi,insect,NA,adult,NA,all,omnivore,preys_on,organic matter,Light & Smith
+,1529,Aegialites subopacus,insect,NA,adult,NA,middle,omnivore,preys_on,organic matter,Light & Smith
+,413,Mopalia hindsii,chiton,NA,adult,Both,middle to low,omnivore,preys_on,other animal material bryozoans,"Morris, Abbott, & Haderlie; Light & Smith"
+,905,Chelyosoma productum,tunicate,"Flattop sea squirt, horseshoe ascidian",adult,Both,low,filter feeder,preys_on,other ascidians (https://inverts.wallawalla.edu/Chordata_%28Urochordata%29/Class_Ascidiacea/Phlebobranchia/Corellidae/Chelyosoma_productum.html#:~:text=Description%3A%20This%20solitary%20tunicate%20has,Light & Smith
+,702,Crangon alaskensis,shrimp,NA,adult,Both,NA,carnivore (scavenger + predator),parasitic_on,other bopyrid isopods,PO; Light & Smith
+expanded,1495,Cafius luteipennis,insect,NA,adult,NA,all,typical predator,preys_on,other Cafius species,Light & Smith
+expanded,1496,Cafius luteipennis,insect,NA,larvae,NA,all,typical predator,preys_on,other Cafius species,Light & Smith
+,1481,Neochthebius vandykei,insect,NA,larvae,NA,high,carnivore (scavenger + predator),preys_on,other hydraenid larvae,Light & Smith
+,1476,Anisolabis maritima,insect,seaside earwig,adult,Both,high,typical predator,preys_on,other insects,Light & Smith
+,930,Hydrocoryne bodegensis,hydroid,NA,hydroid colony,N,all,filter feeder,preys_on,other macrobenthic crustaceans,"Light & Smith; Rees, Hand,, Mills (1976)"
+,285,Nucella lamellosa,snail,frilled dogwinkle,adult,N,low,typical predator,preys_on,other mollusks,"Morris, Abbott, & Haderlie; Light & Smith"
+,302,Stiliger fuscovittatus,nudibranch,streaked stilliger,adult,Both,low,grazer,preys_on,other red algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,146,Solaster dawsoni,asteroid,sun star,adult,N,low,typical predator,preys_on,other sea stars,"Morris, Abbott, & Haderlie; Light & Smith"
+,299,Navanax inermis,nudibranch,Navanax,adult,Both,low,typical predator,preys_on,other shelled opisthobranchs,"Morris, Abbott, & Haderlie"
+,672,Leptasterias aequalis,asteroid,6 arm star,adult,Both,middle,carnivore (scavenger + predator),preys_on,other small animals,Light & Smith; Walla Walla
+,580,Paraphrosylus praedator,insect,long legged fly,adult,N,high to middle,typical predator,preys_on,other small insect,"Morris, Abbott, & Haderlie; Light & Smith"
+,142,Linckia columbiae,asteroid,NA,adult,S,low,NA,preys_on,other species of Linckia are substrate film feeders,"Morris, Abbott, & Haderlie; Light & Smith"
+,1487,Aleochara (Coprochara) sulcicollis,insect,NA,adult,NA,all,typical predator,preys_on,other vegetation,Light & Smith
+,1488,Aleochara arenaria,insect,NA,adult,NA,all,typical predator,preys_on,other vegetation,Light & Smith
+,1497,Cafius opacus,insect,NA,adult,NA,all,typical predator,preys_on,other vegetation.,Light & Smith
+,1498,Cafius sulcicollis,insect,NA,adult,NA,all,typical predator,preys_on,other vegetation.,Light & Smith
+,1499,Cafius sulcicollis,insect,NA,larvae,NA,all,typical predator,preys_on,other vegetation.,Light & Smith
+,1500,Cafius nauticus,insect,NA,adult,NA,all,typical predator,preys_on,other vegetation.,Light & Smith
+expanded,418,Octopus bimaculoides,octopus,two-spot octopus,adult,Both,middle to low,typical predator,preys_on,Pagurus sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,549,Cancer antennaria,true crab,rock crab,adult,Both,low,carnivore (scavenger + predator),preys_on,Pagurus sp.,"Morris, Abbott, & Haderlie; light & Smith"
+no - resource (soft sediment),153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,Panopea generosa,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1117,Namakosiramia californiensis,copepod,NA,adult,S,all,parasite,parasitic_on,Parastichopus parvimensis,Light & Smith
+,405,Cyanoplax hartwegii,chiton,NA,adult,Both,"high tide pools, nocturnal",grazer,preys_on,Pelvetia fastigiata,"Morris, Abbott, & Haderlie; Light & Smith"
+,208,Lottia pelta,true limpet,shield limpet,adult,Both,middle to low,grazer,preys_on,Pelvetia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,248,Littorina scutulata,littorine,checkered periwinkle,adult,Both,high to middle,grazer,preys_on,Pelvetia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,524,Pagurus samuelis,hermit crab,blue banded hermit crab,adult,Both,high to middle,scavenger,preys_on,Pelvetia sp.,"Morris, Abbott, & Haderlie"
+,527,Pagurus granosimanus,hermit crab,blue spotted hermit crab,adult,Both,low,scavenger,preys_on,Pelvetia sp.,"Morris, Abbott, & Haderlie"
+,192,Fissurellidea bimaculata,limpet,two-spotted keyhole,adult,Both,low,omnivore,preys_on,perhaps phytoplankton?,"Morris, Abbott, & Haderlie; Light & Smith"
+,405,Cyanoplax hartwegii,chiton,NA,adult,Both,"high tide pools, nocturnal",grazer,preys_on,Petrocelis sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,203,Lottia limatula,true limpet,file limpet,adult,Both,middle to low,grazer,preys_on,Peysonnelia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,151,Pisaster giganteus,asteroid,blue knobby star,adult,Both,very low,typical predator,preys_on,Phragmatophoma californica,"Morris, Abbott, & Haderlie"
+no - consumer (outside CA),1323,Carinonajna bicarinata,gammarid,NA,adult,NA,all,parasite,parasitic_on,Phyllospadix,Light & Smith
+no - consumer (outside CA),1325,Carinonajna carli,gammarid,NA,adult,NA,all,parasite,parasitic_on,Phyllospadix,Light & Smith
+expanded,1253,Idotea resecata,isopod,NA,adult,Both,all,unknown,preys_on,Phyllospadix seeds,Light & Smith
+expanded,214,Tectura paleacea,true limpet,surfgrass limpet,adult,Both,low,grazer,parasitic_on,Phyllospadix sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,214,Tectura paleacea,true limpet,surfgrass limpet,adult,Both,low,grazer,preys_on,Phyllospadix sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,491,Idotea montereyensis,isopod,NA,adult,N,middle to low,unknown,preys_on,Phyllospadix sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,556,Cycloxanthops novemdentatus,true crab,large pebble crab,adult,Both,low,omnivore,preys_on,Phyllospadix sp.,"Morris, Abbott, & Haderlie"
+,154,Cucumaria pseudocurata,cucumber,NA,adult,N,middle,grazer,preys_on,phytoplankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,250,Thylacodes squamigerus,vermetid,scaled worm snail,adult,Both,all,filter feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie; MacGintie & MacGintie 1949; Hadfield 1967; Light & Smith"
+,251,Petaloconchus montereyensis,vermetid,NA,adult,Both,low,filter feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,258,Crepidula adunca,slipper snail,hooked slipper snail,adult,Both,middle,filter feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie"
+,260,Bostrycapulus aculeatus,slipper snail,spiny slipper snail,adult,Both,low,filter feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie"
+,262,Crepidula nummaria,slipper snail,white slipper snail,adult,Both,low,filter feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,263,Crepidula onyx,slipper snail,onyx slipper snail,adult,S,low,filter feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie"
+,366,Mytilus californianus,mussel,California mussel,adult,Both,high to middle,filter feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie"
+,367,Mytilus edulis,mussel,bay mussel,adult,Both,low,filter feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie"
+,434,Cirriformia luxuriosa,polychaete,NA,juvenile,Both,middle to low,filter feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie"
+,435,Dodecaceria fewkesi,polychaete,NA,adult,Both,middle,deposit feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,441,Thelepus setosus,polychaete,feather duster worm,adult,Both,low,deposit feeder,preys_on,phytoplankton,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1939,Catriona columbiana,nudibranch,NA,adult,N,all,micropredator,preys_on,Ectopleura crocea (Pinauay crocea),Light & Smith
+yes,1941,Cuthona albocrusta,nudibranch,NA,adult,N,all,micropredator,preys_on,Ectopleura crocea (Pinauay crocea),Light & Smith
+yes,1949,Tenellia adspersa,nudibranch,NA,adult,Both,all,micropredator,preys_on,Ectopleura crocea (Pinauay crocea),Light & Smith
+yes,1931,Flabellina cooperi,nudibranch,NA,adult,Both,all,micropredator,preys_on,Ectopleura crocea (Pinauay crocea),Light & Smith
+yes,1924,Dendronotus subramosus,nudibranch,NA,adult,N,all,micropredator,preys_on,Ectopleura (Pinauay marina),Light & Smith
+no - resource (not in RIZ),577,Neomachilis halophila,insect,bristletail,adult,Both,high,grazer,preys_on,Pinus radiata pollen,"Morris, Abbott, & Haderlie; Light & Smith"
+,139,Flustrellidra corniculata,bryozoan,NA,adult,N,low,filter feeder,preys_on,plankton,"Morris, Abbott, & Haderlie"
+,453,Octolasmis lowei,barnacle,NA,adult,Both,low,filter feeder,preys_on,plankton,"Morris, Abbott, & Haderlie"
+,521,Hapalogaster cavicauda,true crab,NA,adult,Both,low,filter feeder,preys_on,plankton,"Morris, Abbott, & Haderlie"
+,522,Oedignathus inermis,true crab,NA,adult,Both,middle to low,filter feeder,preys_on,plankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,532,Petrolisthes cinctipes,porcelain crab,flat porcelain crab,adult,N,middle to low,filter feeder,preys_on,plankton,"Morris, Abbott, & Haderlie"
+,535,Pachycheles rudis,porcelain crab,thick clawed porcelain crab,adult,Both,low,filter feeder,preys_on,plankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,559,Fabia subquadrata,true crab,pea crab,adult,Both,low,filter feeder,preys_on,plankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,568,Tigriopus californicus,copepod,tig,adult,Both,high,omnivore,preys_on,plankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,127,Malacobdella grossa,nemertean,NA,adult,N,low,filter feeder,preys_on,plankton feeders,"Morris, Abbott, & Haderlie"
+,776,Phoronopsis harmeri,phoronid,NA,adult,Both,all,filter feeder,preys_on,planktonic organisms ranging between 1.2-12um (ref #206),Light & Smith
+,430,Platynereis bicanaliculata,polychaete,NA,adult,Both,low,grazer,preys_on,plants,"Morris, Abbott, & Haderlie; Light & Smith"
+,417,Cryptochiton stelleri,chiton,gumboot chiton,adult,Both,low tidepools,grazer,preys_on,Plocamium,"Morris, Abbott, & Haderlie; Light & Smith"
+,226,Haliotis fulgens,abalone,green abalone,adult,S,low,grazer,preys_on,Plocamium sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,491,Idotea montereyensis,isopod,NA,adult,N,middle to low,unknown,preys_on,Plocamium sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+yes,1937,Eubranchus rustyus,nudibranch,NA,adult,N,all,micropredator,preys_on,Plumularia lagenifera.,Light & Smith
+expanded,634,Doto kya,nudibranch,NA,adult,Both,low,micropredator,preys_on,Plumularia sp.,Light & Smith
+expanded,1936,Eubranchus rupium,nudibranch,NA,adult,N,all,micropredator,preys_on,Plumularia sp.,Light & Smith
+,475,Cirolana harfordi,isopod,rock isopod,adult,Both,middle,carnivore (scavenger + predator),preys_on,polychaete worms,"Morris, Abbott, & Haderlie"
+,553,Cancer oregonensis,true crab,Oregon cancer crab,adult,Both,low,typical predator,preys_on,polychaete worms,"Morris, Abbott, & Haderlie; Light & Smith"
+,123,Emplectonema gracile,nemertean,ribbon worm,adult,Both,"high, middle",NA,preys_on,polychaetes,"Morris, Abbott, & Haderlie"
+,298,Conus californicus,snail,California cone,adult,Both,low,typical predator,preys_on,polychaetes,"Morris, Abbott, & Haderlie; Light & Smith"
+,1704,Lineus bilineatus,nemertean,ribbon worm,adult,Both,all,typical predator,preys_on,polychaetes,Light & Smith
+,1707,Lineus ruber,nemertean,ribbon worm,adult,N,middle,omnivore,preys_on,polychaetes,Light & Smith
+,1709,Lineus ruber,nemertean,ribbon worm,juvenile,N,middle,omnivore,preys_on,polychaetes,Light & Smith
+,1852,Perimangelia interfossa,snail,NA,adult,N,all,typical predator,preys_on,polychaetes,Light & Smith
+,1853,Clathromangelia fuscoligata,snail,NA,adult,N,all,typical predator,preys_on,polychaetes,Light & Smith
+,1854,Clathurella canfieldi,snail,NA,adult,N,all,typical predator,preys_on,polychaetes,Light & Smith
+,1855,Mitromorpha aspera,snail,NA,adult,N,all,typical predator,preys_on,polychaetes,Light & Smith
+,1856,Mitromorpha gracilior,snail,NA,adult,N,low,typical predator,preys_on,polychaetes,Light & Smith
+,297,Pseudomelatoma torosa,snail,knobbed drill,adult,Both,low,typical predator,preys_on,polychates,"Morris, Abbott, & Haderlie; Light & Smith"
+,1890,Hermaea oliviae,nudibranch,NA,adult,N,all,grazer,preys_on,Polysiphonia hendryi.,Light & Smith
+,302,Stiliger fuscovittatus,nudibranch,streaked stilliger,adult,Both,low,grazer,preys_on,Polysiphortia spp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,208,Lottia pelta,true limpet,shield limpet,adult,Both,middle to low,grazer,preys_on,Postelsia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,483,Limnoria algarum,isopod,gribble,adult,Both,low,micropredator,preys_on,Postelsia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,144,Patiria miniata,asteroid,bat star,adult,Both,low,carnivore (scavenger + predator),preys_on,pretty much everything,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (soft sediment),153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,Protothaca,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (soft sediment),418,Octopus bimaculoides,octopus,two-spot octopus,adult,Both,middle to low,typical predator,preys_on,Protothaca staminea,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (soft sediment),559,Fabia subquadrata,true crab,pea crab,adult,Both,low,filter feeder,parasitic_on,Protothaca staminea,"Morris, Abbott, & Haderlie; Light & Smith"
+,161,Amphipholis squamata,brittle star,NA,adult,Both,low,deposit feeder,preys_on,protozoa,"Morris, Abbott, & Haderlie; Light & Smith"
+no - resource (subtidal),1919,Tritonia pickensi,nudibranch,NA,adult,S,all,micropredator,preys_on,Psammogorgia arbuscula.,Light & Smith
+no - resource (subtidal),1917,Doriopsilla gemela,nudibranch,NA,adult,Both,all,micropredator,preys_on,Cliona californiana (Pseudosuberites pseudos),Light & Smith
+,226,Haliotis fulgens,abalone,green abalone,adult,S,low,grazer,preys_on,Pterocladia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,236,Tegula brunnea,topsnail,brown turban snail,adult,Both,low,grazer,preys_on,Pterygophora sp.,"Morris, Abbott, & Haderlie; light & Smith"
+,539,Pugettia producta,true crab,kelp crab,young,Both,low,omnivore,preys_on,Pterygophora sp.,"Morris, Abbott, & Haderlie"
+,1495,Cafius luteipennis,insect,NA,adult,NA,all,typical predator,preys_on,pupae,Light & Smith
+,1496,Cafius luteipennis,insect,NA,larvae,NA,all,typical predator,preys_on,pupae,Light & Smith
+,2072,Paralabrax nebulifer,fish,barred sand bass,adult,Both,low,typical predator,preys_on,rarely fish,FishBase
+,2073,Paralabrax nebulifer,fish,barred sand bass,juvenile,Both,low,typical predator,preys_on,rarely fish,FishBase
+,1326,Carinonajna kitamati,gammarid,NA,adult,NA,all,parasite,parasitic_on,rarely Postelsia,Light & Smith
+,412,Mopalia ciliata,chiton,NA,adult,Both,middle to low,omnivore,preys_on,red,"Morris, Abbott, & Haderlie; Light & Smith"
+,558,Paraxanthias taylori,true crab,lumpy crab,adult,Both,middle to low,omnivore,preys_on,red,"Morris, Abbott, & Haderlie"
+yes,1865,Odostomia tenuisculpta,snail,NA,adult,N,all,parasite,parasitic_on,red abalone,Light & Smith
+,168,Strongylocentrotus purpuratus,urchin,NA,adult,Both,low,grazer,preys_on,red algae,"Morris, Abbott, & Haderlie"
+,416,Katharina tunicata,chiton,NA,adult,N,middle to low,grazer,preys_on,red algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,556,Cycloxanthops novemdentatus,true crab,large pebble crab,adult,Both,low,omnivore,preys_on,red algae,"Morris, Abbott, & Haderlie"
+,196,Acmaea mitra,true limpet,white-cap limpet,adult,Both,low,grazer,preys_on,red coralline algae,"Morris, Abbott, & Haderlie"
+,208,Lottia pelta,true limpet,shield limpet,adult,Both,middle to low,grazer,preys_on,red macroalgae,"Morris, Abbott, & Haderlie; Light & Smith"
+expanded,1894,Adalaria jannae,nudibranch,NA,adult,N,all,micropredator,preys_on,Reginella sp.,Light & Smith
+,930,Hydrocoryne bodegensis,hydroid,NA,hydroid colony,N,all,filter feeder,preys_on,relatively large (2-4 mm) gammarid amphipods,"Light & Smith; Rees, Hand,, Mills (1976)"
+,540,Pugettia gracilis,true crab,graceful kelp crab,adult,N,low,omnivore,parasitic_on,rhizocephalan barnacles,"Morris, Abbott, & Haderlie; Light & Smith"
+,1889,Aplysiopsis enteromorphae,nudibranch,NA,adult,N,all,grazer,preys_on,Rhizoclonium,Light & Smith
+,208,Lottia pelta,true limpet,shield limpet,adult,Both,middle to low,grazer,preys_on,Rhodoglossum sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,Rhodoglossum sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,1196,Argulus borealis,branchiuran,fish louse,adult,NA,all,micropredator,preys_on,rockfish,Light & Smith
+,1197,Argulus pugettensis,branchiuran,fish louse,adult,NA,all,micropredator,preys_on,rockfish,Light & Smith
+,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,rockfishes,"Morris, Abbott, & Haderlie; Light & Smith"
+,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,rockfishes,Light & Smith
+,604,Heterostichus rostratus,fish,kelpfish,juvenile,N,NA,typical predator,preys_on,rotifer,D. Canestro; FishBase
+,928,Halimedusa typus,hydroid,NA,hydroid colony,N,low,filter feeder,preys_on,rotifers,Light & Smith; Mills 2000
+,269,Trivia solandri,snail,Solander's trivia,adult,S,low,micropredator,preys_on,S. californica.,"Morris, Abbott, & Haderlie"
+,147,Astrometis sertulifera,asteroid,red/yellow star,adult,S,very low,typical predator,preys_on,sand crabs,"Morris, Abbott, & Haderlie; Light & Smith"
+,1482,Cercyon fimbriatus,insect,NA,adult,NA,high,detritivore,preys_on,saprophytic fungi,Light & Smith
+,1484,Cercyon luniger,insect,NA,adult,NA,all,detritivore,preys_on,saprophytic fungi,Light & Smith
+,1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Sarsia eximia,Light & Smith
+,1939,Catriona columbiana,nudibranch,NA,adult,N,all,micropredator,preys_on,Sarsia eximia,Light & Smith
+,153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,Saxidomus giganteus,"Morris, Abbott, & Haderlie; Light & Smith"
+,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,scallops,"Morris, Abbott, & Haderlie; Light & Smith"
+,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,scallops,Light & Smith
+,1129,Holobomolochus spinulus,copepod,NA,adult,NA,all,parasite,parasitic_on,Scorpaena guttata,Light & Smith
+,1130,Holobomolochus venustus,copepod,NA,adult,NA,all,parasite,parasitic_on,Scorpaenichthys marmorata,Light & Smith
+,1542,Trachelobdella oregonensis,leech,NA,adult,not in CA,low,parasite,parasitic_on,Scorpaenicthys marmoratus,Light & Smith
+,1186,Lepeophtheirus oblitus,copepod,NA,adult,NA,all,parasite,parasitic_on,Scorpaenidae,Light & Smith
+,1192,Clavella parva,copepod,NA,adult,NA,all,parasite,parasitic_on,Scorpaenidae,Light & Smith
+,1193,Naobranchia occidentalis,copepod,NA,adult,NA,all,parasite,parasitic_on,Scorpaenidae,Light & Smith
+,529,Petrolisthes eriomerus,porcelain crab,porcelain crab,adult,Both,low,filter feeder,preys_on,scraps of green algae,"Morris, Abbott, & Haderlie"
+,567,Hemigrapsus nudus,true crab,purple shore crab,adult,N,middle to low,omnivore,preys_on,scraps of green algae,"Morris, Abbott, & Haderlie"
+,349,Dirona picta,nudibranch,spotted dirona,adult,Both,low,micropredator,preys_on,Scrupocellaria californica.,"Morris, Abbott, & Haderlie; Light & Smith"
+,270,Trivia californiana,snail,California trivia,adult,NA,low,micropredator,preys_on,Scrupocellaria cf.,Light & Smith
+,342,Triopha catalinae,nudibranch,sea clown,adult,Both,middle to low,micropredator,preys_on,Scrupocellaria spp.,"Morris, Abbott, & Haderlie; light & Smith"
+,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,sculpins,"Morris, Abbott, & Haderlie; Light & Smith"
+,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,sculpins,Light & Smith
+,672,Leptasterias aequalis,asteroid,6 arm star,adult,Both,middle,carnivore (scavenger + predator),preys_on,sea cucumbers,Light & Smith; Walla Walla
+,143,Dermasterias imbricata,asteroid,leather star,adult,Both,low,typical predator,preys_on,sea pens,"Morris, Abbott, & Haderlie; Light & Smith"
+,358,Aeolidia loui,nudibranch,shag-rug,adult,Both,low,micropredator,preys_on,sea pens,"Kienberger et al, 2016; Morris, Abbott, & Haderlie"
+,1979,Mediaster aequalis,asteroid,NA,adult,N,all,carnivore (scavenger + predator),preys_on,sea pens,Light & Smith
+,1834,Polygireulima rutila,snail,NA,adult,N,very low,parasite,parasitic_on,sea stars,Light & Smith
+,913,Proboscidactyla circumsabella,hydroid,NA,hydroid colony,N,low,filter feeder,preys_on,securing food from the tentacles of the sabellid or consuming spawned eggs of the host.,Light & Smith
+,915,Proboscidactyla occidentalis,hydroid,NA,hydroid colony,S,low,filter feeder,preys_on,securing food from the tentacles of the sabellid or consuming spawned eggs of the host.,Light & Smith
+,431,Pareurythoe californica,polychaete,fire worm,adult,Both,low,typical predator,preys_on,sedentary invertebrates,"Morris, Abbott, & Haderlie"
+,546,Loxorhynchus crispatus,true crab,moss crab,adult,Both,low,typical predator,preys_on,sedentary prey,"Morris, Abbott, & Haderlie"
+,950,Mitrocoma cellularia,plankton,NA,medusa,Both,low,filter feeder,preys_on,see lit search,Light & Smith
+,941,Aequorea victoria,hydroid,NA,hydroid colony,Both,low,filter feeder,preys_on,see lit search metadata,Light & Smith
+,942,Aequorea victoria,plankton,NA,medusa,Both,low,filter feeder,preys_on,see lit search metadata,Light & Smith
+,151,Pisaster giganteus,asteroid,blue knobby star,adult,Both,very low,typical predator,preys_on,Septifer bifurcatus,"Morris, Abbott, & Haderlie"
+,560,Hermissenda crassicornis,nudibranch,opalescent nudibranch,adult,N,low,typical predator,preys_on,Sertularella conica,Light & Smith
+,634,Doto kya,nudibranch,NA,adult,Both,low,micropredator,preys_on,Sertularella sp.,Light & Smith
+,560,Hermissenda crassicornis,nudibranch,opalescent nudibranch,adult,N,low,typical predator,preys_on,Sertularia furcata,Light & Smith
+,347,Doto amyra,nudibranch,hammerhead doto,adult,Both,low,micropredator,preys_on,Sertularia furcata.,"Morris, Abbott, & Haderlie; Light & Smith"
+,1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Sertularia spp.,Light & Smith
+,604,Heterostichus rostratus,fish,kelpfish,juvenile,N,NA,typical predator,preys_on,shrimp,D. Canestro; FishBase
+,709,Bopyrina striata,isopod,NA,adult,NA,NA,parasite,parasitic_on,shrimp,"Morris, Abbott,, Haderlie"
+,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,shrimps,"Morris, Abbott, & Haderlie; Light & Smith"
+,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,shrimps,Light & Smith
+,1483,Cercyon fimbriatus,insect,NA,larvae,NA,high,typical predator,preys_on,slow-moving animals,Light & Smith
+,1485,Cercyon luniger,insect,NA,larvae,NA,all,typical predator,preys_on,slow-moving animals,Light & Smith
+,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,small anemones,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+,161,Amphipholis squamata,brittle star,NA,adult,Both,low,deposit feeder,preys_on,small animals,"Morris, Abbott, & Haderlie; Light & Smith"
+,166,Ophioderma panamense,brittle star,NA,adult,Both,low tidepools,deposit feeder,preys_on,small animals,"Morris, Abbott, & Haderlie"
+,167,Ophiopteris papillosa,brittle star,NA,adult,Both,low tidepools,carnivore (scavenger + predator),preys_on,small animals,"Morris, Abbott, & Haderlie"
+,568,Tigriopus californicus,copepod,tig,adult,Both,high,omnivore,preys_on,small animals,"Morris, Abbott, & Haderlie; Light & Smith"
+,147,Astrometis sertulifera,asteroid,red/yellow star,adult,S,very low,typical predator,preys_on,small crabs,"Morris, Abbott, & Haderlie; Light & Smith"
+,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,small crustacea,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+,580,Paraphrosylus praedator,insect,long legged fly,adult,N,high to middle,typical predator,preys_on,small crustaceas,"Morris, Abbott, & Haderlie; Light & Smith"
+,505,Caprella californica,amphipod,caprellid,adult,Both,low,omnivore,preys_on,small dead crustaceans,"Morris, Abbott, & Haderlie; Light & Smith"
+,1489,Amblopusa brevipes,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1491,Bryobiota bicolor,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1492,Bryobiota giulianii,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1493,Bryothinusa catalinae,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1501,Diaulota densissima,insect,NA,adult,NA,high to middle,typical predator,preys_on,small insects,Light & Smith
+,1502,Diaulota fulviventris,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1503,Diaulota vandykei,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1504,Diaulota vandykei,insect,NA,larvae,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1505,Diaulota harteri,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1513,Liparocephalus brevipennis,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1514,Liparocephalus cordicollis,insect,NA,adult,NA,middle,typical predator,preys_on,small insects,Light & Smith
+,1515,Liparocephalus cordicollis,insect,NA,larvae,NA,middle,typical predator,preys_on,small insects,Light & Smith
+,1516,Liparocephalus cordicollis,insect,NA,pupae,NA,middle,typical predator,preys_on,small insects,Light & Smith
+,1519,Pontomalota terminalia,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1520,Tarphiota geniculata,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1521,Tarphiota pallidipes,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1522,Thinusa maritima,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1523,Thinusa fletcheri,insect,NA,adult,NA,all,typical predator,preys_on,small insects,Light & Smith
+,1200,Cyathura munda,isopod,NA,adult,Both,low,typical predator,preys_on,small invertebrates,Light & Smith
+,1201,Mesanthura occidentalis,isopod,NA,adult,S,all,typical predator,preys_on,small invertebrates,Light & Smith
+,1202,Califanthura squamosissima,isopod,NA,adult,Both,very low,typical predator,preys_on,small invertebrates,Light & Smith
+,1203,Colanthura bruscai,isopod,NA,adult,S,all,typical predator,preys_on,small invertebrates,Light & Smith
+,1204,Paranthura elegans,isopod,NA,adult,Both,all,typical predator,preys_on,small invertebrates,Light & Smith
+,148,Leptasterias pusilla,asteroid,NA,adult,N,pools,typical predator,preys_on,small limpets,"Morris, Abbott, & Haderlie; Light & Smith"
+,554,Cancer productus,true crab,red crab,juvenile,Both,low,carnivore (scavenger + predator),preys_on,small living crabs,"Morris, Abbott, & Haderlie; Light & Smith"
+,555,Cancer productus,true crab,red crab,adult,Both,low,carnivore (scavenger + predator),preys_on,small living crabs,"Morris, Abbott, & Haderlie; Light & Smith"
+,672,Leptasterias aequalis,asteroid,6 arm star,adult,Both,middle,carnivore (scavenger + predator),preys_on,small mussels,Light & Smith; Walla Walla
+,420,Enteroctopus dofleini,octopus,giant Pacific octopus,small,Both,low tidepools,typical predator,preys_on,small octopuses,"Morris, Abbott, & Haderlie; Light & Smith"
+,1745,Enteroctopus dofleini,octopus,giant Pacific octopus,adult,N,low tidepools,typical predator,preys_on,small octopuses,Light & Smith
+,159,Apostichopus californicus,cucumber,NA,adult,Both,low,deposit feeder,preys_on,small organisms,"Morris, Abbott, & Haderlie; Light & Smith"
+,290,Alia carinata,snail,carinated dove snail,adult,Both,low,detritivore,preys_on,small organisms,"Morris, Abbott, & Haderlie"
+,505,Caprella californica,amphipod,caprellid,adult,Both,low,omnivore,preys_on,small swimming amphipods,"Morris, Abbott, & Haderlie; Light & Smith"
+,553,Cancer oregonensis,true crab,Oregon cancer crab,adult,Both,low,typical predator,preys_on,smaller crustaceans,"Morris, Abbott, & Haderlie; Light & Smith"
+,580,Paraphrosylus praedator,insect,long legged fly,adult,N,high to middle,typical predator,preys_on,Smittia sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,271,Cypraea spadicea,snail,chestnut cowrie,adult,NA,low,typical predator,preys_on,snail eggs,"Morris, Abbott, & Haderlie"
+,60,Orthasterias koehleri,asteroid,rainbow star,small,Both,very low,typical predator,preys_on,snails,Light & Smith; Ref # 232
+,147,Astrometis sertulifera,asteroid,red/yellow star,adult,S,very low,typical predator,preys_on,snails,"Morris, Abbott, & Haderlie; Light & Smith"
+,150,Pisaster ochraceus,asteroid,ochre star,adult,Both,"middle, low",typical predator,preys_on,snails,"Morris, Abbott, & Haderlie"
+,279,Roperia poulsoni,murex,Poulson's rock snail,adult,S,low tidepools,typical predator,preys_on,snails,"Morris, Abbott, & Haderlie"
+,625,Pteropurpura festiva,murex,festive murex,adult,S,NA,typical predator,preys_on,snails,Wikipedia
+,720,Evasterias troschelii,asteroid,NA,adult,N,all,typical predator,preys_on,snails,Light & Smith
+,1483,Cercyon fimbriatus,insect,NA,larvae,NA,high,typical predator,preys_on,soft-skinned,Light & Smith
+,1485,Cercyon luniger,insect,NA,larvae,NA,all,typical predator,preys_on,soft-skinned,Light & Smith
+,298,Conus californicus,snail,California cone,adult,Both,low,typical predator,preys_on,Solen rosaceus,"Morris, Abbott, & Haderlie; Light & Smith"
+,557,Lophopanopeus leucomanus leucomanus,true crab,NA,adult,Both,low,omnivore,preys_on,some animal material,"Morris, Abbott, & Haderlie"
+,558,Paraxanthias taylori,true crab,lumpy crab,adult,Both,middle to low,omnivore,preys_on,some living,"Morris, Abbott, & Haderlie"
+,192,Fissurellidea bimaculata,limpet,two-spotted keyhole,adult,Both,low,omnivore,preys_on,sponge,"Morris, Abbott, & Haderlie; Light & Smith"
+,271,Cypraea spadicea,snail,chestnut cowrie,adult,NA,low,typical predator,preys_on,sponges,"Morris, Abbott, & Haderlie"
+,307,Berthella californica,nudibranch,white berthella,adult,Both,low,micropredator,preys_on,sponges,"Morris, Abbott, & Haderlie; Light & Smith"
+,315,Felimida macfarlandi,nudibranch,MacFarland's chromodoris,adult,Both,low,micropredator,preys_on,sponges,"Morris, Abbott, & Haderlie"
+,318,Hallaxa chani,nudibranch,Chan's nudibranch,adult,N,low tidepools,micropredator,preys_on,sponges,"Morris, Abbott, & Haderlie; Light & Smith"
+,348,Dirona albolineata,nudibranch,chalk lined dirona,adult,Both,low tidepools,micropredator,preys_on,sponges,"Morris, Abbott, & Haderlie; Light & Smith"
+,412,Mopalia ciliata,chiton,NA,adult,Both,middle to low,omnivore,preys_on,sponges,"Morris, Abbott, & Haderlie; Light & Smith"
+,429,Nereis grubei,polychaete,nereid,adult,Both,middle to low,omnivore,preys_on,sponges,"Morris, Abbott, & Haderlie"
+,1353,Iphimedia rickettsi,gammarid,NA,adult,NA,all,micropredator,preys_on,sponges,Light & Smith
+,1354,Cryptodius kelleri,gammarid,NA,adult,NA,all,micropredator,preys_on,sponges,Light & Smith
+,1829,Cerithiopsis berryi,snail,NA,adult,N,all,micropredator,preys_on,sponges,Light & Smith
+,1830,Metaxia convexa,snail,NA,adult,N,low,micropredator,preys_on,sponges,Light & Smith
+,1831,Triphora pedroana,snail,NA,adult,N,all,micropredator,preys_on,sponges,Light & Smith
+,574,Garypus californicus,other arthropod,pseudoscorpion,adult,Both,high,typical predator,preys_on,springtails,"Morris, Abbott, & Haderlie"
+,107,Metridium senile,anemone,NA,adult,Both,low,filter feeder,preys_on,squid. kelp,"Morris, Abbott, & Haderlie; Light & Smith"
+,545,Loxorhynchus grandis,true crab,sheep crab,adult,Both,low,scavenger,preys_on,starfishes,"Morris, Abbott, & Haderlie"
+,560,Hermissenda crassicornis,nudibranch,opalescent nudibranch,adult,N,low,typical predator,preys_on,Stauridiosarsia japonica,Light & Smith
+,317,Felimare californiensis,nudibranch,"blue, gold nudibranch",adult,Both,low,micropredator,preys_on,Steletta estrella,"Morris, Abbott, & Haderlie"
+,1906,Hypselodoris californiensis,nudibranch,NA,adult,Both,all,micropredator,preys_on,Stelletta estrella.,Light & Smith
+,1483,Cercyon fimbriatus,insect,NA,larvae,NA,high,typical predator,preys_on,such as annelids,Light & Smith
+,1485,Cercyon luniger,insect,NA,larvae,NA,all,typical predator,preys_on,such as annelids,Light & Smith
+,361,Onchidella borealis,snail,leather limpet,adult,N,high to middle,grazer,preys_on,surface cells of O. floccosa,"Morris, Abbott, & Haderlie"
+,947,Halecium sp.,plankton,NA,medusa,Both,all,filter feeder,preys_on,surface zooplankton,Light & Smith
+,246,Lacuna marmorata,littorine,chink snail,adult,Both,low,grazer,preys_on,surfgrass,"Morris, Abbott, & Haderlie; Light & Smith"
+,1197,Argulus pugettensis,branchiuran,fish louse,adult,NA,all,micropredator,preys_on,surfperch,Light & Smith
+,298,Conus californicus,snail,California cone,adult,Both,low,typical predator,preys_on,Tagelus californianus,"Morris, Abbott, & Haderlie; Light & Smith"
+,559,Fabia subquadrata,true crab,pea crab,adult,Both,low,filter feeder,parasitic_on,Tapes sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,358,Aeolidia loui,nudibranch,shag-rug,adult,Both,low,micropredator,preys_on,Tealia coriacea,"Kienberger et al, 2016; Morris, Abbott, & Haderlie"
+,584,Foettingeria actiniarium,ciliate,NA,NA,Both,NA,NA,preys_on,Tealia crassicorna,NA
+,358,Aeolidia loui,nudibranch,shag-rug,adult,Both,low,micropredator,preys_on,Tealia crassicornis,"Kienberger et al, 2016; Morris, Abbott, & Haderlie"
+,566,Pachygrapsus crassipes,true crab,striped shore crab,adult,Both,high to middle,omnivore,preys_on,Tegula sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,349,Dirona picta,nudibranch,spotted dirona,adult,Both,low,micropredator,preys_on,Thaumatoporella sp.,"Morris, Abbott, & Haderlie; Light & Smith"
+,761,Ligia pallasii,isopod,NA,adult,Both,high,detritivore,preys_on,the algal film from upper intertidal rocks,Walla Walla; Light & Smith
+,905,Chelyosoma productum,tunicate,"Flattop sea squirt, horseshoe ascidian",adult,Both,low,filter feeder,preys_on,the larvae of gastropods,Light & Smith
+,107,Metridium senile,anemone,NA,adult,Both,low,filter feeder,preys_on,though they may also eat small benthic polychaetes,"Morris, Abbott, & Haderlie; Light & Smith"
+,1921,Dendronotus albus,nudibranch,NA,adult,N,all,micropredator,preys_on,Thuiaria argentea,Light & Smith
+,1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Thuiaria argentea,Light & Smith
+,1942,Cuthona cocoachroma,nudibranch,NA,adult,N,all,micropredator,preys_on,Thuiaria sp.,Light & Smith
+,357,Hermissenda opalescens,nudibranch,opalescent,adult,Both,low,omnivore,preys_on,tiny clams,"Morris, Abbott, & Haderlie; Lindsay, Valdez 2016"
+,145,Henricia leviuscula,asteroid,blood star,adult,Both,low,filter feeder,preys_on,tiny particles,"Morris, Abbott, & Haderlie; Light & Smith"
+,559,Fabia subquadrata,true crab,pea crab,adult,Both,low,filter feeder,parasitic_on,Tivela stultorum,"Morris, Abbott, & Haderlie; Light & Smith"
+,60,Orthasterias koehleri,asteroid,rainbow star,small,Both,very low,typical predator,preys_on,Tonicella,Light & Smith; Ref # 232
+,1195,Peniculus fissipes,copepod,NA,adult,NA,all,parasite,parasitic_on,topsmelt,Light & Smith
+,153,Pisaster brevispinus,asteroid,pink star,adult,Both,low,typical predator,preys_on,Tressus nuttallii,"Morris, Abbott, & Haderlie; Light & Smith"
+,561,Pinnixa faba,true crab,large pea crab,juvenile,Both,low,NA,parasitic_on,Tresus capax,"Morris, Abbott, & Haderlie"
+,561,Pinnixa faba,true crab,large pea crab,juvenile,Both,low,NA,parasitic_on,Tresus nuttali,"Morris, Abbott, & Haderlie"
+,1929,Janolus fuscus,nudibranch,NA,adult,N,all,micropredator,preys_on,Tricellaria spp,Light & Smith
+,351,Orienthella trilineata,nudibranch,three-lined,adult,Both,low,micropredator,preys_on,Tubularia crocea,"Morris, Abbott, & Haderlie"
+,352,Orienthella cooperi,nudibranch,NA,adult,Both,low,micropredator,preys_on,Tubularia crocea,"Morris, Abbott, & Haderlie"
+,1921,Dendronotus albus,nudibranch,NA,adult,N,all,micropredator,preys_on,Tubularia sp.,Light & Smith
+,1933,Flabellina trilineata,nudibranch,NA,adult,N,all,micropredator,preys_on,Tubularia spp,Light & Smith
+,560,Hermissenda crassicornis,nudibranch,opalescent nudibranch,adult,N,low,typical predator,preys_on,Tubularia spp.,Light & Smith
+,1923,Dendronotus frondosus,nudibranch,NA,adult,Both,all,micropredator,preys_on,Tubularia spp.,Light & Smith
+,1895,Diaphorodoris lirulatocauda,nudibranch,NA,adult,N,all,unknown,preys_on,Tubulipora sp.,Light & Smith
+,60,Orthasterias koehleri,asteroid,rainbow star,small,Both,very low,typical predator,preys_on,tunicates,Light & Smith; Ref # 232
+,336,Acanthodoris lutea,nudibranch,orange peel,adult,Both,low tidepools,micropredator,preys_on,tunicates,"Morris, Abbott, & Haderlie; Light & Smith"
+,348,Dirona albolineata,nudibranch,chalk lined dirona,adult,Both,low tidepools,micropredator,preys_on,tunicates,"Morris, Abbott, & Haderlie; Light & Smith"
+,720,Evasterias troschelii,asteroid,NA,adult,N,all,typical predator,preys_on,tunicates,Light & Smith
+,1352,Leucothoe spinicarpa,gammarid,NA,adult,NA,all,parasite,parasitic_on,tunicates,Light & Smith
+,414,Mopalia lignosa,chiton,NA,adult,N,middle to low,omnivore,preys_on,Ulva,"Morris, Abbott, & Haderlie; Light & Smith"
+,161,Amphipholis squamata,brittle star,NA,adult,Both,low,deposit feeder,preys_on,unicellular algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,404,Tonicella lineata,chiton,NA,adult,N,low,grazer,preys_on,upper layer of persistent coralline crustose algae,"Morris, Abbott, & Haderlie; light & Smith"
+,429,Nereis grubei,polychaete,nereid,adult,Both,middle to low,omnivore,preys_on,variety of algae,"Morris, Abbott, & Haderlie"
+,430,Platynereis bicanaliculata,polychaete,NA,adult,Both,low,grazer,preys_on,variety of algae,"Morris, Abbott, & Haderlie; Light & Smith"
+,344,Aegires albopunctatus,nudibranch,"salt, pepper",adult,Both,low tidepools,micropredator,preys_on,white sponges,"Morris, Abbott, & Haderlie; Light & Smith"
+,549,Cancer antennaria,true crab,rock crab,adult,Both,low,carnivore (scavenger + predator),preys_on,wide variety of other animals,"Morris, Abbott, & Haderlie; light & Smith"
+,1231,Limnoria lignorum,isopod,gribble,adult,N,all,detritivore,preys_on,wood,Light & Smith
+,1232,Limnoria quadripunctata,isopod,gribble,adult,S,all,detritivore,preys_on,wood,Light & Smith
+,1233,Limnoria tripunctata,isopod,gribble,adult,Both,all,detritivore,preys_on,wood,Light & Smith
+,415,Placiphorella velata,chiton,veiled chiton,adult,Both,very low,omnivore,preys_on,worms,"Morris, Abbott, & Haderlie; Light & Smith"
+,556,Cycloxanthops novemdentatus,true crab,large pebble crab,adult,Both,low,omnivore,preys_on,worms,"Morris, Abbott, & Haderlie"
+,577,Neomachilis halophila,insect,bristletail,adult,Both,high,grazer,preys_on,yeasts,"Morris, Abbott, & Haderlie; Light & Smith"
+,413,Mopalia hindsii,chiton,NA,adult,Both,middle to low,omnivore,preys_on,young barnacles (cyprid larvae),"Morris, Abbott, & Haderlie; Light & Smith"
+,1119,Anthessius fitchi,copepod,NA,adult,NA,all,parasite,parasitic_on,Zirfaea pilsbryi,Light & Smith
+,1903,Polycerella glandulosa,nudibranch,NA,adult,Both,all,micropredator,preys_on,Zoobotryon sp.,Light & Smith
+,110,Balanophyllia elegans,anemone,orange cup coral,adult,Both,low,filter feeder,preys_on,zooplankton,Light & Smith
+,250,Thylacodes squamigerus,vermetid,scaled worm snail,adult,Both,all,filter feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie; MacGintie & MacGintie 1949; Hadfield 1967; Light & Smith"
+,251,Petaloconchus montereyensis,vermetid,NA,adult,Both,low,filter feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,258,Crepidula adunca,slipper snail,hooked slipper snail,adult,Both,middle,filter feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie"
+,260,Bostrycapulus aculeatus,slipper snail,spiny slipper snail,adult,Both,low,filter feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie"
+,262,Crepidula nummaria,slipper snail,white slipper snail,adult,Both,low,filter feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,263,Crepidula onyx,slipper snail,onyx slipper snail,adult,S,low,filter feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie"
+,367,Mytilus edulis,mussel,bay mussel,adult,Both,low,filter feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie"
+,434,Cirriformia luxuriosa,polychaete,NA,juvenile,Both,middle to low,filter feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie"
+,435,Dodecaceria fewkesi,polychaete,NA,adult,Both,middle,deposit feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie; Light & Smith"
+,441,Thelepus setosus,polychaete,feather duster worm,adult,Both,low,deposit feeder,preys_on,zooplankton,"Morris, Abbott, & Haderlie; Light & Smith"

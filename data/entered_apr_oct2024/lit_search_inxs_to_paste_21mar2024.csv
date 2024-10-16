@@ -1,0 +1,581 @@
+INITIALS,consumerNum,consumerName,consumerCat,consumerStage,resourceNum,resourceName,resourceCat,resourceStage,interaction.type,confidence,justification,incl.code,ref_num,localities,zone,pools_exposed,MorrisHaderlie,epibiota_consumed,notes,link.ID,date_added
+ZZ_coded,358,Aeolidia loui,nudibranch,1,107,Metridium senile,anemone,1,3,NA,4,NA,4,NA,low,NA,no,NA,NA,1770,21 Mar 2024
+ZZ_coded,358,Aeolidia loui,nudibranch,1,101,Anthopleura elegantissima,anemone,1,3,NA,4,NA,4,NA,NA,NA,no,NA,NA,1771,21 Mar 2024
+ZZ_coded,15,Clinocottus analis,fish,1,495,Colidotea rostrata,isopod,1,1,NA,4,NA,10,NA,low,NA,no,NA,NA,1772,21 Mar 2024
+ZZ_coded,3,Hypsoblennius gilberti,fish,1,495,Colidotea rostrata,isopod,1,1,NA,4,NA,10,NA,low,NA,no,NA,NA,1773,21 Mar 2024
+ZZ_coded,10,Hypsoblennius jenkinsi,fish,1,3,Hypsoblennius gilberti,fish,1,20,NA,4,NA,12,NA,NA,NA,no,NA,NA,1774,21 Mar 2024
+ZZ_coded,747,Hypsoblennius gentilis,fish,1,3,Hypsoblennius gilberti,fish,1,20,NA,4,NA,12,NA,NA,NA,no,NA,NA,1775,21 Mar 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,101,Anthopleura elegantissima,anemone,1,1,NA,4,NA,14,NA,NA,NA,no,NA,NA,1776,21 Mar 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,109,Corynactis californica,anemone,1,1,NA,4,NA,14,NA,low,NA,no,NA,NA,1777,21 Mar 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,156,Eupentacta quinquesemita,cucumber,1,1,NA,4,NA,18,NA,low,NA,no,NA,NA,1778,21 Mar 2024
+ZZ_coded,582,Orchitophrya stellarum,ciliate,1,144,Patiria miniata,asteroid,1,6,NA,4,NA,24,NA,low,NA,no,NA,NA,1779,21 Mar 2024
+ZZ_coded,582,Orchitophrya stellarum,ciliate,1,150,Pisaster ochraceus,asteroid,1,6,NA,4,NA,24,NA,"middle, low",NA,no,NA,NA,1780,21 Mar 2024
+ZZ_coded,582,Orchitophrya stellarum,ciliate,1,150,Pisaster ochraceus,asteroid,1,6,NA,4,NA,25,NA,"middle, low",NA,no,NA,NA,1781,21 Mar 2024
+ZZ_coded,582,Orchitophrya stellarum,ciliate,1,150,Pisaster ochraceus,asteroid,1,6,NA,4,NA,26,NA,"middle, low",NA,no,NA,NA,1782,21 Mar 2024
+ZZ_coded,582,Orchitophrya stellarum,ciliate,1,150,Pisaster ochraceus,asteroid,1,6,NA,4,NA,29,NA,"middle, low",NA,no,NA,NA,1783,21 Mar 2024
+ZZ_coded,146,Solaster dawsoni,asteroid,1,1979,Mediaster aequalis,asteroid,1,1,NA,4,NA,38,NA,all,NA,no,NA,NA,1784,21 Mar 2024
+ZZ_coded,586,Postmonorchis donacis,trematode,1,6,Micrometrus minimus,fish,1,6,NA,4,NA,48,NA,NA,NA,no,NA,NA,1785,21 Mar 2024
+ZZ_coded,586,Postmonorchis donacis,trematode,1,6,Micrometrus minimus,fish,1,6,NA,4,NA,49,NA,NA,NA,no,NA,NA,1786,21 Mar 2024
+ZZ_coded,735,Panulirus interruptus,lobster,1,168,Strongylocentrotus purpuratus,urchin,1,1,NA,4,NA,65,NA,low,NA,no,NA,NA,1787,21 Mar 2024
+ZZ_coded,143,Dermasterias imbricata,asteroid,1,168,Strongylocentrotus purpuratus,urchin,1,1,NA,4,NA,68,NA,low,NA,no,NA,NA,1788,21 Mar 2024
+ZZ_coded,1416,Deutella californica,caprellid,1,85,Obelia dichotoma,hydroid,5,NA,NA,4,NA,70,NA,low,NA,no,NA,NA,1789,21 Mar 2024
+ZZ_coded,737,Ascarophis morronei,nematode,1,15,Clinocottus analis,fish,1,6,NA,4,NA,73,NA,NA,NA,no,NA,NA,1790,21 Mar 2024
+ZZ_coded,2104,Ceratomyxa gracilis,myxozoan,1,15,Clinocottus analis,fish,1,6,NA,4,NA,74,NA,NA,NA,no,NA,NA,1791,21 Mar 2024
+ZZ_coded,2104,Ceratomyxa gracilis,myxozoan,1,3,Hypsoblennius gilberti,fish,1,6,NA,4,NA,74,NA,NA,NA,no,NA,NA,1792,21 Mar 2024
+ZZ_coded,15,Clinocottus analis,fish,1,312,Cadlina luteomarginata,nudibranch,1,1,NA,4,NA,75,NA,low,NA,no,NA,NA,1793,21 Mar 2024
+ZZ_coded,2105,Trichodina jadranica,ciliate,1,15,Clinocottus analis,fish,1,6,NA,4,NA,76,NA,NA,NA,no,NA,NA,1794,21 Mar 2024
+ZZ_coded,15,Clinocottus analis,fish,1,312,Cadlina luteomarginata,nudibranch,1,1,NA,4,NA,78,NA,low,NA,no,NA,NA,1795,21 Mar 2024
+ZZ_coded,16,Oligocottus maculosus,fish,1,367,Mytilus edulis,mussel,1,1,NA,4,NA,80,NA,low,NA,no,NA,NA,1796,21 Mar 2024
+ZZ_coded,130,Bugula neritina,bryozoan,1,170,Aplidium californicum,tunicate,1,NA,NA,4,NA,81,NA,"middle, low",NA,no,NA,NA,1797,21 Mar 2024
+ZZ_coded,726,Haplostoma setiferum,copepod,1,182,Eudistoma ritteri,tunicate,1,NA,NA,4,NA,82,NA,low,NA,no,NA,NA,1798,21 Mar 2024
+ZZ_coded,597,Haplostomella oceanica,copepod,1,182,Eudistoma ritteri,tunicate,1,NA,NA,4,NA,82,NA,low,NA,no,NA,NA,1799,21 Mar 2024
+ZZ_coded,722,Haplostoma albicatum,copepod,1,187,Distaplia occidentalis,tunicate,1,NA,NA,4,NA,82,NA,low,NA,no,NA,NA,1800,21 Mar 2024
+ZZ_coded,727,Haplostomella reducta,copepod,1,187,Distaplia occidentalis,tunicate,1,NA,NA,4,NA,82,NA,low,NA,no,NA,NA,1801,21 Mar 2024
+ZZ_coded,718,Botryllophilus sp.,copepod,1,185,Cystodytes lobatus,tunicate,1,NA,NA,4,NA,82,NA,very low,NA,no,NA,NA,1802,21 Mar 2024
+ZZ_coded,718,Botryllophilus sp.,copepod,1,182,Eudistoma ritteri,tunicate,1,NA,NA,4,NA,82,NA,low,NA,no,NA,NA,1803,21 Mar 2024
+ZZ_coded,715,Gyrodactylus maculosi,monogene,1,16,Oligocottus maculosus,fish,1,7,NA,4,NA,84,NA,NA,NA,no,NA,NA,1804,21 Mar 2024
+ZZ_coded,721,Haemobaphes intermedius,copepod,1,16,Oligocottus maculosus,fish,1,6,NA,4,NA,86,NA,NA,NA,no,NA,NA,1805,21 Mar 2024
+ZZ_coded,717,Ardea herodias,bird,1,16,Oligocottus maculosus,fish,1,1,NA,4,NA,87,NA,NA,NA,no,NA,NA,1806,21 Mar 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,517,Hippolyte californiensis,shrimp,1,1,NA,4,NA,92,NA,low,NA,no,NA,NA,1807,21 Mar 2024
+ZZ_coded,604,Heterostichus rostratus,fish,1,517,Hippolyte californiensis,shrimp,1,1,NA,4,NA,92,NA,low,NA,no,NA,NA,1808,21 Mar 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,517,Hippolyte californiensis,shrimp,1,1,NA,4,NA,93,NA,low,NA,no,NA,NA,1809,21 Mar 2024
+ZZ_coded,604,Heterostichus rostratus,fish,1,517,Hippolyte californiensis,shrimp,1,1,NA,4,NA,93,NA,low,NA,no,NA,NA,1810,21 Mar 2024
+ZZ_coded,18,Heterostichus rostratus,fish,1,517,Hippolyte californiensis,shrimp,1,1,NA,4,NA,96,NA,low,NA,no,NA,NA,1811,21 Mar 2024
+ZZ_coded,604,Heterostichus rostratus,fish,1,517,Hippolyte californiensis,shrimp,1,1,NA,4,NA,96,NA,low,NA,no,NA,NA,1812,21 Mar 2024
+ZZ_coded,734,Lepeophtheirus schaadti,copepod,1,18,Heterostichus rostratus,fish,1,7,NA,4,NA,97,NA,NA,NA,no,NA,NA,1813,21 Mar 2024
+ZZ_coded,734,Lepeophtheirus schaadti,copepod,1,604,Heterostichus rostratus,fish,4,7,NA,4,NA,97,NA,NA,NA,no,NA,NA,1814,21 Mar 2024
+ZZ_coded,730,Heptacyclus cabrilloi,leech,1,18,Heterostichus rostratus,fish,1,7,NA,4,NA,98,NA,NA,NA,no,NA,NA,1815,21 Mar 2024
+ZZ_coded,730,Heptacyclus cabrilloi,leech,1,604,Heterostichus rostratus,fish,4,7,NA,4,NA,98,NA,NA,NA,no,NA,NA,1816,21 Mar 2024
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,18,Heterostichus rostratus,fish,1,7,NA,4,NA,99,NA,NA,NA,no,NA,NA,1817,21 Mar 2024
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,604,Heterostichus rostratus,fish,4,7,NA,4,NA,99,NA,NA,NA,no,NA,NA,1818,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,622,Styela gibbsii,tunicate,1,NA,NA,4,NA,105,NA,very low,NA,no,NA,NA,1819,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,220,Pyura haustor,tunicate,1,NA,NA,4,NA,105,NA,low,NA,no,NA,NA,1820,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,220,Pyura haustor,tunicate,1,NA,NA,4,NA,105,NA,low,NA,no,NA,NA,1821,21 Mar 2024
+ZZ_coded,1170,Scolecodes huntsmani,copepod,1,220,Pyura haustor,tunicate,1,6,NA,4,NA,105,NA,low,NA,no,NA,NA,1822,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,220,Pyura haustor,tunicate,1,NA,NA,4,NA,105,NA,low,NA,no,NA,NA,1823,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,222,Boltenia villosa,tunicate,1,NA,NA,4,NA,105,NA,very low,NA,no,NA,NA,1824,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,622,Styela gibbsii,tunicate,1,NA,NA,4,NA,105,NA,very low,NA,no,NA,NA,1825,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,220,Pyura haustor,tunicate,1,NA,NA,4,NA,105,NA,low,NA,no,NA,NA,1826,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,222,Boltenia villosa,tunicate,1,NA,NA,4,NA,105,NA,very low,NA,no,NA,NA,1827,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,222,Boltenia villosa,tunicate,1,NA,NA,4,NA,105,NA,very low,NA,no,NA,NA,1828,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,622,Styela gibbsii,tunicate,1,NA,NA,4,NA,105,NA,very low,NA,no,NA,NA,1829,21 Mar 2024
+ZZ_coded,1162,Doropygus fernaldi,copepod,1,222,Boltenia villosa,tunicate,1,NA,NA,4,NA,105,NA,very low,NA,no,NA,NA,1830,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,220,Pyura haustor,tunicate,1,NA,NA,4,NA,105,NA,low,NA,no,NA,NA,1831,21 Mar 2024
+ZZ_coded,1170,Scolecodes huntsmani,copepod,1,220,Pyura haustor,tunicate,1,6,NA,4,NA,105,NA,low,NA,no,NA,NA,1832,21 Mar 2024
+ZZ_coded,618,Pygodelphys aquilonaris,copepod,1,622,Styela gibbsii,tunicate,1,NA,NA,4,NA,105,NA,very low,NA,no,NA,NA,1833,21 Mar 2024
+ZZ_coded,508,Betaeus harfordi,shrimp,1,226,Haliotis fulgens,abalone,1,NA,NA,4,NA,107,NA,low,NA,no,NA,NA,1834,21 Mar 2024
+ZZ_coded,508,Betaeus harfordi,shrimp,1,225,Haliotis rufescens,abalone,1,NA,NA,4,NA,107,NA,low,NA,no,NA,NA,1835,21 Mar 2024
+ZZ_coded,508,Betaeus harfordi,shrimp,1,227,Haliotis corrugata,abalone,1,NA,NA,4,NA,107,NA,low,NA,no,NA,NA,1836,21 Mar 2024
+ZZ_coded,508,Betaeus harfordi,shrimp,1,225,Haliotis rufescens,abalone,1,NA,NA,4,NA,107,NA,low,NA,no,NA,NA,1837,21 Mar 2024
+ZZ_coded,1120,Anthessius lighti,copepod,1,300,Aplysia californica,sea hare,1,7,NA,4,NA,134,NA,low,NA,no,NA,NA,1838,21 Mar 2024
+ZZ_coded,1119,Anthessius fitchi,copepod,1,386,Chaceia ovoidea,boring clam,1,7,NA,4,NA,134,NA,low,NA,no,NA,NA,1839,21 Mar 2024
+ZZ_coded,628,Anthessius navanacis,copepod,1,299,Navanax inermis,nudibranch,1,7,NA,4,NA,134,NA,low,NA,no,NA,NA,1840,21 Mar 2024
+ZZ_coded,1946,Cuthona lagunae,nudibranch,1,356,Phidiana hiltoni,nudibranch,1,20,NA,4,NA,136,NA,low,NA,no,NA,NA,1841,21 Mar 2024
+ZZ_coded,2135,Pontobdella moorei,leech,1,418,Octopus bimaculoides,octopus,1,7,NA,4,NA,171,NA,middle to low,NA,no,NA,NA,1842,21 Mar 2024
+ZZ_coded,2135,Pontobdella moorei,leech,1,1748,Octopus bimaculoides,octopus,NA,7,NA,4,NA,171,NA,all,NA,no,NA,NA,1843,21 Mar 2024
+ZZ_coded,2135,Pontobdella moorei,leech,1,1749,Octopus bimaculoides,octopus,NA,7,NA,4,NA,171,NA,all,NA,no,NA,NA,1844,21 Mar 2024
+ZZ_coded,358,Aeolidia loui,nudibranch,1,101,Anthopleura elegantissima,anemone,1,3,NA,4,NA,175,NA,NA,NA,no,NA,NA,1845,21 Mar 2024
+ZZ_coded,311,Cadlina flavomaculata,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,NA,4,NA,175,NA,NA,NA,no,NA,NA,1846,21 Mar 2024
+ZZ_coded,313,Cadlina modesta,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,NA,4,NA,175,NA,NA,NA,no,NA,NA,1847,21 Mar 2024
+ZZ_coded,314,Cadlina sparsa,nudibranch,1,63,Aplysilla glacialis,sponge,1,3,NA,4,NA,175,NA,NA,NA,no,NA,NA,1848,21 Mar 2024
+ZZ_coded,299,Navanax inermis,nudibranch,1,1873,Haminoea virescens,snail,1,3,NA,4,NA,175,NA,high to middle,NA,no,NA,NA,1849,21 Mar 2024
+ZZ_coded,299,Navanax inermis,nudibranch,1,357,Hermissenda opalescens,nudibranch,1,3,NA,4,NA,175,NA,low,NA,no,NA,NA,1850,21 Mar 2024
+ZZ_coded,332,Ancula lentiginosa,nudibranch,1,779,Myosoma spinosa,entoproct,1,3,NA,4,NA,175,NA,low,NA,no,NA,NA,1851,21 Mar 2024
+ZZ_coded,354,Diaphoreolis lagunae,nudibranch,1,962,Symplectoscyphus turgidus,hydroid,5,3,NA,4,NA,175,NA,all,NA,no,NA,NA,1852,21 Mar 2024
+ZZ_coded,1159,Modiolicola gracilis,copepod,1,367,Mytilus edulis,mussel,1,6,NA,4,NA,176,NA,low,NA,no,NA,NA,1853,21 Mar 2024
+ZZ_coded,401,Stenoplax heathiana,chiton,1,613,Corallina chilensis,corraline algae,1,3,NA,4,NA,178,NA,low to very low,NA,no,NA,NA,1854,21 Mar 2024
+ZZ_coded,1755,Stenoplax heathiana,chiton,1,613,Corallina chilensis,corraline algae,1,3,NA,4,NA,178,NA,low to very low,NA,no,NA,NA,1855,21 Mar 2024
+ZZ_coded,1756,Stenoplax heathiana,chiton,1,613,Corallina chilensis,corraline algae,1,3,NA,4,NA,178,NA,low to very low,NA,no,NA,NA,1856,21 Mar 2024
+ZZ_coded,401,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,NA,4,NA,178,NA,NA,NA,no,NA,NA,1857,21 Mar 2024
+ZZ_coded,1755,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,NA,4,NA,178,NA,NA,NA,no,NA,NA,1858,21 Mar 2024
+ZZ_coded,1756,Stenoplax heathiana,chiton,1,743,Gigartina non-canaliculata,algae,1,3,NA,4,NA,178,NA,NA,NA,no,NA,NA,1859,21 Mar 2024
+ZZ_coded,401,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,NA,4,NA,178,NA,NA,NA,no,NA,NA,1860,21 Mar 2024
+ZZ_coded,1755,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,NA,4,NA,178,NA,NA,NA,no,NA,NA,1861,21 Mar 2024
+ZZ_coded,1756,Stenoplax heathiana,chiton,1,766,Rhodymenia lobata,algae,1,3,NA,4,NA,178,NA,NA,NA,no,NA,NA,1862,21 Mar 2024
+ZZ_coded,1847,Nucella ostrina,snail,1,366,Mytilus californianus,mussel,1,1,NA,4,NA,186,NA,high to middle,NA,no,NA,NA,1863,21 Mar 2024
+ZZ_coded,150,Pisaster ochraceus,asteroid,1,366,Mytilus californianus,mussel,1,1,NA,4,NA,186,NA,high to middle,NA,no,NA,NA,1864,21 Mar 2024
+ZZ_coded,1847,Nucella ostrina,snail,1,1961,Mytilus trossulus,mussel,1,1,NA,4,NA,186,NA,all,NA,no,NA,NA,1865,21 Mar 2024
+ZZ_coded,150,Pisaster ochraceus,asteroid,1,1961,Mytilus trossulus,mussel,1,1,NA,4,NA,186,NA,all,NA,no,NA,NA,1866,21 Mar 2024
+ZZ_coded,2110,Catoptrophorus semipalmatus,bird,1,1331,Allorchestes angustus,gammarid,1,1,NA,4,NA,189,NA,all,NA,no,NA,NA,1867,21 Mar 2024
+ZZ_coded,2110,Catoptrophorus semipalmatus,bird,1,248,Littorina scutulata,littorine,1,1,NA,4,NA,189,NA,high to middle,NA,no,NA,NA,1868,21 Mar 2024
+ZZ_coded,2111,Numenius americanus,bird,1,248,Littorina scutulata,littorine,1,1,NA,4,NA,189,NA,high to middle,NA,no,NA,NA,1869,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,554,Cancer productus,true crab,4,1,NA,4,NA,201,NA,low,NA,no,NA,NA,1870,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,555,Cancer productus,true crab,1,1,NA,4,NA,201,NA,low,NA,no,NA,NA,1871,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,554,Cancer productus,true crab,4,1,NA,4,NA,201,NA,low,NA,no,NA,NA,1872,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,555,Cancer productus,true crab,1,1,NA,4,NA,201,NA,low,NA,no,NA,NA,1873,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,367,Mytilus edulis,mussel,1,1,NA,4,NA,201,NA,low,NA,no,NA,NA,1874,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,367,Mytilus edulis,mussel,1,1,NA,4,NA,201,NA,low,NA,no,NA,NA,1875,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,288,Amphissa columbiana,snail,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1876,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,288,Amphissa columbiana,snail,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1877,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,553,Cancer oregonensis,true crab,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1878,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,553,Cancer oregonensis,true crab,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1879,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,702,Crangon alaskensis,shrimp,1,1,NA,4,NA,202,NA,NA,NA,no,NA,NA,1880,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,702,Crangon alaskensis,shrimp,1,1,NA,4,NA,202,NA,NA,NA,no,NA,NA,1881,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,425,Halosydna brevisetosa,scale worm,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1882,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,425,Halosydna brevisetosa,scale worm,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1883,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,426,Harmothoe imbricata,scale worm,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1884,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,426,Harmothoe imbricata,scale worm,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1885,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,384,Hiatella arctica,boring clam,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1886,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,384,Hiatella arctica,boring clam,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1887,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,245,Homalopoma luridum,topsnail,1,1,NA,4,NA,202,NA,middle to low,NA,no,NA,NA,1888,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,245,Homalopoma luridum,topsnail,1,1,NA,4,NA,202,NA,middle to low,NA,no,NA,NA,1889,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,367,Mytilus edulis,mussel,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1890,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,367,Mytilus edulis,mussel,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1891,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,532,Petrolisthes cinctipes,porcelain crab,1,1,NA,4,NA,202,NA,middle to low,NA,no,NA,NA,1892,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,532,Petrolisthes cinctipes,porcelain crab,1,1,NA,4,NA,202,NA,middle to low,NA,no,NA,NA,1893,21 Mar 2024
+ZZ_coded,554,Cancer productus,true crab,1,404,Tonicella lineata,chiton,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1894,21 Mar 2024
+ZZ_coded,555,Cancer productus,true crab,1,404,Tonicella lineata,chiton,1,1,NA,4,NA,202,NA,low,NA,no,NA,NA,1895,21 Mar 2024
+ZZ_coded,2118,Bothriocephalus scorpii,cestode,1,2075,Apodichthys flavidus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1896,21 Mar 2024
+ZZ_coded,2207,Derogenoides sp.,leech,1,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,1897,21 Mar 2024
+ZZ_coded,2150,Corynosoma sp.,acanthocephalan,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1898,21 Mar 2024
+ZZ_coded,2151,Corynosoma sp.,acanthocephalan,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1899,21 Mar 2024
+ZZ_coded,2287,Urinatrema hispidum,trematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1900,21 Mar 2024
+ZZ_coded,2242,Lepeophtheirus cuneifer,copepod,1,14,Leptocottus armatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1901,21 Mar 2024
+ZZ_coded,1192,Clavella parva,copepod,1,2099,Sebastes melanops,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1902,21 Mar 2024
+ZZ_coded,2146,Opecoelus adsphaericus,trematode,1,15,Clinocottus analis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1903,21 Mar 2024
+ZZ_coded,2166,Neobenedenia girellae,monogene,1,12,Girella nigricans,fish,4,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1904,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1905,21 Mar 2024
+ZZ_coded,1227,Elthusa californica,isopod,1,6,Micrometrus minimus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1906,21 Mar 2024
+ZZ_coded,2187,Bomolochus soleae,copepod,1,2072,Paralabrax nebulifer,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,1907,21 Mar 2024
+ZZ_coded,2187,Bomolochus soleae,copepod,1,2073,Paralabrax nebulifer,fish,4,7,NA,4,NA,205,NA,low,NA,no,NA,NA,1908,21 Mar 2024
+ZZ_coded,2245,Lepeophtheirus dissimulatus,copepod,1,2072,Paralabrax nebulifer,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,1909,21 Mar 2024
+ZZ_coded,2245,Lepeophtheirus dissimulatus,copepod,1,2073,Paralabrax nebulifer,fish,4,7,NA,4,NA,205,NA,low,NA,no,NA,NA,1910,21 Mar 2024
+ZZ_coded,2132,Ascarophis sebastodis,nematode,1,2074,Anoplarchus purpurescens,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1911,21 Mar 2024
+ZZ_coded,2133,Hysterothylacium aduncum,nematode,1,2075,Apodichthys flavidus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1912,21 Mar 2024
+ZZ_coded,2192,Capillaria sp.,nematode,1,2075,Apodichthys flavidus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1913,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,11,Artedius fenestralis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1914,21 Mar 2024
+ZZ_coded,2284,Trichodina vancouverense,ciliate,1,11,Artedius fenestralis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1915,21 Mar 2024
+ZZ_coded,2156,Trichodina lairdi,ciliate,1,11,Artedius fenestralis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1916,21 Mar 2024
+ZZ_coded,2283,Trichodina rectuncinata,ciliate,1,11,Artedius fenestralis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1917,21 Mar 2024
+ZZ_coded,2221,Haemogregarina bigemina,protozoan,1,11,Artedius fenestralis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1918,21 Mar 2024
+ZZ_coded,1192,Clavella parva,copepod,1,2077,Artedius harringtoni,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1919,21 Mar 2024
+ZZ_coded,721,Haemobaphes intermedius,copepod,1,2077,Artedius harringtoni,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1920,21 Mar 2024
+ZZ_coded,2279,Stephanostomum californicum,trematode,1,2077,Artedius harringtoni,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1921,21 Mar 2024
+ZZ_coded,2132,Ascarophis sebastodis,nematode,1,2077,Artedius harringtoni,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1922,21 Mar 2024
+ZZ_coded,2118,Bothriocephalus scorpii,cestode,1,2086,Enophrys bison,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1923,21 Mar 2024
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,2086,Enophrys bison,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1924,21 Mar 2024
+ZZ_coded,1136,Chondracanthus irregularis,copepod,1,2086,Enophrys bison,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1925,21 Mar 2024
+ZZ_coded,2163,Clavinema mariae,nematode,1,19,Gobiesox maeandricus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1926,21 Mar 2024
+ZZ_coded,2149,Echinorhynchus gadi,acanthocephalan,1,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1927,21 Mar 2024
+ZZ_coded,2179,Caudotestis opisthorchis,trematode,1,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1928,21 Mar 2024
+ZZ_coded,2131,Derogenes varicus,trematode,1,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1929,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1930,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1931,21 Mar 2024
+ZZ_coded,2125,Podocotyle sinusacca,trematode,1,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1932,21 Mar 2024
+ZZ_coded,2247,Lepidophyllum cameroni,trematode,1,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1933,21 Mar 2024
+ZZ_coded,2278,Steganoderma formosum,trematode,1,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1934,21 Mar 2024
+ZZ_coded,2132,Ascarophis sebastodis,nematode,1,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1935,21 Mar 2024
+ZZ_coded,2118,Bothriocephalus scorpii,cestode,1,707,Hexagrammos decagrammus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1936,21 Mar 2024
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,707,Hexagrammos decagrammus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1937,21 Mar 2024
+ZZ_coded,1186,Lepeophtheirus oblitus,copepod,1,707,Hexagrammos decagrammus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1938,21 Mar 2024
+ZZ_coded,2181,Chondracanthus deltoideus,copepod,1,707,Hexagrammos decagrammus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1939,21 Mar 2024
+ZZ_coded,1137,Chondracanthus pinguis,copepod,1,707,Hexagrammos decagrammus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1940,21 Mar 2024
+ZZ_coded,1134,Chondracanthus gracilis,copepod,1,707,Hexagrammos decagrammus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1941,21 Mar 2024
+ZZ_coded,2179,Caudotestis opisthorchis,trematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1942,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1943,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1944,21 Mar 2024
+ZZ_coded,2240,Lecithophyllum botryophoron,trematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1945,21 Mar 2024
+ZZ_coded,2125,Podocotyle sinusacca,trematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1946,21 Mar 2024
+ZZ_coded,2128,Microcotyle sebastis,monogene,1,2090,Hexagrammos lagocephalus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1947,21 Mar 2024
+ZZ_coded,2132,Ascarophis sebastodis,nematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1948,21 Mar 2024
+ZZ_coded,2149,Echinorhynchus gadi,acanthocephalan,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1949,21 Mar 2024
+ZZ_coded,2118,Bothriocephalus scorpii,cestode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1950,21 Mar 2024
+ZZ_coded,2188,Bothriocephalus occidentalis,cestode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1951,21 Mar 2024
+ZZ_coded,1129,Holobomolochus spinulus,copepod,1,14,Leptocottus armatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1952,21 Mar 2024
+ZZ_coded,2272,Rhipidocotyle elongata,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1953,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1954,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1955,21 Mar 2024
+ZZ_coded,2126,Podocotyle atomon,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1956,21 Mar 2024
+ZZ_coded,762,Podocotyle reflexa,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1957,21 Mar 2024
+ZZ_coded,2125,Podocotyle sinusacca,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1958,21 Mar 2024
+ZZ_coded,2133,Hysterothylacium aduncum,nematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1959,21 Mar 2024
+ZZ_coded,1129,Holobomolochus spinulus,copepod,1,16,Oligocottus maculosus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1960,21 Mar 2024
+ZZ_coded,721,Haemobaphes intermedius,copepod,1,16,Oligocottus maculosus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1961,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,16,Oligocottus maculosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1962,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,16,Oligocottus maculosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1963,21 Mar 2024
+ZZ_coded,1125,Bomolochus cuneatus,copepod,1,710,Phanerodon vacca,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,1964,21 Mar 2024
+ZZ_coded,2223,Henneguya sp.,myxozoan,1,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,1965,21 Mar 2024
+ZZ_coded,1130,Holobomolochus venustus,copepod,1,2097,Scorpaenichthys marmoratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1966,21 Mar 2024
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,2097,Scorpaenichthys marmoratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1967,21 Mar 2024
+ZZ_coded,1137,Chondracanthus pinguis,copepod,1,2097,Scorpaenichthys marmoratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1968,21 Mar 2024
+ZZ_coded,1134,Chondracanthus gracilis,copepod,1,2097,Scorpaenichthys marmoratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1969,21 Mar 2024
+ZZ_coded,2161,Prosorhynchus scalpellus,trematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1970,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1971,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1972,21 Mar 2024
+ZZ_coded,2181,Chondracanthus deltoideus,copepod,1,2099,Sebastes melanops,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1973,21 Mar 2024
+ZZ_coded,1137,Chondracanthus pinguis,copepod,1,2099,Sebastes melanops,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1974,21 Mar 2024
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,2102,Xiphister atropurpureus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1975,21 Mar 2024
+ZZ_coded,1137,Chondracanthus pinguis,copepod,1,2102,Xiphister atropurpureus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1976,21 Mar 2024
+ZZ_coded,2126,Podocotyle atomon,trematode,1,2102,Xiphister atropurpureus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1977,21 Mar 2024
+ZZ_coded,762,Podocotyle reflexa,trematode,1,2102,Xiphister atropurpureus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1978,21 Mar 2024
+ZZ_coded,2163,Clavinema mariae,nematode,1,2102,Xiphister atropurpureus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1979,21 Mar 2024
+ZZ_coded,2252,Parabrachiella robusta,copepod,1,2099,Sebastes melanops,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1980,21 Mar 2024
+ZZ_coded,2209,Diplangus triradiatus,trematode,1,5,Amphistichus argenteus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1981,21 Mar 2024
+ZZ_coded,2239,Lasiotocus sp.,trematode,1,5,Amphistichus argenteus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1982,21 Mar 2024
+ZZ_coded,2250,Monorchis sp.,trematode,1,5,Amphistichus argenteus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1983,21 Mar 2024
+ZZ_coded,2124,Genitocotyle acirrus,trematode,1,5,Amphistichus argenteus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1984,21 Mar 2024
+ZZ_coded,2269,Pseudopecoelus umbrinae,trematode,1,5,Amphistichus argenteus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1985,21 Mar 2024
+ZZ_coded,2264,Podocotyle apodichthysi,trematode,1,2075,Apodichthys flavidus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1986,21 Mar 2024
+ZZ_coded,2194,Ceratomyxa furcata,myxozoan,1,2075,Apodichthys flavidus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1987,21 Mar 2024
+ZZ_coded,2172,Genolinea anura,trematode,1,15,Clinocottus analis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1988,21 Mar 2024
+ZZ_coded,2152,Ceratomyxa blennius,myxozoan,1,2,Gibbonsia elegans,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1989,21 Mar 2024
+ZZ_coded,2166,Neobenedenia girellae,monogene,1,14,Leptocottus armatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1990,21 Mar 2024
+ZZ_coded,2136,Procamallanus (Spirocamallanus) pereirai,nematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1991,21 Mar 2024
+ZZ_coded,2159,Schikhobalotrema girellae,trematode,1,6,Micrometrus minimus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1992,21 Mar 2024
+ZZ_coded,2165,Neozoogonus californicus,trematode,1,6,Micrometrus minimus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1993,21 Mar 2024
+ZZ_coded,2177,Lituaria sp.,copepod,1,710,Phanerodon vacca,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,1994,21 Mar 2024
+ZZ_coded,2208,Diplangus macrovitellus,trematode,1,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,1995,21 Mar 2024
+ZZ_coded,2157,Telolecithus pugetensis,trematode,1,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,1996,21 Mar 2024
+ZZ_coded,2128,Microcotyle sebastis,monogene,1,2100,Sebastes miniatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,1997,21 Mar 2024
+ZZ_coded,2190,Caballeronema wardlei,nematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1998,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,15,Clinocottus analis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,1999,21 Mar 2024
+ZZ_coded,2117,Helicometrina nimia,trematode,1,15,Clinocottus analis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2000,21 Mar 2024
+ZZ_coded,2195,Ceratomyxa obesa,myxozoan,1,15,Clinocottus analis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2001,21 Mar 2024
+ZZ_coded,2152,Ceratomyxa blennius,myxozoan,1,1,Gibbonsia metzi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2002,21 Mar 2024
+ZZ_coded,2104,Ceratomyxa gracilis,myxozoan,1,1,Gibbonsia metzi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2003,21 Mar 2024
+ZZ_coded,2158,Lecithochirium exodicum,trematode,1,19,Gobiesox maeandricus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2004,21 Mar 2024
+ZZ_coded,2202,Chondracanthus horridus,copepod,1,18,Heterostichus rostratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2005,21 Mar 2024
+ZZ_coded,2202,Chondracanthus horridus,copepod,1,604,Heterostichus rostratus,fish,4,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2006,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,707,Hexagrammos decagrammus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2007,21 Mar 2024
+ZZ_coded,2197,Ceratomyxa tenuis,myxozoan,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2008,21 Mar 2024
+ZZ_coded,2193,Ceratomyxa crassa,myxozoan,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2009,21 Mar 2024
+ZZ_coded,2251,Myxidium oviforme,myxozoan,1,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2010,21 Mar 2024
+ZZ_coded,2182,Zschokkella embiotocidis,myxozoan,1,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2011,21 Mar 2024
+ZZ_coded,2161,Prosorhynchus scalpellus,trematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2012,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2013,21 Mar 2024
+ZZ_coded,2169,Henneguya sebasta,myxozoan,1,2099,Sebastes melanops,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2014,21 Mar 2024
+ZZ_coded,2169,Henneguya sebasta,myxozoan,1,2100,Sebastes miniatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2015,21 Mar 2024
+ZZ_coded,2257,Opecoelus inimici,trematode,1,2072,Paralabrax nebulifer,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2016,21 Mar 2024
+ZZ_coded,2257,Opecoelus inimici,trematode,1,2073,Paralabrax nebulifer,fish,4,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2017,21 Mar 2024
+ZZ_coded,2117,Helicometrina nimia,trematode,1,2072,Paralabrax nebulifer,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2018,21 Mar 2024
+ZZ_coded,2117,Helicometrina nimia,trematode,1,2073,Paralabrax nebulifer,fish,4,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2019,21 Mar 2024
+ZZ_coded,2191,Caligus mutabilis,copepod,1,2072,Paralabrax nebulifer,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2020,21 Mar 2024
+ZZ_coded,2191,Caligus mutabilis,copepod,1,2073,Paralabrax nebulifer,fish,4,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2021,21 Mar 2024
+ZZ_coded,2280,Stephanostomum sp.,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2022,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2023,21 Mar 2024
+ZZ_coded,2157,Telolecithus pugetensis,trematode,1,5,Amphistichus argenteus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2024,21 Mar 2024
+ZZ_coded,2120,Podocotyle sp.,trematode,1,2079,Ascelichthys rhodorus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2025,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2079,Ascelichthys rhodorus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2026,21 Mar 2024
+ZZ_coded,2121,Podocotyle enophrysi,trematode,1,2079,Ascelichthys rhodorus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2027,21 Mar 2024
+ZZ_coded,2258,Opisthadena bodegensis,trematode,1,2080,Cebidichthys violaceus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2028,21 Mar 2024
+ZZ_coded,2217,Gyrodactylus bodegensis,monogene,1,2081,Clinocottus acuticeps,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2029,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,15,Clinocottus analis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2030,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2083,Clinocottus globiceps,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2031,21 Mar 2024
+ZZ_coded,2121,Podocotyle enophrysi,trematode,1,2083,Clinocottus globiceps,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2032,21 Mar 2024
+ZZ_coded,2121,Podocotyle enophrysi,trematode,1,2086,Enophrys bison,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2033,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2086,Enophrys bison,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2034,21 Mar 2024
+ZZ_coded,2122,Helicometrina elongata,trematode,1,19,Gobiesox maeandricus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2035,21 Mar 2024
+ZZ_coded,2120,Podocotyle sp.,trematode,1,2089,Hemilepidotus spinosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2036,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2089,Hemilepidotus spinosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2037,21 Mar 2024
+ZZ_coded,2120,Podocotyle sp.,trematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2038,21 Mar 2024
+ZZ_coded,2220,Gyrodactylus vancleavi,monogene,1,2090,Hexagrammos lagocephalus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2039,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2040,21 Mar 2024
+ZZ_coded,2120,Podocotyle sp.,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2041,21 Mar 2024
+ZZ_coded,2216,Gyrodactylus armatus,monogene,1,14,Leptocottus armatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2042,21 Mar 2024
+ZZ_coded,2218,Gyrodactylus sculpinus,monogene,1,14,Leptocottus armatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2043,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,16,Oligocottus maculosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2044,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2094,Oligocottus snyderi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2045,21 Mar 2024
+ZZ_coded,2121,Podocotyle enophrysi,trematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2046,21 Mar 2024
+ZZ_coded,2120,Podocotyle sp.,trematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2047,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2048,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2102,Xiphister atropurpureus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2049,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2103,Xiphister mucosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2050,21 Mar 2024
+ZZ_coded,2198,Ceratomyxa vepallida,myxozoan,1,2098,Sebastes carnatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2051,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,2081,Clinocottus acuticeps,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2052,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,2083,Clinocottus globiceps,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2053,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,2083,Clinocottus globiceps,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2054,21 Mar 2024
+ZZ_coded,2126,Podocotyle atomon,trematode,1,2083,Clinocottus globiceps,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2055,21 Mar 2024
+ZZ_coded,2121,Podocotyle enophrysi,trematode,1,2083,Clinocottus globiceps,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2056,21 Mar 2024
+ZZ_coded,762,Podocotyle reflexa,trematode,1,2083,Clinocottus globiceps,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2057,21 Mar 2024
+ZZ_coded,2183,Zoogonoides viviparus,trematode,1,2083,Clinocottus globiceps,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2058,21 Mar 2024
+ZZ_coded,2268,Prosorhynchus squamatus,trematode,1,2086,Enophrys bison,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2059,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,2086,Enophrys bison,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2060,21 Mar 2024
+ZZ_coded,2248,Janusion virida,leech,1,2086,Enophrys bison,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2061,21 Mar 2024
+ZZ_coded,2178,Chondracanthus sp.,copepod,1,2088,Hemilepidotus hemilepidotus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2062,21 Mar 2024
+ZZ_coded,2266,Prosorhynchoides ozakii,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2063,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2064,21 Mar 2024
+ZZ_coded,2172,Genolinea anura,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2065,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2066,21 Mar 2024
+ZZ_coded,762,Podocotyle reflexa,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2067,21 Mar 2024
+ZZ_coded,762,Podocotyle reflexa,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2068,21 Mar 2024
+ZZ_coded,2275,Scyphidia sp.,ciliate,1,14,Leptocottus armatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2069,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,16,Oligocottus maculosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2070,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,16,Oligocottus maculosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2071,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,16,Oligocottus maculosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2072,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,2094,Oligocottus snyderi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2073,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2094,Oligocottus snyderi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2074,21 Mar 2024
+ZZ_coded,2183,Zoogonoides viviparus,trematode,1,2094,Oligocottus snyderi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2075,21 Mar 2024
+ZZ_coded,2246,Lepeophtheirus sp.,copepod,1,710,Phanerodon vacca,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2076,21 Mar 2024
+ZZ_coded,2177,Lituaria sp.,copepod,1,710,Phanerodon vacca,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2077,21 Mar 2024
+ZZ_coded,2204,Cucullanus sp.,nematode,1,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2078,21 Mar 2024
+ZZ_coded,1542,Trachelobdella oregonensis,leech,1,2097,Scorpaenichthys marmoratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2079,21 Mar 2024
+ZZ_coded,2168,Janusion diminuta,leech,1,2097,Scorpaenichthys marmoratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2080,21 Mar 2024
+ZZ_coded,2178,Chondracanthus sp.,copepod,1,2099,Sebastes melanops,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2081,21 Mar 2024
+ZZ_coded,2168,Janusion diminuta,leech,1,2099,Sebastes melanops,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2082,21 Mar 2024
+ZZ_coded,2260,Ostreobdella papillata,leech,1,2099,Sebastes melanops,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2083,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,2086,Enophrys bison,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2084,21 Mar 2024
+ZZ_coded,1195,Peniculus fissipes,copepod,1,2072,Paralabrax nebulifer,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2085,21 Mar 2024
+ZZ_coded,1195,Peniculus fissipes,copepod,1,2073,Paralabrax nebulifer,fish,4,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2086,21 Mar 2024
+ZZ_coded,2131,Derogenes varicus,trematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2087,21 Mar 2024
+ZZ_coded,1171,Colobomatus embiotocae,copepod,1,5,Amphistichus argenteus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2088,21 Mar 2024
+ZZ_coded,2122,Helicometrina elongata,trematode,1,5,Amphistichus argenteus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2089,21 Mar 2024
+ZZ_coded,2127,Nerocila californica,isopod,1,5,Amphistichus argenteus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2090,21 Mar 2024
+ZZ_coded,2212,Encotyllabe embiotocae,monogene,1,5,Amphistichus argenteus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2091,21 Mar 2024
+ZZ_coded,1171,Colobomatus embiotocae,copepod,1,4,Amphistichus koelzi,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2092,21 Mar 2024
+ZZ_coded,2148,Ceratomyxa noblei,myxozoan,1,2078,Artedius lateralis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2093,21 Mar 2024
+ZZ_coded,2277,Sphaeromyxa lateralis,myxozoan,1,2078,Artedius lateralis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2094,21 Mar 2024
+ZZ_coded,1124,Bomolochus constrictus,copepod,1,8,Atherinops affinis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2095,21 Mar 2024
+ZZ_coded,2189,Caligus serratus,copepod,1,8,Atherinops affinis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2096,21 Mar 2024
+ZZ_coded,2173,Ergasilus sp.,copepod,1,8,Atherinops affinis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2097,21 Mar 2024
+ZZ_coded,1195,Peniculus fissipes,copepod,1,8,Atherinops affinis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2098,21 Mar 2024
+ZZ_coded,2127,Nerocila californica,isopod,1,8,Atherinops affinis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2099,21 Mar 2024
+ZZ_coded,2219,Gyrodactylus sp.,monogene,1,8,Atherinops affinis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2100,21 Mar 2024
+ZZ_coded,2136,Procamallanus (Spirocamallanus) pereirai,nematode,1,8,Atherinops affinis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2101,21 Mar 2024
+ZZ_coded,2155,Trichodina sp.,ciliate,1,8,Atherinops affinis,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2102,21 Mar 2024
+ZZ_coded,2122,Helicometrina elongata,trematode,1,15,Clinocottus analis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2103,21 Mar 2024
+ZZ_coded,2146,Opecoelus adsphaericus,trematode,1,15,Clinocottus analis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2104,21 Mar 2024
+ZZ_coded,2164,Opecoelus cameroni,trematode,1,15,Clinocottus analis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2105,21 Mar 2024
+ZZ_coded,2122,Helicometrina elongata,trematode,1,2,Gibbonsia elegans,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2106,21 Mar 2024
+ZZ_coded,760,Sphaerospora sphaerula,myxozoan,1,2,Gibbonsia elegans,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2107,21 Mar 2024
+ZZ_coded,2148,Ceratomyxa noblei,myxozoan,1,2,Gibbonsia elegans,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2108,21 Mar 2024
+ZZ_coded,2106,Sphaeromyxa gibbonsia,myxozoan,1,2,Gibbonsia elegans,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2109,21 Mar 2024
+ZZ_coded,2154,Trilospora californica,myxozoan,1,2,Gibbonsia elegans,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2110,21 Mar 2024
+ZZ_coded,2270,Pseudopecoelus gibbonsiae,trematode,1,1,Gibbonsia metzi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2111,21 Mar 2024
+ZZ_coded,2122,Helicometrina elongata,trematode,1,1,Gibbonsia metzi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2112,21 Mar 2024
+ZZ_coded,760,Sphaerospora sphaerula,myxozoan,1,1,Gibbonsia metzi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2113,21 Mar 2024
+ZZ_coded,2148,Ceratomyxa noblei,myxozoan,1,1,Gibbonsia metzi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2114,21 Mar 2024
+ZZ_coded,2106,Sphaeromyxa gibbonsia,myxozoan,1,1,Gibbonsia metzi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2115,21 Mar 2024
+ZZ_coded,2154,Trilospora californica,myxozoan,1,1,Gibbonsia metzi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2116,21 Mar 2024
+ZZ_coded,1183,Caligus hobsoni,copepod,1,12,Girella nigricans,fish,4,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2117,21 Mar 2024
+ZZ_coded,2290,Vitellibaculum girellicola,trematode,1,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2118,21 Mar 2024
+ZZ_coded,2289,Vitellibaculum girellae,trematode,1,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2119,21 Mar 2024
+ZZ_coded,2159,Schikhobalotrema girellae,trematode,1,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2120,21 Mar 2024
+ZZ_coded,2259,Opisthadena cheni,trematode,1,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2121,21 Mar 2024
+ZZ_coded,2255,Prodistomum orientale,trematode,1,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2122,21 Mar 2024
+ZZ_coded,2164,Opecoelus cameroni,trematode,1,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2123,21 Mar 2024
+ZZ_coded,2146,Opecoelus adsphaericus,trematode,1,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2124,21 Mar 2024
+ZZ_coded,2166,Neobenedenia girellae,monogene,1,12,Girella nigricans,fish,4,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2125,21 Mar 2024
+ZZ_coded,2136,Procamallanus (Spirocamallanus) pereirai,nematode,1,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2126,21 Mar 2024
+ZZ_coded,2174,Cryptocaryon irritans,ciliate,1,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2127,21 Mar 2024
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,18,Heterostichus rostratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2128,21 Mar 2024
+ZZ_coded,733,Lepeophtheirus parviventris,copepod,1,604,Heterostichus rostratus,fish,4,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2129,21 Mar 2024
+ZZ_coded,1135,Chondracanthus heterostichi,copepod,1,18,Heterostichus rostratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2130,21 Mar 2024
+ZZ_coded,1135,Chondracanthus heterostichi,copepod,1,604,Heterostichus rostratus,fish,4,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2131,21 Mar 2024
+ZZ_coded,2215,Genitocotyle heterostichi,trematode,1,18,Heterostichus rostratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2132,21 Mar 2024
+ZZ_coded,2215,Genitocotyle heterostichi,trematode,1,604,Heterostichus rostratus,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2133,21 Mar 2024
+ZZ_coded,2152,Ceratomyxa blennius,myxozoan,1,3,Hypsoblennius gilberti,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2134,21 Mar 2024
+ZZ_coded,1128,Holobomolochus prolixus,copepod,1,14,Leptocottus armatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2135,21 Mar 2024
+ZZ_coded,2173,Ergasilus sp.,copepod,1,14,Leptocottus armatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2136,21 Mar 2024
+ZZ_coded,2117,Helicometrina nimia,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2137,21 Mar 2024
+ZZ_coded,2155,Trichodina sp.,ciliate,1,14,Leptocottus armatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2138,21 Mar 2024
+ZZ_coded,1171,Colobomatus embiotocae,copepod,1,6,Micrometrus minimus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2139,21 Mar 2024
+ZZ_coded,586,Postmonorchis donacis,trematode,1,6,Micrometrus minimus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2140,21 Mar 2024
+ZZ_coded,2127,Nerocila californica,isopod,1,6,Micrometrus minimus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2141,21 Mar 2024
+ZZ_coded,2147,Myxidium incurvatum,myxozoan,1,2094,Oligocottus snyderi,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2142,21 Mar 2024
+ZZ_coded,1180,Taeniastrotos californiensis,copepod,1,2072,Paralabrax nebulifer,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2143,21 Mar 2024
+ZZ_coded,1180,Taeniastrotos californiensis,copepod,1,2073,Paralabrax nebulifer,fish,4,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2144,21 Mar 2024
+ZZ_coded,2225,Cresseyus longicaudus,copepod,1,2072,Paralabrax nebulifer,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2145,21 Mar 2024
+ZZ_coded,2225,Cresseyus longicaudus,copepod,1,2073,Paralabrax nebulifer,fish,4,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2146,21 Mar 2024
+ZZ_coded,2241,Lepeophtheirus constrictus,copepod,1,2072,Paralabrax nebulifer,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2147,21 Mar 2024
+ZZ_coded,2241,Lepeophtheirus constrictus,copepod,1,2073,Paralabrax nebulifer,fish,4,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2148,21 Mar 2024
+ZZ_coded,2222,Hatschekia pacifica,copepod,1,2072,Paralabrax nebulifer,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2149,21 Mar 2024
+ZZ_coded,2222,Hatschekia pacifica,copepod,1,2073,Paralabrax nebulifer,fish,4,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2150,21 Mar 2024
+ZZ_coded,1192,Clavella parva,copepod,1,2072,Paralabrax nebulifer,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2151,21 Mar 2024
+ZZ_coded,1192,Clavella parva,copepod,1,2073,Paralabrax nebulifer,fish,4,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2152,21 Mar 2024
+ZZ_coded,1127,Holobomolochus embiotocae,copepod,1,710,Phanerodon vacca,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2153,21 Mar 2024
+ZZ_coded,2244,Lepeophtheirus parvus,copepod,1,710,Phanerodon vacca,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2154,21 Mar 2024
+ZZ_coded,1183,Caligus hobsoni,copepod,1,710,Phanerodon vacca,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2155,21 Mar 2024
+ZZ_coded,1171,Colobomatus embiotocae,copepod,1,710,Phanerodon vacca,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2156,21 Mar 2024
+ZZ_coded,2127,Nerocila californica,isopod,1,710,Phanerodon vacca,fish,1,7,NA,4,NA,205,NA,low,NA,no,NA,NA,2157,21 Mar 2024
+ZZ_coded,1183,Caligus hobsoni,copepod,1,2097,Scorpaenichthys marmoratus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2158,21 Mar 2024
+ZZ_coded,1183,Caligus hobsoni,copepod,1,2098,Sebastes carnatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2159,21 Mar 2024
+ZZ_coded,1193,Naobranchia occidentalis,copepod,1,2098,Sebastes carnatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2160,21 Mar 2024
+ZZ_coded,2160,Littorellicola sebastodorum,trematode,1,2098,Sebastes carnatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2161,21 Mar 2024
+ZZ_coded,2285,Megalocotyle marginata,monogene,1,2098,Sebastes carnatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2162,21 Mar 2024
+ZZ_coded,2128,Microcotyle sebastis,monogene,1,2098,Sebastes carnatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2163,21 Mar 2024
+ZZ_coded,2147,Myxidium incurvatum,myxozoan,1,2098,Sebastes carnatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2164,21 Mar 2024
+ZZ_coded,2118,Bothriocephalus scorpii,cestode,1,2100,Sebastes miniatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2165,21 Mar 2024
+ZZ_coded,1193,Naobranchia occidentalis,copepod,1,2100,Sebastes miniatus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2166,21 Mar 2024
+ZZ_coded,2167,Myxidium calcariferi,myxozoan,1,2100,Sebastes miniatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2167,21 Mar 2024
+ZZ_coded,1195,Peniculus fissipes,copepod,1,12,Girella nigricans,fish,4,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2168,21 Mar 2024
+ZZ_coded,2153,Zschokkella sp.,myxozoan,1,2074,Anoplarchus purpurescens,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2169,21 Mar 2024
+ZZ_coded,2147,Myxidium incurvatum,myxozoan,1,2079,Ascelichthys rhodorus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2170,21 Mar 2024
+ZZ_coded,2131,Derogenes varicus,trematode,1,2082,Clinocottus embryum,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2171,21 Mar 2024
+ZZ_coded,2227,Genolinea aspicotti,trematode,1,2086,Enophrys bison,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2172,21 Mar 2024
+ZZ_coded,2282,Trichodina domerguei,ciliate,1,2086,Enophrys bison,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2173,21 Mar 2024
+ZZ_coded,2153,Zschokkella sp.,myxozoan,1,19,Gobiesox maeandricus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2174,21 Mar 2024
+ZZ_coded,2276,Sphaeromyxa balbianii,myxozoan,1,19,Gobiesox maeandricus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2175,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,2088,Hemilepidotus hemilepidotus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2176,21 Mar 2024
+ZZ_coded,2224,Hexagrammia longitestis,trematode,1,707,Hexagrammos decagrammus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2177,21 Mar 2024
+ZZ_coded,2253,Helicometra pleurogrammi,trematode,1,707,Hexagrammos decagrammus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2178,21 Mar 2024
+ZZ_coded,2249,Prosomicrocotyla chiri,monogene,1,707,Hexagrammos decagrammus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2179,21 Mar 2024
+ZZ_coded,2131,Derogenes varicus,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2180,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2181,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2182,21 Mar 2024
+ZZ_coded,2121,Podocotyle enophrysi,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2183,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2184,21 Mar 2024
+ZZ_coded,2125,Podocotyle sinusacca,trematode,1,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2185,21 Mar 2024
+ZZ_coded,2156,Trichodina lairdi,ciliate,1,16,Oligocottus maculosus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2186,21 Mar 2024
+ZZ_coded,2281,Trichodina cottidarum,ciliate,1,16,Oligocottus maculosus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2187,21 Mar 2024
+ZZ_coded,2112,Genolinea laticauda,trematode,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2188,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,2099,Sebastes melanops,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2189,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,2099,Sebastes melanops,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2190,21 Mar 2024
+ZZ_coded,2256,Opechona parvasoma,trematode,1,2099,Sebastes melanops,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2191,21 Mar 2024
+ZZ_coded,2160,Littorellicola sebastodorum,trematode,1,2099,Sebastes melanops,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2192,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,2082,Clinocottus embryum,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2193,21 Mar 2024
+ZZ_coded,2128,Microcotyle sebastis,monogene,1,2099,Sebastes melanops,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2194,21 Mar 2024
+ZZ_coded,2117,Helicometrina nimia,trematode,1,5,Amphistichus argenteus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2195,21 Mar 2024
+ZZ_coded,2117,Helicometrina nimia,trematode,1,2,Gibbonsia elegans,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2196,21 Mar 2024
+ZZ_coded,2172,Genolinea anura,trematode,1,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2197,21 Mar 2024
+ZZ_coded,2165,Neozoogonus californicus,trematode,1,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2198,21 Mar 2024
+ZZ_coded,2167,Myxidium calcariferi,myxozoan,1,2098,Sebastes carnatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2199,21 Mar 2024
+ZZ_coded,2143,Peachia quinquecapitata,anemone,1,941,Aequorea victoria,hydroid,5,7,NA,4,NA,246,NA,low,NA,no,NA,NA,2200,21 Mar 2024
+ZZ_coded,2143,Peachia quinquecapitata,anemone,1,942,Aequorea victoria,plankton,1,7,NA,4,NA,246,NA,low,NA,no,NA,NA,2201,21 Mar 2024
+ZZ_coded,2144,Peachia quinquecapitata,anemone,1,941,Aequorea victoria,hydroid,5,7,NA,4,NA,246,NA,low,NA,no,NA,NA,2202,21 Mar 2024
+ZZ_coded,2144,Peachia quinquecapitata,anemone,1,942,Aequorea victoria,plankton,1,7,NA,4,NA,246,NA,low,NA,no,NA,NA,2203,21 Mar 2024
+ZZ_coded,2145,Peachia quinquecapitata,anemone,1,941,Aequorea victoria,hydroid,5,7,NA,4,NA,246,NA,low,NA,no,NA,NA,2204,21 Mar 2024
+ZZ_coded,2145,Peachia quinquecapitata,anemone,1,942,Aequorea victoria,plankton,1,7,NA,4,NA,246,NA,low,NA,no,NA,NA,2205,21 Mar 2024
+ZZ_coded,2186,Bocquetia rosea,parasitic barnacle,1,460,Membranobalanus orcutti,barnacle,1,4,NA,4,NA,253,NA,very low,NA,no,NA,NA,2206,21 Mar 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,1365,Chromopleustes lineatus,gammarid,1,NA,NA,4,NA,254,NA,all,NA,no,NA,NA,2207,21 Mar 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,1366,Chromopleustes oculatus,gammarid,1,NA,NA,4,NA,254,NA,all,NA,no,NA,NA,2208,21 Mar 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,1354,Cryptodius kelleri,gammarid,1,NA,NA,4,NA,254,NA,all,NA,no,NA,NA,2209,21 Mar 2024
+ZZ_coded,505,Caprella californica,amphipod,1,505,Caprella californica,amphipod,1,1,NA,4,NA,255,NA,low,NA,no,NA,NA,2210,21 Mar 2024
+ZZ_coded,505,Caprella californica,amphipod,1,1406,Caprella equilibra,caprellid,1,1,NA,4,NA,255,NA,all,NA,no,NA,NA,2211,21 Mar 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,1297,Ampithoe simulans,gammarid,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2212,21 Mar 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,1239,Dynamenella sheareri,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2213,21 Mar 2024
+ZZ_coded,2091,Liparis florae,fish,1,1239,Dynamenella sheareri,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2214,21 Mar 2024
+ZZ_coded,2081,Clinocottus acuticeps,fish,1,477,Exosphaeroma amplicauda,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2215,21 Mar 2024
+ZZ_coded,2091,Liparis florae,fish,1,477,Exosphaeroma amplicauda,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2216,21 Mar 2024
+ZZ_coded,2091,Liparis florae,fish,1,494,Idotea fewkesi,isopod,1,NA,NA,4,NA,258,NA,very low,NA,no,NA,NA,2217,21 Mar 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,1012,Pagurus beringanus,hermit crab,1,NA,NA,4,NA,258,NA,low,NA,no,NA,NA,2218,21 Mar 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,1297,Ampithoe simulans,gammarid,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2219,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,554,Cancer productus,true crab,4,1,NA,4,NA,258,NA,low,NA,no,NA,NA,2220,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,555,Cancer productus,true crab,1,1,NA,4,NA,258,NA,low,NA,no,NA,NA,2221,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,554,Cancer productus,true crab,4,1,NA,4,NA,258,NA,low,NA,no,NA,NA,2222,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,555,Cancer productus,true crab,1,1,NA,4,NA,258,NA,low,NA,no,NA,NA,2223,21 Mar 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,417,Cryptochiton stelleri,chiton,1,NA,NA,4,NA,258,NA,low tidepools,NA,no,NA,NA,2224,21 Mar 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,1239,Dynamenella sheareri,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2225,21 Mar 2024
+ZZ_coded,2082,Clinocottus embryum,fish,1,1239,Dynamenella sheareri,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2226,21 Mar 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,1239,Dynamenella sheareri,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2227,21 Mar 2024
+ZZ_coded,2092,Oligocottus rimensis,fish,1,1239,Dynamenella sheareri,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2228,21 Mar 2024
+ZZ_coded,2074,Anoplarchus purpurescens,fish,1,1239,Dynamenella sheareri,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2229,21 Mar 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,477,Exosphaeroma amplicauda,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2230,21 Mar 2024
+ZZ_coded,2082,Clinocottus embryum,fish,1,477,Exosphaeroma amplicauda,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2231,21 Mar 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,477,Exosphaeroma amplicauda,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2232,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,477,Exosphaeroma amplicauda,isopod,1,1,NA,4,NA,258,NA,all,NA,no,NA,NA,2233,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,19,Gobiesox maeandricus,fish,1,1,NA,4,NA,258,NA,NA,NA,no,NA,NA,2234,21 Mar 2024
+ZZ_coded,2079,Ascelichthys rhodorus,fish,1,511,Heptacarpus brevirostris,shrimp,1,NA,NA,4,NA,258,NA,low tidepools,NA,no,NA,NA,2235,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,493,Idotea urotoma,isopod,1,1,NA,4,NA,258,NA,middle to low,NA,no,NA,NA,2236,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,248,Littorina scutulata,littorine,1,1,NA,4,NA,258,NA,high to middle,NA,no,NA,NA,2237,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,540,Pugettia gracilis,true crab,1,1,NA,4,NA,258,NA,low,NA,no,NA,NA,2238,21 Mar 2024
+ZZ_coded,19,Gobiesox maeandricus,fish,1,404,Tonicella lineata,chiton,1,1,NA,4,NA,258,NA,low,NA,no,NA,NA,2239,21 Mar 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,1208,Ianiropsis kincaidi,isopod,1,NA,NA,4,NA,258,NA,all,NA,no,NA,NA,2240,21 Mar 2024
+ZZ_coded,2102,Xiphister atropurpureus,fish,1,527,Pagurus granosimanus,hermit crab,1,NA,NA,4,NA,258,NA,low,NA,no,NA,NA,2241,21 Mar 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,567,Hemigrapsus nudus,true crab,1,NA,NA,4,NA,258,NA,middle to low,NA,no,NA,NA,2242,21 Mar 2024
+ZZ_coded,2083,Clinocottus globiceps,fish,1,525,Pagurus hirsutiusculus,hermit crab,1,NA,NA,4,NA,258,NA,middle to low,NA,no,NA,NA,2243,21 Mar 2024
+ZZ_coded,2109,Pseudodelphis oligocotti,NA,6,16,Oligocottus maculosus,fish,1,6,NA,4,NA,85,NA,NA,NA,no,NA,NA,2244,21 Mar 2024
+ZZ_coded,2175,Corynosoma strumosum,acanthocephalan,4,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2245,21 Mar 2024
+ZZ_coded,2176,Corynosoma strumosum,acanthocephalan,4,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2246,21 Mar 2024
+ZZ_coded,599,Apohyale grandicornis,amphipod,4,199,Lottia digitalis,true limpet,1,2,NA,4,NA,100,NA,high,NA,no,NA,NA,2247,21 Mar 2024
+ZZ_coded,600,Apohyale grandicornis,amphipod,4,199,Lottia digitalis,true limpet,1,2,NA,4,NA,100,NA,high,NA,no,NA,NA,2248,21 Mar 2024
+ZZ_coded,599,Apohyale grandicornis,amphipod,4,201,Lottia gigantea,true limpet,1,2,NA,4,NA,100,NA,high to middle,NA,no,NA,NA,2249,21 Mar 2024
+ZZ_coded,600,Apohyale grandicornis,amphipod,4,201,Lottia gigantea,true limpet,1,2,NA,4,NA,100,NA,high to middle,NA,no,NA,NA,2250,21 Mar 2024
+ZZ_coded,599,Apohyale grandicornis,amphipod,4,203,Lottia limatula,true limpet,1,2,NA,4,NA,100,NA,middle to low,NA,no,NA,NA,2251,21 Mar 2024
+ZZ_coded,600,Apohyale grandicornis,amphipod,4,203,Lottia limatula,true limpet,1,2,NA,4,NA,100,NA,middle to low,NA,no,NA,NA,2252,21 Mar 2024
+ZZ_coded,599,Apohyale grandicornis,amphipod,4,208,Lottia pelta,true limpet,1,2,NA,4,NA,100,NA,middle to low,NA,no,NA,NA,2253,21 Mar 2024
+ZZ_coded,600,Apohyale grandicornis,amphipod,4,208,Lottia pelta,true limpet,1,2,NA,4,NA,100,NA,middle to low,NA,no,NA,NA,2254,21 Mar 2024
+ZZ_coded,599,Apohyale grandicornis,amphipod,4,210,Lottia scabra,true limpet,1,2,NA,4,NA,100,NA,high,NA,no,NA,NA,2255,21 Mar 2024
+ZZ_coded,600,Apohyale grandicornis,amphipod,4,210,Lottia scabra,true limpet,1,2,NA,4,NA,100,NA,high,NA,no,NA,NA,2256,21 Mar 2024
+ZZ_coded,599,Apohyale grandicornis,amphipod,4,215,Lottia scutum,true limpet,1,2,NA,4,NA,100,NA,middle,NA,no,NA,NA,2257,21 Mar 2024
+ZZ_coded,600,Apohyale grandicornis,amphipod,4,215,Lottia scutum,true limpet,1,2,NA,4,NA,100,NA,middle,NA,no,NA,NA,2258,21 Mar 2024
+ZZ_coded,2170,Haemobaphes sp.,copepod,4,707,Hexagrammos decagrammus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2259,21 Mar 2024
+ZZ_coded,2171,Haemobaphes sp.,copepod,4,707,Hexagrammos decagrammus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2260,21 Mar 2024
+ZZ_coded,2150,Corynosoma sp.,acanthocephalan,4,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2261,21 Mar 2024
+ZZ_coded,2151,Corynosoma sp.,acanthocephalan,4,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2262,21 Mar 2024
+ZZ_coded,2170,Haemobaphes sp.,copepod,4,16,Oligocottus maculosus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2263,21 Mar 2024
+ZZ_coded,2171,Haemobaphes sp.,copepod,4,16,Oligocottus maculosus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2264,21 Mar 2024
+ZZ_coded,2150,Corynosoma sp.,acanthocephalan,4,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2265,21 Mar 2024
+ZZ_coded,2151,Corynosoma sp.,acanthocephalan,4,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2266,21 Mar 2024
+ZZ_coded,2143,Peachia quinquecapitata,anemone,4,941,Aequorea victoria,hydroid,5,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2267,21 Mar 2024
+ZZ_coded,2143,Peachia quinquecapitata,anemone,4,942,Aequorea victoria,plankton,1,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2268,21 Mar 2024
+ZZ_coded,2144,Peachia quinquecapitata,anemone,4,941,Aequorea victoria,hydroid,5,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2269,21 Mar 2024
+ZZ_coded,2144,Peachia quinquecapitata,anemone,4,942,Aequorea victoria,plankton,1,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2270,21 Mar 2024
+ZZ_coded,2145,Peachia quinquecapitata,anemone,4,941,Aequorea victoria,hydroid,5,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2271,21 Mar 2024
+ZZ_coded,2145,Peachia quinquecapitata,anemone,4,942,Aequorea victoria,plankton,1,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2272,21 Mar 2024
+ZZ_coded,2116,Hyperia medusarum,amphipod,4,941,Aequorea victoria,hydroid,5,7,NA,4,NA,247,NA,low,NA,no,NA,NA,2273,21 Mar 2024
+ZZ_coded,2116,Hyperia medusarum,amphipod,4,942,Aequorea victoria,plankton,1,7,NA,4,NA,247,NA,low,NA,no,NA,NA,2274,21 Mar 2024
+ZZ_coded,2116,Hyperia medusarum,amphipod,4,941,Aequorea victoria,hydroid,5,2,NA,4,NA,248,NA,low,NA,no,NA,NA,2275,21 Mar 2024
+ZZ_coded,2116,Hyperia medusarum,amphipod,4,942,Aequorea victoria,plankton,1,2,NA,4,NA,248,NA,low,NA,no,NA,NA,2276,21 Mar 2024
+ZZ_coded,995,Cancer gracilis,true crab,4,2116,Hyperia medusarum,amphipod,1,1,NA,4,NA,248,NA,all,NA,no,NA,NA,2277,21 Mar 2024
+ZZ_coded,996,Cancer gracilis,true crab,4,2116,Hyperia medusarum,amphipod,1,1,NA,4,NA,248,NA,all,NA,no,NA,NA,2278,21 Mar 2024
+ZZ_coded,562,Cancer gracilis,true crab,4,2116,Hyperia medusarum,amphipod,1,1,NA,4,NA,248,NA,all,NA,no,NA,NA,2279,21 Mar 2024
+ZZ_coded,2162,Phocanema decipiens,nematode,5,2088,Hemilepidotus hemilepidotus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2280,21 Mar 2024
+ZZ_coded,2162,Phocanema decipiens,nematode,5,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2281,21 Mar 2024
+ZZ_coded,2119,Anisakis sp.,nematode,5,2074,Anoplarchus purpurescens,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2282,21 Mar 2024
+ZZ_coded,2123,Contracaecum sp.,nematode,5,2074,Anoplarchus purpurescens,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2283,21 Mar 2024
+ZZ_coded,2142,Phocanema sp.,nematode,5,2074,Anoplarchus purpurescens,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2284,21 Mar 2024
+ZZ_coded,2119,Anisakis sp.,nematode,5,2075,Apodichthys flavidus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2285,21 Mar 2024
+ZZ_coded,2118,Bothriocephalus scorpii,cestode,5,2077,Artedius harringtoni,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2286,21 Mar 2024
+ZZ_coded,2123,Contracaecum sp.,nematode,5,2077,Artedius harringtoni,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2287,21 Mar 2024
+ZZ_coded,2118,Bothriocephalus scorpii,cestode,5,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2288,21 Mar 2024
+ZZ_coded,2263,Phyllobothrium sp.,cestode,5,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2289,21 Mar 2024
+ZZ_coded,2119,Anisakis sp.,nematode,5,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2290,21 Mar 2024
+ZZ_coded,2123,Contracaecum sp.,nematode,5,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2291,21 Mar 2024
+ZZ_coded,2119,Anisakis sp.,nematode,5,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2292,21 Mar 2024
+ZZ_coded,2123,Contracaecum sp.,nematode,5,14,Leptocottus armatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2293,21 Mar 2024
+ZZ_coded,2119,Anisakis sp.,nematode,5,16,Oligocottus maculosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2294,21 Mar 2024
+ZZ_coded,2123,Contracaecum sp.,nematode,5,16,Oligocottus maculosus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2295,21 Mar 2024
+ZZ_coded,2123,Contracaecum sp.,nematode,5,8,Atherinops affinis,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2296,21 Mar 2024
+ZZ_coded,2262,Parafilaroides decorus,nematode,5,12,Girella nigricans,fish,4,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2297,21 Mar 2024
+ZZ_coded,2119,Anisakis sp.,nematode,5,2072,Paralabrax nebulifer,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2298,21 Mar 2024
+ZZ_coded,2119,Anisakis sp.,nematode,5,2073,Paralabrax nebulifer,fish,4,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2299,21 Mar 2024
+ZZ_coded,2142,Phocanema sp.,nematode,5,2072,Paralabrax nebulifer,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2300,21 Mar 2024
+ZZ_coded,2142,Phocanema sp.,nematode,5,2073,Paralabrax nebulifer,fish,4,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2301,21 Mar 2024
+ZZ_coded,2119,Anisakis sp.,nematode,5,2100,Sebastes miniatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2302,21 Mar 2024
+ZZ_coded,2142,Phocanema sp.,nematode,5,2100,Sebastes miniatus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2303,21 Mar 2024
+ZZ_coded,2143,Peachia quinquecapitata,anemone,5,941,Aequorea victoria,hydroid,5,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2304,21 Mar 2024
+ZZ_coded,2143,Peachia quinquecapitata,anemone,5,942,Aequorea victoria,plankton,1,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2305,21 Mar 2024
+ZZ_coded,2144,Peachia quinquecapitata,anemone,5,941,Aequorea victoria,hydroid,5,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2306,21 Mar 2024
+ZZ_coded,2144,Peachia quinquecapitata,anemone,5,942,Aequorea victoria,plankton,1,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2307,21 Mar 2024
+ZZ_coded,2145,Peachia quinquecapitata,anemone,5,941,Aequorea victoria,hydroid,5,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2308,21 Mar 2024
+ZZ_coded,2145,Peachia quinquecapitata,anemone,5,942,Aequorea victoria,plankton,1,6,NA,4,NA,246,NA,low,NA,no,NA,NA,2309,21 Mar 2024
+ZZ_coded,2116,Hyperia medusarum,amphipod,5,941,Aequorea victoria,hydroid,5,7,NA,4,NA,247,NA,low,NA,no,NA,NA,2310,21 Mar 2024
+ZZ_coded,2116,Hyperia medusarum,amphipod,5,942,Aequorea victoria,plankton,1,7,NA,4,NA,247,NA,low,NA,no,NA,NA,2311,21 Mar 2024
+ZZ_coded,2116,Hyperia medusarum,amphipod,5,941,Aequorea victoria,hydroid,5,2,NA,4,NA,248,NA,low,NA,no,NA,NA,2312,21 Mar 2024
+ZZ_coded,2116,Hyperia medusarum,amphipod,5,942,Aequorea victoria,plankton,1,2,NA,4,NA,248,NA,low,NA,no,NA,NA,2313,21 Mar 2024
+ZZ_coded,2213,Galactosomum sp.,trematode,5,2090,Hexagrammos lagocephalus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2314,21 Mar 2024
+ZZ_coded,2117,Helicometrina nimia,trematode,5,554,Cancer productus,true crab,4,6,NA,4,NA,200,NA,low,NA,no,NA,NA,2315,21 Mar 2024
+ZZ_coded,2117,Helicometrina nimia,trematode,5,555,Cancer productus,true crab,1,6,NA,4,NA,200,NA,low,NA,no,NA,NA,2316,21 Mar 2024
+ZZ_coded,2140,Prosorhynchus sp.,trematode,5,2099,Sebastes melanops,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2317,21 Mar 2024
+ZZ_coded,2141,Prosorhynchus sp.,trematode,5,2099,Sebastes melanops,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2318,21 Mar 2024
+ZZ_coded,2140,Prosorhynchus sp.,trematode,5,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2319,21 Mar 2024
+ZZ_coded,2141,Prosorhynchus sp.,trematode,5,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2320,21 Mar 2024
+ZZ_coded,2273,Rhipidocotyle sp.,trematode,5,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2321,21 Mar 2024
+ZZ_coded,2267,Prosorhynchoides sp.,trematode,5,710,Phanerodon vacca,fish,1,6,NA,4,NA,205,NA,low,NA,no,NA,NA,2322,21 Mar 2024
+ZZ_coded,2137,Rhinebothrium urobatidium,cestode,3,568,Tigriopus californicus,copepod,1,6,NA,4,NA,180,NA,high,NA,no,NA,NA,2323,21 Mar 2024
+ZZ_coded,2138,Rhinebothrium urobatidium,cestode,3,568,Tigriopus californicus,copepod,1,6,NA,4,NA,180,NA,high,NA,no,NA,NA,2324,21 Mar 2024
+ZZ_coded,2139,Rhinebothrium urobatidium,cestode,3,568,Tigriopus californicus,copepod,1,6,NA,4,NA,180,NA,high,NA,no,NA,NA,2325,21 Mar 2024
+ZZ_coded,620,Parahypocoma rhamphisokarya,ciliate,1,222,Boltenia villosa,tunicate,1,NA,NA,4,NA,102,NA,very low,NA,no,NA,NA,2326,21 Mar 2024
+ZZ_coded,619,Trichophrya salparum,ciliate,1,222,Boltenia villosa,tunicate,1,NA,NA,4,NA,102,NA,very low,NA,no,NA,NA,2327,21 Mar 2024
+ZZ_coded,620,Parahypocoma rhamphisokarya,ciliate,1,220,Pyura haustor,tunicate,1,NA,NA,4,NA,102,NA,low,NA,no,NA,NA,2328,21 Mar 2024
+ZZ_coded,619,Trichophrya salparum,ciliate,1,220,Pyura haustor,tunicate,1,NA,NA,4,NA,102,NA,low,NA,no,NA,NA,2329,21 Mar 2024
+ZZ_coded,620,Parahypocoma rhamphisokarya,ciliate,1,220,Pyura haustor,tunicate,1,NA,NA,4,NA,102,NA,low,NA,no,NA,NA,2330,21 Mar 2024
+ZZ_coded,619,Trichophrya salparum,ciliate,1,220,Pyura haustor,tunicate,1,NA,NA,4,NA,102,NA,low,NA,no,NA,NA,2331,21 Mar 2024
+ZZ_coded,703,Selenidium fauchaldi,gregarine,NA,436,Phragmatopoma californica,polychaete,1,6,NA,4,NA,198,NA,middle to low,NA,no,NA,NA,2332,21 Mar 2024
+ZZ_coded,2115,Lecithaster gibbosus,trematode,1,2074,Anoplarchus purpurescens,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2333,21 Mar 2024
+ZZ_coded,1138,Chondracanthus pusillus,copepod,1,2075,Apodichthys flavidus,fish,1,7,NA,4,NA,205,NA,NA,NA,no,NA,NA,2334,21 Mar 2024
+ZZ_coded,2211,Eimeria sp.,protozoan,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2335,21 Mar 2024
+ZZ_coded,2113,Podocotyle californica,trematode,1,2074,Anoplarchus purpurescens,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2336,21 Mar 2024
+ZZ_coded,2114,Tubulovesicula lindbergi,trematode,1,2074,Anoplarchus purpurescens,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2337,21 Mar 2024
+ZZ_coded,2203,Cryptobia sp.,protozoan,1,2097,Scorpaenichthys marmoratus,fish,1,6,NA,4,NA,205,NA,NA,NA,no,NA,NA,2338,21 Mar 2024
+ZZ_coded,2233,Lankesteria pittendrighi,protozoan,1,189,Ascidia ceratodes,tunicate,1,6,NA,4,NA,235,NA,"middle, low",NA,no,NA,NA,2339,21 Mar 2024
+ZZ_coded,2229,Lankesteria diaphanis,protozoan,1,184,Eudistoma diaphanes,tunicate,1,6,NA,4,NA,235,NA,low,NA,no,NA,NA,2340,21 Mar 2024
+ZZ_coded,2231,Lankesteria montereyensis,protozoan,1,902,Eudistoma molle,tunicate,1,6,NA,4,NA,235,NA,low,NA,no,NA,NA,2341,21 Mar 2024
+ZZ_coded,2234,Lankesteria psamnii,protozoan,1,183,Eudistoma psammion,tunicate,1,6,NA,4,NA,235,NA,low,NA,no,NA,NA,2342,21 Mar 2024
+ZZ_coded,2236,Lankesteria ritterii,protozoan,1,182,Eudistoma ritteri,tunicate,1,6,NA,4,NA,235,NA,low,NA,no,NA,NA,2343,21 Mar 2024
+ZZ_coded,2230,Lankesteria euherdmaniae,protozoan,1,178,Euherdmania claviformis,tunicate,1,6,NA,4,NA,235,NA,low,NA,no,NA,NA,2344,21 Mar 2024
+ZZ_coded,2235,Lankesteria ritterellae,protozoan,1,176,Ritterella pulchra,tunicate,1,6,NA,4,NA,235,NA,"middle, low",NA,no,NA,NA,2345,21 Mar 2024
+ZZ_coded,2232,Lankesteria pescaderoensis,protozoan,1,904,Ritterella rubra,tunicate,1,6,NA,4,NA,235,NA,low,NA,no,NA,NA,2346,21 Mar 2024
+ZZ_coded,2237,Lankesteria synoici,protozoan,1,175,Synoicum parfustis,tunicate,1,6,NA,4,NA,235,NA,very low,NA,no,NA,NA,2347,21 Mar 2024
+ZZ_coded,168,Strongylocentrotus purpuratus,urchin,1,905,Chelyosoma productum,tunicate,1,3,NA,4,NA,236,NA,low,NA,no,NA,NA,2348,21 Mar 2024
+ZZ_coded,144,Patiria miniata,asteroid,1,905,Chelyosoma productum,tunicate,1,3,NA,4,NA,237,NA,low,NA,no,NA,NA,2349,21 Mar 2024

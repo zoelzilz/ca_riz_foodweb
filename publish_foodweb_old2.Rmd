@@ -1,0 +1,144 @@
+---
+title: "California Rocky Intertidal Food Web"
+output: html_document
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+library(readxl)
+library(NetIndices)
+library(visNetwork)
+
+```
+
+# Welcome to the California Rocky Intertidal Food Web interactive visualization tool!
+
+### This food web network was created as part of an ongoing research project based in the Parasite Ecology Lab at the University of California Santa Barbara. We have compiled interaction reports from published scientific literature, intertidal guidebooks, our own field and lab studies, and expert testimony to generate this network. The network currently represents **1692 species** and **over 8000 unique trophic links**, including grazing, predation, scavenging, and parasitism. We add data to the network on a daily basis!
+
+#### To use this tool, simply select your species of interest using the drop down menu. You can also interact with the web by hovering over individual "nodes", which will display the associated species or group name. Clicking on nodes will highlight all links connected to that node. You can also drag the nodes around and change the shape of the network display!
+ 
+#### The web graph is organized so that the lowest trophic levels (e.g. primary producers like algae) are at the bottom, and the rest of the nodes are vertically arranged based on their trophic levels so that top predators (and their parasites) are at the very top!
+
+#### *If you have questions about this ongoing research or wish to report a species interaction for inclusion in the web, please contact us by emailing our project lead, Zoe Zilz, at [zilz\@ucsb.edu](mailto:zilz@ucsb.edu){.email}*.
+
+*This project has been generously funded by the Worster Family and the UCSB Coastal Fund*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+# import data
+nodes <- read_csv("data/foodweb_V3/nodes_final_3may2024.csv")
+
+links <- read_csv("data/foodweb_V3/links_final_3may2024.csv")
+
+
+# parse to trophic links only
+trophic_links <- links %>% # swapping to "links" lingo because armand thinks it more intuitive, so fine
+  
+  # need to remove non-trophic interactions!
+  filter(interaction.type != 2, #epibiont
+         interaction.type !=9, #endocommensal
+         interaction.type !=10, #ectocommensal
+         interaction.type !=22, #mutualism
+         interaction.type !=28, #boring
+         interaction.type != 29) %>%  
+  dplyr::select(resourceNum,consumerNum,  interaction.type) %>%  # RESOURCE NUM HAS TO GO FIRST OR WEB IS UPSIDEDOWN
+  
+  # and finally we need to add a column coding for parasitic interaction or nah
+  mutate(parasitic = case_when(
+    interaction.type > 4 & interaction.type < 8 ~ "y",
+    interaction.type == 12 ~ "y",
+    interaction.type > 23 & interaction.type < 27 ~ "y", # we're calling sessile micropredation parasitic here
+    TRUE ~ "n"
+  ))
+
+# create igraph object for plotting
+trophic_web_psites <- graph_from_data_frame(d= trophic_links, # all links
+                             vertices = nodes, # nodes
+                             directed=T) # i think this makes sure consumers "point" to resources
+
+# we want to calculate degree to set the size of circles
+deg_psites <- igraph::degree(trophic_web_psites, mode = "all") 
+
+# we can use igraph to pull an adjacency matrix from our igraph web object
+
+RIZadjmatrix <- as_adjacency_matrix(trophic_web_psites,
+                                    sparse = FALSE) # necessary to get a regular matrix, which we need for....
+ 
+# Get the basic network indices from the matrices with GenInd()
+
+trophRIZ<-TrophInd(RIZadjmatrix)
+
+trophic_level <- trophRIZ$TL # name this vector, we should be able to add it to the nodes
+# takes a sec
+
+# create a two-column matrix identifying the x and y values for each node
+layout.matrix.1 <- matrix(nrow=length(V(trophic_web_psites)), # Rows equal to the number of vertices
+                        ncol=2)
+layout.matrix.1[,1] <- runif(length(V(trophic_web_psites))) # randomly assign positions along x-axis (like jitter)
+layout.matrix.1[,2] <- trophRIZ$TL # y-axis value based on trophic level
+
+# make dataframes appropriate for VisNetwork
+trophic_links2 <- trophic_links %>% 
+  rename(to = consumerNum) %>% 
+  rename(from = resourceNum) #right?
+
+nodes2 <- nodes %>% 
+  rename(id = nodeNum) %>% 
+  mutate(degree = deg_psites) %>%  # swe calculated deg a while ago, now added it to df
+  mutate(trophic = trophic_level)
+
+# some visualization customization first
+vis.nodes <- nodes2 #necessary?
+vis.links <- trophic_links2
+
+vis.nodes$shape  <- "dot"  
+vis.nodes$shadow <- TRUE # Nodes will drop shadow
+vis.nodes$title  <- vis.nodes$species # Text on click is species name
+vis.nodes$label  <- vis.nodes$type.label # Node label # for our purposes, redundant with text on click. can add type.label later
+vis.nodes$size   <- vis.nodes$degree # Node size - will calculate degree later and use this to determine node size
+vis.nodes$borderWidth <- 2 # Node border width
+
+# mutate in a column for color
+vis.nodes <- vis.nodes %>% 
+  mutate(color = case_when(trophic_strategy == "grazer" ~ "darkgreen",
+                           trophic_strategy == "micropredator" ~ "pink",
+                           trophic_strategy ==   "non-feeding" ~ "grey",
+                           trophic_strategy ==     "various (assemblage)" ~ "grey",
+                           trophic_strategy ==     "detritivore" ~ "tan",
+                           trophic_strategy ==     "scavenger" ~ "tan",
+                           trophic_strategy ==     "deposit feeder" ~ "tan",
+                           trophic_strategy ==   "filter feeder" ~ "blue",
+                           trophic_strategy ==     "primary producer" ~ "limegreen",
+                           trophic_strategy ==     "mixotroph" ~ "limegreen",
+                           trophic_strategy ==     "omnivore" ~ "orange",
+                           trophic_strategy ==     "typical predator" ~ "purple",
+                           trophic_strategy ==     "carnivore (scavenger + predator)" ~ "purple",
+                           trophic_strategy ==     "parasite" ~ "red",
+                           trophic_strategy ==     "ectoparasite" ~ "red",
+                           trophic_strategy ==     "pathogen" ~ "red",
+                           trophic_strategy ==    "parasitic castrator" ~ "red",
+                           .default = "black"))
+
+# and plot
+visNetwork(vis.nodes, vis.links, width = "2000px", height = "2000px") %>% 
+  visPhysics(enabled = FALSE) %>% 
+  visEdges(color = list(inherit = "both" 
+                        #highlight = list(enabled = T, degree = 1)
+                        )) %>% 
+  visOptions(selectedBy =  "common_name",
+             highlightNearest = list(enabled = T, degree = 0)
+             ) %>%
+  visIgraphLayout(layout = "layout.norm", layoutMatrix = layout.matrix.1)  # woo this one worked! but it's upsidedown
+
+
+```

@@ -1,0 +1,102 @@
+---
+title: "nature review edits"
+output: html_document
+date: "2024-09-19"
+---
+ actually incorporated these into final_foodweb_analyses
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(igraph) 
+library(network) 
+library(sna)
+library(ggraph)
+library(visNetwork)
+library(threejs)
+library(networkD3)
+library(ndtv) 
+library(tidyverse)
+
+nodes_og <- read_csv("data/foodweb_V6/trophic_nodes.csv") # remember we're going to need to update these and save them in multiple places
+links_og <- read_csv("data/foodweb_V6/trophic_links.csv")
+```
+
+# Requested edits:
+1.	Revision of the trophic strategy column ==> consumer type (we will call it trophic category)??
+2.	Addition of a consumer strategy column categorizing all nodes using the 11 strategies defined by Lafferty et al., 2015
+
+## What I said we did
+We updated the trophic strategy column, renaming it consumer strategy to match that in Morton et al., 2021, reflecting how consumers obtained their resources. We added a column for consumer type, also as in Morton et al., except we used the framework published by Lafferty et al., 2006, instead of Lafferty and Kuris, 2002.
+
+## What Dana did:
+Consumer.Strategy	Organism feeding method. Values include: Autotroph, Castrator, Commensal, Detritivore, EctoCommensal, Ectoparasite, EggPredator, Endoparasite, Filter, Herbivore, MicroPredator, non-feeding, Omnivore, Pathogen, planktivore, Predator, Scavenger, Suspension
+
+Consumer.Type	Consumer strategy according to Lafferty and Kuris 2002. Values include: Castrator, Micropredator, non-feeding, Parasite, Pathogen, Predator, Trophically Transmitted Parasite
+
+
+## Revision of the trophic strategy column into trophic category
+herbivore/grazer, omnivore, carnivore (scavenger + predator), detritivore, symbiotic egg predator, mixotroph, primary producer (deposit feeder, filter feeder, mass feeder, parasitic, ??)
+more about HOW they acquire their food, not always mutually exclusive with consumer strategy, we do not include commensal but do include kleptoparasite to reflect organisms that eat their hosts food
+```{r fixing trophic strategy}
+nodes1 <- nodes_og %>% 
+  mutate(consumer_strategy = case_when(trophic_strategy == "typical predator" ~ "typical predator",
+                                       trophic_strategy == "carnivore (scavenger + predator)" ~ "carnivore (scavenger + predator)",
+                                       trophic_strategy == "omnivore" ~ "omnivore",
+                                       trophic_strategy == "filter feeder" ~ "filter feeder",
+                                       trophic_strategy == "scavenger" ~ "scavenger", # but this is supposed to be like social predator
+                                       trophic_strategy == "grazer" ~ "grazer",
+                                       trophic_strategy == "micropredator" ~ "micropredator",
+                                       trophic_strategy == "symbiotic egg predator" ~ "symbiotic egg predator",
+                                       trophic_strategy == "parasite" ~ "endoparasite",
+                                       trophic_strategy == "ectoparasite" ~ "ectoparasite",
+                                       trophic_strategy == "deposit feeder" ~ "deposit feeder",
+                                       trophic_strategy == "primary producer" ~ "primary producer",
+                                       # not sure if we have true decomposers...
+                                       TRUE ~ as.character(trophic_strategy)
+                                       ))
+
+```
+
+
+
+## Add a consumer strategy column to follow Lafferty et al 2015
+If the resource is living and the consumer feeds on more than one prey/host:
+Predator – prey fitness is reduced to zero, deaths of prey are required to extend consumer life cycle, a single predator kills its prey (thus impact on a prey is density-independent), prey death does not lead to predator death. Examples: squids, mosquito larvae on algae. 
+Social predator – like typical predators, but more predators per attacked prey kill prey more effectively. Examples: wolves on moose, army ants. 
+Micropredator – prey/host fitness is not reduced to zero; death of the host is not required to continue consumer life cycle, impact on host is densitydependent. Examples: adult female mosquitos, cicadas, giraffes. 
+
+If the resource is living, death of the host leads to death of the consumer, and the consumer feeds on just a single individual resource (host): 
+Macroparasite – Host fitness is not reduced to zero; impact on host is densitydependent (impact on the host increases with the number of parasites). Examples: adult schistosomes, malaria in mosquitos, corn borer grubs. 
+Pathogen – Host fitness not necessarily reduced to zero, impact on host is densityindependent (impact is controlled by extent of effective host defenses, limiting the asexual reproduction of the consumer), Examples: malaria in humans, scale insects. 
+Castrators – Host fitness reduced to zero; impact on host is density-independent. Examples: larval trematodes in snail hosts, Sacculina on crabs, boll weevil larvae. 
+Parasitoid – Host fitness reduced to zero, consumer kills host to complete its life cycle; impact on host is intensity-independent. Examples: larval ichneumonid wasps, Pasteuria bacteria in Daphnia, bruchid beetles in seeds. 
+
+If the resource is not living (does not give birth), resources flux into the system: 
+Detritivore – As for a predator, but feeds on non-living organic particles. Examples: earthworms, sand dollars. 
+Scavenger – As for a social predator, but feeds dead organisms. Examples: marabou storks, hagfish, burying beetles
+Decomposer – As for a macroparasite, but feeds on a dead food source. Examples: termites, blow flies, oyster mushrooms. 
+Autotroph –Resources (nutrients) either flow through the system or are recycled on the death of consumers, or both. Examples: plants, chemosynthetic bacteria. Plants are often also limited by space (which influences access to light), though space limitation does not define their consumer strategy.
+
+```{r fixing consumer strategy}
+unique(nodes_og$trophic_strategy)
+
+nodes2 <- nodes1 %>% 
+  mutate(consumer_type = case_when(trophic_strategy == "typical predator" ~ "predator",
+                                       trophic_strategy == "carnivore (scavenger + predator)" ~ "predator",
+                                       trophic_strategy == "omnivore" ~ "predator",
+                                       trophic_strategy == "filter feeder" ~ "predator",
+                                       nodeName == "Canis latrans" ~ "social predator", #idk if we have other social predators
+                                       trophic_strategy == "scavenger" ~ "scavenger", # but this is supposed to be like social predator
+                                       trophic_strategy == "grazer" ~ "micropredator",
+                                       trophic_strategy == "micropredator" ~ "micropredator",
+                                       trophic_strategy == "symbiotic egg predator" ~ "micropredator",
+                                       trophic_strategy == "parasite" ~ "macroparasite",
+                                       trophic_strategy == "ectoparasite" ~ "pathogen",
+                                       trophic_strategy == "deposit feeder" ~ "detritivore",
+                                       trophic_strategy == "primary producer" ~ "autotroph",
+                                       # not sure if we have true decomposers...
+                                       TRUE ~ as.character(trophic_strategy)
+                                       )) %>% 
+  select(-trophic_strategy) # don't need this anymore
+
+
+```
