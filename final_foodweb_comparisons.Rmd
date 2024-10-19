@@ -9,6 +9,8 @@ date: "2024-06-25"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(igraph) 
+library(fuzzyjoin)
+library(readxl)
 library(network) 
 library(sna)
 library(ggraph)
@@ -21,9 +23,14 @@ library(viridis)
 library(cheddar)
 library(kableExtra)
 library(devtools)
+library(remotes)
 #install_github("lsaravia/multiweb")
+#install_github("jjborrelli/trophic")
+library(trophic)
 library(multiweb)
 library(NetworkExtinction)
+library(netcom) # for network comparison
+library(ATNr) # for generating niche models
 #install_github('SEELab/enaR', ref='develop') # using with caution since this package has been kicked off cran, but is still being actively?? developed on github
 #library(enaR) #not working, oh well
 
@@ -173,10 +180,13 @@ NetworkExtinction::DegreeDistribution(nopsites_adj)
 - Mean vulnerability
 - Sd vulnerability
 
+### Also generated niche models based on the # species and connectance of both webs
+- we will use package ATNr to do this
+
 ### Other metrics of interest:
   - mean centrality
 (Williams and Martinez 2004)
-	- Degree of caniballism
+	- Degree of cannibalism
 	- Degree of omnivory
 	- Degree of looping
   - Degree of trophic similarity
@@ -185,6 +195,9 @@ NetworkExtinction::DegreeDistribution(nopsites_adj)
 ```{r calculating metrics parasites}
 
 ########## Parasite Web ########## 
+# number of nodes
+num_nodes <- 1844 # got from cheddar object
+
 # total potential links (m)
 m <- vcount(igraph_psites)^2
 
@@ -228,6 +241,9 @@ sd_vul.p <- sd(inn)
 ```{r calculating metrics free living}
 
 ########## Parasite Web ########## 
+# number of nodes
+num_nodes.np <- 1509
+
 # total potential links (m)
 m.np <- vcount(igraph_nopsites)^2
 
@@ -279,6 +295,362 @@ psite_comp_table <- tibble(values, parasite, free_living)
 kable(psite_comp_table) %>% 
   kable_classic(html_font = "Cambria")
 ```
+
+### Generate niche model webs for both parasite and no parasite webs
+Two packages to do this: ATNr (more recently updated) and trophic (only on github, not updated in 6y)
+```{r niche models}
+
+parasite_niche <- ATNr::create_niche_model(num_nodes, connectance)
+
+noparasite_niche <- ATNr::create_niche_model(num_nodes.np, connectance.np)
+
+```
+
+
+
+
+### Generate 1000 niche model webs for each for comparison
+trying to do using several different packages
+```{r}
+
+np_matrix <- as.matrix(as_adjacency_matrix(igraph_nopsites)) # not sure why we need two layers to coerce to matrix byt whatever
+
+# bipartite uses vegan's nullmodel function to generate a null network model
+
+#nullwebs <- bipartite::nullmodel(np_matrix, # matrix object representing web
+#                                 N = 1000, # number of random webs to generate
+#                                 method = 4 # method 4 is vegan's shuffle web, method 5 is vegan's "mgen", not sure yet what this means
+#                                 )
+
+## I can't really verify that this is the correct type of null model (need a niche model) and I don't want to hard code in the commsim, so going back to ATNr + for loop
+
+
+# netcom is for comparing networks to each other or to null models, so can make null models using niche "mechanisms":
+niche_num = stats::runif(n = num_nodes.np)
+nullweb.np <- make_NM(size = num_nodes.np,
+                      niches = niche_num,
+                      net_kind = "matrix",
+                      connectance = connectance.np)
+
+#niche_num = stats::runif(n = num_nodes.np)
+#nullweb.np <- make_NM(num_nodes.np,
+#                     niche_num,
+#                      "matrix",
+#                      connectance.np)
+
+test <- matrix(nullweb.np)
+list(test)
+
+# for loop to create 1000 model webs and save them all to a list
+set.seed(744)
+#size <- rep(num_nodes, 10)
+##connectance.np <- rep(connectance, 10)
+#niche <- rep(niche_num, 10)
+#net_kind = rep("matrix", 10)
+
+matrix <- matrix() # empty matrix
+model.list <- list() #empty lsit
+
+for(i in 1:10) {
+  matrix <- make_NM(size = num_nodes, 
+                    niches= niche_num, 
+                    net_kind = "matrix", 
+                    connectance = connectance.np)
+  model.list[[i]] <- matrix
+}
+
+
+# need to make them all igraph objects for the next step, using lapply
+igraph_nullweb.np <- graph.adjacency(nullweb.np)
+
+igraphs.list <- lapply(model.list, graph.adjacency, mode = "directed") # jk maybe this isn't necessary
+
+# runs fine as a standalone but once passed into a for loop it throws a warning that NAs are produced
+
+
+
+```
+
+### Once we have our list of matrices we can calculate longest chain, degree, generality, and vulnerability
+```{r}
+# degree
+mean(igraph::degree(igraphs.list[[1]])) # 1.6
+mean(igraph::degree(igraph_psites)) # 14, normal (high tho)
+mean(igraph::degree(igraph_nullweb.np)) # ok this is 2, normal
+
+mean_deg <- matrix() # empty matrix
+degrees.list <- list() # empty list
+
+for(i in 1:10) {
+  mean.deg <- mean(igraph::degree(igraphs.list[[i]]))
+  degrees.list[[i]] <- mean.deg
+}
+
+# longest chain
+longest.np.nulls <- lapply(igraphs.list, diameter) # has to be igraphs
+
+# mean degree
+mean_deg.p <- mean(deg.p)
+sd_deg.p <- sd(deg.p)
+
+# mean generality
+out.p <- igraph::degree(igraph_psites, mode = "out")
+mean_gen.p <- mean(out.p)
+sd_gen.p <- sd(out.p)
+
+# mean vulnerability
+inn <- igraph::degree(igraph_psites, mode = "in")
+mean_vul.p <- mean(inn)
+sd_vul.p <- sd(inn)
+```
+
+
+
+
+## Finally use eDNA and MARINe data to create 8 local webs from the meta-web and compare them!
+### Import and Clean Mary's Data
+```{r local eDNA data}
+
+## Mary's eDNA nodes ##
+eDNA <- read_excel("data/MaryMcElroy_RIZeDNA/2021_eDNA_data.xlsx", sheet = "ASV") %>% 
+  dplyr::select(reads_sum, species, site) %>% 
+  mutate(clean_species = str_remove(species, "s__")) %>% # mary's species have a "s__" in front of them and a "_" between genus and sp.
+  mutate(clean_species = str_replace_all(clean_species, "_", " "))
+
+eDNA_taxa <- eDNA %>% # create a DF of just ALL the taxa detected
+  distinct(clean_species, .keep_all = FALSE) %>%  # we can get rid of other columns for now
+  rename(nodeTaxon = clean_species)
+
+eDNA_taxa_sites <- eDNA %>% # create a DF of the taxa detected while keeping reads and sites
+  rename(nodeTaxon = clean_species) %>% 
+  # but lets sum all the reads together per site
+  group_by(site, nodeTaxon) %>% 
+  summarise(n_samples = n(),
+            total_reads = sum(reads_sum)) %>% 
+  ungroup()
+
+## match with my node list
+eDNA_nodes <- inner_join(nodes, eDNA_taxa, by = join_by(nodeTaxon)) # make sure nodeNum is the first column, for igraph
+
+eDNA_nodes_sites <- inner_join(nodes, eDNA_taxa_sites, by = join_by(nodeTaxon))  # make sure nodeNum is the first column, for igraph
+
+# which ones didn't get matched?
+eDNA_nodes_manual_edit <- left_join(eDNA_taxa, nodes, by = join_by(nodeTaxon)) #keeps all rows in eDNA list
+write.csv(eDNA_nodes_manual_edit, "eDNA_nodes_manual_edit.csv")
+```
+
+### Split the eDNA data by site
+```{r split eDNA}
+all_sites <- split(eDNA_nodes_sites, eDNA_nodes_sites$site)
+
+# rename the dfs so it's easier for me to remember
+alegria <- all_sites$alg
+coal_oil <- all_sites$cop
+paradise <- all_sites$pcv
+piedras_blancas <- all_sites$pdb
+sierra_nevada <- all_sites$psn
+sequit <- all_sites$seq
+shaws <- all_sites$shw 
+tarantulas <- all_sites$tar
+
+
+```
+
+### Import and clean MARINe Data
+```{r MARINe data}
+marine <- read_excel("data/MaryMcElroy_RIZeDNA/MARINe_cbs_species_presence_data_20220907.xlsx", sheet = "cbs_species_list")
+unique(marine$marine_site_name)
+
+# filter to 2022 surveys from locations that match mary's, select only cols we need and rename them
+marine_loc <- marine %>% 
+  filter(year == 2021 | year == 2022) %>% 
+  filter(marine_site_name %in% c("Alegria", "Coal Oil Point", "Paradise Cove", "Piedras Blancas", "Point Sierra Nevada", "Sequit Point", "Shaws Cove", "Tarantulas")) %>% 
+  select(marine_site_name, year, final_classification, WoRMS_AphiaID, lowest_taxonomic_resolution) %>% 
+  rename(site = marine_site_name, 
+         nodeTaxon = final_classification, 
+         aphia = WoRMS_AphiaID, 
+         node_resolution = lowest_taxonomic_resolution) %>% 
+  # i originally used the following columns to check the bind, but we can take them out now
+  #select(!c(nodeTaxon, node_resolution)) %>% 
+  mutate(aphia = as.character(aphia))
+
+## match with my node list using aphias
+marine_nodes <- marine_loc %>% 
+  inner_join(nodes, marine_nodes, by = join_by(aphia))
+
+marine_notnodes <- marine_loc %>% 
+  anti_join(nodes, marine_nodes, by = join_by(aphia)) %>% 
+  distinct(nodeTaxon, aphia, node_resolution)
+
+## match with my node list using species names (assume aphias diverged somewhere?)
+marine_species <- marine_notnodes %>% 
+  filter(node_resolution == "Species")
+
+#marine_nodes_spp <- regex_inner_join(nodes, marine_species, by = "nodeTaxon", ignore_case = TRUE) # keeps nodes that are present in marine species ## only returned one node so we will move on to a more fuzzy strategy
+
+marine_genera <- marine_notnodes %>% 
+  filter(node_resolution == "Species"| node_resolution == "Genus") %>% 
+  separate(nodeTaxon, c("genus", "spp"), sep = " ") %>% # so we can match with the genus column in nodes
+  mutate(genus = str_to_title(genus))
+
+marine_nodes_gen <- inner_join(nodes, marine_genera, by = "genus", #ignore_case = TRUE # regex match will find genus names in nodes that CONTAIN the genus in marine df, might over match slightly
+                               ) 
+
+## match with my node list using higer taxon names and brute force hard coding (this won't apply well to other situations)
+marine_higher_taxa <- marine_notnodes %>% 
+  filter(node_resolution == "Family"|node_resolution == "Order" | node_resolution == "Class" | node_resolution == "Phylum") %>% 
+  # add in appropriate taxonomic columns based on taxa in nodeTaxon name:
+  mutate(nodeNum = case_when(
+                            # family level nodes
+                            nodeTaxon == "crustose corallines" ~ 2323, # "coralline algae"
+                            #nodeTaxon == "cryptopleura spp; hymenena spp" ~ NA, # we need to add these in
+                            nodeTaxon == "mytilisepta bifurcata; brachidontes adamsianus" ~ 368, #mytilisepta bifurcata
+                            nodeTaxon == "phragmatopoma spp; sabellaria spp" ~ 436, #426 is phrag, but there are also three sabellids in the web... 436, 1663, and 1664... what to do?
+                            nodeTaxon == "ralfsiaceae" ~ 647, #ralfsia sp., theres one other member of the family in the web tho 
+                            #nodeTaxon == "centroceras spp; ceramium spp; corallophila spp" ~ NA, # fam ceramiaceae, we need to add these in 
+                            #nodeTaxon == "symphyocladia dendroidea; savoiea bipinnata" ~ , # family Rhodomelaceae, we have 2316 polysiphonia and 2321 odonthalia
+                            #nodeTaxon == "gracilariopsis spp; gracilaria spp" ~ , # family Gracilariaceae, need to add
+                            nodeTaxon == "lirularia spp; margarites spp" ~ 1790, # lirularia succincta 
+                            
+                            # order level nodes
+                            #nodeTaxon == "colpomenia spp; leathesia spp" ~ NA, # order ectocarpales, we don't have any (although we should)
+                            nodeTaxon == "sertularella spp; sertularia spp" ~ 2392, # order leptothecata, not sure how to assign this.. maybe just to hydrozoa?
+                            
+                            # class level nodes
+                            nodeTaxon == "hildenbrandia spp; peyssonnelia spp" ~ 653, # hildenbrandia, but also pesssonnelia sp. 2313
+                            nodeTaxon == "scytosiphon spp; melanosiphon spp" ~ 759, # class Phaeophyceae, brown algae, so we will assign 759 macro/brown algae node
+                            nodeTaxon == "ulva spp; enteromorpha spp; kornmannia spp; monostroma spp" ~ 601, # class Ulvophyceae, but will just assign ulva node
+                            
+                            # phylum level nodes
+                            nodeTaxon == "other red crust" ~ 2323,# "coralline algae", can't think of what else this is
+                            TRUE ~ NA
+                            ))
+
+marine_nodes_higher <- inner_join(nodes, marine_higher_taxa, by = "nodeNum")
+```
+
+
+### Generate Local Webs
+#### Alegria
+```{r alegria web}
+############# we will "filter" out unmatched consumers first #############
+
+# create a list of just the nodes we are allowed to KEEP (numbers only)
+consumers_keep <- alegria %>% 
+  dplyr::select(node) %>% 
+  rename(consumer = node) # to match consumer for joining
+
+# inner join lets us make a dataset that keeps only the nodeNums (if we join by node num) that are in BOTH datasets
+
+consumers_eDNA <- inner_join(consumers_keep, links, by = join_by(consumer))
+
+############# and finish but "filtering" out unmatched resources  ############# 
+
+# create a list of just the nodes we are allowed to KEEP (numbers only) - this dataset is identical to consumerNums_keep
+resources_keep <- alegria %>% 
+  dplyr::select(node) %>% 
+  rename(resource = node) # to match consumer for joining
+
+# inner join lets us make a dataset that keeps only the nodeNums (if we join by numbers) that are in BOTH datasets
+
+links_alegria <- inner_join(resources_keep, consumers_eDNA, by = join_by(resource)) # we can name this one edges_clean because we're done!
+
+nodes_alegria <- alegria %>% 
+  rename(nodeCat = category, # cheddar requires a category column to include very specific values
+         functional.group = consumer_type # cheddar recognizes "functional group" but not trophic strategy/consumer_type
+         )
+
+############# create cheddar object ##############
+# create properties list
+properties_alg <- list(title = "Alegria Food Web") #syntax that the help doc suggests
+
+# create community object
+alegria_web <- Community(nodes_alegria, properties_alg, trophic.links = links_alegria)
+alegria_web
+
+# calculate trophic levels
+alegria_tl <- PreyAveragedTrophicLevel(alegria_web)
+
+############ PLOT #############
+PlotPredationMatrix(alegria_web, colour.by = 'functional.group')
+PlotWebByLevel(alegria_web, colour.by='functional.group')
+
+```
+
+
+# graveyard
+## random code
+```{r}
+#save(model.list, file = "psite_web_null_matrices.rda")
+
+
+# this i think COULD work, but i'm still figuring out all the parameters... and i'm not sure what kind of "null distribution" it would return...
+#nullweb_np <- make_Null(np_matrix, # input network
+#                        net_kind = "matrix",
+#                        iters = 100, # i have no idea... "Number of replicates in the null distribution. Note that length(null_dist) = ((iters^2)-iters)/2""
+#                        mechanism_kind = "canonical", # other option is grow, this option is basically rewiring, which is more conservative but takes longer
+#                        process = "NM",
+#                        parameter = connectance.np, ## parameter in the governing mechanism... i have no fucking clue and the example lit has nothing helpful
+#                        directed = TRUE,
+#                        net_size = num_nodes.np, # number of nodes in the network
+#                        method = "align"
+                        
+#                        )
+
+
+################ parasite null webs ################ 
+
+
+# for loop to create 1000 model webs and save them all to a list
+#n_species <- rep(num_nodes, 1000)
+#conn <- rep(connectance, 1000)
+
+#matrix <- matrix()
+#model.list <- list()
+
+#for(i in 1:1000) {
+#  matrix <- create_niche_model(n_species[i], conn[i])
+#  model.list[[i]] <- matrix
+#}
+
+#save(model.list, file = "psite_web_null_matrices.rda")
+```
+
+
+## source code for niche model function
+```{r}
+# stole source code for "niche" from old package trophic and updated using new language from igraph
+niche <- function(S, C){
+  cond <- FALSE
+  while(!cond){
+    n.i <- sort(runif(S), decreasing = F)
+    r.i <- rbeta(S,1,((1/(2*C))-1))*n.i
+    c.i <- runif(S, r.i/2, n.i)
+
+    a <- matrix(0, nrow = S, ncol = S)
+
+    for(i in 2:S){
+      for(j in 1:S){
+        if(n.i[j] > (c.i[i] - (.5 * r.i[i])) & n.i[j] < (c.i[i] + .5 * r.i[i])){
+          a[j, i] <- 1
+        }
+      }
+    }
+
+    cond <- igraph::is_connected(igraph::graph_from_adjacency_matrix(a))
+  }
+
+  return(a)
+}
+
+# turns out doens't matter, still way too slow
+
+
+#parasite_niche1 <- niche(100, connectance) # very fucking slow
+
+#noparasite_niche1 <- niche(num_nodes.np, connectance.np) # very fucking slow
+```
+
 ## Now compare North vs South
 ### First make subweb data
 ```{r make no parasite subwebs}
@@ -339,12 +711,6 @@ resources_keep_n <- consumers_keep_n %>%
 #4. use 'inner_join()' to create a link list from the consumer_keep_links list that ALSO only has resources from the keep list, e.g. free living organisms
 links_north <- inner_join(resources_keep_n, consumer_keep_links_n, by = join_by(resource))
 ```
-
-
-```{r}
-
-```
-
 
 ```{r graveyard}
 
