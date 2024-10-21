@@ -158,11 +158,11 @@ ggplot(nodes_nopsites, aes(x = degree)) +
 # parasites #
 psites_adj<- as.network(as_adjacency_matrix(igraph_psites), matrix.type = "adjacency")
 
-NetworkExtinction::DegreeDistribution(psites_adj)
+#NetworkExtinction::DegreeDistribution(psites_adj)
 
 # without #
 nopsites_adj<- as.network(as_adjacency_matrix(igraph_nopsites), matrix.type = "adjacency")
-NetworkExtinction::DegreeDistribution(nopsites_adj)
+#NetworkExtinction::DegreeDistribution(nopsites_adj)
 
 ```
 
@@ -191,6 +191,7 @@ NetworkExtinction::DegreeDistribution(nopsites_adj)
 	- Degree of looping
   - Degree of trophic similarity
 
+## Now we will do:
 ### For parasite web
 ```{r calculating metrics parasites}
 
@@ -274,11 +275,15 @@ sd_deg.np <- sd(deg.np)
 # mean generality
 out.np <- igraph::degree(igraph_nopsites, mode = "out")
 mean_gen.np <- mean(out.np)
+sum.out.np <- sum(out.np)
+n.out.np <- length(out.np)
 sd_gen.np <-sd(out.np)
 
 # mean vulnerability
 in.np <- igraph::degree(igraph_nopsites, mode = "in")
 mean_vul.np <- mean(in.np)
+sum.in.np <- sum(in.np)
+n.in.np <- length(in.np)
 sd_vul.np <- sd(in.np)
 ```
 
@@ -288,15 +293,15 @@ sd_vul.np <- sd(in.np)
 ```{r psite vs free living table}
 
 values <- c("Total Possible Links", "Link Density", "Connectance", "Longest Chain", "Mean Chain Length", "Mean Degree", "SD Degree","Mean Generality", "SD Generality", "Mean Vulnerability", "SD Vulnerability")
-parasite <- c(m, link_dens.p, connectance, longest.p, average_chain_length_p, mean_deg.p, sd_deg.p, mean_gen.p, sd_gen.p, mean_vul.p, sd_vul.p)
-free_living <- c(m.np, link_dens.np, connectance.np, longest.np, average_chain_length.np, mean_deg.np, sd_deg.np, mean_gen.np, sd_gen.np, mean_vul.np, sd_vul.np)
+parasite <- round(c(m, link_dens.p, connectance, longest.p, average_chain_length_p, mean_deg.p, sd_deg.p, mean_gen.p, sd_gen.p, mean_vul.p, sd_vul.p), digits = 4)
+free_living <- round(c(m.np, link_dens.np, connectance.np, longest.np, average_chain_length.np, mean_deg.np, sd_deg.np, mean_gen.np, sd_gen.np, mean_vul.np, sd_vul.np), digits = 4)
 
 psite_comp_table <- tibble(values, parasite, free_living)
 kable(psite_comp_table) %>% 
   kable_classic(html_font = "Cambria")
 ```
 
-### Generate niche model webs for both parasite and no parasite webs
+## Generate niche model webs for both parasite and no parasite webs
 Two packages to do this: ATNr (more recently updated) and trophic (only on github, not updated in 6y)
 ```{r niche models}
 
@@ -311,7 +316,9 @@ noparasite_niche <- ATNr::create_niche_model(num_nodes.np, connectance.np)
 
 ### Generate 1000 niche model webs for each for comparison
 trying to do using several different packages
-```{r}
+
+#### No parasite web first
+```{r null model no parasites}
 
 np_matrix <- as.matrix(as_adjacency_matrix(igraph_nopsites)) # not sure why we need two layers to coerce to matrix byt whatever
 
@@ -349,63 +356,472 @@ set.seed(744)
 #net_kind = rep("matrix", 10)
 
 matrix <- matrix() # empty matrix
-model.list <- list() #empty lsit
+model.list.noparasites <- list() #empty lsit
 
-for(i in 1:10) {
+for(i in 1:1000) {
   matrix <- make_NM(size = num_nodes, 
                     niches= niche_num, 
                     net_kind = "matrix", 
                     connectance = connectance.np)
-  model.list[[i]] <- matrix
+  model.list.noparasites[[i]] <- matrix
 }
 
 
 # need to make them all igraph objects for the next step, using lapply
-igraph_nullweb.np <- graph.adjacency(nullweb.np)
+#igraph_nullweb.np <- graph.adjacency(nullweb.np)
 
-igraphs.list <- lapply(model.list, graph.adjacency, mode = "directed") # jk maybe this isn't necessary
+igraphs.list <- lapply(model.list.noparasites, graph.adjacency, mode = "directed") 
 
-# runs fine as a standalone but once passed into a for loop it throws a warning that NAs are produced
+# runs fine as a standalone but once passed into a for loop it throws a warning that NAs are produced... ignoring for now?
 
-
+# save both igraph objects and normal (takes longer than just running the code honestly)
+#save(model.list.noparasites, file = "nopsite_web_null_matrices.rda")
+#save(igraphs.list, file = "nopsite_web_null_igraphs.rda")
 
 ```
 
-### Once we have our list of matrices we can calculate longest chain, degree, generality, and vulnerability
-```{r}
-# degree
-mean(igraph::degree(igraphs.list[[1]])) # 1.6
-mean(igraph::degree(igraph_psites)) # 14, normal (high tho)
+#### Repeat for parasite web
+```{r null model parasites}
+
+p_matrix <- as.matrix(as_adjacency_matrix(igraph_psites)) # not sure why we need two layers to coerce to matrix byt whatever
+
+# bipartite uses vegan's nullmodel function to generate a null network model
+
+#nullwebs <- bipartite::nullmodel(np_matrix, # matrix object representing web
+#                                 N = 1000, # number of random webs to generate
+#                                 method = 4 # method 4 is vegan's shuffle web, method 5 is vegan's "mgen", not sure yet what this means
+#                                 )
+
+## I can't really verify that this is the correct type of null model (need a niche model) and I don't want to hard code in the commsim, so going back to ATNr + for loop
+
+
+# netcom is for comparing networks to each other or to null models, so can make null models using niche "mechanisms":
+niche_num.p = stats::runif(n = num_nodes)
+nullweb.p <- make_NM(size = num_nodes,
+                      niches = niche_num.p,
+                      net_kind = "matrix",
+                      connectance = connectance)
+
+
+# for loop to create 1000 model webs and save them all to a list
+set.seed(745)
+
+matrix.p <- matrix() # empty matrix
+model.list.parasites <- list() #empty lsit
+
+for(i in 1:1000) {
+  matrix.p <- make_NM(size = num_nodes, 
+                    niches= niche_num.p, 
+                    net_kind = "matrix", 
+                    connectance = connectance)
+  model.list.parasites[[i]] <- matrix.p
+}
+
+
+# need to make them all igraph objects for the next step, using lapply
+
+igraphs.list.p <- lapply(model.list.parasites, graph.adjacency, mode = "directed") 
+
+# runs fine as a standalone but once passed into a for loop it throws a warning that NAs are produced... ignoring for now?
+
+# save both igraph objects and normal (takes longer than just running the code honestly)
+#save(model.list.noparasites, file = "nopsite_web_null_matrices.rda")
+#save(igraphs.list, file = "nopsite_web_null_igraphs.rda")
+
+```
+
+## Once we have our list of matrices we can calculate longest chain, degree, generality, and vulnerability
+### No parasites first
+#### Mean and SD degree
+```{r mean and SD degree for no parasite null web}
+# test out degree on just one igraph obj from the list
+
+mean(igraph::degree(igraphs.list[[1]], mode = "all")) # 1.6
+mean(igraph::degree(igraph_psites, mode = "all")) # 14, normal (high tho)
 mean(igraph::degree(igraph_nullweb.np)) # ok this is 2, normal
 
-mean_deg <- matrix() # empty matrix
+######## mean degree forloop ########
+
+mean.deg <- vector() # empty vector for "named numbers" (structure of the deg objects we already created)
 degrees.list <- list() # empty list
 
-for(i in 1:10) {
-  mean.deg <- mean(igraph::degree(igraphs.list[[i]]))
+for(i in 1:1000) {
+  mean.deg <- mean(igraph::degree(igraphs.list[[i]], mode = "all"))
   degrees.list[[i]] <- mean.deg
 }
 
-# longest chain
-longest.np.nulls <- lapply(igraphs.list, diameter) # has to be igraphs
+######## SD degree forloop ########
 
-# mean degree
-mean_deg.p <- mean(deg.p)
-sd_deg.p <- sd(deg.p)
+sd.deg <- vector() # empty vector for "named numbers" (structure of the deg objects we already created)
+sd.degrees.list <- list() # empty list
 
-# mean generality
-out.p <- igraph::degree(igraph_psites, mode = "out")
-mean_gen.p <- mean(out.p)
-sd_gen.p <- sd(out.p)
+for(i in 1:1000) {
+  sd.deg <- sd(igraph::degree(igraphs.list[[i]], mode = "all"))
+  sd.degrees.list[[i]] <- sd.deg
+}
 
-# mean vulnerability
-inn <- igraph::degree(igraph_psites, mode = "in")
-mean_vul.p <- mean(inn)
-sd_vul.p <- sd(inn)
+
+############################################
+########## MEANS and MODEL ERRORS ##########
+############################################
+
+######## model error mean degree ########
+degrees.np <- degrees.list %>% 
+  unlist()
+
+# visualize distribution
+deg.dist.np <- degrees.np %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# 2 tailed
+
+# get 95% CI
+ci.deg.np <- degrees.np %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.deg.np <- degrees.np
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.deg.np <- med.deg.np - (mean(degrees.np) - ci.deg.np) # minus bc median is less than empirical
+  
+ME.deg.np.nulls <- (med.deg.np - mean_deg.np)*norm.deg.np # i hope i'm doing this right
+
+########## model error sd degree #########
+sd.degrees.np <- sd.degrees.list %>% 
+  unlist()
+
+# visualize distribution
+sddeg.dist.np <- sd.degrees.np %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# 2 tailed
+
+# get 95% CI
+ci.sd.deg.np <- sd.degrees.np %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.sd.deg.np <- sd.degrees.np %>% 
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.sd.deg.np <- med.sd.deg.np - (mean(sd.degrees.np) - ci.sd.deg.np) # minus bc median is less than empirical
+
+ME.degsd.np.nulls <- (med.sd.deg.np - sd_deg.np)*norm.sd.deg.np
+
+
 ```
 
+#### SD Generality and Vulnerability
+```{r sd generality and vulnerability for no parasite null web}
+
+######## SD generality forloop ########
+
+sd.gen <- vector() # empty vector for "named numbers" (structure of the deg objects we already created)
+gen.list <- list() # empty list
+
+for(i in 1:1000) {
+  sd.gen <- sd(igraph::degree(igraphs.list[[i]], mode = "out"))
+  gen.list[[i]] <- sd.gen
+}
+
+######## SD vulnerability forloop ########
+sd.vul <- vector() # empty vector for "named numbers" (structure of the deg objects we already created)
+vul.list <- list() # empty list
+
+for(i in 1:1000) {
+  sd.vul <- sd(igraph::degree(igraphs.list[[i]], mode = "in"))
+  vul.list[[i]] <- sd.vul
+}
+
+############################################
+########## MEANS and MODEL ERRORS ##########
+############################################
+
+####### model error SD generality #######
+generality.np <- gen.list %>% 
+  unlist() 
+
+# visualize distribution
+gen.dist.np <- generality.np %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# 2 tailed
+
+# get 95% CI
+ci.gen.np <- generality.np %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.gen.np <- generality.np %>% 
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.gen.np <- med.gen.np - (mean(generality.np) - ci.gen.np) # minus bc median is less than empirical
+
+ME.gen.np.nulls <- (med.gen.np - sd_gen.np)*norm.gen.np
+
+#######  model error SD vulnerability ####### 
+vulnerability.np <- vul.list %>% 
+  unlist() 
+
+# visualize distribution
+vul.dist.np <- vulnerability.np %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# 2 tailed
+
+# get 95% CI
+ci.vul.np <- vulnerability.np %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.vul.np <- vulnerability.np %>% 
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.vul.np <- med.vul.np - (mean(vulnerability.np) - ci.vul.np) # minus bc median is less than empirical
+
+ME.vul.np.nulls <- (med.vul.np - sd_vul.np)*norm.vul.np
+
+```
+
+#### Longest Chain (easy)
+```{r mean longest chain for no parasite null web}
+
+######## longest chain ######## 
+longest.np.nulls <- lapply(igraphs.list, diameter) %>% 
+  unlist() # need to first extract the vector of values from the list using unlist
+
+##### model error ##### 
+# visualize distribution
+longest.dist.np <- longest.np.nulls %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# i think this is 1 tailed?
+
+# get 95% CI
+ci.longest.np <- longest.np.nulls %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.longest.np <- longest.np.nulls %>% 
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.longest.np <- (mean(longest.np.nulls) + ci.longest.np) - med.longest.np # plus CI and then minut the median??? bc distribution is 1 tailed to the right (+)
+
+# model error
+ME.longest.np.nulls <- (med.longest.np - longest.np)*norm.longest.np
+
+```
+
+### Repeat for parasite web
+
+#### Mean and SD degree
+```{r mean and SD degree for parasite null web}
+
+######## mean degree forloop ########
+
+mean.deg.p <- vector() # empty vector for "named numbers" (structure of the deg objects we already created)
+degrees.list.p <- list() # empty list
+
+for(i in 1:1000) {
+  mean.deg.p <- mean(igraph::degree(igraphs.list.p[[i]], mode = "all"))
+  degrees.list.p[[i]] <- mean.deg.p
+}
+
+######## SD degree forloop ########
+
+sd.deg.p <- vector() # empty vector for "named numbers" (structure of the deg objects we already created)
+sd.degrees.list.p <- list() # empty list
+
+for(i in 1:1000) {
+  sd.deg.p <- sd(igraph::degree(igraphs.list.p[[i]], mode = "all"))
+  sd.degrees.list.p[[i]] <- sd.deg.p
+}
 
 
+############################################
+########## MEANS and MODEL ERRORS ##########
+############################################
+
+######## model error mean degree ########
+degrees.p <- degrees.list.p %>% 
+  unlist()
+
+# visualize distribution
+deg.dist.p <- degrees.p %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# 2 tailed
+
+# get 95% CI
+ci.deg.p <- degrees.p %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.deg.p <- degrees.p %>% 
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.deg.p <- med.deg.p - (mean(degrees.p) - ci.deg.p) # minus bc median is less than empirical
+  
+ME.deg.p.nulls <- (med.deg.p - mean_deg.p)*norm.deg.p # i hope i'm doing this right
+
+########## model error sd degree #########
+sd.degrees.p <- sd.degrees.list.p %>% 
+  unlist()
+
+# visualize distribution
+sddeg.dist.p <- sd.degrees.p %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# 2 tailed
+
+# get 95% CI
+ci.sd.deg.p <- sd.degrees.p %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.sd.deg.p <- sd.degrees.p %>% 
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.sd.deg.p <- med.sd.deg.p - (mean(sd.degrees.p) - ci.sd.deg.p) # minus bc median is less than empirical
+
+ME.degsd.p.nulls <- (med.sd.deg.p - sd_deg.p)*norm.sd.deg.p
+
+
+```
+
+#### SD Generality and Vulnerability
+```{r sd generality and vulnerability for parasite null web}
+
+######## SD generality forloop ########
+
+sd.gen.p <- vector() # empty vector for "named numbers" (structure of the deg objects we already created)
+gen.list.p <- list() # empty list
+
+for(i in 1:1000) {
+  sd.gen.p <- sd(igraph::degree(igraphs.list.p[[i]], mode = "out"))
+  gen.list.p[[i]] <- sd.gen.p
+}
+
+######## SD vulnerability forloop ########
+sd.vul.p <- vector() # empty vector for "named numbers" (structure of the deg objects we already created)
+vul.list.p <- list() # empty list
+
+for(i in 1:1000) {
+  sd.vul.p <- sd(igraph::degree(igraphs.list.p[[i]], mode = "in"))
+  vul.list.p[[i]] <- sd.vul.p
+}
+
+############################################
+########## MEANS and MODEL ERRORS ##########
+############################################
+
+####### model error SD generality #######
+generality.p <- gen.list.p %>% 
+  unlist() 
+
+# visualize distribution
+gen.dist.p <- generality.p %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# 2 tailed
+
+# get 95% CI
+ci.gen.p <- generality.p %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.gen.p <- generality.p %>% 
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.gen.p <- med.gen.p - (mean(generality.p) - ci.gen.p) # minus bc median is less than empirical
+
+ME.gen.p.nulls <- (med.gen.p - sd_gen.p)*norm.gen.p
+
+#######  model error SD vulnerability ####### 
+vulnerability.p <- vul.list.p %>% 
+  unlist() 
+
+# visualize distribution
+vul.dist.p <- vulnerability.p %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# 2 tailed
+
+# get 95% CI
+ci.vul.p <- vulnerability.p %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.vul.p <- vulnerability.p %>% 
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.vul.p <- med.vul.p - (mean(vulnerability.p) - ci.vul.p) # minus bc median is less than empirical
+
+ME.vul.p.nulls <- (med.vul.p - sd_vul.p)*norm.vul.p
+
+```
+
+#### Longest Chain (easy)
+```{r mean longest chain for parasite null web}
+
+######## longest chain ######## 
+longest.p.nulls <- lapply(igraphs.list.p, diameter) %>% 
+  unlist() # need to first extract the vector of values from the list using unlist
+
+##### model error ##### 
+# visualize distribution
+longest.dist.p <- longest.p.nulls %>% 
+  as_tibble() %>% 
+# Density curve
+  ggplot(., aes(x=value)) + geom_density()
+# i think this is 1 tailed?
+
+# get 95% CI
+ci.longest.p <- longest.p.nulls %>% 
+  sd() %>% 
+  `*`(1.96) # horrible syntax for multiplying in a pipe
+
+# calculate median
+med.longest.p <- longest.p.nulls %>% 
+  median()
+
+# normalization coefficient (difference between median and upper or lower bound of 95% dist, so mean +/- 95% CI) according to Williams and Martinez 2008
+norm.longest.p <- (mean(longest.p.nulls) + ci.longest.p) - med.longest.p # plus CI and then minut the median??? bc distribution is 1 tailed to the right (+)
+
+# model error
+ME.longest.p.nulls <- (med.longest.p - longest.p)*norm.longest.p
+
+```
+
+############################################################################################################
 
 ## Finally use eDNA and MARINe data to create 8 local webs from the meta-web and compare them!
 ### Import and Clean Mary's Data
